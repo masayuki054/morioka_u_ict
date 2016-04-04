@@ -1,0 +1,9 @@
+*** URL
+
+http://www.ictnet.ne.jp/~fumito/j2012/index.php
+
+はこのWikiのトップページへの*リンク*
+
+*** Wiki 内のリンク
+
+[[./情報処理_Windows_素早く開こう.org][情報処理/Windows/素早く開こう]]はWiki内のページを指すリンク

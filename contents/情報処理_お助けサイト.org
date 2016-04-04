@@ -1,0 +1,60 @@
+*** 情報リテラシ
+
+コンピュータとインターネットを使った情報処理技術のこと
+
+-  [[./この講義の教科書.org][この講義の教科書]]は情報リテラシについて書いてありあます。
+
+-  [[http://www.meiji-u.ac.jp/md-medinfo/lecture][医療情報リテラシー]]
+   医療に必要な情報リテラシーについてです
+
+-  [[奈良教育大のコンピュータ・リテラシ入門|http://mail2.nara-edu.ac.jp/~asait/windows/windows.htm]]
+
+*** 自由で、USBで持ち運べる、アプリ
+
+-  PortableAppls http://portableapps.org
+-  フリーオフィス http://ja.libreoffice.org/
+
+*** パソコンとWindows
+
+-  [[http://www.pc-master.jp/][パソコン初心者講座]] わかりやすい
+
+   -  [[http://www.pc-master.jp/sousa/index.html][操作]]
+   -  [[http://www.pc-master.jp/internet/index.html][インターネット]]
+   -  [[http://www.pc-master.jp/security/index.html][セキュリティ]]
+   -  [[http://www.pc-master.jp/backup/index.html][バックアップ]]
+
+      -  [[./情報処理_バックアップと同期.org][情報処理/バックアップと同期]]
+         ### オフィスのこと
+
+**** excel
+
+-  [[http://www.becoolusers.com/excel/][エクセル・Excelの使い方]] be
+   cool users
+
+-  [[http://mail2.nara-edu.ac.jp/~asait/windows/excel/excel.htm][Excelの使い方
+   (奈良教育大学)]]
+
+-  [[http://web.sfc.keio.ac.jp/~tsaito/ITWS/][Excel
+   VBAによるマクロプログラミング]]
+
+*** 統計分析のこと
+
+-  [[./情報処理2014_統計分析.org][情報処理2014/統計分析]]を見てください
+
+*** 情報リテラシに関するトピック
+
+-  技術評論社
+   [[http://gihyo.jp/admin/serial/01/whats_inet/0001][インターネットって何だろう？]]
+
+*** [[http://www.dropbox.com][Dropbox]]
+
+-  [[./Dropboxの使い方.org][Dropboxの使い方]]
+-  [[http://www.dropbox.com][Dropboxサイト]]
+
+*** レポートの書き方についてのサイト
+
+-  [[http://www.report.gusoku.net/][大学レポート・論文の書き方]]
+-  [[http://melisande.cs.kyoto-wu.ac.jp/eguchi/memo/report.html][レポートの書き方]]
+-  [[http://www.ier.hit-u.ac.jp/~iwaisako/essays/t-write2.pdf][大学におけるレポート・論文の書き方(pdf)]]
+-  [[もう大学の単位を落とさない！基本的なレポート・論文の4つの書き方とコツ:http://school-life.careerbaito.com/column/detail/713
+
