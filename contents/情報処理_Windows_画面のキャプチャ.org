@@ -1,0 +1,105 @@
+[[./情報処理_Windows.org][情報処理/Windows]]
+
+** snipping tool による画面のキャプチャ
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+動かす
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+「Windowsキー」 -> 「全てのプログラム」-> 「アクセサリ」-> 「Snipping
+Tool」
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+ウィンドウを切りとりを指定
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+新規作成三角をクリックし，ウィンドウの領域切り取りを選ぶ
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+新規作成
+
+#+BEGIN_HTML
+  </dt>
+  <dd> </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+ウィンドウの選択
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+キャプチャするウィンドウをクリックして選ぶ
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+保存
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+名前をつけて保存すると，ピクチャフォルダに保存される
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+関連サイト
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+#+END_HTML
+

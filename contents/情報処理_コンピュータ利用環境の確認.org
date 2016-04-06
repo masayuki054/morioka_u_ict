@@ -1,0 +1,24 @@
+-  [[./情報処理2016_IDとパスワード.org][情報処理2016/IDとパスワード]]の確認
+
+-  [[./自分のフォルダ.org][自分のフォルダ]]の確認
+
+-  [[./学生用サーバ上の情報処理演習フォルダ.org][学生用サーバ上の情報処理演習フォルダ]]の確認
+
+-  盛大ホームページ http://www.morioka-u.ac.jp
+   [[http://www.morioka-u.ac.jp][盛大ホームページ]]
+
+   -  大学情報，Webメール
+
+-  盛大学務ポータル https://morioka-u.ap-cloud.com/login
+   [[https://morioka-u.ap-cloud.com/login][盛大学務ポータル]]
+
+   -  学年暦, 出席，シラバス，お知らせ，
+
+-  [[./Webメール.org][Webメール]] (来週やります)
+
+-  [[http://www.ictnet.ne.jp/~fumito/j2012/index.php][講義用Wiki]]
+
+-  [[./Dropbox.org][Dropbox]]
+   ([[./使い方.org][使い方]]は近いうちにやります）
+
+

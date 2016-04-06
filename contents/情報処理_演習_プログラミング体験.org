@@ -1,0 +1,125 @@
+[[./情報応用2013日文_10.org][情報応用2013日文/10]]
+
+*** Ruby ゲーム作成入門
+
+下記のサイトの内容で遊んでみたいのですが，どうですか？
+
+-  [[http://dxruby.sourceforge.jp/cgi-bin/hiki.cgi?%B4%CA%C3%B1%A4%CA%A5%B2%A1%BC%A5%E0%A4%F2%BA%EE%A4%EB%A4%BF%A4%E1%A4%CERuby%C6%FE%CC%E7][簡単なゲームを作るためのRuby入門]]
+
+** Ruby プログラミング入門
+
+*** コンピュータとインターネット
+
+-  [[./情報処理_コンピュータとインターネット.org][情報処理/コンピュータとインターネット]]
+
+   -  コンピュータとプログラムのことを解説
+
+*** Windows とプログラム
+
+-  [[./情報処理_Windows.org][情報処理/Windows]]
+
+-  [[./情報処理_コマンド.org][情報処理/コマンド]]
+
+-  [[./情報処理_プログラム言語.org][情報処理/プログラム言語]]
+
+*** Ruby
+
+プログラムは，コンピュータへの指示書です。
+
+Rubyは，プログラムを書くための言語の一つです。人間がRubyで書けば，コンピュータが理解して、動いてくれます。
+
+*** Rubyを使えるようにする
+
+**** 課題1. Ruby環境を作る
+
+USBメモリに、学生サーバのフォルダ/USB にある ruby
+フォルダをコピーします。
+
+これは，[[http://dxruby.sourceforge.jp/cgi-bin/hiki.cgi?%B4%CA%C3%B1%A4%CA%A5%B2%A1%BC%A5%E0%A4%F2%BA%EE%A4%EB%A4%BF%A4%E1%A4%CERuby%C6%FE%CC%E7][簡単なゲームを作るためのRuby入門]]に書いてある「まずは環境構築をしないと」にあたります。
+
+*** Rubyを使う
+
+**** 課題2. Rubyで話す
+
+USBの Ruby/Ruby200/bin/irbをダブルクリックすると，
+
+ウィンドウが現れて、対話型のRubyが動き出し、プログラムの入力を待っています。
+
+プログラムを入力して、エンターを押すと、入力したプログラムを解釈して、実行してくれて，結果を出力してくれます。
+
+#+BEGIN_EXAMPLE
+    1+1 ENTER
+
+    1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 ENTER
+
+     p "Ruby is easy."
+#+END_EXAMPLE
+
+**** 課題3. Ruby プログラムを実行する
+
+メモ帳を使ってRubyプログラムを書き、prog-1.rb
+というファイル名で保存しましょう。
+
+場所は，USBのDocuments/rubyという名前のフォルダを作成し，そこに置きましょう。
+
+プログラム prog-1.rb の中身は、
+
+#+BEGIN_EXAMPLE
+    p "Ruby is easy.\nGreat!\n"
+    gets
+#+END_EXAMPLE
+
+です。ファイルに保存したら，prog-1.rb ファイルを右クリックして、
+
+プログラムで実行を選び、選択から，USB/ruby/ruby200/bin/rubyw
+を選んで開きましょう。実行されるはずです。
+
+**** 課題4. ゲームプログラミングの始まり
+
+-  [[./情報処理_Rubyプログラミング.org][情報処理/Rubyプログラミング]]
+
+-  [[http://dxruby.sourceforge.jp/cgi-bin/hiki.cgi?%B4%CA%C3%B1%A4%CA%A5%B2%A1%BC%A5%E0%A4%F2%BA%EE%A4%EB%A4%BF%A4%E1%A4%CERuby%C6%FE%CC%E7][簡単なゲームを作るためのRuby入門]]
+
+   -  Window を表示
+
+**** 課題5. ゲームプログラミング(2)
+
+-  [[./情報処理_Rubyプログラミング.org][情報処理/Rubyプログラミング]]
+
+-  [[http://dxruby.sourceforge.jp/cgi-bin/hiki.cgi?%B4%CA%C3%B1%A4%CA%A5%B2%A1%BC%A5%E0%A4%F2%BA%EE%A4%EB%A4%BF%A4%E1%A4%CERuby%C6%FE%CC%E7][簡単なゲームを作るためのRuby入門]]
+
+   -  Window を表示
+   -  Window に画像を表示
+   -  Window の画像を動かす
+
+**** 課題6. ゲームプログラミング(3)
+
+-  [[http://dxruby.sourceforge.jp/cgi-bin/hiki.cgi?%B4%CA%C3%B1%A4%CA%A5%B2%A1%BC%A5%E0%A4%F2%BA%EE%A4%EB%A4%BF%A4%E1%A4%CERuby%C6%FE%CC%E7][簡単なゲームを作るためのRuby入門]]
+
+   -  キー入力で画像を移動 image-move.rb
+
+   -  画面外へ消えないように判定する image-move-check.rb
+
+   -  弾を撃ってみる shoot.rb
+
+Dropbox の ict2013-2/Prog に 敵画像 (Boss,png), 弾画像 (stardust.png)
+を置きました。
+
+*** プログラムの提出
+
+-  Dropbox の ict2013-2/tue-1/Rubyプログラミング フォルダに
+-  自分の学生番号のフォルダを作成し，
+-  そのホルダの中に作成したプログラム達と画像ファイル達を提出してください。
+-  最終レポートに自分のフォルダの URL をリンクしてください。
+
+*** その他
+
+**** Win32API
+
+-  [[http://www.kkaneko.com/rinkou/ruby/rubywin32api.html][RubyでWin32API]]
+
+-  [[http://docs.ruby-lang.org/ja/2.0.0/class/Win32API.html][classWin32API]]
+
+-  [[http://nijzero.dw.land.to/document/labo/ruby.html][N0ラボ（仮）Ruby編]]
+
+

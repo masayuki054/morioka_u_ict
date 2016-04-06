@@ -1,0 +1,128 @@
+[[./情報処理_Rubyプログラミング.org][情報処理/Rubyプログラミング]]
+
+** コマンドプロンプトを使う
+
+*** 「コマンドプロンプト」アプリを動かす
+
+スタート -> すべてのプログラム -> アクセサリ -> コマンドプロンプト
+
+コマンドを実行してくれるウィンドウが開きます。
+
+*** Ruby をコマンドとして使えるようにする
+
+USBドライブを「F:」とします。
+
+コマンドプロンプトウィンドウで，下記を入力します。
+
+#+BEGIN_EXAMPLE
+    C:\> PATH %%PATH%%;F:\Ruby\Ruby200\bin
+#+END_EXAMPLE
+
+C:>は，入力促進文字列です。
+
+すると，Fドライブの \Ruby\Ruby200\bin フォルダ内のプログラム(rubyw.exe,
+irb.exe) が rubyw, irb で実行できるようになります。
+
+#+BEGIN_EXAMPLE
+    C:\> irb 
+#+END_EXAMPLE
+
+で irb が動くことを確かめてください。
+
+*** Ruby プログラムを作るフォルダの作成
+
+やはりコマンドプロンプトで次のコマンドを入力してください。
+
+#+BEGIN_EXAMPLE
+    C:\> CD /D F:
+#+END_EXAMPLE
+
+すると自分が見ているフォルダが，F:
+ドライブの(一番上の）フォルダになります。入力促進文字は F:>
+になります。次のコマンドを入力し
+
+#+BEGIN_EXAMPLE
+    F:\> DIR
+#+END_EXAMPLE
+
+USBフォルダの一番上の内容が出力されるのを確かめてください。
+
+次に，Rubyフォルダの中に Prog フォルダを作成します。
+下記のコマンド達を入力してください。
+
+#+BEGIN_EXAMPLE
+    F:\> CD Ruby
+    F:\Ruby\> MD Prog
+    F:\Ruby\Prog\> CD Prog
+#+END_EXAMPLE
+
+Rubyフォルダの中にProgフォルダを作成し，Progフォルダへ移動しました。
+
+Ruby プログラムを NotePad テキストエディタで作成します。
+
+#+BEGIN_EXAMPLE
+    F:\Ruby\Prog\> start NotePad
+#+END_EXAMPLE
+
+下記プログラムを入力し，window-only.rb という名前で保存してください。
+
+#+BEGIN_EXAMPLE
+    require 'dxruby'
+    Window.loop do
+
+    end
+#+END_EXAMPLE
+
+NotePadを終了し，コマンドプロンプトへ戻り，window-only.rb
+を実行してみましょう。
+
+#+BEGIN_EXAMPLE
+    F:\Ruby\Prog\> rubyw window-only.rb
+#+END_EXAMPLE
+
+ウィンドウがでてくることを確認してください。
+
+下記プログラムを入力し，window-hoge.rb という名前で保存してください。
+
+#+BEGIN_EXAMPLE
+    require 'dxruby'
+    Window.loop do
+      p "hoge"
+    end
+#+END_EXAMPLE
+
+下記コマンドを実行すると
+
+#+BEGIN_EXAMPLE
+    F:\Ruby\Prog\> rubyw window-only.rb
+#+END_EXAMPLE
+
+-  ウィンドウが現れ，
+-  コマンドプロンプトのウィンドウに hoge がで続けることを確認し，
+-  コマンドプロンプトのウィンドウ内でマウスをクリックし，
+-  コントロールキーとCキーを同時押しし，
+-  rubyw の実行が終了するのを確認してください。
+
+*** ウィンドウに画像を表示する
+
+Prog フォルダに何か画像ファイルを作ってください。
+
+サンプルフォルダの data.png をコピーするなら次のコマンドを実行します。
+
+#+BEGIN_EXAMPLE
+    F:\Ruby\Prog\> copy F:\Ruby\dxruby140-mswin32-ruby20\sample\classic_sample\data.png data.png
+#+END_EXAMPLE
+
+NotePadで次のプログラムを作成し，image.rb
+という名前のファイルに保存してください。
+
+#+BEGIN_EXAMPLE
+    require 'dxruby'
+
+    image = Image.load("data.png")
+
+    Window.loop do
+     Window.draw(0,0,image)
+    end
+#+END_EXAMPLE
+
