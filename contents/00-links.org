@@ -30,7 +30,6 @@
    - 寿司打 http://typing.sakura.ne.jp/sushida/
 
 ** [[./01.org][01回目の講義]] 関連
-   - [[./00-links.org]]
 
    - [[./情報演習2016_ガイダンス.org]]
      - [[情報処理2016_IDとパスワード.org]]
