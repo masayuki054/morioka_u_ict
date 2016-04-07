@@ -1,0 +1,357 @@
+[[./st_先生_教科書2014のまとめ.org][st/先生/教科書2014のまとめ]]
+
+**** インターネットに関する先生の説明
+
+-  [[./情報処理基礎2013_インターネットとは.org][情報処理基礎2013/インターネットとは]]
+-  [[./情報処理_コンピュータとインターネット.org][情報処理/コンピュータとインターネット]]
+   (高校訪問で教えた内容)
+
+*** 第3章　ネットの利用
+
+**** 3.1　Webとは
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+インターネット
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+デジタル情報を共有する基盤 (先生からの補足)
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+Web
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+インターネットで情報を発信し、共有する仕組み。
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+(Web) ページ
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+発信される情報の一つのまとまり，URL（後述）をもつ
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+URL
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+Uniform Resource Locator, ページのアドレス、サーバ上
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+(Web) サイト
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+ページのひとまとまり，代表URLをもつ
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+(Web) ブラウザ
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+ページを見るアプリ
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+Internet Explorer, Safari, Chrome, Firefox など
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+ホームページ
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+一般的には，ページのことを指すことが多いが，
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+起点のページのこと
+
+先生の考え
+
+-  文書をWebに置き、文書内にURLを記述し、コンピュータを使って文書を配信することで，文書はつながり合うことができる。これがデジタルな文書。
+
+-  Web内には膨大な情報が、まとまったりつながり合ったり、またはバラバラにも存在する。
+
+-  膨大な情報の中で関連する情報をいかにまとめるか、いかに見つけ出すかが重要となる。
+
+***** Web上での情報共有と共同作業の実例
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+Wikipedia
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+http://ja.wikipedia.org，百科事典のサイト，インターネット上での知識の共有，共同作業
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+***** ブラウザを使う
+
+ブラウザは，Web上で分散共有されている情報を，一箇所にいて，お決まりの手段で，閲覧・検索することができる，アプリです。
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+お気に入り，ブックマーク
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+注目するページのURLの録
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+履歴
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+ブラウザでの訪問ページの記録，URLとページタイトルが記録される
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+
+  <dl>
+  <dt> 
+#+END_HTML
+
+検索サイト
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+キーワード検索して，関連する ページ を表示する
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+http://www.google.com, http://www.yahoo.co.jp
+
+***** Webによる個人情報の提示
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+フィッシング
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+詐欺サイトへ導かれ，情報をだまし取られること
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+_{個人情報を入力するときは， }本当に正しいサイトであるか，
+~くれぐれも注意すること
+
+***** Webと個人認証
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+パスワードの保存
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+ブラウザがサイトとパスワードの対をパソコン内に保存し，次回から自動ログインしてくれるようになるが，共用のパソコンでは保存しないこと
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+***** その他
+
+#+BEGIN_HTML
+  <dl>
+  <dt> 
+#+END_HTML
+
+文字化け
+
+#+BEGIN_HTML
+  </dt>
+  <dd> 
+#+END_HTML
+
+パソコン内の日本語のデジタル化（01の数値列で表すこと）の方式には何種類かある
+
+#+BEGIN_HTML
+  </dd>
+  </dl>
+#+END_HTML
+
+_{「エンコード」とか「文字エンコード」とか「テキストエンコード」という
+}「シフトJIS」, 「日本語EUC」, 「日本語JIS」,
+「UTF-8」とかの方式がある。
+~ブラウザが使っているエンコードとページの中身のエンコードが違っていると文字化けする
+
+**** 3.2　メールとは
+
+#+BEGIN_EXAMPLE
+       - メールアドレス ::
+         - 自分のメールアドレス ::
+    - morioka-u.ac.jp での自分のアドレス
+
+       - 複数のメールアドレスと転送:: 
+         転送設定の利用
+
+       - メールの仕組み :: 教科書にはない
+
+         - 自分宛のメールはどこにあるのか？
+
+         - どうやって読むのか？
+
+         - 読み終わったメールはどうする？
+
+         - 送信したメールの生涯
+#+END_EXAMPLE
+
+**** 3.3　メールの例
+
+#+BEGIN_EXAMPLE
+       悪いメールの例
+       上のメールの改良例
+       忙しい人のメールの例
+#+END_EXAMPLE
+
+**** 3.4　メールのマナー
+
+#+BEGIN_EXAMPLE
+       まずは返事しよう
+       メールは簡潔に
+       約束はメールで確認
+       件名を付けよう
+       機種依存文字は避けよう
+       半角カナは避けよう
+       行は短めに
+       段落の区切りは1行余分に空ける
+       署名を付けよう
+       メーリングリストのマナー
+       添付ファイルのマナー
+       サーバからメールを消そう
+       メールのリンクをクリックするのは危険
+       フィッシング詐欺に注意
+       チェーンメールは無視しよう
+       ウイルスに注意！
+       HTMLメールは？
+       エンコーディングは？
+       遅延・不着に注意
+       メールはハガキ
+#+END_EXAMPLE
+
+**** 3.5　メールの仕組み
+
+**** 3.6　メールソフトの設定
+
+**** 3.7　スマホ時代のネット利用
