@@ -15,5 +15,27 @@
    講義資料
    - [[https://github.com/masayuki054/morioka_u_ict/tree/master/contents][morioka_u_ict/contents at master · masayuki054/morioka_u_ict]]
 
+** Web アプリ(要登録)
+
+   - Google https://www.google.co.jp/ 
+     - Gmail 
+     - Google Drive 
+
+   - Simplenote http://simplenote.com 
+
+   - MindMeister https://www.mindmeister.com/
+
+** Web アプリ(登録不要)
+
+   - 寿司打 http://typing.sakura.ne.jp/sushida/
+
+** [[./01.org][01回目の講義]] 関連
+   - [[./00-links.org]]
+
+   - [[./情報演習2016_ガイダンス.org]]
+     - [[情報処理2016_IDとパスワード.org]]
+     - [[./情報処理_パスワードのよしあし.org]]
+
+
 
 
