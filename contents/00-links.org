@@ -1,0 +1,7 @@
+
+http://www.morioka-u.ac.jp
+
+[[https://morioka-u.ap-cloud.com/][盛大学務ログイン]] 
+
+[[https://www.morioka-u.ac.jp/webmail/src/login.php][Webメール・ログイン]]
+
