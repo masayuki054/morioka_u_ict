@@ -22,8 +22,6 @@
 
 今日は，下記のページにしたがって，講義の説明をします。
 
-https://github.com/masayuki054/morioka_u_ict/blob/master/contents/%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%922016_%E3%82%AB%E3%82%99%E3%82%A4%E3%82%BF%E3%82%99%E3%83%B3%E3%82%B9.org
-
 -  [[https://github.com/masayuki054/morioka_u_ict/blob/master/contents/情報演習2016_ガイダンス.org][ガイダンス]]
 
 *** 今日の課題
