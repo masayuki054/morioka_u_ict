@@ -1,7 +1,7 @@
 
 * パスワードについて
 
-- 出展 ::  [[http://azby.fmworld.net/usage/closeup/20110427]][[パスワード攻撃:http://dictionary.goo.ne.jp/leaf/itntt/%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E6%94%BB%E6%92%83/m0u/]][あなたは大丈夫！？危険なパスワードを改善して安全性を高め]]
+- 出展 ::  [[http://azby.fmworld.net/usage/closeup/20110427]」
 
 ** 1章　パスワードを破られる危険性
 
