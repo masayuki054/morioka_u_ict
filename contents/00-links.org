@@ -1,7 +1,19 @@
+** [[http://www.morioka-u.ac.jp][盛岡大学]] 
+   - [[https://morioka-u.ap-cloud.com/][盛大学務ログイン]] 
+   - [[https://www.morioka-u.ac.jp/webmail/src/login.php][Webメール・ログイン]]
 
-http://www.morioka-u.ac.jp
+** 情報処理演習
+   入口
+   - [[http://masayuki054.hatenablog.com/entry/2016/04/04/113109][情報処理演習2016@盛岡大学 - masayuki054's diary]]
 
-[[https://morioka-u.ap-cloud.com/][盛大学務ログイン]] 
+   お知らせ
+   - [[https://plus.google.com/communities/118178418897087393166][情報処理演習＠盛岡大学栄養科学部 - コミュニティ - Google+]] 
 
-[[https://www.morioka-u.ac.jp/webmail/src/login.php][Webメール・ログイン]]
+   講義内容まっぷ
+   - [[https://www.mindmeister.com/678618676][情報処理演習2016 - MindMeister マインドマップ]]
+
+   講義資料
+   - [[https://github.com/masayuki054/morioka_u_ict/tree/master/contents][morioka_u_ict/contents at master · masayuki054/morioka_u_ict]]
+
+
 
