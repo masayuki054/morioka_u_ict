@@ -1,6 +1,6 @@
 * Google Drive
 ** って何？
-http://google.com が提供しているファイル保存・共有サービス hhttp://drive.google.com
+http://google.com が提供しているファイル保存・共有サービス http://drive.google.com
 - 15GB まで無料
 - ブラウザから利用できる
 - パソコン，スマホそれぞれのためのアプリがある
