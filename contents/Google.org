@@ -1,7 +1,19 @@
 * Googleを利用しよう
 
+
+
 ** アカウントの作成
+- 大学のメールが読めることを確認しておきましょう。
+- http://google.com へいきましょう。
+- 大学のメールアドレスを使って登録しましょう。
+
+** Gmail を使ってみよう
+- http://google.com へいきましょう。
+- Gmail サービスを探しましょう。
+  Google アプリ （３ｘ３の□）で見つかります。
+- ログインして自分のメールボックスをチェックしてみましょう。
 
 ** GoogleDrive
 
-#+include GoogleDrive.org
+[[GoogleDrive.org][GoogleDrive]] を見てください。
+
