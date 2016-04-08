@@ -1,32 +1,30 @@
-* コンピュータ利用環境 [/]
+* コンピュータとインタネットの利用環境
 
-- [ ] [[./情報処理2016_IDとパスワード.org][IDとパスワード]]の確認
+** 盛岡大学が提供してくれるサービス
 
-- [ ]  [[./情報処理_自分のフォルダ.org][自分のフォルダ]]の確認
+- [[./情報処理2016_IDとパスワード.org][IDとパスワード]]の確認
 
-- [ ] [[./情報処理_学生用サーバ上の情報処理演習フォルダ.org][学生用サーバ上の情報処理演習フォルダ]]の確認
+- [[./情報処理_自分のフォルダ.org][自分のフォルダ]]の確認
 
-- [ ]  盛大ホームページ http://www.morioka-u.ac.jp
-   [[http://www.morioka-u.ac.jp][盛大ホームページ]]
+- [[./情報処理_講義資料フォルダ.org][講義資料フォルダ]]の確認
 
-   -  大学情報，Webメール
+- 盛大ホームページ http://www.morioka-u.ac.jp
+  - 大学情報，Webメール
 
-- [ ]  盛大学務ポータル https://morioka-u.ap-cloud.com/login
-   [[https://morioka-u.ap-cloud.com/login][盛大学務ポータル]]
+- 盛大学務ポータル https://morioka-u.ap-cloud.com/login
+  -  学年暦, 出席，シラバス，お知らせ，
 
-   -  学年暦, 出席，シラバス，お知らせ，
+- [[./情報処理_Webメール.org][Webメール]] 
 
-- [ ] [[./情報処理_Webメール.org][Webメール]] 
+** 情報処理演習のために利用するインターネット上のサービス
 
+- 講義の入り口 http://masayuki054.hatenablog.com/entry/2016/04/04/113109
 
+- Googleアカウント http://google.com  
+  Googleにアカウントを作りましょう
+  -  [[./GoogleDrive.org][GoogleDrive]] 
+    - レポートの提出場所に使います
 
-- [ ] [[http://masayuki054.hatenablog.com/entry/2016/04/04/113109][講義の入口]]
-
- [[http://www.ictnet.ne.jp/~fumito/j2012/index.php][講義用Wiki]] 
-
-- http://google.com  Googleにアカウントを作りましょう
-  -  [[./GoogleDrive.org][GoogleDrive]]
-     ([[./使い方.org][使い方]]は近いうちにやります）
-
-- http://simplenote.org
+- めもの作成 http://simplenote.org
+- マップの作成 http://mindmeister.org
   
