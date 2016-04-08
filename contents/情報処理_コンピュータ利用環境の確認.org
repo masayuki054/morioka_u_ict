@@ -25,6 +25,7 @@
   -  [[./GoogleDrive.org][GoogleDrive]] 
     - レポートの提出場所に使います
 
-- めもの作成 http://simplenote.org
+- めもの作成 http://simplenote.com
+  
 - マップの作成 http://mindmeister.com
   
