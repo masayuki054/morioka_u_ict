@@ -26,5 +26,5 @@
     - レポートの提出場所に使います
 
 - めもの作成 http://simplenote.org
-- マップの作成 http://mindmeister.org
+- マップの作成 http://mindmeister.com
   
