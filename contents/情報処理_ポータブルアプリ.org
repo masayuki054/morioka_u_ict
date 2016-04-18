@@ -22,8 +22,7 @@
 
 -  USBメモリを挿して，
 -  ダウンロードしたプログラムをダブルクリックして，インストーラを希望
-   [[http://mikasaphp.net/usb.html][Portable Apps
-   の説明のわかりやすいサイト]]を参考に，プラットホームを *USBメモリ*
+   [[http://mikasaphp.net/usb.html][Portable Appsの説明のわかりやすいサイト]]を参考に，プラットホームを *USBメモリ*
    にインストールしてください。
 
 *** 起動
