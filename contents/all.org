@@ -1,8 +1,0 @@
-[[情報処理.org]]
-
-
-[[./01.org][01]] 
-
-* external
-
-  [[https://www.mindmeister.com/678087548][情報処理演習2016 - MindMeister マインドマップ]]
