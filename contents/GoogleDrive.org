@@ -14,10 +14,13 @@ http://google.com が提供しているファイル保存・共有サービス h
 - Google にアカウントを作成し，
 - Gmail でメールが受け取れるようにしましょう
 - GoogleDrive に行って，上で作ったアカウントを使って，登録します。
+- 登録完了すれば使えます。
 
 ** 使い方
-- GoogleDriveをWebブラウザで開きます。
+- WebブラウザでGoogleを開き，ログインします。
+- GoogleDriveを開きます。
 - Windows のフォルダのように自然につかえます。
+
 
 
 
