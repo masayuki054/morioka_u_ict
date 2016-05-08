@@ -28,6 +28,8 @@
 
 ** 自分のGoodgleDrive
 
+- [[./GoogleDrive.org][Google ドライブを利用しよう]] を読んでください
+
 
 * 以下は古い内容です - <2016.04.12, masayuki>
 
