@@ -1,0 +1,25 @@
+* Firefox
+
+** USBのFirefoxを動かす
+
+USBメモリを開いて
+- 「講義で使うアプリ」フォルダの中の
+  - 「FirefoxPortable」フォルダの中の
+    - あれば，*FireFox* を *ダブルクリック*
+    - なければ「App」 フォルダの中の
+      - 「Firefox64」フォルダの中の
+	- *firefox* を *ダブルクリック* (こいつがアプリ本体)
+
+** ショートカットを作る
+
+- firefox を右クリックして，ショートカットを作り，
+- そのショートカットをカットし，
+- USBメモリの直下にいって貼り付ける
+- 以後，そのショートカットをダブルクリックすれば，firefox を動かせる。
+
+** はじめての Firefox | Firefox ヘルプ
+
+   [[https://support.mozilla.org/ja/kb/get-started-firefox-overview-main-features][はじめての Firefox]] を読んで使い方を知りましょう。
+
+
+
