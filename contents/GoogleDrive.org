@@ -28,6 +28,28 @@ http://google.com が提供しているファイル保存・共有サービス h
 - 自分の GoogleDrive に情報処理演習フォルダを作成しましょう。
 - 盛大PCの情報処理演習フォルダの中身を、コピーしてみましょう。
 
+** レポート提出フォルダの作成
+
+- 自分の GoogleDrive に「レポート提出」フォルダを作成し，
+ 
+- そのフォルダのリンクを取得し，そのアドレスを suzumasa@gmail.com にメー
+  ルしてください。
+
+
+** 自分の GoogleDrive ができていない人は
+
+クラス毎に，下記の先生の GoogleDrive のフォルダを使ってください:
+   
+- B組 :: 
+   https://drive.google.com/open?id=0B11Iwlj2EHvvbDBzcEpzNjQyc28
+
+- A組 :: 
+  https://drive.google.com/open?id=0B11Iwlj2EHvvOGFOcmR6U0p5c0U
+
+
+上記のフォルダの中に，自分の学生番号の名前のフォルダを作成し，
+その共有リンクを記録してください。
+
 ** スマホのアプリを使ってみる
 
 - GoogleDrive アプリを持っていなければダウンロードしましょう。
