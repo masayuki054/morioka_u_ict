@@ -7,6 +7,7 @@
  - [[#使い方][使い方]]
    - [[#新らしいメモを作る][新らしいメモを作る]]
    - [[#メモの内容の書き方][メモの内容の書き方]]
+   - [[#][]]
 
 * Simplenote
 
@@ -35,7 +36,11 @@
 
 * 使い方
   
-  [[http://note100yen.com/en-150720.html][スマホとパソコンでメモを同期できるSimplenoteの使い勝手がかなりいい]]
+- [[http://note100yen.com/en-150720.html][スマホとパソコンでメモを同期できるSimplenoteの使い勝手がかなりいい]]
+
+- [[http://nelog.jp/markdown][省エネHTML入力！基本Markdown記法のチートシート]]
+
+- [[http://centraleden.hatenablog.com/entry/2014/04/27/130453][Markdown記法まとめ - Paradise Lost]]
 
 ** 新らしいメモを作る
 
@@ -92,6 +97,7 @@
 
 
 
+** 
 
 
 
