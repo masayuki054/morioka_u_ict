@@ -1,3 +1,4 @@
+
 [[./情報処理.org][情報処理]]
 
 *** 説明サイト
@@ -5,11 +6,9 @@
 -  [[http://www.becoolusers.com/excel/][エクセル・Excelの使い方]] be
    cool users 2007
 
--  [[http://mail2.nara-edu.ac.jp/~asait/windows/excel/excel.htm][Excelの使い方
-   (奈良教育大学)]]
+-  [[http://mail2.nara-edu.ac.jp/~asait/windows/excel/excel.htm][Excelの使い方 (奈良教育大学)]]
 
--  [[http://web.sfc.keio.ac.jp/~tsaito/ITWS/][Excel
-   VBAによるマクロプログラミング]]
+-  [[http://web.sfc.keio.ac.jp/~tsaito/ITWS/][Excel VBAによるマクロプログラミング]]
 
 *** 知っておきたいこと
 
@@ -41,10 +40,10 @@ Excel - 検索窓から探す
 
 **** 複数のセル（列）を返す関数式の扱い
 
-Excel/Calc -
-関数が返すセル列を選び、式入力欄をクリックすると、式が編集できるようになる。
-- 修正したら「シフト+コントロール+エンター」で再計算 -
-おかしくなったら×を選ぶ
+Excel/Calc 
+- 関数が返すセル列を選び、式入力欄をクリックすると、式が編集できるようになる。
+- 修正したら「シフト+コントロール+エンター」で再計算 
+- おかしくなったら×を選ぶ
 
 **** グラフを描く
 
