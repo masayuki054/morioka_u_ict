@@ -75,6 +75,8 @@
 
       先生のまとめのSimplenote版です: http://simp.ly/publish/6kjm7L
 
+      [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][情報処理演習資料]] の simplenote フォルダに原文があります。
+
 
 *** [[../教科書/03_ネットの利用.org][3章-ネットの利用]] 「Webとは」のまとめを作る
 
