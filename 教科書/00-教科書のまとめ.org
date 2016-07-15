@@ -62,7 +62,34 @@
 
 *** 8.1　Webの歴史
 
+1989, Tim Berners-Lee が，World Wide Web (WWW) を考案
+
+Webのアイディアは，文書にハイパーリンクを埋め込むこと。
+ハイパーリンクは，表示文字列とURL
+
+ハイパーテキスト
+
+HTML, 
+CSS, 
+
+XML
+XHTML
+HTML5
+Javascript
+
 *** 8.2　Web 2.0，SNS
+書き込みできるページ
+- ブログ
+- Wiki
+
+- Web2.0 :: ユーザ参加型の情報発信 WWW
+
+  インターネット技術の進化というより，*社会現象*
+
+- SNS :: 閉じたユーザ同士間のサービス
+  - mixi
+  - Facebook
+  - Twitter
 
 *** 8.3　Webページ作成用ソフト
 
