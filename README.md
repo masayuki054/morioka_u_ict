@@ -14,7 +14,7 @@
 
 ## 履歴
 
-- ファイル名の coding は， utf-8-ncf にしました。macosx では問題
+- ファイル名の coding は， utf-8-nfc にしました。macosx では問題
   が起ります。
 
 - 2016.03 ictnet.ne.jp の pukiwiki から移ってきました。
