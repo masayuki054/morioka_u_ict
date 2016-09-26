@@ -1,0 +1,10 @@
+#+include: Windows.org :minlevel 1
+#+include: ドライブとフォルダ.org :minlevel 1
+#+include: ショートカット.org :minlevel 1
+#+include: 画面のキャプチャ.org :minlevel 1
+#+include: 素早く開こう.org :minlevel 1
+#+include: 素早く開こうの課題.org :minlevel 1
+#+include: USBメモリ.org :minlevel 1
+#+include: バックアップと同期.org :minlevel 1
+
+#+include: old.org :minlevel 1

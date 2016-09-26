@@ -1,0 +1,25 @@
+
+* snipping tool による画面のキャプチャ
+
+** 「Snipping tool」を動かす
+
+： 「Windowsキー」 -> 「全てのプログラム」-> 「アクセサリ」-> 「Snipping
+Tool」
+
+あるいは，スタートメニューの検索で Snipping を探します。
+
+** ウィンドウを切りとりを指定
+
+新規作成三角をクリックし，ウィンドウの領域切り取りを選ぶ
+
+** ウィンドウの選択
+
+キャプチャするウィンドウをクリックして選ぶ
+
+** 保存
+
+名前をつけて保存すると，ピクチャフォルダに保存される
+
+** 関連サイト
+   http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8
+
