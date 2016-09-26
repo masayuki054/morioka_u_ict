@@ -1,0 +1,43 @@
+* ruby scripts
+
+** file2link.rb
+
+#+BEGIN_SRC ruby :dir .. :results code
+all_links = Dir.glob('*.org').map do |org|
+
+  "[[#{org}][#{File.basename(org)}]]"
+  
+end
+
+all_links.join("\n")
+
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC ruby
+[[01.org][01.org]]
+[[Firefoxの使い方.org][Firefoxの使い方.org]]
+[[Google.org][Google.org]]
+[[Simplenote.org][Simplenote.org]]
+[[ガイダンス_2016.org][ガイダンス_2016.org]]
+[[2016.org][2016.org]]
+[[IDとパスワード.org][IDとパスワード.org]]
+[[USBメモリの使い方.org][USBメモリの使い方.org]]
+[[Webブラウザ.org][Webブラウザ.org]]
+[[Webメール.org][Webメール.org]]
+[[課題_レポートの書き方.org][課題_レポートの書き方.org]]
+[[Done.org][Done.org]]
+[[コンピュータとインターネット.org][コンピュータとインターネット.org]]
+[[コンピュータ利用環境の確認.org][コンピュータ利用環境の確認.org]]
+[[パスワードのよしあし.org][パスワードのよしあし.org]]
+[[ファイルとフォルダの使い方.org][ファイルとフォルダの使い方.org]]
+[[学生用サーバ.org][学生用サーバ.org]]
+[[講義資料フォルダ.org][講義資料フォルダ.org]]
+[[講義用アプリをUSBに準備する.org][講義用アプリをUSBに準備する.org]]
+[[自分のフォルダ.org][自分のフォルダ.org]]
+[[課題_Webについて.org][課題_Webについて.org]]
+[[受講の準備.org][受講の準備.org]]
+[[02.org][02.org]]
+#+END_SRC
+
+
