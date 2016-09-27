@@ -1,0 +1,16 @@
+#+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+title: パソコンの使い方
+#+include: 
+
+
+#+include: pc/IDとパスワード.org :minlevel 1
+#+include: pc/Webブラウザ.org :minlevel 1
+#+include: pc/パスワードのよしあし.org :minlevel 1
+#+include: pc/ファイルとフォルダの決まり事.org :minlevel 1
+#+include: pc/自分の情報の保存.org :minlevel 1
+#+include: pc/USBメモリの使い方.org :minlevel 1
+#+include: pc/講義用アプリをUSBに準備する.org :minlevel 1
+#+include: pc/Webメール.org :minlevel 1
+
+#+include: pc/コンピュータ利用環境の確認.org :minlevel 1

@@ -1,0 +1,8 @@
+#+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+title: Webアプリ
+#+include: 
+
+#+include: web/Firefoxの使い方.org 
+#+include: web/Simplenote.org  :minlevel 1
+#+include: web/GoogleDocs.org      :minlevel 1
