@@ -3,4 +3,4 @@
 #+title: Google
 #+include: 
 
-#+include: Web/Google.org :minlevel 1
+#+include: web/Google.org :minlevel 1
