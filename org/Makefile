@@ -9,6 +9,8 @@ HTMLS = index.html guidance.html google.html pc.html typing.html web.html window
 
 all: $(HTMLS)
 
+index.html: contents.org
+
 .SUFFIXES: .org .html
 .org.html: info/common-header.org 
 	$(HOME)/bin/org2html $<
