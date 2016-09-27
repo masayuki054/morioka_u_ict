@@ -1,11 +1,7 @@
-* [[./guidance.org][ガイダンス]]
-
 * 講義資料
-
+** [[./guidance.org][ガイダンス]]
 ** [[./typing.org][typing]]
 
 ** [[./google.org]]
-
-#+include: 2016.org :minlevel 2
 
 #+include: 2016.org :minlevel 1
