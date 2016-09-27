@@ -1,5 +1,5 @@
 #+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
-#+title: Windowsの使い方
+#+title: Windows
 #+include: contents.org
 

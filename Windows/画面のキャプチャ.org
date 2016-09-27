@@ -1,4 +1,3 @@
-
 * snipping tool による画面のキャプチャ
 
 ** 「Snipping tool」を動かす
