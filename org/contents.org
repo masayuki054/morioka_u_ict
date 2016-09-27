@@ -1,1 +1,14 @@
-#+include: 2016.org :minlevel 1
+#+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+title: top
+#+include: 
+
+* [[guidance.org][ガイダンス]]
+
+* 講義資料
+
+** [[typing.org][typing]]
+
+** [[google.org]]
+
+#+include: 2016.org :minlevel 2

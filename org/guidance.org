@@ -1,0 +1,6 @@
+#+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+title: ガイダンス
+#+include: 
+
+#+include: lects/Google.org :minlevel 1
