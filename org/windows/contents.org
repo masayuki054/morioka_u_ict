@@ -1,3 +1,5 @@
+<2016-09-27 火> まだ書きかけです。 
+
 #+include: Windows.org :minlevel 1
 #+include: ドライブとフォルダ.org :minlevel 1
 #+include: ショートカット.org :minlevel 1

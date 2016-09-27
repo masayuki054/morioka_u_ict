@@ -4,8 +4,8 @@ SITE = $(MYHOME)/docs/
 DIR = ./
 SHELL = zsh
 
-HTMLS = index.html guidance.html google.html pc.html typing.html web.html
-## windows.html text.html
+HTMLS = index.html guidance.html google.html pc.html typing.html web.html windows.html
+## text.html
 
 all: $(HTMLS)
 

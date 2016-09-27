@@ -1,7 +1,10 @@
 * 講義資料
 ** [[./guidance.org][ガイダンス]]
-** [[./typing.org][typing]]
+** [[./pc.org][PCの利用]]
+** [[./typing.org][タイピング]]
 
-** [[./google.org]]
+** [[./google.org][Googleを利用しよう]]
+** [[./web.org][Webを利用しよう]]
+** 
 
 #+include: 2016.org :minlevel 1

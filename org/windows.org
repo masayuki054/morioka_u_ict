@@ -1,5 +1,6 @@
 #+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
-#+title: Windows
-#+include: contents.org
+#+title: Windowsのこと
+
+#+include: windows/contents.org :minlevel 1
 
