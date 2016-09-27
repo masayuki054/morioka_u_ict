@@ -3,5 +3,5 @@
 #+title: top
 #+include: 
 
-#+include: contents.org
+#+include: contents.org :minlevel 1
 
