@@ -1,4 +1,4 @@
-* 情報処理演習2016
+* 情報処理応用 2016
 
 ** 講義情報
 
@@ -6,8 +6,8 @@
 
 時間割 （二クラス，同じ内容で進行します）
 
--  火曜日 2コマ目(10:25~11:55) 栄養科学A
--  火曜日 3コマ目(12:50~14:20) 栄養科学B
+-  木曜日 2コマ目(10:25~11:55) 
+-  木曜日 3コマ目(12:50~14:20) 
 
 ** 講義概要
 
@@ -15,9 +15,8 @@
 -  [[https://aaweb.ap-cloud.com/web_morioka-u/syllabus/se0020.aspx?me=EU&opi=se0010][シラバス]]
 
 ** 講義のためのサイト
-    - 講義の入り口 http://masayuki054.hatenablog.com/entry/2016/04/04/113109 done
-    - お知らせ  https://plus.google.com/u/0/communities/118178418897087393166 done
-    - 講義マップ http://mindmeister.com introduced
+    - 講義の入り口 http://masayuki054.hatenablog.com/entry/2016/09/20/211158
+    - お知らせ  https://plus.google.com/u/0/communities/109024061748990090847
 
 ** 講義を受けるための準備
 
@@ -27,8 +26,8 @@
 
 
 **** 04/12 [[./01.org][情報演習2016/01]] 4/12
-   - [[./ガイダンス_2016.org][ガイダンス]] done
-   - [[./情報処理2016_IDとパスワード][IDとパスワード]] done
+   - [[./lects/ガイダンス.org][ガイダンス]] done
+   - [[./pc/IDとパスワード.org][IDとパスワード]] done
    - [[情報処理_コンピュータ利用環境の確認.org][コンピュータとインタネットの利用環境]] 
      - 盛大ホームページ http://www.morioka-u.ac.jp done
      - 盛大学務ポータル https://morioka-u.ap-cloud.com/login done
@@ -40,6 +39,7 @@
      - 講義の入り口 http://masayuki054.hatenablog.com/entry/2016/04/04/113109 done
      - Googleアカウント http://google.com  continued
      - 講義マップ http://mindmeister.com introduced
+
 
 **** 04/19 第2回 [[./02.org][情報演習2016/02]]
 

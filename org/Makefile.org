@@ -1,0 +1,4 @@
+#+BEGIN_SRC makefile :tangle Makefile
+cp *.html ../docs
+
+#+END_SRC
