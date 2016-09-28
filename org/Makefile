@@ -38,7 +38,7 @@ s.html: $(wildcard s/*.org)
 	$(HOME)/bin/org2html $<
 	cp $@ $(SITE)/$(DIR)
 	git stage  $(DIR)/$@ 
-	git commit -m "daily $(DATE)"
+	git commit -a -m "daily $(DATE)"
 
 .PHONY: clean
 clean:
