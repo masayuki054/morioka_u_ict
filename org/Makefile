@@ -44,4 +44,4 @@ s.html: $(wildcard s/*.org)
 .PHONY: clean
 clean:
 	rm -f *.html
-	rm *~ */*~
+	rm -f *~ */*~
