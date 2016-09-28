@@ -1,10 +1,13 @@
+#+include: lects/contents.org :minlevel 1
 * 講義資料
 ** [[./guidance.org][ガイダンス]]
+
 ** [[./pc.org][PCの利用]]
 ** [[./typing.org][タイピング]]
 
 ** [[./google.org][Googleを利用しよう]]
 ** [[./web.org][Webを利用しよう]]
-** 
+** [[./text.org][情報処理演習教科書のまとめと課題]]
+** [[./windows.org][Windowsについて]]
 
-#+include: 2016.org :minlevel 1
+#+include: lects/2016.org :minlevel 1

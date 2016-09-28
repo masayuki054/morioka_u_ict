@@ -1,6 +1,6 @@
 #+setupfile: ~/COMM/public_html/org-html-theme/index-bigblow-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
-#+title: top
+#+title: 
 #+include: 
 
 #+include: contents.org :minlevel 1
