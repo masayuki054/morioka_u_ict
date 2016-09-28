@@ -1,4 +1,4 @@
-#+macro: hl [[http://masayuki054.github.ip/morioka_u_ict/$1.html#$2][$2]]
+#+macro: hl [[http://masayuki054.github.io/morioka_u_ict/$1.html#$2][$2]]
 #+macro: ol [[../$1./$2.org][@]]
 #+macro: ll {{{hl($1,$2)}}}{{{ol($1,$2)}}}
 
