@@ -1,0 +1,5 @@
+#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+
+#+include: s/contents.org :minlevel 1
+
