@@ -1,4 +1,4 @@
-#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
+#+setupfile: ~/COMM/Lects/ict/git/info/index-bigblow-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
 #+title: 
 #+include: contents.org :minlevel 1
