@@ -1,18 +1,12 @@
 ** 講義用アプリをUSBに準備する
 
-4ギガバイト以上のUSBメモリを準備してください。
-
-学生用の共有フォルダ
+<2016-09-29 木> この章の内容は，古いです。
 
 #+BEGIN_EXAMPLE
     学生フォルダ　/ H25情報処理基礎（鈴木）/ 
 #+END_EXAMPLE
 
-下記のページにしたがってUSBメモリを設定してください。 -
-[[./情報処理_USBメモリ.org][情報処理/USBメモリ]] -
-[[./情報処理_USBメモリの使い方.org][情報処理/USBメモリの使い方]]
+PortableApps でよく使うのは， 
+- Webブラウザの Firefox 
+- オフィスソフトウェアのLibreOffice
 
-PortableApps でよく使うのは， - Webブラウザの Firefox -
-オフィスソフトウェアのLibreOffice
-
-Apps で使うのは - BEITEL - Dropbox

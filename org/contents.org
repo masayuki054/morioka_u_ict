@@ -1,10 +1,10 @@
 #+include: lects/contents.org :minlevel 1
 * 講義資料
-** [[./guidance.org][ガイダンス]]
 
+** [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]]
+** [[./guidance.org][ガイダンス]]
 ** [[./pc.org][PCの利用]]
 ** [[./typing.org][タイピング]]
-
 ** [[./google.org][Googleを利用しよう]]
 ** [[./web.org][Webを利用しよう]]
 ** [[./text.org][情報処理演習教科書のまとめと課題]]
@@ -20,7 +20,10 @@
 
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
-** [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][講義資料ドライブ]] @GoogleDrive
+** [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][講義資料ドライブ]] @GoogleDrive
+
+
+** [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][情報処理演習用ドライブ]] @GoogleDrive
 
 ** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
 
