@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<title>情報処理応用 Windows</title>
+<!-- 2016-09-28 水 13:17 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://nat054.ddo.jp/~masayuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://nat054.ddo.jp/~masayuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="http://nat054.ddo.jp/~masayuki/org-html-theme/styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理応用 Windows</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Windows がしてくれること</a>
+<ul>
+<li><a href="#sec-1-1">1.1. 文書の保存と管理（をWindowsがしてくれる）</a></li>
+<li><a href="#sec-1-2">1.2. アプリ(プログラム)の実行</a></li>
+<li><a href="#sec-1-3">1.3. アプリ</a>
+<ul>
+<li><a href="#sec-1-3-1">コマンドプロンプト</a></li>
+<li><a href="#sec-1-3-2">プログラム言語</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-2">2. ドライブとフォルダ</a>
+<ul>
+<li><a href="#sec-2-1">2.1. エクスプローラ</a></li>
+<li><a href="#sec-2-2">2.2. ドライブ</a></li>
+<li><a href="#sec-2-3">2.3. フォルダ</a>
+<ul>
+<li><a href="#sec-2-3-1">フォルダの作成方法</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-4">2.4. 4.5　USBメモリの使い方</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. ショートカット</a>
+<ul>
+<li><a href="#sec-3-1">3.1. ショートカットとは</a></li>
+<li><a href="#sec-3-2">3.2. ショートカットの作り方</a></li>
+<li><a href="#sec-3-3">3.3. ショートカットの練習</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. snipping tool による画面のキャプチャ</a>
+<ul>
+<li><a href="#sec-4-1">4.1. 「Snipping tool」を動かす</a></li>
+<li><a href="#sec-4-2">4.2. ウィンドウを切りとりを指定</a></li>
+<li><a href="#sec-4-3">4.3. ウィンドウの選択</a></li>
+<li><a href="#sec-4-4">4.4. 保存</a></li>
+<li><a href="#sec-4-5">4.5. 関連サイト</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. よく使うものを素早く開こう</a>
+<ul>
+<li><a href="#sec-5-1">5.1. 講義用Wikiを素早く開く</a></li>
+<li><a href="#sec-5-2">5.2. 講義用のフォルダを素早く開いてください</a></li>
+<li><a href="#sec-5-3">5.3. 講義用アプリを素早く開く</a></li>
+<li><a href="#sec-5-4">5.4. USB</a></li>
+<li><a href="#sec-5-5">5.5. ドロップボックスを素早く開いてください</a>
+<ul>
+<li><a href="#sec-5-5-1">Webブラウザで開く方法</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-6">5.6. 開いたアプリのウィンドウを素早く切り替えてください</a>
+<ul>
+<li><a href="#sec-5-6-1">タスクバー</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-6">6. ショートカットの作成</a></li>
+<li><a href="#sec-7">7. 自分の情報処理演習フォルダのスクリーンショットの作成</a></li>
+<li><a href="#sec-8">8. USBメモリ</a>
+<ul>
+<li><a href="#sec-8-1">8.1. 使う目的</a></li>
+<li><a href="#sec-8-2">8.2. 講義用アプリをUSBに準備する</a></li>
+<li><a href="#sec-8-3">8.3. 使い方の基本</a>
+<ul>
+<li><a href="#sec-8-3-1">USBメモリの内容を見る</a></li>
+<li><a href="#sec-8-3-2">USBメモリを取り出す</a></li>
+<li><a href="#sec-8-3-3">USBへコピーする</a>
+<ul>
+<li><a href="#sec-8-3-3-1">ドラッグ &amp; ドロップ</a></li>
+<li><a href="#sec-8-3-3-2">コピー &amp; ペースト</a></li>
+</ul>
+</li>
+<li><a href="#sec-8-3-4">USBからコピーする</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-9">9. バックアップと同期</a>
+<ul>
+<li><a href="#sec-9-1">9.1. バックアップとは</a></li>
+<li><a href="#sec-9-2">9.2. ２つのフォルダを同一に保つ（同期）とは</a></li>
+</ul>
+</li>
+<li><a href="#sec-10">10. 2014年度以前のこと</a>
+<ul>
+<li><a href="#sec-10-1">10.1. ポータブルアップスのアプリを素早く開こう</a></li>
+<li><a href="#sec-10-2">10.2. ドロップボックスを素早く開いてください</a>
+<ul>
+<li>
+<ul>
+<li><a href="#sec-10-2-0-1">アプリで開く方法</a></li>
+<li><a href="#sec-10-2-0-2">Webブラウザで開く方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://masayuki054.github.io/morioka_u_ict">情報処理応用ホーム</a>
+</p>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-27 火&gt;</span></span> まだ書きかけです。 
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Windows がしてくれること</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 文書の保存と管理（をWindowsがしてくれる）</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>文書をファイルに保存する
+</li>
+<li>ファイルをフォルダに保存する
+</li>
+<li>ファイルの中にどんな文書が保存されているかを，拡張子で表す
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> アプリ(プログラム)の実行</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+プログラムの実行をしてくれる
+</p>
+
+<p>
+プログラムが実行されると、そのプログラムが下記のことを行う: 
+</p>
+<ul class="org-ul">
+<li>データが入力され、 
+</li>
+<li>入力データの処理を行い 
+</li>
+<li>データを出力する
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> アプリ</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1">コマンドプロンプト</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>プログラムの実行
+</li>
+
+<li>プログラムの名前を使って，Windows へ指示をだす
+</li>
+
+<li>指示の組み合わせを書くことができる バッチファイル
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2">プログラム言語</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<ul class="org-ul">
+<li>プログラムを書くための言語
+</li>
+
+<li>プログラム言語で書かれたファイルは，Windows で動かすことができる
+</li>
+
+<li>プログラム言語で書かれたファイルは，
+
+<ul class="org-ul">
+<li>人間が読み書き理解できて，
+</li>
+<li>プログラム化できて，
+</li>
+<li>Windows が実行できる
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> ドライブとフォルダ</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> エクスプローラ</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<b>エクスプローラ</b> (windows-key + e) または <b>コンピュータ</b> から探索サービスを開始
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> ドライブ</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<b>ドライブ</b> は，装置のこと。下記などがある:
+</p>
+
+<ul class="org-ul">
+<li>ハードディスク・ドライブ C:, D: 
+</li>
+<li>USBなどのリムーバブル・ドライブ F:, G:, &#x2026; 
+</li>
+<li>ネットワーク・ドライブ
+</li>
+</ul>
+
+<p>
+<b>C: ドライブの検索</b> 
+</p>
+<ul class="org-ul">
+<li>どんなフォルダやファイルがあるのか，探索してみましょう。
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> フォルダ</h3>
+<div class="outline-text-3" id="text-2-3">
+</div><div id="outline-container-sec-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1">フォルダの作成方法</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ul class="org-ul">
+<li>フォルダで右クリック，
+</li>
+<li>コンテキスト・メニューから，新規作成 -&gt; フォルダ を選ぶ
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> 4.5　USBメモリの使い方</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+<b>取り出し方</b> 
+</p>
+<ul class="org-ul">
+<li>ドライブを表示し （コンピュータやエクスプローラから）， 
+</li>
+<li>ドライブを選択（クリック）し， 
+</li>
+<li>右クリックしドライブに対してできる指示をメニューで表示し， 
+</li>
+<li>取り出しを選ぶ
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> ショートカット</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> ショートカットとは</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+何ですか？
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> ショートカットの作り方</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+どうやって作りますか？
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> ショートカットの練習</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>自分の情報処理応用フォルダを素早く開いてください
+</li>
+<li>講義用フォルダを素早く開いてください
+</li>
+<li>USBメモリ中の情報処理応用フォルダを素早く開いてください
+</li>
+<li>ドロップボックスを素早く開いてください
+</li>
+</ul>
+
+<p>
+すべてのショートカットを，どの端末室でもすぐに使え，PCの電源を切っても残っている場所に保存しましょう
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> snipping tool による画面のキャプチャ</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> 「Snipping tool」を動かす</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+： 「Windowsキー」 -&gt; 「全てのプログラム」-&gt; 「アクセサリ」-&gt; 「Snipping
+Tool」
+</p>
+
+<p>
+あるいは，スタートメニューの検索で Snipping を探します。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> ウィンドウを切りとりを指定</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+新規作成三角をクリックし，ウィンドウの領域切り取りを選ぶ
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> ウィンドウの選択</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+キャプチャするウィンドウをクリックして選ぶ
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> 保存</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+名前をつけて保存すると，ピクチャフォルダに保存される
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> 関連サイト</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+<a href="http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8">http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> よく使うものを素早く開こう</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+<b>どこ</b> に <b>何</b> があるかを理解する
+</p>
+
+<p>
+<b>どこ</b> に <b>何</b> があるかをすべて覚えておくのは大変
+</p>
+
+<p>
+<b>どこ</b> に <b>何</b> があるかをできるだけコンピュータに記録しよう
+</p>
+
+<p>
+それが*<i>ショートカット</i>や<i>リンク</i>
+</p>
+
+<p>
+ショートカットやリンクは*デスクトップ*においておくと使いやすいのだけれど，
+盛大のパソコン環境では，電源を切ったり，ログオフすると，自分のデスクトップは初期化されてしまう。
+</p>
+
+<p>
+ので，*自分のフォルダ*か*USBメモリ*に保存するのがいいかも。
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> 講義用Wikiを素早く開く</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+URLを，ブラウザのお気に入りや履歴に保存して，使う
+</p>
+
+<ul class="org-ul">
+<li>このWikiのアドレス (URL) は
+
+<p>
+<a href="http://www.ictnet.ne.jp/~fumito/j2012">http://www.ictnet.ne.jp/~fumito/j2012</a>
+</p>
+</li>
+</ul>
+
+<p>
+URLを，常に素早くアクセスできる場所に，保存して使う
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> 講義用のフォルダを素早く開いてください</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+フォルダのショートカットを作り，常に素早くアクセスできる場所に，保存して使う
+</p>
+
+<ul class="org-ul">
+<li>講義用フォルダを素早く開いてください
+</li>
+</ul>
+
+<dl>
+<dt></dt>
+<dd> 
+
+<p>
+コンピュータ/生徒用サーバ/情報処理鈴木2016
+</p>
+
+</dd>
+</dl>
+
+<ul class="org-ul">
+<li>自分の情報処理応用フォルダを素早く開いてください
+
+<dl>
+<dt></dt>
+<dd> 
+
+<p>
+コンピュータ/ライブラリ/マイドキュメント/情報処理演習
+</p>
+
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 講義用アプリを素早く開く</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>講義用アプリのショートカットを作り，わかりやすい所に置いておく
+</li>
+</ul>
+
+<dl>
+<dt></dt>
+<dd> 
+
+<p>
+コンピュータ/ライブラリ/マイドキュメント/情報処理演習/講義用アプリの中のフォルダからアプリケーションの本体を見つけ，ショートカットを作成し，ショートカットを切り取り，わかりやすいところで貼り付ける
+</p>
+
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> USB</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+USBメモリ中の情報処理演習フォルダを素早く開いてください
+</p>
+
+<ul class="org-ul">
+<li>Windows の「コンピュータ」からUSBドライブを選び開く
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> ドロップボックスを素早く開いてください</h3>
+<div class="outline-text-3" id="text-5-5">
+</div><div id="outline-container-sec-5-5-1" class="outline-4">
+<h4 id="sec-5-5-1">Webブラウザで開く方法</h4>
+<div class="outline-text-4" id="text-5-5-1">
+<ul class="org-ul">
+<li>インターネットエクスプローラやFirefox を使って，
+</li>
+<li><a href="http://dropbox.com">http://dropbox.com</a> を開き，*suzumasa@morioka-u.ac.jp*
+<b>もりおかだいがくいいところ</b> でログインする
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> 開いたアプリのウィンドウを素早く切り替えてください</h3>
+<div class="outline-text-3" id="text-5-6">
+<ul class="org-ul">
+<li>Windowsキーとタブキーの同時押し
+</li>
+<li>ALTキーとタブキーの同時押し
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-5-6-1" class="outline-4">
+<h4 id="sec-5-6-1">タスクバー</h4>
+<div class="outline-text-4" id="text-5-6-1">
+<ul class="org-ul">
+<li>アプリのタブにマウスを重ねる
+
+<ul class="org-ul">
+<li>エクスプローラ
+
+<ul class="org-ul">
+<li>開いているフォルダ一覧と選択
+</li>
+</ul>
+</li>
+
+<li>例えばExcel
+
+<ul class="org-ul">
+<li>開いているExcel文書のウィンドウ一覧と選択
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> ショートカットの作成</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+<a href="./情報処理_Windows_素早く開こう.html">情報処理/Windows/素早く開こう</a>を参考に，
+</p>
+
+<p>
+自分の情報処理演習フォルダに，次のリンクやショートカットを作成してください。
+</p>
+
+<ul class="org-ul">
+<li>講義用Wikiのインターネットショートカット
+
+<ul class="org-ul">
+<li>ブラウザで開いたページのアイコンをマウスでドラッグ
+</li>
+</ul>
+</li>
+
+<li>同じく，寿司打の（インターネット）ショートカット
+</li>
+<li>同じく，自分のWikiページの（インターネット）ショートカット
+</li>
+
+<li>生徒用サーバの情報処理2016鈴木へのショートカット
+
+<ul class="org-ul">
+<li>生徒用サーバにショートカットがあるので，それを自分のフォルダにドラッグ
+</li>
+</ul>
+</li>
+
+<li>Firefox アプリのショートカット
+
+<ul class="org-ul">
+<li>講義用アプリの中のMozilla Firefoxフォルダの中の，firefox
+アプリケーションを右クリック
+</li>
+</ul>
+</li>
+
+<li>TeraPad アプリのショートカット
+
+<ul class="org-ul">
+<li>Firefox とほぼ同じやり方
+</li>
+</ul>
+</li>
+
+<li>Dropbox の自分のフォルダ
+
+<ul class="org-ul">
+<li>Dropboxの自分のフォルダを右クリックし，共有を選ぶと，URLがコピーされている
+</li>
+<li>右クリックしてURLをコピーする
+</li>
+<li>自分のフォルダを開き，右クリック，新規作成，ショートカットを選び，コピーしておいたURLを貼り付けて，OK
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 自分の情報処理演習フォルダのスクリーンショットの作成</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>自分の情報処理演習フォルダを表示して，
+</li>
+<li>[[./スクリーンショット.org][スクリーンショット]にしたがい,
+</li>
+<li>自分の情報処理演習フォルダのスクリーンショットを撮り，
+</li>
+<li>自分の GoogleDrive フォルダにアップしてください。
+</li>
+<li>それを見て，先生は，ショートカットがうまく作れているかを確かめます。
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> USBメモリ</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> 使う目的</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+講義で使うアプリと，講義で作成した文書などのデータを保存し，持ち運びします。
+</p>
+
+<p>
+自宅でも同じアプリが同じ状況で使えます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> 講義用アプリをUSBに準備する</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+講義資料フォルダから，指定のものを，自分のUSBにコピーしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3"><span class="section-number-3">8.3</span> 使い方の基本</h3>
+<div class="outline-text-3" id="text-8-3">
+</div><div id="outline-container-sec-8-3-1" class="outline-4">
+<h4 id="sec-8-3-1">USBメモリの内容を見る</h4>
+<div class="outline-text-4" id="text-8-3-1">
+<ul class="org-ul">
+<li>新たに差した場合:
+
+<ul class="org-ul">
+<li>Windows からどう処理するか聞かれる。
+</li>
+<li>フォルダを開くを選択すると，*エクスプローラ* が開かれ，
+内容が表示される。
+</li>
+</ul>
+</li>
+
+<li>すでに差してある場合:
+
+<ul class="org-ul">
+<li>[Windows-key =&gt; コンピュータ] で <b>エクスプローラ</b> を開く
+</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブをクリック
+する。
+</li>
+
+<li>エクスプローラのウィンドウに内容が表示される。
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3-2" class="outline-4">
+<h4 id="sec-8-3-2">USBメモリを取り出す</h4>
+<div class="outline-text-4" id="text-8-3-2">
+<ul class="org-ul">
+<li>エクスプローラを開く
+</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブを右クリック
+し，[取り出し]を選択
+</li>
+
+<li>Windows から「ハードウェアの取り外し」メッセージがでたら，USBメモリを取り出す
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3-3" class="outline-4">
+<h4 id="sec-8-3-3">USBへコピーする</h4>
+<div class="outline-text-4" id="text-8-3-3">
+<p>
+コピーのやり方を二通り紹介します:
+</p>
+</div>
+
+
+<div id="outline-container-sec-8-3-3-1" class="outline-5">
+<h5 id="sec-8-3-3-1">ドラッグ &amp; ドロップ</h5>
+<div class="outline-text-5" id="text-8-3-3-1">
+<ol class="org-ol">
+<li>エクスプローラで，コピーしたいファイルやフォルダがある場所を開きま
+す。
+</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開きます。
+</li>
+
+<li>コピーしたいファイルやフォルダをマウスで選択し，
+開いてあった USBのウィンドウへドラッグします。
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3-3-2" class="outline-5">
+<h5 id="sec-8-3-3-2">コピー &amp; ペースト</h5>
+<div class="outline-text-5" id="text-8-3-3-2">
+<p>
+あるいは
+</p>
+
+<ol class="org-ol">
+<li>コピーしたいファイルやフォルダをマウスで選択し， 右クリックし，「コ
+ピー」を選ぶ。
+</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開き, 右クリックし，
+「貼り付け」を選ぶと，コピーが始まる。
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-sec-8-3-4" class="outline-4">
+<h4 id="sec-8-3-4">USBからコピーする</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> バックアップと同期</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+<a href="http://freesoft-100.com/pasokon/backup.html">フリーソフト100のバックアップソフ</a>ト
+</p>
+
+<ul class="org-ul">
+<li>バックアップ用ソフト Backup
+</li>
+
+<li>同期用ソフト RealSync
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> バックアップとは</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+普段使っているファイルやフォルダを，ある時点で，保存すること。保存され
+た中身をバックアップと呼ぶことも多い。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> ２つのフォルダを同一に保つ（同期）とは</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+別々の保存場所にある2つのフォルダのファイル内容を同一に保つソフト。
+データのバックアップをリアルタイムに行うことがでる。
+</p>
+
+<p>
+USBメモリーに対して利用すると、パソコンで編集しているファイルとUSBメモ
+リー内のファイル内容の同期を取り、ファイル内容を一定に保つことがでる。
+</p>
+
+<p>
+パソコン上のファイルを編集して作業を終えて、家に帰ってみたらUSBメモリー
+内容は編集前のままだった・・・同期さえとれば、そんな失敗をすることがな
+くなる。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 2014年度以前のこと</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+以下は古い内容です。過去の講義記録のために残してあります。(2016.5
+<i>s-:</i>)
+</p>
+</div>
+
+<div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> ポータブルアップスのアプリを素早く開こう</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+ログイン後，始めて動かす場合 - ポータブルアップスがあるフォルダを開き，
+</p>
+<ul class="org-ul">
+<li>*Start*をダブルクリックして，動かす -
+</li>
+</ul>
+<p>
+メニューが現れるので，そこから目的のアプリを'<b>クリック</b>'
+</p>
+
+<p>
+二回目からは， -
+ウィンドウの最下部にある，タスクバーにポータブルアップスのアイコンがある
+</p>
+<ul class="org-ul">
+<li>クリックするとメニューが現れるので，そこから目的のアプリを'<b>クリック</b>'
+</li>
+
+<li>USBのポータブルアップスの firefox を開いてください
+</li>
+<li>USBのポータブルアップスの Calc を開いてください
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> ドロップボックスを素早く開いてください</h3>
+<div class="outline-text-3" id="text-10-2">
+</div><div id="outline-container-sec-10-2-0-1" class="outline-5">
+<h5 id="sec-10-2-0-1">アプリで開く方法</h5>
+<div class="outline-text-5" id="text-10-2-0-1">
+<ul class="org-ul">
+<li>アプリ（ファイル）の在り処は，USBメモリか自分のフォルダにある，USBフォルダ中
+
+<ul class="org-ul">
+<li>'<b>/USB/Apps/Dropbox/bin/dropbox.exe</b>' がアプリ（ファイル）
+</li>
+<li>このアプリファイルのショーットカットを作り，使いやすい場所に置く
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-10-2-0-2" class="outline-5">
+<h5 id="sec-10-2-0-2">Webブラウザで開く方法</h5>
+<div class="outline-text-5" id="text-10-2-0-2">
+<ul class="org-ul">
+<li>インターネットエクスプローラやFirehox を使って，
+</li>
+<li><a href="http://dropbox.com">http://dropbox.com</a> を開き，*suzumasa@morioka-u.ac.jp*
+<b>もりおかだいがくいいところ</b> でログインする
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2016-09-28 水 13:17</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.50.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
