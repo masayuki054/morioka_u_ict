@@ -31,10 +31,11 @@ all: $(HTMLS)
 	git push -u origin master
 
 renewal: 
+	touch *.org
 	touch */*.org
 	make all
 
-index.html: contents.org $(wildcard */*.org)
+index.html: 
 guidance.html: $(wildcard lects/*.org)
 google.html: $(wildcard web/*.org)
 pc.html: $(wildcard pc/*.org)
@@ -53,7 +54,7 @@ s.html: $(wildcard s/*.org)
 .org.html: info/common-header.org 
 	$(HOME)/bin/org2html $<
 	cp $@ $(SITE)/$(DIR)
-	git stage  $(DIR)/$@ 
+	git stage  $(SITE)/$@ 
 	git commit -a -m "daily $(DATE)"
 
 .PHONY: clean
