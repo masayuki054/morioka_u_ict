@@ -11,3 +11,23 @@
 ** [[./windows.org][Windowsについて]]
 ** [[./web.org][Webを利用しよう]]
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
+
+* 講義関連サイト
+
+** 講義の入り口 [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]] @github.io
+
+** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
+
+** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
+
+** [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][講義資料ドライブ]] @GoogleDrive
+
+** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
+
+** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
+
+** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
+
+
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
+
