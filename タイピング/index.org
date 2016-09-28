@@ -1,4 +1,4 @@
-#+setupfile: ~/COMM/public_html/org-html-theme/index-sos-header.setup
+#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
 #+title: タイピング 練習・記録・レポート
 #+include: contents.org

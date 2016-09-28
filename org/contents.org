@@ -11,3 +11,5 @@
 ** [[./windows.org][Windowsについて]]
 
 #+include: lects/2016.org :minlevel 1
+** [[./web.org][Webを利用しよう]]
+** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]

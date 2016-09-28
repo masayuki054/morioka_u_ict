@@ -1,4 +1,64 @@
+* makefile
+
+** header 
+
 #+BEGIN_SRC makefile :tangle Makefile
-cp *.html ../docs
+MYHOME = ../
+ORG = $(MYHOME)/org/
+SITE = $(MYHOME)/docs/
+DIR = ./
+SHELL = zsh
+DATE = `date`
+#+END_SRC
+
+** pages
+
+#+BEGIN_SRC makefile :tangle Makefile
+HTMLS = index.html \
+guidance.html \
+google.html \
+pc.html \
+typing.html \
+web.html \
+windows.html \
+text.html \
+s.html \
+#+END_SRC
+
+#+BEGIN_SRC makefile :tangle Makefile
+
+all: $(HTMLS)
+	git push -u origin master
+
+renewal: 
+	touch */*.org
+	make all
+
+index.html: contents.org $(wildcard */*.org)
+guidance.html: $(wildcard lects/*.org)
+google.html: $(wildcard web/*.org)
+pc.html: $(wildcard pc/*.org)
+typing.html: $(wildcard typing/*.org)
+web.html: $(wildcard web/*.org)
+windows.html: $(wildcard windows/*.org)
+text.html: $(wildcard text/*.org)
+s.html: $(wildcard s/*.org)
+#+END_SRC
+
+** generating html rules
+
+#+BEGIN_SRC makefile :tangle Makefile
+
+.SUFFIXES: .org .html
+.org.html: info/common-header.org 
+	$(HOME)/bin/org2html $<
+	cp $@ $(SITE)/$(DIR)
+	git stage  $(DIR)/$@ 
+	git commit -m "daily $(DATE)"
+
+.PHONY: clean
+clean:
+	rm -f *.html
+	rm *~ */*~
 
 #+END_SRC

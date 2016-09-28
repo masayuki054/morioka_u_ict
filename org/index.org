@@ -1,7 +1,5 @@
-#+setupfile: ~/COMM/public_html/org-html-theme/index-bigblow-header.setup
+#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
 #+include: ~/COMM/Lects/ict/git/info/common-header.org
 #+title: 
-#+include: 
-
 #+include: contents.org :minlevel 1
 
