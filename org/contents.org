@@ -6,10 +6,10 @@
 ** [[./pc.org][PCの利用]]
 ** [[./typing.org][タイピング]]
 ** [[./google.org][Googleを利用しよう]]
-** [[./web.org][Webを利用しよう]]
+** [[./firefox.org][Firefoxを利用しよう]]
+** [[./web.org][Webアプリを利用しよう]] 
 ** [[./text.org][情報処理演習教科書のまとめと課題]]
 ** [[./windows.org][Windowsについて]]
-** [[./web.org][Webを利用しよう]]
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
 
 * 講義関連サイト
@@ -21,8 +21,6 @@
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
 ** [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][講義資料ドライブ]] @GoogleDrive
-
-
 ** [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][情報処理演習用ドライブ]] @GoogleDrive
 
 ** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
@@ -30,7 +28,6 @@
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
 
 ** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
-
 
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
 

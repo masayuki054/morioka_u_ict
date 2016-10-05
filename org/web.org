@@ -3,6 +3,6 @@
 #+title: Webアプリ
 #+include: 
 
-#+include: web/Firefoxの使い方.org 
+#+include: web/Firefox.org 
 #+include: web/Simplenote.org  :minlevel 1
 #+include: web/GoogleDocs.org      :minlevel 1

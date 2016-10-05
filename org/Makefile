@@ -7,6 +7,7 @@ SHELL = zsh
 DATE = `date`
 
 HTMLS = index.html \
+firefox.html \
 guidance.html \
 google.html \
 pc.html \
@@ -24,7 +25,10 @@ renewal:
 	touch */*.org
 	make all
 
+pages = docs/%.html
+
 index.html: 
+firefox.html: $(wildcard web/*.org)
 guidance.html: $(wildcard lects/*.org)
 google.html: $(wildcard web/*.org)
 pc.html: $(wildcard pc/*.org)
