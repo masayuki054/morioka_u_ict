@@ -1,0 +1,25 @@
+* セキュリティ
+
+** セキュリティ対策について
+
+[[http://www.ipa.go.jp/security/antivirus/shiori.html][対策のしおり：IPA 独立行政法人 情報処理推進機構]] の中から，基本的なもの
+を選んでみました:
+
+- [[https://www.ipa.go.jp/security/antivirus/documents/09_hazimete.pdf][セキュリティこぼれ話：初めての情報セキュリティ対策 - 09_hazimete.pdf]]
+
+- [[http://www.ipa.go.jp/security/y2k/virus/cdrom/index.html][ウイルス対策 スクール]] (ウイルスとは何かを知ろう)
+
+- [[https://www.ipa.go.jp/security/antivirus/documents/01_virus.pdf][ウイルス対策 01_virus.pdf]] 
+
+- [[https://www.ipa.go.jp/security/antivirus/documents/04_fusei.pdf][不正アクセス対策のしおり - 04_fusei.pdf]]
+
+
+読んでまとめを作ってみると良いと思います。余裕があれば，講義中にやりた
+いのですが。
+
+** セキュリティソフトについて
+
+下記のサイトで調べてみましょう：
+
+- [[http://securitysoft.asia/sougou/free/][無料セキュリティソフトの比較【2016年版】]]
+

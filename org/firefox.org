@@ -1,0 +1,6 @@
+#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
+#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+title: Firefox
+#+include: 
+
+#+include: web/Firefox.org :minlevel 1
