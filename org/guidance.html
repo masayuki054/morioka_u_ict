@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<title>情報処理応用 ガイダンス</title>
+<!-- 2016-11-09 水 20:45 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理応用 ガイダンス</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. ガイダンス</a>
+<ul>
+<li><a href="#sec-1-1">1.1. IDとパスワードの確認</a></li>
+<li><a href="#sec-1-2">1.2. 講義ページを見る</a></li>
+<li><a href="#sec-1-3">1.3. 講義の受け方について</a></li>
+<li><a href="#sec-1-4">1.4. 大切なこころ構えについて</a></li>
+<li><a href="#sec-1-5">1.5. 自己紹介</a></li>
+<li><a href="#sec-1-6">1.6. パソコンの使い方</a></li>
+<li><a href="#sec-1-7">1.7. シラバスの説明</a></li>
+<li><a href="#sec-1-8">1.8. 講義内容の提案</a></li>
+<li><a href="#sec-1-9">1.9. 教えるときに気をつけたい10のこと</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://masayuki054.hatenablog.com/entries/2016/09/20">ポータル</a> /
+<a href="http://masayuki054.github.io/morioka_u_ict">ホーム</a> / 
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/%E8%AC%9B%E7%BE%A9%E4%B8%AD%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.org">講義中のお知らせ</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> ガイダンス</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> IDとパスワードの確認</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="http://masayuki054.github.io/morioka_u_ict/pc.html#ID%E3%81%A8%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89">IDとパスワード</a><a href="../pc./IDとパスワード.html"> @</a>
+
+<ul class="org-ul">
+<li>3種類のIDが, 何のためにあるか, 理解しましょう。
+</li>
+</ul>
+</li>
+
+<li>パソコン用のIDとパスワードを使ってパソコンにログインしましょう。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 講義ページを見る</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>パソコン起動と終了。
+</li>
+
+<li>配布されたパソコン用のIDとパスワードを使って，パソコンにログインしましょう。
+</li>
+
+<li>ブラウザ （インターネットエクスプローラー）を動かしましょう。
+</li>
+
+<li>講義のページは、「hatena 盛岡大学 情報処理応用」で検索して見つけてくだ
+さい。
+</li>
+
+<li>見つけたら，「お気にいり」に登録してください。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 講義の受け方について</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>質問してください。意見をいってください
+</li>
+
+<li>同じことを何回でも質問してもいいよ
+</li>
+
+<li>友達同士で教えあってください。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 大切なこころ構えについて</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>仕組みを考えること
+</li>
+
+<li>本質を捉えること
+</li>
+
+<li>情報リテラシの観点から考えること
+</li>
+
+<li>具体的な作業を繰り返すことで，抽象化した知識とすること
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 自己紹介</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li><a href="http://masayuki054.github.io/morioka_u_ict/s.html#%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B">自己紹介</a><a href="../s./自己紹介.html"> @</a>
+</li>
+
+<li><a href="http://masayuki054.hatenablog.com/entry/2013/05/17/012222">非常勤講師を引き受けるにあたって思った事</a>
+
+<ul class="org-ul">
+<li><a href="http://masayuki054.hatenablog.com/entry/2013/06/24/172938">講義してみて思った事</a>
+</li>
+</ul>
+</li>
+
+<li><a href="http://nat054.ddo.jp/~masayuki/lects">大学の講義に関する自分のページ</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> パソコンの使い方</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+端末室のパソコンの使い方
+</p>
+
+<ul class="org-ul">
+<li>起動と終了
+</li>
+<li>ログイン
+</li>
+<li>出席登録（学生番号と氏名の入力）してください。
+</li>
+<li>アプリケーションを動かす
+</li>
+<li>ブラウザを動かす
+</li>
+<li>先生の画面を学生さんのモニタに映す
+</li>
+<li>学生さんの画面を見る
+</li>
+<li>先生を呼ぶ
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> シラバスの説明</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+盛岡大学のホームページ <a href="http://www.morioka-u.ac.jp/">http://www.morioka-u.ac.jp/</a> を眺めてみましょう。
+</p>
+
+<ul class="org-ul">
+<li>シラバスを探してみましょう。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> 講義内容の提案</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+皆さんの意見を聞いてから色々決めたいと思いますが，予定していることは，
+下記のようなことがらです：
+</p>
+
+<ul class="org-ul">
+<li>タイピング練習をしましょう (<a href="./typing.html">タイピング</a>)
+
+<ul class="org-ul">
+<li>寿司打 <a href="http://typing.sakura.ne.jp/sushida/">http://typing.sakura.ne.jp/sushida/</a>
+</li>
+
+<li>毎回のタイピング結果を記録をメモし，あとでグラフにし，成長を確認
+しましょう
+</li>
+
+<li>表計算アプリを使って、自分のタイピング練習記録を解析してみましょう
+</li>
+
+<li>自分の練習について考察しレポートを書きましょう
+</li>
+</ul>
+</li>
+
+<li>Office の練習 (<a href="https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg">兼平先生の資料</a>)
+
+<p>
+兼平先生の用意された資料と課題を適宜選んでやりましょう。
+</p>
+
+<p>
+資料の配布と課題レポートの提出方法は変わります。
+</p>
+</li>
+
+<li>コンピュータとインターネットの仕組みを理解しましょう
+</li>
+
+<li><b>デジタル</b> な文書の検索，整理，理解，知識化について
+<ul class="org-ul">
+<li>コンピュータとインターネットを使った文章の書き方を学びましょう。
+</li>
+
+<li>google drive, simplenote, workflowy など使ってみましょう
+</li>
+</ul>
+</li>
+
+<li>デジタルなレポートの作成
+
+<ul class="org-ul">
+<li>大学生らしいレポートの書き方について，調べ，理解し，レポートとしてまとめましょう
+</li>
+
+<li>自分で面白そうなテーマを探し、インターネットで調べて、まとめましょう
+</li>
+</ul>
+</li>
+
+<li>講義を通して得られたことや作成したメモや文書をまとめる
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> 教えるときに気をつけたい10のこと</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+これは僕がこれから講義中に気をつけたいことです。反することも多々あると思いますが，そのときは注意してください。
+</p>
+
+<ul class="org-ul">
+<li><a href="http://topisyu.hatenablog.com/entry/teaching">人に教えるときに気をつけている10のこと</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2016-11-09 水 20:45</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
