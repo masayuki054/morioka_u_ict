@@ -3,3 +3,4 @@
 #+title: タイピング 練習・記録・レポート
 #+include: typing/contents.org :minlevel 1
 
+
