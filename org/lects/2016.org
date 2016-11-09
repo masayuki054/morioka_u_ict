@@ -62,5 +62,10 @@
 #+include: 02.org :minlevel 3
 ** 2016.10.13
 #+include: 03.org :minlevel 3
+** 2016.10.27
+#+include: 04.org :minlevel 3
 
 
+
+** 2016.11.10
+#+include: 05.org :minlevel 3
