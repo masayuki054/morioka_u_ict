@@ -4,7 +4,7 @@
 
 #+include: 練習結果の評価.org :minlevel 1
 
-#+include 練習成果のグラフ化.org :minlevel 1
+#+include: 練習成果のグラフ化.org :minlevel 1
 
 #+include: 練習成果の統計分析.org  :minlevel 1
 

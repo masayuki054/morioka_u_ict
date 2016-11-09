@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>情報処理応用 タイピング 練習・記録・レポート</title>
-<!-- 2016-11-10 木 08:12 -->
+<!-- 2016-11-10 木 08:13 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="masayuki" />
@@ -184,34 +184,66 @@ for the JavaScript code in this tag.
 <li><a href="#sec-4">4. グラフの編集</a></li>
 <li><a href="#sec-5">5. 統計値の記録</a></li>
 <li><a href="#sec-6">6. 直線近似</a></li>
-<li><a href="#sec-7">7. 練習成果の統計処理</a>
+<li><a href="#sec-7">7. 正しいキー数のグラフを描く</a>
 <ul>
-<li><a href="#sec-7-1">7.1. 統計値の計算</a></li>
-<li><a href="#sec-7-2">7.2. 上達度の計算</a></li>
-<li><a href="#sec-7-3">7.3. 正しく打ったキー数とミスタイプ数の関係</a></li>
-<li><a href="#sec-7-4">7.4. 自分の上達度は？</a></li>
+<li><a href="#sec-7-1">7.1. 列を選択する</a></li>
+<li><a href="#sec-7-2">7.2. 別の列を更に選択する</a></li>
+<li><a href="#sec-7-3">7.3. グラフを表示</a></li>
+<li><a href="#sec-7-4">7.4. グラフの保存</a></li>
 </ul>
 </li>
-<li><a href="#sec-8">8. 表計算/数式と関数</a>
+<li><a href="#sec-8">8. タイピング練習のグラフ化</a>
 <ul>
-<li><a href="#sec-8-1">8.1. いい点</a></li>
-<li><a href="#sec-8-2">8.2. 数式を使うための準備</a>
+<li><a href="#sec-8-1">8.1. グラフに描く項目</a></li>
+<li><a href="#sec-8-2">8.2. 正しいキー数とミスタイプ数をグラフにする</a>
 <ul>
-<li><a href="#sec-8-2-1">数式の表示</a></li>
+<li><a href="#sec-8-2-1">表の枠を固定</a></li>
+<li><a href="#sec-8-2-2">正しいキー数のデータ列を選ぶ</a></li>
+<li><a href="#sec-8-2-3">続けてミスタイプ数を選ぶ</a></li>
+<li><a href="#sec-8-2-4">グラフを描く</a></li>
+<li><a href="#sec-8-2-5">グラフを直線（線形）近似して直線化，成長しているかを可視化</a></li>
+<li><a href="#sec-8-2-6">直線の式を表示し，成長の割合を知る</a></li>
 </ul>
 </li>
-<li><a href="#sec-8-3">8.3. 数式の入力</a></li>
-<li><a href="#sec-8-4">8.4. データ</a></li>
-<li><a href="#sec-8-5">8.5. データ列の入力</a></li>
-<li><a href="#sec-8-6">8.6. 関数の利用</a></li>
-<li><a href="#sec-8-7">8.7. ふたつのデータ列が必要な関数</a></li>
-<li><a href="#sec-8-8">8.8. 通し回数列の作り方</a></li>
+<li><a href="#sec-8-3">8.3. グラフに描かれているデータ範囲の確認</a></li>
+<li><a href="#sec-8-4">8.4. データの最終行の追加</a></li>
+<li><a href="#sec-8-5">8.5. 表の先頭に統計値を計算する (あとで)</a></li>
+<li><a href="#sec-8-6">8.6. 自分の成長度の評価 (あとで)</a></li>
+<li><a href="#sec-8-7">8.7. グラフの描き方について</a>
+<ul>
+<li><a href="#sec-8-7-1">グラフの書き方について，推奨する説明サイト</a></li>
 </ul>
 </li>
-<li><a href="#sec-9">9. タイピング練習レポートの作成</a>
+</ul>
+</li>
+<li><a href="#sec-9">9. 練習成果の統計処理</a>
 <ul>
-<li><a href="#sec-9-1">9.1. 目的</a></li>
-<li><a href="#sec-9-2">9.2. 内容</a></li>
+<li><a href="#sec-9-1">9.1. 統計値の計算</a></li>
+<li><a href="#sec-9-2">9.2. 上達度の計算</a></li>
+<li><a href="#sec-9-3">9.3. 正しく打ったキー数とミスタイプ数の関係</a></li>
+<li><a href="#sec-9-4">9.4. 自分の上達度は？</a></li>
+</ul>
+</li>
+<li><a href="#sec-10">10. 表計算/数式と関数</a>
+<ul>
+<li><a href="#sec-10-1">10.1. いい点</a></li>
+<li><a href="#sec-10-2">10.2. 数式を使うための準備</a>
+<ul>
+<li><a href="#sec-10-2-1">数式の表示</a></li>
+</ul>
+</li>
+<li><a href="#sec-10-3">10.3. 数式の入力</a></li>
+<li><a href="#sec-10-4">10.4. データ</a></li>
+<li><a href="#sec-10-5">10.5. データ列の入力</a></li>
+<li><a href="#sec-10-6">10.6. 関数の利用</a></li>
+<li><a href="#sec-10-7">10.7. ふたつのデータ列が必要な関数</a></li>
+<li><a href="#sec-10-8">10.8. 通し回数列の作り方</a></li>
+</ul>
+</li>
+<li><a href="#sec-11">11. タイピング練習レポートの作成</a>
+<ul>
+<li><a href="#sec-11-1">11.1. 目的</a></li>
+<li><a href="#sec-11-2">11.2. 内容</a></li>
 </ul>
 </li>
 </ul>
@@ -600,19 +632,333 @@ for the JavaScript code in this tag.
 <li>トレンド直線の傾きから上達度がわかる
 </li>
 </ul>
-
-<p>
-#+include 練習成果のグラフ化.org :minlevel 1
-</p>
 </div>
 </div>
 
 <div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 練習成果の統計処理</h2>
+<h2 id="sec-7"><span class="section-number-2">7</span> 正しいキー数のグラフを描く</h2>
 <div class="outline-text-2" id="text-7">
 </div><div id="outline-container-sec-7-1" class="outline-3">
-<h3 id="sec-7-1"><span class="section-number-3">7.1</span> 統計値の計算</h3>
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> 列を選択する</h3>
 <div class="outline-text-3" id="text-7-1">
+<p>
+表の枠を固定し，
+表の先頭部と末尾部が同時に表示されている状態で、
+下記のようにデータ列全体を選択する：
+</p>
+
+<ul class="org-ul">
+<li>頭でクリック
+</li>
+<li>お尻でシフト＋クリック（追加選択）
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> 別の列を更に選択する</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+表の先頭部と末尾部が同時に表示されている状態で、
+別の列を選択するには，下記のようにデータ列全体を選択する：
+</p>
+
+<ul class="org-ul">
+<li>頭でコントロールを押しながらクリック
+</li>
+<li>お尻でシフト＋クリック（追加選択）
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3"><span class="section-number-3">7.3</span> グラフを表示</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+列の選択が終わったら:
+</p>
+<ul class="org-ul">
+<li>「挿入」メニューの「おすすめグラフ」タブから，好きなグラフをえら
+ぶ
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-7-4" class="outline-3">
+<h3 id="sec-7-4"><span class="section-number-3">7.4</span> グラフの保存</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+記録表とは別に，グラフを保存しておきましょう。
+</p>
+
+<p>
+「別名で保存」します。名前は「タイピンググラフ」にしましょう。
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> タイピング練習のグラフ化</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> グラフに描く項目</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>正しいキー数
+</li>
+
+<li>ミスタイプ数
+</li>
+
+<li>全入力キー数 （後で）
+</li>
+
+<li>正しいタイプ率 （後で）
+</li>
+
+<li>ミスタイプ率 （後で）
+</li>
+
+<li>それぞれの直線近似式
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> 正しいキー数とミスタイプ数をグラフにする</h3>
+<div class="outline-text-3" id="text-8-2">
+</div><div id="outline-container-sec-8-2-1" class="outline-4">
+<h4 id="sec-8-2-1">表の枠を固定</h4>
+<div class="outline-text-4" id="text-8-2-1">
+<ul class="org-ul">
+<li>見出し行付近と最終行付近を同時に見るために
+</li>
+
+<li>左上隅に枠を入れるセルを選択し，
+</li>
+
+<li>「表示」メニューから「ウィンドウ枠の固定」
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2-2" class="outline-4">
+<h4 id="sec-8-2-2">正しいキー数のデータ列を選ぶ</h4>
+<div class="outline-text-4" id="text-8-2-2">
+<ul class="org-ul">
+<li>上のウィンドウで見出しセルをクリック(えらび)，
+</li>
+<li>下のウィンドウで最終データセルをシフトクリック
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2-3" class="outline-4">
+<h4 id="sec-8-2-3">続けてミスタイプ数を選ぶ</h4>
+<div class="outline-text-4" id="text-8-2-3">
+<ul class="org-ul">
+<li>上のウィンドウで見出しセルをコントロールクリック(追加選択)，
+</li>
+<li>下のウィンドウで最終データセルをシフトクリック
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2-4" class="outline-4">
+<h4 id="sec-8-2-4">グラフを描く</h4>
+<div class="outline-text-4" id="text-8-2-4">
+<ul class="org-ul">
+<li>「挿入」メニューからグラフの種類を選ぶ
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2-5" class="outline-4">
+<h4 id="sec-8-2-5">グラフを直線（線形）近似して直線化，成長しているかを可視化</h4>
+<div class="outline-text-4" id="text-8-2-5">
+<ul class="org-ul">
+<li>直線として見たいグラフをクリックし，すべての点を選び，
+</li>
+<li>その点の上で，右クリックし，近似曲線の書式設定メニューを出す:
+</li>
+
+<li>線形近似を選び，直線を表示させる
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2-6" class="outline-4">
+<h4 id="sec-8-2-6">直線の式を表示し，成長の割合を知る</h4>
+<div class="outline-text-4" id="text-8-2-6">
+<ul class="org-ul">
+<li>直線の上で右クリック，近似曲線の書式設定メニューを出し，
+</li>
+<li>数式の表示をチェックする
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3"><span class="section-number-3">8.3</span> グラフに描かれているデータ範囲の確認</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>グラフ上の点をクリックし，グラフ上の全ての点列を選択する。
+</li>
+<li>すると，グラフ上の全ての点列に対応した，データ列が四角で囲まれ，
+</li>
+<li>正しい範囲になっているか，確認できる。
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4"><span class="section-number-3">8.4</span> データの最終行の追加</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+表の終りを示すために，最終行を作ります。
+</p>
+
+<p>
+以後，表にデータを追加する時は，この最終行の前に追加します:
+</p>
+<ul class="org-ul">
+<li>最終行の右端で右クリックし，行の挿入を選び，あたらしい行を追加
+</li>
+<li>必要な行数を新しく作り，
+</li>
+<li>新らしいデータを書き込む
+</li>
+</ul>
+
+<p>
+グラフや計算式が，最終行まで使って書かれていれば，データを追加するだけ
+で，グラフや計算値が変更されます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5"><span class="section-number-3">8.5</span> 表の先頭に統計値を計算する (あとで)</h3>
+<div class="outline-text-3" id="text-8-5">
+<ul class="org-ul">
+<li>最高値，最低値，平均値, 直線の傾き 
+</li>
+<li>正しいキー数とミスタイプ数の間の相関係数の計算 
+</li>
+<li>相関係数の意味
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-8-6" class="outline-3">
+<h3 id="sec-8-6"><span class="section-number-3">8.6</span> 自分の成長度の評価 (あとで)</h3>
+<div class="outline-text-3" id="text-8-6">
+<ul class="org-ul">
+<li>グラフと統計値をコピーし，Word 文書に貼り付け 
+</li>
+<li>客観的なデータをもとに，自分のタイピング練習成果を評価する
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-7" class="outline-3">
+<h3 id="sec-8-7"><span class="section-number-3">8.7</span> グラフの描き方について</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+表からグラフを描く時，このページの最後にある推奨サイトを参考に，下記の
+方法を学びましょう。
+</p>
+
+<ul class="org-ul">
+<li>グラフを別々に描いて，合わせる方法
+</li>
+<li>グラフの種別を変える方法
+</li>
+<li>左軸，右軸, 下軸の指定
+</li>
+</ul>
+
+<p>
+自分のために，講義中参考になったサイトを記録し，卒業後でも使えるよ
+うにしましょう。
+</p>
+
+<p>
+もし下記サイトが役に立ったならメモして置きましょう。
+</p>
+
+<ul class="org-ul">
+<li>とりあえず，お気に入りに保存しておいて，後でお気に入りをコピーしましょう。
+</li>
+<li>どこかずっと保存できる場所に。
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-8-7-1" class="outline-4">
+<h4 id="sec-8-7-1">グラフの書き方について，推奨する説明サイト</h4>
+<div class="outline-text-4" id="text-8-7-1">
+<ul class="org-ul">
+<li>グラフの作り方&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="http://kokoro.kir.jp/excel/graph.html">http://kokoro.kir.jp/excel/graph.html</a>
+</li>
+</ul>
+</li>
+
+<li>グラフ作成のコツ&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="http://kokoro.kir.jp/excel/kotug\_big.html">http://kokoro.kir.jp/excel/kotug\_big.html</a>
+</li>
+</ul>
+</li>
+
+<li>複合グラフの作り方&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="http://kokoro.kir.jp/excel/compound-graph.html">http://kokoro.kir.jp/excel/compound-graph.html</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 練習成果の統計処理</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> 統計値の計算</h3>
+<div class="outline-text-3" id="text-9-1">
 <p>
 正しく打ったキー数，ミスタイプ数のそれぞれについて， 
 </p>
@@ -625,9 +971,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-7-2" class="outline-3">
-<h3 id="sec-7-2"><span class="section-number-3">7.2</span> 上達度の計算</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> 上達度の計算</h3>
+<div class="outline-text-3" id="text-9-2">
 <ul class="org-ul">
 <li>直線とみなした場合，その（近似）直線の傾きを求める計算式を作りましょう
 </li>
@@ -637,9 +983,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-7-3" class="outline-3">
-<h3 id="sec-7-3"><span class="section-number-3">7.3</span> 正しく打ったキー数とミスタイプ数の関係</h3>
-<div class="outline-text-3" id="text-7-3">
+<div id="outline-container-sec-9-3" class="outline-3">
+<h3 id="sec-9-3"><span class="section-number-3">9.3</span> 正しく打ったキー数とミスタイプ数の関係</h3>
+<div class="outline-text-3" id="text-9-3">
 <p>
 自分の上達度にミスタイプ数はどう関係しているか調べましょう。
 </p>
@@ -728,9 +1074,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-7-4" class="outline-3">
-<h3 id="sec-7-4"><span class="section-number-3">7.4</span> 自分の上達度は？</h3>
-<div class="outline-text-3" id="text-7-4">
+<div id="outline-container-sec-9-4" class="outline-3">
+<h3 id="sec-9-4"><span class="section-number-3">9.4</span> 自分の上達度は？</h3>
+<div class="outline-text-3" id="text-9-4">
 <p>
 ベストなのは，正しいキー数が増え，ミスタイプ数が減ることですが，自分の
 場合，どうなっているか，近似直線の傾きと相関係数から判断しましょう。
@@ -740,17 +1086,17 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 表計算/数式と関数</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 表計算/数式と関数</h2>
+<div class="outline-text-2" id="text-10">
 <p>
 表中のセルに，計算式を記録しておくことができる。
 </p>
 </div>
 
-<div id="outline-container-sec-8-1" class="outline-3">
-<h3 id="sec-8-1"><span class="section-number-3">8.1</span> いい点</h3>
-<div class="outline-text-3" id="text-8-1">
+<div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1"><span class="section-number-3">10.1</span> いい点</h3>
+<div class="outline-text-3" id="text-10-1">
 <p>
 やり方を保存しておくことができるので， 
 </p>
@@ -768,12 +1114,12 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-sec-8-2" class="outline-3">
-<h3 id="sec-8-2"><span class="section-number-3">8.2</span> 数式を使うための準備</h3>
-<div class="outline-text-3" id="text-8-2">
-</div><div id="outline-container-sec-8-2-1" class="outline-4">
-<h4 id="sec-8-2-1">数式の表示</h4>
-<div class="outline-text-4" id="text-8-2-1">
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2"><span class="section-number-3">10.2</span> 数式を使うための準備</h3>
+<div class="outline-text-3" id="text-10-2">
+</div><div id="outline-container-sec-10-2-1" class="outline-4">
+<h4 id="sec-10-2-1">数式の表示</h4>
+<div class="outline-text-4" id="text-10-2-1">
 <p>
 「表示」メニューを開き，「数式」をチェックし，数式表示バーを表示する。
 </p>
@@ -785,9 +1131,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-3" class="outline-3">
-<h3 id="sec-8-3"><span class="section-number-3">8.3</span> 数式の入力</h3>
-<div class="outline-text-3" id="text-8-3">
+<div id="outline-container-sec-10-3" class="outline-3">
+<h3 id="sec-10-3"><span class="section-number-3">10.3</span> 数式の入力</h3>
+<div class="outline-text-3" id="text-10-3">
 <ul class="org-ul">
 <li>= で書き始める。
 </li>
@@ -799,9 +1145,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-4" class="outline-3">
-<h3 id="sec-8-4"><span class="section-number-3">8.4</span> データ</h3>
-<div class="outline-text-3" id="text-8-4">
+<div id="outline-container-sec-10-4" class="outline-3">
+<h3 id="sec-10-4"><span class="section-number-3">10.4</span> データ</h3>
+<div class="outline-text-3" id="text-10-4">
 <ul class="org-ul">
 <li>数値そのものかセル(の中の数値)で与える
 </li>
@@ -809,9 +1155,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-5" class="outline-3">
-<h3 id="sec-8-5"><span class="section-number-3">8.5</span> データ列の入力</h3>
-<div class="outline-text-3" id="text-8-5">
+<div id="outline-container-sec-10-5" class="outline-3">
+<h3 id="sec-10-5"><span class="section-number-3">10.5</span> データ列の入力</h3>
+<div class="outline-text-3" id="text-10-5">
 <ul class="org-ul">
 <li>セルは A10 とか書く。A$10 は10行目固定。$A10はA列目固定。
 </li>
@@ -821,9 +1167,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-6" class="outline-3">
-<h3 id="sec-8-6"><span class="section-number-3">8.6</span> 関数の利用</h3>
-<div class="outline-text-3" id="text-8-6">
+<div id="outline-container-sec-10-6" class="outline-3">
+<h3 id="sec-10-6"><span class="section-number-3">10.6</span> 関数の利用</h3>
+<div class="outline-text-3" id="text-10-6">
 <p>
 データを処理する便利な関数がいろいろ用意されている
 </p>
@@ -843,9 +1189,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-7" class="outline-3">
-<h3 id="sec-8-7"><span class="section-number-3">8.7</span> ふたつのデータ列が必要な関数</h3>
-<div class="outline-text-3" id="text-8-7">
+<div id="outline-container-sec-10-7" class="outline-3">
+<h3 id="sec-10-7"><span class="section-number-3">10.7</span> ふたつのデータ列が必要な関数</h3>
+<div class="outline-text-3" id="text-10-7">
 <p>
 直線の傾き slope
 </p>
@@ -879,9 +1225,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-8-8" class="outline-3">
-<h3 id="sec-8-8"><span class="section-number-3">8.8</span> 通し回数列の作り方</h3>
-<div class="outline-text-3" id="text-8-8">
+<div id="outline-container-sec-10-8" class="outline-3">
+<h3 id="sec-10-8"><span class="section-number-3">10.8</span> 通し回数列の作り方</h3>
+<div class="outline-text-3" id="text-10-8">
 <p>
 新らしい列を作る方法: 
 </p>
@@ -914,12 +1260,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> タイピング練習レポートの作成</h2>
-<div class="outline-text-2" id="text-9">
-</div><div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="section-number-3">9.1</span> 目的</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> タイピング練習レポートの作成</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1"><span class="section-number-3">11.1</span> 目的</h3>
+<div class="outline-text-3" id="text-11-1">
 <ul class="org-ul">
 <li>「レポートの書き方」の実践
 </li>
@@ -931,9 +1277,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-sec-9-2" class="outline-3">
-<h3 id="sec-9-2"><span class="section-number-3">9.2</span> 内容</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2"><span class="section-number-3">11.2</span> 内容</h3>
+<div class="outline-text-3" id="text-11-2">
 <p>
 「レポートの書き方」で覚えた方法で， Word
 を使って，タイピング練習レポートを作成してもらいます。
@@ -988,7 +1334,7 @@ for the JavaScript code in this tag.
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2016-11-10 木 08:12</p>
+<p class="date">Created: 2016-11-10 木 08:13</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
