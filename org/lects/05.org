@@ -76,11 +76,17 @@ USBメモリを持っている人は， コピーして，使ってみましょ�
 
 ** Todo Web :: メモアプリ
 
+メモを取って，文章の組立てを考えるための，新らしいアプリを使ってみましょ
+う。
+
+まだ書きかけですが，[[./web.org][Web]]文書の, simplenote/workflowyを読んでください。
+
 下記のサイトにアカウントを作り, 使ってみましょう：
 
+- [[https://workflowy.com][workflowyサイト]]
 - [[https://simplenote.com][simplenoteサイト]]
 - [[https://mindmeister.com][mindMiesterサイト]]
-- [[https://workflowy.com][workflowyサイト]]
+
 
 ** Doing Office 
 
