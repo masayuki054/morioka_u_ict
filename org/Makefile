@@ -27,7 +27,7 @@ renewal:
 
 pages = docs/%.html
 
-index.html: 
+index.html: $(wukdcard lects/*.org lects/*/*.org)
 firefox.html: $(wildcard web/*.org)
 guidance.html: $(wildcard lects/*.org)
 google.html: $(wildcard web/*.org)
