@@ -22,7 +22,6 @@
 
 ** [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][講義資料ドライブ]] @GoogleDrive
 ** [[https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU][情報処理演習用ドライブ]] @GoogleDrive
-
 ** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
 
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
