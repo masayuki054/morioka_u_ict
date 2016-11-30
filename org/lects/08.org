@@ -1,0 +1,130 @@
+# 2016.12.01 8回目
+
+- レポート提出フォルダ [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]] [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]
+- [[./typing.org][タイピング]] 
+- [[https://plus.google.com/communities/109024061748990090847][Google+のおしらせ]] [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
+
+* 今日 (2016.12.01 8th) の課題
+
+以下，今日やることです。
+
+** Doing タイピング 
+
+[[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
+
+- ウィンドウ枠の固定をしましょう。
+- 関数の使い方を覚えましょう。
+- 正しいキー数，ミスタイプ数の平均値，最小値，最大値を求めましょう。
+- 最後の行を使いましょう。
+- グラフを描いてみましょう。
+- 近似直線を描いてみましょう。
+- 近似直線の傾きを関数で求めましょう。
+
+** Doing Windows の基本操作などを学ぶ
+
+*** よく使うものを素早く開こう
+講義資料の [[./windows.org][Windows]] についての中から，「よく使うものを素早く開こう」を
+やってみましょう。
+
+自分の情報処理フォルダの中に，ショートカットを作ります。
+
+- 下記サイトのリンク(URL)を保存します:
+
+  - 今日の課題  [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]]  
+  - お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] の
+    中の出席票提出ページ
+  - [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] 
+  - [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
+
+- 各ページを開き，ブラウザに表示される，小さなアイコンを，
+  情報処理フォルダに，ドラッグ・アンド・ドロップします。
+
+- 名前が長くて見づらかったら，名前を変更してください。
+
+ショートカットが保存できたら，それぞれダブルクリックして，正しく開くこ
+とを，確認してください。
+
+
+
+*** 開いたアプリのウィンドウを素早く切り替えてください
+
+-  Windowsキーとタブキーの同時押し
+-  ALTキーとタブキーの同時押し
+- タスクバーでアプリのタブにマウスを重ねる
+
+** Todo Web :: firefox の利用
+
+[[./firefox.org][firefox]] を読んで，「Firefox Portable」を使ってみましょう。
+
+- 「workflowy 使い方」について検索してみましょう。
+- いくつかのサイトを読んでみましょう。
+- 来週，履歴からサイトを思いだしましょう。
+
+** Doing GoogleDrive
+   
+[[./google.org][Googleを利用しよう]] を読んで，レポート提出フォルダを先生と共有しましょ
+う。
+
+- [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]]  
+  - 下記のフォルダは名前を変更してください:
+    - 情報処理 レポート提出1412817
+  - 1512215, 1513126 の人は，共有されていません。
+
+- [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]  
+  - 1412319 フォルダが二つあるので，どちらかにしましょう。
+
+** Todo Web :: メモアプリ
+
+メモを取って，文章の組立てを考えるための，新らしいアプリを使ってみましょ
+う。
+
+[[https://workflowy.com][workflowyサイト]] にアカウントを作ってください。
+
+まだ書きかけですが，[[./web.org][Web]]文書の, simplenote/workflowyを読んでください。
+
+** Doing Office 
+
+   今日は，提出した練習問題 2-1, 2-2, 3-1, 3-2, 4-1, 4-2 を振り返り,
+   まとめのメモを作ります:
+
+   - [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]] の [[https://drive.google.com/open?id=0BwUWvGKIXA9PTmpwWE1QR2JnVlk][第2回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PV3F3d0tVcm5GclU][第3回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PM2lJZ0RibGJnemM][第4回]] の各回の指示が書いてある
+     .pptx ダウンロードし，パワーポイントで開き，
+
+   - 指示の文章をコピーし，workflowy に貼る
+
+   - workflowy でワードの作業のまとめを作る
+
+   https://workflowy.com/s/PJdXxTriXr を開き，先生のまとめを参考にして
+   ください。
+
+   後から見て，作業内容を思いだせるような，自分のためのメモにしてくだ
+   さい。
+
+** 出席票の提出
+
+[[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] から出席票を開き，回答してください。
+
+* Doing 受講の準備
+
+- パソコンにログインし，
+
+- パソコン画面上の「出席票」に名前と学生番号を入力
+  してください。
+
+- 先生のパソコンの画面が配信されていることを確認し，
+  ウィンドウの大きさを見易い大きさに変更してください。
+
+- (インターネット) ブラウザを立ちあげ，
+
+- 講義の入口ページを開き，
+
+  - 別のタブで，お知らせを開き読んでください。
+
+  - また，別のタブで2回目の講義のページを開いてください。
+
+- エクスプローラ (ウィンドウズキー+e) を開き
+
+  - 自分のフォルダ(マイドキュメント)を開き，
+
+  - 自分の情報処理演習フォルダを開きましょう。
+

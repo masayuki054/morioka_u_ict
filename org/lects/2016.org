@@ -64,13 +64,14 @@
 #+include: 03.org :minlevel 3
 ** 2016.10.27
 #+include: 04.org :minlevel 3
-
-
-
-
 ** 2016.11.10
 #+include: 05.org :minlevel 3
 
 ** 2016.11.17
 #+include: 06.org :minlevel 3
    
+
+** 2016.11.25
+#+include: 07.org :minlevel 3
+** 2016.12.1
+#+include: 08.org :minlevel 3
