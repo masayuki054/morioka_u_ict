@@ -1,11 +1,11 @@
-# 2016.12.01 8回目
+# 2016.12.08 9回目
 
 - [[https://drive.google.com/open?id=0BwUWvGKIXA9PQjJCT2g0OXJ4Q28][出席票]] フォルダ
 - レポート提出フォルダ [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]] [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]
 - [[./typing.org][タイピング]] 
 - [[https://plus.google.com/communities/109024061748990090847][Google+のおしらせ]] [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
 
-* 今日 (2016.12.01 8th) の課題
+* 今日 (2016.12.09 9th) の課題
 
 以下，今日やることです。
 
@@ -20,8 +20,12 @@
 - グラフを描いてみましょう。
 - 近似直線を描いてみましょう。
 - 近似直線の傾きを関数で求めましょう。
+- 
+  
+
 
 ** Doing Windows の基本操作などを学ぶ
+
 
 *** よく使うものを素早く開こう
 講義資料の [[./windows.org][Windows]] についての中から，「よく使うものを素早く開こう」を
@@ -46,11 +50,10 @@
 とを，確認してください。
 
 
-
 *** 開いたアプリのウィンドウを素早く切り替えてください
 
--  Windowsキーとタブキーの同時押し
--  ALTキーとタブキーの同時押し
+- Windowsキーとタブキーの同時押し
+- ALTキーとタブキーの同時押し
 - タスクバーでアプリのタブにマウスを重ねる
 
 ** Todo Web :: firefox の利用
