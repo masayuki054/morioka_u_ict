@@ -1,0 +1,134 @@
+# 2016.12.22 11回目
+
+- [[https://drive.google.com/open?id=0BwUWvGKIXA9PQjJCT2g0OXJ4Q28][出席票]] フォルダ
+- レポート提出フォルダ [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]] [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]
+- [[./typing.org][タイピング]] 
+- [[https://plus.google.com/communities/109024061748990090847][Google+のおしらせ]] [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
+- [[https://workflowy.com/][自分のworkflow]] [[https://workflowy.com/s/PJdXxTriXr][盛岡大学の情報処理でworkflowyを使ってみよう]]
+
+* 今日 (2016.12.23 11th) の課題
+
+以下，今日やることです。
+
+** Doing タイピング 
+
+[[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
+
+- ウィンドウ枠の固定をしましょう。
+- 関数の使い方を覚えましょう。
+- 正しいキー数，ミスタイプ数の平均値，最小値，最大値を求めましょう。
+- 最後の行を使いましょう。
+- グラフを描いてみましょう。
+- 近似直線を描いてみましょう。
+- 近似直線の傾きを関数で求めましょう。
+- 相関係数を求めましょう。
+- 自分の練習結果を自己評価しましょう。
+
+** Doing workflowyによるメモの作成
+
+   [[https://workflowy.com/s/PJdXxTriXr][盛岡大学の情報処理でworkflowyを使ってみよう]] を参考に自分の workflowy
+   のメモを作りましょう。
+
+   - タイピングのメモ
+   - Office のメモ
+
+** Doing Windows の基本操作などを学ぶ
+
+講義資料の [[./windows.org][Windows]] についての中から，「よく使うものを素早く開こう」を
+やってみましょう。
+
+*** よく使うものを素早く開こう
+
+- 今日の課題  [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]]  
+- お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] の
+    中の出席票提出ページ
+- [[https://drive.google.com/open?id=0BwUWvGKIXA9PQjJCT2g0OXJ4Q28][出席票]] フォルダ
+- [[./typing.org][タイピング]] 
+- [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]]
+- [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
+- [[https://workflowy.com/][自分のworkflow]]y
+- [[https://workflowy.com/s/PJdXxTriXr][先生のworkflowy]]
+
+*** 開いたアプリのウィンドウを素早く切り替えてください
+
+- Windowsキーとタブキーの同時押し
+- ALTキーとタブキーの同時押し
+- タスクバーでアプリのタブにマウスを重ねる
+
+** Doing Office 
+
+*** Doing [[https://drive.google.com/open?id=1TYKC8DtEvWed_QkaPcFkO0rD4aSJsNtiHFuKWBpjK84][鈴木の問題1]] 
+
+    [[https://drive.google.com/open?id=1TYKC8DtEvWed_QkaPcFkO0rD4aSJsNtiHFuKWBpjK84][鈴木の問題1]] を行って，ワードのスタイルの使い方と，アウトラインの使
+    い方を学びましょう。
+
+*** Doing 提出した練習問題 2-1, 2-2, 3-1, 3-2, 4-1, 4-2 のまとめ
+
+    今日は，提出した練習問題 2-1, 2-2, 3-1, 3-2, 4-1, 4-2 を振り返り,
+    まとめのメモを作ります:
+
+    - [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]] の [[https://drive.google.com/open?id=0BwUWvGKIXA9PTmpwWE1QR2JnVlk][第2回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PV3F3d0tVcm5GclU][第3回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PM2lJZ0RibGJnemM][第4回]] の各回の指示が書いてある
+      .pptx ダウンロードし，パワーポイントで開き，
+
+    - 指示の文章をコピーし，workflowy に貼る
+
+    - workflowy でワードの作業のまとめを作る
+
+    https://workflowy.com/s/PJdXxTriXr を開き，先生のまとめを参考にして
+    ください。
+
+    後から見て，作業内容を思いだせるような，自分のためのメモにしてくだ
+    さい。
+
+*** Todo  [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]] の7回の練習問題をやってください。
+
+    練習問題7-1, 7-2をやって，次回までにレポート提出フォルダに提出してください。
+
+*** Todo パワーポイント
+
+    [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]] の13回の練習問題13ー1をやってください。
+    
+    練習問題 13-1, 問題 13-1 をやって，次回までにレポート提出フォルダ
+    に提出してください。
+    
+** Todo レポート提出フォルダの整理
+
+   提出レポート数が増えてきたので，[[https://drive.google.com/open?id=0BwUWvGKIXA9POENyUFdNdmwwSjQ][見本]] のように，フォルダを作成して，
+   レポートを整理してください。
+
+   「レポートのまとめ」をレポート提出フォルダに作成してください。
+
+   - GoogleDrive フォルダの 「新規」ー「Googleドキュメント」で新らしい
+     文書を作成し，
+
+   - [[https://docs.google.com/document/d/1vrwRmZ4IzZ0ersfg3HnYZ0di7Sz5VwkpojRqCPkvDm4/edit?usp=sharing][先生のレポートのまとめ]] をまねして，自分のまとめを作成してください。
+
+** 出席票の提出
+
+[[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] から出席票を開き，回答してください。
+
+
+* Doing 受講の準備
+
+- パソコンにログインし，
+
+- パソコン画面上の「出席票」に名前と学生番号を入力
+  してください。
+
+- 先生のパソコンの画面が配信されていることを確認し，
+  ウィンドウの大きさを見易い大きさに変更してください。
+
+- (インターネット) ブラウザを立ちあげ，
+
+- 講義の入口ページを開き，
+
+  - 別のタブで，お知らせを開き読んでください。
+
+  - また，別のタブで2回目の講義のページを開いてください。
+
+- エクスプローラ (ウィンドウズキー+e) を開き
+
+  - 自分のフォルダ(マイドキュメント)を開き，
+
+  - 自分の情報処理演習フォルダを開きましょう。
+
