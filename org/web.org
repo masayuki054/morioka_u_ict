@@ -1,5 +1,5 @@
-#+setupfile: ~/COMM/Lects/ict/git/info/index-sos-header.setup
-#+include: ~/COMM/Lects/ict/git/info/common-header.org
+#+setupfile: ~/ict.git/org/info/index-sos-header.setup
+#+include: ~/ict.git/org/info/common-header.org
 #+title: Webアプリ
 #+include: 
 
