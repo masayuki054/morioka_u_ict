@@ -89,3 +89,8 @@
 
 ** 2017.01.12
 #+include: 12.org :minlevel 3
+
+** 2017.01.19
+#+include: 13.org :minlevel 3
+** 2017.01.26
+#+include: 14.org :minlevel 3

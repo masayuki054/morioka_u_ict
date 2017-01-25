@@ -35,18 +35,18 @@ puts "SUBDIRS: #{SUBDIRS}"
 CLEAN.include(FileList["*~","#*"])
 CLOBBER.include(HTMLS)
 
-ORGS.each do |org|
-  html = File.basename(org, ".org")+".html"
-  puts "generating #{html} ... "
-  @depends = `org_dependency.rb #{org}`.chomp.split(", ")
-  puts "depends ", @depends.join(", ")
-  if @depends.size!=0 
-    file html => @depends.push(org) do |t|
-      sh "org2html #{org}"
-      deploy(t.name, "#{SITE}/#{DIR}")
-    end
-  end
-end
+# ORGS.each do |org|
+#   html = File.basename(org, ".org")+".html"
+#   puts "generating #{html} ... "
+#   @depends = `org_dependency.rb #{org}`.chomp.split(", ")
+#   puts "depends ", @depends.join(", ")
+#   if @depends.size!=0 
+#     file html => @depends.push(org) do |t|
+#       sh "org2html #{org}"
+#       deploy(t.name, "#{SITE}/#{DIR}")
+#     end
+#   end
+# end
 
 depth,path = myhome
 

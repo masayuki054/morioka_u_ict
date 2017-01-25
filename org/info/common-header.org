@@ -1,0 +1,13 @@
+#+title: 情報処理応用
+#+AUTHOR: masayuki
+#+LANGUAGE: ja
+#+EMAIL: suzumasa@morioka-u.ac.jp
+
+#+macro: hl [[http://masayuki054.github.io/morioka_u_ict/$1.html#$2][$2]]
+#+macro: ol [[../$1./$2.org][ @]]
+#+macro: ll {{{hl($1,$2)}}}{{{ol($1,$2)}}}
+
+[[http://masayuki054.hatenablog.com/entries/2016/09/20][ポータル]] /
+[[http://masayuki054.github.io/morioka_u_ict][ホーム]] / 
+[[https://github.com/masayuki054/morioka_u_ict/blob/master/%E8%AC%9B%E7%BE%A9%E4%B8%AD%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.org][講義中のお知らせ]]
+

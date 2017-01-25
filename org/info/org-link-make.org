@@ -1,0 +1,139 @@
+* what
+  講義サイトにある, org文書から作られた html文書やその入れ物であるディレ
+  クトリに，3種類の hyperlink をはるための
+
+- ~/COMM/Lects/bin/org_link_make.sh
+- ~/COMM/Lects/bin/org_link_make.rb
+- org babel sh ブロック
+
+* babel
+
+#+BEGIN_SRC ruby :tangle ~/COMM/Lects/bin/org_link_make.rb
+
+H = "http://wiki.cis.iwate-u.ac.jp/~suzuki/lects"
+C = "file+emacs:~suzuki/lects"
+S = "file+emacs:~/COMM/Lects"
+
+def org_link_make(lect, page, title)
+  file = page.sub("html","org")
+  http = "[[#{H}/#{lect}/#{page}][#{title}]]"
+  cis = "[[#{C}/#{lect}/site/#{file}][@cis.org]]"
+  sorg = "[[#{S}/#{lect}/site/#{file}][@s.org]]"
+  link = "#{http} ((#{cis} #{sorg}))"
+  print "- ", link,"\n"
+end
+
+if ___FILE___=$0
+  org_link_make(ARGV[0],ARGV[1],ARGV[2])
+end
+#+END_SRC
+
+# # .org に埋め込む場合この下に
+
+# org_link_make("prog","lects/01/GTD.html","一回目の講義記録")
+#   org_link_make("prog","lects/","講義予定と記録")
+  
+#   org_link_make("prog","index.html","ソフトウェア構成論")
+#   org_link_make("prog","info/prog-2015.html","ソフトウェア構成論2014->2015")
+#   org_link_make("prog","org-docs/cis-programming-lects/","プログラム関連講義")
+
+#  org_link_make("prog","org-docs/","講義ドキュメント")
+#  org_link_make("prog","org-docs/what-is-tdd/","テストによる開発とは")
+#  org_link_make("prog","org-docs/cutter","cutterの使い方")
+#  org_link_make("prog","org-docs/card-display/","カード表示問題の始まり")
+#  org_link_make("prog","org-docs/tdd-card-display-simple/","カード表示問題_simpleのテストによる開発")
+#  org_link_make("prog","org-docs/poger/","モジュール開発によるポーカーゲームの作成")
+# # end
+
+#+BEGIN_SRC sh :tangle ~/COMM/Lects/bin/org_link_make.sh
+ruby ~/COMM/Lects/bin/org_link_make.rb $*
+#+END_SRC
+
+#+call: org_link_make(aLect="prog",aPage="index.html",aTitle="ソフトウェア構成論サイト")
+
+#+RESULTS:
+
+- call_org_link_make(aLect="prog",aPage="index.html",aTitle="ソフトウェア構成論サイト") 
+
+#+BEGIN_SRC sh :results output example
+sh ~/COMM/Lects/bin/org_link_make.sh prog lects/01/index.html 講義記録.01
+#+END_SRC
+
+#+RESULTS:
+: - [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/lects/01/index.html][講義記録.01]] (([[file+emacs:~suzuki/lects/prog/site/lects/01/index.org][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/lects/01/index.org][@s.org]]))
+
+#+name: org_link_make_shell
+#+BEGIN_SRC sh :var arg="aho"
+ruby ~/COMM/Lects/bin/org_link_make.rb $arg
+#+END_SRC
+
+#+call: org_link_make_shell[result=code](arg="prog index.html ソフトウェア構成論サイト")
+
+
+
+#+call: org_link_make_shell[results="output code"](arg="prog prog/lects/01/index.html 講義.01のまとめ")
+
+
+#+call: org_link_make_shell[results="output code"](arg="site commons/abstraction.html 抽象化")
+
+#+RESULTS:
+: - [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/site/commons/abstraction.html][抽象化]] (([[file+emacs:~suzuki/lects/site/site/commons/abstraction.org][@cis.org]] [[file+emacs:~/COMM/Lects/site/site/commons/abstraction.org][@s.org]]))
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/card-display/ カード表示問題の始まり
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/tdd-card-display-simple/ カード表示問題_simpleのテストによる開発
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC org
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/org-docs/card-display/][カード表示問題の始まり]] (([[file+emacs:~suzuki/lects/prog/org-docs/card-display/][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/org-docs/card-display/][@s.org]]))
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/org-docs/tdd-card-display-simple/][カード表示問題_simpleのテストによる開発]] (([[file+emacs:~suzuki/lects/prog/org-docs/tdd-card-display-simple/][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/org-docs/tdd-card-display-simple/][@s.org]]))
+#+END_SRC
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/memos/ 講義メモ
+#+END_SRC
+
+#+RESULTS:
+
+ [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/org-docs/memos/][講義メモ]] (([[file+emacs:~suzuki/lects/prog/org-docs/memos/][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/org-docs/memos/][@s.org]]))
+
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/card-display/ カード表示問題の始まり
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/tdd-card-display-simple/ カード表示問題_simpleのテストによる開発
+#+END_SRC
+
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog org-docs/poker/ ポーカーゲームの開発
+#+END_SRC
+
+#+RESULTS:
+
+ [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/org-docs/poker/][ポーカーゲームの開発]] (([[file+emacs:~suzuki/lects/prog/org-docs/poker/][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/org-docs/poker/][@s.org]]))
+
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog lects/supplyments/ 講義補足
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC org
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/lects/supplyments/][講義補足]] (([[file+emacs:~suzuki/lects/prog/lects/supplyments/][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/lects/supplyments/][@s.org]]))
+#+END_SRC
+
+
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog info/game-repos.html repos
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC org
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/info/game-repos.html][repos]] (([[file+emacs:~suzuki/lects/prog/info/game-repos.org][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/info/game-repos.org][@s.org]]))
+#+END_SRC
+
+
+
+
+
