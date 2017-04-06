@@ -1,0 +1,36 @@
+* ictサイト構築のためのorg-publishの可能性について考える
+
+** 
+  
+#+BEGIN_SRC elisp :tangle project-alist.el
+
+(setq org-publish-project-alist
+      '(("website"
+	 :components ("orgfiles" "images" "other"))
+	("orgfiles"
+	 :base-directory "./org/"
+	 :base-extension "org"
+	 :publishing-directory "./docs/2017/"
+	 :publishing-function org-html-publish-to-html
+	 ;;             :exclude "PrivatePage.org"   ;; regexp
+	 :headline-levels 3
+	 :section-numbers nil
+	 :with-toc nil
+	 :html-head "<link rel=\"stylesheet\"
+                       href=\"../other/mystyle.css\" type=\"text/css\"/>"
+	 :html-preamble t)
+
+	("images"
+	 :base-directory "~/images/"
+	 :base-extension "jpg\\|gif\\|png"
+	 :publishing-directory "/ssh:user@host:~/html/images/"
+	 :publishing-function org-publish-attachment)
+
+	("other"
+	 :base-directory "~/other/"
+	 :base-extension "css\\|el"
+	 :publishing-directory "/ssh:user@host:~/html/other/"
+	 :publishing-function org-publish-attachment)
+	))
+
+#+END_SRC

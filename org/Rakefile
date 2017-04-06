@@ -35,9 +35,9 @@ CLOBBER.include(HTMLS)
 #   html = File.basename(org, ".org")+".html"
 #   puts "generating #{html} ... "
 #   @depends = `org_dependency.rb #{org}`.chomp.split(", ")
-#   puts "depends ", @depends.join(", ")
+#   # puts "depends ", @depends.join(", ")
 #   if @depends.size!=0 
-#     file html => @depends.push(org) do |t|
+#     file html => @depends.push(org) do
 #       sh "org2html #{org}"
 #       deploy(t.name, "#{SITE}/#{DIR}")
 #     end

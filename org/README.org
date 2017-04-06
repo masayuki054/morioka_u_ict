@@ -1,0 +1,16 @@
+* org -> html メモ
+
+** link macro
+#+BEGIN_SRC org
+#,@common-header.org
+#,+macro: hl [[http://masayuki054.github.io/morioka_u_ict/$1.html#$2][$2]]
+#,+macro: ol [[../$1./$2.org][ @]]
+#,+macro: ll {{{hl($1,$2)}}}{{{ol($1,$2)}}}
+#+END_SRC
+
+** 対応
+
+   1. ~/*.{org,docs}/*.{org,html} が対応する
+   2. ~/org/*/contents.org が ~/*.org の中身
+   3. ~/org/*/*.org 中の header_text が anchor
+
