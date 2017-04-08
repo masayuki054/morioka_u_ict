@@ -3,8 +3,8 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<title>情報処理応用 教科書のまとめ</title>
-<!-- 2017-01-18 水 19:10 -->
+<title>情報処理演習2017 教科書のまとめ</title>
+<!-- 2017-04-08 Sat 16:50 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="masayuki" />
@@ -151,7 +151,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">情報処理応用 教科書のまとめ</h1>
+<h1 class="title">情報処理演習2017 教科書のまとめ</h1>
 <div id="table-of-contents">
 <h2>&#30446;&#27425;</h2>
 <div id="text-table-of-contents">
@@ -314,7 +314,26 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#sec-10">10. 第11章　情報とセキュリティ</a>
 <ul>
-<li><a href="#sec-10-1">10.1. 11.1　Windowsのセキュリティ対策</a></li>
+<li><a href="#sec-10-1">10.1. 11.1　Windowsのセキュリティ対策</a>
+<ul>
+<li><a href="#sec-10-1-1">拡張子を表示しよう</a>
+<ul>
+<li><a href="#sec-10-1-1-1">危険な拡張子</a></li>
+<li><a href="#sec-10-1-1-2">安全な拡張子</a>
+<ul>
+<li><a href="#sec-10-1-1-2-1">圧縮ファイル (圧縮と解凍　パソコン初心者講座)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-10-1-2">不正ソフトとは</a></li>
+<li><a href="#sec-10-1-3">ウイルス対策</a></li>
+<li><a href="#sec-10-1-4">消すだけでは消えない</a></li>
+<li><a href="#sec-10-1-5">暗号化しよう</a></li>
+<li><a href="#sec-10-1-6">TrueCrypt</a></li>
+<li><a href="#sec-10-1-7">コンピュータのロック</a></li>
+</ul>
+</li>
 <li><a href="#sec-10-2">10.2. 11.2　Macのセキュリティ対策</a></li>
 <li><a href="#sec-10-3">10.3. 11.3　スマホのセキュリティ対策</a></li>
 <li><a href="#sec-10-4">10.4. 11.4　パスワード管理</a></li>
@@ -329,6 +348,8 @@ for the JavaScript code in this tag.
 <a href="https://masayuki054.github.io/morioka_u_ict">ホーム</a> / 
 <a href="https://github.com/masayuki054/morioka_u_ict/blob/master/%E8%AC%9B%E7%BE%A9%E4%B8%AD%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.org">講義中のお知らせ</a>
 </p>
+
+
 <p>
 教科書は，栄養科学科の情報処理演習で使っている，
 「基礎からわかる情報リテラシ」
@@ -2048,9 +2069,6 @@ AND，OR，NOT検索
 <li><a href="https://www.happycampus.co.jp/guide/howto/?t=report">https://www.happycampus.co.jp/guide/howto/?t=report</a>
 </li>
 </ul>
-<p>
-<a href="./st_先生_教科書2014のまとめ.html">st/先生/教科書2014のまとめ</a>
-</p>
 </div>
 </div>
 </div>
@@ -2060,30 +2078,256 @@ AND，OR，NOT検索
 </div><div id="outline-container-sec-10-1" class="outline-3">
 <h3 id="sec-10-1"><span class="section-number-3">10.1</span> 11.1　Windowsのセキュリティ対策</h3>
 <div class="outline-text-3" id="text-10-1">
-<ul class="org-ul">
-<li>アップデートしよう
-</li>
-<li>拡張子を表示しよう
-</li>
-<li>不正ソフトとは
-</li>
-<li>ウイルス対策
-</li>
-<li>消すだけでは消えない
-</li>
-<li>暗号化しよう
+<p>
+悪いことをするプログラムを実行しないこと
+</p>
+
+<p>
+悪いことをするプログラムには下記のものがある:
+</p>
 
 <ul class="org-ul">
-<li>TrueCrypt
+<li>不具合を持っているプログラム
+</li>
+
+<li>インターネットからダウンロードされたり
+メールに添付された，悪意を持ったプログラム
+</li>
+
+<li>更新 (アップデート) しよう
+
+<p>
+システムやアプリの不具合をついた攻撃を防ぐために，
+システムやアプリを最新の状態にアップデート(更新)しよう。
+</p>
 </li>
 </ul>
-</li>
+</div>
 
-<li>コンピュータのロック
+<div id="outline-container-sec-10-1-1" class="outline-4">
+<h4 id="sec-10-1-1">拡張子を表示しよう</h4>
+<div class="outline-text-4" id="text-10-1-1">
+<p>
+アイコンで欺くことがある。ファイルの種類をハッキリさせるために，
+拡張子を表示させよう。
+</p>
+</div>
+
+<div id="outline-container-sec-10-1-1-1" class="outline-5">
+<h5 id="sec-10-1-1-1">危険な拡張子</h5>
+<div class="outline-text-5" id="text-10-1-1-1">
+<p>
+.exe, .com, .cmd, .scr, .pif, .bat, .vbs, .vbe, .js, .jse, .wsf,
+.wsh, .hta 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10-1-1-2" class="outline-5">
+<h5 id="sec-10-1-1-2">安全な拡張子</h5>
+<div class="outline-text-5" id="text-10-1-1-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">拡張子</th>
+<th scope="col" class="left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">.txt</td>
+<td class="left">テキストファイル</td>
+</tr>
+
+<tr>
+<td class="left">.pdf</td>
+<td class="left">PDF ファイル</td>
+</tr>
+
+<tr>
+<td class="left">.jpg, .png, .gif</td>
+<td class="left">JPEG, PNG, GIF形式の画像</td>
+</tr>
+
+<tr>
+<td class="left">.bmp</td>
+<td class="left">BMP 形式の画像</td>
+</tr>
+
+<tr>
+<td class="left">.doc .docx</td>
+<td class="left">Word ファイル</td>
+</tr>
+
+<tr>
+<td class="left">.xls .xlsx</td>
+<td class="left">Excel ファイル</td>
+</tr>
+
+<tr>
+<td class="left">.ppt .pptx</td>
+<td class="left">PowerPoint ファイル</td>
+</tr>
+
+<tr>
+<td class="left">.rtf</td>
+<td class="left">リッチテキスト形式の文書ファイル</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-sec-10-1-1-2-1" class="outline-6">
+<h6 id="sec-10-1-1-2-1">圧縮ファイル (<a href="https://www.pc-master.jp/sousa/asshuku-kaitou.html">圧縮と解凍　パソコン初心者講座</a>)</h6>
+<div class="outline-text-6" id="text-10-1-1-2-1">
+<p>
+解凍すると中に危険なファイルが入ているかもしれない。      
+</p>
+
+<ul class="org-ul">
+<li>.zip, .lzh, .cab, .rar, .tgz
 </li>
 </ul>
 </div>
 </div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-10-1-2" class="outline-4">
+<h4 id="sec-10-1-2">不正ソフトとは</h4>
+<div class="outline-text-4" id="text-10-1-2">
+<p>
+不正ソフト(マルウェア，malware) とは、不正かつ有害に動作させる意図で作
+成された悪意のあるソフトウェアや悪質なコードの総称で、コンピュータウイ
+ルスやワームなどがある。 
+</p>
+
+<p>
+[[<a href="wikipedia_virus.html"><a href="file:///users/home/masayuki/ict.git/org/text/wikipedia_virus.html">file:///users/home/masayuki/ict.git/org/text/wikipedia_virus.html</a></a>][不正ソフトとは]] を参考
+に下記の意味を理解しましょう:
+</p>
+
+<ul class="org-ul">
+<li>コンピュータウイルス
+</li>
+<li>アドウェア
+</li>
+<li>スパイウェア
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-10-1-3" class="outline-4">
+<h4 id="sec-10-1-3">ウイルス対策</h4>
+<div class="outline-text-4" id="text-10-1-3">
+<p>
+Windows ではウィルス対策ソフトがある程度役に立つ。
+</p>
+
+<ul class="org-ul">
+<li>Windows Defender がもともと入っている
+</li>
+<li>付加価値を持つ有償ソフトもある。
+</li>
+<li><a href="https://securitysoft.asia/sougou/free/">2017年版！無料セキュリティソフトの比較＆おすすめ【ウイルス対策】</a> に
+違いなどの説明がある
+</li>
+</ul>
+
+
+<p>
+ウィルス対策ソフトで全ての不正ソフトを防げるわけではないことに注意
+</p>
+<ul class="org-ul">
+<li>日々新らしい不正ソフトが作られるため，対応に遅れが生れる
+</li>
+</ul>
+
+<p>
+危険なファイルを開いてはいけない
+</p>
+
+<p>
+安全なファイルでも，それを開くソフトに欠陥(バグ)があると，
+不正ソフトが実行されてしまう。 (ソフトウェアの <b>脆弱性</b>) 
+</p>
+
+<ul class="org-ul">
+<li>ソフトウェアの *脆弱性*を取り除くには，アップデートすること
+</li>
+</ul>
+
+<p>
+未知の人からのメールに添付されたファイルが危険
+</p>
+<ul class="org-ul">
+<li>中身を見たいときは，Gmailを使って，プレビューするといいかも
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-10-1-4" class="outline-4">
+<h4 id="sec-10-1-4">消すだけでは消えない</h4>
+<div class="outline-text-4" id="text-10-1-4">
+<p>
+共用のパソコンで，個人情報を扱かった後は，ファイルを消しておきましょう。
+</p>
+<ul class="org-ul">
+<li>ゴミ箱にファイルを捨て，
+</li>
+<li>ゴミ箱を右クリックし，
+</li>
+<li>「ゴミ箱を空にする」をしておきましょう。
+</li>
+</ul>
+
+<p>
+しかし，これだけでは，管理者が復元ソフトを使うと，復元が可能です。
+悪人が，無理矢理ハードディスクを取り出し，解析ソフトで解析することが可
+能です。
+</p>
+
+
+<p>
+完全に消去したときは，<a href="https://tennensui.sakura.ne.jp/pcrikai/category2/entry13.html">PCのデータやファイルを完全に削除したいときは？</a>
+や <a href="https://freesoft-100.com/pasokon/delete.html">無料ファイル完全削除ソフト一覧 - フリーソフト100</a>  を参考にして，
+ファイル完全削除ソフトを使ってみましょう。
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10-1-5" class="outline-4">
+<h4 id="sec-10-1-5">暗号化しよう</h4>
+<div class="outline-text-4" id="text-10-1-5">
+<p>
+USBメモリやノートパソコンを紛失したり盗難にあったりするリスクがありま
+す。そのさい，他人に中を見られないようにするために，ディスク全体を暗号
+化してしまう方法があります。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-10-1-6" class="outline-4">
+<h4 id="sec-10-1-6">TrueCrypt</h4>
+</div>
+
+<div id="outline-container-sec-10-1-7" class="outline-4">
+<h4 id="sec-10-1-7">コンピュータのロック</h4>
+</div>
+</div>
+
 
 <div id="outline-container-sec-10-2" class="outline-3">
 <h3 id="sec-10-2"><span class="section-number-3">10.2</span> 11.2　Macのセキュリティ対策</h3>
@@ -2132,7 +2376,7 @@ AND，OR，NOT検索
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2017-01-18 水 19:10</p>
+<p class="date">Created: 2017-04-08 Sat 16:50</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.0.50.1 (<a href="https://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
