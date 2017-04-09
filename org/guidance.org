@@ -3,4 +3,4 @@
 #+title: ガイダンス
 #+include: 
 
-#+include: lects/ガイダンス2016.org :minlevel 1
+#+include: lects/ガイダンス2017.org :minlevel 1

@@ -1,3 +1,3 @@
-#+include: 1.org :minlevel 1
-#+include: guidance.org :minlevel 1
+#+include: 01.org :minlevel 1
+#+include: ガイダンス2017.org :minlevel 1
 ##+include: 2017_summer.org :minlevel 1
