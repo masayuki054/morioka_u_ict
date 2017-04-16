@@ -1,7 +1,37 @@
 #+setupfile: ~/ict.git/org/info/index-bigblow-header.setup
 #+include: ~/ict.git/org/info/common-header.org
 #+title: 
-#+include: contents.org 
 
+#+include: lects/contents.org :minlevel 1
 
+* 講義資料
+
+** [[./guidance.org][ガイダンス]]
+** [[./pc.org][パソコンの使い方]]
+** [[./typing.org][タイピング]]
+** [[./text.org][教科書のまとめと課題]]
+
+** [[./google.org][Googleを利用しよう]]
+** [[./firefox.org][Firefoxを利用しよう]]
+** [[./web.org][Webアプリを利用しよう]] 
+** [[./windows.org][Windowsについて]]
+** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
+
+* 講義関連サイト
+
+** 講義の入り口 [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]] @github.io
+
+** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
+
+** [[https://drive.google.com/drive/folders/0BwUWvGKIXA9PNHBscE5fM0lCQ2M?usp=sharing][情報処理演習用ドライブ]] @GoogleDrive
+
+** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
+
+** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
+
+** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
+
+** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
+
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
 
