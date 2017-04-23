@@ -23,15 +23,18 @@
 
 ** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
 
+** [[https://sites.google.com/view/masayuki054-morioka-ict/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite:鈴木の盛岡大学情報処理演習2017]]
 ** [[https://drive.google.com/drive/folders/0BwUWvGKIXA9PNHBscE5fM0lCQ2M?usp=sharing][情報処理演習用ドライブ]] @GoogleDrive
 
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
-** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
-
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
+
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
+
+** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
 
 ** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
 
-** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
+
 
