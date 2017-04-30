@@ -10,7 +10,7 @@
 ** [[./pc.org][パソコンの使い方]]
 ** [[./typing.org][タイピング]]
 ** [[./text.org][教科書のまとめと課題]]
-
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]]
 ** [[./google.org][Googleを利用しよう]]
 ** [[./firefox.org][Firefoxを利用しよう]]
 ** [[./web.org][Webアプリを利用しよう]] 
@@ -38,3 +38,6 @@
 
 
 
+* 2017年度のこと
+- [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] フォルダを作った <2017-04-24 月>
+- 
