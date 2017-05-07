@@ -16,6 +16,7 @@
 ** [[./web.org][Webアプリを利用しよう]] 
 ** [[./windows.org][Windowsについて]]
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
+** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
 
 * 講義関連サイト
 
@@ -24,8 +25,8 @@
 ** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
 
 ** [[https://sites.google.com/view/masayuki054-morioka-ict/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite:鈴木の盛岡大学情報処理演習2017]]
-** [[https://drive.google.com/drive/folders/0BwUWvGKIXA9PNHBscE5fM0lCQ2M?usp=sharing][情報処理演習用ドライブ]] @GoogleDrive
-
+** [[https://drive.google.com/drive/folders/0BwUWvGKIXA9PNHBscE5fM0lCQ2M?usp=sharing][情報処理演習2016用ドライブ]] @GoogleDrive
+** [[https://drive.google.com/open?id=0BwUWvGKIXA9PdWhQUU52MUp0Slk][情報処理演習2017用ドライブ]] 
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
