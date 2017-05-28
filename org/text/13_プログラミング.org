@@ -1,3 +1,43 @@
-* 13章 プログラミング 
+** 13章 プログラミング
 
-まとめ検討中 <2017-04-08 土>
+*** はじめに
+
+    
+JavaScript という名前のプログラミング言語を使ってみよう。
+
+- 目的 :: プログラミングとはどういうものかを理解する
+
+- 特徴 :: ブラウザで使える
+
+*** 例
+
+「自分の情報処理フォルダ」/「プログラミング」 フォルダ を作成し，
+メモ帳で，下記のプログラムを打ち込み，
+「test.html」という名前で保存してください。
+
+#+BEGIN_SRC html :tangle test.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>JavaScriptのページ</title>
+</head>
+<body>
+<h1> JavaScriptのページ</h1>
+
+<script>
+  var s =  prompt('お名前は？');
+  document.write('<p>こんにちは。'+ s + 'さん! </p>')
+</script>
+</body>
+</html>
+
+#+END_SRC
+
+*** 条件判断
+
+*** 繰り返し
+
+*** 絵の切換え
+
+*** 数学の問題
