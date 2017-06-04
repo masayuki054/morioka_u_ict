@@ -1,0 +1,4 @@
+#+setupfile: ~/ict.git/org/info/index-sos-header.setup
+#+include: ~/ict.git/org/info/common-header.org
+#+title: 講義のまとめ
+#+include: lects/contents.org
