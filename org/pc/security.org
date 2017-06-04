@@ -11,6 +11,9 @@
 
 - [[https://www.ipa.go.jp/security/antivirus/documents/01_virus.pdf][ウイルス対策 01_virus.pdf]] 
 
+- [[https://www.ipa.go.jp/files/000011456.pdf][スマートフォンのセキュリティ対策のしおり]] (pdf)
+  
+
 - [[https://www.ipa.go.jp/security/antivirus/documents/04_fusei.pdf][不正アクセス対策のしおり - 04_fusei.pdf]]
 
 
