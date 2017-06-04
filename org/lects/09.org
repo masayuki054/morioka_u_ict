@@ -109,14 +109,27 @@ Word でレポートを書くための機能を学び，教科書5章中にあ�
 - 大学生らしいレポートの書き方について調べ，まとめを作成する 
   30分程度 4~5回
 
+  [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] のレポートの書き方
+
 - 「人生を変える勉強をしよう」を読んでまとめを作成する 1~2回
    30分程度 3回
+
+  [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] の fujiwara.org
+  
 
 - 管理栄養士資格試験についての情報をまとめた，Webページを作成する 
   30分程度 2~3回
 
+  Googleサイトをつかってリンク集と関連情報のページを作り，
+  みんなで共有する
+
+  https://sites.google.com/new
+  
+
 - スマホやPCのセキュリティについて学ぶ
   30分程度 2回
+
+  [[./pc.org][パソコンの使い方]] の security 
 
 他にやりたい事があれば，出席票に記入してください。
 

@@ -11,7 +11,7 @@ ORGS = [
   "firefox.org",
   "google.org",
   "guidance.org",
-  "lect.org"
+  "lect.org",
   "pc.org",
   "s.org",
   "text.org",
@@ -21,7 +21,7 @@ ORGS = [
 ]
 
 SUBDIRS = [
-  "lects"
+  "lects",
   "pc",
   "text",
   "typing",
