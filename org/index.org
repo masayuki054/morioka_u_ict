@@ -18,7 +18,6 @@
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
 
-
 * 講義関連サイト
 
 ** 講義の入り口 [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]] @github.io

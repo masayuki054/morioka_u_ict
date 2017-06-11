@@ -1,4 +1,4 @@
-#+include: 09.org :minlevel 1
+#+include: 10.org :minlevel 1
 
 * ガイダンス
 #+include: ガイダンス2017.org :minlevel 2

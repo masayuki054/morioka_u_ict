@@ -67,3 +67,12 @@
 #+include: 04.org :minlevel 3
 ** 2017.05.08
 #+include: 05.org :minlevel 3
+
+** 2017.05.15
+#+include: 06.org :minlevel 3
+
+** 2017.05.22
+#+include: 07.org :minlevel 3
+
+** 2017.05.29
+#+include: 08.org :minlevel 3

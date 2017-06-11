@@ -1,120 +1,251 @@
-# 2016.12.15 10回目
+# 2016.06.12 10回目
 
-- [[https://drive.google.com/open?id=0BwUWvGKIXA9PQjJCT2g0OXJ4Q28][出席票]] フォルダ
-- レポート提出フォルダ [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]] [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]
-- [[./typing.org][タイピング]] 
-- [[https://plus.google.com/communities/109024061748990090847][Google+のおしらせ]] [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
-- [[https://workflowy.com/s/PJdXxTriXr][盛岡大学の情報処理でworkflowyを使ってみよう]]
-
-* 今日 (2016.12.16 10th) の課題
+* 今日の課題-9回目 2017/6/5
 
 以下，今日やることです。
 
-** Doing タイピング 
+** タイピング 
 
-[[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
+- [[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつ
+  けましょう。
 
-- ウィンドウ枠の固定をしましょう。
-- 関数の使い方を覚えましょう。
-- 正しいキー数，ミスタイプ数の平均値，最小値，最大値を求めましょう。
-- 最後の行を使いましょう。
-- グラフを描いてみましょう。
-- 近似直線を描いてみましょう。
-- 近似直線の傾きを関数で求めましょう。
-- 相関係数を求めましょう。
+- 最後の行の前に行を挿入して記録し，グラフが自動的に書き変わることを確
+  かめましょう。
 
-[[https://workflowy.com/s/PJdXxTriXr][盛岡大学の情報処理でworkflowyを使ってみよう]] を参考に自分の workflowy
-のメモを作りましょう。
+- 練習成果の統計処理を始めましょう。
 
-** Doing Windows の基本操作などを学ぶ
+** Doing メモアプリを使ってみよう
 
-*** よく使うものを素早く開こう
-講義資料の [[./windows.org][Windows]] についての中から，「よく使うものを素早く開こう」を
-やってみましょう。
+*** Todo 使ってみよう [2017-06-05 月]
 
-自分の情報処理フォルダの中に，ショートカットを作ります。
+[[http://workflowy.com]] にログインし，教科書5.4, 5.5節のまとめを作ってみ
+ましょう。
 
-- 下記サイトのリンク(URL)を保存します:
+下記のように作りましょう:
 
-  - 今日の課題  [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]]  
-  - お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] の
-    中の出席票提出ページ
-  - [[https://drive.google.com/drive/my-drive][自分のGoogleドライブ]] 
-  - [[https://drive.google.com/open?id=0BwUWvGKIXA9PSzlPMk9uTWV1Y1U][Googleの講義資料ドライブ]] 
+- 情報処理
 
-- 各ページを開き，ブラウザに表示される，小さなアイコンを，
-  情報処理フォルダに，ドラッグ・アンド・ドロップします。
+  - 文書作成
 
-- 名前が長くて見づらかったら，名前を変更してください。
+    - Wordでレポート作成
+      
+      ここに，箇条書きでメモを作成
 
-ショートカットが保存できたら，それぞれダブルクリックして，正しく開くこ
-とを，確認してください。
+    - Wordを使う際のヒント
+      
+      ここにも，箇条書きでメモを作成
 
-*** 開いたアプリのウィンドウを素早く切り替えてください
+  - 表計算
 
-- Windowsキーとタブキーの同時押し
-- ALTキーとタブキーの同時押し
-- タスクバーでアプリのタブにマウスを重ねる
+    表計算のまとめをここに作る
 
-** Todo Web :: firefox の利用
 
-[[./firefox.org][firefox]] を読んで，「Firefox Portable」を使ってみましょう。
+*** Todo スマホの workflowy 
 
-- 「workflowy 使い方」について検索してみましょう。
-- いくつかのサイトを読んでみましょう。
-- 来週，履歴からサイトを思いだしましょう。
+    アプリをインストールし，使ってみよう。
 
-** Doing GoogleDrive
-   
-[[./google.org][Googleを利用しよう]] を読んで，レポート提出フォルダを先生と共有しましょ
-う。
+*** Done アカウントの作成    [2017-05-22]
 
-- [[https://drive.google.com/open?id=0BwUWvGKIXA9PUWpHbGtWU2dPVDA][午前のクラス]]  
-  - 1512215, 1513126 の人は，共有されていません。
+[[./web.org][Webアプリ]] の WorkFlowy を読んで，[[http://workflowy.com]] にアカウントを作成しましょう。
 
-- [[https://drive.google.com/open?id=0BwUWvGKIXA9Pel9OejR1STlUSkE][午後のクラス]]  
-  - 1412319 フォルダが二つあるので，どちらかにしましょう。
+Workflowy は，スマホのアプリもあります。気に入ったら，ダウンロードして
+使ってみましょう。
 
-** Done Web :: メモアプリ
-   CLOSED: [2016-12-14 水 21:19]
 
-メモを取って，文章の組立てを考えるための，新らしいアプリを使ってみましょ
-う。
+** Todo Word
 
-[[https://workflowy.com][workflowyサイト]] にアカウントを作ってください。
+何回かかけて，教科書5章を読み，レポートの体裁を学びましょう。
 
-まだ書きかけですが，[[./web.org][Web]]文書の, simplenote/workflowyを読んでください。
+*** 6/12 におこなうこと
 
-** Doing Office 
+メモアプリで，Word でレポートを書くときに必要なこと，Wordを使う際のヒ
+ントについて理解し，まとめをWorkflowy で作成しましょう。
 
-*** Todo [[https://drive.google.com/open?id=1TYKC8DtEvWed_QkaPcFkO0rD4aSJsNtiHFuKWBpjK84][鈴木の問題1]] 
+*** 5/29 におこなうこと
 
-    [[https://drive.google.com/open?id=1TYKC8DtEvWed_QkaPcFkO0rD4aSJsNtiHFuKWBpjK84][鈴木の問題1]] を行って，ワードのスタイルの使い方と，アウトラインの使
-    い方を学びましょう。
+[[http://masayuki054.github.io/morioka_u_ict/text.html#sec-16][16 文書作成レポート (2017年度)]] を読んで, 再度レポートを作成し，
+GoogleDrive のレポート提出フォルダに提出してください。
 
-*** Doing 提出した練習問題 2-1, 2-2, 3-1, 3-2, 4-1, 4-2 のまとめ
+*** これまでの内容
 
-    今日は，提出した練習問題 2-1, 2-2, 3-1, 3-2, 4-1, 4-2 を振り返り,
-    まとめのメモを作ります:
+Word でレポートを書くための機能を学び，教科書5章中にある「著作権法とファ
+イル交換ソフト」文書を作成しましょう。
 
-    - [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]] の [[https://drive.google.com/open?id=0BwUWvGKIXA9PTmpwWE1QR2JnVlk][第2回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PV3F3d0tVcm5GclU][第3回]], [[https://drive.google.com/open?id=0BwUWvGKIXA9PM2lJZ0RibGJnemM][第4回]] の各回の指示が書いてある
-      .pptx ダウンロードし，パワーポイントで開き，
+文書の内容をテキストにしたものが，[[https://drive.google.com/open?id=0BwUWvGKIXA9PVU9xd21kYm1SSVU][著作権法とファイル交換ソフト.txt]] に
+あります。
 
-    - 指示の文章をコピーし，workflowy に貼る
+ダウンロードし，メモ帳で開き，レポート文書の要素を確認し，Word を開き，
+文書全体をコピペし，教科書に従がってWord で体裁を決めていきましょう。
 
-    - workflowy でワードの作業のまとめを作る
+コピペの際などに余計な改行が入るので適宜削除してください。
 
-    https://workflowy.com/s/PJdXxTriXr を開き，先生のまとめを参考にして
-    ください。
+** Todo 表計算
+何回かかけて，教科書6章を読み，Excelによる表計算について学び，
+メモアプリでそのまとめを作成しましょう。
 
-    後から見て，作業内容を思いだせるような，自分のためのメモにしてくだ
-    さい。
+*** 6/12におこなうこと
+
+教科書6.7~6.9を読み，Excel について学び，下記の文書を *レポート提出フォ
+ルダ* の *表計算* フォルダに提出しましょう。
+
+- 大学の概要.docx (Word文書)
+- 学部学年別学生数.xlsx (Excelブック)
+- 得点と偏差値.xlsx (Excelブック)
+
+*** 6/5におこなうこと
+
+教科書6.1~6.6を読み，
+
+- 自分の情報処理フォルダに，「表計算フォルダ」を作成し，
+
+- 学部学科別学生数の表とグラフを作成し，
+  自分の表計算フォルダに，「学部学科別学生数」で保存してください。
+
+- 学部学科別学生数の表とグラフを貼ったWord文書を作成し，
+  自分の表計算フォルダフォルダに，「大学の概要」で保存してください。
+
+- GoogleDrive のレポート提出フォルダに「表計算フォルダ」を作成し，
+  GoogleDrive の表計算フォルダに，「学部学科別学生数」，「大学の概要」
+  を保存してください。
+
+メモアプリで，Excel で表計算するときに必要なことについてまとめておきま
+しょう。
+
+** これからやることの調査結果
+
+- 大学生らしいレポートの書き方について調べ，まとめを作成する *115pt.*
+  30分程度 4~5回
+
+  [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] のレポートの書き方
+
+- 管理栄養士資格試験についての情報をまとめた，Webページを作成する *107pt.*
+  30分程度 2~3回
+
+  Googleサイトをつかってリンク集と関連情報のページを作り，
+  みんなで共有する
+
+  https://sites.google.com/new
+  
+
+- 「人生を変える勉強をしよう」を読んでまとめを作成する 1~2回 *102pt.*
+   30分程度 3回
+
+  [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] の fujiwara.org
+  
+
+- スマホやPCのセキュリティについて学ぶ *69pt.*
+  30分程度 2回
+
+  [[./pc.org][パソコンの使い方]] の security 
+
+他にやりたい事があれば，ありませんでした。
+
+
+** 「レポートの書き方」
+
+何週かかけて， [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] の中の，「レポートの書き方」をや
+りましょう。
+
+*** 6/12 におこなうこと
+
+- 検索調査と関連ブックマークの作成
+
+- 読んでまとめるページを決める
 
 ** 出席票の提出
 
-[[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]] から出席票を開き，回答してください。
+[[https://sites.google.com/view/masayuki054-morioka-ict/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite:鈴木の盛岡大学情報処理演習2017]] から出席票を開き，回答してください。
+
+* Done 終わったこと，一時中断中のこと
+** Done Webとは
+   CLOSED: [2017-06-04 日 17:49]
+
+教科書3章1節「Webとは」を読み，Webについて理解し，まとめを
+作ります。
+
+*** まとめの作成 
+
+[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webについて]] を読んでください。
+下記の事をWordかメモ帳でまとめてください。
+
+- 重要な言葉を洗い出し，意味をまとめましょう。
+- 重要な言葉を使って，粗筋をまとめましょう。
+- 自分の情報処理フォルダに保存しましょう:
+  - メモ帳で作成した場合は，「ウェブとは.txt」
+  - Word で作成した場合は，「ウェブとは.docx」
+
+*** 先生の解説 [2017-05-29]
+
+    - [[./text.org][教科書のまとめと課題]] のWebとは
+    - [[https://drive.google.com/open?id=0BwUWvGKIXA9PdWhQUU52MUp0Slk][情報処理演習2017用ドライブ]] のいろいろな絵
+
+** Done Googleドライブの利用
+   CLOSED: [2017-06-04 日 15:38]
+
+   [[./Google.org][Googleを利用しよう]]を読んで，
+
+   - 自分のドライブを使ってみましょう。
+   - レポート提出フォルダを作りましょう。
+   - レポート提出フォルダを先生と共有しましょう。
+
+   Googleアカウントができていない人は，
+   作成，確認，ドライブの利用をやりましょう。
+
+** Todo 自分の情報処理フォルダのバックアップ
+
+自分の情報処理フォルダのバックアップをGoogleドライブに保存しておきましょ
+う。
+
+** Done 大学のWebメールを使う
+   CLOSED: [2017-06-04 日 17:49]
+
+   まだ確認していない人は，大学のWebメールが使えるか，確認してください。
+
+   suzumasa@morioka-u.ac.jp にメールをください.
+
+   - 「Webとは」のまとめ提出する旨の内容を書く
+   - 「Webとは」のまとめを添付する
+
+   5月中には確認してください。
+
+** Done PCの利用環境
+  
+盛大のPCの使い方を覚えましょう。 [[./pc.org][パソコンの使い方]] や [[./guidance.org][ガイダンス]] を参考にしてください。
+   
+*** 自分の情報処理応用フォルダの作成 
+
+または，ログインできていない人は，マイドキュメント・フォルダに
+「情報処理」フォルダを作成してください。
+
+ログインできず，フォルダが作れない人は，教えてください。
+
+*** 生徒用ファイルサーバを使う
+
+自己紹介を pdf 文書にしました。次のようにして，先生が作った文書を見て
+みましょう:
+
+- 「エクスプローラ」(Windowsキー+e) 
+   - 「生徒用(ファイル)サーバ」
+      - 「00情報処理鈴木」- 「自己紹介2017」
+
+** TodoWindows の基本操作などを学ぶ
+
+教科書の，コンピュータやWindowsの使い方，タイピングに関すること
+を再度確認していきましょう。
+
+[[./text.org][教科書のまとめと課題]]に先生のまとめがあります。
+
+- OS (Windows) の働き
+- Windows の便利な使い方
+
+[[./windows.org][Windowsについて]] を参考にしてください。
+
 
 * Doing 受講の準備
+
+  [[./pc.org][パソコンの使い方]] や [[./guidance.org][ガイダンス]] を参考にしてください。
+
+講義を受けるために下記のことを行ないましょう:
 
 - パソコンにログインし，
 
@@ -137,4 +268,3 @@
   - 自分のフォルダ(マイドキュメント)を開き，
 
   - 自分の情報処理演習フォルダを開きましょう。
-
