@@ -76,3 +76,17 @@
 
 ** 2017.05.29
 #+include: 08.org :minlevel 3
+
+** 2017.06.05
+#+include: 09.org :minlevel 3
+
+** 2017.06.12
+#+include: 10.org :minlevel 3
+
+
+** 2017.06.19
+#+include: 11.org :minlevel 3
+
+
+** 2017.06.26
+#+include: 12.org :minlevel 3
