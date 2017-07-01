@@ -1,4 +1,15 @@
+* Google サイト 
+
+下記サイトを見ながら自分のサイトを作ってみましょう:
+
+- [[http://www.appsupport.jp/category/sites/][Googleサイトの使い方]]
+
+- [[https://www.youtube.com/watch?v=fDf3dEfAxnI][Googleサイトの使い方 (Youtube)]]
+
+
 * Google new サイト 
+
+- Internet Explorer では使えないようです <2017-06-30 金>
 
 ** Google new サイト を開く
 
