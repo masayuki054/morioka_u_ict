@@ -115,7 +115,7 @@ function selectTabAndScroll(href) {
     // Rebuild minitoc
     generateMiniToc(targetTabId);
 
-    // Set the location hash
+// Set the location hash
     // document.location.hash = href;
 
     // Scroll to top if href was a tab
