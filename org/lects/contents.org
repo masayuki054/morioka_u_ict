@@ -1,6 +1,6 @@
-#+include: 16.org :minlevel 1
+#+include: 01.org :minlevel 1
 
 * ガイダンス
-#+include: ガイダンス2017.org :minlevel 2
+#+include: ガイダンス2018.org :minlevel 2
 
 #+include: 2017_summer.org :minlevel 1
