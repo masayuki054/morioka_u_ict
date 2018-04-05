@@ -23,10 +23,12 @@ if (typeof HS_STARTUP_FOLDED === 'undefined') {
 }
 
 if (typeof HS_SHOW_ALL_TEXT === 'undefined') {
-    var HS_SHOW_ALL_TEXT = '[Expand all]';
+//  var HS_SHOW_ALL_TEXT = '[Expand all]';
+    var HS_SHOW_ALL_TEXT = '[すべて展開]';    
 }
 if (typeof HS_HIDE_ALL_TEXT === 'undefined') {
-    var HS_HIDE_ALL_TEXT = '[Collapse all]';
+//  var HS_HIDE_ALL_TEXT = '[Collapse all]';
+    var HS_HIDE_ALL_TEXT = '[すべて折畳む]';    
 }
 
 if (typeof HS_ALWAYS_DISPLAY_ICON === 'undefined') {
