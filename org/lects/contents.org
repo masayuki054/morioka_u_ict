@@ -3,4 +3,4 @@
 * ガイダンス
 #+include: ガイダンス2018.org :minlevel 2
 
-#+include: 2017_summer.org :minlevel 1
+#+include: 2018_summer.org :minlevel 1
