@@ -18,15 +18,13 @@
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
 
+
 * 講義関連サイト
 
 ** 講義の入り口 [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]] @github.io
-
-** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
-
-** [[https://sites.google.com/view/masayuki054-morioka-ict/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite:鈴木の盛岡大学情報処理演習2017]]
-** [[https://drive.google.com/drive/folders/0BwUWvGKIXA9PNHBscE5fM0lCQ2M?usp=sharing][情報処理演習2016用ドライブ]] @GoogleDrive
-** [[https://drive.google.com/open?id=0BwUWvGKIXA9PdWhQUU52MUp0Slk][情報処理演習2017用ドライブ]] 
+** お知らせサイト [[https://plus.google.com/communities/107347372289734940925][Google+ 情報処理応用＠盛岡大学・栄養科学部]]
+** [[https://sites.google.com/view/morioka-u-ict-2018/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite:鈴木の盛岡大学情報処理演習2018]]
+** [[https://drive.google.com/drive/folders/1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C?usp=sharing][情報処理演習2018用ドライブ]] ([[https://drive.google.com/open?id=0BwUWvGKIXA9PdWhQUU52MUp0Slk][情報処理演習2017用ドライブ]]) @GoogleDrive
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
@@ -37,4 +35,4 @@
 
 ** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
 
-** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] 
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
