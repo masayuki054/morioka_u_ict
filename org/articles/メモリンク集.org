@@ -2,6 +2,7 @@
 
 情報処理演習に関するメモ
 - [[https://workflowy.com/s/E6dB.VfXQpwMnI3][情報処理演習のWorkflowyメモ]]
+- [[https://drive.google.com/open?id=1EpND8eZW9ExVv4Q4hI8-hmQLLmaoq9uN][ict2018]]
 
 Workflowyの使い方
 - [[http://millkeyweb.com/how-to-use-workflowy/][思考を論理的に整理するアウトラナー WorkFlowy の使い方 - MILL KEY WEB]]
