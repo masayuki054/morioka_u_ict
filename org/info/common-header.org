@@ -2,7 +2,7 @@
 
 [[http://masayuki054.hatenablog.com/entry/2018/03/29/190949][はてなのページ]] /
 [[http://masayuki054.github.io/morioka_u_ict][今日の講義]] / 
-[[https://sites.google.com/view/masayuki054-morioka-ict/%E3%83%9B%E3%83%BC%E3%83%A0][グーグルサイト]] /
+[[https://sites.google.com/view/morioka-u-ict-2018/][グーグルサイト]] /
 [[https://drive.google.com/drive/folders/1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C?usp=sharing][講義用グーグルドライブ]]
 
 #+AUTHOR: masayuki

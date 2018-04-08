@@ -75,12 +75,10 @@
 皆さんの今の状況を知って講義の内容や説明のやり方の参考にしますので，
 下記のリンクからアンケートを開き，回答し，送信してください。
 
-- [[http://goo.gl/forms/GPe2fCQaBm][アンケートへの回答サイト]]
-
+- [[https://drive.google.com/open?id=1X5FYogr4QTn7bFyqVhmNm1cE65P_w1gV][出席登録サイト]]，
 
 *** 出席票の提出
-
-[[http://goo.gl/forms/zO9YWXdY29][出席票の提出サイト]]で，
+[[https://drive.google.com/open?id=1X5FYogr4QTn7bFyqVhmNm1cE65P_w1gV][出席登録サイト]]で，
 記名し，回答し，送信してください。
 
 *** 紙の出席カードの提出
