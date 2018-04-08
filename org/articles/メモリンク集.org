@@ -1,0 +1,21 @@
+* いろいろなメモへのリンク
+
+情報処理演習に関するメモ
+- [[https://workflowy.com/s/E6dB.VfXQpwMnI3][情報処理演習のWorkflowyメモ]]
+
+Workflowyの使い方
+- [[http://millkeyweb.com/how-to-use-workflowy/][思考を論理的に整理するアウトラナー WorkFlowy の使い方 - MILL KEY WEB]]
+
+Mindmup の使い方
+- [[http://vdeep.net/mindmup][マインドマップで頭の中を整理！クラウドで使える「MindMup」が良い感じ ]]
+
+Firefox Portable
+- [[https://freesoft-100.com/usb/firefox_japanese.html][Firefox Portable（ファイアフォックス ポータブル）の日本語化]]
+
+XMind Portable
+
+- [[https://freesoft-100.com/review/xmind.php][XMind 8 の評価・使い方]]
+
+フリーMindmapソフトウェア
+
+[[https://freesoft-100.com/pasokon/mind-map.html][無料マインドマップ作成ソフト一覧 - フリーソフト100]]
