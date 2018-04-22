@@ -1,5 +1,4 @@
 # 2018.04.16 2回目
-* 今日の講義
 
 ** Doing 受講の準備
 
@@ -51,7 +50,7 @@
    - [[https://docs.google.com/spreadsheets/d/1oCBebyqGCgJc1eZsfyOJ0TgoH6bPGmmHzqOx_LEBzy8/edit?usp=sharing][Aの集計結果]]
    - [[https://docs.google.com/spreadsheets/d/13kQFXzlJg4UpvxKOyi5dFdqcm8bleCi5KC9l5EghjdU/edit?usp=sharing][B]]の集計結果
 
-*** 1回目の出席票の結果
+*** 2回目の出席票の結果
 
    - [[https://docs.google.com/spreadsheets/d/1YEi5TNoWHfxzYrfp22WbS7QSiRt4GH4KQvBjaT6MR60/edit?usp=sharing][A組の集計結果]]
    - [[https://docs.google.com/spreadsheets/d/11JKPAHuUpRl2vcTKSORw7rHv10Oqv7n-N04fU6EVn-Q/edit?usp=sharing][B組の集計結果]]
