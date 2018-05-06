@@ -102,13 +102,13 @@
 
    課題が早く終わった人は，下記の内容に取りかかりましょう
 
-** 「Webとは」を理解する
+*** 「Webとは」を理解する
 
    教科書3章1節「Webとは」を読み，Webについて理解し，まとめを作ります。
 
    先生のまとめ，[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webについて]] を参考にしてください。
 
-** Wordを始める
+*** Wordを始める
 
 教科書5章を読み，Word を使い始めましょう。
 
