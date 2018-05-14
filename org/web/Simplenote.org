@@ -1,3 +1,21 @@
+* Mindmup
+
+** what
+
+   頭の中をメモするのが，Mindmap.
+
+   Mindmapを描くためのアプリが，mindmup
+
+** 利用
+
+   [[http://vdeep.net/mindmup][マインドマップで頭の中を整理！クラウドで使える「MindMup」]] を読んで，
+
+   - GoogleDrive から 「新規」ー「その他」ー「+アプリを追加」ー「アプリを検索」(Mindmup)
+     ー 「接続」 すると
+
+   - GoogleDrive から 「新規」ー「その他」ー「Mindmup ...」で開けます
+
+
 * Workflowy
 
 ** Workflowy について

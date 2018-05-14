@@ -1,4 +1,10 @@
-#+include: 03.org :minlevel 1
+#+include: 06.org :minlevel 1
+
+* 受講の準備
+#+include: 受講の準備.org :minlevel 2
+
+* お知らせ
+#+include: announce.org :minlevel 2
 
 * ガイダンス
 #+include: ガイダンス2018.org :minlevel 2

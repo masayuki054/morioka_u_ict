@@ -1,5 +1,6 @@
 #+setupfile: ~/ict.git/org/info/index-sos-header.setup
 #+include: ~/ict.git/org/info/common-header.org
+
 #+title: 教科書のまとめ
 
 #+include: text/contents.org
