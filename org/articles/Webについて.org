@@ -48,8 +48,10 @@ Webでの検索について知りましょう:
 
 ** 先生のまとめ
 
-先生のまとめは，[[./text.org][教科書のまとめと課題]] にありますので，
+先生のまとめは，[[https://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめと課題]] にありますので，
 参考にしてください。
+
+[[https://drive.google.com/open?id=1JejNpqfR0bNi6jFBghix8AGCUGeZmW2-][先生のMindmap図]] も参考にしてください。
 
 先生の説明や説明図が講義用 GoogleDrive のいろいろな絵のフォルダにあり
 ます。参考にしてください。
