@@ -4,7 +4,7 @@
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>情報処理演習2018 教科書のまとめ</title>
-<!-- 2018-06-02 土 20:01 -->
+<!-- 2018-06-18 月 09:09 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="masayuki" />
@@ -196,7 +196,7 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#sec-3">3. 第3章　ネットの利用</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Webとは</a>
+<li><a href="#sec-3-1">3.1. Web</a>
 <ul>
 <li><a href="#sec-3-1-1">Web</a>
 <ul>
@@ -215,7 +215,16 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3-4">3.4. メールのマナー</a></li>
 <li><a href="#sec-3-5">3.5. メールの仕組み</a></li>
 <li><a href="#sec-3-6">3.6. メールソフトの設定</a></li>
-<li><a href="#sec-3-7">3.7. スマホ時代のネット利用</a></li>
+<li><a href="#sec-3-7">3.7. スマホ時代のネット利用</a>
+<ul>
+<li><a href="#sec-3-7-1">「スマホとは」&#x2013; 先生の考え</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-8">3.8. クラウド・サービス</a>
+<ul>
+<li><a href="#sec-3-8-1">Googleのクラウドサービスの利用</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#sec-4">4. 4章 お絵かきとファイル操作</a>
@@ -888,7 +897,7 @@ Windows では，いろいろな機能を呼びだすために使います。
 <h2 id="sec-3"><span class="section-number-2">3</span> 第3章　ネットの利用</h2>
 <div class="outline-text-2" id="text-3">
 </div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Webとは</h3>
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Web</h3>
 <div class="outline-text-3" id="text-3-1">
 </div><div id="outline-container-sec-3-1-1" class="outline-4">
 <h4 id="sec-3-1-1">Web</h4>
@@ -1018,17 +1027,22 @@ Internet Explorer, Safari, Chrome, Firefox など
 <div class="outline-text-3" id="text-3-2">
 <dl class="org-dl">
 <dt> メールアドレス </dt><dd><dl class="org-dl">
-<dt> 自分のメールアドレス </dt><dd></dd>
+<dt> 自分のメールアドレス </dt><dd><ul class="org-ul">
+<li>morioka-u.ac.jp での自分のアドレス 
+</li>
+</ul>
+</dd>
 </dl>
 </dd>
-<dt> (no term) </dt><dd>morioka-u.ac.jp での自分のアドレス
 
-<ul class="org-ul">
-<li>複数のメールアドレスと転送:: 
+<dt> (no term) </dt><dd>複数のメールアドレスと転送:: 
+
+<p>
 転送設定の利用
-</li>
+</p>
+</dd>
 
-<li id="メールの仕組み">教科書にはない
+<dt> メールの仕組み </dt><dd>教科書にはない
 
 <ul class="org-ul">
 <li>自分宛のメールはどこにあるのか？
@@ -1041,8 +1055,6 @@ Internet Explorer, Safari, Chrome, Firefox など
 </li>
 
 <li>送信したメールの生涯
-</li>
-</ul>
 </li>
 </ul>
 </dd>
@@ -1115,6 +1127,59 @@ Internet Explorer, Safari, Chrome, Firefox など
 
 <div id="outline-container-sec-3-5" class="outline-3">
 <h3 id="sec-3-5"><span class="section-number-3">3.5</span> メールの仕組み</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+自分から相手へメールを送る
+</p>
+
+<ul class="org-ul">
+<li>スマホのメールアプリでメール作成。
+</li>
+<li>自分のメール送信サーバへメール送信し，メール送信サーバは一旦メールを受信する。
+
+<ul class="org-ul">
+<li>SMTPサーバ 
+</li>
+</ul>
+</li>
+
+<li>自分のメールサーバは，相手のメールサーバへ接続し，メールを送信。
+
+<ul class="org-ul">
+<li>SMTPプロトコル
+</li>
+</ul>
+</li>
+
+<li>相手メールサーバは，メールを受信し，相手のメールボックスに格納。
+</li>
+
+<li>相手へ着信通知。
+</li>
+
+<li>相手は，メールアプリで，メールボックスからメールを読みだす。
+
+<ul class="org-ul">
+<li>POP, IMAP プロトコル
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+自分へのメールを読む
+</p>
+
+<ul class="org-ul">
+<li>自分のメール受信サーバから，着信通知が来る。
+</li>
+<li>メールアプリで，メール受信サーバに接続，メールボックスに溜ってい
+るメールを一覧する。
+</li>
+<li>メールを読む
+</li>
+</ul>
+</div>
 </div>
 
 <div id="outline-container-sec-3-6" class="outline-3">
@@ -1123,6 +1188,172 @@ Internet Explorer, Safari, Chrome, Firefox など
 
 <div id="outline-container-sec-3-7" class="outline-3">
 <h3 id="sec-3-7"><span class="section-number-3">3.7</span> スマホ時代のネット利用</h3>
+<div class="outline-text-3" id="text-3-7">
+<p>
+通信にインターネットを利用
+</p>
+<ul class="org-ul">
+<li>音声通信もデータ用通信もパケット通信
+</li>
+<li>輻輳が起りにくい
+</li>
+<li>データ用通信には WiFi (無線LAN) 接続
+</li>
+<li>デザリングが可能
+
+<p>
+他の機器を，インターネットに繋ぐ
+</p>
+</li>
+</ul>
+
+<p>
+格安でインターネット接続が可能になった
+</p>
+<ul class="org-ul">
+<li>格安スマホ，格安 SIM の登場
+</li>
+</ul>
+
+<p>
+携帯端末
+</p>
+<ul class="org-ul">
+<li>モバイル性，
+</li>
+<li>高機能入出力
+</li>
+</ul>
+
+<p>
+LineやTwitterなどの人気SNSアプリ
+</p>
+<ul class="org-ul">
+<li>多くの利用者
+</li>
+<li>ネット中毒
+</li>
+<li>炎上
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-3-7-1" class="outline-4">
+<h4 id="sec-3-7-1">「スマホとは」&#x2013; 先生の考え</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<p>
+携帯電話としての利用
+</p>
+<ul class="org-ul">
+<li>電話
+</li>
+<li>SMSメール
+</li>
+</ul>
+
+<p>
+インターネットを利用した通信のための機器
+</p>
+<ul class="org-ul">
+<li>メール
+</li>
+<li>Line
+</li>
+</ul>
+
+<p>
+Webサービスを使うための端末である
+</p>
+<ul class="org-ul">
+<li>多くのアプリが，Webの枠組みを利用
+</li>
+<li>Webアプリが，スマホのアプリとして動く
+</li>
+</ul>
+
+<p>
+PCでもある
+</p>
+
+<p>
+インターネット接続(するためのルータ)でもある
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-8" class="outline-3">
+<h3 id="sec-3-8"><span class="section-number-3">3.8</span> クラウド・サービス</h3>
+<div class="outline-text-3" id="text-3-8">
+<ul class="org-ul">
+<li>情報処理サービス(アプリ)を,
+</li>
+<li>インターネット上のサーバーで動かすことで，
+</li>
+<li>どこででもサービスを受けられる
+</li>
+<li>PC, タブレット，スマホ，どれでもサービスを受けられる
+</li>
+
+<li>クラウドストレージ (インターネット上のファイル置き場)もその一つ
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-3-8-1" class="outline-4">
+<h4 id="sec-3-8-1">Googleのクラウドサービスの利用</h4>
+<div class="outline-text-4" id="text-3-8-1">
+<ul class="org-ul">
+<li>Googleアカウントの取得
+<ul class="org-ul">
+<li>スマホとSMSメッセージによる本人確認
+</li>
+</ul>
+</li>
+<li>GMail
+<ul class="org-ul">
+<li>Webメール
+<ul class="org-ul">
+<li>Webブラウザだけで，メールの読み書きができる
+</li>
+</ul>
+</li>
+<li>スマホアプリ 
+</li>
+</ul>
+</li>
+<li>GoogleDrive
+<ul class="org-ul">
+<li>クラウドストレージ 
+</li>
+<li>共有
+</li>
+</ul>
+</li>
+<li>GoogleDocs
+<ul class="org-ul">
+<li>Office アプリ
+</li>
+</ul>
+</li>
+<li>GoogleSite
+<ul class="org-ul">
+<li>自分のサイト作成
+</li>
+</ul>
+</li>
+
+<li>Mindmup
+<ul class="org-ul">
+<li>アプリは mindmup.com
+</li>
+<li>マップのホゾン場所が GoogleDrive
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div id="outline-container-sec-4" class="outline-2">
@@ -3350,7 +3581,7 @@ word2007 (ファイル拡張子 .docx)
 </div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2018-06-02 土 20:01</p>
+<p class="date">Created: 2018-06-18 月 09:09</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="https://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
