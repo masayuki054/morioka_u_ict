@@ -131,5 +131,16 @@
 
     今日の講義の内容を思いだし，メモしてみましょう。
 
+*** 次週までの宿題
+
+    [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webとインターネットについてのまとめを作成する]] を読んで，
+    Webの What, Why, How について自分の考えをまとめ，
+    レポート(の叩き台)を作成してください。
+
+    形式は，Word でも メモ帖 でも Mindmup でもいいです。
+
+    GoogleDrive のレポート提出フォルダに「Webとは」という名前のフォル
+    ダを作成し，そのフォルダ内に提出してください。
+
 
 
