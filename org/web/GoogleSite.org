@@ -1,15 +1,12 @@
-* Google サイト 
+* GoogleSite (by google)
 
-下記サイトを見ながら自分のサイトを作ってみましょう:
+- 盛大PC のInternet Explorer では使えないようです <2017-06-30 金>
 
-- [[http://www.appsupport.jp/category/sites/][Googleサイトの使い方]]
+  下記サイトを読んで，Google に自分のホームページを作ってみましょう:
+  
+  - [[https://gsuite.google.jp/learning-center/products/sites/get-started/#!/][Google サイト スタートガイド]]
 
-- [[https://www.youtube.com/watch?v=fDf3dEfAxnI][Googleサイトの使い方 (Youtube)]]
-
-
-* Google new サイト 
-
-- Internet Explorer では使えないようです <2017-06-30 金>
+* GoogleSite (by すずき)
 
 ** Google new サイト を開く
 
@@ -47,14 +44,16 @@
 
    - 右上の「公開」をクリック
 
-
 ** 新らしいページの追加
 
    - 右のサイドバーの「ページ」を選び，
    - + をクリック
 
+* (古いかも) Google サイト 
 
+下記サイトを見ながら自分のサイトを作ってみましょう:
 
+- [[http://www.appsupport.jp/category/sites/][Googleサイトの使い方]]
 
-   
+- [[https://www.youtube.com/watch?v=fDf3dEfAxnI][Googleサイトの使い方 (Youtube)]]
 
