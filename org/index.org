@@ -30,11 +30,12 @@
 ** [[https://morioka-u.ap-cloud.com/prtl][盛岡大学学務ポータル]]
 
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
+** [[http://www.markdown.jp/what-is-markdown/][markdownとは--日本語Markdownユーザー会]]
+** [[https://daringfireball.net/projects/markdown/dingus][Markdown プレビュー サイト]]
+
 ** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
 
 ** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
 
 ** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
 
-*
- 
