@@ -3,7 +3,6 @@
 #+title: 
 
 #+include: lects/contents.org :minlevel 1
-
 * 講義資料
 
 ** [[./guidance.org][ガイダンス]]
@@ -17,7 +16,6 @@
 ** [[./windows.org][Windowsについて]]
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
-
 
 * 講義関連サイト・Webアプリ
 

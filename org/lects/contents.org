@@ -1,4 +1,4 @@
-#+include: 12.org :minlevel 1
+#+include: 13.org :minlevel 1
 
 * 受講の準備
 #+include: 受講の準備.org :minlevel 2
