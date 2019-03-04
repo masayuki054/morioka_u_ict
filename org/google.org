@@ -4,3 +4,5 @@
 #+include: 
 
 #+include: web/Google.org :minlevel 1
+#+include: web/GoogleSite.org :minlevel 1
+#+include: web/GoogleDocs.org :minlevel 1
