@@ -30,5 +30,5 @@
 
 ** 自分のGoodgleDrive
 
-[[./google.org::Google Drive][Google Drive]] ([[../Web/Google.org::Google Drive][@org]]) を読んでください
+[[./google.org][Google Drive]]を読んでください
 
