@@ -9,5 +9,3 @@
 #+include: 素早く開こうの課題.org :minlevel 1
 #+include: USBメモリ.org :minlevel 1
 #+include: バックアップと同期.org :minlevel 1
-
-#+include: old.org :minlevel 1

@@ -18,17 +18,16 @@
 ** [[./s.org][suzumasa@morioka-u.ac.jpのドキュメント]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
 
+
 * 講義関連サイト・Webアプリ
 
 ** [[http://masayuki054.github.io/morioka_u_ict/][今日の講義]] 
-** [[https://plus.google.com/communities/107347372289734940925][お知らせサイト]]
 ** [[https://drive.google.com/open?id=1X5FYogr4QTn7bFyqVhmNm1cE65P_w1gV][出席登録サイト]]
-** [[https://drive.google.com/drive/folders/1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C?usp=sharing][情報処理演習2018用ドライブ]] ([[https://drive.google.com/open?id=0BwUWvGKIXA9PdWhQUU52MUp0Slk][情報処理演習2017用ドライブ]]) @GoogleDrive
+** [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用グーグルドライブ]]
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
-** [[https://morioka-u.ap-cloud.com/prtl][盛岡大学学務ポータル]]
 
-** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
+
 ** [[http://www.markdown.jp/what-is-markdown/][markdownとは--日本語Markdownユーザー会]]
 ** [[https://daringfireball.net/projects/markdown/dingus][Markdown プレビュー サイト]]
 
@@ -36,5 +35,4 @@
 
 ** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
 
-** [[https://mindmeister.com][mindMiesterサイト]] (ログインが必要)
 
