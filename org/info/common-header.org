@@ -1,4 +1,4 @@
-#+title: 情報処理演習2018
+#+title: 情報処理演習2019
 
 [[http://masayuki054.hatenablog.com/entry/2018/03/29/190949][はてなのページ]] /
 [[http://masayuki054.github.io/morioka_u_ict][今日の講義]] / 

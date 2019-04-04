@@ -1,7 +1,7 @@
 #+include: lects/contents.org :minlevel 1
+
 * 講義資料
 
-** [[https://drive.google.com/open?id=0BwUWvGKIXA9PVWZvVVgtOG5kZjg][兼平先生の資料]]
 ** [[./guidance.org][ガイダンス]]
 ** [[./pc.org][PCの利用]]
 ** [[./typing.org][タイピング]]
@@ -16,8 +16,6 @@
 * 講義関連サイト
 
 ** 講義の入り口 [[http://masayuki054.github.io/morioka_u_ict/][morioka_u_ict]] @github.io
-
-** お知らせサイト [[https://plus.google.com/communities/109024061748990090847][Google+ 情報処理応用＠盛岡大学・文学部・児童教育]]
 
 ** [[https://drive.google.com/drive/my-drive][自分のドライブ]] @GoogleDrive (Googleにログインすることが必要です)
 
