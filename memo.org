@@ -1,0 +1,5 @@
+** info/common-header.org
+
+*** macro
+ #+macro: lll [[file:./$1.org][$2]]の中の[[file:./$1.html#$4][$3]]の章
+ #+macro: ll [[file:./$1.org][$2]] 
