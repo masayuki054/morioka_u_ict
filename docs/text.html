@@ -3,23 +3,30 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<title>情報処理演習2018 教科書のまとめ</title>
-<!-- 2018-07-16 月 10:48 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="masayuki" />
+<!-- 2019-04-07 日 21:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2019 教科書のまとめ</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="masayuki" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -46,27 +53,111 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -86,6 +177,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
@@ -107,7 +199,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -151,293 +243,293 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">情報処理演習2018 教科書のまとめ</h1>
+<h1 class="title">情報処理演習2019 教科書のまとめ</h1>
 <div id="table-of-contents">
 <h2>&#30446;&#27425;</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. 第1章　まず初めに</a>
+<li><a href="#orge6ca2c1">1. 第1章　まず初めに</a>
 <ul>
-<li><a href="#sec-1-1">1.1. コンピュータとのつきあい方</a></li>
-<li><a href="#sec-1-2">1.2. コンピュータの基本用語</a>
+<li><a href="#org2992466">1.1. コンピュータとのつきあい方</a></li>
+<li><a href="#org0cbb559">1.2. コンピュータの基本用語</a>
 <ul>
-<li><a href="#sec-1-2-1">コンピュータの種類</a></li>
-<li><a href="#sec-1-2-2">OS 基本ソフト</a></li>
-<li><a href="#sec-1-2-3">アプリケーションソフト</a></li>
-<li><a href="#sec-1-2-4">ハードウェアとOSとアプリケーションの関係</a></li>
+<li><a href="#org8016c99">コンピュータの種類</a></li>
+<li><a href="#org5d1163c">OS 基本ソフト</a></li>
+<li><a href="#orgb7adfab">アプリケーションソフト</a></li>
+<li><a href="#org58b8da9">ハードウェアとOSとアプリケーションの関係</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-3">1.3. Windowsの起動のしかた</a></li>
-<li><a href="#sec-1-4">1.4. ユーザ名とパスワード</a></li>
-<li><a href="#sec-1-5">1.5. Windowsの基本操作</a></li>
-<li><a href="#sec-1-6">1.6. パソコンの終了のしかた</a></li>
-<li><a href="#sec-1-7">1.7. Macの基本操作</a></li>
-<li><a href="#sec-1-8">1.8. マウスの使い方</a></li>
-<li><a href="#sec-1-9">1.9. 困ったときには</a></li>
-<li><a href="#sec-1-10">1.10. パソコンやソフトの買い方</a></li>
+<li><a href="#orgbffb5bf">1.3. Windowsの起動のしかた</a></li>
+<li><a href="#org1dddba3">1.4. ユーザ名とパスワード</a></li>
+<li><a href="#org17e9a2d">1.5. Windowsの基本操作</a></li>
+<li><a href="#org0c66645">1.6. パソコンの終了のしかた</a></li>
+<li><a href="#org470f9d7">1.7. Macの基本操作</a></li>
+<li><a href="#orgc9b636e">1.8. マウスの使い方</a></li>
+<li><a href="#org3edbe33">1.9. 困ったときには</a></li>
+<li><a href="#orgf9cc07f">1.10. パソコンやソフトの買い方</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2. 第2章　文字入力</a>
+<li><a href="#orge81d5db">2. 第2章　文字入力</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Windowsの「メモ帳」</a></li>
-<li><a href="#sec-2-2">2.2. Macのテキストエディット</a>
+<li><a href="#orgc217c8f">2.1. Windowsの「メモ帳」</a></li>
+<li><a href="#org3091c21">2.2. Macのテキストエディット</a>
 <ul>
-<li><a href="#sec-2-2-1">文字コード</a></li>
-<li><a href="#sec-2-2-2">日本語入力</a></li>
+<li><a href="#org9ca8584">文字コード</a></li>
+<li><a href="#org54d4a7c">日本語入力</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-3">2.3. UNIX系OSのテキストエディタ</a></li>
-<li><a href="#sec-2-4">2.4. タッチタイピング</a></li>
-<li><a href="#sec-2-5">2.5. 各キーの働き</a></li>
-<li><a href="#sec-2-6">2.6. 日本語の入力法</a></li>
-<li><a href="#sec-2-7">2.7. ローマ字入力の練習</a></li>
-<li><a href="#sec-2-8">2.8. ローマ字について</a></li>
+<li><a href="#org725fd7d">2.3. UNIX系OSのテキストエディタ</a></li>
+<li><a href="#org765db27">2.4. タッチタイピング</a></li>
+<li><a href="#orgcee8b89">2.5. 各キーの働き</a></li>
+<li><a href="#org2f30ab2">2.6. 日本語の入力法</a></li>
+<li><a href="#org93b5eb0">2.7. ローマ字入力の練習</a></li>
+<li><a href="#org6048754">2.8. ローマ字について</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. 第3章　ネットの利用</a>
+<li><a href="#org3a5c943">3. 第3章　ネットの利用</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Web</a>
+<li><a href="#org6f8a7b9">3.1. Web</a>
 <ul>
-<li><a href="#sec-3-1-1">Web</a>
+<li><a href="#org156fca9">Web</a>
 <ul>
-<li><a href="#sec-3-1-1-1">Webとインターネットに対する先生の考え</a></li>
+<li><a href="#orgb9ad7f1">Webとインターネットに対する先生の考え</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-1-2">Web上での情報共有と共同作業の実例</a></li>
-<li><a href="#sec-3-1-3">ブラウザを使う</a></li>
-<li><a href="#sec-3-1-4">Webによる個人情報の提示</a></li>
-<li><a href="#sec-3-1-5">Webと個人認証</a></li>
-<li><a href="#sec-3-1-6">その他</a></li>
+<li><a href="#orgd135657">Web上での情報共有と共同作業の実例</a></li>
+<li><a href="#org3073ea5">ブラウザを使う</a></li>
+<li><a href="#org8edf846">Webによる個人情報の提示</a></li>
+<li><a href="#orgd10920d">Webと個人認証</a></li>
+<li><a href="#org559ab5d">その他</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-2">3.2. メールとは</a></li>
-<li><a href="#sec-3-3">3.3. メールの例</a></li>
-<li><a href="#sec-3-4">3.4. メールのマナー</a></li>
-<li><a href="#sec-3-5">3.5. メールの仕組み</a></li>
-<li><a href="#sec-3-6">3.6. メールソフトの設定</a></li>
-<li><a href="#sec-3-7">3.7. スマホ時代のネット利用</a>
+<li><a href="#org143409f">3.2. メールとは</a></li>
+<li><a href="#org0f67f30">3.3. メールの例</a></li>
+<li><a href="#orgc4ee75f">3.4. メールのマナー</a></li>
+<li><a href="#orgdcefbcc">3.5. メールの仕組み</a></li>
+<li><a href="#orgaf87520">3.6. メールソフトの設定</a></li>
+<li><a href="#org57e2e23">3.7. スマホ時代のネット利用</a>
 <ul>
-<li><a href="#sec-3-7-1">「スマホとは」&#x2013; 先生の考え</a></li>
+<li><a href="#org0163847">「スマホとは」&#x2013; 先生の考え</a></li>
 </ul>
 </li>
-<li><a href="#sec-3-8">3.8. クラウド・サービス</a>
+<li><a href="#org18e0640">3.8. クラウド・サービス</a>
 <ul>
-<li><a href="#sec-3-8-1">Googleのクラウドサービスの利用</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#sec-4">4. 4章 お絵かきとファイル操作</a>
-<ul>
-<li><a href="#sec-4-1">4.1. ペイントを起動</a></li>
-<li><a href="#sec-4-2">4.2. GIMP</a></li>
-<li><a href="#sec-4-3">4.3. コピーと貼り付け</a></li>
-<li><a href="#sec-4-4">4.4. ドライブとフォルダ</a></li>
-<li><a href="#sec-4-5">4.5. USBメモリの使い方</a></li>
-<li><a href="#sec-4-6">4.6. ファイル操作</a></li>
-</ul>
-</li>
-<li><a href="#sec-5">5. 第5章　文書作成</a>
-<ul>
-<li><a href="#sec-5-1">5.1. 文書作成ソフトのいろいろ</a></li>
-<li><a href="#sec-5-2">5.2. Wordの起動</a></li>
-<li><a href="#sec-5-3">5.3. 保存形式</a></li>
-<li><a href="#sec-5-4">5.4. Wordでレポート作成</a>
-<ul>
-<li><a href="#sec-5-4-1">文章の入力</a></li>
-<li><a href="#sec-5-4-2">文書の保存</a></li>
-<li><a href="#sec-5-4-3">タイトルの体裁</a></li>
-<li><a href="#sec-5-4-4">日付・著者名の体裁</a></li>
-<li><a href="#sec-5-4-5">見出しの設定</a></li>
-<li><a href="#sec-5-4-6">箇条書き</a></li>
-<li><a href="#sec-5-4-7">引用文</a></li>
-<li><a href="#sec-5-4-8">参考文献</a></li>
-<li><a href="#sec-5-4-9">ページ番号</a></li>
-</ul>
-</li>
-<li><a href="#sec-5-5">5.5. 印刷</a>
-<ul>
-<li><a href="#sec-5-5-1">Wordを使う際のヒント</a></li>
-<li><a href="#sec-5-5-2">Word以外のワープロソフト</a></li>
+<li><a href="#orgfc1d858">Googleのクラウドサービスの利用</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-6">6. 第6章　表計算</a>
+<li><a href="#orgb095594">4. 4章 お絵かきとファイル操作</a>
 <ul>
-<li><a href="#sec-6-1">6.1. 表計算ソフトウェアとは</a></li>
-<li><a href="#sec-6-2">6.2. Excelの起動</a></li>
-<li><a href="#sec-6-3">6.3. 表の作り方</a>
-<ul>
-<li><a href="#sec-6-3-1">データの入力</a></li>
-<li><a href="#sec-6-3-2">セルの選択とフィル操作</a></li>
-<li><a href="#sec-6-3-3">セルの書式</a></li>
-<li><a href="#sec-6-3-4">セルの結合</a></li>
-<li><a href="#sec-6-3-5">フォントの変更</a></li>
-<li><a href="#sec-6-3-6">セル幅の変更</a></li>
-<li><a href="#sec-6-3-7">罫線の追加</a></li>
+<li><a href="#org62f229c">4.1. ペイントを起動</a></li>
+<li><a href="#orgddc05e5">4.2. GIMP</a></li>
+<li><a href="#org378021d">4.3. コピーと貼り付け</a></li>
+<li><a href="#org4ff578f">4.4. ドライブとフォルダ</a></li>
+<li><a href="#org6a82263">4.5. USBメモリの使い方</a></li>
+<li><a href="#orga5264b0">4.6. ファイル操作</a></li>
 </ul>
 </li>
-<li><a href="#sec-6-4">6.4. 表の保存</a></li>
-<li><a href="#sec-6-5">6.5. 印刷のしかた</a>
+<li><a href="#org098fb76">5. 第5章　文書作成</a>
 <ul>
-<li><a href="#sec-6-5-1">プリンタの選択</a></li>
+<li><a href="#org3b70c6b">5.1. 文書作成ソフトのいろいろ</a></li>
+<li><a href="#orga6c9289">5.2. Wordの起動</a></li>
+<li><a href="#org1d30d71">5.3. 保存形式</a></li>
+<li><a href="#org32f06ed">5.4. Wordでレポート作成</a>
+<ul>
+<li><a href="#orgc4d3b4e">文章の入力</a></li>
+<li><a href="#org818d505">文書の保存</a></li>
+<li><a href="#org774a28e">タイトルの体裁</a></li>
+<li><a href="#org60a55a4">日付・著者名の体裁</a></li>
+<li><a href="#org350386f">見出しの設定</a></li>
+<li><a href="#org97bf454">箇条書き</a></li>
+<li><a href="#org65e98d4">引用文</a></li>
+<li><a href="#org06205e1">参考文献</a></li>
+<li><a href="#org8a0b51d">ページ番号</a></li>
 </ul>
 </li>
-<li><a href="#sec-6-6">6.6. グラフ作成</a>
+<li><a href="#org17f2e8a">5.5. 印刷</a>
 <ul>
-<li><a href="#sec-6-6-1">グラフ作成上の注意点</a></li>
-</ul>
-</li>
-<li><a href="#sec-6-7">6.7. Wordへの貼り付け</a></li>
-<li><a href="#sec-6-8">6.8. 計算</a></li>
-<li><a href="#sec-6-9">6.9. もっと計算，並べ替え</a></li>
-<li><a href="#sec-6-10">6.10. これから</a></li>
-</ul>
-</li>
-<li><a href="#sec-7">7. 7章 プレゼンテーション</a></li>
-<li><a href="#sec-8">8. 8章 Webによる情報発信</a>
-<ul>
-<li><a href="#sec-8-1">8.1. 8.1 Webの歴史</a></li>
-<li><a href="#sec-8-2">8.2. 8.2~5 Webサイトの構築</a></li>
-</ul>
-</li>
-<li><a href="#sec-9">9. 第9章　情報の調べ方・まとめ方</a>
-<ul>
-<li><a href="#sec-9-1">9.1. はじめに</a></li>
-<li><a href="#sec-9-2">9.2. サーチエンジン活用法</a></li>
-<li><a href="#sec-9-3">9.3. 図書館活用法</a></li>
-<li><a href="#sec-9-4">9.4. レポート・論文の書き方</a></li>
-</ul>
-</li>
-<li><a href="#sec-10">10. 10章 コンピュータとネットワーク</a>
-<ul>
-<li><a href="#sec-10-1">10.1. 10.4 ネットワークの仕組み</a></li>
-</ul>
-</li>
-<li><a href="#sec-11">11. 第11章　情報とセキュリティ</a>
-<ul>
-<li><a href="#sec-11-1">11.1. Windowsのセキュリティ対策</a>
-<ul>
-<li><a href="#sec-11-1-1">拡張子を表示しよう</a>
-<ul>
-<li><a href="#sec-11-1-1-1">危険な拡張子</a></li>
-<li><a href="#sec-11-1-1-2">安全な拡張子</a>
-<ul>
-<li><a href="#sec-11-1-1-2-1">圧縮ファイル (圧縮と解凍　パソコン初心者講座)</a></li>
+<li><a href="#orgfa530f9">Wordを使う際のヒント</a></li>
+<li><a href="#org21310f6">Word以外のワープロソフト</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-11-1-2">不正ソフトとは</a></li>
-<li><a href="#sec-11-1-3">ウイルス対策</a></li>
-<li><a href="#sec-11-1-4">消すだけでは消えない</a></li>
-<li><a href="#sec-11-1-5">暗号化しよう</a></li>
-<li><a href="#sec-11-1-6">TrueCrypt</a></li>
-<li><a href="#sec-11-1-7">コンピュータのロック</a></li>
-</ul>
-</li>
-<li><a href="#sec-11-2">11.2. Macのセキュリティ対策</a></li>
-<li><a href="#sec-11-3">11.3. スマホのセキュリティ対策</a></li>
-<li><a href="#sec-11-4">11.4. パスワード管理</a></li>
-<li><a href="#sec-11-5">11.5. 無線LANのセキュリティ</a></li>
-</ul>
-</li>
-<li><a href="#sec-12">12. 12章 情報と社会</a></li>
-<li><a href="#sec-13">13. 13章 プログラミング</a>
+<li><a href="#org90c6689">6. 第6章　表計算</a>
 <ul>
-<li><a href="#sec-13-1">13.1. はじめに</a></li>
-<li><a href="#sec-13-2">13.2. 例</a></li>
-<li><a href="#sec-13-3">13.3. 条件判断</a></li>
-<li><a href="#sec-13-4">13.4. 繰り返し</a></li>
-<li><a href="#sec-13-5">13.5. 絵の切換え</a></li>
-<li><a href="#sec-13-6">13.6. 数学の問題</a></li>
-</ul>
-</li>
-<li><a href="#sec-14">14. 付録</a>
+<li><a href="#org8b3f02c">6.1. 表計算ソフトウェアとは</a></li>
+<li><a href="#org968b3c9">6.2. Excelの起動</a></li>
+<li><a href="#org0d958bd">6.3. 表の作り方</a>
 <ul>
-<li><a href="#sec-14-1">14.1. 不正ソフトの種類 (マルウェア - Wikipediaより)</a>
+<li><a href="#org7289dd5">データの入力</a></li>
+<li><a href="#orgc0ea886">セルの選択とフィル操作</a></li>
+<li><a href="#org178919a">セルの書式</a></li>
+<li><a href="#org8a65c0b">セルの結合</a></li>
+<li><a href="#orgb8c0b38">フォントの変更</a></li>
+<li><a href="#orgba30e58">セル幅の変更</a></li>
+<li><a href="#org18db15c">罫線の追加</a></li>
+</ul>
+</li>
+<li><a href="#org4844587">6.4. 表の保存</a></li>
+<li><a href="#org4d16196">6.5. 印刷のしかた</a>
 <ul>
-<li><a href="#sec-14-1-1">狭義のコンピュータウイルス</a></li>
-<li><a href="#sec-14-1-2">広義のウイルス</a></li>
-<li><a href="#sec-14-1-3">ワーム</a></li>
-<li><a href="#sec-14-1-4">バックドア</a></li>
-<li><a href="#sec-14-1-5">トロイの木馬</a></li>
-<li><a href="#sec-14-1-6">スパイウェア</a></li>
-<li><a href="#sec-14-1-7">キーロガー</a></li>
-<li><a href="#sec-14-1-8">ボット</a></li>
-<li><a href="#sec-14-1-9">ルートキット</a></li>
-<li><a href="#sec-14-1-10">ランサムウェア(ransomware)</a></li>
-<li><a href="#sec-14-1-11">スケアウェア(scareware)</a></li>
-<li><a href="#sec-14-1-12">ダウンローダー</a></li>
-<li><a href="#sec-14-1-13">アドウェア（Adware）</a></li>
+<li><a href="#org364edf5">プリンタの選択</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#sec-15">15. 課題: Webとインターネットについてのまとめを作成する (2018)</a>
+<li><a href="#org1272e66">6.6. グラフ作成</a>
 <ul>
-<li><a href="#sec-15-1">15.1. まとめの作り方</a></li>
-<li><a href="#sec-15-2">15.2. Webとインターネットについてのまとめを作る</a></li>
-<li><a href="#sec-15-3">15.3. 先生のまとめ</a></li>
+<li><a href="#orgbc53047">グラフ作成上の注意点</a></li>
 </ul>
 </li>
-<li><a href="#sec-16">16. 教科書の3章をまとめる  (~2017)</a>
+<li><a href="#org4b2930d">6.7. Wordへの貼り付け</a></li>
+<li><a href="#orge63c9a3">6.8. 計算</a></li>
+<li><a href="#org60d03a4">6.9. もっと計算，並べ替え</a></li>
+<li><a href="#orgf3b5698">6.10. これから</a></li>
+</ul>
+</li>
+<li><a href="#org8100f0f">7. 7章 プレゼンテーション</a></li>
+<li><a href="#org54e69e3">8. 8章 Webによる情報発信</a>
+<ul>
+<li><a href="#org86c8c98">8.1. 8.1 Webの歴史</a></li>
+<li><a href="#org0d042b1">8.2. 8.2~5 Webサイトの構築</a></li>
+</ul>
+</li>
+<li><a href="#orgcc3514b">9. 第9章　情報の調べ方・まとめ方</a>
+<ul>
+<li><a href="#org9bd977d">9.1. はじめに</a></li>
+<li><a href="#org8199a46">9.2. サーチエンジン活用法</a></li>
+<li><a href="#orgbfb7e5c">9.3. 図書館活用法</a></li>
+<li><a href="#org863ec8a">9.4. レポート・論文の書き方</a></li>
+</ul>
+</li>
+<li><a href="#orge0c8c3d">10. 10章 コンピュータとネットワーク</a>
+<ul>
+<li><a href="#org4125ce6">10.1. 10.4 ネットワークの仕組み</a></li>
+</ul>
+</li>
+<li><a href="#orgd8bea88">11. 第11章　情報とセキュリティ</a>
+<ul>
+<li><a href="#org973ed49">11.1. Windowsのセキュリティ対策</a>
+<ul>
+<li><a href="#org6579d6b">拡張子を表示しよう</a>
+<ul>
+<li><a href="#org4efbc9c">危険な拡張子</a></li>
+<li><a href="#org73d8478">安全な拡張子</a>
+<ul>
+<li><a href="#org640ec2f">圧縮ファイル (圧縮と解凍　パソコン初心者講座)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7eb8b7e">不正ソフトとは</a></li>
+<li><a href="#orgdc8156e">ウイルス対策</a></li>
+<li><a href="#org5b46736">消すだけでは消えない</a></li>
+<li><a href="#org5668380">暗号化しよう</a></li>
+<li><a href="#orga1c08c6">TrueCrypt</a></li>
+<li><a href="#org97aaf93">コンピュータのロック</a></li>
+</ul>
+</li>
+<li><a href="#org94bf970">11.2. Macのセキュリティ対策</a></li>
+<li><a href="#org049c543">11.3. スマホのセキュリティ対策</a></li>
+<li><a href="#org2719218">11.4. パスワード管理</a></li>
+<li><a href="#org0a82ca0">11.5. 無線LANのセキュリティ</a></li>
+</ul>
+</li>
+<li><a href="#org0aee113">12. 12章 情報と社会</a></li>
+<li><a href="#orgf29392c">13. 13章 プログラミング</a>
+<ul>
+<li><a href="#org214453c">13.1. はじめに</a></li>
+<li><a href="#org02fb858">13.2. 例</a></li>
+<li><a href="#org4df5add">13.3. 条件判断</a></li>
+<li><a href="#org68f9250">13.4. 繰り返し</a></li>
+<li><a href="#org6e2563c">13.5. 絵の切換え</a></li>
+<li><a href="#org3a962e0">13.6. 数学の問題</a></li>
+</ul>
+</li>
+<li><a href="#org3eb8508">14. 付録</a>
+<ul>
+<li><a href="#orgb1dfc76">14.1. 不正ソフトの種類 (マルウェア - Wikipediaより)</a>
+<ul>
+<li><a href="#org564a6eb">狭義のコンピュータウイルス</a></li>
+<li><a href="#org5fae4f6">広義のウイルス</a></li>
+<li><a href="#org6875ef6">ワーム</a></li>
+<li><a href="#orgaeb6c7c">バックドア</a></li>
+<li><a href="#org0a83e72">トロイの木馬</a></li>
+<li><a href="#orge6c86d6">スパイウェア</a></li>
+<li><a href="#orgc8f8476">キーロガー</a></li>
+<li><a href="#org905649e">ボット</a></li>
+<li><a href="#orgb375d4f">ルートキット</a></li>
+<li><a href="#org7905eb0">ランサムウェア(ransomware)</a></li>
+<li><a href="#org3b6b98d">スケアウェア(scareware)</a></li>
+<li><a href="#org203ad60">ダウンローダー</a></li>
+<li><a href="#org3b6fdfb">アドウェア（Adware）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc34717b">15. 課題: Webとインターネットについてのまとめを作成する (2018)</a>
+<ul>
+<li><a href="#org4f860d2">15.1. まとめの作り方</a></li>
+<li><a href="#orga35d0f6">15.2. Webとインターネットについてのまとめを作る</a></li>
+<li><a href="#orgf5e1c82">15.3. 先生のまとめ</a></li>
+</ul>
+</li>
+<li><a href="#orgba5d1fd">16. 教科書の3章をまとめる  (~2017)</a>
 <ul>
 <li>
 <ul>
-<li><a href="#sec-16-0-1">「Webとは」の自分の理解をまとめる</a></li>
-<li><a href="#sec-16-0-2">理解のために調べたことをまとめる</a></li>
+<li><a href="#orgb259853">「Webとは」の自分の理解をまとめる</a></li>
+<li><a href="#org150e9c7">理解のために調べたことをまとめる</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sec-17">17. 文書作成レポート (2018年度)</a>
+<li><a href="#org51180eb">17. 文書作成レポート (2018年度)</a>
 <ul>
-<li><a href="#sec-17-1">17.1. 文書の構造を意識する</a></li>
-<li><a href="#sec-17-2">17.2. Markdown記法とプレビュー</a></li>
-<li><a href="#sec-17-3">17.3. Word で整形</a>
+<li><a href="#org5a3546f">17.1. 文書の構造を意識する</a></li>
+<li><a href="#org898406f">17.2. Markdown記法とプレビュー</a></li>
+<li><a href="#orgcfa086e">17.3. Word で整形</a>
 <ul>
-<li><a href="#sec-17-3-1">*文書の保存と形式*を理解し，保存する</a></li>
-<li><a href="#sec-17-3-2">文書のデザインを選ぶ</a></li>
-<li><a href="#sec-17-3-3">文章の整形をおこなう</a></li>
+<li><a href="#orgda6b5fc">*文書の保存と形式*を理解し，保存する</a></li>
+<li><a href="#orgdab0e46">文書のデザインを選ぶ</a></li>
+<li><a href="#org1e19def">文章の整形をおこなう</a></li>
 </ul>
 </li>
-<li><a href="#sec-17-4">17.4. 課題の提出</a></li>
+<li><a href="#org34ca996">17.4. 課題の提出</a></li>
 </ul>
 </li>
-<li><a href="#sec-18">18. 文書作成レポート (2017年度)</a>
+<li><a href="#org2da6a3f">18. 文書作成レポート (2017年度)</a>
 <ul>
-<li><a href="#sec-18-1">18.1. 文書の構造を意識する</a></li>
-<li><a href="#sec-18-2">18.2. Word で整形</a>
+<li><a href="#org7ef78cb">18.1. 文書の構造を意識する</a></li>
+<li><a href="#org78375a1">18.2. Word で整形</a>
 <ul>
-<li><a href="#sec-18-2-1">*文書の保存と形式*を理解し，保存する</a></li>
-<li><a href="#sec-18-2-2">文章の整形をおこなう</a></li>
+<li><a href="#orgdf90366">*文書の保存と形式*を理解し，保存する</a></li>
+<li><a href="#org90fe229">文章の整形をおこなう</a></li>
 </ul>
 </li>
-<li><a href="#sec-18-3">18.3. 課題の提出</a></li>
+<li><a href="#org9a400c6">18.3. 課題の提出</a></li>
 </ul>
 </li>
-<li><a href="#sec-19">19. 文書作成レポート (2016年度)</a>
+<li><a href="#org729bf9c">19. 文書作成レポート (2016年度)</a>
 <ul>
-<li><a href="#sec-19-1">19.1. Simplenote で整形</a></li>
-<li><a href="#sec-19-2">19.2. Word で整形</a>
+<li><a href="#org964b8b4">19.1. Simplenote で整形</a></li>
+<li><a href="#org6b80657">19.2. Word で整形</a>
 <ul>
-<li><a href="#sec-19-2-1">*文書の保存と形式*を理解し，保存する</a></li>
-<li><a href="#sec-19-2-2">文章の整形をおこなう</a></li>
+<li><a href="#orgf945abe">*文書の保存と形式*を理解し，保存する</a></li>
+<li><a href="#orgc815958">文章の整形をおこなう</a></li>
 </ul>
 </li>
-<li><a href="#sec-19-3">19.3. 課題の提出</a></li>
+<li><a href="#org53c878c">19.3. 課題の提出</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
-<a href="https://masayuki054.hatenablog.com/entry/2018/03/29/190949">はてなのページ</a> /
+<a href="https://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
 <a href="https://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
-<a href="https://sites.google.com/view/morioka-u-ict-2018/">グーグルサイト</a> /
-<a href="https://drive.google.com/drive/folders/1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C?usp=sharing">講義用グーグルドライブ</a>
+<a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a>
 </p>
 
 <p>
@@ -448,49 +540,44 @@ for the JavaScript code in this tag.
 この文書は，教科書のまとめ（まだ作成中)です。
 </p>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 第1章　まず初めに</h2>
+<div id="outline-container-orge6ca2c1" class="outline-2">
+<h2 id="orge6ca2c1"><span class="section-number-2">1</span> 第1章　まず初めに</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> コンピュータとのつきあい方</h3>
+</div>
+<div id="outline-container-org2992466" class="outline-3">
+<h3 id="org2992466"><span class="section-number-3">1.1</span> コンピュータとのつきあい方</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 画面を見やすく，操作しやすくする
 </p>
 
 <ul class="org-ul">
-<li>リラックスできる姿勢で， 肩，手，距離，視線に注意する
-</li>
-<li>ディスプレイの反射，表面のほこり，明るさ，コントラストを適切に
-</li>
-<li>食いしばり，凝視，などを避ける
-</li>
-<li>視線の上下動を避ける，タッチタイピング
-</li>
+<li>リラックスできる姿勢で， 肩，手，距離，視線に注意する</li>
+<li>ディスプレイの反射，表面のほこり，明るさ，コントラストを適切に</li>
+<li>食いしばり，凝視，などを避ける</li>
+<li>視線の上下動を避ける，タッチタイピング</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> コンピュータの基本用語</h3>
+<div id="outline-container-org0cbb559" class="outline-3">
+<h3 id="org0cbb559"><span class="section-number-3">1.2</span> コンピュータの基本用語</h3>
 <div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-sec-1-2-1" class="outline-4">
-<h4 id="sec-1-2-1">コンピュータの種類</h4>
-<div class="outline-text-4" id="text-1-2-1">
+</div>
+<div id="outline-container-org8016c99" class="outline-4">
+<h4 id="org8016c99">コンピュータの種類</h4>
+<div class="outline-text-4" id="text-org8016c99">
 <ul class="org-ul">
-<li>デスクトップ型PC, ノートPC
-</li>
-<li>タブレット端末
-</li>
-<li>スマートホン
-</li>
+<li>デスクトップ型PC, ノートPC</li>
+<li>タブレット端末</li>
+<li>スマートホン</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-2" class="outline-4">
-<h4 id="sec-1-2-2">OS 基本ソフト</h4>
-<div class="outline-text-4" id="text-1-2-2">
+<div id="outline-container-org5d1163c" class="outline-4">
+<h4 id="org5d1163c">OS 基本ソフト</h4>
+<div class="outline-text-4" id="text-org5d1163c">
 <p>
 OSって何？ 
 </p>
@@ -499,24 +586,18 @@ OSって何？
 <li>コンピュータハードウェアを制御する汎用プログラム 
 
 <ul class="org-ul">
-<li>アプリケーションを動かすために， 
-</li>
-</ul>
-</li>
+<li>アプリケーションを動かすために，</li>
+</ul></li>
 
 <li>コンピュータの機能をユーザに使いやすく提供する
 
 <ul class="org-ul">
-<li>ファイルやフォルダを提供する
-</li>
+<li>ファイルやフォルダを提供する</li>
 
-<li>プリンタで印刷する
-</li>
+<li>プリンタで印刷する</li>
 
-<li>インターネットにつなげる
-</li>
-</ul>
-</li>
+<li>インターネットにつなげる</li>
+</ul></li>
 </ul>
 
 <p>
@@ -524,36 +605,31 @@ OSの種類
 </p>
 
 <ul class="org-ul">
-<li>Windows 7, 8.1，10
-</li>
+<li>Windows 7, 8.1，10</li>
 
-<li>MacOSX 10.9 からただに 
-</li>
+<li>MacOSX 10.9 からただに</li>
 
-<li>Linux, Unix 
-</li>
+<li>Linux, Unix</li>
 
-<li>iOS (~ MacOSX) 
-</li>
+<li>iOS (~ MacOSX)</li>
 
-<li>Android (~ Linux)
-</li>
+<li>Android (~ Linux)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-3" class="outline-4">
-<h4 id="sec-1-2-3">アプリケーションソフト</h4>
-<div class="outline-text-4" id="text-1-2-3">
+<div id="outline-container-orgb7adfab" class="outline-4">
+<h4 id="orgb7adfab">アプリケーションソフト</h4>
+<div class="outline-text-4" id="text-orgb7adfab">
 <p>
 ユーザがOS上で使う特定利用目的のソフトウェア
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-4" class="outline-4">
-<h4 id="sec-1-2-4">ハードウェアとOSとアプリケーションの関係</h4>
-<div class="outline-text-4" id="text-1-2-4">
+<div id="outline-container-org58b8da9" class="outline-4">
+<h4 id="org58b8da9">ハードウェアとOSとアプリケーションの関係</h4>
+<div class="outline-text-4" id="text-org58b8da9">
 <pre class="example">
 |-----------------------------------|
 | アプリ１, アプリ2,  ... , アプリn |
@@ -567,237 +643,204 @@ OSの種類
 </div>
 </div>
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Windowsの起動のしかた</h3>
+<div id="outline-container-orgbffb5bf" class="outline-3">
+<h3 id="orgbffb5bf"><span class="section-number-3">1.3</span> Windowsの起動のしかた</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
-<li>ロック画面
-</li>
-<li>サインイン画面
-</li>
+<li>ロック画面</li>
+<li>サインイン画面</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> ユーザ名とパスワード</h3>
+<div id="outline-container-org1dddba3" class="outline-3">
+<h3 id="org1dddba3"><span class="section-number-3">1.4</span> ユーザ名とパスワード</h3>
 </div>
 
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Windowsの基本操作</h3>
+<div id="outline-container-org17e9a2d" class="outline-3">
+<h3 id="org17e9a2d"><span class="section-number-3">1.5</span> Windowsの基本操作</h3>
 <div class="outline-text-3" id="text-1-5">
 <ul class="org-ul">
-<li>スタート画面
-</li>
-<li>デスクトップ
-</li>
-<li>チャーム
-</li>
-<li>ソフトの閉じ方
-</li>
+<li>スタート画面</li>
+<li>デスクトップ</li>
+<li>チャーム</li>
+<li>ソフトの閉じ方</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-6" class="outline-3">
-<h3 id="sec-1-6"><span class="section-number-3">1.6</span> パソコンの終了のしかた</h3>
+<div id="outline-container-org0c66645" class="outline-3">
+<h3 id="org0c66645"><span class="section-number-3">1.6</span> パソコンの終了のしかた</h3>
 <div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
-<li>Windows 7まで
-</li>
-<li>Windows 8から
-</li>
-<li>Windows 8.1から
-</li>
-<li>サインアウトとスリープ
-</li>
+<li>Windows 7まで</li>
+<li>Windows 8から</li>
+<li>Windows 8.1から</li>
+<li>サインアウトとスリープ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-7" class="outline-3">
-<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Macの基本操作</h3>
+<div id="outline-container-org470f9d7" class="outline-3">
+<h3 id="org470f9d7"><span class="section-number-3">1.7</span> Macの基本操作</h3>
 </div>
 
-<div id="outline-container-sec-1-8" class="outline-3">
-<h3 id="sec-1-8"><span class="section-number-3">1.8</span> マウスの使い方</h3>
+<div id="outline-container-orgc9b636e" class="outline-3">
+<h3 id="orgc9b636e"><span class="section-number-3">1.8</span> マウスの使い方</h3>
 <div class="outline-text-3" id="text-1-8">
 <ul class="org-ul">
-<li>（左）クリック
-</li>
+<li>（左）クリック</li>
 
-<li>ダブルクリック
-</li>
+<li>ダブルクリック</li>
 
-<li>右クリック するとその場に応じたメニューが現れる
-</li>
+<li>右クリック するとその場に応じたメニューが現れる</li>
 
-<li>ドラッグ&amp;ドロップ
+<li><p>
+ドラッグ&amp;ドロップ
+</p>
 
 <p>
 アイテム上で左ボタンを押したまま移動し，目的の場所で離し，アイテムを移動する。コピーになったり，入力になったりする
-</p>
-</li>
+</p></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-9" class="outline-3">
-<h3 id="sec-1-9"><span class="section-number-3">1.9</span> 困ったときには</h3>
+<div id="outline-container-org3edbe33" class="outline-3">
+<h3 id="org3edbe33"><span class="section-number-3">1.9</span> 困ったときには</h3>
 <div class="outline-text-3" id="text-1-9">
 <ul class="org-ul">
-<li>ヘルプとサポート スタートボタンから
-</li>
+<li>ヘルプとサポート スタートボタンから</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1-10" class="outline-3">
-<h3 id="sec-1-10"><span class="section-number-3">1.10</span> パソコンやソフトの買い方</h3>
+<div id="outline-container-orgf9cc07f" class="outline-3">
+<h3 id="orgf9cc07f"><span class="section-number-3">1.10</span> パソコンやソフトの買い方</h3>
 </div>
 </div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 第2章　文字入力</h2>
+<div id="outline-container-orge81d5db" class="outline-2">
+<h2 id="orge81d5db"><span class="section-number-2">2</span> 第2章　文字入力</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Windowsの「メモ帳」</h3>
+</div>
+<div id="outline-container-orgc217c8f" class="outline-3">
+<h3 id="orgc217c8f"><span class="section-number-3">2.1</span> Windowsの「メモ帳」</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>メモ帳の起動
 
 <ul class="org-ul">
-<li>アプリに関することは「スタート」メニューから探す
-</li>
-<li>メモ帳は文字を入力することで，テキスト文書を作成するアプリ
-</li>
-</ul>
-</li>
+<li>アプリに関することは「スタート」メニューから探す</li>
+<li>メモ帳は文字を入力することで，テキスト文書を作成するアプリ</li>
+</ul></li>
 
 <li>保存
 
 <ul class="org-ul">
-<li>メモ帳で作ったテキスト文書を，Windows のファイルの中に保存する
-</li>
-<li>ファイルやフォルダに関すること
-</li>
-<li>「ファイル」メニューから
-</li>
-</ul>
-</li>
+<li>メモ帳で作ったテキスト文書を，Windows のファイルの中に保存する</li>
+<li>ファイルやフォルダに関すること</li>
+<li>「ファイル」メニューから</li>
+</ul></li>
 
 <li>ファイルの種類
 
 <ul class="org-ul">
-<li>ファイルに入っている中身の文書がどんなものか
-</li>
-<li>ワードの文書，エクセルの文書，PDF文書，テキスト文書
-</li>
-</ul>
-</li>
+<li>ファイルに入っている中身の文書がどんなものか</li>
+<li>ワードの文書，エクセルの文書，PDF文書，テキスト文書</li>
+</ul></li>
 
 <li>拡張子
 
 <ul class="org-ul">
-<li>ファイルの名前と種類は，ファイル名.拡張子で表される
-</li>
-<li>拡張子が隠れている場合もある
-</li>
+<li>ファイルの名前と種類は，ファイル名.拡張子で表される</li>
+<li>拡張子が隠れている場合もある</li>
 <li>.docはワード文書，.xlsはエクセル文書，.pdf はPDF文書，.txt
-はテキスト文書
-</li>
+はテキスト文書</li>
 
-<li>OSはファイルの拡張子から，ダブルクリックした時に起動するアプリを決める
-</li>
-<li>ファイルで右クリックし，そのファイル内の文書を処理すべきアプリを選べる
-</li>
+<li>OSはファイルの拡張子から，ダブルクリックした時に起動するアプリを決める</li>
+<li>ファイルで右クリックし，そのファイル内の文書を処理すべきアプリを選べる</li>
 
-<li>拡張子とアプリの対応は予め決まっているが，コントロールパネルで変更できる。（自分用に設定することをカスタマイズという）
-</li>
-</ul>
-</li>
+<li>拡張子とアプリの対応は予め決まっているが，コントロールパネルで変更できる。（自分用に設定することをカスタマイズという）</li>
+</ul></li>
 
 <li>文字コード
 
 <ul class="org-ul">
-<li>ANSI (シフトJIS) Windows で昔から使われている日本語のためのコード
-</li>
+<li>ANSI (シフトJIS) Windows で昔から使われている日本語のためのコード</li>
 <li>UTF-8
-新しく広くつかわれるようになってきたが、古いアプリでは使えない
-</li>
-</ul>
-</li>
+新しく広くつかわれるようになってきたが、古いアプリでは使えない</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Macのテキストエディット</h3>
+<div id="outline-container-org3091c21" class="outline-3">
+<h3 id="org3091c21"><span class="section-number-3">2.2</span> Macのテキストエディット</h3>
 <div class="outline-text-3" id="text-2-2">
-</div><div id="outline-container-sec-2-2-1" class="outline-4">
-<h4 id="sec-2-2-1">文字コード</h4>
+</div>
+<div id="outline-container-org9ca8584" class="outline-4">
+<h4 id="org9ca8584">文字コード</h4>
 </div>
 
-<div id="outline-container-sec-2-2-2" class="outline-4">
-<h4 id="sec-2-2-2">日本語入力</h4>
+<div id="outline-container-org54d4a7c" class="outline-4">
+<h4 id="org54d4a7c">日本語入力</h4>
 </div>
 </div>
 
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> UNIX系OSのテキストエディタ</h3>
+<div id="outline-container-org725fd7d" class="outline-3">
+<h3 id="org725fd7d"><span class="section-number-3">2.3</span> UNIX系OSのテキストエディタ</h3>
 </div>
 
 
-<div id="outline-container-sec-2-4" class="outline-3">
-<h3 id="sec-2-4"><span class="section-number-3">2.4</span> タッチタイピング</h3>
+<div id="outline-container-org765db27" class="outline-3">
+<h3 id="org765db27"><span class="section-number-3">2.4</span> タッチタイピング</h3>
 <div class="outline-text-3" id="text-2-4">
 <dl class="org-dl">
-<dt> タッチタイピング </dt><dd>     キーボードを見ないでタイプすることです。
+<dt>タッチタイピング</dt><dd>キーボードを見ないでタイプすることです。
 <ul class="org-ul">
-<li>早く正確に打てる
-</li>
-<li>目が疲れない
-</li>
-</ul>
-</dd>
+<li>早く正確に打てる</li>
+<li>目が疲れない</li>
+</ul></dd>
 
-<dt> ホームポジション </dt><dd><ul class="org-ul">
-<li>教科書の図にしたがって指を置きましょう。
-</li>
-<li>人差し指で，キーのでっぱりを感じましょう。
-</li>
-</ul>
-</dd>
+<dt>ホームポジション</dt><dd><ul class="org-ul">
+<li>教科書の図にしたがって指を置きましょう。</li>
+<li>人差し指で，キーのでっぱりを感じましょう。</li>
+</ul></dd>
 
-<dt> 左右の指の分担 </dt><dd></dd>
+<dt>左右の指の分担</dt><dd></dd>
 </dl>
 </div>
 </div>
 
 
-<div id="outline-container-sec-2-5" class="outline-3">
-<h3 id="sec-2-5"><span class="section-number-3">2.5</span> 各キーの働き</h3>
+<div id="outline-container-orgcee8b89" class="outline-3">
+<h3 id="orgcee8b89"><span class="section-number-3">2.5</span> 各キーの働き</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 キーの位置と働きを確認しましょう:
 </p>
 
 <ul class="org-ul">
-<li>Shift（シフト）
+<li><p>
+Shift（シフト）
+</p>
 
 <p>
 同時押しして，大文字や記号の入力を行います。
-</p>
-</li>
+</p></li>
 
-<li>Caps Lock（キャップスロック）
+<li><p>
+Caps Lock（キャップスロック）
+</p>
 
 <p>
 一度押すと，大文字や記号の入力に固定します。
 もう一度押すと，解除します。
-</p>
-</li>
+</p></li>
 
-<li>Ctrl（Control，コントロール）
+<li><p>
+Ctrl（Control，コントロール）
+</p>
 
 <p>
 Windows では，いろいろな機能を呼びだすために使います。
@@ -808,57 +851,47 @@ Windows では，いろいろな機能を呼びだすために使います。
 </p>
 
 <dl class="org-dl">
-<dt> Ctrl + X </dt><dd>カット
-</dd>
-<dt> Ctrl + C </dt><dd>コピー
-</dd>
-<dt> Ctrl + V </dt><dd>貼り付け
-</dd>
-</dl>
-</li>
+<dt>Ctrl + X</dt><dd>カット</dd>
+<dt>Ctrl + C</dt><dd>コピー</dd>
+<dt>Ctrl + V</dt><dd>貼り付け</dd>
+</dl></li>
 
-<li>半角/全角
+<li><p>
+半角/全角
+</p>
 
 <p>
 半角英数と日本語入力の切り替え
-</p>
-</li>
+</p></li>
 
 <li>Alt（オルト・アルト）
 
 <dl class="org-dl">
-<dt> Alt + Tab </dt><dd>ウィンドウの切り替え
-</dd>
-</dl>
-</li>
+<dt>Alt + Tab</dt><dd>ウィンドウの切り替え</dd>
+</dl></li>
 
-<li>Enter
-</li>
-<li>BackSpace
-</li>
-<li>Delete
-</li>
-<li>Tab（タブ）
-</li>
-<li>Esc（エスケープ）
+<li>Enter</li>
+<li>BackSpace</li>
+<li>Delete</li>
+<li>Tab（タブ）</li>
+<li><p>
+Esc（エスケープ）
+</p>
 
 <p>
 操作をキャンセルするためのキー
-</p>
-</li>
+</p></li>
 
-<li>ファンクションキー
-</li>
+<li>ファンクションキー</li>
 
-<li>Fn（エフエヌ）
-</li>
+<li>Fn（エフエヌ）</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-sec-2-6" class="outline-3">
-<h3 id="sec-2-6"><span class="section-number-3">2.6</span> 日本語の入力法</h3>
+<div id="outline-container-org2f30ab2" class="outline-3">
+<h3 id="org2f30ab2"><span class="section-number-3">2.6</span> 日本語の入力法</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 「全角/半角」キーで切り換える
@@ -866,15 +899,13 @@ Windows では，いろいろな機能を呼びだすために使います。
 </div>
 </div>
 
-<div id="outline-container-sec-2-7" class="outline-3">
-<h3 id="sec-2-7"><span class="section-number-3">2.7</span> ローマ字入力の練習</h3>
+<div id="outline-container-org93b5eb0" class="outline-3">
+<h3 id="org93b5eb0"><span class="section-number-3">2.7</span> ローマ字入力の練習</h3>
 <div class="outline-text-3" id="text-2-7">
 <ul class="org-ul">
-<li>メモ帳で次の文章を入力して文書を作成し，
-</li>
+<li>メモ帳で次の文章を入力して文書を作成し，</li>
 
-<li>自分の情報処理フォルダに保存しましょう。
-</li>
+<li>自分の情報処理フォルダに保存しましょう。</li>
 </ul>
 
 <pre class="example">
@@ -885,8 +916,8 @@ Windows では，いろいろな機能を呼びだすために使います。
 </div>
 </div>
 
-<div id="outline-container-sec-2-8" class="outline-3">
-<h3 id="sec-2-8"><span class="section-number-3">2.8</span> ローマ字について</h3>
+<div id="outline-container-org6048754" class="outline-3">
+<h3 id="org6048754"><span class="section-number-3">2.8</span> ローマ字について</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 訓令式，ヘボン式について確認しましょう。
@@ -894,277 +925,225 @@ Windows では，いろいろな機能を呼びだすために使います。
 </div>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 第3章　ネットの利用</h2>
+<div id="outline-container-org3a5c943" class="outline-2">
+<h2 id="org3a5c943"><span class="section-number-2">3</span> 第3章　ネットの利用</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Web</h3>
+</div>
+<div id="outline-container-org6f8a7b9" class="outline-3">
+<h3 id="org6f8a7b9"><span class="section-number-3">3.1</span> Web</h3>
 <div class="outline-text-3" id="text-3-1">
-</div><div id="outline-container-sec-3-1-1" class="outline-4">
-<h4 id="sec-3-1-1">Web</h4>
-<div class="outline-text-4" id="text-3-1-1">
+</div>
+<div id="outline-container-org156fca9" class="outline-4">
+<h4 id="org156fca9">Web</h4>
+<div class="outline-text-4" id="text-org156fca9">
 <dl class="org-dl">
-<dt> インターネット </dt><dd>デジタル情報を共有する基盤 (先生からの補足)
-</dd>
+<dt>インターネット</dt><dd>デジタル情報を共有する基盤 (先生からの補足)</dd>
 
-<dt> Web </dt><dd>インターネットで情報を発信し、共有する仕組み。
-</dd>
+<dt>Web</dt><dd>インターネットで情報を発信し、共有する仕組み。</dd>
 
-<dt> (Web) ページ </dt><dd>発信される情報の一つのまとまり，URL（後述）をもつ
-</dd>
+<dt>(Web) ページ</dt><dd>発信される情報の一つのまとまり，URL（後述）をもつ</dd>
 
-<dt> URL </dt><dd>Uniform Resource Locator, ページのアドレス、サーバ上
-</dd>
+<dt>URL</dt><dd>Uniform Resource Locator, ページのアドレス、サーバ上</dd>
 
-<dt> (Web) サイト </dt><dd>ページのひとまとまり，代表URLをもつ
-</dd>
+<dt>(Web) サイト</dt><dd>ページのひとまとまり，代表URLをもつ</dd>
 
-<dt> (Web) ブラウザ </dt><dd>ページを見るアプリ
-Internet Explorer, Safari, Chrome, Firefox など
-</dd>
+<dt>(Web) ブラウザ</dt><dd>ページを見るアプリ
+Internet Explorer, Safari, Chrome, Firefox など</dd>
 
-<dt> ホームページ </dt><dd>一般的には，ページのことを指すことが多いが，
-起点のページのこと
-</dd>
+<dt>ホームページ</dt><dd>一般的には，ページのことを指すことが多いが，
+起点のページのこと</dd>
 </dl>
 </div>
 
-<div id="outline-container-sec-3-1-1-1" class="outline-5">
-<h5 id="sec-3-1-1-1">Webとインターネットに対する先生の考え</h5>
-<div class="outline-text-5" id="text-3-1-1-1">
+<div id="outline-container-orgb9ad7f1" class="outline-5">
+<h5 id="orgb9ad7f1">Webとインターネットに対する先生の考え</h5>
+<div class="outline-text-5" id="text-orgb9ad7f1">
 <ul class="org-ul">
 <li>文書をWebに置き、文書内にURLを記述し、コンピュータを使って文書を配
-信することで，文書はつながり合うことができる。これがデジタルな文書。
-</li>
+信することで，文書はつながり合うことができる。これがデジタルな文書。</li>
 
 <li>Web内には膨大な情報が、まとまったりつながり合ったり、またはバラバラ
-にも存在する。
-</li>
+にも存在する。</li>
 
 <li>膨大な情報の中で関連する情報をいかにまとめるか、いかに見つけ出すか
-が重要となる。
-</li>
+が重要となる。</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-2" class="outline-4">
-<h4 id="sec-3-1-2">Web上での情報共有と共同作業の実例</h4>
-<div class="outline-text-4" id="text-3-1-2">
+<div id="outline-container-orgd135657" class="outline-4">
+<h4 id="orgd135657">Web上での情報共有と共同作業の実例</h4>
+<div class="outline-text-4" id="text-orgd135657">
 <dl class="org-dl">
-<dt> Wikipedia </dt><dd><a href="https://ja.wikipedia.org%EF%BC%8C%E7%99%BE%E7%A7%91%E4%BA%8B%E5%85%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%EF%BC%8C%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E4%B8%8A%E3%81%A7%E3%81%AE%E7%9F%A5%E8%AD%98%E3%81%AE%E5%85%B1%E6%9C%89%EF%BC%8C%E5%85%B1%E5%90%8C%E4%BD%9C%E6%A5%AD">https://ja.wikipedia.org%EF%BC%8C%E7%99%BE%E7%A7%91%E4%BA%8B%E5%85%B8%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%EF%BC%8C%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E4%B8%8A%E3%81%A7%E3%81%AE%E7%9F%A5%E8%AD%98%E3%81%AE%E5%85%B1%E6%9C%89%EF%BC%8C%E5%85%B1%E5%90%8C%E4%BD%9C%E6%A5%AD</a>
-</dd>
+<dt>Wikipedia</dt><dd><a href="https://ja.wikipedia.org，百科事典のサイト，インターネット上での知識の共有，共同作業">https://ja.wikipedia.org，百科事典のサイト，インターネット上での知識の共有，共同作業</a></dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-3" class="outline-4">
-<h4 id="sec-3-1-3">ブラウザを使う</h4>
-<div class="outline-text-4" id="text-3-1-3">
+<div id="outline-container-org3073ea5" class="outline-4">
+<h4 id="org3073ea5">ブラウザを使う</h4>
+<div class="outline-text-4" id="text-org3073ea5">
 <p>
 ブラウザは，Web上で分散共有されている情報を，一箇所にいて，お決まりの
 手段で，閲覧・検索することができる，アプリです。
 </p>
 
 <dl class="org-dl">
-<dt> お気に入り，ブックマーク </dt><dd>注目するページのURLの記録
-</dd>
+<dt>お気に入り，ブックマーク</dt><dd>注目するページのURLの記録</dd>
 
-<dt> 履歴 </dt><dd>ブラウザでの訪問ページの記録，URLとページタイトルが記録される
-</dd>
+<dt>履歴</dt><dd>ブラウザでの訪問ページの記録，URLとページタイトルが記録される</dd>
 
-<dt> 検索サイト </dt><dd>キーワード検索して，関連する ページ を表示する
+<dt>検索サイト</dt><dd><p>
+キーワード検索して，関連する ページ を表示する
+</p>
 
 <p>
 <a href="https://www.google.com">https://www.google.com</a>, <a href="https://www.yahoo.co.jp">https://www.yahoo.co.jp</a>
-</p>
-</dd>
+</p></dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-4" class="outline-4">
-<h4 id="sec-3-1-4">Webによる個人情報の提示</h4>
-<div class="outline-text-4" id="text-3-1-4">
+<div id="outline-container-org8edf846" class="outline-4">
+<h4 id="org8edf846">Webによる個人情報の提示</h4>
+<div class="outline-text-4" id="text-org8edf846">
 <dl class="org-dl">
-<dt> フィッシング </dt><dd>詐欺サイトへ導かれ，情報をだまし取られること
-個人情報を入力するときは，本当に正しいサイトであるか，くれぐれも注意すること
-</dd>
+<dt>フィッシング</dt><dd>詐欺サイトへ導かれ，情報をだまし取られること
+個人情報を入力するときは，本当に正しいサイトであるか，くれぐれも注意すること</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-5" class="outline-4">
-<h4 id="sec-3-1-5">Webと個人認証</h4>
-<div class="outline-text-4" id="text-3-1-5">
+<div id="outline-container-orgd10920d" class="outline-4">
+<h4 id="orgd10920d">Webと個人認証</h4>
+<div class="outline-text-4" id="text-orgd10920d">
 <dl class="org-dl">
-<dt> パスワードの保存 </dt><dd>ブラウザがサイトとパスワードの対をパソコン内に保
+<dt>パスワードの保存</dt><dd>ブラウザがサイトとパスワードの対をパソコン内に保
 存し，次回から自動ログインしてくれるようになるが，共用のパソコン
-では保存しないこと
-</dd>
+では保存しないこと</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-6" class="outline-4">
-<h4 id="sec-3-1-6">その他</h4>
-<div class="outline-text-4" id="text-3-1-6">
+<div id="outline-container-org559ab5d" class="outline-4">
+<h4 id="org559ab5d">その他</h4>
+<div class="outline-text-4" id="text-org559ab5d">
 <dl class="org-dl">
-<dt> 文字化け </dt><dd>パソコン内の日本語のデジタル化（01の数値列で表すこと）の
+<dt>文字化け</dt><dd>パソコン内の日本語のデジタル化（01の数値列で表すこと）の
 方式には何種類かある「エンコード」とか「文字エンコード」
 とか「テキストエンコード」という. 「シフトJIS」, 「日本
 語EUC」, 「日本語JIS」,「UTF-8」とかの方式がある。ブラウ
 ザが使っているエンコードとページの中身のエンコードが違っ
-ていると文字化けする
-</dd>
+ていると文字化けする</dd>
 </dl>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> メールとは</h3>
+<div id="outline-container-org143409f" class="outline-3">
+<h3 id="org143409f"><span class="section-number-3">3.2</span> メールとは</h3>
 <div class="outline-text-3" id="text-3-2">
 <dl class="org-dl">
-<dt> メールアドレス </dt><dd><dl class="org-dl">
-<dt> 自分のメールアドレス </dt><dd><ul class="org-ul">
-<li>morioka-u.ac.jp での自分のアドレス 
-</li>
-</ul>
-</dd>
-</dl>
-</dd>
+<dt>メールアドレス</dt><dd><dl class="org-dl">
+<dt>自分のメールアドレス</dt><dd><ul class="org-ul">
+<li>morioka-u.ac.jp での自分のアドレス</li>
+</ul></dd>
+</dl></dd>
 
-<dt> (no term) </dt><dd>複数のメールアドレスと転送:: 
+<dt>(no term)</dt><dd><p>
+複数のメールアドレスと転送:: 
+</p>
 
 <p>
 転送設定の利用
-</p>
-</dd>
+</p></dd>
 
-<dt> メールの仕組み </dt><dd>教科書にはない
+<dt>メールの仕組み</dt><dd>教科書にはない
 
 <ul class="org-ul">
-<li>自分宛のメールはどこにあるのか？
-</li>
+<li>自分宛のメールはどこにあるのか？</li>
 
-<li>どうやって読むのか？
-</li>
+<li>どうやって読むのか？</li>
 
-<li>読み終わったメールはどうする？
-</li>
+<li>読み終わったメールはどうする？</li>
 
-<li>送信したメールの生涯
-</li>
-</ul>
-</dd>
+<li>送信したメールの生涯</li>
+</ul></dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> メールの例</h3>
+<div id="outline-container-org0f67f30" class="outline-3">
+<h3 id="org0f67f30"><span class="section-number-3">3.3</span> メールの例</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
-<li>悪いメールの例
-</li>
-<li>上のメールの改良例
-</li>
-<li>忙しい人のメールの例
-</li>
+<li>悪いメールの例</li>
+<li>上のメールの改良例</li>
+<li>忙しい人のメールの例</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> メールのマナー</h3>
+<div id="outline-container-orgc4ee75f" class="outline-3">
+<h3 id="orgc4ee75f"><span class="section-number-3">3.4</span> メールのマナー</h3>
 <div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
-<li>まずは返事しよう
-</li>
-<li>メールは簡潔に
-</li>
-<li>約束はメールで確認
-</li>
-<li>件名を付けよう
-</li>
-<li>機種依存文字は避けよう
-</li>
-<li>半角カナは避けよう
-</li>
-<li>行は短めに
-</li>
-<li>段落の区切りは1行余分に空ける
-</li>
-<li>署名を付けよう
-</li>
-<li>メーリングリストのマナー
-</li>
-<li>添付ファイルのマナー
-</li>
-<li>サーバからメールを消そう
-</li>
-<li>メールのリンクをクリックするのは危険
-</li>
-<li>フィッシング詐欺に注意
-</li>
-<li>チェーンメールは無視しよう
-</li>
-<li>ウイルスに注意！
-</li>
-<li>HTMLメールは？
-</li>
-<li>エンコーディングは？
-</li>
-<li>遅延・不着に注意
-</li>
-<li>メールはハガキ
-</li>
+<li>まずは返事しよう</li>
+<li>メールは簡潔に</li>
+<li>約束はメールで確認</li>
+<li>件名を付けよう</li>
+<li>機種依存文字は避けよう</li>
+<li>半角カナは避けよう</li>
+<li>行は短めに</li>
+<li>段落の区切りは1行余分に空ける</li>
+<li>署名を付けよう</li>
+<li>メーリングリストのマナー</li>
+<li>添付ファイルのマナー</li>
+<li>サーバからメールを消そう</li>
+<li>メールのリンクをクリックするのは危険</li>
+<li>フィッシング詐欺に注意</li>
+<li>チェーンメールは無視しよう</li>
+<li>ウイルスに注意！</li>
+<li>HTMLメールは？</li>
+<li>エンコーディングは？</li>
+<li>遅延・不着に注意</li>
+<li>メールはハガキ</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-sec-3-5" class="outline-3">
-<h3 id="sec-3-5"><span class="section-number-3">3.5</span> メールの仕組み</h3>
+<div id="outline-container-orgdcefbcc" class="outline-3">
+<h3 id="orgdcefbcc"><span class="section-number-3">3.5</span> メールの仕組み</h3>
 <div class="outline-text-3" id="text-3-5">
 <p>
 自分から相手へメールを送る
 </p>
 
 <ul class="org-ul">
-<li>スマホのメールアプリでメール作成。
-</li>
+<li>スマホのメールアプリでメール作成。</li>
 <li>自分のメール送信サーバへメール送信し，メール送信サーバは一旦メールを受信する。
 
 <ul class="org-ul">
-<li>SMTPサーバ 
-</li>
-</ul>
-</li>
+<li>SMTPサーバ</li>
+</ul></li>
 
 <li>自分のメールサーバは，相手のメールサーバへ接続し，メールを送信。
 
 <ul class="org-ul">
-<li>SMTPプロトコル
-</li>
-</ul>
-</li>
+<li>SMTPプロトコル</li>
+</ul></li>
 
-<li>相手メールサーバは，メールを受信し，相手のメールボックスに格納。
-</li>
+<li>相手メールサーバは，メールを受信し，相手のメールボックスに格納。</li>
 
-<li>相手へ着信通知。
-</li>
+<li>相手へ着信通知。</li>
 
 <li>相手は，メールアプリで，メールボックスからメールを読みだす。
 
 <ul class="org-ul">
-<li>POP, IMAP プロトコル
-</li>
-</ul>
-</li>
+<li>POP, IMAP プロトコル</li>
+</ul></li>
 </ul>
 
 <p>
@@ -1172,104 +1151,87 @@ Internet Explorer, Safari, Chrome, Firefox など
 </p>
 
 <ul class="org-ul">
-<li>自分のメール受信サーバから，着信通知が来る。
-</li>
+<li>自分のメール受信サーバから，着信通知が来る。</li>
 <li>メールアプリで，メール受信サーバに接続，メールボックスに溜ってい
-るメールを一覧する。
-</li>
-<li>メールを読む
-</li>
+るメールを一覧する。</li>
+<li>メールを読む</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-3-6" class="outline-3">
-<h3 id="sec-3-6"><span class="section-number-3">3.6</span> メールソフトの設定</h3>
+<div id="outline-container-orgaf87520" class="outline-3">
+<h3 id="orgaf87520"><span class="section-number-3">3.6</span> メールソフトの設定</h3>
 </div>
 
-<div id="outline-container-sec-3-7" class="outline-3">
-<h3 id="sec-3-7"><span class="section-number-3">3.7</span> スマホ時代のネット利用</h3>
+<div id="outline-container-org57e2e23" class="outline-3">
+<h3 id="org57e2e23"><span class="section-number-3">3.7</span> スマホ時代のネット利用</h3>
 <div class="outline-text-3" id="text-3-7">
 <p>
 通信にインターネットを利用
 </p>
 <ul class="org-ul">
-<li>音声通信もデータ用通信もパケット通信
-</li>
-<li>輻輳が起りにくい
-</li>
-<li>データ用通信には WiFi (無線LAN) 接続
-</li>
-<li>デザリングが可能
+<li>音声通信もデータ用通信もパケット通信</li>
+<li>輻輳が起りにくい</li>
+<li>データ用通信には WiFi (無線LAN) 接続</li>
+<li><p>
+デザリングが可能
+</p>
 
 <p>
 他の機器を，インターネットに繋ぐ
-</p>
-</li>
+</p></li>
 </ul>
 
 <p>
 格安でインターネット接続が可能になった
 </p>
 <ul class="org-ul">
-<li>格安スマホ，格安 SIM の登場
-</li>
+<li>格安スマホ，格安 SIM の登場</li>
 </ul>
 
 <p>
 携帯端末
 </p>
 <ul class="org-ul">
-<li>モバイル性，
-</li>
-<li>高機能入出力
-</li>
+<li>モバイル性，</li>
+<li>高機能入出力</li>
 </ul>
 
 <p>
 LineやTwitterなどの人気SNSアプリ
 </p>
 <ul class="org-ul">
-<li>多くの利用者
-</li>
-<li>ネット中毒
-</li>
-<li>炎上
-</li>
+<li>多くの利用者</li>
+<li>ネット中毒</li>
+<li>炎上</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-3-7-1" class="outline-4">
-<h4 id="sec-3-7-1">「スマホとは」&#x2013; 先生の考え</h4>
-<div class="outline-text-4" id="text-3-7-1">
+<div id="outline-container-org0163847" class="outline-4">
+<h4 id="org0163847">「スマホとは」&#x2013; 先生の考え</h4>
+<div class="outline-text-4" id="text-org0163847">
 <p>
 携帯電話としての利用
 </p>
 <ul class="org-ul">
-<li>電話
-</li>
-<li>SMSメール
-</li>
+<li>電話</li>
+<li>SMSメール</li>
 </ul>
 
 <p>
 インターネットを利用した通信のための機器
 </p>
 <ul class="org-ul">
-<li>メール
-</li>
-<li>Line
-</li>
+<li>メール</li>
+<li>Line</li>
 </ul>
 
 <p>
 Webサービスを使うための端末である
 </p>
 <ul class="org-ul">
-<li>多くのアプリが，Webの枠組みを利用
-</li>
-<li>Webアプリが，スマホのアプリとして動く
-</li>
+<li>多くのアプリが，Webの枠組みを利用</li>
+<li>Webアプリが，スマホのアプリとして動く</li>
 </ul>
 
 <p>
@@ -1283,141 +1245,144 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-3-8" class="outline-3">
-<h3 id="sec-3-8"><span class="section-number-3">3.8</span> クラウド・サービス</h3>
+<div id="outline-container-org18e0640" class="outline-3">
+<h3 id="org18e0640"><span class="section-number-3">3.8</span> クラウド・サービス</h3>
 <div class="outline-text-3" id="text-3-8">
 <ul class="org-ul">
-<li>情報処理サービス(アプリ)を,
-</li>
-<li>インターネット上のサーバーで動かすことで，
-</li>
-<li>どこででもサービスを受けられる
-</li>
-<li>PC, タブレット，スマホ，どれでもサービスを受けられる
-</li>
+<li>情報処理サービス(アプリ)を,</li>
+<li>インターネット上のサーバーで動かすことで，</li>
+<li>どこででもサービスを受けられる</li>
+<li>PC, タブレット，スマホ，どれでもサービスを受けられる</li>
 
-<li>クラウドストレージ (インターネット上のファイル置き場)もその一つ
-</li>
+<li>クラウドストレージ (インターネット上のファイル置き場)もその一つ</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-3-8-1" class="outline-4">
-<h4 id="sec-3-8-1">Googleのクラウドサービスの利用</h4>
-<div class="outline-text-4" id="text-3-8-1">
+<div id="outline-container-orgfc1d858" class="outline-4">
+<h4 id="orgfc1d858">Googleのクラウドサービスの利用</h4>
+<div class="outline-text-4" id="text-orgfc1d858">
 <ul class="org-ul">
 <li>Googleアカウントの取得
 <ul class="org-ul">
-<li>スマホとSMSメッセージによる本人確認
-</li>
-</ul>
-</li>
+<li>スマホとSMSメッセージによる本人確認</li>
+</ul></li>
 <li>GMail
 <ul class="org-ul">
 <li>Webメール
 <ul class="org-ul">
-<li>Webブラウザだけで，メールの読み書きができる
-</li>
-</ul>
-</li>
-<li>スマホアプリ 
-</li>
-</ul>
-</li>
+<li>Webブラウザだけで，メールの読み書きができる</li>
+</ul></li>
+<li>スマホアプリ</li>
+</ul></li>
 <li>GoogleDrive
 <ul class="org-ul">
-<li>クラウドストレージ 
-</li>
-<li>共有
-</li>
-</ul>
-</li>
+<li>クラウドストレージ</li>
+<li>共有</li>
+</ul></li>
 <li>GoogleDocs
 <ul class="org-ul">
-<li>Office アプリ
-</li>
-</ul>
-</li>
+<li>Office アプリ</li>
+</ul></li>
 <li>GoogleSite
 <ul class="org-ul">
-<li>自分のサイト作成
-</li>
-</ul>
-</li>
+<li>自分のサイト作成</li>
+</ul></li>
 
 <li>Mindmup
 <ul class="org-ul">
-<li>アプリは mindmup.com
-</li>
-<li>マップのホゾン場所が GoogleDrive
-</li>
-</ul>
-</li>
+<li>アプリは mindmup.com</li>
+<li>マップのホゾン場所が GoogleDrive</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 4章 お絵かきとファイル操作</h2>
+<div id="outline-container-orgb095594" class="outline-2">
+<h2 id="orgb095594"><span class="section-number-2">4</span> 4章 お絵かきとファイル操作</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
-<li>ファイル操作になれる
-</li>
+<li>ファイル操作になれる</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> ペイントを起動</h3>
+<div id="outline-container-org62f229c" class="outline-3">
+<h3 id="org62f229c"><span class="section-number-3">4.1</span> ペイントを起動</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 ペイントを起動する
 </p>
 
-<dl>
-<dt>
+<div class="HTML">
+<p>
+&lt;dl&gt;
+&lt;dt&gt;
+</p>
+
+</div>
 
 <p>
 キャンバスのサイズ
 </p>
 
-</dt>
-<dd></dd>
-<dt>
+<div class="HTML">
+<p>
+&lt;/dt&gt;
+&lt;dd&gt;&lt;/dd&gt;
+&lt;dt&gt;
+</p>
+
+</div>
 
 <p>
 解像度
 </p>
 
-</dt>
-<dd> </dd>
-<dt>
+<div class="HTML">
+<p>
+&lt;/dt&gt;
+&lt;dd&gt; &lt;/dd&gt;
+&lt;dt&gt;
+</p>
+
+</div>
 
 <p>
 保存
 </p>
 
-</dt>
-<dd> 
+<div class="HTML">
+<p>
+&lt;/dt&gt;
+&lt;dd&gt; 
+</p>
+
+</div>
 
 <p>
 画像形式と拡張子
 </p>
 
-</dd>
-</dl>
+<div class="HTML">
+<p>
+&lt;/dd&gt;
+&lt;/dl&gt;
+</p>
+
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2"><span class="section-number-3">4.2</span> GIMP</h3>
+<div id="outline-container-orgddc05e5" class="outline-3">
+<h3 id="orgddc05e5"><span class="section-number-3">4.2</span> GIMP</h3>
 </div>
 
-<div id="outline-container-sec-4-3" class="outline-3">
-<h3 id="sec-4-3"><span class="section-number-3">4.3</span> コピーと貼り付け</h3>
+<div id="outline-container-org378021d" class="outline-3">
+<h3 id="org378021d"><span class="section-number-3">4.3</span> コピーと貼り付け</h3>
 </div>
 
-<div id="outline-container-sec-4-4" class="outline-3">
-<h3 id="sec-4-4"><span class="section-number-3">4.4</span> ドライブとフォルダ</h3>
+<div id="outline-container-org4ff578f" class="outline-3">
+<h3 id="org4ff578f"><span class="section-number-3">4.4</span> ドライブとフォルダ</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 <b>エクスプローラ</b> または <b>コンピュータ</b> から探索サービスを開始
@@ -1428,20 +1393,16 @@ PCでもある
 </p>
 
 <ul class="org-ul">
-<li>ハードディスク・ドライブ C:, D: 
-</li>
-<li>USBなどのリムーバブル・ドライブ F:, G:, &#x2026; 
-</li>
-<li>ネットワーク・ドライブ
-</li>
+<li>ハードディスク・ドライブ C:, D:</li>
+<li>USBなどのリムーバブル・ドライブ F:, G:, &#x2026;</li>
+<li>ネットワーク・ドライブ</li>
 </ul>
 
 <p>
 <b>C: ドライブの検索</b> 
 </p>
 <ul class="org-ul">
-<li>どんなフォルダやファイルがあるのか，探索してみましょう。
-</li>
+<li>どんなフォルダやファイルがあるのか，探索してみましょう。</li>
 </ul>
 
 <p>
@@ -1449,35 +1410,29 @@ PCでもある
 </p>
 
 <ul class="org-ul">
-<li>フォルダで右クリック，
-</li>
-<li>コンテキスト・メニューから，新規作成 -&gt; フォルダ を選ぶ
-</li>
+<li>フォルダで右クリック，</li>
+<li>コンテキスト・メニューから，新規作成 -&gt; フォルダ を選ぶ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-4-5" class="outline-3">
-<h3 id="sec-4-5"><span class="section-number-3">4.5</span> USBメモリの使い方</h3>
+<div id="outline-container-org6a82263" class="outline-3">
+<h3 id="org6a82263"><span class="section-number-3">4.5</span> USBメモリの使い方</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 <b>取り出し方</b> 
 </p>
 <ul class="org-ul">
-<li>ドライブを表示し （コンピュータやエクスプローラから）， 
-</li>
-<li>ドライブを選択（クリック）し， 
-</li>
-<li>右クリックしドライブに対してできる指示をメニューで表示し， 
-</li>
-<li>取り出しを選ぶ
-</li>
+<li>ドライブを表示し （コンピュータやエクスプローラから），</li>
+<li>ドライブを選択（クリック）し，</li>
+<li>右クリックしドライブに対してできる指示をメニューで表示し，</li>
+<li>取り出しを選ぶ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-4-6" class="outline-3">
-<h3 id="sec-4-6"><span class="section-number-3">4.6</span> ファイル操作</h3>
+<div id="outline-container-orga5264b0" class="outline-3">
+<h3 id="orga5264b0"><span class="section-number-3">4.6</span> ファイル操作</h3>
 <div class="outline-text-3" id="text-4-6">
 <p>
 <b>ファイルのコピー・移動</b> - コピー元のフォルダで，ファイルを選んで， -
@@ -1491,69 +1446,62 @@ PCでもある
 </div>
 </div>
 </div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 第5章　文書作成</h2>
+<div id="outline-container-org098fb76" class="outline-2">
+<h2 id="org098fb76"><span class="section-number-2">5</span> 第5章　文書作成</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> 文書作成ソフトのいろいろ</h3>
+</div>
+<div id="outline-container-org3b70c6b" class="outline-3">
+<h3 id="org3b70c6b"><span class="section-number-3">5.1</span> 文書作成ソフトのいろいろ</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
-<li>Microsoft Office
-</li>
+<li>Microsoft Office</li>
 
-<li><a href="https://ja.libreoffice.org">LibreOffice</a>
-</li>
-<li><a href="https://www.google.com/intl/ja_jp/docs/about/">Google Docs</a>
-</li>
+<li><a href="https://ja.libreoffice.org">LibreOffice</a></li>
+<li><a href="https://www.google.com/intl/ja_jp/docs/about/">Google Docs</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5-2" class="outline-3">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Wordの起動</h3>
+<div id="outline-container-orga6c9289" class="outline-3">
+<h3 id="orga6c9289"><span class="section-number-3">5.2</span> Wordの起動</h3>
 </div>
 
-<div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 保存形式</h3>
+<div id="outline-container-org1d30d71" class="outline-3">
+<h3 id="org1d30d71"><span class="section-number-3">5.3</span> 保存形式</h3>
 <div class="outline-text-3" id="text-5-3">
 <dl class="org-dl">
-<dt> PDF (Portable Document Format) </dt><dd>文書公開のためのオープンな文書の形式。
-ファイル拡張子は .pdf
-</dd>
+<dt>PDF (Portable Document Format)</dt><dd>文書公開のためのオープンな文書の形式。
+ファイル拡張子は .pdf</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-5-4" class="outline-3">
-<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Wordでレポート作成</h3>
+<div id="outline-container-org32f06ed" class="outline-3">
+<h3 id="org32f06ed"><span class="section-number-3">5.4</span> Wordでレポート作成</h3>
 <div class="outline-text-3" id="text-5-4">
 <ul class="org-ul">
-<li>メモ帳で文章の概要を作り，
-</li>
+<li>メモ帳で文章の概要を作り，</li>
 
-<li>見た目をWordで作りましょう。
-</li>
+<li>見た目をWordで作りましょう。</li>
 
-<li>「レポート」に必要な文書の要素を把握し，
-</li>
+<li>「レポート」に必要な文書の要素を把握し，</li>
 
-<li>Wordでの表現方法を学びましょう。
-</li>
+<li>Wordでの表現方法を学びましょう。</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-5-4-1" class="outline-4">
-<h4 id="sec-5-4-1">文章の入力</h4>
-<div class="outline-text-4" id="text-5-4-1">
+<div id="outline-container-orgc4d3b4e" class="outline-4">
+<h4 id="orgc4d3b4e">文章の入力</h4>
+<div class="outline-text-4" id="text-orgc4d3b4e">
 <p>
 メモ帳で作った文章を Word に入力（貼り付け）しましょう。
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-2" class="outline-4">
-<h4 id="sec-5-4-2">文書の保存</h4>
-<div class="outline-text-4" id="text-5-4-2">
+<div id="outline-container-org818d505" class="outline-4">
+<h4 id="org818d505">文書の保存</h4>
+<div class="outline-text-4" id="text-org818d505">
 <p>
 文書の保存場所を決め，必要なフォルダを作成し，保存しましょう。
 </p>
@@ -1564,46 +1512,38 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-3" class="outline-4">
-<h4 id="sec-5-4-3">タイトルの体裁</h4>
-<div class="outline-text-4" id="text-5-4-3">
+<div id="outline-container-org774a28e" class="outline-4">
+<h4 id="org774a28e">タイトルの体裁</h4>
+<div class="outline-text-4" id="text-org774a28e">
 <ul class="org-ul">
-<li>タイトル部分を選択し，
-</li>
-<li>中央揃え
-</li>
-<li>サイズを指定
-</li>
+<li>タイトル部分を選択し，</li>
+<li>中央揃え</li>
+<li>サイズを指定</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-4" class="outline-4">
-<h4 id="sec-5-4-4">日付・著者名の体裁</h4>
-<div class="outline-text-4" id="text-5-4-4">
+<div id="outline-container-org60a55a4" class="outline-4">
+<h4 id="org60a55a4">日付・著者名の体裁</h4>
+<div class="outline-text-4" id="text-org60a55a4">
 <ul class="org-ul">
-<li>選択し，
-</li>
-<li>右揃え
-</li>
+<li>選択し，</li>
+<li>右揃え</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-5" class="outline-4">
-<h4 id="sec-5-4-5">見出しの設定</h4>
-<div class="outline-text-4" id="text-5-4-5">
+<div id="outline-container-org350386f" class="outline-4">
+<h4 id="org350386f">見出しの設定</h4>
+<div class="outline-text-4" id="text-org350386f">
 <p>
 '<b>スタイル</b>'を使ってみよう
 </p>
 
 <ul class="org-ul">
-<li>見出しとなる場所で，
-</li>
-<li>スタイルを選ぶと，
-</li>
-<li>スタイルごとに定められた様式が用いられる
-</li>
+<li>見出しとなる場所で，</li>
+<li>スタイルを選ぶと，</li>
+<li>スタイルごとに定められた様式が用いられる</li>
 </ul>
 
 <p>
@@ -1617,14 +1557,12 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-6" class="outline-4">
-<h4 id="sec-5-4-6">箇条書き</h4>
-<div class="outline-text-4" id="text-5-4-6">
+<div id="outline-container-org97bf454" class="outline-4">
+<h4 id="org97bf454">箇条書き</h4>
+<div class="outline-text-4" id="text-org97bf454">
 <ul class="org-ul">
-<li>箇条書きにしたい箇所を選び，
-</li>
-<li>「箇条書き」ボタンをクリック
-</li>
+<li>箇条書きにしたい箇所を選び，</li>
+<li>「箇条書き」ボタンをクリック</li>
 </ul>
 
 <p>
@@ -1633,12 +1571,11 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-7" class="outline-4">
-<h4 id="sec-5-4-7">引用文</h4>
-<div class="outline-text-4" id="text-5-4-7">
+<div id="outline-container-org65e98d4" class="outline-4">
+<h4 id="org65e98d4">引用文</h4>
+<div class="outline-text-4" id="text-org65e98d4">
 <dl class="org-dl">
-<dt> 引用 </dt><dd>他の人の言葉をそのまま紹介すること
-</dd>
+<dt>引用</dt><dd>他の人の言葉をそのまま紹介すること</dd>
 </dl>
 
 <p>
@@ -1647,76 +1584,60 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-8" class="outline-4">
-<h4 id="sec-5-4-8">参考文献</h4>
-<div class="outline-text-4" id="text-5-4-8">
+<div id="outline-container-org06205e1" class="outline-4">
+<h4 id="org06205e1">参考文献</h4>
+<div class="outline-text-4" id="text-org06205e1">
 <ul class="org-ul">
-<li>見出しにする
-</li>
+<li>見出しにする</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5-4-9" class="outline-4">
-<h4 id="sec-5-4-9">ページ番号</h4>
+<div id="outline-container-org8a0b51d" class="outline-4">
+<h4 id="org8a0b51d">ページ番号</h4>
 </div>
 </div>
 
-<div id="outline-container-sec-5-5" class="outline-3">
-<h3 id="sec-5-5"><span class="section-number-3">5.5</span> 印刷</h3>
+<div id="outline-container-org17f2e8a" class="outline-3">
+<h3 id="org17f2e8a"><span class="section-number-3">5.5</span> 印刷</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 プレビューしてみましょう
 </p>
 </div>
 
-<div id="outline-container-sec-5-5-1" class="outline-4">
-<h4 id="sec-5-5-1">Wordを使う際のヒント</h4>
-<div class="outline-text-4" id="text-5-5-1">
+<div id="outline-container-orgfa530f9" class="outline-4">
+<h4 id="orgfa530f9">Wordを使う際のヒント</h4>
+<div class="outline-text-4" id="text-orgfa530f9">
 <ul class="org-ul">
-<li>どんなフォントを使うか
-</li>
-<li>文字サイズと余白
-</li>
-<li>空白文字とEnterで整形しない
-</li>
-<li>ボールド体・イタリック体に注意
-</li>
-<li>半角カナは使わない
-</li>
-<li>全角英数字は使わない
-</li>
-<li>欧文フォントは半角フォントと違う
-</li>
-<li>欧文のコンマ・ピリオドの後はスペースを
-</li>
-<li>和文には和文のカッコを
-</li>
-<li>欧文カッコの両側はスペースを
-</li>
-<li>極細線を使わない
-</li>
-<li>ワードアート・クリップアートに注意
-</li>
-<li>図の挿入
-</li>
+<li>どんなフォントを使うか</li>
+<li>文字サイズと余白</li>
+<li>空白文字とEnterで整形しない</li>
+<li>ボールド体・イタリック体に注意</li>
+<li>半角カナは使わない</li>
+<li>全角英数字は使わない</li>
+<li>欧文フォントは半角フォントと違う</li>
+<li>欧文のコンマ・ピリオドの後はスペースを</li>
+<li>和文には和文のカッコを</li>
+<li>欧文カッコの両側はスペースを</li>
+<li>極細線を使わない</li>
+<li>ワードアート・クリップアートに注意</li>
+<li>図の挿入</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-5-5-2" class="outline-4">
-<h4 id="sec-5-5-2">Word以外のワープロソフト</h4>
-<div class="outline-text-4" id="text-5-5-2">
+<div id="outline-container-org21310f6" class="outline-4">
+<h4 id="org21310f6">Word以外のワープロソフト</h4>
+<div class="outline-text-4" id="text-org21310f6">
 <p>
 ワープロソフトを選ぶ場合のポイント
 </p>
 
 <dl class="org-dl">
-<dt> '<b>オープン・フォーマット</b>' </dt><dd>文書の保存形式が公開されている
-</dd>
+<dt>'<b>オープン・フォーマット</b>'</dt><dd>文書の保存形式が公開されている</dd>
 
-<dt> '<b>オープン・ソース</b>' </dt><dd>ソフトウェアのソースコード（設計書）が公開されている
-</dd>
+<dt>'<b>オープン・ソース</b>'</dt><dd>ソフトウェアのソースコード（設計書）が公開されている</dd>
 </dl>
 
 <p>
@@ -1726,35 +1647,32 @@ PCでもある
 </div>
 </div>
 </div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 第6章　表計算</h2>
+<div id="outline-container-org90c6689" class="outline-2">
+<h2 id="org90c6689"><span class="section-number-2">6</span> 第6章　表計算</h2>
 <div class="outline-text-2" id="text-6">
-</div><div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1"><span class="section-number-3">6.1</span> 表計算ソフトウェアとは</h3>
+</div>
+<div id="outline-container-org8b3f02c" class="outline-3">
+<h3 id="org8b3f02c"><span class="section-number-3">6.1</span> 表計算ソフトウェアとは</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 機能やデータの互換性のあるソフトウェア 
 </p>
 <ul class="org-ul">
-<li>製品 MicrosoftOffice Excel 
-</li>
-<li>フリーソフトウェア LibreOffice Calc
-</li>
+<li>製品 MicrosoftOffice Excel</li>
+<li>フリーソフトウェア LibreOffice Calc</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Excelの起動</h3>
+<div id="outline-container-org968b3c9" class="outline-3">
+<h3 id="org968b3c9"><span class="section-number-3">6.2</span> Excelの起動</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 ブックの構造 
 </p>
 <ul class="org-ul">
-<li>Sheet1 
-</li>
-<li>Sheet2 &#x2026;
-</li>
+<li>Sheet1</li>
+<li>Sheet2 &#x2026;</li>
 </ul>
 
 <p>
@@ -1763,163 +1681,140 @@ PCでもある
 </div>
 </div>
 
-<div id="outline-container-sec-6-3" class="outline-3">
-<h3 id="sec-6-3"><span class="section-number-3">6.3</span> 表の作り方</h3>
+<div id="outline-container-org0d958bd" class="outline-3">
+<h3 id="org0d958bd"><span class="section-number-3">6.3</span> 表の作り方</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 <b>揃え</b> 
 </p>
 <ul class="org-ul">
-<li>文字列は左揃えか中央揃え 
-</li>
-<li>数字は右揃え
-</li>
+<li>文字列は左揃えか中央揃え</li>
+<li>数字は右揃え</li>
 </ul>
 
 <p>
 <b>やり直し</b> 
 </p>
 <ul class="org-ul">
-<li>コントロールキーとzの同時押し 
-</li>
-<li>戻るボタン（クルッと右巻きボタン）
-</li>
+<li>コントロールキーとzの同時押し</li>
+<li>戻るボタン（クルッと右巻きボタン）</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-6-3-1" class="outline-4">
-<h4 id="sec-6-3-1">データの入力</h4>
-<div class="outline-text-4" id="text-6-3-1">
+<div id="outline-container-org7289dd5" class="outline-4">
+<h4 id="org7289dd5">データの入力</h4>
+<div class="outline-text-4" id="text-org7289dd5">
 <p>
 <b>セルの移動</b> 
 </p>
 <ul class="org-ul">
-<li>方向キー 上下左右 
-</li>
-<li>タブキーで右横へ 
-</li>
-<li>Enterキーで下へ
-</li>
+<li>方向キー 上下左右</li>
+<li>タブキーで右横へ</li>
+<li>Enterキーで下へ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-2" class="outline-4">
-<h4 id="sec-6-3-2">セルの選択とフィル操作</h4>
-<div class="outline-text-4" id="text-6-3-2">
+<div id="outline-container-orgc0ea886" class="outline-4">
+<h4 id="orgc0ea886">セルの選択とフィル操作</h4>
+<div class="outline-text-4" id="text-orgc0ea886">
 <p>
 <b>セルの選択</b> 
 </p>
 <ul class="org-ul">
-<li>セルをクリック
-</li>
+<li>セルをクリック</li>
 </ul>
 
 <p>
 <b>フィルハンドルの表示</b> 
 </p>
 <ul class="org-ul">
-<li>セルを選択した時に右下に現れる黒い正方形
-</li>
+<li>セルを選択した時に右下に現れる黒い正方形</li>
 </ul>
 
 <p>
 <b>フィル（操作）</b> 
 </p>
 <ul class="org-ul">
-<li>フィルハンドルにマウスを移動，黒い十字になったら， 
-</li>
-<li>マウスの左ボタンを押してドラッグ（押したまま引っ張る） 
-</li>
-<li>１年次セルを右にフィル操作する
-</li>
+<li>フィルハンドルにマウスを移動，黒い十字になったら，</li>
+<li>マウスの左ボタンを押してドラッグ（押したまま引っ張る）</li>
+<li>１年次セルを右にフィル操作する</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-3" class="outline-4">
-<h4 id="sec-6-3-3">セルの書式</h4>
-<div class="outline-text-4" id="text-6-3-3">
+<div id="outline-container-org178919a" class="outline-4">
+<h4 id="org178919a">セルの書式</h4>
+<div class="outline-text-4" id="text-org178919a">
 <p>
 1年次から４年次を*中央揃え*する 
 </p>
 <ul class="org-ul">
-<li>１年次で左クリック，４年次でシフトを押しながら左クリックし 
-</li>
-<li>中央揃えボタンを押す
-</li>
+<li>１年次で左クリック，４年次でシフトを押しながら左クリックし</li>
+<li>中央揃えボタンを押す</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-4" class="outline-4">
-<h4 id="sec-6-3-4">セルの結合</h4>
-<div class="outline-text-4" id="text-6-3-4">
+<div id="outline-container-org8a65c0b" class="outline-4">
+<h4 id="org8a65c0b">セルの結合</h4>
+<div class="outline-text-4" id="text-org8a65c0b">
 <p>
 学部・学年別学生数をA1セルからE1セル全てに広げ*表題*とする
 </p>
 
 <ul class="org-ul">
-<li>A1~E1 を選択
-</li>
-<li>セルを結合して中央揃えボタンを押す
-</li>
+<li>A1~E1 を選択</li>
+<li>セルを結合して中央揃えボタンを押す</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-5" class="outline-4">
-<h4 id="sec-6-3-5">フォントの変更</h4>
-<div class="outline-text-4" id="text-6-3-5">
+<div id="outline-container-orgb8c0b38" class="outline-4">
+<h4 id="orgb8c0b38">フォントの変更</h4>
+<div class="outline-text-4" id="text-orgb8c0b38">
 <p>
 表題の文字サイズを大きくする
 </p>
 
 <ul class="org-ul">
-<li>表題のセルを選択し
-</li>
-<li>フォントサイズを選ぶ
-</li>
+<li>表題のセルを選択し</li>
+<li>フォントサイズを選ぶ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-6" class="outline-4">
-<h4 id="sec-6-3-6">セル幅の変更</h4>
-<div class="outline-text-4" id="text-6-3-6">
+<div id="outline-container-orgba30e58" class="outline-4">
+<h4 id="orgba30e58">セル幅の変更</h4>
+<div class="outline-text-4" id="text-orgba30e58">
 <p>
 すべての文字が表示されるようにセルの幅を変更する
 </p>
 
 <ul class="org-ul">
-<li>A と B の間にマウスを置き，境目をマウスの左ボタンで動かす
-</li>
-<li>A と B の間の線をダブルクリックすると自動調整してくれる
-</li>
+<li>A と B の間にマウスを置き，境目をマウスの左ボタンで動かす</li>
+<li>A と B の間の線をダブルクリックすると自動調整してくれる</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-7" class="outline-4">
-<h4 id="sec-6-3-7">罫線の追加</h4>
-<div class="outline-text-4" id="text-6-3-7">
+<div id="outline-container-org18db15c" class="outline-4">
+<h4 id="org18db15c">罫線の追加</h4>
+<div class="outline-text-4" id="text-org18db15c">
 <p>
 *罫線*を描く 
 </p>
 <ul class="org-ul">
-<li>罫線を描きたい範囲を選び， 
-</li>
-<li>四角領域の左上隅で左クリック，シフトをおして，右下隅でクリック 
-</li>
-<li>罫線メニューから選ぶ
-</li>
+<li>罫線を描きたい範囲を選び，</li>
+<li>四角領域の左上隅で左クリック，シフトをおして，右下隅でクリック</li>
+<li>罫線メニューから選ぶ</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-6-4" class="outline-3">
-<h3 id="sec-6-4"><span class="section-number-3">6.4</span> 表の保存</h3>
+<div id="outline-container-org4844587" class="outline-3">
+<h3 id="org4844587"><span class="section-number-3">6.4</span> 表の保存</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 *名前をつけて保存*する
@@ -1929,20 +1824,16 @@ PCでもある
 *ファイル形式*に注意 
 </p>
 <ul class="org-ul">
-<li>Excelブック 最新のExcelで使える形式 
-</li>
-<li>Excel97-2003ブック 古いExcelで使える形式 
-</li>
-<li>PDF形式 Excelがなくても見ることができる形式 
-</li>
-<li>CSV形式 データだけを保存する
-</li>
+<li>Excelブック 最新のExcelで使える形式</li>
+<li>Excel97-2003ブック 古いExcelで使える形式</li>
+<li>PDF形式 Excelがなくても見ることができる形式</li>
+<li>CSV形式 データだけを保存する</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-5" class="outline-3">
-<h3 id="sec-6-5"><span class="section-number-3">6.5</span> 印刷のしかた</h3>
+<div id="outline-container-org4d16196" class="outline-3">
+<h3 id="org4d16196"><span class="section-number-3">6.5</span> 印刷のしかた</h3>
 <div class="outline-text-3" id="text-6-5">
 <p>
 まずは*印刷プレビュー*し，画面で確認
@@ -1957,178 +1848,140 @@ PCでもある
 </p>
 </div>
 
-<div id="outline-container-sec-6-5-1" class="outline-4">
-<h4 id="sec-6-5-1">プリンタの選択</h4>
-<div class="outline-text-4" id="text-6-5-1">
+<div id="outline-container-org364edf5" class="outline-4">
+<h4 id="org364edf5">プリンタの選択</h4>
+<div class="outline-text-4" id="text-org364edf5">
 <ul class="org-ul">
-<li>Windows =&gt; コンピュータ =&gt; ネットワーク でプリンタが表示される
-</li>
+<li>Windows =&gt; コンピュータ =&gt; ネットワーク でプリンタが表示される</li>
 
-<li>指定のプリンタを右クリックして選ぶ
-</li>
+<li>指定のプリンタを右クリックして選ぶ</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-6-6" class="outline-3">
-<h3 id="sec-6-6"><span class="section-number-3">6.6</span> グラフ作成</h3>
+<div id="outline-container-org1272e66" class="outline-3">
+<h3 id="org1272e66"><span class="section-number-3">6.6</span> グラフ作成</h3>
 <div class="outline-text-3" id="text-6-6">
 <ul class="org-ul">
-<li>表示データの選択
-</li>
+<li>表示データの選択</li>
 
-<li>グラフの描画
-</li>
+<li>グラフの描画</li>
 
-<li>グラフ上のいろいろなところをマウスでクリック，右クリックしてみよ う
-</li>
+<li>グラフ上のいろいろなところをマウスでクリック，右クリックしてみよ う</li>
 </ul>
 </div>
 
-<div id="outline-container-sec-6-6-1" class="outline-4">
-<h4 id="sec-6-6-1">グラフ作成上の注意点</h4>
-<div class="outline-text-4" id="text-6-6-1">
+<div id="outline-container-orgbc53047" class="outline-4">
+<h4 id="orgbc53047">グラフ作成上の注意点</h4>
+<div class="outline-text-4" id="text-orgbc53047">
 <p>
 グラフの種類 <a href="https://www.stat.go.jp/naruhodo/c1graph.htm">https://www.stat.go.jp/naruhodo/c1graph.htm</a>
 </p>
 
 <ul class="org-ul">
-<li>折れ線グラフは経過を見るのによく使う
-</li>
-<li>棒グラフは比に意味がある場合に使う
-</li>
-<li>三次元グラフは値が読みとりにくい
-</li>
-<li>色がないと読めないグラフはやめよう
-</li>
-<li>軸メモリの数値の単位がわかるようにしよう
-</li>
-<li>無意味な凡例は削除しよう
-</li>
+<li>折れ線グラフは経過を見るのによく使う</li>
+<li>棒グラフは比に意味がある場合に使う</li>
+<li>三次元グラフは値が読みとりにくい</li>
+<li>色がないと読めないグラフはやめよう</li>
+<li>軸メモリの数値の単位がわかるようにしよう</li>
+<li>無意味な凡例は削除しよう</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-6-7" class="outline-3">
-<h3 id="sec-6-7"><span class="section-number-3">6.7</span> Wordへの貼り付け</h3>
+<div id="outline-container-org4b2930d" class="outline-3">
+<h3 id="org4b2930d"><span class="section-number-3">6.7</span> Wordへの貼り付け</h3>
 <div class="outline-text-3" id="text-6-7">
 <p>
 Excel の表やグラフは，Word に貼り付けられる
 </p>
 
 <ul class="org-ul">
-<li>フォントを同じにすると統一感がでる
-</li>
+<li>フォントを同じにすると統一感がでる</li>
 
-<li>グラフを右クリックし，枠線を線なしで消す
-</li>
+<li>グラフを右クリックし，枠線を線なしで消す</li>
 
-<li>グラフタイトルも消す（Word側で書く)
-</li>
+<li>グラフタイトルも消す（Word側で書く)</li>
 
-<li>グラフを選択し，右クリックして「コピー」する
-</li>
+<li>グラフを選択し，右クリックして「コピー」する</li>
 
 <li>Word のウィドウを選び，右クリックして「貼り付け」る
 
 <ul class="org-ul">
-<li>形式を選択して貼り付けにする
-</li>
+<li>形式を選択して貼り付けにする</li>
 
-<li>貼り付けた周りの文の折り返しの設定をする
-</li>
+<li>貼り付けた周りの文の折り返しの設定をする</li>
 
-<li>貼り付けた図を右クリックし「図の書式設定」「レイアウトの詳細設定」または図をクリックして，「レイアウトオプション」で設定する
-</li>
-</ul>
-</li>
+<li>貼り付けた図を右クリックし「図の書式設定」「レイアウトの詳細設定」または図をクリックして，「レイアウトオプション」で設定する</li>
+</ul></li>
 
 <li>図に番号を入れる
 
 <ul class="org-ul">
-<li>図を右クリックして「図表番号の挿入」
-</li>
-</ul>
-</li>
+<li>図を右クリックして「図表番号の挿入」</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-8" class="outline-3">
-<h3 id="sec-6-8"><span class="section-number-3">6.8</span> 計算</h3>
+<div id="outline-container-orge63c9a3" class="outline-3">
+<h3 id="orge63c9a3"><span class="section-number-3">6.8</span> 計算</h3>
 <div class="outline-text-3" id="text-6-8">
 <ul class="org-ul">
 <li>計算式の入力
 
 <ul class="org-ul">
 <li>セルをクリックし，*=123+45-6*とかの式を入力，Enterを押すと計算し
-てくれる。セルの表示は*162* となるがセルの中身は式のままとなる。
-</li>
-</ul>
-</li>
+てくれる。セルの表示は*162* となるがセルの中身は式のままとなる。</li>
+</ul></li>
 
 <li>計算式の修正
 
 <ul class="org-ul">
-<li>セルをダブルクリック
-</li>
-</ul>
-</li>
+<li>セルをダブルクリック</li>
+</ul></li>
 
 <li>合計など，行や列の値を使って計算する場合
 
 <ul class="org-ul">
-<li>行や列を選択
-</li>
-<li>関数を選ぶ
-</li>
-</ul>
-</li>
+<li>行や列を選択</li>
+<li>関数を選ぶ</li>
+</ul></li>
 
-<li>式もオートフィルできる
-</li>
+<li>式もオートフィルできる</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-9" class="outline-3">
-<h3 id="sec-6-9"><span class="section-number-3">6.9</span> もっと計算，並べ替え</h3>
+<div id="outline-container-org60d03a4" class="outline-3">
+<h3 id="org60d03a4"><span class="section-number-3">6.9</span> もっと計算，並べ替え</h3>
 <div class="outline-text-3" id="text-6-9">
 <ul class="org-ul">
-<li>セルはメモ帳+電卓の働きをする
-</li>
+<li>セルはメモ帳+電卓の働きをする</li>
 
 <li>数式
 
 <ul class="org-ul">
-<li>半角 = （イコール記号)で書き始める
-</li>
-<li>+-*/などの四則演算ができる
-</li>
-<li>関数が使える，sqrt(2) は２の平方根を求める
-</li>
-</ul>
-</li>
+<li>半角 = （イコール記号)で書き始める</li>
+<li>+-*/などの四則演算ができる</li>
+<li>関数が使える，sqrt(2) は２の平方根を求める</li>
+</ul></li>
 
 <li>セルの範囲の指定
 
 <ul class="org-ul">
-<li>B3からE3までの領域のすべてのセルを使うには，'<b>B3:E3</b>'と書く
-</li>
-<li>B3からE3までのすべてのセルの合計を求める式は，'<b>=sum(B3:E3)</b>'と書く
-</li>
-<li>B3からE3までのすべてのセルの平均値を求める式は，'<b>=average(B3:E3)</b>'と書く
-</li>
-</ul>
-</li>
+<li>B3からE3までの領域のすべてのセルを使うには，'<b>B3:E3</b>'と書く</li>
+<li>B3からE3までのすべてのセルの合計を求める式は，'<b>=sum(B3:E3)</b>'と書く</li>
+<li>B3からE3までのすべてのセルの平均値を求める式は，'<b>=average(B3:E3)</b>'と書く</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-6-10" class="outline-3">
-<h3 id="sec-6-10"><span class="section-number-3">6.10</span> これから</h3>
+<div id="outline-container-orgf3b5698" class="outline-3">
+<h3 id="orgf3b5698"><span class="section-number-3">6.10</span> これから</h3>
 <div class="outline-text-3" id="text-6-10">
 <p>
 ここでは一部の機能しか学んでいません。
@@ -2138,44 +1991,41 @@ Excel の表やグラフは，Word に貼り付けられる
 </div>
 </div>
 </div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 7章 プレゼンテーション</h2>
+<div id="outline-container-org8100f0f" class="outline-2">
+<h2 id="org8100f0f"><span class="section-number-2">7</span> 7章 プレゼンテーション</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 作成中 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-08 土&gt;</span></span>
 </p>
 </div>
 </div>
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 8章 Webによる情報発信</h2>
+<div id="outline-container-org54e69e3" class="outline-2">
+<h2 id="org54e69e3"><span class="section-number-2">8</span> 8章 Webによる情報発信</h2>
 <div class="outline-text-2" id="text-8">
-</div><div id="outline-container-sec-8-1" class="outline-3">
-<h3 id="sec-8-1"><span class="section-number-3">8.1</span> 8.1 Webの歴史</h3>
+</div>
+<div id="outline-container-org86c8c98" class="outline-3">
+<h3 id="org86c8c98"><span class="section-number-3">8.1</span> 8.1 Webの歴史</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 3.1 のWeb と併せて理解してください。
 </p>
 
 <dl class="org-dl">
-<dt> WWW </dt><dd>(世界中の物理学者の研究を) 互いにリンクして簡単に閲覧できる仕組
-み (が始まり)
-</dd>
+<dt>WWW</dt><dd>(世界中の物理学者の研究を) 互いにリンクして簡単に閲覧できる仕組
+み (が始まり)</dd>
 
-<dt> ハイパーリンク </dt><dd>URLと表示文字列の組。表示文字列をクリックすると，
-そのURLが指すサイトを閲覧する。
-</dd>
+<dt>ハイパーリンク</dt><dd>URLと表示文字列の組。表示文字列をクリックすると，
+そのURLが指すサイトを閲覧する。</dd>
 
-<dt> ハイパーテキスト </dt><dd>ハイパーリンクを含んだ文章。
-</dd>
+<dt>ハイパーテキスト</dt><dd>ハイパーリンクを含んだ文章。</dd>
 
-<dt> HTML </dt><dd>ハイパーテキストを記述する実際の仕組み。
-</dd>
+<dt>HTML</dt><dd>ハイパーテキストを記述する実際の仕組み。</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-8-2" class="outline-3">
-<h3 id="sec-8-2"><span class="section-number-3">8.2</span> 8.2~5 Webサイトの構築</h3>
+<div id="outline-container-org0d042b1" class="outline-3">
+<h3 id="org0d042b1"><span class="section-number-3">8.2</span> 8.2~5 Webサイトの構築</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 講義では，Google の サイトサービスを使って，自分のサイトを作ってみましょ
@@ -2188,53 +2038,44 @@ Excel の表やグラフは，Word に貼り付けられる
 </div>
 </div>
 </div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 第9章　情報の調べ方・まとめ方</h2>
+<div id="outline-container-orgcc3514b" class="outline-2">
+<h2 id="orgcc3514b"><span class="section-number-2">9</span> 第9章　情報の調べ方・まとめ方</h2>
 <div class="outline-text-2" id="text-9">
-</div><div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="section-number-3">9.1</span> はじめに</h3>
+</div>
+<div id="outline-container-org9bd977d" class="outline-3">
+<h3 id="org9bd977d"><span class="section-number-3">9.1</span> はじめに</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 <b>情報共有と検索</b> 
 </p>
 <ul class="org-ul">
-<li>Webによる情報共有の利便性， 
-</li>
-<li>優れた検索サービスの出現は， 
-</li>
-<li>情報共有に拍車をかけた
-</li>
+<li>Webによる情報共有の利便性，</li>
+<li>優れた検索サービスの出現は，</li>
+<li>情報共有に拍車をかけた</li>
 </ul>
 
 <p>
 <b>インターネット上の情報</b> 
 </p>
 <ul class="org-ul">
-<li>存在する情報は限られている 
-</li>
-<li>正しいとは限らない 
-</li>
-<li>クローンが簡単に作れる 
-</li>
-<li>自分で判断，解釈，表現することが必要
-</li>
+<li>存在する情報は限られている</li>
+<li>正しいとは限らない</li>
+<li>クローンが簡単に作れる</li>
+<li>自分で判断，解釈，表現することが必要</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-9-2" class="outline-3">
-<h3 id="sec-9-2"><span class="section-number-3">9.2</span> サーチエンジン活用法</h3>
+<div id="outline-container-org8199a46" class="outline-3">
+<h3 id="org8199a46"><span class="section-number-3">9.2</span> サーチエンジン活用法</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 *サーチエンジン*は，世界中のWebページの全文検索を可能にする 
 </p>
 <ul class="org-ul">
-<li>検索情報収集ロボット（クローラ)による，全文解析 
-</li>
-<li>検索用索引の作成 
-</li>
-<li>高速検索
-</li>
+<li>検索情報収集ロボット（クローラ)による，全文解析</li>
+<li>検索用索引の作成</li>
+<li>高速検索</li>
 </ul>
 
 <p>
@@ -2245,18 +2086,15 @@ Excel の表やグラフは，Word に貼り付けられる
 検索した人が欲しい検索結果の表示 
 </p>
 <ul class="org-ul">
-<li>できるだけ信頼できるページ 
-</li>
-<li>妥当な情報が書かれているページ
-</li>
+<li>できるだけ信頼できるページ</li>
+<li>妥当な情報が書かれているページ</li>
 </ul>
 
 <p>
 ページリンク方式 
 </p>
 <ul class="org-ul">
-<li>たくさんのページからリンクされているページが上位になるように表示する
-</li>
+<li>たくさんのページからリンクされているページが上位になるように表示する</li>
 </ul>
 
 <p>
@@ -2264,12 +2102,9 @@ AND，OR，NOT検索
 </p>
 
 <ul class="org-ul">
-<li>検索語を空白文字で区切って入力
-</li>
-<li>検索語を大文字のORで区切って入力
-</li>
-<li>検索語の前に-文字を入力
-</li>
+<li>検索語を空白文字で区切って入力</li>
+<li>検索語を大文字のORで区切って入力</li>
+<li>検索語の前に-文字を入力</li>
 </ul>
 
 <p>
@@ -2278,20 +2113,20 @@ AND，OR，NOT検索
 
 <pre class="example">
 ヒト (ES細胞 OR 胚性幹細胞) -ブログ -トラックバック 
+
 </pre>
 
 <ul class="org-ul">
-<li>「ヒト」と「ES細胞」または「胚性幹細胞」のどちらかを含み，
-</li>
-<li>「ブログ」と「トラックバック」を含まないページを検索
+<li>「ヒト」と「ES細胞」または「胚性幹細胞」のどちらかを含み，</li>
+<li><p>
+「ブログ」と「トラックバック」を含まないページを検索
+</p>
 
 <p>
 個人情報 site:go.jp
-</p>
-</li>
+</p></li>
 
-<li>日本の政府機関のサイトのページだけの「個人情報」を含むページ
-</li>
+<li>日本の政府機関のサイトのページだけの「個人情報」を含むページ</li>
 </ul>
 
 <p>
@@ -2304,8 +2139,8 @@ AND，OR，NOT検索
 </div>
 </div>
 
-<div id="outline-container-sec-9-3" class="outline-3">
-<h3 id="sec-9-3"><span class="section-number-3">9.3</span> 図書館活用法</h3>
+<div id="outline-container-orgbfb7e5c" class="outline-3">
+<h3 id="orgbfb7e5c"><span class="section-number-3">9.3</span> 図書館活用法</h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
 盛岡大学からの説明を直接聞いてください。
@@ -2313,8 +2148,8 @@ AND，OR，NOT検索
 </div>
 </div>
 
-<div id="outline-container-sec-9-4" class="outline-3">
-<h3 id="sec-9-4"><span class="section-number-3">9.4</span> レポート・論文の書き方</h3>
+<div id="outline-container-org863ec8a" class="outline-3">
+<h3 id="org863ec8a"><span class="section-number-3">9.4</span> レポート・論文の書き方</h3>
 <div class="outline-text-3" id="text-9-4">
 <p>
 <a href="../contents/情報処理_レポートの書き方.html">情報処理/レポートの書き方</a>
@@ -2326,110 +2161,86 @@ AND，OR，NOT検索
 </p>
 
 <ul class="org-ul">
-<li><a href="https://www.ier.hit-u.ac.jp/~iwaisako/essays/t-write2.pdf">https://www.ier.hit-u.ac.jp/~iwaisako/essays/t-write2.pdf</a>
-</li>
-<li><a href="https://daigakusei.seesaa.net/">https://daigakusei.seesaa.net/</a>
-</li>
-<li><a href="https://www.cc.kyoto-su.ac.jp/~oda/essay1.html">https://www.cc.kyoto-su.ac.jp/~oda/essay1.html</a>
-</li>
-<li><a href="https://www.happycampus.co.jp/docs/?\_\_a=gnb">https://www.happycampus.co.jp/docs/?\_\_a=gnb</a>
-</li>
-<li><a href="https://www.thesis-report.com/">https://www.thesis-report.com/</a>
-</li>
-<li><a href="https://yonosuke.net/eguchi/archives/2878">https://yonosuke.net/eguchi/archives/2878</a>
-</li>
-<li><a href="https://yonosuke.net/eguchi/archives/587">https://yonosuke.net/eguchi/archives/587</a>
-</li>
-<li><a href="https://www1.gifu-u.ac.jp/~shogo/informationliteracy/index.html">https://www1.gifu-u.ac.jp/~shogo/informationliteracy/index.html</a>
-</li>
-<li><a href="https://www.happycampus.co.jp/guide/howto/?t=report">https://www.happycampus.co.jp/guide/howto/?t=report</a>
-</li>
+<li><a href="https://www.ier.hit-u.ac.jp/~iwaisako/essays/t-write2.pdf">https://www.ier.hit-u.ac.jp/~iwaisako/essays/t-write2.pdf</a></li>
+<li><a href="https://daigakusei.seesaa.net/">https://daigakusei.seesaa.net/</a></li>
+<li><a href="https://www.cc.kyoto-su.ac.jp/~oda/essay1.html">https://www.cc.kyoto-su.ac.jp/~oda/essay1.html</a></li>
+<li><a href="https://www.happycampus.co.jp/docs/?%5C_%5C_a=gnb">https://www.happycampus.co.jp/docs/?\_\_a=gnb</a></li>
+<li><a href="https://www.thesis-report.com/">https://www.thesis-report.com/</a></li>
+<li><a href="https://yonosuke.net/eguchi/archives/2878">https://yonosuke.net/eguchi/archives/2878</a></li>
+<li><a href="https://yonosuke.net/eguchi/archives/587">https://yonosuke.net/eguchi/archives/587</a></li>
+<li><a href="https://www1.gifu-u.ac.jp/~shogo/informationliteracy/index.html">https://www1.gifu-u.ac.jp/~shogo/informationliteracy/index.html</a></li>
+<li><a href="https://www.happycampus.co.jp/guide/howto/?t=report">https://www.happycampus.co.jp/guide/howto/?t=report</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 10章 コンピュータとネットワーク</h2>
+<div id="outline-container-orge0c8c3d" class="outline-2">
+<h2 id="orge0c8c3d"><span class="section-number-2">10</span> 10章 コンピュータとネットワーク</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 まとめ作成中 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-08 土&gt;</span></span>
 </p>
 </div>
 
-<div id="outline-container-sec-10-1" class="outline-3">
-<h3 id="sec-10-1"><span class="section-number-3">10.1</span> 10.4 ネットワークの仕組み</h3>
+<div id="outline-container-org4125ce6" class="outline-3">
+<h3 id="org4125ce6"><span class="section-number-3">10.1</span> 10.4 ネットワークの仕組み</h3>
 <div class="outline-text-3" id="text-10-1">
 <dl class="org-dl">
-<dt> インターネット </dt><dd><dl class="org-dl">
-<dt> why </dt><dd>コンピュータを接続するため
-</dd>
-<dt> what,how </dt><dd>TCP/IP ネットを(ルータで)相互接続したもの
-</dd>
-<dt> (no term) </dt><dd>:: IP 
-</dd>
-</dl>
-</dd>
+<dt>インターネット</dt><dd><dl class="org-dl">
+<dt>why</dt><dd>コンピュータを接続するため</dd>
+<dt>what,how</dt><dd>TCP/IP ネットを(ルータで)相互接続したもの</dd>
+<dt>(no term)</dt><dd>:: IP</dd>
+</dl></dd>
 
-<dt> TCP/IP </dt><dd><dl class="org-dl">
-<dt> what </dt><dd>インターネットの通信の決まり(プロトコル)
-</dd>
+<dt>TCP/IP</dt><dd><dl class="org-dl">
+<dt>what</dt><dd>インターネットの通信の決まり(プロトコル)</dd>
 
-<dt> IP </dt><dd>コンピュータ間の通信の決まり。IPアドレスを用いる。
-</dd>
-<dt> TCP </dt><dd>アプリ間の通信の決まり。IPの上位。
-</dd>
-</dl>
-</dd>
+<dt>IP</dt><dd>コンピュータ間の通信の決まり。IPアドレスを用いる。</dd>
+<dt>TCP</dt><dd>アプリ間の通信の決まり。IPの上位。</dd>
+</dl></dd>
 
-<dt> IP アドレス </dt><dd><dl class="org-dl">
-<dt> what </dt><dd>IPプロトコルで運用されるネットワークでのコンピュータの
-アドレス
-</dd>
-</dl>
-</dd>
+<dt>IP アドレス</dt><dd><dl class="org-dl">
+<dt>what</dt><dd>IPプロトコルで運用されるネットワークでのコンピュータの
+アドレス</dd>
+</dl></dd>
 
-<dt> DNS </dt><dd>domain name system
+<dt>DNS</dt><dd>domain name system
 
 <dl class="org-dl">
-<dt> what </dt><dd>IPアドレスの代りに，地域名や組織名などで体系化された，
-名前を使うこと
-</dd>
+<dt>what</dt><dd>IPアドレスの代りに，地域名や組織名などで体系化された，
+名前を使うこと</dd>
 
-<dt> ドメイン名 </dt><dd>morioka-u.ac.jp
+<dt>ドメイン名</dt><dd>morioka-u.ac.jp
 jp = 日本，ac = 学術機関，morioka-u = 盛岡大学
 
 <ul class="org-ul">
-<li>相互接続されたTCP/IPネットワークで，世界中のコンピュータを相互接続し
-</li>
+<li>相互接続されたTCP/IPネットワークで，世界中のコンピュータを相互接続し</li>
 
 <li>コンピュータごとにインターネット内のアドレス (IPアドレスとドメイ
-ン名)を与え，
-</li>
+ン名)を与え，</li>
 
-<li>そのアドレスと対応した，組織名を与える仕組み
-</li>
-</ul>
-</dd>
-</dl>
-</dd>
+<li>そのアドレスと対応した，組織名を与える仕組み</li>
+</ul></dd>
+</dl></dd>
 
-<dt> MACアドレス </dt><dd><dl class="org-dl">
-<dt> what </dt><dd>全てのネットワーク機器に与えられた固有の識別番号
-</dd>
+<dt>MACアドレス</dt><dd><dl class="org-dl">
+<dt>what</dt><dd>全てのネットワーク機器に与えられた固有の識別番号</dd>
 </dl>
+
 <pre class="example">
 ipconfig /all 
-</pre>
-</dd>
+
+</pre></dd>
 </dl>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 第11章　情報とセキュリティ</h2>
+<div id="outline-container-orgd8bea88" class="outline-2">
+<h2 id="orgd8bea88"><span class="section-number-2">11</span> 第11章　情報とセキュリティ</h2>
 <div class="outline-text-2" id="text-11">
-</div><div id="outline-container-sec-11-1" class="outline-3">
-<h3 id="sec-11-1"><span class="section-number-3">11.1</span> Windowsのセキュリティ対策</h3>
+</div>
+<div id="outline-container-org973ed49" class="outline-3">
+<h3 id="org973ed49"><span class="section-number-3">11.1</span> Windowsのセキュリティ対策</h3>
 <div class="outline-text-3" id="text-11-1">
 <p>
 悪いことをするプログラムを実行しないこと
@@ -2440,35 +2251,34 @@ ipconfig /all
 </p>
 
 <ul class="org-ul">
-<li>不具合を持っているプログラム
-</li>
+<li>不具合を持っているプログラム</li>
 
 <li>インターネットからダウンロードされたり
-メールに添付された，悪意を持ったプログラム
-</li>
+メールに添付された，悪意を持ったプログラム</li>
 
-<li>更新 (アップデート) しよう
+<li><p>
+更新 (アップデート) しよう
+</p>
 
 <p>
 システムやアプリの不具合をついた攻撃を防ぐために，
 システムやアプリを最新の状態にアップデート(更新)しよう。
-</p>
-</li>
+</p></li>
 </ul>
 </div>
 
-<div id="outline-container-sec-11-1-1" class="outline-4">
-<h4 id="sec-11-1-1">拡張子を表示しよう</h4>
-<div class="outline-text-4" id="text-11-1-1">
+<div id="outline-container-org6579d6b" class="outline-4">
+<h4 id="org6579d6b">拡張子を表示しよう</h4>
+<div class="outline-text-4" id="text-org6579d6b">
 <p>
 アイコンで欺くことがある。ファイルの種類をハッキリさせるために，
 拡張子を表示させよう。
 </p>
 </div>
 
-<div id="outline-container-sec-11-1-1-1" class="outline-5">
-<h5 id="sec-11-1-1-1">危険な拡張子</h5>
-<div class="outline-text-5" id="text-11-1-1-1">
+<div id="outline-container-org4efbc9c" class="outline-5">
+<h5 id="org4efbc9c">危険な拡張子</h5>
+<div class="outline-text-5" id="text-org4efbc9c">
 <p>
 .exe, .com, .cmd, .scr, .pif, .bat, .vbs, .vbe, .js, .jse, .wsf,
 .wsh, .hta 
@@ -2476,77 +2286,76 @@ ipconfig /all
 </div>
 </div>
 
-<div id="outline-container-sec-11-1-1-2" class="outline-5">
-<h5 id="sec-11-1-1-2">安全な拡張子</h5>
-<div class="outline-text-5" id="text-11-1-1-2">
+<div id="outline-container-org73d8478" class="outline-5">
+<h5 id="org73d8478">安全な拡張子</h5>
+<div class="outline-text-5" id="text-org73d8478">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="left">拡張子</th>
-<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="org-left">拡張子</th>
+<th scope="col" class="org-left">&#xa0;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="left">.txt</td>
-<td class="left">テキストファイル</td>
+<td class="org-left">.txt</td>
+<td class="org-left">テキストファイル</td>
 </tr>
 
 <tr>
-<td class="left">.pdf</td>
-<td class="left">PDF ファイル</td>
+<td class="org-left">.pdf</td>
+<td class="org-left">PDF ファイル</td>
 </tr>
 
 <tr>
-<td class="left">.jpg, .png, .gif</td>
-<td class="left">JPEG, PNG, GIF形式の画像</td>
+<td class="org-left">.jpg, .png, .gif</td>
+<td class="org-left">JPEG, PNG, GIF形式の画像</td>
 </tr>
 
 <tr>
-<td class="left">.bmp</td>
-<td class="left">BMP 形式の画像</td>
+<td class="org-left">.bmp</td>
+<td class="org-left">BMP 形式の画像</td>
 </tr>
 
 <tr>
-<td class="left">.doc .docx</td>
-<td class="left">Word ファイル</td>
+<td class="org-left">.doc .docx</td>
+<td class="org-left">Word ファイル</td>
 </tr>
 
 <tr>
-<td class="left">.xls .xlsx</td>
-<td class="left">Excel ファイル</td>
+<td class="org-left">.xls .xlsx</td>
+<td class="org-left">Excel ファイル</td>
 </tr>
 
 <tr>
-<td class="left">.ppt .pptx</td>
-<td class="left">PowerPoint ファイル</td>
+<td class="org-left">.ppt .pptx</td>
+<td class="org-left">PowerPoint ファイル</td>
 </tr>
 
 <tr>
-<td class="left">.rtf</td>
-<td class="left">リッチテキスト形式の文書ファイル</td>
+<td class="org-left">.rtf</td>
+<td class="org-left">リッチテキスト形式の文書ファイル</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<div id="outline-container-sec-11-1-1-2-1" class="outline-6">
-<h6 id="sec-11-1-1-2-1">圧縮ファイル (<a href="https://www.pc-master.jp/sousa/asshuku-kaitou.html">圧縮と解凍　パソコン初心者講座</a>)</h6>
-<div class="outline-text-6" id="text-11-1-1-2-1">
+<div id="outline-container-org640ec2f" class="outline-6">
+<h6 id="org640ec2f">圧縮ファイル (<a href="https://www.pc-master.jp/sousa/asshuku-kaitou.html">圧縮と解凍　パソコン初心者講座</a>)</h6>
+<div class="outline-text-6" id="text-org640ec2f">
 <p>
 解凍すると中に危険なファイルが入ているかもしれない。      
 </p>
 
 <ul class="org-ul">
-<li>.zip, .lzh, .cab, .rar, .tgz
-</li>
+<li>.zip, .lzh, .cab, .rar, .tgz</li>
 </ul>
 </div>
 </div>
@@ -2554,9 +2363,9 @@ ipconfig /all
 </div>
 
 
-<div id="outline-container-sec-11-1-2" class="outline-4">
-<h4 id="sec-11-1-2">不正ソフトとは</h4>
-<div class="outline-text-4" id="text-11-1-2">
+<div id="outline-container-org7eb8b7e" class="outline-4">
+<h4 id="org7eb8b7e">不正ソフトとは</h4>
+<div class="outline-text-4" id="text-org7eb8b7e">
 <p>
 不正ソフト(マルウェア，malware) とは、不正かつ有害に動作させる意図で作
 成された悪意のあるソフトウェアや悪質なコードの総称で、コンピュータウイ
@@ -2569,31 +2378,25 @@ ipconfig /all
 </p>
 
 <ul class="org-ul">
-<li>コンピュータウイルス
-</li>
-<li>アドウェア
-</li>
-<li>スパイウェア
-</li>
+<li>コンピュータウイルス</li>
+<li>アドウェア</li>
+<li>スパイウェア</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-11-1-3" class="outline-4">
-<h4 id="sec-11-1-3">ウイルス対策</h4>
-<div class="outline-text-4" id="text-11-1-3">
+<div id="outline-container-orgdc8156e" class="outline-4">
+<h4 id="orgdc8156e">ウイルス対策</h4>
+<div class="outline-text-4" id="text-orgdc8156e">
 <p>
 Windows ではウィルス対策ソフトがある程度役に立つ。
 </p>
 
 <ul class="org-ul">
-<li>Windows Defender がもともと入っている
-</li>
-<li>付加価値を持つ有償ソフトもある。
-</li>
+<li>Windows Defender がもともと入っている</li>
+<li>付加価値を持つ有償ソフトもある。</li>
 <li><a href="https://securitysoft.asia/sougou/free/">2017年版！無料セキュリティソフトの比較＆おすすめ【ウイルス対策】</a> に
-違いなどの説明がある
-</li>
+違いなどの説明がある</li>
 </ul>
 
 
@@ -2601,8 +2404,7 @@ Windows ではウィルス対策ソフトがある程度役に立つ。
 ウィルス対策ソフトで全ての不正ソフトを防げるわけではないことに注意
 </p>
 <ul class="org-ul">
-<li>日々新らしい不正ソフトが作られるため，対応に遅れが生れる
-</li>
+<li>日々新らしい不正ソフトが作られるため，対応に遅れが生れる</li>
 </ul>
 
 <p>
@@ -2615,33 +2417,28 @@ Windows ではウィルス対策ソフトがある程度役に立つ。
 </p>
 
 <ul class="org-ul">
-<li>ソフトウェアの *脆弱性*を取り除くには，アップデートすること
-</li>
+<li>ソフトウェアの *脆弱性*を取り除くには，アップデートすること</li>
 </ul>
 
 <p>
 未知の人からのメールに添付されたファイルが危険
 </p>
 <ul class="org-ul">
-<li>中身を見たいときは，Gmailを使って，プレビューするといいかも
-</li>
+<li>中身を見たいときは，Gmailを使って，プレビューするといいかも</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-11-1-4" class="outline-4">
-<h4 id="sec-11-1-4">消すだけでは消えない</h4>
-<div class="outline-text-4" id="text-11-1-4">
+<div id="outline-container-org5b46736" class="outline-4">
+<h4 id="org5b46736">消すだけでは消えない</h4>
+<div class="outline-text-4" id="text-org5b46736">
 <p>
 共用のパソコンで，個人情報を扱かった後は，ファイルを消しておきましょう。
 </p>
 <ul class="org-ul">
-<li>ゴミ箱にファイルを捨て，
-</li>
-<li>ゴミ箱を右クリックし，
-</li>
-<li>「ゴミ箱を空にする」をしておきましょう。
-</li>
+<li>ゴミ箱にファイルを捨て，</li>
+<li>ゴミ箱を右クリックし，</li>
+<li>「ゴミ箱を空にする」をしておきましょう。</li>
 </ul>
 
 <p>
@@ -2659,9 +2456,9 @@ Windows ではウィルス対策ソフトがある程度役に立つ。
 </div>
 </div>
 
-<div id="outline-container-sec-11-1-5" class="outline-4">
-<h4 id="sec-11-1-5">暗号化しよう</h4>
-<div class="outline-text-4" id="text-11-1-5">
+<div id="outline-container-org5668380" class="outline-4">
+<h4 id="org5668380">暗号化しよう</h4>
+<div class="outline-text-4" id="text-org5668380">
 <p>
 USBメモリやノートパソコンを紛失したり盗難にあったりするリスクがありま
 す。そのさい，他人に中を見られないようにするために，ディスク全体を暗号
@@ -2670,76 +2467,70 @@ USBメモリやノートパソコンを紛失したり盗難にあったりす�
 </div>
 </div>
 
-<div id="outline-container-sec-11-1-6" class="outline-4">
-<h4 id="sec-11-1-6">TrueCrypt</h4>
+<div id="outline-container-orga1c08c6" class="outline-4">
+<h4 id="orga1c08c6">TrueCrypt</h4>
 </div>
 
-<div id="outline-container-sec-11-1-7" class="outline-4">
-<h4 id="sec-11-1-7">コンピュータのロック</h4>
+<div id="outline-container-org97aaf93" class="outline-4">
+<h4 id="org97aaf93">コンピュータのロック</h4>
 </div>
 </div>
 
 
-<div id="outline-container-sec-11-2" class="outline-3">
-<h3 id="sec-11-2"><span class="section-number-3">11.2</span> Macのセキュリティ対策</h3>
+<div id="outline-container-org94bf970" class="outline-3">
+<h3 id="org94bf970"><span class="section-number-3">11.2</span> Macのセキュリティ対策</h3>
 <div class="outline-text-3" id="text-11-2">
 <ul class="org-ul">
-<li>拡張子
-</li>
-<li>安全なファイル
-</li>
-<li>暗号化
-</li>
-<li>コンピュータのロック
-</li>
-<li>ファイルの完全消去
-</li>
+<li>拡張子</li>
+<li>安全なファイル</li>
+<li>暗号化</li>
+<li>コンピュータのロック</li>
+<li>ファイルの完全消去</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-11-3" class="outline-3">
-<h3 id="sec-11-3"><span class="section-number-3">11.3</span> スマホのセキュリティ対策</h3>
+<div id="outline-container-org049c543" class="outline-3">
+<h3 id="org049c543"><span class="section-number-3">11.3</span> スマホのセキュリティ対策</h3>
 </div>
 
-<div id="outline-container-sec-11-4" class="outline-3">
-<h3 id="sec-11-4"><span class="section-number-3">11.4</span> パスワード管理</h3>
+<div id="outline-container-org2719218" class="outline-3">
+<h3 id="org2719218"><span class="section-number-3">11.4</span> パスワード管理</h3>
 </div>
 
-<div id="outline-container-sec-11-5" class="outline-3">
-<h3 id="sec-11-5"><span class="section-number-3">11.5</span> 無線LANのセキュリティ</h3>
+<div id="outline-container-org0a82ca0" class="outline-3">
+<h3 id="org0a82ca0"><span class="section-number-3">11.5</span> 無線LANのセキュリティ</h3>
 </div>
 </div>
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 12章 情報と社会</h2>
+<div id="outline-container-org0aee113" class="outline-2">
+<h2 id="org0aee113"><span class="section-number-2">12</span> 12章 情報と社会</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 まとめ検討中 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-04-08 土&gt;</span></span>
 </p>
 </div>
 </div>
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> 13章 プログラミング</h2>
+<div id="outline-container-orgf29392c" class="outline-2">
+<h2 id="orgf29392c"><span class="section-number-2">13</span> 13章 プログラミング</h2>
 <div class="outline-text-2" id="text-13">
-</div><div id="outline-container-sec-13-1" class="outline-3">
-<h3 id="sec-13-1"><span class="section-number-3">13.1</span> はじめに</h3>
+</div>
+<div id="outline-container-org214453c" class="outline-3">
+<h3 id="org214453c"><span class="section-number-3">13.1</span> はじめに</h3>
 <div class="outline-text-3" id="text-13-1">
 <p>
 JavaScript という名前のプログラミング言語を使ってみよう。
 </p>
 
 <dl class="org-dl">
-<dt> 目的 </dt><dd>プログラミングとはどういうものかを理解する
-</dd>
+<dt>目的</dt><dd>プログラミングとはどういうものかを理解する</dd>
 
-<dt> 特徴 </dt><dd>ブラウザで使える
-</dd>
+<dt>特徴</dt><dd>ブラウザで使える</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-13-2" class="outline-3">
-<h3 id="sec-13-2"><span class="section-number-3">13.2</span> 例</h3>
+<div id="outline-container-org02fb858" class="outline-3">
+<h3 id="org02fb858"><span class="section-number-3">13.2</span> 例</h3>
 <div class="outline-text-3" id="text-13-2">
 <p>
 「自分の情報処理フォルダ」/「プログラミング」 フォルダ を作成し，
@@ -2748,48 +2539,49 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </p>
 
 <div class="org-src-container">
+<pre class="src src-html"><span style="font-style: italic;">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="font-weight: bold;">html</span> <span style="font-weight: bold; font-style: italic;">lang</span>=<span style="font-style: italic;">"ja"</span>&gt;
+&lt;<span style="font-weight: bold;">head</span>&gt;
+&lt;<span style="font-weight: bold;">meta</span> <span style="font-weight: bold; font-style: italic;">charset</span>=<span style="font-style: italic;">"UTF-8"</span>&gt;
+&lt;<span style="font-weight: bold;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">JavaScript&#12398;&#12506;&#12540;&#12472;</span>&lt;/<span style="font-weight: bold;">title</span>&gt;
+&lt;/<span style="font-weight: bold;">head</span>&gt;
+&lt;<span style="font-weight: bold;">body</span>&gt;
+&lt;<span style="font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;"> JavaScript&#12398;&#12506;&#12540;&#12472;</span>&lt;/<span style="font-weight: bold;">h1</span>&gt;
 
-<pre class="src src-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="ja"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;JavaScriptのページ&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt; JavaScriptのページ&lt;/h1&gt;
+&lt;<span style="font-weight: bold;">script</span>&gt;
+  var s =  prompt('&#12362;&#21517;&#21069;&#12399;&#65311;');
+  document.write('&lt;<span style="font-weight: bold;">p</span>&gt;&#12371;&#12435;&#12395;&#12385;&#12399;&#12290;'+ s + '&#12373;&#12435;! &lt;/<span style="font-weight: bold;">p</span>&gt;')
+&lt;/<span style="font-weight: bold;">script</span>&gt;
+&lt;/<span style="font-weight: bold;">body</span>&gt;
+&lt;/<span style="font-weight: bold;">html</span>&gt;
 
-&lt;script&gt;
-  var s =  prompt('お名前は？');
-  document.write('&lt;p&gt;こんにちは。'+ s + 'さん! &lt;/p&gt;')
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-13-3" class="outline-3">
-<h3 id="sec-13-3"><span class="section-number-3">13.3</span> 条件判断</h3>
+<div id="outline-container-org4df5add" class="outline-3">
+<h3 id="org4df5add"><span class="section-number-3">13.3</span> 条件判断</h3>
 </div>
 
-<div id="outline-container-sec-13-4" class="outline-3">
-<h3 id="sec-13-4"><span class="section-number-3">13.4</span> 繰り返し</h3>
+<div id="outline-container-org68f9250" class="outline-3">
+<h3 id="org68f9250"><span class="section-number-3">13.4</span> 繰り返し</h3>
 </div>
 
-<div id="outline-container-sec-13-5" class="outline-3">
-<h3 id="sec-13-5"><span class="section-number-3">13.5</span> 絵の切換え</h3>
+<div id="outline-container-org6e2563c" class="outline-3">
+<h3 id="org6e2563c"><span class="section-number-3">13.5</span> 絵の切換え</h3>
 </div>
 
-<div id="outline-container-sec-13-6" class="outline-3">
-<h3 id="sec-13-6"><span class="section-number-3">13.6</span> 数学の問題</h3>
+<div id="outline-container-org3a962e0" class="outline-3">
+<h3 id="org3a962e0"><span class="section-number-3">13.6</span> 数学の問題</h3>
 </div>
 </div>
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 付録</h2>
+<div id="outline-container-org3eb8508" class="outline-2">
+<h2 id="org3eb8508"><span class="section-number-2">14</span> 付録</h2>
 <div class="outline-text-2" id="text-14">
-</div><div id="outline-container-sec-14-1" class="outline-3">
-<h3 id="sec-14-1"><span class="section-number-3">14.1</span> 不正ソフトの種類 (<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2)">マルウェア - Wikipedia</a>より)</h3>
+</div>
+<div id="outline-container-orgb1dfc76" class="outline-3">
+<h3 id="orgb1dfc76"><span class="section-number-3">14.1</span> 不正ソフトの種類 (<a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2)">マルウェア - Wikipedia</a>より)</h3>
 <div class="outline-text-3" id="text-14-1">
 <p>
 代表例をあげる。以下の種類は排他的ではなく、複数の種類の定義を満たすマ
@@ -2797,9 +2589,9 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </p>
 </div>
 
-<div id="outline-container-sec-14-1-1" class="outline-4">
-<h4 id="sec-14-1-1">狭義のコンピュータウイルス</h4>
-<div class="outline-text-4" id="text-14-1-1">
+<div id="outline-container-org564a6eb" class="outline-4">
+<h4 id="org564a6eb">狭義のコンピュータウイルス</h4>
+<div class="outline-text-4" id="text-org564a6eb">
 <p>
 あるいは単に狭義のウイルスとは他のプログラムやファイルの一部を書き換え
 （寄生、感染）、自己複製する機能を持つマルウェアのことである。感染対象
@@ -2814,9 +2606,9 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-2" class="outline-4">
-<h4 id="sec-14-1-2">広義のウイルス</h4>
-<div class="outline-text-4" id="text-14-1-2">
+<div id="outline-container-org5fae4f6" class="outline-4">
+<h4 id="org5fae4f6">広義のウイルス</h4>
+<div class="outline-text-4" id="text-org5fae4f6">
 <p>
 文脈によって定義が様々であるが、 「コンピュータウイルス対策基準」では、
 自己伝染機能、潜伏機能、発病機能のいずれかをもつ加害プログラムの事をウ
@@ -2836,9 +2628,9 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-3" class="outline-4">
-<h4 id="sec-14-1-3">ワーム</h4>
-<div class="outline-text-4" id="text-14-1-3">
+<div id="outline-container-org6875ef6" class="outline-4">
+<h4 id="org6875ef6">ワーム</h4>
+<div class="outline-text-4" id="text-org6875ef6">
 <p>
 ウイルス同様自己増殖するが、ホストプログラムを持たず、単体で存在するマ
 ルウェアの事を指す。
@@ -2846,9 +2638,9 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-4" class="outline-4">
-<h4 id="sec-14-1-4">バックドア</h4>
-<div class="outline-text-4" id="text-14-1-4">
+<div id="outline-container-orgaeb6c7c" class="outline-4">
+<h4 id="orgaeb6c7c">バックドア</h4>
+<div class="outline-text-4" id="text-orgaeb6c7c">
 <p>
 外部からコンピューターを操るために作られたコンピューターへの不正な侵入
 経路の事でRAT(Remote Administration Tool)とも呼ばれる。
@@ -2860,9 +2652,9 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-5" class="outline-4">
-<h4 id="sec-14-1-5">トロイの木馬</h4>
-<div class="outline-text-4" id="text-14-1-5">
+<div id="outline-container-org0a83e72" class="outline-4">
+<h4 id="org0a83e72">トロイの木馬</h4>
+<div class="outline-text-4" id="text-org0a83e72">
 <p>
 一見無害なファイルやプログラムに偽装した上でコンピューターに侵入したあ
 と悪意のある振る舞いをするものを指すことが多いが、偽装を行わ
@@ -2876,15 +2668,15 @@ JavaScript という名前のプログラミング言語を使ってみよう。
 
 <p>
 トロイの木馬の定義として、コンピューター内部に侵入したあと攻撃者による
-外部からの命令で悪意のある振る舞いをする<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup><sup>, </sup><sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup><sup>, </sup><sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>事やバックドア型であ
-る事<sup><a id="fnr.3.100" name="fnr.3.100" class="footref" href="#fn.3">3</a></sup>を要件にする場合もある。
+外部からの命令で悪意のある振る舞いをする[8][9][16]事やバックドア型であ
+る事[16]を要件にする場合もある。
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-6" class="outline-4">
-<h4 id="sec-14-1-6">スパイウェア</h4>
-<div class="outline-text-4" id="text-14-1-6">
+<div id="outline-container-orge6c86d6" class="outline-4">
+<h4 id="orge6c86d6">スパイウェア</h4>
+<div class="outline-text-4" id="text-orge6c86d6">
 <p>
 情報収集を主な目的とし、コンピューターの内部情報を外部に勝手に送信する
 ソフトウェアで、ユーザーが気づかないうちにパソコンにインストールしてい
@@ -2899,9 +2691,9 @@ IPAとJNSAの定義によればスパイウェアとは「利用者や管理者�
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-7" class="outline-4">
-<h4 id="sec-14-1-7">キーロガー</h4>
-<div class="outline-text-4" id="text-14-1-7">
+<div id="outline-container-orgc8f8476" class="outline-4">
+<h4 id="orgc8f8476">キーロガー</h4>
+<div class="outline-text-4" id="text-orgc8f8476">
 <p>
 もしくはキーストロークロガーはキーボードからの入力を記録するソフトウェ
 アのこと。コンピューターの所有者自身がデバッグのためにしかけるなどの使
@@ -2913,9 +2705,9 @@ IPAとJNSAの定義によればスパイウェアとは「利用者や管理者�
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-8" class="outline-4">
-<h4 id="sec-14-1-8">ボット</h4>
-<div class="outline-text-4" id="text-14-1-8">
+<div id="outline-container-org905649e" class="outline-4">
+<h4 id="org905649e">ボット</h4>
+<div class="outline-text-4" id="text-org905649e">
 <p>
 IRCなどを利用して攻撃者から命令を受け取り、命令に応じてDDoS攻撃やスパ
 ムメール送信などを行うマルウェア。
@@ -2923,36 +2715,36 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-9" class="outline-4">
-<h4 id="sec-14-1-9">ルートキット</h4>
-<div class="outline-text-4" id="text-14-1-9">
+<div id="outline-container-orgb375d4f" class="outline-4">
+<h4 id="orgb375d4f">ルートキット</h4>
+<div class="outline-text-4" id="text-orgb375d4f">
 <p>
 攻撃者が被害者のコンピューターに侵入したあとに用いるツールを集めたパッ
-ケージ<sup><a id="fnr.4" name="fnr.4" class="footref" href="#fn.4">4</a></sup>で、マルウェアとして被害者のコンピューターにしかける<sup><a id="fnr.5" name="fnr.5" class="footref" href="#fn.5">5</a></sup>。侵
-入の発覚を防ぐログ改ざんツール<sup><a id="fnr.4.100" name="fnr.4.100" class="footref" href="#fn.4">4</a></sup>、バックドアをしかけるツール<sup><a id="fnr.4.100" name="fnr.4.100" class="footref" href="#fn.4">4</a></sup>、キー
-ロガー<sup><a id="fnr.4.100" name="fnr.4.100" class="footref" href="#fn.4">4</a></sup>、パスワードやクレジットカード情報等の窃盗ツール<sup><a id="fnr.5.100" name="fnr.5.100" class="footref" href="#fn.5">5</a></sup>、DDoS攻
-撃用のボット化ツール<sup><a id="fnr.5.100" name="fnr.5.100" class="footref" href="#fn.5">5</a></sup>、セキュリティソフトの無効化ツール<sup><a id="fnr.5.100" name="fnr.5.100" class="footref" href="#fn.5">5</a></sup>などが含
+ケージ[28]で、マルウェアとして被害者のコンピューターにしかける[29]。侵
+入の発覚を防ぐログ改ざんツール[28]、バックドアをしかけるツール[28]、キー
+ロガー[28]、パスワードやクレジットカード情報等の窃盗ツール[29]、DDoS攻
+撃用のボット化ツール[29]、セキュリティソフトの無効化ツール[29]などが含
 まれていることがある。こうした攻撃を容易にするため、システムバイナリを
-含めたファイルを数百個単位で改ざんする<sup><a id="fnr.2.100" name="fnr.2.100" class="footref" href="#fn.2">2</a></sup>。ルート権限を奪うなど管理者
-レベルのアクセス権を取得する事を定義とする場合もある<sup><a id="fnr.6" name="fnr.6" class="footref" href="#fn.6">6</a></sup>。
+含めたファイルを数百個単位で改ざんする[9]。ルート権限を奪うなど管理者
+レベルのアクセス権を取得する事を定義とする場合もある[30]。
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-10" class="outline-4">
-<h4 id="sec-14-1-10">ランサムウェア(ransomware)</h4>
-<div class="outline-text-4" id="text-14-1-10">
+<div id="outline-container-org7905eb0" class="outline-4">
+<h4 id="org7905eb0">ランサムウェア(ransomware)</h4>
+<div class="outline-text-4" id="text-org7905eb0">
 <p>
 コンピューターをロックしたり重要なファイルを暗号化して読めなくするなど
 して被害者を困らせ，身代金(ransom)を払えば元に戻すと脅迫するマルウェ
-ア<sup><a id="fnr.7" name="fnr.7" class="footref" href="#fn.7">7</a></sup>。
+ア[31]。
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-11" class="outline-4">
-<h4 id="sec-14-1-11">スケアウェア(scareware)</h4>
-<div class="outline-text-4" id="text-14-1-11">
+<div id="outline-container-org3b6b98d" class="outline-4">
+<h4 id="org3b6b98d">スケアウェア(scareware)</h4>
+<div class="outline-text-4" id="text-org3b6b98d">
 <p>
 とはユーザの恐怖(scare)心を煽る偽の警告メッセージ（「PCから違法ポルノ
 やウイルスが検出された」等）を表示し、問題を解決するには所定の金額を支
@@ -2961,9 +2753,9 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-12" class="outline-4">
-<h4 id="sec-14-1-12">ダウンローダー</h4>
-<div class="outline-text-4" id="text-14-1-12">
+<div id="outline-container-org203ad60" class="outline-4">
+<h4 id="org203ad60">ダウンローダー</h4>
+<div class="outline-text-4" id="text-org203ad60">
 <p>
 サイズの小さなマルウェアで、攻撃者のサーバから被害者のコンピューターに
 実行ファイルなどをダウンロードするなどさらなる攻撃の足がかりにする。
@@ -2971,9 +2763,9 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 </div>
 
-<div id="outline-container-sec-14-1-13" class="outline-4">
-<h4 id="sec-14-1-13">アドウェア（Adware）</h4>
-<div class="outline-text-4" id="text-14-1-13">
+<div id="outline-container-org3b6fdfb" class="outline-4">
+<h4 id="org3b6fdfb">アドウェア（Adware）</h4>
+<div class="outline-text-4" id="text-org3b6fdfb">
 <p>
 ユーザの望まない広告を勝手に出すソフトウェアである。アドウェアないしそ
 の中の悪質なものもマルウェアの範疇に含める場合がある)。
@@ -2981,8 +2773,7 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </p>
 
 <ul class="org-ul">
-<li>[[../教科書/04_お絵かきとファイル操作.org][教科書/お絵かきとファイル操作]に先生のメモがあります。
-</li>
+<li>[[../教科書/04_お絵かきとファイル操作.org][教科書/お絵かきとファイル操作]に先生のメモがあります。</li>
 </ul>
 
 <p>
@@ -2992,8 +2783,8 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 </div>
 </div>
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> 課題: Webとインターネットについてのまとめを作成する (2018)</h2>
+<div id="outline-container-orgc34717b" class="outline-2">
+<h2 id="orgc34717b"><span class="section-number-2">15</span> 課題: Webとインターネットについてのまとめを作成する (2018)</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 少しづつ，Webとインターネットについて理解し，まとめを作りましょう。
@@ -3010,8 +2801,8 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 
 
-<div id="outline-container-sec-15-1" class="outline-3">
-<h3 id="sec-15-1"><span class="section-number-3">15.1</span> まとめの作り方</h3>
+<div id="outline-container-org4f860d2" class="outline-3">
+<h3 id="org4f860d2"><span class="section-number-3">15.1</span> まとめの作り方</h3>
 <div class="outline-text-3" id="text-15-1">
 <p>
 後で自分で読んで分かりやすい文章や文書の組み立てで書いてください。
@@ -3030,59 +2821,51 @@ IRCなどを利用して攻撃者から命令を受け取り、命令に応じ�
 </div>
 </div>
 
-<div id="outline-container-sec-15-2" class="outline-3">
-<h3 id="sec-15-2"><span class="section-number-3">15.2</span> Webとインターネットについてのまとめを作る</h3>
+<div id="outline-container-orga35d0f6" class="outline-3">
+<h3 id="orga35d0f6"><span class="section-number-3">15.2</span> Webとインターネットについてのまとめを作る</h3>
 <div class="outline-text-3" id="text-15-2">
 <p>
 Webとは何かを知りましょう:
 </p>
 <ul class="org-ul">
-<li>教科書 3.1 節「」についてまとめてください
-</li>
+<li>教科書 3.1 節「」についてまとめてください</li>
 </ul>
 
 <p>
 Webではないインターネット・サービスについて知りましょう：
 </p>
 <ul class="org-ul">
-<li>教科書 3.5 節「メールの仕組み」について，先生の説明をまとめてください
-</li>
-<li>教科書 3.7 節「スマホ時代のネット利用」について，先生の説明をまとめてください
-</li>
-<li>教科書 3.8 節「クラウドサービス」について，先生の説明をまとめてください
-</li>
+<li>教科書 3.5 節「メールの仕組み」について，先生の説明をまとめてください</li>
+<li>教科書 3.7 節「スマホ時代のネット利用」について，先生の説明をまとめてください</li>
+<li>教科書 3.8 節「クラウドサービス」について，先生の説明をまとめてください</li>
 </ul>
 
 <p>
 Webが生れた理由と本質を知りましょう：
 </p>
 <ul class="org-ul">
-<li>教科書 8.1 節についてまとめてください。
-</li>
+<li>教科書 8.1 節についてまとめてください。</li>
 </ul>
 
 <p>
 Webでの検索について知りましょう:
 </p>
 <ul class="org-ul">
-<li>教科書 9.2 節「サーチエンジン」についてまとめてください。
-</li>
-<li>教科書 9.3 節「ネット上の情報」についてまとめてください。
-</li>
+<li>教科書 9.2 節「サーチエンジン」についてまとめてください。</li>
+<li>教科書 9.3 節「ネット上の情報」についてまとめてください。</li>
 </ul>
 
 <p>
 インターネットについて知りましょう:
 </p>
 <ul class="org-ul">
-<li>教科書 10.4 節「ネットワークの仕組み」についてまとめてください。
-</li>
+<li>教科書 10.4 節「ネットワークの仕組み」についてまとめてください。</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-15-3" class="outline-3">
-<h3 id="sec-15-3"><span class="section-number-3">15.3</span> 先生のまとめ</h3>
+<div id="outline-container-orgf5e1c82" class="outline-3">
+<h3 id="orgf5e1c82"><span class="section-number-3">15.3</span> 先生のまとめ</h3>
 <div class="outline-text-3" id="text-15-3">
 <p>
 先生のまとめは，<a href="./text.html">教科書のまとめと課題</a> にありますので，
@@ -3097,67 +2880,57 @@ Webでの検索について知りましょう:
 </div>
 </div>
 
-<div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> 教科書の3章をまとめる  (~2017)</h2>
+<div id="outline-container-orgba5d1fd" class="outline-2">
+<h2 id="orgba5d1fd"><span class="section-number-2">16</span> 教科書の3章をまとめる  (~2017)</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 教科書の3章の「Webとは」を読んで，重要なことをWikiにまとめましょう。
 </p>
 </div>
 
-<div id="outline-container-sec-16-0-1" class="outline-4">
-<h4 id="sec-16-0-1">「Webとは」の自分の理解をまとめる</h4>
-<div class="outline-text-4" id="text-16-0-1">
+<div id="outline-container-orgb259853" class="outline-4">
+<h4 id="orgb259853">「Webとは」の自分の理解をまとめる</h4>
+<div class="outline-text-4" id="text-orgb259853">
 <ul class="org-ul">
 <li>重要なこと，覚えるべきこと，をメモとして記録しましょう。
 
 <ul class="org-ul">
-<li>Webを説明するために必要な言葉は何か
-</li>
+<li>Webを説明するために必要な言葉は何か</li>
 
-<li>その言葉の説明
-</li>
-<li>言葉と言葉の間の関係の説明
-</li>
-<li>などなど
-</li>
-</ul>
-</li>
+<li>その言葉の説明</li>
+<li>言葉と言葉の間の関係の説明</li>
+<li>などなど</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-16-0-2" class="outline-4">
-<h4 id="sec-16-0-2">理解のために調べたことをまとめる</h4>
-<div class="outline-text-4" id="text-16-0-2">
+<div id="outline-container-org150e9c7" class="outline-4">
+<h4 id="org150e9c7">理解のために調べたことをまとめる</h4>
+<div class="outline-text-4" id="text-org150e9c7">
 <ul class="org-ul">
 <li>わからなかったり曖昧な単語や考え方を検索して，調べましょう。
 
 <ul class="org-ul">
-<li>調べて有用なサイトを記録しましょう。
-</li>
-</ul>
-</li>
+<li>調べて有用なサイトを記録しましょう。</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-17" class="outline-2">
-<h2 id="sec-17"><span class="section-number-2">17</span> 文書作成レポート (2018年度)</h2>
+<div id="outline-container-org51180eb" class="outline-2">
+<h2 id="org51180eb"><span class="section-number-2">17</span> 文書作成レポート (2018年度)</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 教科書5章を読み，図5.4のレポートを，作成しましょう。
 </p>
 
 <ul class="org-ul">
-<li>本文のテキストファイルを用意してありますので，ダウンロードしてください。
-</li>
+<li>本文のテキストファイルを用意してありますので，ダウンロードしてください。</li>
 
-<li>メモ帖で開き，文書の構成を考えるために，markdownと呼ばれる記法で書きます
-</li>
+<li>メモ帖で開き，文書の構成を考えるために，markdownと呼ばれる記法で書きます</li>
 
-<li>その後で，Word にコピペし，教科書にしたがって形式を整えます
-</li>
+<li>その後で，Word にコピペし，教科書にしたがって形式を整えます</li>
 </ul>
 
 <p>
@@ -3169,53 +2942,38 @@ p.73の挑戦課題までおこなってから，レポートとして提出し�
 以下の文書をアップしてください:
 
 <ul class="org-ul">
-<li>markdown記法の「著作権とファイル交換ソフトテキスト.txt」
-</li>
-<li>Word文書「著作権とファイル交換ソフトテキスト.docx」
-</li>
-<li>pdf文書「著作権とファイル交換ソフトテキスト.pdf」
-</li>
-</ul>
-</li>
+<li>markdown記法の「著作権とファイル交換ソフトテキスト.txt」</li>
+<li>Word文書「著作権とファイル交換ソフトテキスト.docx」</li>
+<li>pdf文書「著作権とファイル交換ソフトテキスト.pdf」</li>
+</ul></li>
 </ul>
 </div>
 
-<div id="outline-container-sec-17-1" class="outline-3">
-<h3 id="sec-17-1"><span class="section-number-3">17.1</span> 文書の構造を意識する</h3>
+<div id="outline-container-org5a3546f" class="outline-3">
+<h3 id="org5a3546f"><span class="section-number-3">17.1</span> 文書の構造を意識する</h3>
 <div class="outline-text-3" id="text-17-1">
 <p>
 講義のGoogleDriveの中の *レポート課題フォルダ*から，
 </p>
 
 <ul class="org-ul">
-<li>「著作権とファイル交換ソフトテキスト.txt」をダウンロードし，
-</li>
+<li>「著作権とファイル交換ソフトテキスト.txt」をダウンロードし，</li>
 
 <li>メモ帳で開き，下記の文書の要素を意識し，要素の先頭に
 
 <ul class="org-ul">
-<li>タイトル は次の行を <code>=</code> のみの行にする
-</li>
-<li>日付・著者名は，@
-</li>
-<li>見出しは    #, ##, ###  など
-</li>
-<li>段落の始まりは空行
-</li>
-<li>段落の中の箇条書きは，* や 1., 2., &#x2026; で始める
-</li>
+<li>タイトル は次の行を <code>=</code> のみの行にする</li>
+<li>日付・著者名は，@</li>
+<li>見出しは    #, ##, ###  など</li>
+<li>段落の始まりは空行</li>
+<li>段落の中の箇条書きは，* や 1., 2., &#x2026; で始める</li>
 <li>段落の中の引用文は， &gt; で始める
 <ul class="org-ul">
-<li>引用とは，他の人の言葉をそのまま紹介することです。
-</li>
-<li>引用であること，引用文献，を示すこと。
-</li>
-</ul>
-</li>
-<li>参考文献 は見出しと同じ。各文献は，番号付の箇条書きで，書く
-</li>
-</ul>
-</li>
+<li>引用とは，他の人の言葉をそのまま紹介することです。</li>
+<li>引用であること，引用文献，を示すこと。</li>
+</ul></li>
+<li>参考文献 は見出しと同じ。各文献は，番号付の箇条書きで，書く</li>
+</ul></li>
 </ul>
 
 <p>
@@ -3228,8 +2986,8 @@ p.73の挑戦課題までおこなってから，レポートとして提出し�
 </div>
 </div>
 
-<div id="outline-container-sec-17-2" class="outline-3">
-<h3 id="sec-17-2"><span class="section-number-3">17.2</span> Markdown記法とプレビュー</h3>
+<div id="outline-container-org898406f" class="outline-3">
+<h3 id="org898406f"><span class="section-number-3">17.2</span> Markdown記法とプレビュー</h3>
 <div class="outline-text-3" id="text-17-2">
 <p>
 markdown 記法については，
@@ -3248,83 +3006,74 @@ markdown 文書をプレビューするには，文書を <a href="https://darin
 </div>
 </div>
 
-<div id="outline-container-sec-17-3" class="outline-3">
-<h3 id="sec-17-3"><span class="section-number-3">17.3</span> Word で整形</h3>
+<div id="outline-container-orgcfa086e" class="outline-3">
+<h3 id="orgcfa086e"><span class="section-number-3">17.3</span> Word で整形</h3>
 <div class="outline-text-3" id="text-17-3">
 <p>
 Word を起動し，メモ帳の文書を，Wordに貼り付けてください。
 </p>
 </div>
 
-<div id="outline-container-sec-17-3-1" class="outline-4">
-<h4 id="sec-17-3-1">*文書の保存と形式*を理解し，保存する</h4>
-<div class="outline-text-4" id="text-17-3-1">
+<div id="outline-container-orgda6b5fc" class="outline-4">
+<h4 id="orgda6b5fc">*文書の保存と形式*を理解し，保存する</h4>
+<div class="outline-text-4" id="text-orgda6b5fc">
 <ul class="org-ul">
 <li>まず最初に，開いた文書を自分のフォルダにWord文書として保存してくださ
-い。名前は「著作権法とファイル交換ソフト」，ファイルの種類はword2013 (ファイル拡張子 .docx)
-</li>
+い。名前は「著作権法とファイル交換ソフト」，ファイルの種類はword2013 (ファイル拡張子 .docx)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-17-3-2" class="outline-4">
-<h4 id="sec-17-3-2">文書のデザインを選ぶ</h4>
-<div class="outline-text-4" id="text-17-3-2">
+<div id="outline-container-orgdab0e46" class="outline-4">
+<h4 id="orgdab0e46">文書のデザインを選ぶ</h4>
+<div class="outline-text-4" id="text-orgdab0e46">
 <ul class="org-ul">
-<li>「デザイン」タブで，テーマ，色，フォント，段落や改行の幅を決める
-</li>
+<li>「デザイン」タブで，テーマ，色，フォント，段落や改行の幅を決める</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-17-3-3" class="outline-4">
-<h4 id="sec-17-3-3">文章の整形をおこなう</h4>
-<div class="outline-text-4" id="text-17-3-3">
+<div id="outline-container-org1e19def" class="outline-4">
+<h4 id="org1e19def">文章の整形をおこなう</h4>
+<div class="outline-text-4" id="text-org1e19def">
 <ul class="org-ul">
 <li>教科書の5.3節にしたがって，タイトル，章，節，段落，箇条書きなどの構
-造をもった文書を作成してください。
-</li>
+造をもった文書を作成してください。</li>
 
 <li>文書の要素を表す文字は，Word の「スタイル」を決定した後，削除してく
-ださい。
-</li>
+ださい。</li>
 
 <li>教科書の5.3節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を
-つけてください。 
-</li>
+つけてください。</li>
 
-<li>レポートの体裁を習得してください。
-</li>
+<li>レポートの体裁を習得してください。</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-17-4" class="outline-3">
-<h3 id="sec-17-4"><span class="section-number-3">17.4</span> 課題の提出</h3>
+<div id="outline-container-org34ca996" class="outline-3">
+<h3 id="org34ca996"><span class="section-number-3">17.4</span> 課題の提出</h3>
 <div class="outline-text-3" id="text-17-4">
 <ul class="org-ul">
-<li>自分のレポート提出フォルダの中に，
-</li>
-<li>「文書作成」フォルダを作成し，
-</li>
-<li>アップロードしてください。
-</li>
+<li>自分のレポート提出フォルダの中に，</li>
+<li>「文書作成」フォルダを作成し，</li>
+<li>アップロードしてください。</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-18" class="outline-2">
-<h2 id="sec-18"><span class="section-number-2">18</span> 文書作成レポート (2017年度)</h2>
+<div id="outline-container-org2da6a3f" class="outline-2">
+<h2 id="org2da6a3f"><span class="section-number-2">18</span> 文書作成レポート (2017年度)</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 教科書5章を読み，図5.4のレポートを，作成しましょう。
 </p>
 </div>
 
-<div id="outline-container-sec-18-1" class="outline-3">
-<h3 id="sec-18-1"><span class="section-number-3">18.1</span> 文書の構造を意識する</h3>
+<div id="outline-container-org7ef78cb" class="outline-3">
+<h3 id="org7ef78cb"><span class="section-number-3">18.1</span> 文書の構造を意識する</h3>
 <div class="outline-text-3" id="text-18-1">
 <p>
 <a href="https://drive.google.com/open?id=0BwUWvGKIXA9PTHZWTW91enhkbzQ">レポート課題フォルダ</a>
@@ -3332,34 +3081,23 @@ Word を起動し，メモ帳の文書を，Wordに貼り付けてください�
 </p>
 
 <ul class="org-ul">
-<li>「著作権とファイル交換ソフトテキスト.txt」をダウンロードし，
-</li>
+<li>「著作権とファイル交換ソフトテキスト.txt」をダウンロードし，</li>
 
 <li>メモ帳で開き，下記の文書の要素を意識し，要素の先頭に
 
 <ul class="org-ul">
-<li>タイトル は  = 
-</li>
-<li>日付・著者名は，@
-</li>
-<li>見出しは    #, ##, ###  など
-</li>
-<li>段落 は空白文字
-</li>
-<li>段落の中の箇条書きは，* や 1., 2., &#x2026; 
-</li>
+<li>タイトル は  =</li>
+<li>日付・著者名は，@</li>
+<li>見出しは    #, ##, ###  など</li>
+<li>段落 は空白文字</li>
+<li>段落の中の箇条書きは，* や 1., 2., &#x2026;</li>
 <li>段落の中の引用文は， &gt; 
 <ul class="org-ul">
-<li>引用とは，他の人の言葉をそのまま紹介することです。
-</li>
-<li>引用であること，引用文献，を示すこと。
-</li>
-</ul>
-</li>
-<li>参考文献 は見出しと同じ。各文献は，番号付の箇条書きで，書く
-</li>
-</ul>
-</li>
+<li>引用とは，他の人の言葉をそのまま紹介することです。</li>
+<li>引用であること，引用文献，を示すこと。</li>
+</ul></li>
+<li>参考文献 は見出しと同じ。各文献は，番号付の箇条書きで，書く</li>
+</ul></li>
 </ul>
 
 <p>
@@ -3368,143 +3106,126 @@ Word を起動し，メモ帳の文書を，Wordに貼り付けてください�
 </div>
 </div>
 
-<div id="outline-container-sec-18-2" class="outline-3">
-<h3 id="sec-18-2"><span class="section-number-3">18.2</span> Word で整形</h3>
+<div id="outline-container-org78375a1" class="outline-3">
+<h3 id="org78375a1"><span class="section-number-3">18.2</span> Word で整形</h3>
 <div class="outline-text-3" id="text-18-2">
 <p>
 Word を起動し，メモ帳の文書を，Wordに貼り付けてください。
 </p>
 </div>
 
-<div id="outline-container-sec-18-2-1" class="outline-4">
-<h4 id="sec-18-2-1">*文書の保存と形式*を理解し，保存する</h4>
-<div class="outline-text-4" id="text-18-2-1">
+<div id="outline-container-orgdf90366" class="outline-4">
+<h4 id="orgdf90366">*文書の保存と形式*を理解し，保存する</h4>
+<div class="outline-text-4" id="text-orgdf90366">
 <ul class="org-ul">
 <li>まず最初に，開いた文書を自分のフォルダにWord文書として保存してくださ
-い。名前は「著作権法とファイル交換ソフト」，ファイルの種類はword2007 (ファイル拡張子 .docx)
-</li>
+い。名前は「著作権法とファイル交換ソフト」，ファイルの種類はword2007 (ファイル拡張子 .docx)</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-sec-18-2-2" class="outline-4">
-<h4 id="sec-18-2-2">文章の整形をおこなう</h4>
-<div class="outline-text-4" id="text-18-2-2">
+<div id="outline-container-org90fe229" class="outline-4">
+<h4 id="org90fe229">文章の整形をおこなう</h4>
+<div class="outline-text-4" id="text-org90fe229">
 <ul class="org-ul">
 <li>教科書の5.4節にしたがって，タイトル，章，節，段落，箇条書きなどの構
-造をもった文書を作成してください。
-</li>
+造をもった文書を作成してください。</li>
 
 <li>文書の要素を表す文字は，Word の「スタイル」を決定した後，削除してく
-ださい。
-</li>
+ださい。</li>
 
-<li>教科書の5.4節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を
-</li>
+<li>教科書の5.4節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を</li>
 </ul>
 <p>
 つけてください。 
 </p>
 <ul class="org-ul">
-<li>レポートの体裁を習得してください。
-</li>
+<li>レポートの体裁を習得してください。</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-18-3" class="outline-3">
-<h3 id="sec-18-3"><span class="section-number-3">18.3</span> 課題の提出</h3>
+<div id="outline-container-org9a400c6" class="outline-3">
+<h3 id="org9a400c6"><span class="section-number-3">18.3</span> 課題の提出</h3>
 <div class="outline-text-3" id="text-18-3">
 <ul class="org-ul">
-<li>自分のレポート提出フォルダの中に，
-</li>
-<li>「文書作成」フォルダを作成し，
-</li>
-<li>アップロードしてください。
-</li>
+<li>自分のレポート提出フォルダの中に，</li>
+<li>「文書作成」フォルダを作成し，</li>
+<li>アップロードしてください。</li>
 </ul>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-sec-19" class="outline-2">
-<h2 id="sec-19"><span class="section-number-2">19</span> 文書作成レポート (2016年度)</h2>
+<div id="outline-container-org729bf9c" class="outline-2">
+<h2 id="org729bf9c"><span class="section-number-2">19</span> 文書作成レポート (2016年度)</h2>
 <div class="outline-text-2" id="text-19">
 <p>
 教科書5章を読み，図5.4のレポートを，作成しましょう。
 </p>
 </div>
 
-<div id="outline-container-sec-19-1" class="outline-3">
-<h3 id="sec-19-1"><span class="section-number-3">19.1</span> Simplenote で整形</h3>
+<div id="outline-container-org964b8b4" class="outline-3">
+<h3 id="org964b8b4"><span class="section-number-3">19.1</span> Simplenote で整形</h3>
 <div class="outline-text-3" id="text-19-1">
 <p>
 <a href="https://drive.google.com/open?id=0B11Iwlj2EHvvWjMweW9MQ19IeUU">情報処理演習資料</a> の中の「文書作成」フォルダから，
 </p>
 
 <ul class="org-ul">
-<li>「著作権とファイル交換ソフトテキスト.txt」をコピーし，
-</li>
+<li>「著作権とファイル交換ソフトテキスト.txt」をコピーし，</li>
 
-<li>Simplenote に貼り付けてください。
-</li>
+<li>Simplenote に貼り付けてください。</li>
 
 <li>下記の要素を markdown 形式で整形してください:
 
 <ul class="org-ul">
-<li>タイトル
+<li><p>
+タイトル
+</p>
 
 <p>
 タイトルを書き，次行を <code>==</code> で書きます。
-</p>
-</li>
+</p></li>
 
-<li>日付・著者名の体裁
+<li><p>
+日付・著者名の体裁
+</p>
 
 <p>
 markdown に特定の形式がないようです。
 各自工夫してください。
-</p>
-</li>
+</p></li>
 
 <li>見出し
 <ul class="org-ul">
-<li>\#, \#\#, \#\#\# &#x2026; で書きます。
-</li>
-</ul>
-</li>
+<li>\#, \#\#, \#\#\# &#x2026; で書きます。</li>
+</ul></li>
 
 <li>箇条書き
 <ul class="org-ul">
-<li>\* で書きます。
-</li>
-<li>1., 2., &#x2026; で書きます。
-</li>
-</ul>
-</li>
+<li>\* で書きます。</li>
+<li>1., 2., &#x2026; で書きます。</li>
+</ul></li>
 
 <li>引用文
 <ul class="org-ul">
-<li>引用は，他の人の言葉をそのまま紹介することです。
-</li>
-<li>引用であること，引用文献，を示すこと。
-</li>
-<li>\&gt; で書きます。
-</li>
-</ul>
-</li>
+<li>引用は，他の人の言葉をそのまま紹介することです。</li>
+<li>引用であること，引用文献，を示すこと。</li>
+<li>\&gt; で書きます。</li>
+</ul></li>
 
-<li>参考文献
+<li><p>
+参考文献
+</p>
 
 <p>
 見出しで作り，各文献は，番号付の箇条書きで，整形します。
-</p>
-</li>
-</ul>
-</li>
+</p></li>
+</ul></li>
 </ul>
 
 <p>
@@ -3513,21 +3234,20 @@ markdown に特定の形式がないようです。
 </div>
 </div>
 
-<div id="outline-container-sec-19-2" class="outline-3">
-<h3 id="sec-19-2"><span class="section-number-3">19.2</span> Word で整形</h3>
+<div id="outline-container-org6b80657" class="outline-3">
+<h3 id="org6b80657"><span class="section-number-3">19.2</span> Word で整形</h3>
 <div class="outline-text-3" id="text-19-2">
 <p>
 simplenote の文書を，ワードに貼り付けてください。
 </p>
 </div>
 
-<div id="outline-container-sec-19-2-1" class="outline-4">
-<h4 id="sec-19-2-1">*文書の保存と形式*を理解し，保存する</h4>
-<div class="outline-text-4" id="text-19-2-1">
+<div id="outline-container-orgf945abe" class="outline-4">
+<h4 id="orgf945abe">*文書の保存と形式*を理解し，保存する</h4>
+<div class="outline-text-4" id="text-orgf945abe">
 <ul class="org-ul">
 <li>まず最初に，開いた文書を自分のフォルダにWord文書として保存してくださ
-い。名前は「著作権法とファイル交換ソフト」，ファイルの種類は
-</li>
+い。名前は「著作権法とファイル交換ソフト」，ファイルの種類は</li>
 </ul>
 <p>
 word2007 (ファイル拡張子 .docx)
@@ -3535,65 +3255,38 @@ word2007 (ファイル拡張子 .docx)
 </div>
 </div>
 
-<div id="outline-container-sec-19-2-2" class="outline-4">
-<h4 id="sec-19-2-2">文章の整形をおこなう</h4>
-<div class="outline-text-4" id="text-19-2-2">
+<div id="outline-container-orgc815958" class="outline-4">
+<h4 id="orgc815958">文章の整形をおこなう</h4>
+<div class="outline-text-4" id="text-orgc815958">
 <ul class="org-ul">
-<li>教科書の5.4節にしたがって，タイトル，章，節，段落，箇条書きなどの構造をもった文書を作成してください。
-</li>
-<li>教科書の5.4節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を
-</li>
+<li>教科書の5.4節にしたがって，タイトル，章，節，段落，箇条書きなどの構造をもった文書を作成してください。</li>
+<li>教科書の5.4節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を</li>
 </ul>
 <p>
 つけてください。 
 </p>
 <ul class="org-ul">
-<li>レポートの体裁を習得してください。
-</li>
+<li>レポートの体裁を習得してください。</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-19-3" class="outline-3">
-<h3 id="sec-19-3"><span class="section-number-3">19.3</span> 課題の提出</h3>
+<div id="outline-container-org53c878c" class="outline-3">
+<h3 id="org53c878c"><span class="section-number-3">19.3</span> 課題の提出</h3>
 <div class="outline-text-3" id="text-19-3">
 <ul class="org-ul">
-<li>自分のレポート提出フォルダの中に，
-</li>
-<li>「文書作成」フォルダを作成し，
-</li>
-<li>アップロードしてください。
-</li>
+<li>自分のレポート提出フォルダの中に，</li>
+<li>「文書作成」フォルダを作成し，</li>
+<li>アップロードしてください。</li>
 </ul>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">&#33050;&#27880;: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.4" name="fn.4" class="footnum" href="#fnr.4">4</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.5" name="fn.5" class="footnum" href="#fnr.5">5</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.6" name="fn.6" class="footnum" href="#fnr.6">6</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-<div class="footdef"><sup><a id="fn.7" name="fn.7" class="footnum" href="#fnr.7">7</a></sup> <p>DEFINITION NOT FOUND.</p></div>
-
-
 </div>
-</div></div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2018-07-16 月 10:48</p>
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="https://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2019-04-07 日 21:06</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
