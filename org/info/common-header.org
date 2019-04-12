@@ -1,9 +1,9 @@
 #+title: 情報処理演習2019
 
-[[http://masayuki054.hatenablog.com/entry/2018/03/29/190949][はてなのページ]] /
+[[http://masayuki054.hatenablog.com/entry/2019/03/18/194043][はてなのページ]] /
 [[http://masayuki054.github.io/morioka_u_ict][今日の講義]] / 
-[[https://sites.google.com/view/morioka-u-ict-2018/][グーグルサイト]] /
-[[https://drive.google.com/drive/folders/1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C?usp=sharing][講義用グーグルドライブ]]
+[[https://sites.google.com/view/morioka-u-ict-2019/][グーグルサイト]] /
+[[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][講義用グーグルドライブ]]
 
 #+AUTHOR: masayuki
 #+LANGUAGE: ja
