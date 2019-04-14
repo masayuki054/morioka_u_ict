@@ -1,4 +1,4 @@
-# 2018.04.16 2回目
+# 2019.04.15 2回目
 
 ** Doing 受講の準備
 
@@ -42,22 +42,15 @@
 -  良くないパスワードだったり，パスワードを考えて来なかった人は,
    良いパスワードを考えましょう。
 
-**** Google を使う意味の説明
-
-
 *** アンケートのまとめ
 
    - [[https://docs.google.com/spreadsheets/d/1oCBebyqGCgJc1eZsfyOJ0TgoH6bPGmmHzqOx_LEBzy8/edit?usp=sharing][Aの集計結果]]
    - [[https://docs.google.com/spreadsheets/d/13kQFXzlJg4UpvxKOyi5dFdqcm8bleCi5KC9l5EghjdU/edit?usp=sharing][B]]の集計結果
 
-*** 2回目の出席票の結果
-
-   - [[https://docs.google.com/spreadsheets/d/1YEi5TNoWHfxzYrfp22WbS7QSiRt4GH4KQvBjaT6MR60/edit?usp=sharing][A組の集計結果]]
-   - [[https://docs.google.com/spreadsheets/d/11JKPAHuUpRl2vcTKSORw7rHv10Oqv7n-N04fU6EVn-Q/edit?usp=sharing][B組の集計結果]]
-
 ** 今日の課題
 
 以下，今日やることです。
+
 
 *** PCの利用環境 [[./pc.org]]
 
@@ -73,20 +66,18 @@
 
 忘れたら，何回でも質問してください。
 
+**** 自分の情報処理フォルダ 
+
+    マイドキュメント・フォルダに 「情報処理」フォルダを作成します。
+
 **** パスワードの変更
 
+     パスワードの変更方法を憶えてください:
+     
      1. Ctrl キーと Alt キーを同時に押しながら， Delete キーを押し，
         メニュー画面を表示させてください。
 
      2. パスワードの変更メニューから行なってください。
-
-
-**** 自分の情報処理フォルダ  (再確認)
-
-    マイドキュメント・フォルダに 「情報処理」フォルダを作成できていま
-    すか？
-
-    ログインできず，フォルダが作れない人は，知らせてください。
 
 *** Windows の基本操作などを学ぶ
 
@@ -96,6 +87,20 @@
 [[./text.org][教科書のまとめと課題]]に先生のまとめがあります。
 
 
+*** USB メモリを使う
+
+*** 大学のWebメールを使う
+
+   [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，確認してください。
+   
+
+*** Googleアカウント
+
+    [[https://support.google.com/accounts/?hl=ja#topic=3382296][Google アカウントの作成]] (ヘルプセンター) はできていますか？
+
+    - アカウントの確認
+    - GMail の確認
+
 *** タイピング -- 練習のはじまり
 
 [[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
@@ -104,10 +109,14 @@
 ください。
 
    
+
+
 *** 出席票の提出
 
    - [[https://goo.gl/forms/jjElpeXCYV7GqFdL2][A組の出席票]]
      
    - [[https://goo.gl/forms/jZt0Q4wEooQEkYzG2][B組の出席票]]
 
-*** Googleアカウント
+    
+
+

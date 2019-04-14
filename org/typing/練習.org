@@ -2,7 +2,7 @@
 
 ** 練習用 Web アプリ
 
-[[http://typing.sakura.ne.jp/sushida/index.html][寿司打]] を使いましょう。
+http://typing.sakura.ne.jp/sushida/index.html 寿司打を使いましょう。
 
 ** 練習の難易度
 
