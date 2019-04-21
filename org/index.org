@@ -22,10 +22,14 @@
 * 講義関連サイト
 
 ** [[http://masayuki054.github.io/morioka_u_ict/][今日の講義]] 
-** [[https://drive.google.com/open?id=1X5FYogr4QTn7bFyqVhmNm1cE65P_w1gV][出席登録サイト]]
+
+** [[https://sites.google.com/view/morioka-u-ict-2019/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite]]
 ** [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用グーグルドライブ]]
+   [[https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C][2018]]
+
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
+
 
 * Webアプリなど
 

@@ -1,5 +1,4 @@
-# 2019.04.15 2回目
-
+* 2019.04.15 2回目
 ** Doing 受講の準備
 
 [[./pc.org][パソコンの使い方]] や [[./guidance.org][ガイダンス]] を参考にしてください。
@@ -42,19 +41,38 @@
 -  良くないパスワードだったり，パスワードを考えて来なかった人は,
    良いパスワードを考えましょう。
 
+**** パスワードの変更
+
+     パスワードの変更方法を憶えてください:
+     
+     1. Ctrl キーと Alt キーを同時に押しながら， Delete キーを押し，
+        メニュー画面を表示させてください。
+
+     2. パスワードの変更メニューから行なってください。
+
+
+
+*** 大学のWebメールを使う
+
+   [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，確認してください。
+
 *** アンケートのまとめ
 
-   - [[https://docs.google.com/spreadsheets/d/1oCBebyqGCgJc1eZsfyOJ0TgoH6bPGmmHzqOx_LEBzy8/edit?usp=sharing][Aの集計結果]]
-   - [[https://docs.google.com/spreadsheets/d/13kQFXzlJg4UpvxKOyi5dFdqcm8bleCi5KC9l5EghjdU/edit?usp=sharing][B]]の集計結果
+   - [[https://masayuki054.github.io/morioka_u_ict/htmls/enq_2019_a.html][A組の集計結果]]
+   - [[https://masayuki054.github.io/morioka_u_ict/htmls/enq_2019_b.html][B組の集計結果]]
+
+*** 出席票の結果
+
+   - [[https://masayuki054.github.io/morioka_u_ict/htmls/a_01.html][A組の集計結果]]
+   - [[https://masayuki054.github.io/morioka_u_ict/htmls/b_01.html][B組の集計結果]]
 
 ** 今日の課題
 
 以下，今日やることです。
 
-
 *** PCの利用環境 [[./pc.org]]
 
-**** コンピュータ環境の確認と設定 (再確認)
+**** コンピュータ環境の確認と設定
 
 パソコンで，自分の情報を保存し利用するための決まりごとです。
 
@@ -86,13 +104,29 @@
 
 [[./text.org][教科書のまとめと課題]]に先生のまとめがあります。
 
+**** Windows のファイルとフォルダとエクスプローラ
+
+     教科書4.4，4.5, 4.6 あたりを学びます
 
 *** USB メモリを使う
 
-*** 大学のWebメールを使う
+    教科書4.5, 4.6 あたりを学びます
 
-   [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，確認してください。
-   
+
+     1. 学生用ファイルサーバの先生の用意したフォルダを探す
+
+        00-情報処理鈴木
+
+     2. firefox_portable .... を自分の情報処理フォルダにコピーする
+
+     3. Mindmap Zen フォルダを自分の情報処理フォルダにコピーする
+
+     4. USBメモリを挿して，エクスプローラで表示する
+
+     5. firefox_portable を USB にインストールする
+
+     7. 自分の情報処理フォルダの Mindmap Zen フォルダを USBメモリにコピーする
+
 
 *** Googleアカウント
 
@@ -108,14 +142,11 @@
 来週も追記できるように，自分の情報処理フォルダに練習記録を残しておいて
 ください。
 
-   
-
-
 *** 出席票の提出
 
-   - [[https://goo.gl/forms/jjElpeXCYV7GqFdL2][A組の出席票]]
+   - [[https://forms.gle/MY41cNLS5R2i9kV99][A組の出席票]]
      
-   - [[https://goo.gl/forms/jZt0Q4wEooQEkYzG2][B組の出席票]]
+   - [[https://forms.gle/xDRyUao3aPWDN3ky8][B組の出席票]]
 
     
 
