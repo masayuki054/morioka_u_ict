@@ -1,4 +1,4 @@
-#+include: 03.org :minlevel 2
+#+include: 04.org :minlevel 1
 
 * 受講の準備
 #+include: 受講の準備.org :minlevel 2
@@ -10,3 +10,4 @@
 #+include: ガイダンス2019.org :minlevel 2
 
 #+include: 2019_summer.org :minlevel 1
+

@@ -2,3 +2,4 @@
 #+include: ~/ict.git/org/info/common-header.org
 #+title: 講義のまとめ
 #+include: lects/contents.org
+

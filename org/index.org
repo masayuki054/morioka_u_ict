@@ -3,7 +3,26 @@
 
 #+title: 
 
-#+include: lects/contents.org :minlevel 1
+* 今日の講義
+
+#+include: lects/04.org :minlevel 2
+
+* 前回までのまとめ
+#+include: lects/まとめ.org :minlevel 2
+
+* 受講の準備
+#+include: lects/受講の準備.org :minlevel 2
+
+* お知らせ
+#+include: lects/announce.org :minlevel 2
+
+
+* ガイダンス
+#+include: lects/ガイダンス2019.org :minlevel 2
+
+#+include: lects/2019_summer.org :minlevel 1
+
+
 * 講義資料
 
 ** [[./guidance.org][ガイダンス]]
@@ -25,7 +44,9 @@
 
 ** [[https://sites.google.com/view/morioka-u-ict-2019/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite]]
 ** [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用グーグルドライブ]]
-   [[https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C][2018]]
+
+   [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][- 2019]]
+   [[https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C][- 2018]]
 
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com

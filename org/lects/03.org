@@ -53,7 +53,10 @@
 
 *** USB メモリを使う
 
-    教科書4.5, 4.6 あたりを学びます
+    - 教科書4.6, 4.7 あたりを学びます。
+    - {{{lll(pc,パソコンの使い方,USBメモリ,sec-7)}}} を読んでください。
+
+    作業:
 
      1. 学生用ファイルサーバの先生の用意したフォルダを探す
 
@@ -148,9 +151,11 @@
 
 *** 出席票の提出
 
-   - [[https://forms.gle/MY41cNLS5R2i9kV99][A組の出席票]]
+   - [[https://forms.gle/7RZdmXmujLvhLqeq7][A組の出席票]]
      
-   - [[https://forms.gle/xDRyUao3aPWDN3ky8][B組の出席票]]
+   - [[https://forms.gle/m6DNQawHhJVnGrww8][B組の出席票]]
+
+
 
 ** 予習
 

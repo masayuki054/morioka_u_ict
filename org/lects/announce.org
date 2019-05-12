@@ -1,10 +1,25 @@
-** 講義時間外の質問
+** 5回目の講義は，5/18(土) です。
 
+** USBメモリを抜き忘れないでください。
+
+** 前回の出席票のまとめ
+
+   - [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組-3回目]]
+   - [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組-3回目]]
+
+
+ 
+** 出席票の提出
+
+   - [[https://forms.gle/iZHsznwhBgvGT9YJA][A組の出席票]]
+   - [[https://forms.gle/2Z1U2a3Nwfpkd41z6][B組の出席票]]
+
+** 講義時間外の質問
 
    僕は非常勤講師なので，大学での質問は下記時間場所でお願いします:
 
    - 月曜日 8:45--12:00 の講義時間はA306室に，
-   - その後1時間程は，コンピュータ室(A306, A311, B313) か
+   - その後1時間程は，コンピュータ室(A307) か
      非常勤講師控え室か大学生協食堂にいます。
 
    時間外で質問等ある場合は，

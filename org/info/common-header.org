@@ -9,7 +9,7 @@
 #+LANGUAGE: ja
 #+EMAIL: msyk054@gmail.com
 
-#+macro: lll [[file:./$1.org][$2]]の中の[[file:./$1.html#$4][$3]]の章
+#+macro: lll [[file:./$1.org][$1]]の中の[[file:./$1.html#$3][$2]]の章
 #+macro: ll [[file:./$1.org][$2]] 
 
 
