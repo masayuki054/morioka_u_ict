@@ -113,7 +113,7 @@
      [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用 Google ドライブ]]
 
      - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP][A組の共有フォルダ]]
-     [[https://drive.google.com/open?id=1huvnfH0iF3wL00owOZD7XzpuBtubQCEh][- B組の共有フォルダ]]
+     - [[https://drive.google.com/open?id=1huvnfH0iF3wL00owOZD7XzpuBtubQCEh][B組の共有フォルダ]]
 
 **** Todo スマホでのGoogleドライブの利用
 
@@ -125,10 +125,10 @@
 
      便利なメモアプリを紹介します。
 
-     https://dynalist.io
-     - Dynalist に登録します
+     - https://dynalist.io にいって，Dynalist に登録します。Googleアカ
+       ウントを使って，サインアップするといいでしょう。
 
-     「Dynalist 使い方」で検索
+     - 使い方は，「Dynalist 使い方」で検索して，探しましょう。
 
 *** Doing Windows の基本操作などを学ぶ 
 
@@ -170,9 +170,7 @@
 
 *** Todo Wordを始める (20分程度)
 
-    教科書5章を読み，Word を使い始めましょう。
-
-    何回かかけて，Word でレポートを書くための機能を学び，
+    教科書5章を読み，Word を使い始めましょう。    何回かかけて，Word でレポートを書くための機能を学び，
     教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
 
     [[./text.org][講義資料/教科書のまとめ]] 18章にやり方の説明があります。
