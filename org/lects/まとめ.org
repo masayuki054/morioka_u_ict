@@ -1,5 +1,50 @@
 * 前回の講義について
 
+*** Googleアカウント
+
+**** Google アカウントはできていますか？
+
+     [[https://support.google.com/accounts/?hl=ja#topic=3382296][Google アカウントの作成]] (ヘルプセンター) はできていますか？
+     - http://google.com にログインし，
+
+**** GMail を使ってみる
+     - Gmail を使う (http://mail.google.com)
+
+**** GoogleDrive を使ってみる
+     - http://drive.google.com
+     - フォルダ「m1918xxx」を作成し，
+     - suzumasa054@gmail.com と共有する
+
+*** フリーなアプリの Firefox を使ってみましょう
+
+    - ブラウザに関する一般的なことは，教科書3.1 を読んでみてください。
+    - Firefox はフリーなウェブブラウザです。
+    - Firefox Portable は USBにインストールして，持ち運べます。
+
+**** firefox_portable を USB にインストールする
+
+     - FirefoxPortable_xxx_Japanese.paf を実行し，
+     - インストール先に USBメモリ場の FirefoxPortable をえらぶ
+    - Firefox Portable フォルダの中の，firefox.exe がアプリです。
+
+**** firefox を使ってみる
+
+    - ブックマークを憶えましょう。
+
+    - 履歴を使いましょう。
+
+    - 好みのテーマに替えてみましょう。
+
+
+*** 大学のWebメールを使う
+
+    [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，
+    確認してください。
+
+    - 教科書 3.2節「メール」
+    - 教科書 3.3節「メールの例」
+
+
 *** 自分の情報処理フォルダ 
 
     マイドキュメント・フォルダに 「情報処理」フォルダを作成します。
@@ -42,13 +87,6 @@
 
      7. 自分の情報処理フォルダの Mindmap Zen フォルダを USBメモリにコピーする
 
-*** Googleアカウント
-
-    [[https://support.google.com/accounts/?hl=ja#topic=3382296][Google アカウントの作成]] (ヘルプセンター) はできていますか？
-
-    - アカウントの確認
-    - GMail の確認
-
 *** Windows の基本操作などを学ぶ
 
 **** OSの役割
@@ -74,4 +112,5 @@
 **** Windows のファイルとフォルダとエクスプローラ
 
      教科書4.4，4.5, 4.6 あたりを学びます
+
 

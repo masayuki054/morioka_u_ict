@@ -44,6 +44,27 @@
    [[https://support.mozilla.org/ja/kb/get-started-firefox-overview-main-features][はじめての Firefox]] を読んで使い方を知りましょう。
 
 
+* 2019年度にやったことの記録
+
+    - ブラウザに関する一般的なことは，教科書3.1 を読んでみてください。
+    - Firefox はフリーなウェブブラウザです。
+    - Firefox Portable は USBにインストールして，持ち運べます。
+
+**** firefox_portable を USB にインストールする
+
+     - FirefoxPortable_xxx_Japanese.paf を実行し，
+     - インストール先に USBメモリ場の FirefoxPortable をえらぶ
+    - Firefox Portable フォルダの中の，firefox.exe がアプリです。
+
+**** firefox を使ってみる
+
+    - ブックマークを憶えましょう。
+
+    - 履歴を使いましょう。
+
+    - 好みのテーマに替えてみましょう。
+
+
 
 
 
@@ -55,3 +76,4 @@
 
 
 
+    
