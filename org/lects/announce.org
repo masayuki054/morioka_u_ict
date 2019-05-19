@@ -5,24 +5,14 @@
 
 ** 出席票の提出 5/18 05回目
 
-   - [[https://forms.gle/mZcBQ1u8dQJVi2Nj7][A組5回目出席票]]
-   - [[https://forms.gle/TMB5AHAy63XnMGZq9][B組5回目出席票]]
+   - [[https://forms.gle/c7ZHLsYf3MrUTRAW9][A組6回目 ]]出席票
+   - [[https://forms.gle/GaQv5gbd9aaMLdxx8][B組6回目]] 出席票
 
-** 5/13 4回目の出席票のまとめ
+** 出席票のまとめ
 
-   - [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]]
-
-   - [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
-
-
-** 出席票の提出 5/13 04回目
-   - [[https://forms.gle/iZHsznwhBgvGT9YJA][A組の出席票]]
-   - [[https://forms.gle/2Z1U2a3Nwfpkd41z6][B組の出席票]]
-     
-** 4/22の出席票のまとめ
-
-   - [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組-3回目]]
-   - [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組-3回目]]
+   - 5/18 [[https://docs.google.com/spreadsheets/d/1KfWyaTIoJsVuRiIgn5RqJaUNB9Ex0lTEeSTr4PhYsj4/edit?usp=sharing][A組5回目]], [[https://docs.google.com/spreadsheets/d/1ztdtlPoQ2i9fstzLPsGYAxTemPuGMYlU9bTG5OwvaMo/edit?usp=sharing][B組5回目]]
+   - 5/13 [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]], [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
+   - 4/22 [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組3回目]], [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組3回目]]
  
 ** 講義時間外の質問
 
