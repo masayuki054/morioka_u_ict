@@ -2,9 +2,7 @@
 
 ** 今日の課題
 
-以下，今日やることです。
-
-*** Doing タイピング -- 練習のはじまり
+*** Doing タイピング -- 練習記録表の作成
 
     [[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
 
@@ -69,24 +67,20 @@
     関連する教科書の内容は:
     - 3.8節 クラウドサービスの概要
 
-**** Done Google アカウントはできていますか？
-     CLOSED: [2019-05-19 日 18:25]
-     - http://google.com にログインし，
-
-**** Done GMail を使ってみる
-     CLOSED: [2019-05-19 日 18:25]
-     - Gmail を使う (http://mail.google.com)
-
 **** Doing GoogleDrive を使ってみる
      - http://drive.google.com
      - フォルダ「m1918xxx」を作成し，
      - suzumasa054@gmail.com と共有する
+     - msyk054@gmail.com と共有する
 
 **** Doing 共有フォルダの確認
 
      [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用 Google ドライブ]]
 
      - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP][A組の共有フォルダ]]
+
+     - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP]]
+
      - [[https://drive.google.com/open?id=1huvnfH0iF3wL00owOZD7XzpuBtubQCEh][B組の共有フォルダ]]
 
 **** Todo スマホでのGoogleドライブの利用
