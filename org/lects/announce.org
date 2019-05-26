@@ -1,7 +1,4 @@
-** 6回目の講義は，明後日です。
-
 ** USBメモリを抜き忘れないでください。
-
 
 ** 出席票の提出 5/18 05回目
 
@@ -10,6 +7,7 @@
 
 ** 出席票のまとめ
 
+   - 5/20 [[https://docs.google.com/spreadsheets/d/13MFrce5Rudi3fYgj2DILxFtJSnwNkBNML_jbHXcfsHY/edit?usp=sharing][A-6]], [[https://docs.google.com/spreadsheets/d/18pvpzB9X9nwcewfnesQ7SXvd8U-DgLGDpC0rofmV7DE/edit?usp=sharing][B-6]]
    - 5/18 [[https://docs.google.com/spreadsheets/d/1KfWyaTIoJsVuRiIgn5RqJaUNB9Ex0lTEeSTr4PhYsj4/edit?usp=sharing][A組5回目]], [[https://docs.google.com/spreadsheets/d/1ztdtlPoQ2i9fstzLPsGYAxTemPuGMYlU9bTG5OwvaMo/edit?usp=sharing][B組5回目]]
    - 5/13 [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]], [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
    - 4/22 [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組3回目]], [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組3回目]]

@@ -5,13 +5,15 @@
 
 * 今日の講義
 
-#+include: lects/06.org :minlevel 2
+#+include: lects/07new.org :minlevel 2
 
 * 前回までのまとめ
 #+include: lects/まとめ.org :minlevel 2
 
+
 * 受講の準備
 #+include: lects/受講の準備.org :minlevel 2
+
 
 * お知らせ
 #+include: lects/announce.org :minlevel 2
