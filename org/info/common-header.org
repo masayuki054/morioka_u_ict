@@ -3,7 +3,9 @@
 [[http://masayuki054.hatenablog.com/entry/2019/03/18/194043][はてなのページ]] /
 [[http://masayuki054.github.io/morioka_u_ict][今日の講義]] / 
 [[https://sites.google.com/view/morioka-u-ict-2019/][グーグルサイト]] /
-[[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][講義用グーグルドライブ]]
+[[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][講義用グーグルドライブ]] / 
+[[https://github.com/masayuki054/morioka_u_ict/wiki][掲示版]]
+
 
 #+AUTHOR: masayuki
 #+LANGUAGE: ja

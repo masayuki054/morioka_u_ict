@@ -1,16 +1,23 @@
 ** USBメモリを抜き忘れないでください。
 
-** 出席票の提出 6/3 08回目
+** 出席票の提出 6/10 09回目
 
-    - [[https://forms.gle/kkgSVFsszMLVeYy97][A-8]]
-    - [[https://forms.gle/wGauSZE79uBd5Lto7][B-8]]
+    - [[https://forms.gle/Yef9jBKwMD9YNYH8A][A-9]]
+    - 
 
 ** 出席票のまとめ
+
+   - 6/3 [[https://docs.google.com/spreadsheets/d/1rb0Ni73bYjJxgXLweCJnNgsp24-QCQBRvwalfUI5Jpg/edit?usp=sharing][A-8]], [[https://docs.google.com/spreadsheets/d/1K_okyOey7-0ZlSUTXnUjlSVMuyTTJZz8oFxz6fEZnW8/edit?usp=sharing][B-8]]
+     - A-前回欠席 A02, A20, A27
+     - B-前回欠席 B18, B37
+
+
    - 5/27 [[https://docs.google.com/spreadsheets/d/1-R34czUeGFHQqgRyzcEl8V93P3jJivxh-SeCqfThPg4/edit?usp=sharing][A-7]], [[https://docs.google.com/spreadsheets/d/112fRbWhhQAnhRJ1WmucHBVxcvGiEjhfJpjhMRzL5fFI/edit?usp=sharing][B-7]]
    - 5/20 [[https://docs.google.com/spreadsheets/d/13MFrce5Rudi3fYgj2DILxFtJSnwNkBNML_jbHXcfsHY/edit?usp=sharing][A-6]], [[https://docs.google.com/spreadsheets/d/18pvpzB9X9nwcewfnesQ7SXvd8U-DgLGDpC0rofmV7DE/edit?usp=sharing][B-6]]
    - 5/18 [[https://docs.google.com/spreadsheets/d/1KfWyaTIoJsVuRiIgn5RqJaUNB9Ex0lTEeSTr4PhYsj4/edit?usp=sharing][A組5回目]], [[https://docs.google.com/spreadsheets/d/1ztdtlPoQ2i9fstzLPsGYAxTemPuGMYlU9bTG5OwvaMo/edit?usp=sharing][B組5回目]]
    - 5/13 [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]], [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
    - 4/22 [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組3回目]], [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組3回目]]
+
  
 ** 講義時間外の質問
 
