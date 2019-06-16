@@ -5,7 +5,7 @@
 
 * 今日の講義
 
-#+include: lects/09new.org :minlevel 2
+#+include: lects/10new.org :minlevel 2
 
 * 前回までのまとめ
 #+include: lects/まとめ.org :minlevel 2
