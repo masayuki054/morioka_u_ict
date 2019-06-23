@@ -1,11 +1,12 @@
 #+setupfile: ~/ict.git/org/info/index-bigblow-header.setup
 #+include: ~/ict.git/org/info/common-header.org
 
+
 #+title: 
 
 * 今日の講義
 
-#+include: lects/10new.org :minlevel 2
+#+include: lects/11new.org :minlevel 2
 
 * 前回までのまとめ
 #+include: lects/まとめ.org :minlevel 2

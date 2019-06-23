@@ -1,22 +1,69 @@
 ** USBメモリを抜き忘れないでください。
 
-** 出席票の提出 6/10 09回目
-
-    - [[https://forms.gle/Yef9jBKwMD9YNYH8A][A-9]]
-    - 
+** 出席票の提出 6/17 10回目
+   - [[https://forms.gle/U3ftKuVZALwC8aBQ9][A-11]]
+   - [[https://forms.gle/1guPhSAtU42WMxAi7][B-11]]
 
 ** 出席票のまとめ
+
+   - 617
+     - [[https://docs.google.com/spreadsheets/d/15UcNYSRomG6Wp5lkR-7VwXDwZy5CARP-6trj6zGHazo/edit#gid=1003493252][A-10-2019 - Google スプレッドシート]]
+       - 欠席 A02, A14, A15, A20, A37
+     - [[https://docs.google.com/spreadsheets/d/1prwKkWjUW7BO_tRRlbrxa2XnI1y0aq5SbBNsDmxEUlo/edit#gid=1003493252][B-10-2019 - Google スプレッドシート]]
+       - 欠席 B04, B25
+
 
    - 6/3 [[https://docs.google.com/spreadsheets/d/1rb0Ni73bYjJxgXLweCJnNgsp24-QCQBRvwalfUI5Jpg/edit?usp=sharing][A-8]], [[https://docs.google.com/spreadsheets/d/1K_okyOey7-0ZlSUTXnUjlSVMuyTTJZz8oFxz6fEZnW8/edit?usp=sharing][B-8]]
      - A-前回欠席 A02, A20, A27
      - B-前回欠席 B18, B37
-
 
    - 5/27 [[https://docs.google.com/spreadsheets/d/1-R34czUeGFHQqgRyzcEl8V93P3jJivxh-SeCqfThPg4/edit?usp=sharing][A-7]], [[https://docs.google.com/spreadsheets/d/112fRbWhhQAnhRJ1WmucHBVxcvGiEjhfJpjhMRzL5fFI/edit?usp=sharing][B-7]]
    - 5/20 [[https://docs.google.com/spreadsheets/d/13MFrce5Rudi3fYgj2DILxFtJSnwNkBNML_jbHXcfsHY/edit?usp=sharing][A-6]], [[https://docs.google.com/spreadsheets/d/18pvpzB9X9nwcewfnesQ7SXvd8U-DgLGDpC0rofmV7DE/edit?usp=sharing][B-6]]
    - 5/18 [[https://docs.google.com/spreadsheets/d/1KfWyaTIoJsVuRiIgn5RqJaUNB9Ex0lTEeSTr4PhYsj4/edit?usp=sharing][A組5回目]], [[https://docs.google.com/spreadsheets/d/1ztdtlPoQ2i9fstzLPsGYAxTemPuGMYlU9bTG5OwvaMo/edit?usp=sharing][B組5回目]]
    - 5/13 [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]], [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
    - 4/22 [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組3回目]], [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組3回目]]
+
+
+*** 不達成度の確認
+
+**** A組
+
+***** 最高，最低，平均の計算
+ - 0
+***** グラフの描画
+ - A05
+***** 式やグラフが正しくできていることの確認
+ - A05, A27
+***** 最終行の意味がわかる
+ - A10, A27, A33
+***** Firefoxを使う
+ - 0
+***** XMind ZEN が使える
+ - 0
+***** Dynalist に登録できた
+ できない
+ - A10, A12, A21, A35, A38
+ やらなかった
+ - A18, A23, A24, A33, A39, A41
+
+**** B組
+***** 最高，最低，平均の計算
+ - B22
+***** グラフの描画
+ - B19, B22
+***** 式やグラフが正しくできていることの確認
+ - B19, B22
+***** 最終行の意味がわかる
+ - B19, B31, B33, B36, B42
+***** Firefoxを使う
+ - B22
+***** XMind ZEN が使える
+ - B22
+***** Dynalist に登録できた
+ できない
+   - B01, B02, B06, B09, B10, B13, B22, B24, B31,B41
+ やらなかった
+   - B11, B15, B16, B18, B21, B26, B28, B36, B38
 
  
 ** 講義時間外の質問
@@ -33,4 +80,6 @@
 
    - 月・水曜日の 15:00~18:00， 岩手大学図書館 2F 学修支援コーナーで入
      館者の質問等対応しているので，来館してください。
+
+
 
