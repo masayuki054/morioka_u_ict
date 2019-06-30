@@ -34,7 +34,7 @@
     前回の講義で，レポート提出の練習をしました。
     提出状況を確認しました。
 
-   
+    [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/lects/sharing.org][提出状況]] で自分の提出を確認してください。
 
 *** Done 大学のWebメールを使う
 
