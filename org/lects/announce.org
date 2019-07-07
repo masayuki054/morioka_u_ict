@@ -1,17 +1,28 @@
 ** USBメモリを抜き忘れないでください。
 
-** 出席票の提出 6/17 10回目
-   - [[https://forms.gle/U3ftKuVZALwC8aBQ9][A-11]]
-   - [[https://forms.gle/1guPhSAtU42WMxAi7][B-11]]
+** 出席票の提出 7/8 13回目
+
+   - [[https://forms.gle/9r6CdHpBurKPMnuD6][A-13]]
+
+   - [[https://forms.gle/fGFoipiF2SzSDvUH7][B-13]]
 
 ** 出席票のまとめ
+   - 7/1
+     - [[https://docs.google.com/spreadsheets/d/1LsJu4RhLIvu0I6Ek_fIwzNWL89chmiLdhRJ5uWy4bok/edit?usp=sharing][A-12]]
+       - 欠席 A02, A09
+     - [[https://docs.google.com/spreadsheets/d/1dkUPsMIuKC5CgsaguQdtUdGqTN7BGibdcI4u8lRQJaY/edit?usp=sharing][B-12]]
+       - 欠席 B37
+
+   - 6/23
+     -[[https://docs.google.com/spreadsheets/d/10WbpXwMdeR8nd_hf-3MvGfgNY54bp3PqiaxHdO47LeA/edit?usp=sharing][ A-11-2019]] Google スプレッドシート
+       - 欠席 A02, A04, A29
+     - [[https://docs.google.com/spreadsheets/d/1_3s5aH-lAgwKEMuxgW47mbZ7k5N5Bxn5L87khjxexew/edit?usp=sharing][B-11-2019]] Google スプレッドシート
 
    - 617
      - [[https://docs.google.com/spreadsheets/d/15UcNYSRomG6Wp5lkR-7VwXDwZy5CARP-6trj6zGHazo/edit#gid=1003493252][A-10-2019 - Google スプレッドシート]]
        - 欠席 A02, A14, A15, A20, A37
      - [[https://docs.google.com/spreadsheets/d/1prwKkWjUW7BO_tRRlbrxa2XnI1y0aq5SbBNsDmxEUlo/edit#gid=1003493252][B-10-2019 - Google スプレッドシート]]
        - 欠席 B04, B25
-
 
    - 6/3 [[https://docs.google.com/spreadsheets/d/1rb0Ni73bYjJxgXLweCJnNgsp24-QCQBRvwalfUI5Jpg/edit?usp=sharing][A-8]], [[https://docs.google.com/spreadsheets/d/1K_okyOey7-0ZlSUTXnUjlSVMuyTTJZz8oFxz6fEZnW8/edit?usp=sharing][B-8]]
      - A-前回欠席 A02, A20, A27
@@ -22,7 +33,6 @@
    - 5/18 [[https://docs.google.com/spreadsheets/d/1KfWyaTIoJsVuRiIgn5RqJaUNB9Ex0lTEeSTr4PhYsj4/edit?usp=sharing][A組5回目]], [[https://docs.google.com/spreadsheets/d/1ztdtlPoQ2i9fstzLPsGYAxTemPuGMYlU9bTG5OwvaMo/edit?usp=sharing][B組5回目]]
    - 5/13 [[https://drive.google.com/open?id=1TndK8V-hhIE6NboIIpiS25cFXCfpOJkWts9Tfyrm8og][A組4回目]], [[https://drive.google.com/open?id=1m_Tz6M4nCj6RfhXUAYSenYZUneLeGkeLu9vqyRIFlQk][B組4回目]]
    - 4/22 [[https://docs.google.com/spreadsheets/d/1J0hybJBz3iiY9Mz1ScO4PlcEJYqCdfQyP8pfWP7IoUc/edit?usp=sharing][A組3回目]], [[https://docs.google.com/spreadsheets/d/1eegOooFI71pm_UkI720I4SxOAYG09q_dfyNPNauyU2M/edit?usp=sharing][B組3回目]]
-
 
 *** 不達成度の確認
 

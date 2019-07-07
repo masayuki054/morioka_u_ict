@@ -51,27 +51,38 @@
   - 講義を通して得られたことや作成したメモや文書をまとめる
 
 * 講義記録
-** 2018.04.08
+** 2019.04.08
 #+include: 01.org :minlevel 3
 
-** 2018.04.15
+** 2019.04.15
 #+include: 02.org :minlevel 3
 
-** 2018.04.22
+** 2019.04.22
 #+include: 03.org :minlevel 3
 
-** 2018.05.13
+** 2019.05.13
 #+include: 04.org :minlevel 3
 
-** 2018.05.18
+** 2019.05.18
 #+include: 05.org :minlevel 3
 
-** 2018.05.20
+** 2019.05.20
 #+include: 06.org :minlevel 3
 
-** 2018.05.27
+** 2019.05.27
 #+include: 07new.org :minlevel 3
 
-
-** 2018.06.03
+** 2019.06.03
 #+include: 08new.org :minlevel 3
+
+
+** 2019.06.10
+#+include: 09new.org :minlevel 3
+
+
+** 2019.06.17
+#+include: 10new.org :minlevel 3
+
+
+** 2019.06.23
+#+include: 11new.org :minlevel 3
