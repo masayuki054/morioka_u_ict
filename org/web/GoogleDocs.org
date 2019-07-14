@@ -1,6 +1,7 @@
 * GoogleDocs
 
-Googleの提供する Office 
+Googleの提供する Office.
+マイクロソフトのオフィスの代りに使えるかもしれません。
 
-そのうち書きます。
 
+[[https://gsuite.google.jp/learning-center/products/docs/#!/][Google ドキュメント | ラーニング センター | G Suite]]

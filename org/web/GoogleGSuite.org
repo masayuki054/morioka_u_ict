@@ -1,0 +1,6 @@
+* Microsoft office から G Suiteへの移行
+
+  Office を持っていない人は，G Suite の利用を考えてもいいかもしれませ
+  ん。
+
+  [[https://gsuite.google.jp/learning-center/switch-from-ms/#!/  ][G Suite: Switching from Microsoft | ラーニング センター | G Suite]]

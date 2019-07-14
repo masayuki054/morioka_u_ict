@@ -1,12 +1,19 @@
 ** USBメモリを抜き忘れないでください。
 
-** 出席票の提出 7/8 13回目
 
-   - [[https://forms.gle/9r6CdHpBurKPMnuD6][A-13]]
-
-   - [[https://forms.gle/fGFoipiF2SzSDvUH7][B-13]]
+** 出席票の提出 7/15 14回目
+   - [[https://forms.gle/MK6bJBFvWctsTPmX8][A-14]]
+   - [[https://forms.gle/NTRekQctdqn8xj5u6][B-14]]
 
 ** 出席票のまとめ
+   - 7/8 先生欠席
+     - [[https://docs.google.com/spreadsheets/d/1X4vyckPu5eARjy-Iid1QJsZy0pj1U_8dtXxgdvS8ODU/edit?usp=sharing][A-13]]
+       - 欠席 02，09，12，18，25
+
+     - [[https://docs.google.com/spreadsheets/d/129DQTxjgZTfkAs6MZfGEWovwqN1vXS9OyVK7Nd_rI-g/edit?usp=sharing][B-13]]
+       - 1981027 は B07?
+       - 欠席 B25
+
    - 7/1
      - [[https://docs.google.com/spreadsheets/d/1LsJu4RhLIvu0I6Ek_fIwzNWL89chmiLdhRJ5uWy4bok/edit?usp=sharing][A-12]]
        - 欠席 A02, A09
