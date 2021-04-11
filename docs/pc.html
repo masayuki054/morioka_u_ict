@@ -3,10 +3,10 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2019-05-27 月 06:08 -->
+<!-- 2021-04-11 日 20:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>情報処理演習2019 パソコンの使い方</title>
+<title>情報処理演習2021 パソコンの使い方</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
 <style type="text/css">
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -195,168 +208,144 @@
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">情報処理演習2019 パソコンの使い方</h1>
+<h1 class="title">情報処理演習2021 パソコンの使い方</h1>
 <div id="table-of-contents">
 <h2>&#30446;&#27425;</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org408342e">1. IDとパスワード</a>
+<li><a href="#org1570308">1. IDとパスワード</a>
 <ul>
-<li><a href="#orga6b633b">1.1. ID とパスワードとは</a></li>
-<li><a href="#org6a7ba34">1.2. 盛岡大学で使うシステム</a>
+<li><a href="#orgf62bdcb">1.1. ID とパスワードとは</a></li>
+<li><a href="#org1d61248">1.2. 盛岡大学で使うシステム</a>
 <ul>
-<li><a href="#org7e375d7">盛岡大学ポータルサイト</a></li>
-<li><a href="#orgf4c1985">Webメール</a></li>
-<li><a href="#orgf68fc04">端末室のPC</a>
+<li><a href="#orgc67fc4b">盛岡大学ポータルサイト</a></li>
+<li><a href="#org1657f78">Webメール</a></li>
+<li><a href="#org0d494ef">端末室のPC</a>
 <ul>
-<li><a href="#orgc50bc3b">パスワードの変更</a></li>
+<li><a href="#orgb3636f7">パスワードの変更</a></li>
 </ul>
 </li>
-<li><a href="#orgb40e026">IDやパスワードを忘れたら</a></li>
+<li><a href="#org1ef0060">パスワードを忘れたら</a></li>
 </ul>
 </li>
-<li><a href="#org6b421d6">1.3. パスワードについて</a></li>
+<li><a href="#org478221c">1.3. パスワードについて</a></li>
 </ul>
 </li>
-<li><a href="#org02f1b22">2. Webブラウザの使い方</a>
+<li><a href="#orgbb1436b">2. Webブラウザの使い方</a>
 <ul>
-<li><a href="#org0b79846">2.1. お気に入り</a></li>
-<li><a href="#org4e57ea3">2.2. 履歴</a></li>
-<li><a href="#orga31499d">2.3. タブ</a></li>
+<li><a href="#org245aad0">2.1. お気に入り</a></li>
+<li><a href="#orga7c165b">2.2. 履歴</a></li>
+<li><a href="#org2d498a4">2.3. タブ</a></li>
 </ul>
 </li>
-<li><a href="#orgd0e0e08">3. パスワードのよしあし</a>
+<li><a href="#orgbbaa8c0">3. パスワードのよしあし</a>
 <ul>
-<li><a href="#org29b8e6a">3.1. パスワードを破られる危険性</a></li>
-<li><a href="#org461ce0e">3.2. パスワードの攻撃方法</a></li>
-<li><a href="#org7e23038">3.3. 良いパスワードとは</a></li>
+<li><a href="#orgd8f685b">3.1. パスワードを破られる危険性</a></li>
+<li><a href="#org6dcccd6">3.2. パスワードの攻撃方法</a></li>
+<li><a href="#org8596a20">3.3. 良いパスワードとは</a></li>
 </ul>
 </li>
-<li><a href="#org10c07ae">4. ファイルやフォルダの決まりごと</a>
+<li><a href="#orgeef537d">4. ファイルやフォルダの決まりごと</a>
 <ul>
-<li><a href="#org0bc8ae6">4.1. サーバって？</a></li>
-<li><a href="#orgc612acc">4.2. ファイル共有サービス</a></li>
-<li><a href="#orga7661ac">4.3. 自分のフォルダ</a></li>
-<li><a href="#org807727b">4.4. 学生用のファイル共有サービス</a></li>
-<li><a href="#org75d2cbc">4.5. 講義資料フォルダ</a></li>
+<li><a href="#org0417b2c">4.1. サーバって？</a></li>
+<li><a href="#org64ca138">4.2. ファイル共有サービス</a></li>
+<li><a href="#orgcea81c4">4.3. 自分のフォルダ</a></li>
+<li><a href="#org05a2a64">4.4. 学生用のファイル共有サービス</a></li>
+<li><a href="#org6f10846">4.5. 講義資料フォルダ</a></li>
 </ul>
 </li>
-<li><a href="#org4fdc6f9">5. 自分の情報の保存</a>
+<li><a href="#org38118d1">5. 自分の情報の保存</a>
 <ul>
-<li><a href="#org79527be">5.1. マイドキュメント</a></li>
-<li><a href="#org8fdb2ca">5.2. 自分の情報処理応用フォルダ</a></li>
+<li><a href="#org5eeec13">5.1. マイドキュメント</a></li>
+<li><a href="#org412f4d7">5.2. 自分の情報処理応用フォルダ</a></li>
 </ul>
 </li>
-<li><a href="#orgc3147b7">6. そのほか，自分が管理する情報置場</a>
+<li><a href="#orgdd63e97">6. そのほか，自分が管理する情報置場</a>
 <ul>
-<li><a href="#org5100f62">6.1. 自分のUSBメモリにいれて持ち運びする</a></li>
-<li><a href="#org395d93a">6.2. 自分のGoodgleDrive</a></li>
+<li><a href="#org276f16f">6.1. 自分のUSBメモリにいれて持ち運びする</a></li>
+<li><a href="#org5fdefba">6.2. 自分のGoodgleDrive</a></li>
 </ul>
 </li>
-<li><a href="#orgc802568">7. USBメモリ</a>
+<li><a href="#org129a4c7">7. USBメモリ</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org556cfd0">使う目的</a></li>
-<li><a href="#org21cef31">講義用アプリをUSBに準備する</a></li>
-<li><a href="#org50d6fd7">ポータブル・ソフトウェア</a></li>
+<li><a href="#org187357a">使う目的</a></li>
+<li><a href="#org61b3423">講義用アプリをUSBに準備する</a></li>
+<li><a href="#org6635029">ポータブル・ソフトウェア</a></li>
 </ul>
 </li>
-<li><a href="#orgf6ec08a">7.1. USBメモリの使い方の基本</a>
+<li><a href="#orgf282055">7.1. USBメモリの使い方の基本</a>
 <ul>
-<li><a href="#org3b779d3">USBメモリの内容を見る</a></li>
-<li><a href="#orgea4c7e4">USBメモリの取り出し</a></li>
-<li><a href="#orgd057e14">USB内にフォルダを作る</a></li>
-<li><a href="#org5c56a77">USBメモリを取り出す</a></li>
-<li><a href="#orgd0aa131">USBへコピーする</a>
-<ul>
-<li>
-<ul>
-<li><a href="#org8ee39be">ドラッグ &amp; ドロップ</a></li>
-<li><a href="#org2a998a7">コピー &amp; ペースト</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org2850376">8. 講義用アプリをUSBに準備する</a></li>
-<li><a href="#org5809820">9. セキュリティ</a>
-<ul>
-<li><a href="#org77084c9">9.1. セキュリティ対策について</a></li>
-<li><a href="#org85142f0">9.2. セキュリティソフトについて</a></li>
-</ul>
-</li>
-<li><a href="#orge2e547b">10. Web メール</a>
-<ul>
-<li><a href="#orgca5b881">10.1. 利用</a></li>
-<li><a href="#org245b02a">10.2. 署名の入力</a></li>
-<li><a href="#orgd5b76bb">10.3. パスワードの変更</a></li>
-<li><a href="#org6c66bcc">10.4. 作成と送信</a>
+<li><a href="#org8a65674">USBメモリの内容を見る</a></li>
+<li><a href="#org961e36a">USBメモリの取り出し</a></li>
+<li><a href="#org9ecbe5e">USB内にフォルダを作る</a></li>
+<li><a href="#org710fdf4">USBメモリを取り出す</a></li>
+<li><a href="#org2bbe083">USBへコピーする</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org340c99e">送信ミスの体験</a></li>
+<li><a href="#org896b0dd">ドラッグ &amp; ドロップ</a></li>
+<li><a href="#org8084c8f">コピー &amp; ペースト</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org123149d">11. コンピュータとインタネットの利用環境</a>
+</ul>
+</li>
+<li><a href="#org80a419b">8. 講義用アプリをUSBに準備する</a></li>
+<li><a href="#org614d185">9. セキュリティ</a>
 <ul>
-<li><a href="#orgfca0b25">11.1. 盛岡大学が提供してくれるサービス</a></li>
-<li><a href="#org309b93a">11.2. 情報処理演習のために利用するインターネット上のサービス</a></li>
+<li><a href="#org5926a6e">9.1. セキュリティ対策について</a></li>
+<li><a href="#org6ca1719">9.2. セキュリティソフトについて</a></li>
+</ul>
+</li>
+<li><a href="#org9a55551">10. Web メール</a>
+<ul>
+<li><a href="#org6df5405">10.1. 利用</a></li>
+<li><a href="#org6448926">10.2. 署名の入力</a></li>
+<li><a href="#orgff0a9e0">10.3. パスワードの変更</a></li>
+<li><a href="#org46f4b5a">10.4. 作成と送信</a>
+<ul>
+<li>
+<ul>
+<li><a href="#orgdc1e8fe">送信ミスの体験</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc7688f6">11. コンピュータとインタネットの利用環境</a>
+<ul>
+<li><a href="#org5d2fed0">11.1. 盛岡大学が提供してくれるサービス</a></li>
+<li><a href="#org2e66f0f">11.2. 情報処理演習のために利用するインターネット上のサービス</a></li>
 </ul>
 </li>
 </ul>
@@ -366,14 +355,15 @@ for the JavaScript code in this tag.
 <a href="https://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
 <a href="https://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
 <a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
-<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a>
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a> / 
+<a href="https://github.com/masayuki054/morioka_u_ict/wiki">掲示版</a>
 </p>
-<div id="outline-container-org408342e" class="outline-2">
-<h2 id="org408342e"><span class="section-number-2">1</span> IDとパスワード</h2>
+<div id="outline-container-org1570308" class="outline-2">
+<h2 id="org1570308"><span class="section-number-2">1</span> IDとパスワード</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga6b633b" class="outline-3">
-<h3 id="orga6b633b"><span class="section-number-3">1.1</span> ID とパスワードとは</h3>
+<div id="outline-container-orgf62bdcb" class="outline-3">
+<h3 id="orgf62bdcb"><span class="section-number-3">1.1</span> ID とパスワードとは</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <b>ID</b> はあなたの <b>識別名</b> で，その <b>パスワード</b> は自分だけが知っている
@@ -396,8 +386,8 @@ IDは一度決まると普通変更できませんが，パスワードは変更
 </div>
 </div>
 
-<div id="outline-container-org6a7ba34" class="outline-3">
-<h3 id="org6a7ba34"><span class="section-number-3">1.2</span> 盛岡大学で使うシステム</h3>
+<div id="outline-container-org1d61248" class="outline-3">
+<h3 id="org1d61248"><span class="section-number-3">1.2</span> 盛岡大学で使うシステム</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 ここでいう <b>システム</b> とは，コンピュータやインターネットサイトで，
@@ -419,17 +409,19 @@ IDは一度決まると普通変更できませんが，パスワードは変更
 </p>
 
 <ul class="org-ul">
-<li>コンピュータ室のPC</li>
+<li>コンピュータ室のPC (A306, A311, B313)</li>
 
 <li>Webメール</li>
 
 <li>学務用の盛岡大学ポータルサイト</li>
+
+<li>melly</li>
 </ul>
 </div>
 
-<div id="outline-container-org7e375d7" class="outline-4">
-<h4 id="org7e375d7">盛岡大学ポータルサイト</h4>
-<div class="outline-text-4" id="text-org7e375d7">
+<div id="outline-container-orgc67fc4b" class="outline-4">
+<h4 id="orgc67fc4b">盛岡大学ポータルサイト</h4>
+<div class="outline-text-4" id="text-orgc67fc4b">
 <p>
 学年暦や学務からのお知らせ，出席簿，シラバスがあります。
 </p>
@@ -442,9 +434,9 @@ IDは一度決まると普通変更できませんが，パスワードは変更
 </div>
 </div>
 
-<div id="outline-container-orgf4c1985" class="outline-4">
-<h4 id="orgf4c1985">Webメール</h4>
-<div class="outline-text-4" id="text-orgf4c1985">
+<div id="outline-container-org1657f78" class="outline-4">
+<h4 id="org1657f78">Webメール</h4>
+<div class="outline-text-4" id="text-org1657f78">
 <p>
 盛岡大学が運用しているメールサーバを
 </p>
@@ -460,9 +452,9 @@ IDは一度決まると普通変更できませんが，パスワードは変更
 </div>
 </div>
 
-<div id="outline-container-orgf68fc04" class="outline-4">
-<h4 id="orgf68fc04">端末室のPC</h4>
-<div class="outline-text-4" id="text-orgf68fc04">
+<div id="outline-container-org0d494ef" class="outline-4">
+<h4 id="org0d494ef">端末室のPC</h4>
+<div class="outline-text-4" id="text-org0d494ef">
 <p>
 A306, A311, B313, 図書館にある端末室のPC達です。
 </p>
@@ -472,41 +464,44 @@ ID (識別名)とパスワードが配布されています。
 </p>
 
 <p>
+ID は学生番号です。
+</p>
+
+<p>
 端末室のPCを使うために使います。
 </p>
 </div>
 
-<div id="outline-container-orgc50bc3b" class="outline-5">
-<h5 id="orgc50bc3b">パスワードの変更</h5>
-<div class="outline-text-5" id="text-orgc50bc3b">
+<div id="outline-container-orgb3636f7" class="outline-5">
+<h5 id="orgb3636f7">パスワードの変更</h5>
+<div class="outline-text-5" id="text-orgb3636f7">
 <p>
 配布されたIDを変更することはできませんが，パスワードは自分と管理者だけが変更できます。
 </p>
 
 <p>
 配布されたパスワードは，機械的に作られていて，覚えにくく忘れやすいものです。
+自分だけが憶え易く，他人には憶え難いものに変更しましょう。
 </p>
+</div>
+</div>
+</div>
 
+
+
+
+<div id="outline-container-org1ef0060" class="outline-4">
+<h4 id="org1ef0060">パスワードを忘れたら</h4>
+<div class="outline-text-4" id="text-org1ef0060">
 <p>
-「Control」キー，「Alt」キー，「Delete]キー を同時押しすると，
-いくつかのメニュー項目が現れ， その中にパスワード変更メニューがある。
+情報処理室の人にその旨，伝えてください。
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb40e026" class="outline-4">
-<h4 id="orgb40e026">IDやパスワードを忘れたら</h4>
-<div class="outline-text-4" id="text-orgb40e026">
-<p>
-学務係の人にその旨，伝えてください。
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org6b421d6" class="outline-3">
-<h3 id="org6b421d6"><span class="section-number-3">1.3</span> パスワードについて</h3>
+<div id="outline-container-org478221c" class="outline-3">
+<h3 id="org478221c"><span class="section-number-3">1.3</span> パスワードについて</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 自分には覚えやすく，他人からは覚えにくく，類推しにくい文字の列にしましょう。
@@ -517,7 +512,7 @@ ID (識別名)とパスワードが配布されています。
 </p>
 
 <ul class="org-ul">
-<li><a href="#orgd0e0e08">3</a></li>
+<li><a href="#orgbbaa8c0">3</a></li>
 
 <li><a href="https://www.lifehacker.jp/2011/05/110512easy-password-guess.html">パスワード破りのプロはこうやってアナタのパスワードを見破っている</a></li>
 
@@ -526,16 +521,16 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 </div>
-<div id="outline-container-org02f1b22" class="outline-2">
-<h2 id="org02f1b22"><span class="section-number-2">2</span> Webブラウザの使い方</h2>
+<div id="outline-container-orgbb1436b" class="outline-2">
+<h2 id="orgbb1436b"><span class="section-number-2">2</span> Webブラウザの使い方</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 簡単に，インターネット・エクスプローラの使い方を説明します。
 </p>
 </div>
 
-<div id="outline-container-org0b79846" class="outline-3">
-<h3 id="org0b79846"><span class="section-number-3">2.1</span> お気に入り</h3>
+<div id="outline-container-org245aad0" class="outline-3">
+<h3 id="org245aad0"><span class="section-number-3">2.1</span> お気に入り</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>IE の☆印メニューにあるお気に入りと履歴の使い方を覚えましょう。</li>
@@ -545,8 +540,8 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 
-<div id="outline-container-org4e57ea3" class="outline-3">
-<h3 id="org4e57ea3"><span class="section-number-3">2.2</span> 履歴</h3>
+<div id="outline-container-orga7c165b" class="outline-3">
+<h3 id="orga7c165b"><span class="section-number-3">2.2</span> 履歴</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>履歴にはサイトごとに，今日訪問したページが時間順で並んでいます。</li>
@@ -575,8 +570,8 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 
-<div id="outline-container-orga31499d" class="outline-3">
-<h3 id="orga31499d"><span class="section-number-3">2.3</span> タブ</h3>
+<div id="outline-container-org2d498a4" class="outline-3">
+<h3 id="org2d498a4"><span class="section-number-3">2.3</span> タブ</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 タブは，ブラウザで同時に開いているページ(を指す目印)です。
@@ -599,16 +594,16 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 </div>
-<div id="outline-container-orgd0e0e08" class="outline-2">
-<h2 id="orgd0e0e08"><span class="section-number-2">3</span> パスワードのよしあし</h2>
+<div id="outline-container-orgbbaa8c0" class="outline-2">
+<h2 id="orgbbaa8c0"><span class="section-number-2">3</span> パスワードのよしあし</h2>
 <div class="outline-text-2" id="text-3">
 <dl class="org-dl">
 <dt>出展</dt><dd><a href="https://azby.fmworld.net/usage/closeup/20110427">https://azby.fmworld.net/usage/closeup/20110427</a></dd>
 </dl>
 </div>
 
-<div id="outline-container-org29b8e6a" class="outline-3">
-<h3 id="org29b8e6a"><span class="section-number-3">3.1</span> パスワードを破られる危険性</h3>
+<div id="outline-container-orgd8f685b" class="outline-3">
+<h3 id="orgd8f685b"><span class="section-number-3">3.1</span> パスワードを破られる危険性</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 パスワードを盗まれると、下記の危険性がある。
@@ -642,8 +637,8 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 
-<div id="outline-container-org461ce0e" class="outline-3">
-<h3 id="org461ce0e"><span class="section-number-3">3.2</span> パスワードの攻撃方法</h3>
+<div id="outline-container-org6dcccd6" class="outline-3">
+<h3 id="org6dcccd6"><span class="section-number-3">3.2</span> パスワードの攻撃方法</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 パスワードを知るため，パスワードを変えつつ不正なログインを繰り返す。
@@ -662,8 +657,8 @@ ID (識別名)とパスワードが配布されています。
 </div>
 </div>
 
-<div id="outline-container-org7e23038" class="outline-3">
-<h3 id="org7e23038"><span class="section-number-3">3.3</span> 良いパスワードとは</h3>
+<div id="outline-container-org8596a20" class="outline-3">
+<h3 id="org8596a20"><span class="section-number-3">3.3</span> 良いパスワードとは</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 以下ようなのパスワードは破られやすい 
@@ -699,12 +694,12 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 </div>
-<div id="outline-container-org10c07ae" class="outline-2">
-<h2 id="org10c07ae"><span class="section-number-2">4</span> ファイルやフォルダの決まりごと</h2>
+<div id="outline-container-orgeef537d" class="outline-2">
+<h2 id="orgeef537d"><span class="section-number-2">4</span> ファイルやフォルダの決まりごと</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org0bc8ae6" class="outline-3">
-<h3 id="org0bc8ae6"><span class="section-number-3">4.1</span> サーバって？</h3>
+<div id="outline-container-org0417b2c" class="outline-3">
+<h3 id="org0417b2c"><span class="section-number-3">4.1</span> サーバって？</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 サーバは下記のような，コンピュータのことです． 
@@ -718,8 +713,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-orgc612acc" class="outline-3">
-<h3 id="orgc612acc"><span class="section-number-3">4.2</span> ファイル共有サービス</h3>
+<div id="outline-container-org64ca138" class="outline-3">
+<h3 id="org64ca138"><span class="section-number-3">4.2</span> ファイル共有サービス</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>ファイルサーバが，同じファイルを共有するためのサービスをしてくれます。</li>
@@ -727,8 +722,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-orga7661ac" class="outline-3">
-<h3 id="orga7661ac"><span class="section-number-3">4.3</span> 自分のフォルダ</h3>
+<div id="outline-container-orgcea81c4" class="outline-3">
+<h3 id="orgcea81c4"><span class="section-number-3">4.3</span> 自分のフォルダ</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 自分のIDでログインすれば，
@@ -738,13 +733,12 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 
 <pre class="example">
 エクスプローラ =&gt; ライブラリ =&gt; マイドキュメント
-
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org807727b" class="outline-3">
-<h3 id="org807727b"><span class="section-number-3">4.4</span> 学生用のファイル共有サービス</h3>
+<div id="outline-container-org05a2a64" class="outline-3">
+<h3 id="org05a2a64"><span class="section-number-3">4.4</span> 学生用のファイル共有サービス</h3>
 <div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>盛岡大学のネットワークに設置されたサーバで,</li>
@@ -753,8 +747,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 
 <pre class="example">
 エクスプローラ =&gt; コンピュータ =&gt; W:ドライブ =&gt; 生徒用サーバ
-
 </pre>
+
 
 <p>
 で見えます
@@ -769,8 +763,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-org75d2cbc" class="outline-3">
-<h3 id="org75d2cbc"><span class="section-number-3">4.5</span> 講義資料フォルダ</h3>
+<div id="outline-container-org6f10846" class="outline-3">
+<h3 id="org6f10846"><span class="section-number-3">4.5</span> 講義資料フォルダ</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 下記フォルダは，この講義で使う資料を共有するために使います
@@ -782,16 +776,16 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 </div>
-<div id="outline-container-org4fdc6f9" class="outline-2">
-<h2 id="org4fdc6f9"><span class="section-number-2">5</span> 自分の情報の保存</h2>
+<div id="outline-container-org38118d1" class="outline-2">
+<h2 id="org38118d1"><span class="section-number-2">5</span> 自分の情報の保存</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 この講義では，個々の学生のために，主に下記の情報の保存場所を使います
 </p>
 </div>
 
-<div id="outline-container-org79527be" class="outline-3">
-<h3 id="org79527be"><span class="section-number-3">5.1</span> マイドキュメント</h3>
+<div id="outline-container-org5eeec13" class="outline-3">
+<h3 id="org5eeec13"><span class="section-number-3">5.1</span> マイドキュメント</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li><p>
@@ -814,8 +808,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-org8fdb2ca" class="outline-3">
-<h3 id="org8fdb2ca"><span class="section-number-3">5.2</span> 自分の情報処理応用フォルダ</h3>
+<div id="outline-container-org412f4d7" class="outline-3">
+<h3 id="org412f4d7"><span class="section-number-3">5.2</span> 自分の情報処理応用フォルダ</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 マイドキュメントの中に「情報処理応用」フォルダを作りましょう。
@@ -832,12 +826,12 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-orgc3147b7" class="outline-2">
-<h2 id="orgc3147b7"><span class="section-number-2">6</span> そのほか，自分が管理する情報置場</h2>
+<div id="outline-container-orgdd63e97" class="outline-2">
+<h2 id="orgdd63e97"><span class="section-number-2">6</span> そのほか，自分が管理する情報置場</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org5100f62" class="outline-3">
-<h3 id="org5100f62"><span class="section-number-3">6.1</span> 自分のUSBメモリにいれて持ち運びする</h3>
+<div id="outline-container-org276f16f" class="outline-3">
+<h3 id="org276f16f"><span class="section-number-3">6.1</span> 自分のUSBメモリにいれて持ち運びする</h3>
 <div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
 <li>自分のフォルダで右クリックし，「コピー」</li>
@@ -846,8 +840,8 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-org395d93a" class="outline-3">
-<h3 id="org395d93a"><span class="section-number-3">6.2</span> 自分のGoodgleDrive</h3>
+<div id="outline-container-org5fdefba" class="outline-3">
+<h3 id="org5fdefba"><span class="section-number-3">6.2</span> 自分のGoodgleDrive</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 <a href="./google.html">Google Drive</a>を読んでください
@@ -855,18 +849,17 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 </div>
-<div id="outline-container-orgc802568" class="outline-2">
-<h2 id="orgc802568"><span class="section-number-2">7</span> USBメモリ</h2>
+<div id="outline-container-org129a4c7" class="outline-2">
+<h2 id="org129a4c7"><span class="section-number-2">7</span> USBメモリ</h2>
 <div class="outline-text-2" id="text-7">
 <pre class="example">
 教科書4.6節 pp.52~55 「USBメモリの使い方」「ファイル操作」参照
-
 </pre>
 </div>
 
-<div id="outline-container-org556cfd0" class="outline-4">
-<h4 id="org556cfd0">使う目的</h4>
-<div class="outline-text-4" id="text-org556cfd0">
+<div id="outline-container-org187357a" class="outline-4">
+<h4 id="org187357a">使う目的</h4>
+<div class="outline-text-4" id="text-org187357a">
 <p>
 講義で使うアプリと，講義で作成した文書などのデータを保存し，持ち運びします。
 </p>
@@ -877,9 +870,9 @@ z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わ�
 </div>
 </div>
 
-<div id="outline-container-org21cef31" class="outline-4">
-<h4 id="org21cef31">講義用アプリをUSBに準備する</h4>
-<div class="outline-text-4" id="text-org21cef31">
+<div id="outline-container-org61b3423" class="outline-4">
+<h4 id="org61b3423">講義用アプリをUSBに準備する</h4>
+<div class="outline-text-4" id="text-org61b3423">
 <p>
 講義資料フォルダから，「講義で使うアプリ」フォルダーを，
 自分のUSBにコピーしてください。
@@ -894,9 +887,9 @@ USBメモリに「ドキュメント」フォルダーを作成してくださ�
 </div>
 </div>
 
-<div id="outline-container-org50d6fd7" class="outline-4">
-<h4 id="org50d6fd7">ポータブル・ソフトウェア</h4>
-<div class="outline-text-4" id="text-org50d6fd7">
+<div id="outline-container-org6635029" class="outline-4">
+<h4 id="org6635029">ポータブル・ソフトウェア</h4>
+<div class="outline-text-4" id="text-org6635029">
 <p>
 <b>ポータブル・ソフトウェア</b> とは，USBメモリに入れて持ち運ぶことを考慮し
 て作られているソフトウェア (アプリ) のことです。
@@ -929,13 +922,13 @@ USBメモリの容量に余裕があって，自分に興味があれば，フ�
 </div>
 
 
-<div id="outline-container-orgf6ec08a" class="outline-3">
-<h3 id="orgf6ec08a"><span class="section-number-3">7.1</span> USBメモリの使い方の基本</h3>
+<div id="outline-container-orgf282055" class="outline-3">
+<h3 id="orgf282055"><span class="section-number-3">7.1</span> USBメモリの使い方の基本</h3>
 <div class="outline-text-3" id="text-7-1">
 </div>
-<div id="outline-container-org3b779d3" class="outline-4">
-<h4 id="org3b779d3">USBメモリの内容を見る</h4>
-<div class="outline-text-4" id="text-org3b779d3">
+<div id="outline-container-org8a65674" class="outline-4">
+<h4 id="org8a65674">USBメモリの内容を見る</h4>
+<div class="outline-text-4" id="text-org8a65674">
 <ul class="org-ul">
 <li>新たに差した場合:
 
@@ -959,9 +952,9 @@ USBメモリの容量に余裕があって，自分に興味があれば，フ�
 </div>
 </div>
 
-<div id="outline-container-orgea4c7e4" class="outline-4">
-<h4 id="orgea4c7e4">USBメモリの取り出し</h4>
-<div class="outline-text-4" id="text-orgea4c7e4">
+<div id="outline-container-org961e36a" class="outline-4">
+<h4 id="org961e36a">USBメモリの取り出し</h4>
+<div class="outline-text-4" id="text-org961e36a">
 <p>
 きちんと取り出さないとUSBの内容が壊れることがあります。
 </p>
@@ -976,18 +969,18 @@ PCの電源を落とせば，取り出せます。
 </div>
 </div>
 
-<div id="outline-container-orgd057e14" class="outline-4">
-<h4 id="orgd057e14">USB内にフォルダを作る</h4>
-<div class="outline-text-4" id="text-orgd057e14">
+<div id="outline-container-org9ecbe5e" class="outline-4">
+<h4 id="org9ecbe5e">USB内にフォルダを作る</h4>
+<div class="outline-text-4" id="text-org9ecbe5e">
 <p>
 USBメモリを開いて，右クリックして，新規，フォルダ
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5c56a77" class="outline-4">
-<h4 id="org5c56a77">USBメモリを取り出す</h4>
-<div class="outline-text-4" id="text-org5c56a77">
+<div id="outline-container-org710fdf4" class="outline-4">
+<h4 id="org710fdf4">USBメモリを取り出す</h4>
+<div class="outline-text-4" id="text-org710fdf4">
 <ul class="org-ul">
 <li>エクスプローラを開く</li>
 
@@ -999,18 +992,18 @@ USBメモリを開いて，右クリックして，新規，フォルダ
 </div>
 </div>
 
-<div id="outline-container-orgd0aa131" class="outline-4">
-<h4 id="orgd0aa131">USBへコピーする</h4>
-<div class="outline-text-4" id="text-orgd0aa131">
+<div id="outline-container-org2bbe083" class="outline-4">
+<h4 id="org2bbe083">USBへコピーする</h4>
+<div class="outline-text-4" id="text-org2bbe083">
 <p>
 コピーのやり方を二通り紹介します:
 </p>
 </div>
 
 
-<div id="outline-container-org8ee39be" class="outline-6">
-<h6 id="org8ee39be">ドラッグ &amp; ドロップ</h6>
-<div class="outline-text-6" id="text-org8ee39be">
+<div id="outline-container-org896b0dd" class="outline-6">
+<h6 id="org896b0dd">ドラッグ &amp; ドロップ</h6>
+<div class="outline-text-6" id="text-org896b0dd">
 <ol class="org-ol">
 <li>エクスプローラで，コピーしたいファイルやフォルダがある場所を開きま
 す。</li>
@@ -1023,9 +1016,9 @@ USBメモリを開いて，右クリックして，新規，フォルダ
 </div>
 </div>
 
-<div id="outline-container-org2a998a7" class="outline-6">
-<h6 id="org2a998a7">コピー &amp; ペースト</h6>
-<div class="outline-text-6" id="text-org2a998a7">
+<div id="outline-container-org8084c8f" class="outline-6">
+<h6 id="org8084c8f">コピー &amp; ペースト</h6>
+<div class="outline-text-6" id="text-org8084c8f">
 <p>
 あるいは
 </p>
@@ -1063,15 +1056,15 @@ USBメモリを開いて，右クリックして，新規，フォルダ
 </div>
 </div>
 </div>
-<div id="outline-container-org2850376" class="outline-2">
-<h2 id="org2850376"><span class="section-number-2">8</span> 講義用アプリをUSBに準備する</h2>
+<div id="outline-container-org80a419b" class="outline-2">
+<h2 id="org80a419b"><span class="section-number-2">8</span> 講義用アプリをUSBに準備する</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-29 木&gt; </span></span> この章の内容は，古いです。
 </p>
 
-<pre class="example">
-    学生フォルダ　/ H25情報処理基礎（鈴木）/ 
+<pre class="example" id="org6360bb3">
+学生フォルダ　/ H25情報処理基礎（鈴木）/ 
 </pre>
 
 <p>
@@ -1083,12 +1076,12 @@ PortableApps でよく使うのは，
 </ul>
 </div>
 </div>
-<div id="outline-container-org5809820" class="outline-2">
-<h2 id="org5809820"><span class="section-number-2">9</span> セキュリティ</h2>
+<div id="outline-container-org614d185" class="outline-2">
+<h2 id="org614d185"><span class="section-number-2">9</span> セキュリティ</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org77084c9" class="outline-3">
-<h3 id="org77084c9"><span class="section-number-3">9.1</span> セキュリティ対策について</h3>
+<div id="outline-container-org5926a6e" class="outline-3">
+<h3 id="org5926a6e"><span class="section-number-3">9.1</span> セキュリティ対策について</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 <a href="https://www.ipa.go.jp/security/antivirus/shiori.html">対策のしおり：IPA 独立行政法人 情報処理推進機構</a> の中から，基本的なもの
@@ -1118,8 +1111,8 @@ PortableApps でよく使うのは，
 </div>
 </div>
 
-<div id="outline-container-org85142f0" class="outline-3">
-<h3 id="org85142f0"><span class="section-number-3">9.2</span> セキュリティソフトについて</h3>
+<div id="outline-container-org6ca1719" class="outline-3">
+<h3 id="org6ca1719"><span class="section-number-3">9.2</span> セキュリティソフトについて</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 下記のサイトで調べてみましょう：
@@ -1131,12 +1124,12 @@ PortableApps でよく使うのは，
 </div>
 </div>
 </div>
-<div id="outline-container-orge2e547b" class="outline-2">
-<h2 id="orge2e547b"><span class="section-number-2">10</span> Web メール</h2>
+<div id="outline-container-org9a55551" class="outline-2">
+<h2 id="org9a55551"><span class="section-number-2">10</span> Web メール</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orgca5b881" class="outline-3">
-<h3 id="orgca5b881"><span class="section-number-3">10.1</span> 利用</h3>
+<div id="outline-container-org6df5405" class="outline-3">
+<h3 id="org6df5405"><span class="section-number-3">10.1</span> 利用</h3>
 <div class="outline-text-3" id="text-10-1">
 <ol class="org-ol">
 <li><a href="https://www.morioka-u.ac.jp">https://www.morioka-u.ac.jp</a> へ行って，Webmail リンクを探してください。</li>
@@ -1163,8 +1156,8 @@ PortableApps でよく使うのは，
 </div>
 </div>
 
-<div id="outline-container-org245b02a" class="outline-3">
-<h3 id="org245b02a"><span class="section-number-3">10.2</span> 署名の入力</h3>
+<div id="outline-container-org6448926" class="outline-3">
+<h3 id="org6448926"><span class="section-number-3">10.2</span> 署名の入力</h3>
 <div class="outline-text-3" id="text-10-2">
 <p>
 署名はメールの最後に付く，差出人情報です。
@@ -1177,13 +1170,12 @@ PortableApps でよく使うのは，
 <pre class="example">
 鈴木正幸 suzumasa@morioka-u.ac.jp
 盛岡大学 非常勤講師
-
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgd5b76bb" class="outline-3">
-<h3 id="orgd5b76bb"><span class="section-number-3">10.3</span> パスワードの変更</h3>
+<div id="outline-container-orgff0a9e0" class="outline-3">
+<h3 id="orgff0a9e0"><span class="section-number-3">10.3</span> パスワードの変更</h3>
 <div class="outline-text-3" id="text-10-3">
 <p>
 パスワードを変更したい人は，「オプション」メニューから，パスワードの変更を行ってください。
@@ -1191,8 +1183,8 @@ PortableApps でよく使うのは，
 </div>
 </div>
 
-<div id="outline-container-org6c66bcc" class="outline-3">
-<h3 id="org6c66bcc"><span class="section-number-3">10.4</span> 作成と送信</h3>
+<div id="outline-container-org46f4b5a" class="outline-3">
+<h3 id="org46f4b5a"><span class="section-number-3">10.4</span> 作成と送信</h3>
 <div class="outline-text-3" id="text-10-4">
 <ul class="org-ul">
 <li>メールの構造を理解し，</li>
@@ -1207,9 +1199,9 @@ PortableApps でよく使うのは，
 </ul>
 </div>
 
-<div id="outline-container-org340c99e" class="outline-5">
-<h5 id="org340c99e">送信ミスの体験</h5>
-<div class="outline-text-5" id="text-org340c99e">
+<div id="outline-container-orgdc1e8fe" class="outline-5">
+<h5 id="orgdc1e8fe">送信ミスの体験</h5>
+<div class="outline-text-5" id="text-orgdc1e8fe">
 <p>
 存在しないアドレスへメールを送信し，なにが起こるか確かめてください。
 </p>
@@ -1222,12 +1214,12 @@ PortableApps でよく使うのは，
 </div>
 </div>
 
-<div id="outline-container-org123149d" class="outline-2">
-<h2 id="org123149d"><span class="section-number-2">11</span> コンピュータとインタネットの利用環境</h2>
+<div id="outline-container-orgc7688f6" class="outline-2">
+<h2 id="orgc7688f6"><span class="section-number-2">11</span> コンピュータとインタネットの利用環境</h2>
 <div class="outline-text-2" id="text-11">
 </div>
-<div id="outline-container-orgfca0b25" class="outline-3">
-<h3 id="orgfca0b25"><span class="section-number-3">11.1</span> 盛岡大学が提供してくれるサービス</h3>
+<div id="outline-container-org5d2fed0" class="outline-3">
+<h3 id="org5d2fed0"><span class="section-number-3">11.1</span> 盛岡大学が提供してくれるサービス</h3>
 <div class="outline-text-3" id="text-11-1">
 <ul class="org-ul">
 <li><a href="./IDとパスワード.html">IDとパスワード</a>の確認
@@ -1268,8 +1260,8 @@ PortableApps でよく使うのは，
 </div>
 </div>
 
-<div id="outline-container-org309b93a" class="outline-3">
-<h3 id="org309b93a"><span class="section-number-3">11.2</span> 情報処理演習のために利用するインターネット上のサービス</h3>
+<div id="outline-container-org2e66f0f" class="outline-3">
+<h3 id="org2e66f0f"><span class="section-number-3">11.2</span> 情報処理演習のために利用するインターネット上のサービス</h3>
 <div class="outline-text-3" id="text-11-2">
 <ul class="org-ul">
 <li>講義の入り口 <a href="https://masayuki054.hatenablog.com/entry/2016/04/04/113109">https://masayuki054.hatenablog.com/entry/2016/04/04/113109</a></li>
@@ -1296,7 +1288,7 @@ Googleにアカウントを作りましょう
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2019-05-27 月 06:08</p>
+<p class="date">Created: 2021-04-11 日 20:36</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
