@@ -17,6 +17,7 @@ ORGS = [
   "typing.org",
   "web.org",
   "windows.org",
+  "references.org"
 ]
 
 SUBDIRS = [

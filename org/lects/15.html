@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-08-17 土 19:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Masayuki Suzuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0dcc4cf">1. 今日の講義 7/23</a>
+<ul>
+<li><a href="#org05c4a4a">1.1. おしらせ</a>
+<ul>
+<li><a href="#orgddea391">1.1.1. 講義後，質問時間を設けます</a></li>
+</ul>
+</li>
+<li><a href="#org7459536">1.2. 今日の課題</a>
+<ul>
+<li><a href="#orgbb53e88">1.2.1. レポートの提出</a></li>
+<li><a href="#orgb9b5e07">1.2.2. 自分の文書とUSBメモリ</a></li>
+<li><a href="#org373e059">1.2.3. 出席票の提出</a></li>
+</ul>
+</li>
+<li><a href="#org890d49c">1.3. これまでやってきた事</a>
+<ul>
+<li><a href="#org34a1b17">1.3.1. タイピング</a></li>
+<li><a href="#org86f3363">1.3.2. Firefox ポータブルを使いましょう</a></li>
+<li><a href="#orgf2eb7d4">1.3.3. Googleドライブの利用 <code>[4/6]</code></a></li>
+<li><a href="#org9bbfceb">1.3.4. Webアプリを利用しよう</a></li>
+<li><a href="#org118ba3a">1.3.5. Webとインターネットとは</a></li>
+<li><a href="#orgf1d939d">1.3.6. Word でレポートを書く (著作権法とファイル交換ソフト)</a></li>
+<li><a href="#org4e54c7f">1.3.7. 「レポートの書き方」のレポートの作成</a></li>
+<li><a href="#org6399b2d">1.3.8. Google サイト</a></li>
+<li><a href="#org1bfa02f">1.3.9. 講義メモの作成 (自習)</a></li>
+<li><a href="#org19ff9f8">1.3.10. 表計算レポートの作成</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0dcc4cf" class="outline-2">
+<h2 id="org0dcc4cf"><span class="section-number-2">1</span> 今日の講義 7/23</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org05c4a4a" class="outline-3">
+<h3 id="org05c4a4a"><span class="section-number-3">1.1</span> おしらせ</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgddea391" class="outline-4">
+<h4 id="orgddea391"><span class="section-number-4">1.1.1</span> 講義後，質問時間を設けます</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+A,B 両クラスとも，やり残しや質問等あれば，昼休み(12:30頃から)か講義
+終了後(16:00~) から対応します。希望はありますか？
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7459536" class="outline-3">
+<h3 id="org7459536"><span class="section-number-3">1.2</span> 今日の課題</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgbb53e88" class="outline-4">
+<h4 id="orgbb53e88"><span class="section-number-4">1.2.1</span> レポートの提出</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+成績評価するために，レポートを提出してもらいます。
+<a href="https://drive.google.com/open?id=15_E9TfxKCQQkiCtjY2hxcPV6FkJWMIXU">レポート提出の見本</a> を参考にしてください。
+</p>
+
+<ul class="org-ul">
+<li>タイピング練習に関するレポート
+
+<ul class="org-ul">
+<li>タイピング記録.xlsx</li>
+<li>タイピングレポート.docx</li>
+</ul></li>
+
+<li>レポート作成に関する課題
+<ul class="org-ul">
+<li>教科書「著作権とファイル交換ソフト」を提出済み
+<ul class="org-ul">
+<li>さらに，理解を深めるために，見出し2を用いた課題を自習してくだ
+さい。</li>
+</ul></li>
+
+<li>「大学生らしいレポートの書き方」を提出してください．</li>
+</ul></li>
+
+<li>教科書を読んで，「Webとインターネット」に関するまとめを作成し，
+レポートとして提出してください</li>
+
+<li><p>
+Googleサイトで自分の情報処理演習のページを作成
+</p>
+
+<p>
+Web上のハイパーテキストによる情報発信と共有を実践します。
+</p></li>
+
+<li>教科書の6章の「大学の概要」と「得点と偏差値の表」
+
+<ul class="org-ul">
+<li>教科書6章を読んで自分で作成してください。</li>
+</ul></li>
+
+<li><p>
+講義のまとめ
+</p>
+
+<p>
+講義のまとめを書いて，レポート提出フォルダに提出してください。
+</p>
+
+<p>
+学んだ事柄について考え，自分の知識にするためにおこないます。
+関連づけて考え，記憶することが大切です。
+</p></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb9b5e07" class="outline-4">
+<h4 id="orgb9b5e07"><span class="section-number-4">1.2.2</span> 自分の文書とUSBメモリ</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+今日作業した文書は，わかりやすい場所に保存してありますか？
+</p>
+
+<p>
+この講義で作成した文書は，自分の情報処理フォルダに，整理して，保存
+しましょう。
+</p>
+
+<p>
+情報処理フォルダの中に文書が増えてきたので，整理のために，フォルダ
+を作成し，適切な場所に移動しましょう。たとえば
+</p>
+
+<ul class="org-ul">
+<li>「タイピング」
+<ul class="org-ul">
+<li>タイピング記録に関連するもの</li>
+</ul></li>
+<li>「レポート文書作成」
+<ul class="org-ul">
+<li>著作権とファイル交換ソフト関連</li>
+<li>大学生らしいレポートの書き方関連</li>
+</ul></li>
+<li>「表計算」
+<ul class="org-ul">
+<li>教科書6章関連</li>
+</ul></li>
+<li>「Web」
+<ul class="org-ul">
+<li>Web関連</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgfe55536"></a>フォルダのバックアップ<br />
+<div class="outline-text-5" id="text-1-2-2-1">
+<p>
+USBメモリとGoogleドライブにバックアップを作りましょう
+</p>
+
+<ul class="org-ul">
+<li>以前作成した情報処理フォルダがあれば削除し，</li>
+
+<li>最新の情報処理フォルダを，USBメモリ/GoogleDriveに，コピーしましょう。</li>
+
+<li>それらを使って，自宅で，作業を続けられます。</li>
+
+<li>自宅で作業して文書を変更した場合は，大学の自分の情報処理フォル
+ダの文書を置き換えましょう。</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0563516"></a>USBメモリの使い方<br />
+<div class="outline-text-5" id="text-1-2-2-2">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 記名してください</li>
+
+<li class="on"><code>[X]</code> 挿して表示する
+<ul class="org-ul">
+<li>「フォルダを開いてファイルを表示」</li>
+<li>エクスプローラー &#x2013; 「PC」&#x2013; ドライブをクリックして開く</li>
+
+<li>前回抜き方が悪いと，修復が必要なことがある。修復をクリックして，
+修復する。</li>
+</ul></li>
+
+<li class="on"><code>[X]</code> 「取り出す」を選択して，抜く
+
+<ul class="org-ul">
+<li>エクスプローラー &#x2013; ドライブで右クリック &#x2013; 「取り出す」を選択
+&#x2013; 取り出す</li>
+
+<li>抜き方が悪いと，壊れることがある。</li>
+</ul></li>
+
+<li class="on"><code>[X]</code> フォルダを作成する</li>
+
+<li class="on"><code>[X]</code> フォルダをコピーする</li>
+
+<li class="on"><code>[X]</code> USBメモリ内をエクスプローラーで検索
+<ul class="org-ul">
+<li class="on"><code>[X]</code> ファイル名の検索</li>
+<li class="on"><code>[X]</code> 中身の検索</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org373e059" class="outline-4">
+<h4 id="org373e059"><span class="section-number-4">1.2.3</span> 出席票の提出</h4>
+</div>
+</div>
+
+
+<div id="outline-container-org890d49c" class="outline-3">
+<h3 id="org890d49c"><span class="section-number-3">1.3</span> これまでやってきた事</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org34a1b17" class="outline-4">
+<h4 id="org34a1b17"><span class="section-number-4">1.3.1</span> タイピング</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+<a href="./typing.html">タイピング</a> を読んで，レポートを作成し始めましょう:
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> ウィンドウ枠の固定をしましょう。</li>
+<li class="on"><code>[X]</code> 平均，最高，最低値を求めましょう。</li>
+<li class="on"><code>[X]</code> 正しいタイプ数のグラフとミスタイプ数のグラフを同時に描き，直線と見たときの傾きを求めましょう。</li>
+<li class="on"><code>[X]</code> 最後の行を使い，式の変更から自由になりましょう。</li>
+<li class="on"><code>[X]</code> 今日の記録は，最後の行の前に挿入しましょう。</li>
+<li class="on"><code>[X]</code> 平均，最高，最低値，グラフが自動的に更新されますか</li>
+<li class="on"><code>[X]</code> 二つのグラフを同時に描く</li>
+<li class="on"><code>[X]</code> 正しいキー数とミスタイプ数の間の相関係数を求めましょう</li>
+<li class="on"><code>[X]</code> Wordに表とグラフを貼る</li>
+</ul>
+
+<p>
+<a href="https://drive.google.com/open?id=15_E9TfxKCQQkiCtjY2hxcPV6FkJWMIXU">先生のレポート提出の見本フォルダ</a> の <a href="https://drive.google.com/open?id=1yH9FfoRHjtaYCbEH_Qb6Fl_-_lljE-n6">タイピング・フォルダ</a> の レポートを
+参考にしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86f3363" class="outline-4">
+<h4 id="org86f3363"><span class="section-number-4">1.3.2</span> Firefox ポータブルを使いましょう</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+<a href="./firefox.html">./firefox.html</a>
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Firefox portable を起動する</li>
+<li class="on"><code>[X]</code> 「masayuki054 hatena 情報処理演習」で検索，講義の入口ページ
+を探す</li>
+<li class="on"><code>[X]</code> リンクを右クリックし，新しいタブで開く</li>
+<li class="on"><code>[X]</code> サイドバーを開く</li>
+<li class="on"><code>[X]</code> 履歴を表示する</li>
+<li class="on"><code>[X]</code> ブックマークを表示する</li>
+<li class="on"><code>[X]</code> テーマを変更する</li>
+<li class="on"><code>[X]</code> ブックマークツールバーを表示する</li>
+<li class="on"><code>[X]</code> 検索と検索結果の保存</li>
+<li class="on"><code>[X]</code> 設定 ー カスタマイズ ー ツールバー ー ブックマークツールバー
+をチェック</li>
+<li class="off"><code>[&#xa0;]</code> 履歴の検索</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf2eb7d4" class="outline-4">
+<h4 id="orgf2eb7d4"><span class="section-number-4">1.3.3</span> Googleドライブの利用 <code>[4/6]</code></h4>
+<div class="outline-text-4" id="text-1-3-3">
+<p>
+<a href="./google.html">./google.html</a>
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org29de648"></a>レポート提出の確認<br />
+<div class="outline-text-5" id="text-1-3-3-1">
+<p>
+皆さんの提出フォルダをコピーしました。
+</p>
+
+<p>
+<a href="https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C">先生の講義用Googleドライブ</a> の A組のレポート提出フォルダのコピー，
+B組のレポート提出フォルダのコピーは共有されていますので，確認して
+ください。
+</p>
+</div>
+</li>
+
+<li><a id="org45483d4"></a>スマホの Googleドライブ アプリ<br />
+<div class="outline-text-5" id="text-1-3-3-2">
+<p>
+次週までにやってみてください
+</p>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 自分のスマホに，Googleドライブアプリをインストールしてください</li>
+<li class="off"><code>[&#xa0;]</code> スマホで，自分の Googleドライブを開いてみてください</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org9bbfceb" class="outline-4">
+<h4 id="org9bbfceb"><span class="section-number-4">1.3.4</span> <a href="./web.html">Webアプリを利用しよう</a></h4>
+<div class="outline-text-4" id="text-1-3-4">
+<p>
+便利なメモアプリを紹介します。 
+</p>
+
+<p>
+講義資料の <a href="./web.html">Webアプリを利用しよう</a> を読んで，Mindmup を使えるように
+しましょう。
+</p>
+
+<ul class="org-ul">
+<li>Mindmup は思考の記録に使えます。</li>
+
+<li>講義内容の自分の理解を記録してみましょう。</li>
+
+<li>先生の講義のメモは，<a href="https://drive.google.com/open?id=1JejNpqfR0bNi6jFBghix8AGCUGeZmW2-">先生の講義メモ</a> にあります。参考にしてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org118ba3a" class="outline-4">
+<h4 id="org118ba3a"><span class="section-number-4">1.3.5</span> Webとインターネットとは</h4>
+<div class="outline-text-4" id="text-1-3-5">
+<p>
+<a href="https://drive.mindmup.com/map/16pI02rBt_8vr-Vgt2quLYuYYvskV27vf">先生のMindmup図2</a> を使って説明します。
+</p>
+
+<ul class="org-ul">
+<li>先生の <a href="https://drive.google.com/open?id=0BwUWvGKIXA9PUWpOQ0JseTBRRmc">Webとインターネットの概念図</a> も参考にしてください。</li>
+<li>レポートの例は，<a href="https://drive.google.com/open?id=1vfkdQ-_vIFm8pZTnKJj9pFFJA1kbJLFz">Webとは</a> を参考にしてください。</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb6e524c"></a>Webとインターネットについて理解し，まとめを作ってください。<br />
+<div class="outline-text-5" id="text-1-3-5-1">
+<p>
+全体の流れは，<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Web%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.org">Webとインターネットについてのまとめを作成する</a> を読
+んでください。
+</p>
+
+<p>
+教科書3.1節「Web」と 8.1節「Webの歴史」, 9.1, 9.2 情報の調べ方につ
+いて説明します。下記の事をメモ帳 (またはmindmup) でまとめてくださ
+い。
+</p>
+
+<ul class="org-ul">
+<li>重要な言葉を洗い出し，意味をまとめましょう。
+
+<ul class="org-ul">
+<li><p>
+教科書を読んでも説明がない言葉は，検索して，調べ，自分のまとめをつ
+くりましょう。
+</p>
+
+<p>
+検索した言葉とサイトのURLを，ペアで，メモしましょう
+</p></li>
+</ul></li>
+
+<li>重要な言葉を使って，粗筋をまとめましょう。</li>
+
+<li>次回以降もまとめが継続できるように，まとめた内容と調べたサイトなどを
+保存しましょう:
+
+<ul class="org-ul">
+<li>メモ帳の人は，自分の情報処理フォルダに「ウェブとは.txt」で保存しま
+しょう。</li>
+
+<li>mindmup の人は，GoogleDrive のレポート提出フォルダに保存しましょう。</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf1d939d" class="outline-4">
+<h4 id="orgf1d939d"><span class="section-number-4">1.3.6</span> Word でレポートを書く (著作権法とファイル交換ソフト)</h4>
+<div class="outline-text-4" id="text-1-3-6">
+<p>
+教科書5章を読み，Word を使い始めましょう。
+</p>
+
+<p>
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<p>
+<a href="http://masayuki054.github.io/morioka_u_ict/text.html#sec-17">講義資料/教科書のまとめ-17章</a> にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> <a href="https://drive.google.com/open?id=1MZPZnazCkYqz_sFEiYkezJel3FdPwOig">著作権法とファイル交換ソフト.txt</a> をダウンロードし，</li>
+
+<li class="on"><code>[X]</code> 文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 文章を読み，意図をつかむ</li>
+<li class="on"><code>[X]</code> 各文の役割を考え，どんな文の要素で表わすかを決める</li>
+<li class="on"><code>[X]</code> マークダウン形式で表す
+
+<ul class="org-ul">
+<li><a href="http://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>  <a href="http://www.markdown.jp/syntax/">markdown記法</a></li>
+</ul></li>
+
+<li class="on"><code>[X]</code> マークダウン形式をプレビューして確かめる
+
+<ul class="org-ul">
+<li><a href="https://daringfireball.net/projects/markdown/dingus">Markdown プレビュー サイト</a></li>
+</ul></li>
+</ul></li>
+
+<li class="on"><code>[X]</code> 構成要素と構造が決った後，Word にコピペ
+
+<ul class="org-ul">
+<li>プレビュー画面をコピペするか，
+マークダウン形式をコピペするか，
+どちらかやりやすい方で</li>
+</ul></li>
+
+<li class="trans"><code>[-]</code> <p>
+Word で整形 
+</p>
+
+<p>
+マークダウン形式の文書をWordに貼り付け，下記のように，レポートの体裁を
+整えてください: 
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 気に入ったテーマを選ぶ
+<ul class="org-ul">
+<li>「スタイル」，「フォント」，「色使い」が決る</li>
+<li>フォントや色は，自分なりに調整してもいいです。</li>
+</ul></li>
+
+<li class="on"><code>[X]</code> 教科書に従って整形
+<ul class="org-ul">
+<li class="on"><code>[X]</code> タイトルの体裁
+<ul class="org-ul">
+<li>「題」スタイルの適用</li>
+</ul></li>
+<li class="on"><code>[X]</code> 日付・著者名の体裁
+<ul class="org-ul">
+<li>適当なスタイルが見つからない</li>
+<li>右そろえ</li>
+</ul></li>
+<li class="on"><code>[X]</code> 見出しの体裁
+<ul class="org-ul">
+<li>「見出し1」スタイルの適用</li>
+<li>番号を振るために，見出し1スタイルの変更</li>
+<li>フォントも小さければ，見出し1スタイルの変更で</li>
+</ul></li>
+<li class="on"><code>[X]</code> 箇条書きの体裁</li>
+<li class="on"><code>[X]</code> 引用の体裁</li>
+<li class="on"><code>[X]</code> 参考文献の体裁</li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> <p>
+見出し2の利用 
+</p>
+
+<p>
+前回と同様に，<a href="https://drive.google.com/open?id=1X5mf2ZkAZWNXhbtwFuOR9R-LFrYBPPE9">新らしい文書</a> (markdown化済み) をWordで整形してください。
+</p>
+
+<ul class="org-ul">
+<li>## の部分は見出し2スタイルを適用してください。
+<ul class="org-ul">
+<li>スタイルを変更して，番号付をしてください</li>
+<li>ナビゲーションウィンドウでアウトライン構造を確認してください</li>
+</ul></li>
+<li>レポート提出フォルダに「著作権とファイル交換ソフト.docx」で保
+存してください。</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e54c7f" class="outline-4">
+<h4 id="org4e54c7f"><span class="section-number-4">1.3.7</span> 「レポートの書き方」のレポートの作成</h4>
+<div class="outline-text-4" id="text-1-3-7">
+<p>
+大学生らしいレポートの書き方について調べ，レポートを作成します。
+</p>
+
+<p>
+<a href="http://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> で 大学生らしいレポートの書き方につい
+て調べ，レポートを作成します。各ページをmarkdown化したものを
+<a href="https://drive.google.com/open?id=1tNddm1WUsTPGbISzkwbfvKCAsDtImgV3">各ページをmarkdown化したものを</a> に置きました。編集して使ってください。
+</p>
+
+<p>
+レポート提出までの流れは，<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">レポートの書き方.org</a> を読んでください。
+</p>
+
+<p>
+今日は，
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 1. なぜ「レポートの書き方」を学ぶのか</li>
+<li class="on"><code>[X]</code> 2. 論文・レポートと感想文の違い</li>
+<li class="on"><code>[X]</code> 3. 大学レポートの種類</li>
+<li class="on"><code>[X]</code> 4. 文体についての注意点</li>
+<li class="on"><code>[X]</code> 5. レポートの構成</li>
+</ul>
+
+<p>
+について自分で理解し，そのまとめを作ってください。
+</p>
+
+<p>
+まずは，メモ帳で，markdown 形式にするのがいいと思います。
+</p>
+<ul class="org-ul">
+<li><a href="http://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>  <a href="http://www.markdown.jp/syntax/">markdown記法</a></li>
+<li><a href="https://daringfireball.net/projects/markdown/dingus">Markdown プレビュー サイト</a></li>
+</ul>
+
+<p>
+適宜，Word化してもいいです。
+</p>
+
+<p>
+次週，スムーズに続けられるように，文書やメモやブックマークを保存し
+てください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6399b2d" class="outline-4">
+<h4 id="org6399b2d"><span class="section-number-4">1.3.8</span> Google サイト</h4>
+<div class="outline-text-4" id="text-1-3-8">
+<p>
+<a href="./google.html">./google.html</a> の 「Googleサイト」を読んで，自分のページを作成してみましょう。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://sites.google.com/new">https://sites.google.com/new</a> でサイトを作成し，</li>
+
+<li>タイトルの作成</li>
+
+<li>レポート提出フォルダをリンク</li>
+
+<li>講義の概要と感想をGoogleDocで作成し，ページからリンクしてくださ
+い。</li>
+
+<li>自分の講義メモがあれば，リンクしてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1bfa02f" class="outline-4">
+<h4 id="org1bfa02f"><span class="section-number-4">1.3.9</span> 講義メモの作成 (自習)</h4>
+<div class="outline-text-4" id="text-1-3-9">
+<p>
+今日の講義の内容を思いだし，メモしてみましょう。
+</p>
+
+<p>
+学んだ事柄について考え，自分の知識にするためにおこないます。
+関連づけて考え，記憶することが大切です。
+</p>
+
+<p>
+<a href="https://drive.mindmup.com/map/1JejNpqfR0bNi6jFBghix8AGCUGeZmW2-">先生の講義メモ</a> も参考にしてください。
+コピーして，自由に変更して使ってください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19ff9f8" class="outline-4">
+<h4 id="org19ff9f8"><span class="section-number-4">1.3.10</span> 表計算レポートの作成</h4>
+<div class="outline-text-4" id="text-1-3-10">
+<p>
+何回かかけて，教科書6章を読み，Excelによる表計算について学びましょ
+う。
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgad8b094"></a>表とグラフ，Wordへの貼り付け<br />
+<div class="outline-text-5" id="text-1-3-10-1">
+<p>
+教科書6.1~6.6を読み
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに，「表計算フォルダ」を作成し，</li>
+
+<li>学部学科別学生数の表とグラフを作成し，
+自分の表計算フォルダに，「学部学科別学生数」で保存してください。</li>
+
+<li>学部学科別学生数の表とグラフを貼ったWord文書を作成し，
+自分の表計算フォルダフォルダに，「大学の概要」で保存してください。</li>
+
+<li>GoogleDrive のレポート提出フォルダに「表計算フォルダ」を作成し，
+GoogleDrive の表計算フォルダに，「学部学科別学生数」，「大学の概要」
+を保存してください。</li>
+</ul>
+
+<p>
+メモアプリで，Excel で表計算するときに必要なことについてまとめて
+おきましょう。
+</p>
+</div>
+</li>
+
+<li><a id="org7bc9fca"></a>計算<br />
+<div class="outline-text-5" id="text-1-3-10-2">
+<p>
+教科書6.7~6.9を読み，Excel について学び，
+得点と偏差値.xlsx (Excelブック) を作成してください
+</p>
+</div>
+</li>
+
+<li><a id="orgcff3339"></a>提出<br />
+<div class="outline-text-5" id="text-1-3-10-3">
+<p>
+下記の文書を <b>レポート提出フォルダ</b> の <b>表計算</b> フォルダに提出しましょう。
+</p>
+
+<ul class="org-ul">
+<li>大学の概要.docx (Word文書)</li>
+<li>学部学年別学生数.xlsx (Excelブック)</li>
+<li>得点と偏差値.xlsx (Excelブック)</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Masayuki Suzuki</p>
+<p class="date">Created: 2019-08-17 土 19:14</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

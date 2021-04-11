@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2019-05-27 月 06:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2019 Google</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理演習2019 Google</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org02c71c1">1. Google ラーニングセンターのガイド</a></li>
+<li><a href="#org566afe5">2. アカウントの作成</a></li>
+<li><a href="#orgc55853b">3. Gmail を使ってみよう</a></li>
+<li><a href="#org2298e6e">4. Google Drive</a>
+<ul>
+<li><a href="#org1b1d998">4.1. って何？</a></li>
+<li><a href="#org7525e5d">4.2. 講義で使う目的</a></li>
+<li><a href="#org15d83aa">4.3. 作り方</a></li>
+<li><a href="#org2605e34">4.4. 使い方</a></li>
+<li><a href="#orge1a8ec2">4.5. 情報処理フォルダの作成</a></li>
+<li><a href="#org7735565">4.6. レポート提出フォルダの作成</a></li>
+<li><a href="#org3af51df">4.7. スマホのアプリを使ってみる</a></li>
+</ul>
+</li>
+<li><a href="#org5144a10">5. GoogleSite (by google)</a></li>
+<li><a href="#org02a2346">6. GoogleSite (by すずき)</a>
+<ul>
+<li><a href="#orge2a9e43">6.1. Google new サイト を開く</a></li>
+<li><a href="#org836728b">6.2. サイトの作成</a></li>
+<li><a href="#org7f881ed">6.3. ページにタイトルをつける</a></li>
+<li><a href="#orgb4260b7">6.4. サイトの内容の追加・修正</a></li>
+<li><a href="#orgbd0d0af">6.5. サイトの内容の消去</a></li>
+<li><a href="#org78e3120">6.6. サイトの内容の移動</a></li>
+<li><a href="#org5a3b674">6.7. サイトの公開</a></li>
+<li><a href="#org64c8295">6.8. 新らしいページの追加</a></li>
+</ul>
+</li>
+<li><a href="#org6a7e65a">7. (古いかも) Google サイト</a></li>
+<li><a href="#org3066f92">8. GoogleDocs</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
+<a href="http://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
+<a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a>
+</p>
+
+<div id="outline-container-org02c71c1" class="outline-2">
+<h2 id="org02c71c1"><span class="section-number-2">1</span> Google ラーニングセンターのガイド</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Googleの利用法が分りやすく説明されています。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://gsuite.google.jp/learning-center/products/quickstart/#!/step-5">クイックスタート ガイド – Google ラーニング センター</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org566afe5" class="outline-2">
+<h2 id="org566afe5"><span class="section-number-2">2</span> アカウントの作成</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+スマホを使って，Googleにアカウントを作りましょう。
+</p>
+
+<p>
+<a href="https://support.google.com/accounts/?hl=ja#topic=3382296">Google アカウントの作成</a> (ヘルプセンター)
+</p>
+
+<ul class="org-ul">
+<li>携帯のメールアドレスを聞かれるのは，本人確認のためです。</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc55853b" class="outline-2">
+<h2 id="orgc55853b"><span class="section-number-2">3</span> Gmail を使ってみよう</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><a href="http://google.com">http://google.com</a> へいきましょう。</li>
+<li>Gmail サービスを探しましょう。
+Google アプリ （３ｘ３の□）で見つかります。</li>
+<li>ログインして自分のメールボックスをチェックしてみましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2298e6e" class="outline-2">
+<h2 id="org2298e6e"><span class="section-number-2">4</span> Google Drive</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org1b1d998" class="outline-3">
+<h3 id="org1b1d998"><span class="section-number-3">4.1</span> って何？</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+<a href="http://google.com">http://google.com</a> が提供しているファイル保存・共有サービス <a href="http://drive.google.com">http://drive.google.com</a>
+</p>
+<ul class="org-ul">
+<li>15GB まで無料</li>
+<li>ブラウザから利用できる</li>
+<li>パソコン，スマホそれぞれのためのアプリがある
+<ul class="org-ul">
+<li>パソコンとスマホの間でファイルをやり取りできる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7525e5d" class="outline-3">
+<h3 id="org7525e5d"><span class="section-number-3">4.2</span> 講義で使う目的</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>レポートの提出場所</li>
+<li>自分の文書保管場所</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org15d83aa" class="outline-3">
+<h3 id="org15d83aa"><span class="section-number-3">4.3</span> 作り方</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>Google にアカウントを作成し，</li>
+<li>Gmail でメールが受け取れるようにしましょう</li>
+<li>GoogleDrive に行って，上で作ったアカウントを使って，登録します。</li>
+<li>登録完了すれば使えます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2605e34" class="outline-3">
+<h3 id="org2605e34"><span class="section-number-3">4.4</span> 使い方</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>WebブラウザでGoogleを開き，ログインします。</li>
+<li>GoogleDriveを開きます。</li>
+<li>Windows のフォルダのように自然につかえます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1a8ec2" class="outline-3">
+<h3 id="orge1a8ec2"><span class="section-number-3">4.5</span> 情報処理フォルダの作成</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>自分の GoogleDrive に情報処理フォルダを作成しましょう。</li>
+<li>そのフォルダを開き，ブックマークしてください。</li>
+<li>盛大PCの情報処理演習フォルダの中身を、コピーしてみましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7735565" class="outline-3">
+<h3 id="org7735565"><span class="section-number-3">4.6</span> レポート提出フォルダの作成</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>自分の GoogleDrive に名前が， 「パソコンのログイン名 (m1918xxx)」のフォ
+ルダを作成し，</li>
+
+<li>そのフォルダを右クリックし，共有設定を行なってください:
+
+<ul class="org-ul">
+<li>リンクを知っている全員が閲覧可</li>
+
+<li>ユーザに suzumasa054@gmail.com を指定してください。</li>
+</ul></li>
+
+<li>そのフォルダを開き，ブックマークしてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3af51df" class="outline-3">
+<h3 id="org3af51df"><span class="section-number-3">4.7</span> スマホのアプリを使ってみる</h3>
+<div class="outline-text-3" id="text-4-7">
+<ul class="org-ul">
+<li>GoogleDrive アプリを持っていなければダウンロードしましょう。</li>
+
+<li>自分のドライブを使ってみましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5144a10" class="outline-2">
+<h2 id="org5144a10"><span class="section-number-2">5</span> GoogleSite (by google)</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><p>
+盛大PC のInternet Explorer では使えないようです <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-06-30 金&gt;</span></span>
+</p>
+
+<p>
+下記サイトを読んで，Google に自分のホームページを作ってみましょう:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://gsuite.google.jp/learning-center/products/sites/get-started/#!/">Google サイト スタートガイド</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org02a2346" class="outline-2">
+<h2 id="org02a2346"><span class="section-number-2">6</span> GoogleSite (by すずき)</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orge2a9e43" class="outline-3">
+<h3 id="orge2a9e43"><span class="section-number-3">6.1</span> Google new サイト を開く</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<a href="https://sites.google.com/new?usp=jotspot_si">https://sites.google.com/new?usp=jotspot_si</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org836728b" class="outline-3">
+<h3 id="org836728b"><span class="section-number-3">6.2</span> サイトの作成</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>右下の (+) をクリックして新しいサイトを作成します。</li>
+
+<li>右のサイドバーの「テーマ」から気にいったものを選びます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f881ed" class="outline-3">
+<h3 id="org7f881ed"><span class="section-number-3">6.3</span> ページにタイトルをつける</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>「ページのタイトル」の上にマウスを持っていき，</li>
+<li>「ページのタイトル」が選ばれた状態で，クリック，</li>
+<li>修正する</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb4260b7" class="outline-3">
+<h3 id="orgb4260b7"><span class="section-number-3">6.4</span> サイトの内容の追加・修正</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>右のサイドバーの「挿入」を選ぶか，</li>
+<li>追加修正したい，場所やものをクリックして，</li>
+<li>追加・修正する</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd0d0af" class="outline-3">
+<h3 id="orgbd0d0af"><span class="section-number-3">6.5</span> サイトの内容の消去</h3>
+<div class="outline-text-3" id="text-6-5">
+<ul class="org-ul">
+<li>消去したいものの上にマウスを移動し，</li>
+<li>ゴミ箱を選ぶ</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org78e3120" class="outline-3">
+<h3 id="org78e3120"><span class="section-number-3">6.6</span> サイトの内容の移動</h3>
+<div class="outline-text-3" id="text-6-6">
+<ul class="org-ul">
+<li>移動したいものの上にマウスを移動し，</li>
+<li>移動バーをマウスでつかんで，ドラッグ</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a3b674" class="outline-3">
+<h3 id="org5a3b674"><span class="section-number-3">6.7</span> サイトの公開</h3>
+<div class="outline-text-3" id="text-6-7">
+<ul class="org-ul">
+<li>右上の「公開」をクリック</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org64c8295" class="outline-3">
+<h3 id="org64c8295"><span class="section-number-3">6.8</span> 新らしいページの追加</h3>
+<div class="outline-text-3" id="text-6-8">
+<ul class="org-ul">
+<li>右のサイドバーの「ページ」を選び，</li>
+<li>+ をクリック</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6a7e65a" class="outline-2">
+<h2 id="org6a7e65a"><span class="section-number-2">7</span> (古いかも) Google サイト</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+下記サイトを見ながら自分のサイトを作ってみましょう:
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.appsupport.jp/category/sites/">Googleサイトの使い方</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=fDf3dEfAxnI">Googleサイトの使い方 (Youtube)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3066f92" class="outline-2">
+<h2 id="org3066f92"><span class="section-number-2">8</span> GoogleDocs</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Googleの提供する Office 
+</p>
+
+<p>
+そのうち書きます。
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2019-05-27 月 06:08</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

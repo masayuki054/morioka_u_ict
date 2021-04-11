@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2021-04-11 日 23:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2021 Windows</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="http://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理演習2021 Windows</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgcfa0992">1. Windows がしてくれること</a>
+<ul>
+<li><a href="#orgf3cf58f">1.1. 文書の保存と管理（をWindowsがしてくれる）</a></li>
+<li><a href="#orgb8b8198">1.2. アプリ(プログラム)の実行</a></li>
+<li><a href="#org04dc951">1.3. アプリ</a>
+<ul>
+<li><a href="#org5fd3758">コマンドプロンプト</a></li>
+<li><a href="#orgc71246f">プログラム言語</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org855afd6">2. Windowsキーの使い方</a>
+<ul>
+<li><a href="#orgcfd0054">2.1. Windows 8で追加・変更された機能</a></li>
+<li><a href="#org0304685">2.2. Windows 10で追加・変更された機能</a></li>
+</ul>
+</li>
+<li><a href="#org151f3fb">3. ドライブとフォルダ</a>
+<ul>
+<li><a href="#org0f475d7">3.1. エクスプローラ</a></li>
+<li><a href="#orgff46514">3.2. ドライブ</a></li>
+<li><a href="#org5d1a779">3.3. フォルダ</a>
+<ul>
+<li><a href="#org5710c71">フォルダの作成方法</a></li>
+</ul>
+</li>
+<li><a href="#orgebba387">3.4. 4.5　USBメモリの使い方</a></li>
+</ul>
+</li>
+<li><a href="#orgcb9b2a3">4. ショートカット</a>
+<ul>
+<li><a href="#org52eb66c">4.1. ショートカットとは</a></li>
+<li><a href="#org5899417">4.2. ショートカットの作り方</a></li>
+<li><a href="#orgd0fc5d8">4.3. ショートカットの練習</a></li>
+</ul>
+</li>
+<li><a href="#org5e86c66">5. snipping tool による画面のキャプチャ</a>
+<ul>
+<li><a href="#org464bc83">5.1. 「Snipping tool」を動かす</a></li>
+<li><a href="#org356f068">5.2. ウィンドウを切りとりを指定</a></li>
+<li><a href="#orgb23ac1e">5.3. ウィンドウの選択</a></li>
+<li><a href="#org1ce5c07">5.4. 保存</a></li>
+<li><a href="#org510099f">5.5. 関連サイト</a></li>
+</ul>
+</li>
+<li><a href="#org55e3f0f">6. よく使うものを素早く開こう</a>
+<ul>
+<li><a href="#org1170773">6.1. 講義サイトを素早く開く</a></li>
+<li><a href="#orgb252c3d">6.2. 講義用のフォルダを素早く開いてください</a></li>
+<li><a href="#org8173983">6.3. 講義用アプリを素早く開く</a></li>
+<li><a href="#orgfe47cd6">6.4. USBメモリ中の情報処理演習フォルダを素早く開いてください</a></li>
+<li><a href="#orgaf21e79">6.5. GoogleDriveを素早く開いてください</a>
+<ul>
+<li><a href="#org6c7f355">Webブラウザで開く</a></li>
+</ul>
+</li>
+<li><a href="#org679ab05">6.6. 開いたアプリのウィンドウを素早く切り替えてください</a>
+<ul>
+<li><a href="#org8f14cbe">タスクバー</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfcb7dca">7. ショートカットの作成</a></li>
+<li><a href="#orgd7f1492">8. 自分の情報処理フォルダのスクリーンショットの作成</a></li>
+<li><a href="#org2768376">9. USBメモリ</a>
+<ul>
+<li><a href="#org14573b0">9.1. 使う目的</a></li>
+<li><a href="#org1488b6e">9.2. 講義用アプリをUSBに準備する</a></li>
+<li><a href="#org904edaa">9.3. 使い方の基本</a>
+<ul>
+<li><a href="#orgba8117c">USBメモリの内容を見る</a></li>
+<li><a href="#org9e57123">USBメモリを取り出す</a></li>
+<li><a href="#orgf741906">USBへコピーする</a>
+<ul>
+<li><a href="#org7b4ba1b">ドラッグ &amp; ドロップ</a></li>
+<li><a href="#orged676b4">コピー &amp; ペースト</a></li>
+</ul>
+</li>
+<li><a href="#org9fbce63">USBからコピーする</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5cc48d9">10. バックアップと同期</a>
+<ul>
+<li><a href="#org9f03eb3">10.1. バックアップとは</a></li>
+<li><a href="#org1763cbd">10.2. ２つのフォルダを同一に保つ（同期）とは</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="http://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
+<a href="http://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
+<a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a> / 
+<a href="https://github.com/masayuki054/morioka_u_ict/wiki">掲示版</a>
+</p>
+
+<div id="outline-container-orgcfa0992" class="outline-2">
+<h2 id="orgcfa0992"><span class="section-number-2">1</span> Windows がしてくれること</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgf3cf58f" class="outline-3">
+<h3 id="orgf3cf58f"><span class="section-number-3">1.1</span> 文書の保存と管理（をWindowsがしてくれる）</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>文書をファイルに保存する</li>
+<li>ファイルをフォルダに保存する</li>
+<li>ファイルの中にどんな文書が保存されているかを，拡張子で表す</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb8b8198" class="outline-3">
+<h3 id="orgb8b8198"><span class="section-number-3">1.2</span> アプリ(プログラム)の実行</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+プログラムの実行をしてくれる
+</p>
+
+<p>
+プログラムが実行されると、そのプログラムが下記のことを行う: 
+</p>
+<ul class="org-ul">
+<li>データが入力され、</li>
+<li>入力データの処理を行い</li>
+<li>データを出力する</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04dc951" class="outline-3">
+<h3 id="org04dc951"><span class="section-number-3">1.3</span> アプリ</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org5fd3758" class="outline-4">
+<h4 id="org5fd3758">コマンドプロンプト</h4>
+<div class="outline-text-4" id="text-org5fd3758">
+<ul class="org-ul">
+<li>プログラムの実行</li>
+
+<li>プログラムの名前を使って，Windows へ指示をだす</li>
+
+<li>指示の組み合わせを書くことができる バッチファイル</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc71246f" class="outline-4">
+<h4 id="orgc71246f">プログラム言語</h4>
+<div class="outline-text-4" id="text-orgc71246f">
+<ul class="org-ul">
+<li>プログラムを書くための言語</li>
+
+<li>プログラム言語で書かれたファイルは，Windows で動かすことができる</li>
+
+<li>プログラム言語で書かれたファイルは，
+
+<ul class="org-ul">
+<li>人間が読み書き理解できて，</li>
+<li>プログラム化できて，</li>
+<li>Windows が実行できる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org855afd6" class="outline-2">
+<h2 id="org855afd6"><span class="section-number-2">2</span> Windowsキーの使い方</h2>
+<div class="outline-text-2" id="text-2">
+<dl class="org-dl">
+<dt>⊞ Win</dt><dd>スタートメニューを表示</dd>
+<dt>⊞ Win+E</dt><dd>エクスプローラを起動</dd>
+<dt>⊞ Win+F</dt><dd>ファイルやフォルダの検索を開く</dd>
+<dt>⊞ Win+D</dt><dd>デスクトップの表示／元に戻す</dd>
+<dt>⊞ Win+Tab ⇆、⊞ Win+⇧ Shift+Tab ⇆</dt><dd>フリップ 3D</dd>
+
+<dt>⊞ Win+↑</dt><dd>アクティブなウィンドウを最大化</dd>
+<dt>⊞ Win+↓</dt><dd>アクティブなウィンドウを最小化（最大化されたウィンドウは通常サイズに）</dd>
+<dt>⊞ Win+←</dt><dd>アクティブなウィンドウを画面左半分にリサイズ→右半分に移動→元に戻す</dd>
+<dt>⊞ Win+→</dt><dd>アクティブなウィンドウを画面右半分にリサイズ→左半分に移動→元に戻す</dd>
+<dt>⊞ Win+Home</dt><dd>アクティブなウィンドウ以外を最小化／元に戻す</dd>
+
+<dt>⊞ Win++</dt><dd>拡大鏡</dd>
+<dt>(no term)</dt><dd>⊞ Win+R:: ファイル名を指定して実行を表示</dd>
+<dt>⊞ Win+L</dt><dd>コンピュータをロックもしくはユーザーの簡易切り替え（Windows XP以降）</dd>
+<dt>⊞ Win+U</dt><dd>ユーティリティ・マネージャ（Windowsの障害者向け補助機能）を起動</dd>
+<dt>⊞ Win+F1</dt><dd>Windowsのヘルプを表示</dd>
+<dt>⊞ Win+Ctrl+F</dt><dd>ネットワーク上のコンピュータの検索</dd>
+<dt>⊞ Win+M</dt><dd>全てのウィンドウを最小化</dd>
+<dt>⊞ Win+⇧ Shift+M</dt><dd>⊞ Win+Mで最小化したウィンドウを全て元に戻す</dd>
+<dt>⊞ Win+T、⊞ Win+⇧ Shift+T</dt><dd>タスクスイッチを選択</dd>
+<dt>⊞ Win+B</dt><dd>タスクトレイを選択</dd>
+<dt>⊞ Win+Break</dt><dd>システムのプロパティ</dd>
+<dt>⊞ Win+数字</dt><dd>クイック起動に登録しているプログラムの左から（押した数字）番目を起動</dd>
+<dt>⊞ Win+G</dt><dd>ガジェットの表示</dd>
+<dt>⊞ Win+X</dt><dd>Windowsモビリティセンターの表示</dd>
+<dt>⊞ Win+数字</dt><dd>タスクバーに登録されたプログラムの左から（押した数字）番目を起動、または（押した数字）番目のプログラムのウィンドウをアクティブにする</dd>
+<dt>⊞ Win+B</dt><dd>「隠された通知アイコンの表示」ボタンをフォーカス</dd>
+<dt>⊞ Win+P</dt><dd>プロジェクター（あるいはノートPCの外部接続ディスプレイ）の切り替え</dd>
+</dl>
+</div>
+
+<div id="outline-container-orgcfd0054" class="outline-3">
+<h3 id="orgcfd0054"><span class="section-number-3">2.1</span> Windows 8で追加・変更された機能</h3>
+<div class="outline-text-3" id="text-2-1">
+<dl class="org-dl">
+<dt>⊞ Win+C</dt><dd>チャームバーを表示</dd>
+<dt>⊞ Win+I</dt><dd>設定チャームを開く</dd>
+<dt>⊞ Win+X</dt><dd>様々な機能へのショートカットメニューを表示</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org0304685" class="outline-3">
+<h3 id="org0304685"><span class="section-number-3">2.2</span> Windows 10で追加・変更された機能</h3>
+<div class="outline-text-3" id="text-2-2">
+<dl class="org-dl">
+<dt>⊞ Win+Tab ⇆</dt><dd>開いているすべてのウィンドウを一覧表示</dd>
+<dt>⊞ Win+ctrl</dt><dd>Win+Ctrl+D 新しい仮想デスクトップを作成する</dd>
+<dt>⊞ Win+Ctrl+←</dt><dd>前の仮想デスクトップに切り替える</dd>
+<dt>⊞ Win+Ctrl+→</dt><dd>次の仮想デスクトップに切り替える</dd>
+<dt>⊞ Win+I</dt><dd>「設定」アプリを開く</dd>
+<dt>⊞ Win+G</dt><dd>"ゲーム バー"を開く</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-org151f3fb" class="outline-2">
+<h2 id="org151f3fb"><span class="section-number-2">3</span> ドライブとフォルダ</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org0f475d7" class="outline-3">
+<h3 id="org0f475d7"><span class="section-number-3">3.1</span> エクスプローラ</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+<b>エクスプローラ</b> (windows-key + e) または <b>コンピュータ</b> から探索サービスを開始
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgff46514" class="outline-3">
+<h3 id="orgff46514"><span class="section-number-3">3.2</span> ドライブ</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+<b>ドライブ</b> は，装置のこと。下記などがある:
+</p>
+
+<ul class="org-ul">
+<li>ハードディスク・ドライブ C:, D:</li>
+<li>USBなどのリムーバブル・ドライブ F:, G:, &#x2026;</li>
+<li>ネットワーク・ドライブ</li>
+</ul>
+
+<p>
+<b>C: ドライブの検索</b> 
+</p>
+<ul class="org-ul">
+<li>どんなフォルダやファイルがあるのか，探索してみましょう。</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5d1a779" class="outline-3">
+<h3 id="org5d1a779"><span class="section-number-3">3.3</span> フォルダ</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org5710c71" class="outline-4">
+<h4 id="org5710c71">フォルダの作成方法</h4>
+<div class="outline-text-4" id="text-org5710c71">
+<ul class="org-ul">
+<li>フォルダで右クリック，</li>
+<li>コンテキスト・メニューから，新規作成 -&gt; フォルダ を選ぶ</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgebba387" class="outline-3">
+<h3 id="orgebba387"><span class="section-number-3">3.4</span> 4.5　USBメモリの使い方</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+<b>取り出し方</b> 
+</p>
+<ul class="org-ul">
+<li>ドライブを表示し （コンピュータやエクスプローラから），</li>
+<li>ドライブを選択（クリック）し，</li>
+<li>右クリックしドライブに対してできる指示をメニューで表示し，</li>
+<li>取り出しを選ぶ</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb9b2a3" class="outline-2">
+<h2 id="orgcb9b2a3"><span class="section-number-2">4</span> ショートカット</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org52eb66c" class="outline-3">
+<h3 id="org52eb66c"><span class="section-number-3">4.1</span> ショートカットとは</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+何ですか？
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5899417" class="outline-3">
+<h3 id="org5899417"><span class="section-number-3">4.2</span> ショートカットの作り方</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+どうやって作りますか？
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0fc5d8" class="outline-3">
+<h3 id="orgd0fc5d8"><span class="section-number-3">4.3</span> ショートカットの練習</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>自分の情報処理応用フォルダを素早く開いてください</li>
+<li>講義用フォルダを素早く開いてください</li>
+<li>USBメモリ中の情報処理応用フォルダを素早く開いてください</li>
+<li>ドロップボックスを素早く開いてください</li>
+</ul>
+
+<p>
+すべてのショートカットを，どの端末室でもすぐに使え，PCの電源を切っても
+残っている場所に保存しましょう
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5e86c66" class="outline-2">
+<h2 id="org5e86c66"><span class="section-number-2">5</span> snipping tool による画面のキャプチャ</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org464bc83" class="outline-3">
+<h3 id="org464bc83"><span class="section-number-3">5.1</span> 「Snipping tool」を動かす</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+： 「Windowsキー」 -&gt; 「全てのプログラム」-&gt; 「アクセサリ」-&gt; 「Snipping
+Tool」
+</p>
+
+<p>
+あるいは，スタートメニューの検索で Snipping を探します。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org356f068" class="outline-3">
+<h3 id="org356f068"><span class="section-number-3">5.2</span> ウィンドウを切りとりを指定</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+新規作成三角をクリックし，ウィンドウの領域切り取りを選ぶ
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb23ac1e" class="outline-3">
+<h3 id="orgb23ac1e"><span class="section-number-3">5.3</span> ウィンドウの選択</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+キャプチャするウィンドウをクリックして選ぶ
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ce5c07" class="outline-3">
+<h3 id="org1ce5c07"><span class="section-number-3">5.4</span> 保存</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+名前をつけて保存すると，ピクチャフォルダに保存される
+</p>
+</div>
+</div>
+
+<div id="outline-container-org510099f" class="outline-3">
+<h3 id="org510099f"><span class="section-number-3">5.5</span> 関連サイト</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+<a href="http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8">http://windows.microsoft.com/ja-jp/windows/use-snipping-tool-capture-screen-shots#1TC=windows-8</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org55e3f0f" class="outline-2">
+<h2 id="org55e3f0f"><span class="section-number-2">6</span> よく使うものを素早く開こう</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+<b>どこ</b> に <b>何</b> があるかを理解する
+</p>
+
+<p>
+<b>どこ</b> に <b>何</b> があるかをすべて覚えておくのは大変
+</p>
+
+<p>
+<b>どこ</b> に <b>何</b> があるかをできるだけコンピュータに記録しよう
+</p>
+
+<p>
+それが <b>ショートカット</b> や <b>インターネット_リンク</b>
+</p>
+
+<p>
+ショートカットやリンクは*デスクトップ*においておくと使いやすいのだけれど，
+盛大のパソコン環境では，電源を切ったり，ログオフすると，自分のデスクトップは初期化されてしまう。
+</p>
+
+<p>
+ので，*自分のフォルダ*か*USBメモリ*に保存するのがいいかも。
+</p>
+</div>
+
+<div id="outline-container-org1170773" class="outline-3">
+<h3 id="org1170773"><span class="section-number-3">6.1</span> 講義サイトを素早く開く</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>URLを，ブラウザのお気に入りや履歴に保存して，使う。</li>
+
+<li>URLを，常に素早くアクセスできる場所 (自分の情報処理演習フォルダ)に，保
+存してください。(URL横のアイコンをドラッグ・アンド・ドロップする)</li>
+
+<li>次からは，アイコン(インターネット・ショートカット)をダブル・クリック
+すれば，ブラウザが立ち上がります。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb252c3d" class="outline-3">
+<h3 id="orgb252c3d"><span class="section-number-3">6.2</span> 講義用のフォルダを素早く開いてください</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li><p>
+自分の情報処理応用フォルダを素早く開いてください
+</p>
+
+<p>
+コンピュータ/ライブラリ/マイドキュメント/情報処理演習
+</p></li>
+
+<li><p>
+講義用フォルダを素早く開いてください
+</p>
+
+<p>
+コンピュータ/生徒用サーバ/00情報処理鈴木2016
+</p></li>
+
+<li>フォルダのショートカットを作り，常に素早くアクセスできる場所に，保存
+して使ってみてください</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8173983" class="outline-3">
+<h3 id="org8173983"><span class="section-number-3">6.3</span> 講義用アプリを素早く開く</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>講義用アプリのショートカットを作り，わかりやすい所に置いておく</li>
+
+<li>コンピュータ/ライブラリ/マイドキュメント/情報処理演習/講義用アプリの
+中のフォルダからアプリケーションの本体を見つけ，ショートカットを作成
+し，ショートカットを切り取り，わかりやすいところで貼り付ける</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfe47cd6" class="outline-3">
+<h3 id="orgfe47cd6"><span class="section-number-3">6.4</span> USBメモリ中の情報処理演習フォルダを素早く開いてください</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+USBメモリを使っている人は，USBメモリ中の情報処理演習フォルダを素早く開
+いてください:
+</p>
+
+<ul class="org-ul">
+<li>Windows の「コンピュータ」からUSBドライブを選び開く</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaf21e79" class="outline-3">
+<h3 id="orgaf21e79"><span class="section-number-3">6.5</span> GoogleDriveを素早く開いてください</h3>
+<div class="outline-text-3" id="text-6-5">
+</div>
+<div id="outline-container-org6c7f355" class="outline-4">
+<h4 id="org6c7f355">Webブラウザで開く</h4>
+<div class="outline-text-4" id="text-org6c7f355">
+<ul class="org-ul">
+<li>インターネットエクスプローラやFirefox を使って，</li>
+<li><a href="http://google.com">http://google.com</a> へいってログインし，</li>
+<li>ドライブを選ぶ，</li>
+<li>URLを自分の情報処理フォルダにドラッグ・アンド・ドロップする</li>
+
+<li>次からは，保存した URL をダブル・クリックすれば，パスワードを入力し
+て，自動的に，GoogleDrive が開きます。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org679ab05" class="outline-3">
+<h3 id="org679ab05"><span class="section-number-3">6.6</span> 開いたアプリのウィンドウを素早く切り替えてください</h3>
+<div class="outline-text-3" id="text-6-6">
+<ul class="org-ul">
+<li>Windowsキーとタブキーの同時押し</li>
+<li>ALTキーとタブキーの同時押し</li>
+</ul>
+</div>
+
+<div id="outline-container-org8f14cbe" class="outline-4">
+<h4 id="org8f14cbe">タスクバー</h4>
+<div class="outline-text-4" id="text-org8f14cbe">
+<ul class="org-ul">
+<li>アプリのタブにマウスを重ねる
+
+<ul class="org-ul">
+<li>エクスプローラ
+
+<ul class="org-ul">
+<li>開いているフォルダ一覧と選択</li>
+</ul></li>
+
+<li>例えばExcel
+
+<ul class="org-ul">
+<li>開いているExcel文書のウィンドウ一覧と選択</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfcb7dca" class="outline-2">
+<h2 id="orgfcb7dca"><span class="section-number-2">7</span> ショートカットの作成</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+素早く開こうを参考に，
+</p>
+
+<p>
+自分の情報処理演習フォルダに，次のリンクやショートカットを作成してください。
+</p>
+
+<ul class="org-ul">
+<li>講義用Wikiのインターネットショートカット
+
+<ul class="org-ul">
+<li>ブラウザで開いたページのアイコンをマウスでドラッグ</li>
+</ul></li>
+
+<li>同じく，寿司打の（インターネット）ショートカット</li>
+<li>同じく，自分のWikiページの（インターネット）ショートカット</li>
+
+<li>生徒用サーバの情報処理2016鈴木へのショートカット
+
+<ul class="org-ul">
+<li>生徒用サーバにショートカットがあるので，それを自分のフォルダにドラッグ</li>
+</ul></li>
+
+<li>Firefox アプリのショートカット
+
+<ul class="org-ul">
+<li>講義用アプリの中のMozilla Firefoxフォルダの中の，firefox
+アプリケーションを右クリック</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd7f1492" class="outline-2">
+<h2 id="orgd7f1492"><span class="section-number-2">8</span> 自分の情報処理フォルダのスクリーンショットの作成</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>自分の情報処理フォルダを表示して，</li>
+<li><a href="./スクリーンショット.html">スクリーンショット</a>にしたがい,</li>
+<li>自分の情報処理演習フォルダのスクリーンショットを撮り，</li>
+<li>自分の レポート提出 GoogleDrive フォルダにアップしてください。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2768376" class="outline-2">
+<h2 id="org2768376"><span class="section-number-2">9</span> USBメモリ</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org14573b0" class="outline-3">
+<h3 id="org14573b0"><span class="section-number-3">9.1</span> 使う目的</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+講義で使うアプリと，講義で作成した文書などのデータを保存し，持ち運びします。
+</p>
+
+<p>
+自宅でも同じアプリが同じ状況で使えます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1488b6e" class="outline-3">
+<h3 id="org1488b6e"><span class="section-number-3">9.2</span> 講義用アプリをUSBに準備する</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+講義資料フォルダから，指定のものを，自分のUSBにコピーしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org904edaa" class="outline-3">
+<h3 id="org904edaa"><span class="section-number-3">9.3</span> 使い方の基本</h3>
+<div class="outline-text-3" id="text-9-3">
+</div>
+<div id="outline-container-orgba8117c" class="outline-4">
+<h4 id="orgba8117c">USBメモリの内容を見る</h4>
+<div class="outline-text-4" id="text-orgba8117c">
+<ul class="org-ul">
+<li>新たに差した場合:
+
+<ul class="org-ul">
+<li>Windows からどう処理するか聞かれる。</li>
+<li>フォルダを開くを選択すると，*エクスプローラ* が開かれ，
+内容が表示される。</li>
+</ul></li>
+
+<li>すでに差してある場合:
+
+<ul class="org-ul">
+<li>[Windows-key =&gt; コンピュータ] で <b>エクスプローラ</b> を開く</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブをクリック
+する。</li>
+
+<li>エクスプローラのウィンドウに内容が表示される。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9e57123" class="outline-4">
+<h4 id="org9e57123">USBメモリを取り出す</h4>
+<div class="outline-text-4" id="text-org9e57123">
+<ul class="org-ul">
+<li>エクスプローラを開く</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブを右クリック
+し，[取り出し]を選択</li>
+
+<li>Windows から「ハードウェアの取り外し」メッセージがでたら，USBメモリを取り出す</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf741906" class="outline-4">
+<h4 id="orgf741906">USBへコピーする</h4>
+<div class="outline-text-4" id="text-orgf741906">
+<p>
+コピーのやり方を二通り紹介します:
+</p>
+</div>
+
+
+<div id="outline-container-org7b4ba1b" class="outline-5">
+<h5 id="org7b4ba1b">ドラッグ &amp; ドロップ</h5>
+<div class="outline-text-5" id="text-org7b4ba1b">
+<ol class="org-ol">
+<li>エクスプローラで，コピーしたいファイルやフォルダがある場所を開きま
+す。</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開きます。</li>
+
+<li>コピーしたいファイルやフォルダをマウスで選択し，
+開いてあった USBのウィンドウへドラッグします。</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orged676b4" class="outline-5">
+<h5 id="orged676b4">コピー &amp; ペースト</h5>
+<div class="outline-text-5" id="text-orged676b4">
+<p>
+あるいは
+</p>
+
+<ol class="org-ol">
+<li>コピーしたいファイルやフォルダをマウスで選択し， 右クリックし，「コ
+ピー」を選ぶ。</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開き, 右クリックし，
+「貼り付け」を選ぶと，コピーが始まる。</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org9fbce63" class="outline-4">
+<h4 id="org9fbce63">USBからコピーする</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org5cc48d9" class="outline-2">
+<h2 id="org5cc48d9"><span class="section-number-2">10</span> バックアップと同期</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+<a href="http://freesoft-100.com/pasokon/backup.html">フリーソフト100のバックアップソフ</a>ト
+</p>
+
+<ul class="org-ul">
+<li>バックアップ用ソフト Backup</li>
+
+<li>同期用ソフト RealSync</li>
+</ul>
+</div>
+
+<div id="outline-container-org9f03eb3" class="outline-3">
+<h3 id="org9f03eb3"><span class="section-number-3">10.1</span> バックアップとは</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+普段使っているファイルやフォルダを，ある時点で，保存すること。保存され
+た中身をバックアップと呼ぶことも多い。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1763cbd" class="outline-3">
+<h3 id="org1763cbd"><span class="section-number-3">10.2</span> ２つのフォルダを同一に保つ（同期）とは</h3>
+<div class="outline-text-3" id="text-10-2">
+<p>
+別々の保存場所にある2つのフォルダのファイル内容を同一に保つソフト。
+データのバックアップをリアルタイムに行うことがでる。
+</p>
+
+<p>
+USBメモリーに対して利用すると、パソコンで編集しているファイルとUSBメモ
+リー内のファイル内容の同期を取り、ファイル内容を一定に保つことがでる。
+</p>
+
+<p>
+パソコン上のファイルを編集して作業を終えて、家に帰ってみたらUSBメモリー
+内容は編集前のままだった・・・同期さえとれば、そんな失敗をすることがな
+くなる。
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2021-04-11 日 23:12</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

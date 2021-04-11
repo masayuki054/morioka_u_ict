@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2019-05-27 月 06:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2019 パソコンの使い方</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理演習2019 パソコンの使い方</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org408342e">1. IDとパスワード</a>
+<ul>
+<li><a href="#orga6b633b">1.1. ID とパスワードとは</a></li>
+<li><a href="#org6a7ba34">1.2. 盛岡大学で使うシステム</a>
+<ul>
+<li><a href="#org7e375d7">盛岡大学ポータルサイト</a></li>
+<li><a href="#orgf4c1985">Webメール</a></li>
+<li><a href="#orgf68fc04">端末室のPC</a>
+<ul>
+<li><a href="#orgc50bc3b">パスワードの変更</a></li>
+</ul>
+</li>
+<li><a href="#orgb40e026">IDやパスワードを忘れたら</a></li>
+</ul>
+</li>
+<li><a href="#org6b421d6">1.3. パスワードについて</a></li>
+</ul>
+</li>
+<li><a href="#org02f1b22">2. Webブラウザの使い方</a>
+<ul>
+<li><a href="#org0b79846">2.1. お気に入り</a></li>
+<li><a href="#org4e57ea3">2.2. 履歴</a></li>
+<li><a href="#orga31499d">2.3. タブ</a></li>
+</ul>
+</li>
+<li><a href="#orgd0e0e08">3. パスワードのよしあし</a>
+<ul>
+<li><a href="#org29b8e6a">3.1. パスワードを破られる危険性</a></li>
+<li><a href="#org461ce0e">3.2. パスワードの攻撃方法</a></li>
+<li><a href="#org7e23038">3.3. 良いパスワードとは</a></li>
+</ul>
+</li>
+<li><a href="#org10c07ae">4. ファイルやフォルダの決まりごと</a>
+<ul>
+<li><a href="#org0bc8ae6">4.1. サーバって？</a></li>
+<li><a href="#orgc612acc">4.2. ファイル共有サービス</a></li>
+<li><a href="#orga7661ac">4.3. 自分のフォルダ</a></li>
+<li><a href="#org807727b">4.4. 学生用のファイル共有サービス</a></li>
+<li><a href="#org75d2cbc">4.5. 講義資料フォルダ</a></li>
+</ul>
+</li>
+<li><a href="#org4fdc6f9">5. 自分の情報の保存</a>
+<ul>
+<li><a href="#org79527be">5.1. マイドキュメント</a></li>
+<li><a href="#org8fdb2ca">5.2. 自分の情報処理応用フォルダ</a></li>
+</ul>
+</li>
+<li><a href="#orgc3147b7">6. そのほか，自分が管理する情報置場</a>
+<ul>
+<li><a href="#org5100f62">6.1. 自分のUSBメモリにいれて持ち運びする</a></li>
+<li><a href="#org395d93a">6.2. 自分のGoodgleDrive</a></li>
+</ul>
+</li>
+<li><a href="#orgc802568">7. USBメモリ</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org556cfd0">使う目的</a></li>
+<li><a href="#org21cef31">講義用アプリをUSBに準備する</a></li>
+<li><a href="#org50d6fd7">ポータブル・ソフトウェア</a></li>
+</ul>
+</li>
+<li><a href="#orgf6ec08a">7.1. USBメモリの使い方の基本</a>
+<ul>
+<li><a href="#org3b779d3">USBメモリの内容を見る</a></li>
+<li><a href="#orgea4c7e4">USBメモリの取り出し</a></li>
+<li><a href="#orgd057e14">USB内にフォルダを作る</a></li>
+<li><a href="#org5c56a77">USBメモリを取り出す</a></li>
+<li><a href="#orgd0aa131">USBへコピーする</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org8ee39be">ドラッグ &amp; ドロップ</a></li>
+<li><a href="#org2a998a7">コピー &amp; ペースト</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2850376">8. 講義用アプリをUSBに準備する</a></li>
+<li><a href="#org5809820">9. セキュリティ</a>
+<ul>
+<li><a href="#org77084c9">9.1. セキュリティ対策について</a></li>
+<li><a href="#org85142f0">9.2. セキュリティソフトについて</a></li>
+</ul>
+</li>
+<li><a href="#orge2e547b">10. Web メール</a>
+<ul>
+<li><a href="#orgca5b881">10.1. 利用</a></li>
+<li><a href="#org245b02a">10.2. 署名の入力</a></li>
+<li><a href="#orgd5b76bb">10.3. パスワードの変更</a></li>
+<li><a href="#org6c66bcc">10.4. 作成と送信</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org340c99e">送信ミスの体験</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org123149d">11. コンピュータとインタネットの利用環境</a>
+<ul>
+<li><a href="#orgfca0b25">11.1. 盛岡大学が提供してくれるサービス</a></li>
+<li><a href="#org309b93a">11.2. 情報処理演習のために利用するインターネット上のサービス</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
+<a href="https://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
+<a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a>
+</p>
+<div id="outline-container-org408342e" class="outline-2">
+<h2 id="org408342e"><span class="section-number-2">1</span> IDとパスワード</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orga6b633b" class="outline-3">
+<h3 id="orga6b633b"><span class="section-number-3">1.1</span> ID とパスワードとは</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b>ID</b> はあなたの <b>識別名</b> で，その <b>パスワード</b> は自分だけが知っている
+<b>秘密の言葉</b> です。
+</p>
+
+<p>
+IDとパスワードの組み合わせが，利用する <b>システム</b> に <b>登録</b> されています。
+</p>
+
+<p>
+<b>ログイン</b> とは，システムにIDとパスワードの組を入力することで，本人で
+あることを認証してもらい，システム内部に入って，内部の情報を使える状態
+になることです。
+</p>
+
+<p>
+IDは一度決まると普通変更できませんが，パスワードは変更可能です。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a7ba34" class="outline-3">
+<h3 id="org6a7ba34"><span class="section-number-3">1.2</span> 盛岡大学で使うシステム</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+ここでいう <b>システム</b> とは，コンピュータやインターネットサイトで，
+</p>
+
+<ol class="org-ol">
+<li>本人確認の認証を受けてシステム内部に入ると，</li>
+
+<li>自分の情報やサービスを扱える</li>
+</ol>
+
+<p>
+ようなものをいいます。
+</p>
+
+<p>
+盛岡大学で使うコンピュータやネットワークサービスで，IDとパスワードが必
+要なシステムには，以下のものがあります:
+</p>
+
+<ul class="org-ul">
+<li>コンピュータ室のPC</li>
+
+<li>Webメール</li>
+
+<li>学務用の盛岡大学ポータルサイト</li>
+</ul>
+</div>
+
+<div id="outline-container-org7e375d7" class="outline-4">
+<h4 id="org7e375d7">盛岡大学ポータルサイト</h4>
+<div class="outline-text-4" id="text-org7e375d7">
+<p>
+学年暦や学務からのお知らせ，出席簿，シラバスがあります。
+</p>
+
+<ul class="org-ul">
+<li>端末とは別のIDでログインします。</li>
+
+<li>大学からの配布資料を確認してください</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf4c1985" class="outline-4">
+<h4 id="orgf4c1985">Webメール</h4>
+<div class="outline-text-4" id="text-orgf4c1985">
+<p>
+盛岡大学が運用しているメールサーバを
+</p>
+
+<ul class="org-ul">
+<li>Webメールで，ブラウザからログインします。</li>
+<li>端末と同じIDとパスワードでログインします。</li>
+</ul>
+
+<p>
+使い方は別に紹介します。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf68fc04" class="outline-4">
+<h4 id="orgf68fc04">端末室のPC</h4>
+<div class="outline-text-4" id="text-orgf68fc04">
+<p>
+A306, A311, B313, 図書館にある端末室のPC達です。
+</p>
+
+<p>
+ID (識別名)とパスワードが配布されています。
+</p>
+
+<p>
+端末室のPCを使うために使います。
+</p>
+</div>
+
+<div id="outline-container-orgc50bc3b" class="outline-5">
+<h5 id="orgc50bc3b">パスワードの変更</h5>
+<div class="outline-text-5" id="text-orgc50bc3b">
+<p>
+配布されたIDを変更することはできませんが，パスワードは自分と管理者だけが変更できます。
+</p>
+
+<p>
+配布されたパスワードは，機械的に作られていて，覚えにくく忘れやすいものです。
+</p>
+
+<p>
+「Control」キー，「Alt」キー，「Delete]キー を同時押しすると，
+いくつかのメニュー項目が現れ， その中にパスワード変更メニューがある。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb40e026" class="outline-4">
+<h4 id="orgb40e026">IDやパスワードを忘れたら</h4>
+<div class="outline-text-4" id="text-orgb40e026">
+<p>
+学務係の人にその旨，伝えてください。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6b421d6" class="outline-3">
+<h3 id="org6b421d6"><span class="section-number-3">1.3</span> パスワードについて</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+自分には覚えやすく，他人からは覚えにくく，類推しにくい文字の列にしましょう。
+</p>
+
+<p>
+下記ページやサイトを参考にしてください：
+</p>
+
+<ul class="org-ul">
+<li><a href="#orgd0e0e08">3</a></li>
+
+<li><a href="https://www.lifehacker.jp/2011/05/110512easy-password-guess.html">パスワード破りのプロはこうやってアナタのパスワードを見破っている</a></li>
+
+<li><a href="https://www.lifehacker.jp/2010/04/100401passwordcrack.html">どうやってはっきんぐされるか？</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org02f1b22" class="outline-2">
+<h2 id="org02f1b22"><span class="section-number-2">2</span> Webブラウザの使い方</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+簡単に，インターネット・エクスプローラの使い方を説明します。
+</p>
+</div>
+
+<div id="outline-container-org0b79846" class="outline-3">
+<h3 id="org0b79846"><span class="section-number-3">2.1</span> お気に入り</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>IE の☆印メニューにあるお気に入りと履歴の使い方を覚えましょう。</li>
+<li>Wikiの自分のページを*お気に入り*に登録しましょう。</li>
+<li>*お気に入り*がどこに保存されているか確認しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e57ea3" class="outline-3">
+<h3 id="org4e57ea3"><span class="section-number-3">2.2</span> 履歴</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>履歴にはサイトごとに，今日訪問したページが時間順で並んでいます。</li>
+<li>履歴の中から重要なページをお気に入りに入れることができます。
+
+<ul class="org-ul">
+<li>右クリックしてください。</li>
+</ul></li>
+
+<li>戻るボタンから履歴を見てみましょう。
+
+<ul class="org-ul">
+<li>矢印をマウスで長押し</li>
+</ul></li>
+
+<li>履歴の長期保存
+
+<ul class="org-ul">
+<li>インターネットオプションの「終了時に閲覧の履歴を削除」のチェックをはずす</li>
+
+<li>C:/Users/自分/AppData/Local/MicroSoft/Windows/History
+が履歴保存ファイル</li>
+<li>フォルダオプションの表示，「保護されたOSファイルを表示しない」をはずす</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga31499d" class="outline-3">
+<h3 id="orga31499d"><span class="section-number-3">2.3</span> タブ</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+タブは，ブラウザで同時に開いているページ(を指す目印)です。
+</p>
+
+<ul class="org-ul">
+<li>新しいタブを開きましょう。
+<ul class="org-ul">
+<li>+をクリックして，新しいタブを開きましょう。</li>
+</ul></li>
+
+<li>リンクを新しいタブで開きましょう。
+<ul class="org-ul">
+<li>コントロールを押しながらリンクをクリック。</li>
+
+<li>閲覧ページを其のままにして，新らしいウィンドウでリンク先のページを
+開きます。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd0e0e08" class="outline-2">
+<h2 id="orgd0e0e08"><span class="section-number-2">3</span> パスワードのよしあし</h2>
+<div class="outline-text-2" id="text-3">
+<dl class="org-dl">
+<dt>出展</dt><dd><a href="https://azby.fmworld.net/usage/closeup/20110427">https://azby.fmworld.net/usage/closeup/20110427</a></dd>
+</dl>
+</div>
+
+<div id="outline-container-org29b8e6a" class="outline-3">
+<h3 id="org29b8e6a"><span class="section-number-3">3.1</span> パスワードを破られる危険性</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+パスワードを盗まれると、下記の危険性がある。
+</p>
+
+<ol class="org-ol">
+<li><p>
+情報流出
+</p>
+
+<p>
+嫌がらせや個人情報が流出したり、ハッキングされたりする
+</p></li>
+
+<li><p>
+なりすまし
+</p>
+
+<p>
+名前を騙られる
+</p></li>
+
+<li><p>
+サービスの不正利用
+</p>
+
+<p>
+自分が受けられるサービスを使われる
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org461ce0e" class="outline-3">
+<h3 id="org461ce0e"><span class="section-number-3">3.2</span> パスワードの攻撃方法</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+パスワードを知るため，パスワードを変えつつ不正なログインを繰り返す。
+</p>
+
+<p>
+パスワードの発生には下記の方法がある。
+</p>
+
+<ul class="org-ul">
+<li>辞書に載っている単語を利用して解読を行う辞書攻撃</li>
+<li>あらゆる文字の組み合わせを用いて強引に解読を行う総当たり攻撃</li>
+<li>ターゲットの個人情報に関する知識から、攻撃者自身がパスワードを類推する、類推攻撃</li>
+<li>その他、各種暗号攻撃などがある。？？？</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7e23038" class="outline-3">
+<h3 id="org7e23038"><span class="section-number-3">3.3</span> 良いパスワードとは</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+以下ようなのパスワードは破られやすい 
+</p>
+
+<ul class="org-ul">
+<li>自分や親しい人に関連する数字や文字、またはその組み合わせ</li>
+</ul>
+<p>
+　(例)誕生日、名前など 
+</p>
+
+<ul class="org-ul">
+<li>辞書に載っている単語をそのまま利用したもの</li>
+
+<li>単語の文字を逆順にしたり、似た形の別の文字に置き換えたもの</li>
+</ul>
+
+<p>
+良いパスワードは，下記のようなものです:
+</p>
+
+<ul class="org-ul">
+<li>自分は覚えやすく，パスワード攻撃でやぶられにくいもの</li>
+
+<li>推測しにくく、辞書にも載っていないもの</li>
+
+<li>パスワードは数字（0~9）、アルファベットの大文字（A~Z）、小文字（a~
+z）、記号（@, +, -, &ensp;&#x2026;など）最低でも3種類組み合わせて作る</li>
+
+<li>最低でも8文字以上はあるもの</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org10c07ae" class="outline-2">
+<h2 id="org10c07ae"><span class="section-number-2">4</span> ファイルやフォルダの決まりごと</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org0bc8ae6" class="outline-3">
+<h3 id="org0bc8ae6"><span class="section-number-3">4.1</span> サーバって？</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+サーバは下記のような，コンピュータのことです． 
+</p>
+
+<ul class="org-ul">
+<li>自分が使えるどこかのネットワークにつながっていて，</li>
+
+<li>みんなに，同時に，同じ*サービス*を提供する。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc612acc" class="outline-3">
+<h3 id="orgc612acc"><span class="section-number-3">4.2</span> ファイル共有サービス</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>ファイルサーバが，同じファイルを共有するためのサービスをしてくれます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga7661ac" class="outline-3">
+<h3 id="orga7661ac"><span class="section-number-3">4.3</span> 自分のフォルダ</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+自分のIDでログインすれば，
+どのコンピュータ室のどのPCを利用しても，
+自分のための同ジフォルダが提供されます。
+</p>
+
+<pre class="example">
+エクスプローラ =&gt; ライブラリ =&gt; マイドキュメント
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org807727b" class="outline-3">
+<h3 id="org807727b"><span class="section-number-3">4.4</span> 学生用のファイル共有サービス</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>盛岡大学のネットワークに設置されたサーバで,</li>
+<li>学生用のファイルサービスは，</li>
+</ul>
+
+<pre class="example">
+エクスプローラ =&gt; コンピュータ =&gt; W:ドライブ =&gt; 生徒用サーバ
+
+</pre>
+
+<p>
+で見えます
+</p>
+
+<ul class="org-ul">
+<li>先生が配りたいファイルやフォルダを作って，みんながそれを開いて同じ
+内容をコピーすることができます。便利です。</li>
+
+<li>学生全員が読み書きできるので，注意が必要です。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org75d2cbc" class="outline-3">
+<h3 id="org75d2cbc"><span class="section-number-3">4.5</span> 講義資料フォルダ</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+下記フォルダは，この講義で使う資料を共有するために使います
+</p>
+
+<ul class="org-ul">
+<li>コンピュータ　- 学生用フォルダ（ネットワークドライブ）- 00情報処理鈴木2016</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4fdc6f9" class="outline-2">
+<h2 id="org4fdc6f9"><span class="section-number-2">5</span> 自分の情報の保存</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+この講義では，個々の学生のために，主に下記の情報の保存場所を使います
+</p>
+</div>
+
+<div id="outline-container-org79527be" class="outline-3">
+<h3 id="org79527be"><span class="section-number-3">5.1</span> マイドキュメント</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><p>
+「コンピュータ」の「ネットワーク」に現れる，ドライブが盛大にあるPCど
+こでも使える自分専用のドライブです。在学中はずっと使い続けられると思
+います。
+</p>
+
+<p>
+自分専用ドライブは，'<b>マイドキュメント</b>'フォルダとして使えます。
+</p>
+
+<p>
+イクスプローラを開いて，「ライブラリ」-&gt;「ドキュメント」-&gt;「マイドキュ
+</p></li>
+</ul>
+<p>
+メント」とたどって，開きます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8fdb2ca" class="outline-3">
+<h3 id="org8fdb2ca"><span class="section-number-3">5.2</span> 自分の情報処理応用フォルダ</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+マイドキュメントの中に「情報処理応用」フォルダを作りましょう。
+</p>
+
+<p>
+このフォルダを <b>自分のフォルダ</b> と呼ぶことにします。
+</p>
+
+<p>
+<a href="./images/自分のフォルダ.jpeg">自分のフォルダの図</a> を見て確認しましょう。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc3147b7" class="outline-2">
+<h2 id="orgc3147b7"><span class="section-number-2">6</span> そのほか，自分が管理する情報置場</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org5100f62" class="outline-3">
+<h3 id="org5100f62"><span class="section-number-3">6.1</span> 自分のUSBメモリにいれて持ち運びする</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>自分のフォルダで右クリックし，「コピー」</li>
+<li>USBの自分のフォルダで右クリックし，「貼り付け」</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org395d93a" class="outline-3">
+<h3 id="org395d93a"><span class="section-number-3">6.2</span> 自分のGoodgleDrive</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+<a href="./google.html">Google Drive</a>を読んでください
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc802568" class="outline-2">
+<h2 id="orgc802568"><span class="section-number-2">7</span> USBメモリ</h2>
+<div class="outline-text-2" id="text-7">
+<pre class="example">
+教科書4.6節 pp.52~55 「USBメモリの使い方」「ファイル操作」参照
+
+</pre>
+</div>
+
+<div id="outline-container-org556cfd0" class="outline-4">
+<h4 id="org556cfd0">使う目的</h4>
+<div class="outline-text-4" id="text-org556cfd0">
+<p>
+講義で使うアプリと，講義で作成した文書などのデータを保存し，持ち運びします。
+</p>
+
+<p>
+自宅でも同じアプリが同じ状況で使えます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org21cef31" class="outline-4">
+<h4 id="org21cef31">講義用アプリをUSBに準備する</h4>
+<div class="outline-text-4" id="text-org21cef31">
+<p>
+講義資料フォルダから，「講義で使うアプリ」フォルダーを，
+自分のUSBにコピーしてください。
+</p>
+<ul class="org-ul">
+<li>FirefoxPortable (ChromePortable)</li>
+</ul>
+
+<p>
+USBメモリに「ドキュメント」フォルダーを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50d6fd7" class="outline-4">
+<h4 id="org50d6fd7">ポータブル・ソフトウェア</h4>
+<div class="outline-text-4" id="text-org50d6fd7">
+<p>
+<b>ポータブル・ソフトウェア</b> とは，USBメモリに入れて持ち運ぶことを考慮し
+て作られているソフトウェア (アプリ) のことです。
+</p>
+
+<p>
+アプリの設定も一緒に持ち運べ，USBメモリを持ち運べば，どこのパソコンで
+も，お気に入りのものがお気に入りの状態で使えます。
+</p>
+
+<p>
+USBメモリの容量に余裕があって，自分に興味があれば，フリーでポータブル
+なソフトウェアはとても便利です。
+</p>
+
+<p>
+しかし，USBメモリ紛失の危険性や，悪意のあるソフトウェアがインストール
+される危険性もありますので，あくまでも自己責任でお願いします。
+</p>
+
+<p>
+下記のソフトウェアはお勧めです。
+</p>
+<ul class="org-ul">
+<li>Chrome ポータブル</li>
+<li>FireFox ポータブル</li>
+<li>LibreOffice ポータブル (Office互換)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf6ec08a" class="outline-3">
+<h3 id="orgf6ec08a"><span class="section-number-3">7.1</span> USBメモリの使い方の基本</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org3b779d3" class="outline-4">
+<h4 id="org3b779d3">USBメモリの内容を見る</h4>
+<div class="outline-text-4" id="text-org3b779d3">
+<ul class="org-ul">
+<li>新たに差した場合:
+
+<ul class="org-ul">
+<li>Windows からどう処理するか聞かれる。</li>
+<li>フォルダを開くを選択すると，*エクスプローラ* が開かれ，
+内容が表示される。</li>
+</ul></li>
+
+<li>すでに差してある場合:
+
+<ul class="org-ul">
+<li>[Windows-key =&gt; コンピュータ] で <b>エクスプローラ</b> を開く</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブをクリック
+する。</li>
+
+<li>エクスプローラのウィンドウに内容が表示される。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgea4c7e4" class="outline-4">
+<h4 id="orgea4c7e4">USBメモリの取り出し</h4>
+<div class="outline-text-4" id="text-orgea4c7e4">
+<p>
+きちんと取り出さないとUSBの内容が壊れることがあります。
+</p>
+
+<p>
+取り出し方法 - USBメモリを選択して， - 右クリックして，「取り出し」
+</p>
+
+<p>
+PCの電源を落とせば，取り出せます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd057e14" class="outline-4">
+<h4 id="orgd057e14">USB内にフォルダを作る</h4>
+<div class="outline-text-4" id="text-orgd057e14">
+<p>
+USBメモリを開いて，右クリックして，新規，フォルダ
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c56a77" class="outline-4">
+<h4 id="org5c56a77">USBメモリを取り出す</h4>
+<div class="outline-text-4" id="text-org5c56a77">
+<ul class="org-ul">
+<li>エクスプローラを開く</li>
+
+<li>サイドメニューのドライブから USBメモリに対応するドライブを右クリック
+し，[取り出し]を選択</li>
+
+<li>Windows から「ハードウェアの取り外し」メッセージがでたら，USBメモリを取り出す</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd0aa131" class="outline-4">
+<h4 id="orgd0aa131">USBへコピーする</h4>
+<div class="outline-text-4" id="text-orgd0aa131">
+<p>
+コピーのやり方を二通り紹介します:
+</p>
+</div>
+
+
+<div id="outline-container-org8ee39be" class="outline-6">
+<h6 id="org8ee39be">ドラッグ &amp; ドロップ</h6>
+<div class="outline-text-6" id="text-org8ee39be">
+<ol class="org-ol">
+<li>エクスプローラで，コピーしたいファイルやフォルダがある場所を開きま
+す。</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開きます。</li>
+
+<li>コピーしたいファイルやフォルダをマウスで選択し，
+開いてあった USBのウィンドウへドラッグします。</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2a998a7" class="outline-6">
+<h6 id="org2a998a7">コピー &amp; ペースト</h6>
+<div class="outline-text-6" id="text-org2a998a7">
+<p>
+あるいは
+</p>
+
+<ol class="org-ol">
+<li>コピーしたいファイルやフォルダをマウスで選択し， 右クリックし，「コ
+ピー」を選ぶ。</li>
+
+<li>USBメモリのコピーしたい場所をエクスプローラで，開き, 右クリックし，
+「貼り付け」を選ぶと，コピーが始まる。</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2850376" class="outline-2">
+<h2 id="org2850376"><span class="section-number-2">8</span> 講義用アプリをUSBに準備する</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-29 木&gt; </span></span> この章の内容は，古いです。
+</p>
+
+<pre class="example">
+    学生フォルダ　/ H25情報処理基礎（鈴木）/ 
+</pre>
+
+<p>
+PortableApps でよく使うのは， 
+</p>
+<ul class="org-ul">
+<li>Webブラウザの Firefox</li>
+<li>オフィスソフトウェアのLibreOffice</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5809820" class="outline-2">
+<h2 id="org5809820"><span class="section-number-2">9</span> セキュリティ</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org77084c9" class="outline-3">
+<h3 id="org77084c9"><span class="section-number-3">9.1</span> セキュリティ対策について</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+<a href="https://www.ipa.go.jp/security/antivirus/shiori.html">対策のしおり：IPA 独立行政法人 情報処理推進機構</a> の中から，基本的なもの
+を選んでみました:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.ipa.go.jp/security/antivirus/documents/09_hazimete.pdf">セキュリティこぼれ話：初めての情報セキュリティ対策 - 09_hazimete.pdf</a></li>
+
+<li><a href="https://www.ipa.go.jp/security/y2k/virus/cdrom/index.html">ウイルス対策 スクール</a> (ウイルスとは何かを知ろう)</li>
+
+<li><a href="https://www.ipa.go.jp/security/antivirus/documents/01_virus.pdf">ウイルス対策 01_virus.pdf</a></li>
+
+<li><a href="https://www.ipa.go.jp/files/000011456.pdf">スマートフォンのセキュリティ対策のしおり</a> (pdf)</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><a href="https://www.ipa.go.jp/security/antivirus/documents/04_fusei.pdf">不正アクセス対策のしおり - 04_fusei.pdf</a></li>
+</ul>
+
+
+<p>
+読んでまとめを作ってみると良いと思います。余裕があれば，講義中にやりた
+いのですが。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org85142f0" class="outline-3">
+<h3 id="org85142f0"><span class="section-number-3">9.2</span> セキュリティソフトについて</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+下記のサイトで調べてみましょう：
+</p>
+
+<ul class="org-ul">
+<li><a href="https://securitysoft.asia/sougou/free/">無料セキュリティソフトの比較2017.3</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge2e547b" class="outline-2">
+<h2 id="orge2e547b"><span class="section-number-2">10</span> Web メール</h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-orgca5b881" class="outline-3">
+<h3 id="orgca5b881"><span class="section-number-3">10.1</span> 利用</h3>
+<div class="outline-text-3" id="text-10-1">
+<ol class="org-ol">
+<li><a href="https://www.morioka-u.ac.jp">https://www.morioka-u.ac.jp</a> へ行って，Webmail リンクを探してください。</li>
+<li><a href="https://www.morioka-u.ac.jp/webmail/">https://www.morioka-u.ac.jp/webmail/</a>
+<a href="https://ja.wikipedia.org/wiki/SquirrelMailhttps://ja.wikipedia.org/wiki/SquirrelMail">SquirrelMail</a> (Wikipedia) によるメールサービスです。
+盛岡大学の公式のメールサービスが動いています。</li>
+<li>ログインしてください:
+<ol class="org-ol">
+<li>メール用のIDがログイン名です。</li>
+<li><p>
+それようのパスワードを入力してください。
+例年，パスワードがわかりにくいです:
+</p>
+<ul class="org-ul">
+<li>l (える) と 1 (いち) の区別がつきません</li>
+<li>0 (ぜろ) と o (おー) の区別がつきません</li>
+</ul>
+<p>
+ので，ログイン出来ない人は文字を入れ替えて試してくだあさい。
+</p></li>
+</ol></li>
+<li>受信箱を開いてください。</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org245b02a" class="outline-3">
+<h3 id="org245b02a"><span class="section-number-3">10.2</span> 署名の入力</h3>
+<div class="outline-text-3" id="text-10-2">
+<p>
+署名はメールの最後に付く，差出人情報です。
+</p>
+
+<p>
+「個人情報」メニューから，署名を入力しておくといいと思います。
+私の署名は下記です:
+</p>
+<pre class="example">
+鈴木正幸 suzumasa@morioka-u.ac.jp
+盛岡大学 非常勤講師
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd5b76bb" class="outline-3">
+<h3 id="orgd5b76bb"><span class="section-number-3">10.3</span> パスワードの変更</h3>
+<div class="outline-text-3" id="text-10-3">
+<p>
+パスワードを変更したい人は，「オプション」メニューから，パスワードの変更を行ってください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c66bcc" class="outline-3">
+<h3 id="org6c66bcc"><span class="section-number-3">10.4</span> 作成と送信</h3>
+<div class="outline-text-3" id="text-10-4">
+<ul class="org-ul">
+<li>メールの構造を理解し，</li>
+<li>本文の書き方を学び，</li>
+<li>署名を作り，</li>
+<li>本文の書き方にしたがって，本文を作成してください。</li>
+<li>宛先を suzumasa@morioka-u.ac.jp にしてください。</li>
+<li>カーボンコピー (Cc:)
+を自分にして，自分にコピーが届くことも確認してください。</li>
+<li>スマホを持っていれば，スマホのアドレスにもコピーを送り，受信してください。</li>
+<li>本日作成したメモを添付してください。</li>
+</ul>
+</div>
+
+<div id="outline-container-org340c99e" class="outline-5">
+<h5 id="org340c99e">送信ミスの体験</h5>
+<div class="outline-text-5" id="text-org340c99e">
+<p>
+存在しないアドレスへメールを送信し，なにが起こるか確かめてください。
+</p>
+
+<p>
+起こったことを理解し，メモにまとめてください。
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org123149d" class="outline-2">
+<h2 id="org123149d"><span class="section-number-2">11</span> コンピュータとインタネットの利用環境</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-orgfca0b25" class="outline-3">
+<h3 id="orgfca0b25"><span class="section-number-3">11.1</span> 盛岡大学が提供してくれるサービス</h3>
+<div class="outline-text-3" id="text-11-1">
+<ul class="org-ul">
+<li><a href="./IDとパスワード.html">IDとパスワード</a>の確認
+<ul class="org-ul">
+<li>大学内PCで有効</li>
+<li><img src="./images/自分のフォルダ.png" alt="自分のフォルダ.png" /></li>
+</ul></li>
+
+<li><a href="./自分のフォルダ.html">自分のフォルダ</a>の確認
+<ul class="org-ul">
+<li>大学内PCで有効</li>
+</ul></li>
+
+<li><a href="./講義資料フォルダ.html">講義資料フォルダ</a>の確認
+<ul class="org-ul">
+<li>先生が，講義用の資料やアプリを配布するために使います</li>
+<li>大学内PCで有効</li>
+</ul></li>
+
+<li>盛大ホームページ <a href="https://www.morioka-u.ac.jp">https://www.morioka-u.ac.jp</a>
+<ul class="org-ul">
+<li>大学情報，Webメール</li>
+<li>インターネットで有効</li>
+</ul></li>
+
+<li>盛大学務ポータル <a href="https://morioka-u.ap-cloud.com/login">https://morioka-u.ap-cloud.com/login</a>
+<ul class="org-ul">
+<li>学年暦, 出席，シラバス，お知らせ，</li>
+<li>インターネットで有効</li>
+</ul></li>
+
+<li><a href="./Webメール.html">Webメール</a> 
+<ul class="org-ul">
+<li>盛岡大学宛のメール，</li>
+<li>インターネットで有効</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org309b93a" class="outline-3">
+<h3 id="org309b93a"><span class="section-number-3">11.2</span> 情報処理演習のために利用するインターネット上のサービス</h3>
+<div class="outline-text-3" id="text-11-2">
+<ul class="org-ul">
+<li>講義の入り口 <a href="https://masayuki054.hatenablog.com/entry/2016/04/04/113109">https://masayuki054.hatenablog.com/entry/2016/04/04/113109</a></li>
+
+<li>Googleアカウント <a href="https://google.com">https://google.com</a>  
+Googleにアカウントを作りましょう
+<ul class="org-ul">
+<li><a href="./GoogleDrive.html">GoogleDrive</a> 
+<ul class="org-ul">
+<li>レポートの提出場所に使います</li>
+</ul></li>
+</ul></li>
+
+<li>めもの作成 <a href="https://simplenote.com">https://simplenote.com</a>
+<ul class="org-ul">
+<li><a href="./Simplenote.html">Simplenote</a></li>
+</ul></li>
+
+<li>マップの作成 <a href="https://mindmeister.com">https://mindmeister.com</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2019-05-27 月 06:08</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

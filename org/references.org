@@ -1,0 +1,49 @@
+#+setupfile: ~/ict.git/org/info/index-bigblow-header.setup
+#+title: 
+
+* 情報処理演習2021 の資料 (2021向に要修正)
+
+
+** [[./typing.org][タイピング]]
+** [[./text.org][教科書のまとめと課題]] 
+
+** [[./windows.org][Windowsについて]]
+** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org][レポートの書き方に関するレポート作成]]
+
+** [[https://moriokauniv-my.sharepoint.com/:f:/g/personal/3000261_morioka-u_ac_jp/EsYPFqn1GoRCppaJAugPKEIBDNpxOF-vGGrjtYgJ5jmtoQ?e=FuTJlY][先生の情報処理演習共有フォルダ@OneDrive]]
+
+** https://172.16.10.48/wordpress/2020/03/24/リンク集
+
+
+* 講義資料 (2020向に要修正)
+
+** [[./guidance.org][ガイダンス]] (2019)
+** [[./pc.org][パソコンの使い方]] (2019)
+** [[./google.org][Googleを利用しよう]]
+** [[./firefox.org][Firefoxを利用しよう]]
+** [[./web.org][Webアプリを利用しよう]] 
+** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/][文書の作成などについて]] 
+
+
+** [[https://dynalist.com][Dynalist::アウトライナ]]
+** [[https://www.markdown.jp/what-is-markdown/][markdownとは--日本語Markdownユーザー会]]
+** [[https://daringfireball.net/projects/markdown/dingus][Markdown プレビュー サイト]]
+** [[https://workflowy.com][workflowyサイト]] (ログインが必要)
+** [[https://simplenote.com][simplenoteサイト]] (ログインが必要)
+
+** [[./s.org][鈴木の自己紹介]]
+
+* 講義関連サイト
+
+** [[http://masayuki054.github.io/morioka_u_ict/][今日の講義]] (2019)
+** [[https://sites.google.com/view/morioka-u-ict-2019/%E3%83%9B%E3%83%BC%E3%83%A0][GoogleSite]]
+** [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用グーグルドライブ]]
+
+   [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][- 2019]]
+   [[https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C][- 2018]]
+
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
+** [[https://github.com/masayuki054/morioka_u_ict/tree/master/][講義資料置き場]] @github.com
+
+
+

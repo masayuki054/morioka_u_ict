@@ -4,24 +4,23 @@
 
 * 今日の講義
 
-#+include: lects/15new.org :minlevel 2
+#+include: lects/01.org :minlevel 2
 
 
 * お知らせ
 #+include: lects/announce.org :minlevel 2
 
 
-* 受講の準備
+* 受講の準備 (要修正)
+  
 #+include: lects/受講の準備.org :minlevel 2
 
 
-* ガイダンス
-#+include: lects/ガイダンス2019.org :minlevel 2
-
-#+include: lects/2019_summer.org :minlevel 1
+* ガイダンス (要修正)
+#+include:lects/guidance-2021.org :minlevel 2
 
 
-* 講義資料
+* 講義資料 (要修正)
 
 ** [[./guidance.org][ガイダンス]]
 ** [[./pc.org][パソコンの使い方]]

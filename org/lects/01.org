@@ -1,127 +1,104 @@
-* 2019.04.08 1回目
+* 1回目 情報処理演習 2021.04.12
 
-** はじめに
-入学おめでとうございます。
+** 出席
+   [[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-楽しくやっていきましょう。
+   パスコードはA組は9564，B組は6839です。
 
-このページには，今日の講義の内容と進行の予定を書いています。
+** おしらせ       
 
-インターネット・エクスプローラを使って見てください。
+*** レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。
+    SCHEDULED: <2021-04-12 月>
 
-このページの中には，他のページを指している箇所 ( * リンク * )が，たくさんで
-てきます。リンクを示す文字列は，青く色がついています。
+*** 次回は，USBメモリを持ってきてください。
+    SCHEDULED: <2021-04-12 月>
+    - 他の講義でも指示があると思います。兼用してください。
+    - できれば，USB3.0 (挿し口が青)
+    - 新しく買うなら，16G以上の容量が割り安。
+      アプリも入れて持ち運べます。
+ 
+*** 講義時間外の質問
+    SCHEDULED: <2021-04-12 月>
 
-そのリンクをクリックすると新らしいページが開きます。同時に
-複数ページを開いていることが多いので，迷いやすいので注意してください。
+    僕は非常勤講師なので，大学での質問は下記時間場所でお願いします:
 
-リンクを開く時は，右クリックで開いてみて下さい。新らしいタブで開くの
-で，同時に開いているページがわかりやすくなります。
+    - 月曜日 12:00--12:50  の講義時間
+      - A306室
+      - 非常勤講師控え室
+      - 大学生協食堂にいます。
 
+    時間外で質問等ある場合は，
 
-** [[https://ja.wikipedia.org/wiki/情報リテラシー][情報リテラシー - Wikipedia]]
+    - msyk054@gmail.com にメールするか，
+    - 水曜日の14:00~17:00に，岩大図書館の学修支援コーナーに来る
 
-この講義の大きな目的は，情報の処理ができるようになることです。
+    - レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。
 
-#+BEGIN_QUOTE
+** アンケートの提出
 
-情報リテラシー（じょうほうリテラシー、information literacy）とは、情報
-(information)と識字 (literacy) を合わせた言葉で、情報を自己の目的に適
-合するように使用できる能力のことである。「 情報活用能力」や「情報活用
-力」、「情報を使いこなす力」とも表現する。
+  講義終了時に，下記のサイトからアンケートを出してください。
 
-[[https://ja.wikipedia.org/wiki/情報リテラシー][情報リテラシー - Wikipedia]]
+  https://forms.gle/DY8fejSBnYQc5Bd79
 
-#+END_QUOTE
+** 今日の講義内容 (ガイダンス)
 
+*** スタートアップセミナーの確認
 
-** ガイダンス
+    [[https://172.16.10.48][盛岡大学情報システムセンター]] https://172.16.10.48 に資料があると思
+    います。
 
-今日は，下記のページにしたがって，講義の説明をします:
+    - アカウントとパスワード変更
+    - パソコン教室の使い方
+    - ネットワークのこと
+    - ポータルとmelly
+    - office365
 
-- {{{ll(guidance,ガイダンス)}}}
+*** 講義の説明
+    - シラバス
+    - mindmap を配布して説明します。
 
-先生の自己紹介をします:
-- {{{lll(s,先生,自己紹介,sec-1)}}}
-  
-** 今日の課題
+*** 講義資料
 
-以下，今日やることです。
+    http://masayuki054.github.io/morioka_u_ict/references.html
 
-*** IDとパスワードの設定
+    - 講義で参照する資料です。まだ旧システムでの説明もあります。
+      
+*** 来週からタイピングを始めましょう。
 
-{{{lll(pc,パソコンの使い方,IDとパスワード,sec-1)}}} を読んでください。
+    https://masayuki054.github.io/morioka_u_ict/typing.html
 
--  良いパスワードを考えてきた人は, パスワードを設定しましょう。
--  良くないパスワードだったり，パスワードを考えて来なかった人は,
-   良いパスワードを考えましょう。
+    - 毎回，講義が始まる前に練習し，記録をメモしておきましょう。
+    - 記録は，メモ帖でもExcelでもいいですよ。
+    - タイピング数とミスタイプ数を記録しましょう。
 
-*** コンピュータ環境の確認と設定
+*** 講義内容の Mindmap 
 
-パソコンで，自分の情報を保存し利用するための決まりごとです。
+    [[https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing][Googleドライブ]]からダウンロードして, XMind で閲覧，メモを書き込んでください。
 
-- {{{lll(pc,パソコンの使い方,ファイルやフォルダの決まりごと,sec-4)}}} 
-- {{{lll(pc,パソコンの使い方,自分の情報の保存,sec-5)}}} 
-- {{{lll(pc,パソコンの使い方,自分が管理する情報置場,sec-6)}}} 
+    書き込んだマップは，自分の情報処理演習フォルダに提出してください。
 
-何回も説明しますので，徐々に覚えてください。
+* 関連ページ
 
-忘れたら，何回でも質問してください。
+   - [[https://morioka-u.ap-cloud.com/prtl][ポータル]]
+   - [[https://mellyclass.com/morioka-u/classrooms][melly]]
 
-*** Google 登録
+   先生の講義のための OneDrive フォルダ
+   - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021][3000261@morioka-u.ac.jpの情報処理演習2021 - OneDrive]]
 
-{{{ll(google,Googleを利用しよう)}}} を読んで，[[http://google.com][Google]] に登録しましょう。
+   先生の講義のための GoogleDrive フォルダ
+   - [[https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing][情報処理演習2021-共有Googleドライブ]]
+   - [[https://drive.google.com/drive/folders/1Hvrp439Zi7iQ-xLkAlFbYV4UNuYDkqYl][アンケート - Google ドライブ]]
 
-*** アンケートへの回答
+   [[https://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめ]]
 
-皆さんの今の状況を知って講義の内容や説明のやり方の参考にしますので，
-下記のリンクからアンケートを開き，回答し，送信してください。
+   [[http://masayuki054.github.io/morioka_u_ict/references.html][講義資料]] 講義で参照する資料です。まだ旧システムでの説明もあります。
 
-- [[https://forms.gle/tdxn6mBcLbFmKBv48][A組へのアンケート]]
-- [[https://forms.gle/F74YRCKrE8RtvNSY7][B組へのアンケート]]
-
-*** 出席票の提出
-
-下記のリンクから，記名し，回答し，送信してください。
-
-- [[https://forms.gle/T2tUQgdFkPseKSug9][A組の出席票]]
-- [[https://forms.gle/qF3tonD3d2quDBiZ8][B組の出席票]]
-
-
-*** 紙の出席カードの提出
-
-出席カード （紙）を配りますので，学生番号と氏名を書き，下記の内容について記述
-して，提出してください。
-
-- 自己紹介を書いてください
-  
-  - 出身地・出身高校 (あれば学科)
-  - 趣味，得意，好きなこと、嫌いなことなどなど
-  - 高校の情報でやったこと
-  - 講義への要望など
-  
-** USBメモリ
-
-   今年度はUSBメモリを使います。*来週まで*に用意してきてください．
-
-   USBの中にアプリを入れて，使いますので，
-
-   - アクセスが速くて, 
-   - ある程度容量がある,
-
-   ことが大切です。
-
-   USB3.0 4G以上空きがあるモノを用意してください。
-
-   持っていない人は，盛大生協においてある プリンストン PSUSB3-8G 710円
-   がおすすめです。
-
-   [[http://uzurea.net/usb-20-30-basic-knowledge/][今さら聞けない! USBの基礎知識『USB2.0と3.0の違いと見わけ方』]] を参考
-   にしてください．
-
-  
-** 退室時の注意
-- パソコンの電源を切るか，次に使う人がいる時はログオフしてください。
-- 出席カードは，先生に手渡ししてください。
-
-
+   microsoft 365
+   - [[https://www.office.com/][Microsoft Office ホーム]]
+     - [[https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e][Office クイック スタート - Office サポート]]
+       動画は英語のものあり，日本語 pdf をダウンロードできる。
+     - [[https://support.office.com/ja-jp/office-training-center][Microsoft 365 トレーニング]]
+       - outlook，oneDrive， word
+   
+  先生の放送大学の講義   
+  - [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]]
