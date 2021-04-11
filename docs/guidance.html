@@ -3,10 +3,10 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2019-04-14 日 19:03 -->
+<!-- 2021-04-11 日 20:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>情報処理演習2019 ガイダンス</title>
+<title>情報処理演習2021 ガイダンス</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
 <style type="text/css">
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -195,68 +208,44 @@
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">情報処理演習2019 ガイダンス</h1>
+<h1 class="title">情報処理演習2021 ガイダンス</h1>
 <div id="table-of-contents">
 <h2>&#30446;&#27425;</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0c4c626">1. IDとパスワードの確認</a></li>
-<li><a href="#org8826da2">2. 講義ページを見る</a></li>
-<li><a href="#orga6e3c0a">3. 講義の受け方について</a></li>
-<li><a href="#org8eaa957">4. 大切なこころ構えについて</a></li>
-<li><a href="#orgafec159">5. 自己紹介</a></li>
-<li><a href="#orgf1a6536">6. パソコンの使い方</a></li>
-<li><a href="#org0e07bbb">7. シラバスの説明</a></li>
-<li><a href="#orgca5013e">8. 講義内容の提案</a></li>
-<li><a href="#orgd99be58">9. 教えるときに気をつけたい10のこと</a></li>
+<li><a href="#orgfed6e43">1. IDとパスワードの確認</a></li>
+<li><a href="#org2396091">2. 講義ページを見る</a></li>
+<li><a href="#orgf34e490">3. 講義の受け方について</a></li>
+<li><a href="#org8ff64cd">4. 大切なこころ構えについて</a></li>
+<li><a href="#org9dd34e6">5. 自己紹介</a></li>
+<li><a href="#org37783d6">6. パソコンの使い方</a></li>
+<li><a href="#orgc604dea">7. シラバスの説明</a></li>
+<li><a href="#orgaaf7c07">8. 講義内容の提案</a></li>
+<li><a href="#org9178a42">9. 教えるときに気をつけたい10のこと</a></li>
 </ul>
 </div>
 </div>
@@ -264,10 +253,11 @@ for the JavaScript code in this tag.
 <a href="https://masayuki054.hatenablog.com/entry/2019/03/18/194043">はてなのページ</a> /
 <a href="https://masayuki054.github.io/morioka_u_ict">今日の講義</a> / 
 <a href="https://sites.google.com/view/morioka-u-ict-2019/">グーグルサイト</a> /
-<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a>
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">講義用グーグルドライブ</a> / 
+<a href="https://github.com/masayuki054/morioka_u_ict/wiki">掲示版</a>
 </p>
-<div id="outline-container-org0c4c626" class="outline-2">
-<h2 id="org0c4c626"><span class="section-number-2">1</span> IDとパスワードの確認</h2>
+<div id="outline-container-orgfed6e43" class="outline-2">
+<h2 id="orgfed6e43"><span class="section-number-2">1</span> IDとパスワードの確認</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="./pc.html">IDとパスワード</a>
@@ -281,8 +271,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org8826da2" class="outline-2">
-<h2 id="org8826da2"><span class="section-number-2">2</span> 講義ページを見る</h2>
+<div id="outline-container-org2396091" class="outline-2">
+<h2 id="org2396091"><span class="section-number-2">2</span> 講義ページを見る</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>パソコン起動と終了。</li>
@@ -299,8 +289,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga6e3c0a" class="outline-2">
-<h2 id="orga6e3c0a"><span class="section-number-2">3</span> 講義の受け方について</h2>
+<div id="outline-container-orgf34e490" class="outline-2">
+<h2 id="orgf34e490"><span class="section-number-2">3</span> 講義の受け方について</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>質問してください。意見をいってください</li>
@@ -312,8 +302,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org8eaa957" class="outline-2">
-<h2 id="org8eaa957"><span class="section-number-2">4</span> 大切なこころ構えについて</h2>
+<div id="outline-container-org8ff64cd" class="outline-2">
+<h2 id="org8ff64cd"><span class="section-number-2">4</span> 大切なこころ構えについて</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>仕組みを考えること</li>
@@ -327,8 +317,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgafec159" class="outline-2">
-<h2 id="orgafec159"><span class="section-number-2">5</span> 自己紹介</h2>
+<div id="outline-container-org9dd34e6" class="outline-2">
+<h2 id="org9dd34e6"><span class="section-number-2">5</span> 自己紹介</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li><a href="./s.html">自己紹介</a></li>
@@ -344,8 +334,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf1a6536" class="outline-2">
-<h2 id="orgf1a6536"><span class="section-number-2">6</span> パソコンの使い方</h2>
+<div id="outline-container-org37783d6" class="outline-2">
+<h2 id="org37783d6"><span class="section-number-2">6</span> パソコンの使い方</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 端末室のパソコンの使い方
@@ -364,8 +354,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org0e07bbb" class="outline-2">
-<h2 id="org0e07bbb"><span class="section-number-2">7</span> シラバスの説明</h2>
+<div id="outline-container-orgc604dea" class="outline-2">
+<h2 id="orgc604dea"><span class="section-number-2">7</span> シラバスの説明</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 盛岡大学のホームページ <a href="https://www.morioka-u.ac.jp/">https://www.morioka-u.ac.jp/</a> を眺めてみましょう。
@@ -386,8 +376,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgca5013e" class="outline-2">
-<h2 id="orgca5013e"><span class="section-number-2">8</span> 講義内容の提案</h2>
+<div id="outline-container-orgaaf7c07" class="outline-2">
+<h2 id="orgaaf7c07"><span class="section-number-2">8</span> 講義内容の提案</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 皆さんの意見を聞いてから色々決めたいと思いますが，予定していることは，
@@ -395,10 +385,10 @@ for the JavaScript code in this tag.
 </p>
 
 <ul class="org-ul">
-<li>タイピング練習をしましょう (<a href="./typing.html">タイピング</a>)
+<li>タイピング練習をしましょう (<a href="lects/typing.html">タイピング</a>)
 
 <ul class="org-ul">
-<li>寿司打 <a href="https://typing.sakura.ne.jp/sushida/">https://typing.sakura.ne.jp/sushida/</a></li>
+<li>寿司打 <a href="http://typing.sakura.ne.jp/sushida/">http://typing.sakura.ne.jp/sushida/</a></li>
 
 <li>毎回のタイピング結果を記録をメモし，あとでグラフにし，成長を確認
 しましょう</li>
@@ -427,8 +417,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd99be58" class="outline-2">
-<h2 id="orgd99be58"><span class="section-number-2">9</span> 教えるときに気をつけたい10のこと</h2>
+<div id="outline-container-org9178a42" class="outline-2">
+<h2 id="org9178a42"><span class="section-number-2">9</span> 教えるときに気をつけたい10のこと</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 これは僕がこれから講義中に気をつけたいことです。反することも多々あると思いますが，そのときは注意してください。
@@ -442,7 +432,7 @@ for the JavaScript code in this tag.
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2019-04-14 日 19:03</p>
+<p class="date">Created: 2021-04-11 日 20:36</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
