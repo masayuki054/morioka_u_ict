@@ -233,9 +233,801 @@
 <body>
 <div id="content">
 <h1 class="title">情報処理演習2021 タイピング 練習・記録・レポート</h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgdc86b36">1. タイピングメモと記録表の管理</a>
+<ul>
+<li><a href="#org66960b7">1.1. タイピングの記録メモ</a></li>
+<li><a href="#org9bb2b2e">1.2. 「メモ帳」アプリを動かす</a></li>
+<li><a href="#org852fce8">1.3. タイピングの記録の追加</a></li>
+<li><a href="#orge677b40">1.4. メモから表を作る (こぴぺ)</a></li>
+<li><a href="#org4111765">1.5. 表の枠を固定</a></li>
+</ul>
+</li>
+<li><a href="#orgdaddbcd">2. 正しいキー数のグラフを描く</a>
+<ul>
+<li><a href="#org56b6216">2.1. 列を選択する</a></li>
+<li><a href="#org300a47c">2.2. 別の列を更に選択する</a></li>
+<li><a href="#org8868aab">2.3. グラフを表示</a></li>
+<li><a href="#org3640b8c">2.4. グラフの保存</a></li>
+</ul>
+</li>
+<li><a href="#org6f0507c">3. タイピング練習のグラフ化</a>
+<ul>
+<li><a href="#org8b41eb4">3.1. グラフに描く項目</a></li>
+<li><a href="#org037eff1">3.2. 正しいキー数とミスタイプ数をグラフにする</a>
+<ul>
+<li><a href="#orgacd62a1">表の枠を固定</a></li>
+<li><a href="#org208702e">正しいキー数のデータ列を選ぶ</a></li>
+<li><a href="#orgdd2f506">続けてミスタイプ数を選ぶ</a></li>
+<li><a href="#org41f7a8e">グラフを描く</a></li>
+<li><a href="#orga28f155">グラフを直線（線形）近似して直線化，成長しているかを可視化</a></li>
+<li><a href="#org956fd23">直線の式を表示し，成長の割合を知る</a></li>
+</ul>
+</li>
+<li><a href="#org488ae37">3.3. グラフに描かれているデータ範囲の確認</a></li>
+<li><a href="#org1a6271a">3.4. データの最終行の追加</a></li>
+<li><a href="#org3d313fe">3.5. 表の先頭に統計値を計算する (あとで)</a></li>
+<li><a href="#org8501a42">3.6. 自分の成長度の評価 (あとで)</a></li>
+<li><a href="#org1d72e4f">3.7. グラフの描き方について</a>
+<ul>
+<li><a href="#org8bc418d">グラフの書き方について，推奨する説明サイト</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb58383d">4. 練習成果の統計処理</a>
+<ul>
+<li><a href="#orgf416977">4.1. 統計値の計算</a></li>
+<li><a href="#orgb1ca75a">4.2. 上達度の計算</a></li>
+<li><a href="#org9404d7e">4.3. 正しく打ったキー数とミスタイプ数の関係</a></li>
+<li><a href="#org22a9319">4.4. 自分の上達度は？</a></li>
+</ul>
+</li>
+<li><a href="#org11ea0a3">5. 表計算/数式と関数</a>
+<ul>
+<li><a href="#orgb3dd3d8">5.1. いい点</a></li>
+<li><a href="#org7595eff">5.2. 数式を使うための準備</a>
+<ul>
+<li><a href="#org5a5890b">数式の表示</a></li>
+</ul>
+</li>
+<li><a href="#orge9b90de">5.3. 数式の入力</a></li>
+<li><a href="#org173ceb9">5.4. データ</a></li>
+<li><a href="#orgfb200b7">5.5. データ列の入力</a></li>
+<li><a href="#org316e4eb">5.6. 関数の利用</a></li>
+<li><a href="#orgddfca08">5.7. ふたつのデータ列が必要な関数</a></li>
+<li><a href="#orgbf093ae">5.8. 通し回数列の作り方</a></li>
+</ul>
+</li>
+<li><a href="#org8de35a8">6. タイピング練習レポートの作成</a>
+<ul>
+<li><a href="#orgbe1afc1">6.1. 目的</a></li>
+<li><a href="#org944ebe7">6.2. 内容</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 <p>
 <a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ</a>/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">OneDrive</a>
 </p>
+<div id="outline-container-orgdc86b36" class="outline-2">
+<h2 id="orgdc86b36"><span class="section-number-2">1</span> タイピングメモと記録表の管理</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org66960b7" class="outline-3">
+<h3 id="org66960b7"><span class="section-number-3">1.1</span> タイピングの記録メモ</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><b>自分の情報処理フォルダ</b> の中に，
+<ul class="org-ul">
+<li><b>タイピング</b> フォルダを作成し，
+そのフォルダの中に，
+<ul class="org-ul">
+<li><b>タイピングメモ.txt</b> を作成しましょう。</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9bb2b2e" class="outline-3">
+<h3 id="org9bb2b2e"><span class="section-number-3">1.2</span> 「メモ帳」アプリを動かす</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>ウィンドウズキー を押して，「スタート画面」を出す。</li>
+<li>一番下の検索領域に「メモ帳」を入力する。</li>
+<li>「メモ帳」アプリが表示される。</li>
+<li>ダブルクリックして動かす。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org852fce8" class="outline-3">
+<h3 id="org852fce8"><span class="section-number-3">1.3</span> タイピングの記録の追加</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li><b>タイピングメモ.txt</b> をダブルクリックして，メモ帳を動かします。</li>
+
+<li>末尾に今日の記録を，先週と同じ形式で，追加してください。
+
+<ul class="org-ul">
+<li>半角コンマでデータを区切ること</li>
+<li>各行のデータ数をあわせること</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge677b40" class="outline-3">
+<h3 id="orge677b40"><span class="section-number-3">1.4</span> メモから表を作る (こぴぺ)</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+今日は，正しい表になっているか，確かめてみましょう:
+</p>
+
+
+<ul class="org-ul">
+<li><a href="https://d.hatena.ne.jp/ogohnohito/20090829/p1">Excel にテキストデータ（CSV形式）を貼り付ける</a>を参考にしましょう。</li>
+
+<li>デスクトップにある Excel のアイコンをダブルクリックして，Excelを動か
+す。</li>
+
+<li>メモ帳で，開いている <b>タイピングメモ</b> のすべてを <b>コピー</b> し，</li>
+
+<li>Excel の表の右上端でクリックし選択します。そこで，右クリックし，貼り付けを選びます。
+
+<ul class="org-ul">
+<li>「貼り付けのオプション」から，「外部データの取り込み」をえらび，いっ
+たん取り込みます。</li>
+
+<li>右下にあらわれる (Ctrl)をクリックし,
+
+<ul class="org-ul">
+<li>テキストファイルウィザードを使用して，</li>
+
+<li>区切り文字や，日本語コードを指定すると，表としてコピーされるはずです。</li>
+</ul></li>
+</ul></li>
+
+<li>正しく表ができるまで，タイピングメモの修正こぴぺを繰り返してください。</li>
+
+<li>表を <b>タイピング記録表</b> という名前の Excel 文書で保存してください:
+
+<ul class="org-ul">
+<li>Excelブック</li>
+<li>日本語コードは，utf-8</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4111765" class="outline-3">
+<h3 id="org4111765"><span class="section-number-3">1.5</span> 表の枠を固定</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+記録数が多くなり，表が画面に収まりきらなくなった時，
+表の先頭と末尾が同時に画面に表示されているようにします。
+</p>
+
+<ul class="org-ul">
+<li>先頭付近のセル（例えば、B列の５行目とか）を選び、</li>
+<li>「表示」メニューから「ウィンドウ枠の固定」し、</li>
+<li>表の先頭部と末尾部が同時に表示されている状態にする。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdaddbcd" class="outline-2">
+<h2 id="orgdaddbcd"><span class="section-number-2">2</span> 正しいキー数のグラフを描く</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org56b6216" class="outline-3">
+<h3 id="org56b6216"><span class="section-number-3">2.1</span> 列を選択する</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+表の枠を固定し，
+表の先頭部と末尾部が同時に表示されている状態で、
+下記のようにデータ列全体を選択する：
+</p>
+
+<ul class="org-ul">
+<li>頭でクリック</li>
+<li>お尻でシフト＋クリック（追加選択）</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org300a47c" class="outline-3">
+<h3 id="org300a47c"><span class="section-number-3">2.2</span> 別の列を更に選択する</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+表の先頭部と末尾部が同時に表示されている状態で、
+別の列を選択するには，下記のようにデータ列全体を選択する：
+</p>
+
+<ul class="org-ul">
+<li>頭でコントロールを押しながらクリック</li>
+<li>お尻でシフト＋クリック（追加選択）</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8868aab" class="outline-3">
+<h3 id="org8868aab"><span class="section-number-3">2.3</span> グラフを表示</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+列の選択が終わったら:
+</p>
+<ul class="org-ul">
+<li>「挿入」メニューの「おすすめグラフ」タブから，好きなグラフをえら
+ぶ</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3640b8c" class="outline-3">
+<h3 id="org3640b8c"><span class="section-number-3">2.4</span> グラフの保存</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+記録表とは別に，グラフを保存しておきましょう。
+</p>
+
+<p>
+「別名で保存」します。名前は「タイピンググラフ」にしましょう。
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="outline-container-org6f0507c" class="outline-2">
+<h2 id="org6f0507c"><span class="section-number-2">3</span> タイピング練習のグラフ化</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org8b41eb4" class="outline-3">
+<h3 id="org8b41eb4"><span class="section-number-3">3.1</span> グラフに描く項目</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>正しいキー数</li>
+
+<li>ミスタイプ数</li>
+
+<li>全入力キー数 （後で）</li>
+
+<li>正しいタイプ率 （後で）</li>
+
+<li>ミスタイプ率 （後で）</li>
+
+<li>それぞれの直線近似式</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org037eff1" class="outline-3">
+<h3 id="org037eff1"><span class="section-number-3">3.2</span> 正しいキー数とミスタイプ数をグラフにする</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgacd62a1" class="outline-4">
+<h4 id="orgacd62a1">表の枠を固定</h4>
+<div class="outline-text-4" id="text-orgacd62a1">
+<ul class="org-ul">
+<li>見出し行付近と最終行付近を同時に見るために</li>
+
+<li>左上隅に枠を入れるセルを選択し，</li>
+
+<li>「表示」メニューから「ウィンドウ枠の固定」</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org208702e" class="outline-4">
+<h4 id="org208702e">正しいキー数のデータ列を選ぶ</h4>
+<div class="outline-text-4" id="text-org208702e">
+<ul class="org-ul">
+<li>上のウィンドウで見出しセルをクリック(えらび)，</li>
+<li>下のウィンドウで最終データセルをシフトクリック</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdd2f506" class="outline-4">
+<h4 id="orgdd2f506">続けてミスタイプ数を選ぶ</h4>
+<div class="outline-text-4" id="text-orgdd2f506">
+<ul class="org-ul">
+<li>上のウィンドウで見出しセルをコントロールクリック(追加選択)，</li>
+<li>下のウィンドウで最終データセルをシフトクリック</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org41f7a8e" class="outline-4">
+<h4 id="org41f7a8e">グラフを描く</h4>
+<div class="outline-text-4" id="text-org41f7a8e">
+<ul class="org-ul">
+<li>「挿入」メニューからグラフの種類を選ぶ</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga28f155" class="outline-4">
+<h4 id="orga28f155">グラフを直線（線形）近似して直線化，成長しているかを可視化</h4>
+<div class="outline-text-4" id="text-orga28f155">
+<ul class="org-ul">
+<li>直線として見たいグラフをクリックし，すべての点を選び，</li>
+<li>その点の上で，右クリックし，近似曲線の書式設定メニューを出す:</li>
+
+<li>線形近似を選び，直線を表示させる</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org956fd23" class="outline-4">
+<h4 id="org956fd23">直線の式を表示し，成長の割合を知る</h4>
+<div class="outline-text-4" id="text-org956fd23">
+<ul class="org-ul">
+<li>直線の上で右クリック，近似曲線の書式設定メニューを出し，</li>
+<li>数式の表示をチェックする</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org488ae37" class="outline-3">
+<h3 id="org488ae37"><span class="section-number-3">3.3</span> グラフに描かれているデータ範囲の確認</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>グラフ上の点をクリックし，グラフ上の全ての点列を選択する。</li>
+<li>すると，グラフ上の全ての点列に対応した，データ列が四角で囲まれ，</li>
+<li>正しい範囲になっているか，確認できる。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1a6271a" class="outline-3">
+<h3 id="org1a6271a"><span class="section-number-3">3.4</span> データの最終行の追加</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+表の終りを示すために，最終行を作ります。
+</p>
+
+<p>
+以後，表にデータを追加する時は，この最終行の前に追加します:
+</p>
+<ul class="org-ul">
+<li>最終行の右端で右クリックし，行の挿入を選び，あたらしい行を追加</li>
+<li>必要な行数を新しく作り，</li>
+<li>新らしいデータを書き込む</li>
+</ul>
+
+<p>
+グラフや計算式が，最終行まで使って書かれていれば，データを追加するだけ
+で，グラフや計算値が変更されます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d313fe" class="outline-3">
+<h3 id="org3d313fe"><span class="section-number-3">3.5</span> 表の先頭に統計値を計算する (あとで)</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>最高値，最低値，平均値, 直線の傾き</li>
+<li>正しいキー数とミスタイプ数の間の相関係数の計算</li>
+<li>相関係数の意味</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8501a42" class="outline-3">
+<h3 id="org8501a42"><span class="section-number-3">3.6</span> 自分の成長度の評価 (あとで)</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>グラフと統計値をコピーし，Word 文書に貼り付け</li>
+<li>客観的なデータをもとに，自分のタイピング練習成果を評価する</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1d72e4f" class="outline-3">
+<h3 id="org1d72e4f"><span class="section-number-3">3.7</span> グラフの描き方について</h3>
+<div class="outline-text-3" id="text-3-7">
+<p>
+表からグラフを描く時，このページの最後にある推奨サイトを参考に，下記の
+方法を学びましょう。
+</p>
+
+<ul class="org-ul">
+<li>グラフを別々に描いて，合わせる方法</li>
+<li>グラフの種別を変える方法</li>
+<li>左軸，右軸, 下軸の指定</li>
+</ul>
+
+<p>
+自分のために，講義中参考になったサイトを記録し，卒業後でも使えるよ
+うにしましょう。
+</p>
+
+<p>
+もし下記サイトが役に立ったならメモして置きましょう。
+</p>
+
+<ul class="org-ul">
+<li>とりあえず，お気に入りに保存しておいて，後でお気に入りをコピーしましょう。</li>
+<li>どこかずっと保存できる場所に。</li>
+</ul>
+</div>
+
+<div id="outline-container-org8bc418d" class="outline-4">
+<h4 id="org8bc418d">グラフの書き方について，推奨する説明サイト</h4>
+<div class="outline-text-4" id="text-org8bc418d">
+<ul class="org-ul">
+<li>グラフの作り方&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="https://kokoro.kir.jp/excel/graph.html">https://kokoro.kir.jp/excel/graph.html</a></li>
+</ul></li>
+
+<li>グラフ作成のコツ&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="https://kokoro.kir.jp/excel/kotug%5C_big.html">https://kokoro.kir.jp/excel/kotug%5C_big.html</a></li>
+</ul></li>
+
+<li>複合グラフの作り方&#x2013;Excel・エクセル
+
+<ul class="org-ul">
+<li><a href="https://kokoro.kir.jp/excel/compound-graph.html">https://kokoro.kir.jp/excel/compound-graph.html</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb58383d" class="outline-2">
+<h2 id="orgb58383d"><span class="section-number-2">4</span> 練習成果の統計処理</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf416977" class="outline-3">
+<h3 id="orgf416977"><span class="section-number-3">4.1</span> 統計値の計算</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+正しく打ったキー数，ミスタイプ数のそれぞれについて， 
+</p>
+<ul class="org-ul">
+<li>平均値，最高値，最低値を求める計算式を作りましょう。</li>
+<li>表の先頭に記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb1ca75a" class="outline-3">
+<h3 id="orgb1ca75a"><span class="section-number-3">4.2</span> 上達度の計算</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>直線とみなした場合，その（近似）直線の傾きを求める計算式を作りましょう</li>
+<li>直線とみなすことにはどんな意味があるか考えてください</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9404d7e" class="outline-3">
+<h3 id="org9404d7e"><span class="section-number-3">4.3</span> 正しく打ったキー数とミスタイプ数の関係</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+自分の上達度にミスタイプ数はどう関係しているか調べましょう。
+</p>
+
+<ul class="org-ul">
+<li>正しく打ったキー数とミスタイプ数の関係を見るために，ふたつのデータ列
+の間の「相関係数」を調べます。
+
+<ul class="org-ul">
+<li>まずは，相関係数の意味を調べてください。
+たとえば，<a href="https://tomoshige-n.hatenablog.com/entry/2014/08/06/035001">「相関係数」ってなんですか？ </a>。</li>
+
+<li>相関係数は，ふたつのデータ列の間に比例関係があるかないかを判断する
+基準ですよね。</li>
+</ul></li>
+
+<li><p>
+正しく打ったキー数とミスタイプ数の間の相関係数を計算してみましょう
+</p>
+
+<p>
+計算式は，=correl(正しく打ったキー数列, ミスタイプ数列)
+</p>
+
+<ul class="org-ul">
+<li>相関係数が正なのか負なのか？
+負の場合は，逆の相関となります。</li>
+
+<li><p>
+相関係数の大きさは？
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">相関係数の値</th>
+<th scope="col" class="org-left">相関性の強さ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1.0 ~ 0.7</td>
+<td class="org-left">高い相関がある</td>
+</tr>
+
+<tr>
+<td class="org-left">0.7 ~ 0.5</td>
+<td class="org-left">かなり高い相関がある</td>
+</tr>
+
+<tr>
+<td class="org-left">0.5 ~ 0.4</td>
+<td class="org-left">中程度の相関がある</td>
+</tr>
+
+<tr>
+<td class="org-left">0.4 ~ 0.3</td>
+<td class="org-left">ある程度の相関がある</td>
+</tr>
+
+<tr>
+<td class="org-left">0.3 ~ 0.2</td>
+<td class="org-left">弱い相関がある</td>
+</tr>
+
+<tr>
+<td class="org-left">0.2 ~ 0.0</td>
+<td class="org-left">ほとんど相関がない</td>
+</tr>
+</tbody>
+</table>
+<p>
+出典：「社会調査の基礎」放送大学テキスト
+</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org22a9319" class="outline-3">
+<h3 id="org22a9319"><span class="section-number-3">4.4</span> 自分の上達度は？</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+ベストなのは，正しいキー数が増え，ミスタイプ数が減ることですが，自分の
+場合，どうなっているか，近似直線の傾きと相関係数から判断しましょう。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org11ea0a3" class="outline-2">
+<h2 id="org11ea0a3"><span class="section-number-2">5</span> 表計算/数式と関数</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+表中のセルに，計算式を記録しておくことができる。
+</p>
+</div>
+
+<div id="outline-container-orgb3dd3d8" class="outline-3">
+<h3 id="orgb3dd3d8"><span class="section-number-3">5.1</span> いい点</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+やり方を保存しておくことができるので， 
+</p>
+<ul class="org-ul">
+<li>何度も使う場合，</li>
+<li>データを変更していく場合，</li>
+<li>自動的に計算しなおしてくれ，</li>
+<li>人による操作を必要とせず，間違いが起こりにくくなる。</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7595eff" class="outline-3">
+<h3 id="org7595eff"><span class="section-number-3">5.2</span> 数式を使うための準備</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org5a5890b" class="outline-4">
+<h4 id="org5a5890b">数式の表示</h4>
+<div class="outline-text-4" id="text-org5a5890b">
+<p>
+「表示」メニューを開き，「数式」をチェックし，数式表示バーを表示する。
+</p>
+
+<p>
+数式表示バーは，セルの中の数式を入力・編集に使う。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge9b90de" class="outline-3">
+<h3 id="orge9b90de"><span class="section-number-3">5.3</span> 数式の入力</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>= で書き始める。</li>
+<li>= の直後に関数名と()を書く。</li>
+<li>() の中に計算に使う データや*データ列* を指定する</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org173ceb9" class="outline-3">
+<h3 id="org173ceb9"><span class="section-number-3">5.4</span> データ</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>数値そのものかセル(の中の数値)で与える</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfb200b7" class="outline-3">
+<h3 id="orgfb200b7"><span class="section-number-3">5.5</span> データ列の入力</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>セルは A10 とか書く。A$10 は10行目固定。$A10はA列目固定。</li>
+<li><b>データ列の指定</b> は，C1:C100のように。C列の１行目から100行目までの範囲。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org316e4eb" class="outline-3">
+<h3 id="org316e4eb"><span class="section-number-3">5.6</span> 関数の利用</h3>
+<div class="outline-text-3" id="text-5-6">
+<p>
+データを処理する便利な関数がいろいろ用意されている
+</p>
+
+<ul class="org-ul">
+<li>平均は =average(C1:C100)</li>
+<li>最高は =max(C1:C100)</li>
+<li>最低は =min(C1:C100)</li>
+<li>傾きは =slope(C1:C100, B1:B100)</li>
+<li>相関係数は =correl(C1:C100,E1:E100)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgddfca08" class="outline-3">
+<h3 id="orgddfca08"><span class="section-number-3">5.7</span> ふたつのデータ列が必要な関数</h3>
+<div class="outline-text-3" id="text-5-7">
+<p>
+直線の傾き slope
+</p>
+
+<ul class="org-ul">
+<li>直線近似したときの傾きは，=slope(C1:C100, B1:B100)。
+
+<ul class="org-ul">
+<li>c1:100 が直線とみなすデータ列</li>
+<li>B列には全体の通し回数を入れておく。</li>
+</ul></li>
+</ul>
+
+<p>
+相関係数 correl 
+</p>
+
+<ul class="org-ul">
+<li>=correl(C1:C100,E1:E100)
+<ul class="org-ul">
+<li>C1:C100 が正しいキー数</li>
+<li>E1:E100 がミスタイプ数</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf093ae" class="outline-3">
+<h3 id="orgbf093ae"><span class="section-number-3">5.8</span> 通し回数列の作り方</h3>
+<div class="outline-text-3" id="text-5-8">
+<p>
+新らしい列を作る方法: 
+</p>
+
+<ul class="org-ul">
+<li>B列の先頭へいって，クリックし，B列全体を選ぶ。</li>
+<li>右クリックし，「挿入」から「列」を選ぶと，</li>
+<li>もともとのB列はC列に移動し，新らしいB列ができる。</li>
+</ul>
+
+<p>
+通し番号を作る方法:
+</p>
+
+<ul class="org-ul">
+<li>1回めのセルにいって，1を入力する。</li>
+<li>2回めのセルにいって，2を入力する。</li>
+<li>2回めのセルの右下に現れた「黒くて小さな四角」(フィルハンドル)を，
+<b>最後の行</b> までドラッグ。</li>
+<li>すると，通し番号を埋め込んでくれる。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8de35a8" class="outline-2">
+<h2 id="org8de35a8"><span class="section-number-2">6</span> タイピング練習レポートの作成</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgbe1afc1" class="outline-3">
+<h3 id="orgbe1afc1"><span class="section-number-3">6.1</span> 目的</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>「レポートの書き方」の実践</li>
+<li>Excel と Word を使い分けて文書を作ることに慣れる</li>
+<li>自己評価すること</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org944ebe7" class="outline-3">
+<h3 id="org944ebe7"><span class="section-number-3">6.2</span> 内容</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+「レポートの書き方」で覚えた方法で， Word
+を使って，タイピング練習レポートを作成してもらいます。
+</p>
+
+<p>
+下記の内容について書いてください。 
+</p>
+
+<ol class="org-ol">
+<li>練習成果を客観的に評価するためのグラフと数値をしめす 
+<ul class="org-ul">
+<li>自分の練習結果の提示 
+<ul class="org-ul">
+<li>練習回数</li>
+<li>最小値，最大値，平均値</li>
+<li>グラフと近似曲線と直線の式</li>
+<li>正しいキー数とミスタイプ数の間の相関</li>
+</ul></li>
+</ul></li>
+
+<li>練習経験やデータをもとに自己評価する 
+<ul class="org-ul">
+<li>成長の傾向</li>
+<li>速さと正確さの傾向</li>
+<li>得られた成果や良かったこと</li>
+<li>問題点と改善策</li>
+</ul></li>
+
+<li>感想</li>
+</ol>
+
+<p>
+以上を Word で作成し，さらにpdf にし，両方のファイルをレポート提出フォ
+ルダにへ提出してください。
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
