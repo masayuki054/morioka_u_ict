@@ -1,5 +1,0 @@
-[[./情報処理.org][情報処理]]
-
--  PortableAppls http://portableapps.org
--  フリーオフィス http://ja.libreoffice.org/
-
