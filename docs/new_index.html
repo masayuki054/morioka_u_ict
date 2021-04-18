@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2021-04-18 日 14:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2021 </title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="masayuki" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">情報処理演習2021 </h1>
+<div id="table-of-contents">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org070932a">1. 今日の講義</a>
+<ul>
+<li><a href="#orgd47e5a8">1.1. 1回目 情報処理演習 2021.04.12</a>
+<ul>
+<li><a href="#org7f31ade">出席</a></li>
+<li><a href="#orgce60811">おしらせ</a>
+<ul>
+<li><a href="#org25c732b">レポート課題の指示は，melly でおこないます。</a></li>
+<li><a href="#org1dc1b33">次回は，USBメモリを持ってきてください。</a></li>
+<li><a href="#org3927699">講義時間外の質問</a></li>
+</ul>
+</li>
+<li><a href="#org3383ea5">アンケートの提出</a></li>
+<li><a href="#orgd4ca551">今日の講義内容 (ガイダンス)</a>
+<ul>
+<li><a href="#org17299ef">スタートアップセミナーの確認</a></li>
+<li><a href="#orgbeb4506">講義の説明</a></li>
+<li><a href="#org6e53b53">講義資料</a></li>
+<li><a href="#org508ec6e">来週からタイピングを始めましょう。</a></li>
+<li><a href="#org6ba4cec">講義内容の Mindmap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org4b60ae0">1.2. 関連ページ</a></li>
+</ul>
+</li>
+<li><a href="#org1a670d4">2. お知らせ</a>
+<ul>
+<li><a href="#org767944d">2.1. レポート課題の指示は，melly でおこないます。</a></li>
+<li><a href="#org3f7c301">2.2. 次回は，USBメモリを持ってきてください。</a></li>
+<li><a href="#orgc7673d6">2.3. 講義時間外の質問</a></li>
+</ul>
+</li>
+<li><a href="#orgadda305">3. 受講の準備 (要修正)</a>
+<ul>
+<li><a href="#org6d45ec3">3.1. Doing 受講の準備</a></li>
+</ul>
+</li>
+<li><a href="#orge9696cd">4. ガイダンス (要修正)</a>
+<ul>
+<li><a href="#orgd48bf01">4.1. 講義ページを見る</a></li>
+<li><a href="#org8e33e58">4.2. 講義の受け方について</a></li>
+<li><a href="#org17df232">4.3. 大切なこころ構えについて</a></li>
+<li><a href="#orgaeabdc1">4.4. 自己紹介</a></li>
+<li><a href="#orgb698f69">4.5. パソコンの使い方</a></li>
+<li><a href="#org1911aa7">4.6. シラバスの説明</a></li>
+<li><a href="#org1051916">4.7. 講義内容の提案</a></li>
+<li><a href="#orgc6c2ed0">4.8. 教えるときに気をつけたい10のこと</a></li>
+</ul>
+</li>
+<li><a href="#orgf3d007b">5. 講義資料 (要修正)</a>
+<ul>
+<li><a href="#org6203abc">5.1. ガイダンス</a></li>
+<li><a href="#orgf66d249">5.2. パソコンの使い方</a></li>
+<li><a href="#orgfb9b408">5.3. タイピング</a></li>
+<li><a href="#org3d68ece">5.4. 教科書のまとめと課題</a></li>
+<li><a href="#org68c02a5">5.5. 鈴木の資料</a></li>
+<li><a href="#orgf2007a3">5.6. Googleを利用しよう</a></li>
+<li><a href="#orgd3dd25d">5.7. Firefoxを利用しよう</a></li>
+<li><a href="#org2eec813">5.8. Webアプリを利用しよう</a></li>
+<li><a href="#orgf1dede5">5.9. Windowsについて</a></li>
+<li><a href="#org3dfe2f8">5.10. suzumasa@morioka-u.ac.jpのドキュメント</a></li>
+<li><a href="#org51c5857">5.11. 文書の作成などについて</a></li>
+</ul>
+</li>
+<li><a href="#org14e043c">6. 講義関連サイト</a>
+<ul>
+<li><a href="#org53b2cb9">6.1. 今日の講義</a></li>
+<li><a href="#org36df23c">6.2. GoogleSite</a></li>
+<li><a href="#org8fb686f">6.3. 情報処理演習2019用グーグルドライブ</a></li>
+<li><a href="#orgc227fc6">6.4. 鈴木の資料 (課題や説明)</a></li>
+<li><a href="#org73254b4">6.5. 講義資料置き場 @github.com</a></li>
+</ul>
+</li>
+<li><a href="#org68a8eb0">7. Webアプリなど</a>
+<ul>
+<li><a href="#orgbc40088">7.1. Dynalist::アウトライナ</a></li>
+<li><a href="#orgc815d69">7.2. markdownとは&#x2013;日本語Markdownユーザー会</a></li>
+<li><a href="#org0e53422">7.3. Markdown プレビュー サイト</a></li>
+<li><a href="#orgcb762c5">7.4. workflowyサイト (ログインが必要)</a></li>
+<li><a href="#org9b8ad2a">7.5. simplenoteサイト (ログインが必要)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ</a>/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">OneDrive</a>
+</p>
+
+<div id="outline-container-org070932a" class="outline-2">
+<h2 id="org070932a"><span class="section-number-2">1</span> 今日の講義</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgd47e5a8" class="outline-3">
+<h3 id="orgd47e5a8"><span class="section-number-3">1.1</span> 1回目 情報処理演習 2021.04.12</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org7f31ade" class="outline-4">
+<h4 id="org7f31ade">出席</h4>
+<div class="outline-text-4" id="text-org7f31ade">
+<p>
+<a href="https://morioka-u.ap-cloud.com/prtl">ポータル</a> で 出席登録してください。
+</p>
+
+<p>
+パスコードはA組は9564，B組は6839です。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgce60811" class="outline-4">
+<h4 id="orgce60811">おしらせ</h4>
+<div class="outline-text-4" id="text-orgce60811">
+</div>
+<div id="outline-container-org25c732b" class="outline-5">
+<h5 id="org25c732b">レポート課題の指示は，<a href="https://mellyclass.com/morioka-u/classrooms">melly</a> でおこないます。</h5>
+<div class="outline-text-5" id="text-org25c732b">
+</div>
+</div>
+
+<div id="outline-container-org1dc1b33" class="outline-5">
+<h5 id="org1dc1b33">次回は，USBメモリを持ってきてください。</h5>
+<div class="outline-text-5" id="text-org1dc1b33">
+<ul class="org-ul">
+<li>他の講義でも指示があると思います。兼用してください。</li>
+<li>できれば，USB3.0 (挿し口が青)</li>
+<li>新しく買うなら，16G以上の容量が割り安。
+アプリも入れて持ち運べます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3927699" class="outline-5">
+<h5 id="org3927699">講義時間外の質問</h5>
+<div class="outline-text-5" id="text-org3927699">
+<p>
+僕は非常勤講師なので，大学での質問は下記時間場所でお願いします:
+</p>
+
+<ul class="org-ul">
+<li>月曜日 12:00&#x2013;12:50  の講義時間
+<ul class="org-ul">
+<li>A306室</li>
+<li>非常勤講師控え室</li>
+<li>大学生協食堂にいます。</li>
+</ul></li>
+</ul>
+
+<p>
+時間外で質問等ある場合は，
+</p>
+
+<ul class="org-ul">
+<li>msyk054@gmail.com にメールするか，</li>
+<li>水曜日の14:00~17:00に，岩大図書館の学修支援コーナーに来る</li>
+
+<li>レポート課題の指示は，<a href="https://mellyclass.com/morioka-u/classrooms">melly</a> でおこないます。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3383ea5" class="outline-4">
+<h4 id="org3383ea5">アンケートの提出</h4>
+<div class="outline-text-4" id="text-org3383ea5">
+<p>
+講義終了時に，下記のサイトからアンケートを出してください。
+</p>
+
+<p>
+<a href="https://forms.gle/DY8fejSBnYQc5Bd79">https://forms.gle/DY8fejSBnYQc5Bd79</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd4ca551" class="outline-4">
+<h4 id="orgd4ca551">今日の講義内容 (ガイダンス)</h4>
+<div class="outline-text-4" id="text-orgd4ca551">
+</div>
+<div id="outline-container-org17299ef" class="outline-5">
+<h5 id="org17299ef">スタートアップセミナーの確認</h5>
+<div class="outline-text-5" id="text-org17299ef">
+<p>
+<a href="https://172.16.10.48">盛岡大学情報システムセンター</a> <a href="https://172.16.10.48">https://172.16.10.48</a> に資料があると思
+います。
+</p>
+
+<ul class="org-ul">
+<li>アカウントとパスワード変更</li>
+<li>パソコン教室の使い方</li>
+<li>ネットワークのこと</li>
+<li>ポータルとmelly</li>
+<li>office365</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbeb4506" class="outline-5">
+<h5 id="orgbeb4506">講義の説明</h5>
+<div class="outline-text-5" id="text-orgbeb4506">
+<ul class="org-ul">
+<li>シラバス</li>
+<li>mindmap を配布して説明します。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e53b53" class="outline-5">
+<h5 id="org6e53b53">講義資料</h5>
+<div class="outline-text-5" id="text-org6e53b53">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/references.html">https://masayuki054.github.io/morioka_u_ict/references.html</a>
+</p>
+
+<ul class="org-ul">
+<li>講義で参照する資料です。まだ旧システムでの説明もあります。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org508ec6e" class="outline-5">
+<h5 id="org508ec6e">来週からタイピングを始めましょう。</h5>
+<div class="outline-text-5" id="text-org508ec6e">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/typing.html">https://masayuki054.github.io/morioka_u_ict/typing.html</a>
+</p>
+
+<ul class="org-ul">
+<li>毎回，講義が始まる前に練習し，記録をメモしておきましょう。</li>
+<li>記録は，メモ帖でもExcelでもいいですよ。</li>
+<li>タイピング数とミスタイプ数を記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6ba4cec" class="outline-5">
+<h5 id="org6ba4cec">講義内容の Mindmap</h5>
+<div class="outline-text-5" id="text-org6ba4cec">
+<p>
+<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>からダウンロードして, XMind で閲覧，メモを書き込んでください。
+</p>
+
+<p>
+書き込んだマップは，自分の情報処理演習フォルダに提出してください。
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4b60ae0" class="outline-3">
+<h3 id="org4b60ae0"><span class="section-number-3">1.2</span> 関連ページ</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><a href="https://morioka-u.ap-cloud.com/prtl">ポータル</a></li>
+<li><a href="https://mellyclass.com/morioka-u/classrooms">melly</a></li>
+</ul>
+
+<p>
+先生の講義のための OneDrive フォルダ
+</p>
+<ul class="org-ul">
+<li><a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">3000261@morioka-u.ac.jpの情報処理演習2021 - OneDrive</a></li>
+</ul>
+
+<p>
+先生の講義のための GoogleDrive フォルダ
+</p>
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">情報処理演習2021-共有Googleドライブ</a></li>
+<li><a href="https://drive.google.com/drive/folders/1Hvrp439Zi7iQ-xLkAlFbYV4UNuYDkqYl">アンケート - Google ドライブ</a></li>
+</ul>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめ</a>
+</p>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/references.html">講義資料</a> 講義で参照する資料です。まだ旧システムでの説明もあります。
+</p>
+
+<p>
+microsoft 365
+</p>
+<ul class="org-ul">
+<li><a href="https://www.office.com/">Microsoft Office ホーム</a>
+<ul class="org-ul">
+<li><a href="https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e">Office クイック スタート - Office サポート</a>
+動画は英語のものあり，日本語 pdf をダウンロードできる。</li>
+<li><a href="https://support.office.com/ja-jp/office-training-center">Microsoft 365 トレーニング</a>
+<ul class="org-ul">
+<li>outlook，oneDrive， word</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+先生の放送大学の講義   
+</p>
+<ul class="org-ul">
+<li><a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1a670d4" class="outline-2">
+<h2 id="org1a670d4"><span class="section-number-2">2</span> お知らせ</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org767944d" class="outline-3">
+<h3 id="org767944d"><span class="section-number-3">2.1</span> レポート課題の指示は，<a href="https://mellyclass.com/morioka-u/classrooms">melly</a> でおこないます。</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</div>
+
+<div id="outline-container-org3f7c301" class="outline-3">
+<h3 id="org3f7c301"><span class="section-number-3">2.2</span> 次回は，USBメモリを持ってきてください。</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>他の講義でも指示があると思います。兼用してください。</li>
+<li>できれば，USB3.0 (挿し口が青)</li>
+<li>新しく買うなら，16G以上の容量が割り安。
+アプリも入れて持ち運べます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc7673d6" class="outline-3">
+<h3 id="orgc7673d6"><span class="section-number-3">2.3</span> 講義時間外の質問</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+僕は非常勤講師なので，大学での質問は下記時間場所でお願いします:
+</p>
+
+<ul class="org-ul">
+<li>月曜日 12:00&#x2013;12:50  の講義時間
+<ul class="org-ul">
+<li>A306室</li>
+<li>非常勤講師控え室</li>
+<li>大学生協食堂にいます。</li>
+</ul></li>
+</ul>
+
+<p>
+時間外で質問等ある場合は，
+</p>
+
+<ul class="org-ul">
+<li>msyk054@gmail.com にメールするか，</li>
+<li>水曜日の14:00~17:00に，岩大図書館の学修支援コーナーに来る</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgadda305" class="outline-2">
+<h2 id="orgadda305"><span class="section-number-2">3</span> 受講の準備 (要修正)</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6d45ec3" class="outline-3">
+<h3 id="org6d45ec3"><span class="section-number-3">3.1</span> Doing 受講の準備</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+講義を受けるために下記のことを行ないましょう:
+</p>
+
+<ul class="org-ul">
+<li>パソコンにログインし，</li>
+
+<li>パソコン画面上の「出席票」に名前と学生番号を入力
+してください。</li>
+
+<li>先生のパソコンの画面が配信されていることを確認し，
+ウィンドウの大きさを見易い大きさに変更してください。</li>
+
+<li>(インターネット) ブラウザを立ちあげ，</li>
+
+<li>講義の入口ページを開き，
+
+<ul class="org-ul">
+<li>別のタブで今日の講義のページを開いてください。</li>
+</ul></li>
+
+<li>エクスプローラ (ウィンドウズキー+e) を開き
+
+<ul class="org-ul">
+<li>OneDrive をクリックして，OneDrive にサインインしてください。</li>
+
+<li>自分の情報処理演習フォルダ開きましょう。</li>
+</ul></li>
+
+<li>スマホから <a href="lects/無線とノート持ち込み.html">WiFi接続</a> できるかもしれません。確かめてみましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge9696cd" class="outline-2">
+<h2 id="orge9696cd"><span class="section-number-2">4</span> ガイダンス (要修正)</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgd48bf01" class="outline-3">
+<h3 id="orgd48bf01"><span class="section-number-3">4.1</span> 講義ページを見る</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>パソコン起動と終了。</li>
+
+<li>配布されたパソコン用のIDとパスワードを使って，パソコンにログインしましょう。</li>
+
+<li>ブラウザを動かしましょう。</li>
+
+<li>講義のページは、「hatena 盛岡大学 情報処理 2021」で検索して見つけてくだ
+さい。</li>
+
+<li>見つけたら，「お気にいり」に登録してください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8e33e58" class="outline-3">
+<h3 id="org8e33e58"><span class="section-number-3">4.2</span> 講義の受け方について</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>質問してください。意見をいってください</li>
+
+<li>同じことを何回でも質問してもいいよ</li>
+
+<li>友達同士で教えあってください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org17df232" class="outline-3">
+<h3 id="org17df232"><span class="section-number-3">4.3</span> 大切なこころ構えについて</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>仕組みを考えること</li>
+
+<li>本質を捉えること</li>
+
+<li>情報リテラシの観点から考えること</li>
+
+<li>具体的な作業を繰り返すことで，抽象化した知識とすること</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaeabdc1" class="outline-3">
+<h3 id="orgaeabdc1"><span class="section-number-3">4.4</span> 自己紹介</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li><a href="./s.html">自己紹介</a></li>
+
+<li><a href="https://masayuki054.hatenablog.com/entry/2013/05/17/012222">非常勤講師を引き受けるにあたって思った事</a>
+
+<ul class="org-ul">
+<li><a href="https://masayuki054.hatenablog.com/entry/2013/06/24/172938">講義してみて思った事</a></li>
+</ul></li>
+
+<li><a href="https://nat054.ddo.jp/~masayuki/lects">大学の講義に関する自分のページ</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb698f69" class="outline-3">
+<h3 id="orgb698f69"><span class="section-number-3">4.5</span> パソコンの使い方</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+端末室のパソコンの使い方
+</p>
+
+<ul class="org-ul">
+<li>起動と終了</li>
+<li>ログイン</li>
+<li>出席登録（学生番号と氏名の入力）してください。</li>
+<li>アプリケーションを動かす</li>
+<li>ブラウザを動かす</li>
+<li>先生の画面を学生さんのモニタに映す</li>
+<li>学生さんの画面を見る</li>
+<li>先生を呼ぶ</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1911aa7" class="outline-3">
+<h3 id="org1911aa7"><span class="section-number-3">4.6</span> シラバスの説明</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+盛岡大学のホームページ <a href="https://www.morioka-u.ac.jp/">https://www.morioka-u.ac.jp/</a> を眺めてみましょう。
+</p>
+
+<ul class="org-ul">
+<li>シラバスを探してみましょう。</li>
+
+<li>Mindmap も見てください。</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1051916" class="outline-3">
+<h3 id="org1051916"><span class="section-number-3">4.7</span> 講義内容の提案</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+皆さんの意見を聞いてから色々決めたいと思いますが，予定していることは，
+下記のようなことがらです：
+</p>
+
+<ul class="org-ul">
+<li>タイピング練習をしましょう (<a href="lects/typing.html">タイピング</a>)
+
+<ul class="org-ul">
+<li>寿司打 <a href="http://typing.sakura.ne.jp/sushida/">http://typing.sakura.ne.jp/sushida/</a></li>
+
+<li>毎回のタイピング結果を記録をメモし，あとでグラフにし，成長を確認
+しましょう</li>
+
+<li>表計算アプリを使って、自分のタイピング練習記録を解析してみましょう</li>
+
+<li>自分の練習について考察しレポートを書きましょう</li>
+</ul></li>
+
+<li>文書の作成として，「レポートの書き方」のレポートを作成しましょう。</li>
+
+<li>コンピュータとインターネットの仕組みを理解しましょう</li>
+
+<li><b>デジタル</b> な文書の検索，整理，理解，知識化について
+<ul class="org-ul">
+<li>コンピュータとインターネットを使った文章の書き方を学びましょう。</li>
+
+<li>google drive, simplenote, workflowy など使ってみましょう</li>
+</ul></li>
+
+<li>講義を通して得られたことや作成したメモや文書をまとめる</li>
+
+<li>今年は，USBメモリを使いますので，来週までに用意してください。生協で
+買えると思います。</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc6c2ed0" class="outline-3">
+<h3 id="orgc6c2ed0"><span class="section-number-3">4.8</span> 教えるときに気をつけたい10のこと</h3>
+<div class="outline-text-3" id="text-4-8">
+<p>
+これは僕がこれから講義中に気をつけたいことです。反することも多々あると
+思いますが，そのときは注意してください。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://topisyu.hatenablog.com/entry/teaching">人に教えるときに気をつけている10のこと</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgf3d007b" class="outline-2">
+<h2 id="orgf3d007b"><span class="section-number-2">5</span> 講義資料 (要修正)</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org6203abc" class="outline-3">
+<h3 id="org6203abc"><span class="section-number-3">5.1</span> <a href="./guidance.html">ガイダンス</a></h3>
+</div>
+<div id="outline-container-orgf66d249" class="outline-3">
+<h3 id="orgf66d249"><span class="section-number-3">5.2</span> <a href="./pc.html">パソコンの使い方</a></h3>
+</div>
+<div id="outline-container-orgfb9b408" class="outline-3">
+<h3 id="orgfb9b408"><span class="section-number-3">5.3</span> <a href="./typing.html">タイピング</a></h3>
+</div>
+<div id="outline-container-org3d68ece" class="outline-3">
+<h3 id="org3d68ece"><span class="section-number-3">5.4</span> <a href="./text.html">教科書のまとめと課題</a></h3>
+</div>
+<div id="outline-container-org68c02a5" class="outline-3">
+<h3 id="org68c02a5"><span class="section-number-3">5.5</span> <a href="https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/">鈴木の資料</a></h3>
+</div>
+<div id="outline-container-orgf2007a3" class="outline-3">
+<h3 id="orgf2007a3"><span class="section-number-3">5.6</span> <a href="./google.html">Googleを利用しよう</a></h3>
+</div>
+<div id="outline-container-orgd3dd25d" class="outline-3">
+<h3 id="orgd3dd25d"><span class="section-number-3">5.7</span> <a href="./firefox.html">Firefoxを利用しよう</a></h3>
+</div>
+<div id="outline-container-org2eec813" class="outline-3">
+<h3 id="org2eec813"><span class="section-number-3">5.8</span> <a href="./web.html">Webアプリを利用しよう</a></h3>
+</div>
+<div id="outline-container-orgf1dede5" class="outline-3">
+<h3 id="orgf1dede5"><span class="section-number-3">5.9</span> <a href="./windows.html">Windowsについて</a></h3>
+</div>
+<div id="outline-container-org3dfe2f8" class="outline-3">
+<h3 id="org3dfe2f8"><span class="section-number-3">5.10</span> <a href="./s.html">suzumasa@morioka-u.ac.jpのドキュメント</a></h3>
+</div>
+<div id="outline-container-org51c5857" class="outline-3">
+<h3 id="org51c5857"><span class="section-number-3">5.11</span> <a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/">文書の作成などについて</a></h3>
+</div>
+</div>
+
+
+<div id="outline-container-org14e043c" class="outline-2">
+<h2 id="org14e043c"><span class="section-number-2">6</span> 講義関連サイト</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org53b2cb9" class="outline-3">
+<h3 id="org53b2cb9"><span class="section-number-3">6.1</span> <a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a></h3>
+</div>
+
+<div id="outline-container-org36df23c" class="outline-3">
+<h3 id="org36df23c"><span class="section-number-3">6.2</span> <a href="https://sites.google.com/view/morioka-u-ict-2019/%E3%83%9B%E3%83%BC%E3%83%A0">GoogleSite</a></h3>
+</div>
+<div id="outline-container-org8fb686f" class="outline-3">
+<h3 id="org8fb686f"><span class="section-number-3">6.3</span> <a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">情報処理演習2019用グーグルドライブ</a></h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+<a href="https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3">- 2019</a>
+<a href="https://drive.google.com/open?id=1HVFAjgdjsykN1zx7GOwzjutdeMFBva5C">- 2018</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc227fc6" class="outline-3">
+<h3 id="orgc227fc6"><span class="section-number-3">6.4</span> <a href="https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/">鈴木の資料</a> (課題や説明)</h3>
+</div>
+<div id="outline-container-org73254b4" class="outline-3">
+<h3 id="org73254b4"><span class="section-number-3">6.5</span> <a href="https://github.com/masayuki054/morioka_u_ict/tree/master/">講義資料置き場</a> @github.com</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org68a8eb0" class="outline-2">
+<h2 id="org68a8eb0"><span class="section-number-2">7</span> Webアプリなど</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgbc40088" class="outline-3">
+<h3 id="orgbc40088"><span class="section-number-3">7.1</span> <a href="https://dynalist.com">Dynalist::アウトライナ</a></h3>
+</div>
+<div id="outline-container-orgc815d69" class="outline-3">
+<h3 id="orgc815d69"><span class="section-number-3">7.2</span> <a href="https://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a></h3>
+</div>
+<div id="outline-container-org0e53422" class="outline-3">
+<h3 id="org0e53422"><span class="section-number-3">7.3</span> <a href="https://daringfireball.net/projects/markdown/dingus">Markdown プレビュー サイト</a></h3>
+</div>
+
+<div id="outline-container-orgcb762c5" class="outline-3">
+<h3 id="orgcb762c5"><span class="section-number-3">7.4</span> <a href="https://workflowy.com">workflowyサイト</a> (ログインが必要)</h3>
+</div>
+
+<div id="outline-container-org9b8ad2a" class="outline-3">
+<h3 id="org9b8ad2a"><span class="section-number-3">7.5</span> <a href="https://simplenote.com">simplenoteサイト</a> (ログインが必要)</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2021-04-18 日 14:32</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
