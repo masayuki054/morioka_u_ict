@@ -1,13 +1,6 @@
-#+include: 04.org :minlevel 1
+#+include: 04-2021.org :minlevel 2
+#+include: 03-2021.org :minlevel 2
+#+include: 02.org :minlevel 2
+#+include: 01.org :minlevel 2
 
-* 受講の準備
-#+include: 受講の準備.org :minlevel 2
-
-* お知らせ
-#+include: announce.org :minlevel 2
-
-* ガイダンス
-#+include: ガイダンス2019.org :minlevel 2
-
-#+include: 2019_summer.org :minlevel 1
 

@@ -1,0 +1,27 @@
+#+setupfile: ~/ict.git/org/info/index-sos-header.setup
+#+include: ~/ict.git/org/info/common-header.org
+
+* Done 受講の準備
+  CLOSED: [2021-04-25 日 10:04]
+
+講義を受けるために下記のことを行ないましょう:
+
+- パソコンにログインし，
+
+- パソコン画面上の「出席票」に名前と学生番号を入力
+  してください。
+
+- 先生のパソコンの画面が配信されていることを確認し，
+  ウィンドウの大きさを見易い大きさに変更してください。
+
+- (インターネット) ブラウザを立ちあげ，
+
+- [[http://masayuki054.hatenablog.com/entry/2021/04/11/150833][講義の入口]]ページを開き，
+
+  - 別のタブで [[https://masayuki054.github.io/morioka_u_ict/][今日の講義のページ]]を開いてください。
+
+- エクスプローラ (ウィンドウズキー+e) を開き
+
+  - OneDrive をクリックして，OneDrive にサインインしてください。
+
+  - 自分の情報処理演習フォルダ開きましょう。

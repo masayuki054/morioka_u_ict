@@ -7,25 +7,22 @@ EXCLUDES = [
 ]
 
 ORGS = [
-  "index.org", 
-  "firefox.org",
-  "google.org",
+  "index.org",
+  "lect.org",
+  "announce.org",
+  "prepare.org",
   "guidance.org",
+  "reference.org",
+  "office.org",
   "pc.org",
   "s.org",
   "text.org",
   "typing.org",
-  "web.org",
   "windows.org",
-  "references.org"
 ]
 
 SUBDIRS = [
-  "pc",
-  "text",
-  "typing",
-  "web",
-  "windows",
+  "articles",
 ]
 
 HTMLS = ORGS.map do |f|

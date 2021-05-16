@@ -1,12 +1,12 @@
-* 2021.04.19 2回目
+* 2021.04.26 3回目
 
-** 受講の準備
+** Done 受講の準備
 
    [[../prepare.org][受講の準備]] をしてください。
 
-** ガイダンスの続き
+   先生のGoogleDriveから，4/26 のマップをダウンロードしてください。
 
-   - [[../guidance.html][ガイダンス]]で説明できなかった事を説明します。
+** ガイダンスの続き
 
    - [[https://172.16.10.48][情報処理センター資料]] の説明をします。
 
@@ -20,19 +20,24 @@
 
 [[../typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
 
-来週も追記できるように，自分の情報処理フォルダに練習記録を残しておいて
-ください。
+自分の情報処理フォルダに練習記録を残してください。
+
+*** microsoft365 クラウドサービス (先週の復習)
+    - インターネットの概念図
+    - サーバとクライアント
+    - 大学のPC, 自宅のPC, スマホの接続
 
 *** XMindによる講義内容の説明
+
+    [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章からマインドマップの使い方を
+    説明します。
+
+    - [[https://www.youtube.com/watch?v=dxQs3yWXdNo][(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube]]
 
     講義内容の説明のマインドマップを配布します。
     - 自分の情報処理演習フォルダにコピーし保存してください。
     - 先生の説明を聞いて，自分でメモを書き込んでみてください。
 
-    [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章からマインドマップの使い方を
-    説明します。
-    
-    
 *** Windows の基本操作などを学ぶ 
 
     教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
@@ -42,13 +47,26 @@
 
     自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
 
+*** 大学のメールを使う
+
+    - 自分の大学のメールアドレスは「学生番号@st.morioka-u.ac.jp」です。
+
+    - morioka-u.ac.jp が，インターネットの中での，盛岡大学のドメイン名
+      です。
+
+    - morioka-u.ac.jp ドメインに対して，https://outlook.office.com が
+      メールサーバです。
+      
+    先生からのメールが読めたら、3000261@morioka-u.ac.jp に返事を
+    下さい。
     
 *** 講義アンケートの提出
 
     下記サイトでアンケートに答えてください:
 
-    https://docs.google.com/forms/d/1Qlvl-MF0X1xYKxboqmBQocLxjCUGH3HqyUpHxVPv4cs/edit?usp=sharing
+    https://forms.gle/QjgyJaQckbqCaPJG6    
 
+   
     
 
 
