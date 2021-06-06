@@ -1,4 +1,5 @@
-#+setupfile: ~/ict.git/org/info/index-sos-header.setup
-#+include: ~/ict.git/org/info/common-header.org
+#+setupfile: info/index-bigblow-header.setup
+#+include: info/common-header.org
 #+title: 今日の講義
-#+include: lects/06-2021.org :minlevel 1
+#+include: lects/09-2021.org :minlevel 1
+

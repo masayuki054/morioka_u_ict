@@ -2,6 +2,8 @@
 #+include: ~/ict.git/org/info/common-header.org
 #+title: 講義のまとめ
 #+OPTIONS:   H:8 toc:t num:nil date:t
+#+incluce: lects/08-2021.org :minlevel 2
+#+incluce: lects/07-2021.org :minlevel 2
 #+incluce: lects/06-2021.org :minlevel 2
 #+include: lects/05-2021.org :minlevel 2
 #+include: lects/04-2021.org :minlevel 2
