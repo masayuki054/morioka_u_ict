@@ -1,0 +1,157 @@
+* 2021.06.21 11回目
+
+** Done 受講の準備
+
+   [[../prepare.org][受講の準備]] をしてください。
+
+   教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+   あります。
+
+   OneDriveにサインインしてください。
+
+** 今日の課題
+   
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+
+*** タイピング -- 練習記録表の作成 再開
+
+[[../typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
+
+詳しい操作などは，[[../typing.org][タイピング]] を読んで下さい。
+
+- 自分の情報処理フォルダに練習記録を残してください。
+- 表の先頭部を固定しましょう (ウィンドウ枠の固定)
+- ( *変更* ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう
+- 新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録し
+  ましょう。
+
+**** 正しいキー数とミスタイプ数の間の関係を調べる
+
+     [[../typing.org][タイピング]] を読み，正しいキー数とミスタイプ数の間の相関係数を計算
+     しましょう。
+
+*** 前回のアンケート
+
+    [[https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366][10ー6月14日アンケート（回答） - Google スプレッドシート]]    
+    
+    [[https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073][09ー6月7日アンケート（回答） - Google スプレッドシート]]
+
+    [[https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475][08ー5月31日アンケート（回答） - Google スプレッドシート]]    
+
+*** Doing XMindによる講義内容の説明
+
+    [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章にマインドマップの使い方  説明します。
+
+**** 配布済みの map
+     
+     - タイピング記録のためのExcelの使い方のマップ
+     - 教科書5章の文書作成のためのマップ
+     - XMind のアウトライン (概要) 機能についても説明します。
+
+*** Doing microsoft365 クラウドサービス (共有の確認)
+
+    下記の事を確認してください。
+    
+**** Done レポート提出フォルダの作成
+     CLOSED: [2021-06-21 月 07:09]
+     OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+     してください。
+
+**** Doing フォルダのバックアップ:
+     - USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+       クアップ) を作りましょう。
+             
+*** Done 教科書 ([[http://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめと課題]])
+    CLOSED: [2021-06-07 月 20:06]
+
+    教科書6章を読み，下記の3つの文書を完成させてください。
+    わからない所を質問してください。
+    
+    既にできている人は，次のレポート文書の作成にとりかかってください。
+
+    - 教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+      - 先週までとファイル名が変りましたので，注意してください。
+	
+    - 教科書図6.33 (表は平均と標準偏差.xlsx)
+
+    自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+    
+*** Doing レポート文書の作成 (教科書5章)
+
+    教科書5章を読み，Word を使い始めましょう。   
+    何回かかけて，Word でレポートを書くための機能を学び，
+    教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+
+    - 今日は，自分で教科書を読み，自分でやってみてください。
+    - 配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+      てください。
+
+**** 課題のやり方
+     
+     [[http://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめと課題]]
+     17章にやり方の説明があります。
+
+     - [[https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ][資料 - Google ドライブ]]から
+     - 著作権法とファイル交換ソフト.txt をダウンロードし，
+
+     - 文章(レポート)の構成要素と構造について考える
+
+       - 文章を読み，意図をつかむ
+       - 各文の役割を考え，どんな文の要素で表わすかを決める
+
+     - 構成要素と構造が決った後，Word にコピペ
+
+     - 教科書に従って整形
+    
+*** Todo レポートの書き方
+
+    レポート文書の作成が終った人は，この課題に取りかかってください。
+    
+
+****  [[https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf][レポートの書き方：writing.pdf]] を理解する
+
+     [[https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf][writing.pdf]] を読んで，レポートの書き方のポイントを学び，     
+     自分がレポートを書くとき，読み返して思い出すための，
+     自分のためのメモを作成しましょう。
+     (メモは，メモ帳でもWordでもMindmapでもかまいません)
+
+     記憶しやすく，思い出しやすいメモを作成するには，
+     どんな方法があるでしょう？
+
+     自分の理解を書き残こすために
+
+     - 筆者の主張を，自分なりに what, why, how を考えましょう
+
+     - 筆者の主張を分類していきましょう:
+
+       - そのまま受け入れられ,知識となること，
+
+       - 疑問がのこったり，わからないこと
+
+       - 自分ならこう考える
+
+     - 主張間の構造を意識し，構造を表しましょう
+       (markdown, word, xmind のアウトライン機能 などで)
+       
+
+**** [[http://www.report.gusoku.net/kihon/][大学レポートの書き方：基本編]] を理解する
+     
+     [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org][morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict]]
+
+     にしたがって，
+
+     [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org][morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict]]
+
+     のようなレポートを作成してください。
+
+**** メモやあらすじについて 
+
+     メモやあらすじについての先生のメモです。参考になるかも:
+
+     - [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org][morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict]]
+    
+     - [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org][morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict]]
+
+     - [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org][morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict]]       

@@ -1,4 +1,4 @@
-#+OPTIONS:   H:6 toc:t num:2
+#+OPTIONS:   H:8 toc:t num:2 date:t
 #+OPTIONS: ^:{}
 #+PROPERTY:  header-args :padline no
 #+SETUPFILE: ~/COMM/public_html/org-html-theme/setup/theme-bigblow.setup

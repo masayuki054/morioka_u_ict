@@ -77,7 +77,7 @@
 
     書き込んだマップは，自分の情報処理演習フォルダに提出してください。
 
-* 関連ページ
+** 関連ページ
 
    - [[https://morioka-u.ap-cloud.com/prtl][ポータル]]
    - [[https://mellyclass.com/morioka-u/classrooms][melly]]
