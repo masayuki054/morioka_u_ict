@@ -1,4 +1,4 @@
-* 2021.06.21 12回目
+* 2021.07.06 13回目
 
 ** Done 受講の準備
 
@@ -35,7 +35,7 @@
 
 *** 前回のアンケート
 
-    [[https://docs.google.com/spreadsheets/d/1gHFJF176ICYj6WNA-HyCDb0SL_eWDWz9Z4t44DZnVqc/edit?resourcekey#gid=694796963][11ー6月21日アンケート （回答） - Google スプレッドシート]]    
+    [[https://docs.google.com/spreadsheets/d/1gHFJF176ICYj6WNA-HyCDb0SL_eWDWz9Z4t44DZnVqc/edit?resourcekey#gid=694796963][11,12ー6月21日アンケート （回答） - Google スプレッドシート]]    
     
     [[https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366][10ー6月14日アンケート（回答） - Google スプレッドシート]]    
     
@@ -129,9 +129,21 @@
      - プレビュー画面をコピーし，Word にコピペ
        - 見出し構造ができていることを確認
        - 段落構造ができていることを確認
-       - 引用，箇条書きができていることを確認
+       - 箇条書きができていることを確認
+
+     - *引用の書式がない場合* は，
+       
+       - 引用が定義されているテンプレートで新規文書を開き，
+       - 引用の書式を指定して，短かい文章を入力し，
+       - その文書を選んで，書式をコピー (コントロール+シフト+C) し，
+
+       - 書式を定義したい文書に戻り，
+       - 書式を指定したい箇所で，書式を貼り付け (コントロール+シフト
+         +v) します
+	 
 
      - 教科書に従って整形。
+       
 
 *** Todo レポートの書き方
 
@@ -143,7 +155,6 @@
      自分がレポートを書くとき，読み返して思い出すための，
      自分のためのメモを作成しましょう。
      (メモは，メモ帳でもWordでもMindmapでもかまいません)
-
 
      記憶しやすく，思い出しやすいメモを作成するには，
      どんな方法があるでしょう？
@@ -163,7 +174,6 @@
      - 主張間の構造を意識し，構造を表しましょう
        (markdown, word, xmind のアウトライン機能 などで)
 
-       
 ***** 資料
 
       [[https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ?usp=sharing][資料フォルダ]] の中のファイルを参考にしてください：
@@ -173,6 +183,11 @@
 
       - XMind のアウトライン機能で，まとめたもの。XMind のアウトライン
         モードで見てください。
+
+      - [[https://drive.google.com/file/d/1feYvI6NWJ_N-Wx9pTHlZy-A0DlkQhet9/view?usp=sharing][先生がまとめた Xmind]]。アウトラインモードとマインドマップモード
+        の両モードで見てください。
+
+      - writin.pdf を読んで，大切だと思った項目とその説明
 
 
 **** [[http://www.report.gusoku.net/kihon/][大学レポートの書き方：基本編]] を理解する
