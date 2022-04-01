@@ -3,14 +3,14 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2021-04-18 日 23:40 -->
+<!-- 2022-04-01 金 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>情報処理演習2021 ガイダンス</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
@@ -207,44 +207,22 @@
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">情報処理演習2021 ガイダンス</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf0f2ccf">1. 講義ページを見る</a></li>
-<li><a href="#orgad13782">2. 講義の受け方について</a></li>
-<li><a href="#orgfd7234a">3. 大切なこころ構えについて</a></li>
-<li><a href="#org80f20a7">4. 自己紹介</a></li>
-<li><a href="#org864d710">5. パソコンの使い方</a></li>
-<li><a href="#orgf649fd1">6. シラバスの説明</a></li>
-<li><a href="#orgdbf3e81">7. 講義内容の提案</a></li>
-<li><a href="#org0e65a4c">8. 教えるときに気をつけたい10のこと</a></li>
+<li><a href="#orgea78964">1. 講義ページを見る</a></li>
+<li><a href="#orgc416b00">2. 講義の受け方について</a></li>
+<li><a href="#orgb35d79a">3. 大切なこころ構えについて</a></li>
+<li><a href="#org85ad4c0">4. 自己紹介</a></li>
+<li><a href="#orgd8cd69b">5. パソコンの使い方</a></li>
+<li><a href="#orgdaedfff">6. シラバスの説明</a></li>
+<li><a href="#orgff0e0d8">7. 講義内容の提案</a></li>
+<li><a href="#org0c3a5f9">8. 教えるときに気をつけたい10のこと</a></li>
 </ul>
 </div>
 </div>
@@ -252,13 +230,14 @@
 <a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ </a>
 /<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>
 /<a href="https://masayuki054.github.io/morioka_u_ict/announce.html">お知らせ</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/lect.html">今迄の講義内容</a>
 /<a href="https://masayuki054.github.io/morioka_u_ict/reference.html">講義資料</a>
 /<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">先生のGoogleドライブ</a>
 /<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">先生のOneDrive</a>
 /<a href="https://www.office.com/">Office365ホーム</a>
 </p>
-<div id="outline-container-orgf0f2ccf" class="outline-2">
-<h2 id="orgf0f2ccf"><span class="section-number-2">1</span> 講義ページを見る</h2>
+<div id="outline-container-orgea78964" class="outline-2">
+<h2 id="orgea78964"><span class="section-number-2">1.</span> 講義ページを見る</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>パソコン起動と終了。</li>
@@ -275,8 +254,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgad13782" class="outline-2">
-<h2 id="orgad13782"><span class="section-number-2">2</span> 講義の受け方について</h2>
+<div id="outline-container-orgc416b00" class="outline-2">
+<h2 id="orgc416b00"><span class="section-number-2">2.</span> 講義の受け方について</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>質問してください。意見をいってください</li>
@@ -288,8 +267,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgfd7234a" class="outline-2">
-<h2 id="orgfd7234a"><span class="section-number-2">3</span> 大切なこころ構えについて</h2>
+<div id="outline-container-orgb35d79a" class="outline-2">
+<h2 id="orgb35d79a"><span class="section-number-2">3.</span> 大切なこころ構えについて</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>仕組みを考えること</li>
@@ -303,8 +282,8 @@
 </div>
 </div>
 
-<div id="outline-container-org80f20a7" class="outline-2">
-<h2 id="org80f20a7"><span class="section-number-2">4</span> 自己紹介</h2>
+<div id="outline-container-org85ad4c0" class="outline-2">
+<h2 id="org85ad4c0"><span class="section-number-2">4.</span> 自己紹介</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li><a href="./s.html">自己紹介</a></li>
@@ -320,8 +299,8 @@
 </div>
 </div>
 
-<div id="outline-container-org864d710" class="outline-2">
-<h2 id="org864d710"><span class="section-number-2">5</span> パソコンの使い方</h2>
+<div id="outline-container-orgd8cd69b" class="outline-2">
+<h2 id="orgd8cd69b"><span class="section-number-2">5.</span> パソコンの使い方</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 端末室のパソコンの使い方
@@ -341,8 +320,8 @@
 </div>
 
 
-<div id="outline-container-orgf649fd1" class="outline-2">
-<h2 id="orgf649fd1"><span class="section-number-2">6</span> シラバスの説明</h2>
+<div id="outline-container-orgdaedfff" class="outline-2">
+<h2 id="orgdaedfff"><span class="section-number-2">6.</span> シラバスの説明</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 盛岡大学のホームページ <a href="https://www.morioka-u.ac.jp/">https://www.morioka-u.ac.jp/</a> を眺めてみましょう。
@@ -357,8 +336,8 @@
 </div>
 
 
-<div id="outline-container-orgdbf3e81" class="outline-2">
-<h2 id="orgdbf3e81"><span class="section-number-2">7</span> 講義内容の提案</h2>
+<div id="outline-container-orgff0e0d8" class="outline-2">
+<h2 id="orgff0e0d8"><span class="section-number-2">7.</span> 講義内容の提案</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 皆さんの意見を聞いてから色々決めたいと思いますが，予定していることは，
@@ -399,8 +378,8 @@
 </div>
 
 
-<div id="outline-container-org0e65a4c" class="outline-2">
-<h2 id="org0e65a4c"><span class="section-number-2">8</span> 教えるときに気をつけたい10のこと</h2>
+<div id="outline-container-org0c3a5f9" class="outline-2">
+<h2 id="org0c3a5f9"><span class="section-number-2">8.</span> 教えるときに気をつけたい10のこと</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 これは僕がこれから講義中に気をつけたいことです。反することも多々あると
@@ -415,7 +394,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2021-04-18 日 23:40</p>
+<p class="date">Created: 2022-04-01 金 17:21</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
