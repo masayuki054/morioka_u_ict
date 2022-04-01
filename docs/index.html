@@ -3,14 +3,14 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2021-07-18 日 15:49 -->
+<!-- 2022-04-01 金 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>情報処理演習2021 今日の講義</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/bigblow/css/bigblow.css"/>
@@ -204,64 +204,42 @@
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/bigblow.js"></script>
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/hideshow.js"></script>
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">情報処理演習2021 今日の講義</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge57b2f3">1. 2021.07.19 15回目</a>
+<li><a href="#org96fa7cd">1. 2021.07.19 15回目</a>
 <ul>
-<li><a href="#org5af7f0f">1.1. Done 受講の準備</a></li>
-<li><a href="#orgb1cf178">1.2. 前回のアンケート</a></li>
-<li><a href="#org379166b">1.3. 今日の課題</a>
+<li><a href="#org8856390">1.1. Done 受講の準備</a></li>
+<li><a href="#org698d0d9">1.2. 前回のアンケート</a></li>
+<li><a href="#org05f30e3">1.3. 今日の課題</a>
 <ul>
-<li><a href="#org9070c49">タイピング &#x2013; 練習記録表の作成 再開</a>
+<li><a href="#org8742cde">タイピング &#x2013; 練習記録表の作成 再開</a>
 <ul>
-<li><a href="#org7e1d855">タイピング練習レポート作成の準備</a></li>
+<li><a href="#org5556df3">タイピング練習レポート作成の準備</a></li>
 </ul>
 </li>
-<li><a href="#orgd841c68">Doing レポート文書の作成 (教科書5章)</a>
+<li><a href="#org18526f2">Doing レポート文書の作成 (教科書5章)</a>
 <ul>
-<li><a href="#orga2ee36f">課題のやり方</a></li>
+<li><a href="#orgf0fb544">課題のやり方</a></li>
 </ul>
 </li>
-<li><a href="#org9e8c344">Todo レポートの書き方</a>
+<li><a href="#orge89ebfa">Todo レポートの書き方</a>
 <ul>
-<li><a href="#orgf457dae">レポートの書き方：writing.pdf を理解する</a>
+<li><a href="#org5031f81">レポートの書き方：writing.pdf を理解する</a>
 <ul>
-<li><a href="#orgf64e454">資料</a></li>
+<li><a href="#orgb92bb1a">資料</a></li>
 </ul>
 </li>
-<li><a href="#orgf1d93b5">大学レポートの書き方：基本編 を理解する</a></li>
-<li><a href="#org8bf838d">メモやあらすじについて</a></li>
+<li><a href="#orgd42f2d4">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org8935bed">メモやあらすじについて</a></li>
 </ul>
 </li>
-<li><a href="#orgfd47456">自主的に取り組む項目</a></li>
+<li><a href="#org53c7030">自主的に取り組む項目</a></li>
 </ul>
 </li>
 </ul>
@@ -279,12 +257,12 @@
 /<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">先生のOneDrive</a>
 /<a href="https://www.office.com/">Office365ホーム</a>
 </p>
-<div id="outline-container-orge57b2f3" class="outline-2">
-<h2 id="orge57b2f3"><span class="section-number-2">1</span> 2021.07.19 15回目</h2>
+<div id="outline-container-org96fa7cd" class="outline-2">
+<h2 id="org96fa7cd"><span class="section-number-2">1.</span> 2021.07.19 15回目</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org5af7f0f" class="outline-3">
-<h3 id="org5af7f0f"><span class="section-number-3">1.1</span> Done 受講の準備</h3>
+<div id="outline-container-org8856390" class="outline-3">
+<h3 id="org8856390"><span class="section-number-3">1.1.</span> Done 受講の準備</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="prepare.html">受講の準備</a> をしてください。
@@ -292,8 +270,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgb1cf178" class="outline-3">
-<h3 id="orgb1cf178"><span class="section-number-3">1.2</span> 前回のアンケート</h3>
+<div id="outline-container-org698d0d9" class="outline-3">
+<h3 id="org698d0d9"><span class="section-number-3">1.2.</span> 前回のアンケート</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 <a href="https://docs.google.com/spreadsheets/d/1FWdWChS6_olk5isQczLsu28jXXykut_l7a6dXiQurNM/edit#gid=2040900589">14ー7月12日アンケート（回答） - Google スプレッドシート</a>    
@@ -321,8 +299,8 @@
 </div>
 </div>
 
-<div id="outline-container-org379166b" class="outline-3">
-<h3 id="org379166b"><span class="section-number-3">1.3</span> 今日の課題</h3>
+<div id="outline-container-org05f30e3" class="outline-3">
+<h3 id="org05f30e3"><span class="section-number-3">1.3.</span> 今日の課題</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 レポートの提出が終った人は，melly の課題提出から提出完了のメッセー
@@ -330,13 +308,13 @@
 </p>
 </div>
 
-<div id="outline-container-org9070c49" class="outline-4">
-<h4 id="org9070c49">タイピング &#x2013; 練習記録表の作成 再開</h4>
-<div class="outline-text-4" id="text-org9070c49">
+<div id="outline-container-org8742cde" class="outline-4">
+<h4 id="org8742cde">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org8742cde">
 </div>
-<div id="outline-container-org7e1d855" class="outline-5">
-<h5 id="org7e1d855">タイピング練習レポート作成の準備</h5>
-<div class="outline-text-5" id="text-org7e1d855">
+<div id="outline-container-org5556df3" class="outline-5">
+<h5 id="org5556df3">タイピング練習レポート作成の準備</h5>
+<div class="outline-text-5" id="text-org5556df3">
 <p>
 <a href="typing.html">タイピング</a> と先生のレポートを参考に，自分の練習を見直してみてください。
 </p>
@@ -348,9 +326,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgd841c68" class="outline-4">
-<h4 id="orgd841c68">Doing レポート文書の作成 (教科書5章)</h4>
-<div class="outline-text-4" id="text-orgd841c68">
+<div id="outline-container-org18526f2" class="outline-4">
+<h4 id="org18526f2">Doing レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org18526f2">
 <p>
 教科書5章を読み，Word を使い始めましょう。   
 何回かかけて，Word でレポートを書くための機能を学び，
@@ -364,9 +342,9 @@
 </ul>
 </div>
 
-<div id="outline-container-orga2ee36f" class="outline-5">
-<h5 id="orga2ee36f">課題のやり方</h5>
-<div class="outline-text-5" id="text-orga2ee36f">
+<div id="outline-container-orgf0fb544" class="outline-5">
+<h5 id="orgf0fb544">課題のやり方</h5>
+<div class="outline-text-5" id="text-orgf0fb544">
 <p>
 <a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
 17章にやり方の説明があります。
@@ -437,13 +415,13 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </div>
 
 
-<div id="outline-container-org9e8c344" class="outline-4">
-<h4 id="org9e8c344">Todo レポートの書き方</h4>
-<div class="outline-text-4" id="text-org9e8c344">
+<div id="outline-container-orge89ebfa" class="outline-4">
+<h4 id="orge89ebfa">Todo レポートの書き方</h4>
+<div class="outline-text-4" id="text-orge89ebfa">
 </div>
-<div id="outline-container-orgf457dae" class="outline-5">
-<h5 id="orgf457dae"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
-<div class="outline-text-5" id="text-orgf457dae">
+<div id="outline-container-org5031f81" class="outline-5">
+<h5 id="org5031f81"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-org5031f81">
 <p>
 <a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
 自分がレポートを書くとき，読み返して思い出すための，
@@ -478,9 +456,9 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </ul>
 </div>
 
-<div id="outline-container-orgf64e454" class="outline-6">
-<h6 id="orgf64e454">資料</h6>
-<div class="outline-text-6" id="text-orgf64e454">
+<div id="outline-container-orgb92bb1a" class="outline-6">
+<h6 id="orgb92bb1a">資料</h6>
+<div class="outline-text-6" id="text-orgb92bb1a">
 <p>
 <a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ?usp=sharing">資料フォルダ</a> の中のファイルを参考にしてください：
 </p>
@@ -503,9 +481,9 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </div>
 
 
-<div id="outline-container-orgf1d93b5" class="outline-5">
-<h5 id="orgf1d93b5"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
-<div class="outline-text-5" id="text-orgf1d93b5">
+<div id="outline-container-orgd42f2d4" class="outline-5">
+<h5 id="orgd42f2d4"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-orgd42f2d4">
 <p>
 <a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
 </p>
@@ -524,9 +502,9 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </div>
 </div>
 
-<div id="outline-container-org8bf838d" class="outline-5">
-<h5 id="org8bf838d">メモやあらすじについて</h5>
-<div class="outline-text-5" id="text-org8bf838d">
+<div id="outline-container-org8935bed" class="outline-5">
+<h5 id="org8935bed">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org8935bed">
 <p>
 メモやあらすじについての先生のメモです。参考になるかも:
 </p>
@@ -543,9 +521,9 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </div>
 
 
-<div id="outline-container-orgfd47456" class="outline-4">
-<h4 id="orgfd47456">自主的に取り組む項目</h4>
-<div class="outline-text-4" id="text-orgfd47456">
+<div id="outline-container-org53c7030" class="outline-4">
+<h4 id="org53c7030">自主的に取り組む項目</h4>
+<div class="outline-text-4" id="text-org53c7030">
 <p>
 時間があれば，一緒に教科書を読み，先生が説明し，皆さんに内容のまと
 めを作ってほしいと思っています。でもこれまでの課題が出来ていない人
@@ -578,7 +556,7 @@ Wordで新規文書を作成，レポートのためのテンプレートを選�
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2021-07-18 日 15:49</p>
+<p class="date">Created: 2022-04-01 金 17:21</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
