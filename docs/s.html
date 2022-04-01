@@ -3,14 +3,14 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2021-04-18 日 15:43 -->
+<!-- 2022-04-01 金 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>情報処理演習2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/bigblow/css/bigblow.css"/>
@@ -204,57 +204,42 @@
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/bigblow.js"></script>
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/hideshow.js"></script>
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">情報処理演習2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0225d53">1. 自己紹介</a>
+<li><a href="#org60a97dc">1. 自己紹介</a>
 <ul>
-<li><a href="#orgcc2a387">1.1. 自己紹介</a></li>
-<li><a href="#org2d087ce">1.2. 栄養科学への思い</a></li>
-<li><a href="#org991fff7">1.3. 講義について</a></li>
-<li><a href="#orgac3acbe">1.4. サイト</a></li>
+<li><a href="#org9000224">1.1. 自己紹介</a></li>
+<li><a href="#org127229a">1.2. 栄養科学への思い</a></li>
+<li><a href="#org9f5834f">1.3. 講義について</a></li>
+<li><a href="#orgac4a2f2">1.4. サイト</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
-<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ</a>/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">OneDrive</a>
+<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ </a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/announce.html">お知らせ</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/lect.html">今迄の講義内容</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/reference.html">講義資料</a>
+/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">先生のGoogleドライブ</a>
+/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">先生のOneDrive</a>
+/<a href="https://www.office.com/">Office365ホーム</a>
 </p>
 
-<div id="outline-container-org0225d53" class="outline-2">
-<h2 id="org0225d53"><span class="section-number-2">1</span> 自己紹介</h2>
+<div id="outline-container-org60a97dc" class="outline-2">
+<h2 id="org60a97dc"><span class="section-number-2">1.</span> 自己紹介</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgcc2a387" class="outline-3">
-<h3 id="orgcc2a387"><span class="section-number-3">1.1</span> 自己紹介</h3>
+<div id="outline-container-org9000224" class="outline-3">
+<h3 id="org9000224"><span class="section-number-3">1.1.</span> 自己紹介</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="https://drive.google.com/folderview?id=0BwUWvGKIXA9PWHI0cHBVSWk4cU0&amp;usp=sharing">自己紹介用写真</a> @googleDrive
@@ -298,8 +283,8 @@
 </div>
 </div>
 
-<div id="outline-container-org2d087ce" class="outline-3">
-<h3 id="org2d087ce"><span class="section-number-3">1.2</span> 栄養科学への思い</h3>
+<div id="outline-container-org127229a" class="outline-3">
+<h3 id="org127229a"><span class="section-number-3">1.2.</span> 栄養科学への思い</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 ゆえあって，油，豚，牛 を断っています。
@@ -326,8 +311,8 @@
 </div>
 
 
-<div id="outline-container-org991fff7" class="outline-3">
-<h3 id="org991fff7"><span class="section-number-3">1.3</span> 講義について</h3>
+<div id="outline-container-org9f5834f" class="outline-3">
+<h3 id="org9f5834f"><span class="section-number-3">1.3.</span> 講義について</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><a href="https://masayuki054.hatenablog.com/entry/2013/05/17/012222">非常勤講師を引き受けるにあたって思った事</a>
@@ -341,8 +326,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgac3acbe" class="outline-3">
-<h3 id="orgac3acbe"><span class="section-number-3">1.4</span> サイト</h3>
+<div id="outline-container-orgac4a2f2" class="outline-3">
+<h3 id="orgac4a2f2"><span class="section-number-3">1.4.</span> サイト</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 <a href="https://masayuki054.hatenablog.com/entry/2013/05/17/012222">はてなブログ</a>
@@ -357,7 +342,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2021-04-18 日 15:43</p>
+<p class="date">Created: 2022-04-01 金 17:21</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
