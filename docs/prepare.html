@@ -3,14 +3,14 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2021-05-24 月 08:10 -->
+<!-- 2022-04-01 金 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>情報処理演習2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
@@ -207,42 +207,20 @@
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">情報処理演習2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5140b5d">1. Done 受講の準備</a>
+<li><a href="#org83a57e3">1. Done 受講の準備</a>
 <ul>
-<li><a href="#org20568ea">1.1. Doing OneDrive を開く</a></li>
-<li><a href="#org10db37e">1.2. エクスプローラ (ウィンドウズキー+e) から開く</a></li>
-<li><a href="#org1393133">1.3. ブラウザで OneDrive を開く</a></li>
-<li><a href="#orge6ebd13">1.4. デスクトップ・アプリで OneDrive の書類を開いた場合</a></li>
+<li><a href="#org85c8bd1">1.1. Doing OneDrive を開く</a></li>
+<li><a href="#orga433880">1.2. エクスプローラ (ウィンドウズキー+e) から開く</a></li>
+<li><a href="#org2f3338c">1.3. ブラウザで OneDrive を開く</a></li>
+<li><a href="#org6e664da">1.4. デスクトップ・アプリで OneDrive の書類を開いた場合</a></li>
 </ul>
 </li>
 </ul>
@@ -259,8 +237,8 @@
 /<a href="https://www.office.com/">Office365ホーム</a>
 </p>
 
-<div id="outline-container-org5140b5d" class="outline-2">
-<h2 id="org5140b5d"><span class="section-number-2">1</span> Done 受講の準備</h2>
+<div id="outline-container-org83a57e3" class="outline-2">
+<h2 id="org83a57e3"><span class="section-number-2">1.</span> Done 受講の準備</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 講義を受けるために下記のことを行ないましょう:
@@ -285,8 +263,8 @@
 </ul>
 </div>
 
-<div id="outline-container-org20568ea" class="outline-3">
-<h3 id="org20568ea"><span class="section-number-3">1.1</span> Doing OneDrive を開く</h3>
+<div id="outline-container-org85c8bd1" class="outline-3">
+<h3 id="org85c8bd1"><span class="section-number-3">1.1.</span> Doing OneDrive を開く</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 以下の内容には，未確認のことがあります。異なる症状があれば，講師に
@@ -295,8 +273,8 @@
 </div>
 </div>
 
-<div id="outline-container-org10db37e" class="outline-3">
-<h3 id="org10db37e"><span class="section-number-3">1.2</span> エクスプローラ (ウィンドウズキー+e) から開く</h3>
+<div id="outline-container-orga433880" class="outline-3">
+<h3 id="orga433880"><span class="section-number-3">1.2.</span> エクスプローラ (ウィンドウズキー+e) から開く</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>OneDrive をクリックして，OneDrive にサインインし, 自分の情報処理演
@@ -309,8 +287,8 @@
 </div>
 </div>
 
-<div id="outline-container-org1393133" class="outline-3">
-<h3 id="org1393133"><span class="section-number-3">1.3</span> ブラウザで OneDrive を開く</h3>
+<div id="outline-container-org2f3338c" class="outline-3">
+<h3 id="org2f3338c"><span class="section-number-3">1.3.</span> ブラウザで OneDrive を開く</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>再起動しても，OneDrive がエクスプローラのサイドバーに現われていない時は，
@@ -336,8 +314,8 @@
 </div>
 </div>
 
-<div id="outline-container-orge6ebd13" class="outline-3">
-<h3 id="orge6ebd13"><span class="section-number-3">1.4</span> デスクトップ・アプリで OneDrive の書類を開いた場合</h3>
+<div id="outline-container-org6e664da" class="outline-3">
+<h3 id="org6e664da"><span class="section-number-3">1.4.</span> デスクトップ・アプリで OneDrive の書類を開いた場合</h3>
 <div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li>OneDriveの書類を直接デスクトップ・アプリで開いた場合，</li>
@@ -357,7 +335,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2021-05-24 月 08:10</p>
+<p class="date">Created: 2022-04-01 金 17:21</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
