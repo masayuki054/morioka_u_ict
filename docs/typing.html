@@ -3,14 +3,14 @@
 "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
-<!-- 2021-04-18 日 15:44 -->
+<!-- 2022-04-01 金 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>情報処理演習2021 タイピング 練習・記録・レポート</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="masayuki" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
@@ -207,134 +207,119 @@
 <script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
 <script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">情報処理演習2021 タイピング 練習・記録・レポート</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&#30446;&#27425;</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbce8732">1. タイピング練習と記録メモ</a>
+<li><a href="#orgb3708c9">1. タイピング練習と記録メモ</a>
 <ul>
-<li><a href="#orgb16b5f2">1.1. 練習用 Web アプリ</a></li>
-<li><a href="#org347827c">1.2. 練習の難易度</a></li>
-<li><a href="#orge11a063">1.3. 結果のメモ</a>
+<li><a href="#org19b24a9">1.1. 練習用 Web アプリ</a></li>
+<li><a href="#orgb29ebe8">1.2. 練習の難易度</a></li>
+<li><a href="#org7bb885b">1.3. 結果のメモ</a>
 <ul>
 <li>
 <ul>
-<li><a href="#orgaf9f605">タイピングメモのコピー（バックアップを作る)</a></li>
+<li><a href="#org838a71f">タイピングメモのコピー（バックアップを作る)</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org08e0380">2. タイピングメモと記録表の管理</a>
+<li><a href="#org81e1c03">2. タイピングメモと記録表の管理</a>
 <ul>
-<li><a href="#orgfc3d389">2.1. タイピングの記録メモ</a></li>
-<li><a href="#org4abadf5">2.2. 「メモ帳」アプリを動かす</a></li>
-<li><a href="#orgc6fc71d">2.3. タイピングの記録の追加</a></li>
-<li><a href="#orgb65d9be">2.4. メモから表を作る (こぴぺ)</a></li>
-<li><a href="#orgb53cbcf">2.5. 表の枠を固定</a></li>
+<li><a href="#org3e41cbc">2.1. タイピングの記録メモ</a></li>
+<li><a href="#orgb8dd981">2.2. 「メモ帳」アプリを動かす</a></li>
+<li><a href="#org64ca8f9">2.3. タイピングの記録の追加</a></li>
+<li><a href="#org0f3e9f6">2.4. メモから表を作る (こぴぺ)</a></li>
+<li><a href="#org57b8002">2.5. 表の枠を固定</a></li>
 </ul>
 </li>
-<li><a href="#orgeed9dcc">3. 正しいキー数のグラフを描く</a>
+<li><a href="#org04100f9">3. 正しいキー数のグラフを描く</a>
 <ul>
-<li><a href="#org87bc73e">3.1. 列を選択する</a></li>
-<li><a href="#org8d7c384">3.2. 別の列を更に選択する</a></li>
-<li><a href="#orgda13369">3.3. グラフを表示</a></li>
-<li><a href="#orgd0ea8c8">3.4. グラフの保存</a></li>
+<li><a href="#org76fbaf5">3.1. 列を選択する</a></li>
+<li><a href="#org9574727">3.2. 別の列を更に選択する</a></li>
+<li><a href="#org97883b2">3.3. グラフを表示</a></li>
+<li><a href="#orgac73cff">3.4. グラフの保存</a></li>
 </ul>
 </li>
-<li><a href="#orgdcbda0c">4. タイピング練習のグラフ化</a>
+<li><a href="#orge6236d5">4. タイピング練習のグラフ化</a>
 <ul>
-<li><a href="#org2ea1dfe">4.1. グラフに描く項目</a></li>
-<li><a href="#orge7a1ccf">4.2. 正しいキー数とミスタイプ数をグラフにする</a>
+<li><a href="#org98878fe">4.1. グラフに描く項目</a></li>
+<li><a href="#orgb35326c">4.2. 正しいキー数とミスタイプ数をグラフにする</a>
 <ul>
-<li><a href="#org81c56aa">表の枠を固定</a></li>
-<li><a href="#orgdd1ddae">正しいキー数のデータ列を選ぶ</a></li>
-<li><a href="#orgb9fe254">続けてミスタイプ数を選ぶ</a></li>
-<li><a href="#orgc8ffd48">グラフを描く</a></li>
-<li><a href="#orgb2d0bf7">グラフを直線（線形）近似して直線化，成長しているかを可視化</a></li>
-<li><a href="#orgd45ce2f">直線の式を表示し，成長の割合を知る</a></li>
+<li><a href="#org100eb3a">表の枠を固定</a></li>
+<li><a href="#orgcf2bdc8">正しいキー数のデータ列を選ぶ</a></li>
+<li><a href="#orgdcaf8ef">続けてミスタイプ数を選ぶ</a></li>
+<li><a href="#org8067388">グラフを描く</a></li>
+<li><a href="#orgc2c6de5">グラフを直線（線形）近似して直線化，成長しているかを可視化</a></li>
+<li><a href="#org3623e68">直線の式を表示し，成長の割合を知る</a></li>
 </ul>
 </li>
-<li><a href="#orga6adbfc">4.3. グラフに描かれているデータ範囲の確認</a></li>
-<li><a href="#org4b8cd0f">4.4. データの最終行の追加</a></li>
-<li><a href="#org3853947">4.5. 表の先頭に統計値を計算する (あとで)</a></li>
-<li><a href="#orgec63103">4.6. 自分の成長度の評価 (あとで)</a></li>
-<li><a href="#orgf0c5a5d">4.7. グラフの描き方について</a>
+<li><a href="#orgfc56783">4.3. グラフに描かれているデータ範囲の確認</a></li>
+<li><a href="#orgdc056f5">4.4. データの最終行の追加</a></li>
+<li><a href="#orgc433bea">4.5. 表の先頭に統計値を計算する (あとで)</a></li>
+<li><a href="#org158d542">4.6. 自分の成長度の評価 (あとで)</a></li>
+<li><a href="#orgc17d04d">4.7. グラフの描き方について</a>
 <ul>
-<li><a href="#orgbd2dd11">グラフの書き方について，推奨する説明サイト</a></li>
+<li><a href="#org9cac739">グラフの書き方について，推奨する説明サイト</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org5fb0288">5. 練習成果の統計処理</a>
+<li><a href="#org3ac5cef">5. 練習成果の統計処理</a>
 <ul>
-<li><a href="#org0b37ba3">5.1. 統計値の計算</a></li>
-<li><a href="#orgd9a25d2">5.2. 上達度の計算</a></li>
-<li><a href="#org2e756ab">5.3. 正しく打ったキー数とミスタイプ数の関係</a></li>
-<li><a href="#orge6a6d8c">5.4. 自分の上達度は？</a></li>
+<li><a href="#org93b1695">5.1. 統計値の計算</a></li>
+<li><a href="#org18ff1ec">5.2. 上達度の計算</a></li>
+<li><a href="#orgd1a6604">5.3. 正しく打ったキー数とミスタイプ数の関係</a></li>
+<li><a href="#orgb82d70f">5.4. 自分の上達度は？</a></li>
 </ul>
 </li>
-<li><a href="#org9fbd30d">6. 表計算/数式と関数</a>
+<li><a href="#org90e1153">6. 表計算/数式と関数</a>
 <ul>
-<li><a href="#orgaeb5f8b">6.1. いい点</a></li>
-<li><a href="#org4e75ce6">6.2. 数式を使うための準備</a>
+<li><a href="#org2a192e7">6.1. いい点</a></li>
+<li><a href="#org379ce38">6.2. 数式を使うための準備</a>
 <ul>
-<li><a href="#orgd1dbb58">数式の表示</a></li>
+<li><a href="#orgf1db6b6">数式の表示</a></li>
 </ul>
 </li>
-<li><a href="#orgac81de8">6.3. 数式の入力</a></li>
-<li><a href="#orgd54b985">6.4. データ</a></li>
-<li><a href="#org7a1b679">6.5. データ列の入力</a></li>
-<li><a href="#org92f4033">6.6. 関数の利用</a></li>
-<li><a href="#org8655bbd">6.7. ふたつのデータ列が必要な関数</a></li>
-<li><a href="#org77ce770">6.8. 通し回数列の作り方</a></li>
+<li><a href="#orgcba81de">6.3. 数式の入力</a></li>
+<li><a href="#org875cb34">6.4. データ</a></li>
+<li><a href="#org2221bf7">6.5. データ列の入力</a></li>
+<li><a href="#org07ef528">6.6. 関数の利用</a></li>
+<li><a href="#org9e1b342">6.7. ふたつのデータ列が必要な関数</a></li>
+<li><a href="#org6963d6c">6.8. 通し回数列の作り方</a></li>
 </ul>
 </li>
-<li><a href="#org0f48a3e">7. タイピング練習レポートの作成</a>
+<li><a href="#org82c8b24">7. タイピング練習レポートの作成</a>
 <ul>
-<li><a href="#org89072cd">7.1. 目的</a></li>
-<li><a href="#orgd83bcef">7.2. 内容</a></li>
+<li><a href="#org18f705d">7.1. 目的</a></li>
+<li><a href="#org9c2aebc">7.2. 内容</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
-<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ</a>/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">OneDrive</a>
+<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ </a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/announce.html">お知らせ</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/lect.html">今迄の講義内容</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/reference.html">講義資料</a>
+/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">先生のGoogleドライブ</a>
+/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">先生のOneDrive</a>
+/<a href="https://www.office.com/">Office365ホーム</a>
 </p>
-<div id="outline-container-orgbce8732" class="outline-2">
-<h2 id="orgbce8732"><span class="section-number-2">1</span> タイピング練習と記録メモ</h2>
+<div id="outline-container-orgb3708c9" class="outline-2">
+<h2 id="orgb3708c9"><span class="section-number-2">1.</span> タイピング練習と記録メモ</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgb16b5f2" class="outline-3">
-<h3 id="orgb16b5f2"><span class="section-number-3">1.1</span> 練習用 Web アプリ</h3>
+<div id="outline-container-org19b24a9" class="outline-3">
+<h3 id="org19b24a9"><span class="section-number-3">1.1.</span> 練習用 Web アプリ</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 <a href="http://typing.sakura.ne.jp/sushida/index.html">寿司打</a>を使いましょう。
@@ -342,8 +327,8 @@
 </div>
 </div>
 
-<div id="outline-container-org347827c" class="outline-3">
-<h3 id="org347827c"><span class="section-number-3">1.2</span> 練習の難易度</h3>
+<div id="outline-container-orgb29ebe8" class="outline-3">
+<h3 id="orgb29ebe8"><span class="section-number-3">1.2.</span> 練習の難易度</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 後で練習成果を可視化するので，同じ練習難度でやりましょう。
@@ -361,8 +346,8 @@
 </div>
 </div>
 
-<div id="outline-container-orge11a063" class="outline-3">
-<h3 id="orge11a063"><span class="section-number-3">1.3</span> 結果のメモ</h3>
+<div id="outline-container-org7bb885b" class="outline-3">
+<h3 id="org7bb885b"><span class="section-number-3">1.3.</span> 結果のメモ</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>タイピングの結果をメモしましょう。</li>
@@ -393,7 +378,7 @@
 下記のように記入します。
 </p>
 
-<pre class="example" id="org034f222">
+<pre class="example" id="org1c90b87">
 日付, 回目, 入力文字数, 平均キータイプ数, ミスタイプ数
 </pre>
 
@@ -401,7 +386,7 @@
 例えば，下記のような記録になります。省略した箇所は，空白にして，コンマは省かず記入します。
 </p>
 
-<pre class="example" id="org0d4d795">
+<pre class="example" id="org62a2047">
 日付, 回, 入力文字数, 平均キータイプ数, ミスタイプ数
 2014.1.14, 1, 167, 2.5, 10
          , 2, 153, 2.4, 8
@@ -420,9 +405,9 @@
 </p>
 </div>
 
-<div id="outline-container-orgaf9f605" class="outline-5">
-<h5 id="orgaf9f605">タイピングメモのコピー（バックアップを作る)</h5>
-<div class="outline-text-5" id="text-orgaf9f605">
+<div id="outline-container-org838a71f" class="outline-5">
+<h5 id="org838a71f">タイピングメモのコピー（バックアップを作る)</h5>
+<div class="outline-text-5" id="text-org838a71f">
 <p>
 毎回，タイピングメモのコピー という名前でコピーを作りましょう。
 何かのはずみに記録をなくした時に，役立ちます。
@@ -437,12 +422,12 @@
 </div>
 </div>
 
-<div id="outline-container-org08e0380" class="outline-2">
-<h2 id="org08e0380"><span class="section-number-2">2</span> タイピングメモと記録表の管理</h2>
+<div id="outline-container-org81e1c03" class="outline-2">
+<h2 id="org81e1c03"><span class="section-number-2">2.</span> タイピングメモと記録表の管理</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgfc3d389" class="outline-3">
-<h3 id="orgfc3d389"><span class="section-number-3">2.1</span> タイピングの記録メモ</h3>
+<div id="outline-container-org3e41cbc" class="outline-3">
+<h3 id="org3e41cbc"><span class="section-number-3">2.1.</span> タイピングの記録メモ</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><b>自分の情報処理フォルダ</b> の中に，
@@ -457,8 +442,8 @@
 </div>
 </div>
 
-<div id="outline-container-org4abadf5" class="outline-3">
-<h3 id="org4abadf5"><span class="section-number-3">2.2</span> 「メモ帳」アプリを動かす</h3>
+<div id="outline-container-orgb8dd981" class="outline-3">
+<h3 id="orgb8dd981"><span class="section-number-3">2.2.</span> 「メモ帳」アプリを動かす</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>ウィンドウズキー を押して，「スタート画面」を出す。</li>
@@ -469,8 +454,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgc6fc71d" class="outline-3">
-<h3 id="orgc6fc71d"><span class="section-number-3">2.3</span> タイピングの記録の追加</h3>
+<div id="outline-container-org64ca8f9" class="outline-3">
+<h3 id="org64ca8f9"><span class="section-number-3">2.3.</span> タイピングの記録の追加</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li><b>タイピングメモ.txt</b> をダブルクリックして，メモ帳を動かします。</li>
@@ -485,8 +470,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgb65d9be" class="outline-3">
-<h3 id="orgb65d9be"><span class="section-number-3">2.4</span> メモから表を作る (こぴぺ)</h3>
+<div id="outline-container-org0f3e9f6" class="outline-3">
+<h3 id="org0f3e9f6"><span class="section-number-3">2.4.</span> メモから表を作る (こぴぺ)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 今日は，正しい表になっているか，確かめてみましょう:
@@ -527,8 +512,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgb53cbcf" class="outline-3">
-<h3 id="orgb53cbcf"><span class="section-number-3">2.5</span> 表の枠を固定</h3>
+<div id="outline-container-org57b8002" class="outline-3">
+<h3 id="org57b8002"><span class="section-number-3">2.5.</span> 表の枠を固定</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 記録数が多くなり，表が画面に収まりきらなくなった時，
@@ -544,12 +529,12 @@
 </div>
 </div>
 
-<div id="outline-container-orgeed9dcc" class="outline-2">
-<h2 id="orgeed9dcc"><span class="section-number-2">3</span> 正しいキー数のグラフを描く</h2>
+<div id="outline-container-org04100f9" class="outline-2">
+<h2 id="org04100f9"><span class="section-number-2">3.</span> 正しいキー数のグラフを描く</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org87bc73e" class="outline-3">
-<h3 id="org87bc73e"><span class="section-number-3">3.1</span> 列を選択する</h3>
+<div id="outline-container-org76fbaf5" class="outline-3">
+<h3 id="org76fbaf5"><span class="section-number-3">3.1.</span> 列を選択する</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 表の枠を固定し，
@@ -565,8 +550,8 @@
 </div>
 
 
-<div id="outline-container-org8d7c384" class="outline-3">
-<h3 id="org8d7c384"><span class="section-number-3">3.2</span> 別の列を更に選択する</h3>
+<div id="outline-container-org9574727" class="outline-3">
+<h3 id="org9574727"><span class="section-number-3">3.2.</span> 別の列を更に選択する</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 表の先頭部と末尾部が同時に表示されている状態で、
@@ -580,8 +565,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgda13369" class="outline-3">
-<h3 id="orgda13369"><span class="section-number-3">3.3</span> グラフを表示</h3>
+<div id="outline-container-org97883b2" class="outline-3">
+<h3 id="org97883b2"><span class="section-number-3">3.3.</span> グラフを表示</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 列の選択が終わったら:
@@ -593,8 +578,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgd0ea8c8" class="outline-3">
-<h3 id="orgd0ea8c8"><span class="section-number-3">3.4</span> グラフの保存</h3>
+<div id="outline-container-orgac73cff" class="outline-3">
+<h3 id="orgac73cff"><span class="section-number-3">3.4.</span> グラフの保存</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 記録表とは別に，グラフを保存しておきましょう。
@@ -615,12 +600,12 @@
 
 
 
-<div id="outline-container-orgdcbda0c" class="outline-2">
-<h2 id="orgdcbda0c"><span class="section-number-2">4</span> タイピング練習のグラフ化</h2>
+<div id="outline-container-orge6236d5" class="outline-2">
+<h2 id="orge6236d5"><span class="section-number-2">4.</span> タイピング練習のグラフ化</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org2ea1dfe" class="outline-3">
-<h3 id="org2ea1dfe"><span class="section-number-3">4.1</span> グラフに描く項目</h3>
+<div id="outline-container-org98878fe" class="outline-3">
+<h3 id="org98878fe"><span class="section-number-3">4.1.</span> グラフに描く項目</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>正しいキー数</li>
@@ -638,13 +623,13 @@
 </div>
 </div>
 
-<div id="outline-container-orge7a1ccf" class="outline-3">
-<h3 id="orge7a1ccf"><span class="section-number-3">4.2</span> 正しいキー数とミスタイプ数をグラフにする</h3>
+<div id="outline-container-orgb35326c" class="outline-3">
+<h3 id="orgb35326c"><span class="section-number-3">4.2.</span> 正しいキー数とミスタイプ数をグラフにする</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
-<div id="outline-container-org81c56aa" class="outline-4">
-<h4 id="org81c56aa">表の枠を固定</h4>
-<div class="outline-text-4" id="text-org81c56aa">
+<div id="outline-container-org100eb3a" class="outline-4">
+<h4 id="org100eb3a">表の枠を固定</h4>
+<div class="outline-text-4" id="text-org100eb3a">
 <ul class="org-ul">
 <li>見出し行付近と最終行付近を同時に見るために</li>
 
@@ -655,9 +640,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgdd1ddae" class="outline-4">
-<h4 id="orgdd1ddae">正しいキー数のデータ列を選ぶ</h4>
-<div class="outline-text-4" id="text-orgdd1ddae">
+<div id="outline-container-orgcf2bdc8" class="outline-4">
+<h4 id="orgcf2bdc8">正しいキー数のデータ列を選ぶ</h4>
+<div class="outline-text-4" id="text-orgcf2bdc8">
 <ul class="org-ul">
 <li>上のウィンドウで見出しセルをクリック(えらび)，</li>
 <li>下のウィンドウで最終データセルをシフトクリック</li>
@@ -665,9 +650,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgb9fe254" class="outline-4">
-<h4 id="orgb9fe254">続けてミスタイプ数を選ぶ</h4>
-<div class="outline-text-4" id="text-orgb9fe254">
+<div id="outline-container-orgdcaf8ef" class="outline-4">
+<h4 id="orgdcaf8ef">続けてミスタイプ数を選ぶ</h4>
+<div class="outline-text-4" id="text-orgdcaf8ef">
 <ul class="org-ul">
 <li>上のウィンドウで見出しセルをコントロールクリック(追加選択)，</li>
 <li>下のウィンドウで最終データセルをシフトクリック</li>
@@ -675,18 +660,18 @@
 </div>
 </div>
 
-<div id="outline-container-orgc8ffd48" class="outline-4">
-<h4 id="orgc8ffd48">グラフを描く</h4>
-<div class="outline-text-4" id="text-orgc8ffd48">
+<div id="outline-container-org8067388" class="outline-4">
+<h4 id="org8067388">グラフを描く</h4>
+<div class="outline-text-4" id="text-org8067388">
 <ul class="org-ul">
 <li>「挿入」メニューからグラフの種類を選ぶ</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb2d0bf7" class="outline-4">
-<h4 id="orgb2d0bf7">グラフを直線（線形）近似して直線化，成長しているかを可視化</h4>
-<div class="outline-text-4" id="text-orgb2d0bf7">
+<div id="outline-container-orgc2c6de5" class="outline-4">
+<h4 id="orgc2c6de5">グラフを直線（線形）近似して直線化，成長しているかを可視化</h4>
+<div class="outline-text-4" id="text-orgc2c6de5">
 <ul class="org-ul">
 <li>直線として見たいグラフをクリックし，すべての点を選び，</li>
 <li>その点の上で，右クリックし，近似曲線の書式設定メニューを出す:</li>
@@ -696,9 +681,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgd45ce2f" class="outline-4">
-<h4 id="orgd45ce2f">直線の式を表示し，成長の割合を知る</h4>
-<div class="outline-text-4" id="text-orgd45ce2f">
+<div id="outline-container-org3623e68" class="outline-4">
+<h4 id="org3623e68">直線の式を表示し，成長の割合を知る</h4>
+<div class="outline-text-4" id="text-org3623e68">
 <ul class="org-ul">
 <li>直線の上で右クリック，近似曲線の書式設定メニューを出し，</li>
 <li>数式の表示をチェックする</li>
@@ -707,8 +692,8 @@
 </div>
 </div>
 
-<div id="outline-container-orga6adbfc" class="outline-3">
-<h3 id="orga6adbfc"><span class="section-number-3">4.3</span> グラフに描かれているデータ範囲の確認</h3>
+<div id="outline-container-orgfc56783" class="outline-3">
+<h3 id="orgfc56783"><span class="section-number-3">4.3.</span> グラフに描かれているデータ範囲の確認</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>グラフ上の点をクリックし，グラフ上の全ての点列を選択する。</li>
@@ -718,8 +703,8 @@
 </div>
 </div>
 
-<div id="outline-container-org4b8cd0f" class="outline-3">
-<h3 id="org4b8cd0f"><span class="section-number-3">4.4</span> データの最終行の追加</h3>
+<div id="outline-container-orgdc056f5" class="outline-3">
+<h3 id="orgdc056f5"><span class="section-number-3">4.4.</span> データの最終行の追加</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 表の終りを示すために，最終行を作ります。
@@ -741,8 +726,8 @@
 </div>
 </div>
 
-<div id="outline-container-org3853947" class="outline-3">
-<h3 id="org3853947"><span class="section-number-3">4.5</span> 表の先頭に統計値を計算する (あとで)</h3>
+<div id="outline-container-orgc433bea" class="outline-3">
+<h3 id="orgc433bea"><span class="section-number-3">4.5.</span> 表の先頭に統計値を計算する (あとで)</h3>
 <div class="outline-text-3" id="text-4-5">
 <ul class="org-ul">
 <li>最高値，最低値，平均値, 直線の傾き</li>
@@ -753,8 +738,8 @@
 </div>
 
 
-<div id="outline-container-orgec63103" class="outline-3">
-<h3 id="orgec63103"><span class="section-number-3">4.6</span> 自分の成長度の評価 (あとで)</h3>
+<div id="outline-container-org158d542" class="outline-3">
+<h3 id="org158d542"><span class="section-number-3">4.6.</span> 自分の成長度の評価 (あとで)</h3>
 <div class="outline-text-3" id="text-4-6">
 <ul class="org-ul">
 <li>グラフと統計値をコピーし，Word 文書に貼り付け</li>
@@ -763,8 +748,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgf0c5a5d" class="outline-3">
-<h3 id="orgf0c5a5d"><span class="section-number-3">4.7</span> グラフの描き方について</h3>
+<div id="outline-container-orgc17d04d" class="outline-3">
+<h3 id="orgc17d04d"><span class="section-number-3">4.7.</span> グラフの描き方について</h3>
 <div class="outline-text-3" id="text-4-7">
 <p>
 表からグラフを描く時，このページの最後にある推奨サイトを参考に，下記の
@@ -792,9 +777,9 @@
 </ul>
 </div>
 
-<div id="outline-container-orgbd2dd11" class="outline-4">
-<h4 id="orgbd2dd11">グラフの書き方について，推奨する説明サイト</h4>
-<div class="outline-text-4" id="text-orgbd2dd11">
+<div id="outline-container-org9cac739" class="outline-4">
+<h4 id="org9cac739">グラフの書き方について，推奨する説明サイト</h4>
+<div class="outline-text-4" id="text-org9cac739">
 <ul class="org-ul">
 <li>グラフの作り方&#x2013;Excel・エクセル
 
@@ -819,12 +804,12 @@
 </div>
 </div>
 
-<div id="outline-container-org5fb0288" class="outline-2">
-<h2 id="org5fb0288"><span class="section-number-2">5</span> 練習成果の統計処理</h2>
+<div id="outline-container-org3ac5cef" class="outline-2">
+<h2 id="org3ac5cef"><span class="section-number-2">5.</span> 練習成果の統計処理</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org0b37ba3" class="outline-3">
-<h3 id="org0b37ba3"><span class="section-number-3">5.1</span> 統計値の計算</h3>
+<div id="outline-container-org93b1695" class="outline-3">
+<h3 id="org93b1695"><span class="section-number-3">5.1.</span> 統計値の計算</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 正しく打ったキー数，ミスタイプ数のそれぞれについて， 
@@ -836,8 +821,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgd9a25d2" class="outline-3">
-<h3 id="orgd9a25d2"><span class="section-number-3">5.2</span> 上達度の計算</h3>
+<div id="outline-container-org18ff1ec" class="outline-3">
+<h3 id="org18ff1ec"><span class="section-number-3">5.2.</span> 上達度の計算</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>直線とみなした場合，その（近似）直線の傾きを求める計算式を作りましょう</li>
@@ -846,8 +831,8 @@
 </div>
 </div>
 
-<div id="outline-container-org2e756ab" class="outline-3">
-<h3 id="org2e756ab"><span class="section-number-3">5.3</span> 正しく打ったキー数とミスタイプ数の関係</h3>
+<div id="outline-container-orgd1a6604" class="outline-3">
+<h3 id="orgd1a6604"><span class="section-number-3">5.3.</span> 正しく打ったキー数とミスタイプ数の関係</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 自分の上達度にミスタイプ数はどう関係しているか調べましょう。
@@ -935,8 +920,8 @@
 </div>
 </div>
 
-<div id="outline-container-orge6a6d8c" class="outline-3">
-<h3 id="orge6a6d8c"><span class="section-number-3">5.4</span> 自分の上達度は？</h3>
+<div id="outline-container-orgb82d70f" class="outline-3">
+<h3 id="orgb82d70f"><span class="section-number-3">5.4.</span> 自分の上達度は？</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 ベストなのは，正しいキー数が増え，ミスタイプ数が減ることですが，自分の
@@ -946,16 +931,16 @@
 </div>
 </div>
 
-<div id="outline-container-org9fbd30d" class="outline-2">
-<h2 id="org9fbd30d"><span class="section-number-2">6</span> 表計算/数式と関数</h2>
+<div id="outline-container-org90e1153" class="outline-2">
+<h2 id="org90e1153"><span class="section-number-2">6.</span> 表計算/数式と関数</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 表中のセルに，計算式を記録しておくことができる。
 </p>
 </div>
 
-<div id="outline-container-orgaeb5f8b" class="outline-3">
-<h3 id="orgaeb5f8b"><span class="section-number-3">6.1</span> いい点</h3>
+<div id="outline-container-org2a192e7" class="outline-3">
+<h3 id="org2a192e7"><span class="section-number-3">6.1.</span> いい点</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 やり方を保存しておくことができるので， 
@@ -970,13 +955,13 @@
 </div>
 
 
-<div id="outline-container-org4e75ce6" class="outline-3">
-<h3 id="org4e75ce6"><span class="section-number-3">6.2</span> 数式を使うための準備</h3>
+<div id="outline-container-org379ce38" class="outline-3">
+<h3 id="org379ce38"><span class="section-number-3">6.2.</span> 数式を使うための準備</h3>
 <div class="outline-text-3" id="text-6-2">
 </div>
-<div id="outline-container-orgd1dbb58" class="outline-4">
-<h4 id="orgd1dbb58">数式の表示</h4>
-<div class="outline-text-4" id="text-orgd1dbb58">
+<div id="outline-container-orgf1db6b6" class="outline-4">
+<h4 id="orgf1db6b6">数式の表示</h4>
+<div class="outline-text-4" id="text-orgf1db6b6">
 <p>
 「表示」メニューを開き，「数式」をチェックし，数式表示バーを表示する。
 </p>
@@ -988,8 +973,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgac81de8" class="outline-3">
-<h3 id="orgac81de8"><span class="section-number-3">6.3</span> 数式の入力</h3>
+<div id="outline-container-orgcba81de" class="outline-3">
+<h3 id="orgcba81de"><span class="section-number-3">6.3.</span> 数式の入力</h3>
 <div class="outline-text-3" id="text-6-3">
 <ul class="org-ul">
 <li>= で書き始める。</li>
@@ -999,8 +984,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgd54b985" class="outline-3">
-<h3 id="orgd54b985"><span class="section-number-3">6.4</span> データ</h3>
+<div id="outline-container-org875cb34" class="outline-3">
+<h3 id="org875cb34"><span class="section-number-3">6.4.</span> データ</h3>
 <div class="outline-text-3" id="text-6-4">
 <ul class="org-ul">
 <li>数値そのものかセル(の中の数値)で与える</li>
@@ -1008,8 +993,8 @@
 </div>
 </div>
 
-<div id="outline-container-org7a1b679" class="outline-3">
-<h3 id="org7a1b679"><span class="section-number-3">6.5</span> データ列の入力</h3>
+<div id="outline-container-org2221bf7" class="outline-3">
+<h3 id="org2221bf7"><span class="section-number-3">6.5.</span> データ列の入力</h3>
 <div class="outline-text-3" id="text-6-5">
 <ul class="org-ul">
 <li>セルは A10 とか書く。A$10 は10行目固定。$A10はA列目固定。</li>
@@ -1018,8 +1003,8 @@
 </div>
 </div>
 
-<div id="outline-container-org92f4033" class="outline-3">
-<h3 id="org92f4033"><span class="section-number-3">6.6</span> 関数の利用</h3>
+<div id="outline-container-org07ef528" class="outline-3">
+<h3 id="org07ef528"><span class="section-number-3">6.6.</span> 関数の利用</h3>
 <div class="outline-text-3" id="text-6-6">
 <p>
 データを処理する便利な関数がいろいろ用意されている
@@ -1035,8 +1020,8 @@
 </div>
 </div>
 
-<div id="outline-container-org8655bbd" class="outline-3">
-<h3 id="org8655bbd"><span class="section-number-3">6.7</span> ふたつのデータ列が必要な関数</h3>
+<div id="outline-container-org9e1b342" class="outline-3">
+<h3 id="org9e1b342"><span class="section-number-3">6.7.</span> ふたつのデータ列が必要な関数</h3>
 <div class="outline-text-3" id="text-6-7">
 <p>
 直線の傾き slope
@@ -1065,8 +1050,8 @@
 </div>
 </div>
 
-<div id="outline-container-org77ce770" class="outline-3">
-<h3 id="org77ce770"><span class="section-number-3">6.8</span> 通し回数列の作り方</h3>
+<div id="outline-container-org6963d6c" class="outline-3">
+<h3 id="org6963d6c"><span class="section-number-3">6.8.</span> 通し回数列の作り方</h3>
 <div class="outline-text-3" id="text-6-8">
 <p>
 新らしい列を作る方法: 
@@ -1093,12 +1078,12 @@
 </div>
 </div>
 
-<div id="outline-container-org0f48a3e" class="outline-2">
-<h2 id="org0f48a3e"><span class="section-number-2">7</span> タイピング練習レポートの作成</h2>
+<div id="outline-container-org82c8b24" class="outline-2">
+<h2 id="org82c8b24"><span class="section-number-2">7.</span> タイピング練習レポートの作成</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org89072cd" class="outline-3">
-<h3 id="org89072cd"><span class="section-number-3">7.1</span> 目的</h3>
+<div id="outline-container-org18f705d" class="outline-3">
+<h3 id="org18f705d"><span class="section-number-3">7.1.</span> 目的</h3>
 <div class="outline-text-3" id="text-7-1">
 <ul class="org-ul">
 <li>「レポートの書き方」の実践</li>
@@ -1108,8 +1093,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgd83bcef" class="outline-3">
-<h3 id="orgd83bcef"><span class="section-number-3">7.2</span> 内容</h3>
+<div id="outline-container-org9c2aebc" class="outline-3">
+<h3 id="org9c2aebc"><span class="section-number-3">7.2.</span> 内容</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 「レポートの書き方」で覚えた方法で， Word
@@ -1153,7 +1138,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">&#33879;&#32773;: masayuki</p>
-<p class="date">Created: 2021-04-18 日 15:44</p>
+<p class="date">Created: 2022-04-01 金 17:21</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
