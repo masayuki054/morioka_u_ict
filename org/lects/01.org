@@ -9,7 +9,6 @@
 
 *** レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。SCHEDULED: <2022-04-10 日>
 
-
 *** 次回は，USBメモリを持ってきてください。SCHEDULED: <2022-04-10 日>
 
     - 他の講義でも指示があると思います。兼用してください。
@@ -29,10 +28,9 @@
 
     時間外で質問等ある場合は，
 
+    - merry で個別連絡するか，
     - msyk054@gmail.com にメールするか，
     - 水曜日の14:00~17:00に，岩大図書館の学修支援コーナーに来る
-
-    - レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。
 
 ** アンケートの提出
 

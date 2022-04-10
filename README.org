@@ -11,7 +11,7 @@
 
 * 出席とアンケート
   
- - [[https://morioka-u.ap-cloud.com/prtl][ポータル]] にログインして出席登録してください. パスコードは，
+ - [[https://morioka-u.ap-cloud.com/prtl][学務ポータル]] にログインして出席登録してください. パスコードは，
    [[https://masayuki054.github.io/morioka_u_ict][今日の講義]] に書いてあります。
 
 - 講義終了時，下記のアンケートに答えてください。毎回のアンケートのリン
@@ -45,7 +45,6 @@
   
   講義資料，レポート提出の見本，などを共有しています。
 
-- [[https://www.office.com/][Office365ホーム]] ログイン・りんく
 
 - 先生の放送大学の講義 [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]]
 
@@ -53,11 +52,12 @@
    
 * 関連ページ
 
-   [[https://mellyclass.com/morioka-u/classrooms][melly]]
+  [[https://morioka-u.ap-cloud.com/prtl][学務ポータル]] 
 
-   microsoft 365
-   - [[https://www.office.com/][Microsoft Office ホーム]]
-     - [[https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e][Office クイック スタート - Office サポート]]
+  [[https://mellyclass.com/morioka-u/classrooms][melly]] 講義ポータル
+
+  [[https://www.office.com/][Office365ホーム]] ログイン・りんく
+       - [[https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e][Office クイック スタート - Office サポート]]
        動画は英語のものあり，日本語 pdf をダウンロードできる。
      - [[https://support.office.com/ja-jp/office-training-center][Microsoft 365 トレーニング]]
        - outlook，
