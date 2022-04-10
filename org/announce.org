@@ -1,9 +1,9 @@
-#+setupfile: ~/ict.git/org/info/index-sos-header.setup
-#+include: ~/ict.git/org/info/common-header.org
-#+title: 情報処理演習2021の資料
+#+setupfile: info/index-sos-header.setup
+#+include: info/common-header.org
+#+title: おしらせ
+
 
 * おしらせ
 
-#+include: announces/02.org
 #+include: announces/01.org
 

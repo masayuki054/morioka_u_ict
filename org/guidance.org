@@ -1,5 +1,6 @@
-#+setupfile: ~/ict.git/org/info/index-sos-header.setup
-#+include: ~/ict.git/org/info/common-header.org
+#+setupfile: info/index-sos-header.setup
+#+include: info/common-header.org
 #+title: ガイダンス
-#+include: lects/guidance-2021.org :minlevel 1
+
+#+include: lects/guidance-2022.org :minlevel 1
 

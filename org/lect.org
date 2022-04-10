@@ -1,8 +1,11 @@
-#+setupfile: ~/ict.git/org/info/index-sos-header.setup
-#+include: ~/ict.git/org/info/common-header.org
+#+setupfile: info/index-sos-header.setup
+#+include: info/common-header.org
 #+title: 講義のまとめ
 #+OPTIONS:   H:8 toc:t num:nil date:t
+
 #+include: lects/01.org :minlevel 2
+
+
 
 
 

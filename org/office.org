@@ -1,5 +1,6 @@
-pen1#+setupfile: ~/ict.git/org/info/index-sos-header.setup
-#+include: ~/ict.git/org/info/common-header.org
+pen1#+setupfile: info/index-sos-header.setup
+#+include: info/common-header.org
 #+title:  Office の使い方
+
 #+include: office/word-outline.org :minlevel 1
 
