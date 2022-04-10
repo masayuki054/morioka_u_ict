@@ -1,0 +1,3971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2022-04-10 日 14:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2022 講義のまとめ</title>
+<meta name="author" content="masayuki" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://masayuki054.github.io/morioka_u_ict/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">情報処理演習2022 講義のまとめ</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6509e05">2021.07.12 14回目</a>
+<ul>
+<li><a href="#org5e73665">Done 受講の準備</a></li>
+<li><a href="#org13a4e5e">今日の課題</a>
+<ul>
+<li><a href="#org9aa0e0b">タイピング &#x2013; 練習記録表の作成 再開</a>
+<ul>
+<li><a href="#org8a3e5e7">タイピング練習レポート作成の準備</a></li>
+</ul>
+</li>
+<li><a href="#orgbb34163">前回のアンケート</a></li>
+<li><a href="#org1e65e95">Doing レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#org484195d">課題のやり方</a></li>
+</ul>
+</li>
+<li><a href="#orgae358c1">Todo レポートの書き方</a>
+<ul>
+<li><a href="#orgd8f4cb9">レポートの書き方：writing.pdf を理解する</a>
+<ul>
+<li><a href="#org0e609bc">資料</a></li>
+</ul>
+</li>
+<li><a href="#org45fdf53">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org0860489">メモやあらすじについて</a></li>
+</ul>
+</li>
+<li><a href="#org48261b5">自主的に取り組む項目</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9bb7f8e">2021.07.06 13回目</a>
+<ul>
+<li><a href="#org1508791">Done 受講の準備</a></li>
+<li><a href="#org27f9d3e">今日の課題</a>
+<ul>
+<li><a href="#org238a18a">タイピング &#x2013; 練習記録表の作成 再開</a>
+<ul>
+<li><a href="#orgec0ae5d">正しいキー数とミスタイプ数の間の関係を調べる</a></li>
+<li><a href="#org92e04dc">タイピング練習レポート作成の準備</a></li>
+</ul>
+</li>
+<li><a href="#org5282520">前回のアンケート</a></li>
+<li><a href="#org28d3b57">Doing XMindによる講義内容の説明</a>
+<ul>
+<li><a href="#orge65ae19">配布済みの map</a></li>
+</ul>
+</li>
+<li><a href="#org3ec52e1">Doing microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#orgad860ee">Done レポート提出フォルダの作成</a></li>
+<li><a href="#org97b3fb0">Doing フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org3871a49">Done 教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#org68c4441">Doing レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#orgf6fcbbf">課題のやり方</a></li>
+</ul>
+</li>
+<li><a href="#org0adeafe">Todo レポートの書き方</a>
+<ul>
+<li><a href="#org1eb1e4b">レポートの書き方：writing.pdf を理解する</a>
+<ul>
+<li><a href="#orgb716adc">資料</a></li>
+</ul>
+</li>
+<li><a href="#org7ff9d14">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org5105312">メモやあらすじについて</a></li>
+</ul>
+</li>
+<li><a href="#org2aa26d3">自主的に取り組む項目</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org551fd9f">2021.06.21 12回目</a>
+<ul>
+<li><a href="#orgbe6bfca">Done 受講の準備</a></li>
+<li><a href="#org81e83ca">今日の課題</a>
+<ul>
+<li><a href="#org12fa1e8">タイピング &#x2013; 練習記録表の作成 再開</a>
+<ul>
+<li><a href="#orgd3d54d2">正しいキー数とミスタイプ数の間の関係を調べる</a></li>
+<li><a href="#org6965aca">タイピング練習レポート作成の準備</a></li>
+</ul>
+</li>
+<li><a href="#org7766f69">前回のアンケート</a></li>
+<li><a href="#orgf64761f">Doing XMindによる講義内容の説明</a>
+<ul>
+<li><a href="#org51a224c">配布済みの map</a></li>
+</ul>
+</li>
+<li><a href="#org7506188">Doing microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#org1203f45">Done レポート提出フォルダの作成</a></li>
+<li><a href="#org28571c0">Doing フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org731c3cd">Done 教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#org36b0d2a">Doing レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#org211e682">課題のやり方</a></li>
+</ul>
+</li>
+<li><a href="#org1fc62cc">Todo レポートの書き方</a>
+<ul>
+<li><a href="#orge979ca2">レポートの書き方：writing.pdf を理解する</a>
+<ul>
+<li><a href="#org3c3c1b4">資料</a></li>
+</ul>
+</li>
+<li><a href="#org20443f7">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org48da57d">メモやあらすじについて</a></li>
+</ul>
+</li>
+<li><a href="#orgb72e000">自主的に取り組む項目</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5552375">2021.06.21 11回目</a>
+<ul>
+<li><a href="#org3e60a06">Done 受講の準備</a></li>
+<li><a href="#orgbffafbe">今日の課題</a>
+<ul>
+<li><a href="#org4f52919">タイピング &#x2013; 練習記録表の作成 再開</a>
+<ul>
+<li><a href="#orgd1e3c5d">正しいキー数とミスタイプ数の間の関係を調べる</a></li>
+</ul>
+</li>
+<li><a href="#org4a03c78">前回のアンケート</a></li>
+<li><a href="#org5ece62f">Doing XMindによる講義内容の説明</a>
+<ul>
+<li><a href="#orga8342ca">配布済みの map</a></li>
+</ul>
+</li>
+<li><a href="#orgb133675">Doing microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#org0707605">Done レポート提出フォルダの作成</a></li>
+<li><a href="#org43d2fd4">Doing フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org394bf73">Done 教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#org35fda0b">Doing レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#org7655ead">課題のやり方</a></li>
+</ul>
+</li>
+<li><a href="#orgfe13e98">Todo レポートの書き方</a>
+<ul>
+<li><a href="#org6531337">レポートの書き方：writing.pdf を理解する</a></li>
+<li><a href="#org6f3d8bd">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org9a6bcba">メモやあらすじについて</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgaee78ef">2021.06.14 10回目</a>
+<ul>
+<li><a href="#org791ec61">Done 受講の準備</a></li>
+<li><a href="#org4e42ca4">今日の課題</a>
+<ul>
+<li><a href="#org7bc474f">タイピング &#x2013; 練習記録表の作成 再開</a></li>
+<li><a href="#org506646c">前回のアンケート</a></li>
+<li><a href="#org80db539">XMindによる講義内容の説明</a></li>
+<li><a href="#orgf81bc3b">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#org3855149">レポート提出フォルダの作成</a></li>
+<li><a href="#org6e885ab">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org9b3a445">Done 教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#org5e05a53">レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#org8e1b670">課題のやり方</a></li>
+</ul>
+</li>
+<li><a href="#orgc79d70a">レポートの書き方</a>
+<ul>
+<li><a href="#orga10db88">レポートの書き方：writing.pdf を理解する</a></li>
+<li><a href="#orgda883e7">大学レポートの書き方：基本編 を理解する</a></li>
+<li><a href="#org79539b7">メモやあらすじについて</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2efe7a1">2021.06.07 9回目</a>
+<ul>
+<li><a href="#orgac4ac01">Done 受講の準備</a></li>
+<li><a href="#org8fe2b63">今日の課題</a>
+<ul>
+<li><a href="#orgcf9b940">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#orgeddfce8">前回のアンケート</a></li>
+<li><a href="#orgd4783e7">XMindによる講義内容の説明</a></li>
+<li><a href="#orgfd8d9e0">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#orgcce3573">レポート提出フォルダの作成</a></li>
+<li><a href="#org8655a75">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org75f9877">教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#orga6745bc">レポート文書の作成 (教科書5章)</a>
+<ul>
+<li><a href="#orgbfae879">課題のやり方</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org01123bb">2021.05.31 8回目</a>
+<ul>
+<li><a href="#org41f0e6d">Done 受講の準備</a></li>
+<li><a href="#orgcd68983">今日の課題</a>
+<ul>
+<li><a href="#orgc398b10">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#org98f88ad">前回のアンケート</a></li>
+<li><a href="#orgdf64e6d">XMindによる講義内容の説明</a></li>
+<li><a href="#org86d86df">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#orgd6369fb">OneDrive のフォルダを先生と共有する</a></li>
+<li><a href="#org6af17d2">フォルダの中身は以下:</a></li>
+<li><a href="#orga0f7043">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org75eecb7">教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#org94a767e">Wordを始める (予習したい人はやってみてください)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7298a72">2021.05.24 7回目</a>
+<ul>
+<li><a href="#orgd84e02d">Done 受講の準備</a></li>
+<li><a href="#org72a941e">今日の課題</a>
+<ul>
+<li><a href="#org142cfbb">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#orge099e95">前回のアンケート</a></li>
+<li><a href="#org21ddf13">XMindによる講義内容の説明</a></li>
+<li><a href="#org346f4ae">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#org0c6342b">OneDrive のフォルダを先生と共有する</a></li>
+<li><a href="#orgca8e3f2">フォルダの中身は以下:</a></li>
+<li><a href="#orga35ba4c">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org6392863">教科書 (教科書のまとめと課題)</a></li>
+<li><a href="#orga9358a8">Wordを始める (予習したい人はやってみてください)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1f9ddfb">2021.05.17 6回目</a>
+<ul>
+<li><a href="#org34da2d1">Done 受講の準備</a></li>
+<li><a href="#org6ed97f5">今日の課題</a>
+<ul>
+<li><a href="#org64cb9cb">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#orge81425a">前回のアンケート</a></li>
+<li><a href="#org8a97553">XMindによる講義内容の説明</a></li>
+<li><a href="#orgda715cc">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#orgc09972d">OneDrive のフォルダを先生と共有する</a></li>
+<li><a href="#org5e3bd0a">フォルダの中身は以下:</a></li>
+<li><a href="#org6e39626">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#orgd118e5f">教科書</a>
+<ul>
+<li><a href="#org3e56fd6">文字入力 (教科書2章) A組</a></li>
+<li><a href="#org12376ee">お絵かきとファイル操作 (教科書4章) B組</a></li>
+<li><a href="#orgbfdcf7c">ファイル, フォルダ，USBメモリ，OneDrive</a></li>
+</ul>
+</li>
+<li><a href="#org8256c3c">Wordを始める (予習したい人はやってみてください)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org140baa5">2021.05.10 5回目</a>
+<ul>
+<li><a href="#org284c5be">Done 受講の準備</a></li>
+<li><a href="#org08f946d">今日の課題</a>
+<ul>
+<li><a href="#org46d0e18">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#orgecec611">前回のアンケート</a></li>
+<li><a href="#org9affe04">XMindによる講義内容の説明</a></li>
+<li><a href="#orgef0cd88">microsoft365 クラウドサービス (共有の確認)</a>
+<ul>
+<li><a href="#org69016fa">OneDrive のフォルダを先生と共有する</a></li>
+<li><a href="#orgbd0af02">フォルダの中身は以下:</a></li>
+<li><a href="#org281524b">フォルダのバックアップ:</a></li>
+</ul>
+</li>
+<li><a href="#org42838f4">教科書</a>
+<ul>
+<li><a href="#org1c98738">文字入力 (教科書2章)</a></li>
+<li><a href="#org8b3212e">お絵かきとファイル操作 (教科書4章)</a></li>
+</ul>
+</li>
+<li><a href="#org82c8c1b">講義アンケートの提出</a></li>
+<li><a href="#orgc663c33">Wordを始める (予習したい人はやってみてください)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8e7f017">2021.04.29 4回目</a>
+<ul>
+<li><a href="#org98c4691">Done 受講の準備</a></li>
+<li><a href="#orgade52d0">今日の課題</a>
+<ul>
+<li><a href="#orgde4b736">タイピング &#x2013; 練習記録表の作成</a></li>
+<li><a href="#orgedf7661">前回のアンケート</a></li>
+<li><a href="#org291112d">XMindによる講義内容の説明</a></li>
+<li><a href="#org8b0288d">microsoft365 クラウドサービス (先週の復習)</a></li>
+<li><a href="#org0f51d42">文字入力 (教科書2章)</a></li>
+<li><a href="#org9f79d47">OneDrive のフォルダを先生と共有する</a></li>
+<li><a href="#orgd5530ff">大学のメールを使う</a></li>
+<li><a href="#org70f8b8f">講義アンケートの提出</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org22fc729">2021.04.26 3回目</a>
+<ul>
+<li><a href="#orga5e881d">Done 受講の準備</a></li>
+<li><a href="#orgf54763c">ガイダンスの続き</a></li>
+<li><a href="#orgb35657c">今日の課題</a>
+<ul>
+<li><a href="#org7899ce5">タイピング &#x2013; 練習のはじまり</a></li>
+<li><a href="#orgd791350">microsoft365 クラウドサービス (先週の復習)</a></li>
+<li><a href="#org7513589">XMindによる講義内容の説明</a></li>
+<li><a href="#org33e85bf">Windows の基本操作などを学ぶ</a></li>
+<li><a href="#orgc0bd7cb">大学のメールを使う</a></li>
+<li><a href="#org9bf091a">講義アンケートの提出</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org07defee">2021.04.19 2回目</a>
+<ul>
+<li><a href="#orgad45d19">受講の準備</a></li>
+<li><a href="#org2c93162">ガイダンスの続き</a></li>
+<li><a href="#orgdb32f53">今日の課題</a>
+<ul>
+<li><a href="#org63fb517">タイピング &#x2013; 練習のはじまり</a></li>
+<li><a href="#org7ed3329">XMindによる講義内容の説明</a></li>
+<li><a href="#orga17c173">Windows の基本操作などを学ぶ</a></li>
+<li><a href="#org7066d6d">講義アンケートの提出</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org93bd8a4">1回目 情報処理演習 2021.04.12</a>
+<ul>
+<li><a href="#org02888ac">出席</a></li>
+<li><a href="#orge7fd21c">おしらせ</a>
+<ul>
+<li><a href="#org02df9cd">レポート課題の指示は，melly でおこないます。</a></li>
+<li><a href="#orga564622">次回は，USBメモリを持ってきてください。</a></li>
+<li><a href="#org5e09c24">講義時間外の質問</a></li>
+</ul>
+</li>
+<li><a href="#org3e7bb96">アンケートの提出</a></li>
+<li><a href="#orge2a5886">今日の講義内容 (ガイダンス)</a>
+<ul>
+<li><a href="#org65de28b">スタートアップセミナーの確認</a></li>
+<li><a href="#org729845d">講義の説明</a></li>
+<li><a href="#org21d2daf">講義資料</a></li>
+<li><a href="#org2bc35f1">来週からタイピングを始めましょう。</a></li>
+<li><a href="#org44937b0">講義内容の Mindmap</a></li>
+</ul>
+</li>
+<li><a href="#org625a4dc">関連ページ</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568">情報処理2021トップ </a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/announce.html">お知らせ</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/lect.html">今迄の講義内容</a>
+/<a href="https://masayuki054.github.io/morioka_u_ict/reference.html">講義資料</a>
+/<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">先生のGoogleドライブ</a>
+/<a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">先生のOneDrive</a>
+/<a href="https://www.office.com/">Office365ホーム</a>
+</p>
+<div id="outline-container-org6509e05" class="outline-2">
+<h2 id="org6509e05">2021.07.12 14回目</h2>
+<div class="outline-text-2" id="text-org6509e05">
+</div>
+<div id="outline-container-org5e73665" class="outline-3">
+<h3 id="org5e73665">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org5e73665">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org13a4e5e" class="outline-3">
+<h3 id="org13a4e5e">今日の課題</h3>
+<div class="outline-text-3" id="text-org13a4e5e">
+</div>
+<div id="outline-container-org9aa0e0b" class="outline-4">
+<h4 id="org9aa0e0b">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org9aa0e0b">
+</div>
+<div id="outline-container-org8a3e5e7" class="outline-5">
+<h5 id="org8a3e5e7">タイピング練習レポート作成の準備</h5>
+<div class="outline-text-5" id="text-org8a3e5e7">
+<p>
+<a href="typing.html">タイピング</a> と先生のレポートを参考に，自分の練習を見直してみてください。
+</p>
+
+<p>
+<a href="https://drive.google.com/drive/u/0/folders/179cNVylaX8X1Uq4YjN4o_256AteNZENt">タイピング - Google ドライブ</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbb34163" class="outline-4">
+<h4 id="orgbb34163">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orgbb34163">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1ErVwJgYIiSPk2juziud8unmWblC_nRJmM8Psd4mDz54/edit?resourcekey#gid=526984558">13ー7月5日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1gHFJF176ICYj6WNA-HyCDb0SL_eWDWz9Z4t44DZnVqc/edit?resourcekey#gid=694796963">11,12ー6月21日アンケート （回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366">10ー6月14日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073">09ー6月7日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e65e95" class="outline-4">
+<h4 id="org1e65e95">Doing レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org1e65e95">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-org484195d" class="outline-5">
+<h5 id="org484195d">課題のやり方</h5>
+<div class="outline-text-5" id="text-org484195d">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li><p>
+構成要素と構造が決った後，プレビューして構造を確認する。
+</p>
+
+<ul class="org-ul">
+<li>markdown 記法については，<a href="https://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>
+を参考にしてください。</li>
+
+<li>markdown 文書をプレビューするには，文書を <a href="https://daringfireball.net/projects/markdown/dingus">Markdown Web Dingus サイト</a>
+に貼り付け，preview のみを指定し，Convert してください。</li>
+</ul>
+
+<p>
+文書の構造と見た目が思い通りになればできあがりです。
+</p></li>
+
+<li><p>
+Wordで新規文書を作成，レポートのためのテンプレートを選ぶ。
+</p>
+
+<p>
+「大学生レポート」がいいかもしれませんなるべく，自動的にできて
+いるようなテンプレートを利用することが大切です。
+</p></li>
+
+<li>プレビュー画面をコピーし，Word にコピペ
+<ul class="org-ul">
+<li>見出し構造ができていることを確認</li>
+<li>段落構造ができていることを確認</li>
+<li>箇条書きができていることを確認</li>
+</ul></li>
+
+<li><b>引用の書式がない場合</b> は，
+
+<ul class="org-ul">
+<li>引用が定義されているテンプレートで新規文書を開き，</li>
+<li>引用の書式を指定して，短かい文章を入力し，</li>
+<li>その文書を選んで，書式をコピー (コントロール+シフト+C) し，</li>
+
+<li>書式を定義したい文書に戻り，</li>
+<li>書式を指定したい箇所で，書式を貼り付け (コントロール+シフト
++v) します</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>教科書に従って整形。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgae358c1" class="outline-4">
+<h4 id="orgae358c1">Todo レポートの書き方</h4>
+<div class="outline-text-4" id="text-orgae358c1">
+</div>
+<div id="outline-container-orgd8f4cb9" class="outline-5">
+<h5 id="orgd8f4cb9"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-orgd8f4cb9">
+<p>
+<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
+自分がレポートを書くとき，読み返して思い出すための，
+自分のためのメモを作成しましょう。
+(メモは，メモ帳でもWordでもMindmapでもかまいません)
+</p>
+
+<p>
+記憶しやすく，思い出しやすいメモを作成するには，
+どんな方法があるでしょう？
+</p>
+
+<p>
+自分の理解を書き残こすために
+</p>
+
+<ul class="org-ul">
+<li>筆者の主張を，自分なりに what, why, how を考えましょう</li>
+
+<li>筆者の主張を分類していきましょう:
+
+<ul class="org-ul">
+<li>そのまま受け入れられ,知識となること，</li>
+
+<li>疑問がのこったり，わからないこと</li>
+
+<li>自分ならこう考える</li>
+</ul></li>
+
+<li>主張間の構造を意識し，構造を表しましょう
+(markdown, word, xmind のアウトライン機能 などで)</li>
+</ul>
+</div>
+
+<div id="outline-container-org0e609bc" class="outline-6">
+<h6 id="org0e609bc">資料</h6>
+<div class="outline-text-6" id="text-org0e609bc">
+<p>
+<a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ?usp=sharing">資料フォルダ</a> の中のファイルを参考にしてください：
+</p>
+
+<ul class="org-ul">
+<li>writing.txt (pdf からテキストを取り出したファイル)
+コピペして使ってください。</li>
+
+<li>XMind のアウトライン機能で，まとめたもの。XMind のアウトライン
+モードで見てください。</li>
+
+<li><a href="https://drive.google.com/file/d/1feYvI6NWJ_N-Wx9pTHlZy-A0DlkQhet9/view?usp=sharing">先生がまとめた Xmind</a>。アウトラインモードとマインドマップモード
+の両モードで見てください。</li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/writing-concept.org">morioka_u_ict/writing-concept.org</a> writin.pdf を読んで，大切だ
+と思った項目とその説明</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org45fdf53" class="outline-5">
+<h5 id="org45fdf53"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-org45fdf53">
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+にしたがって，
+</p>
+
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org">morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+のようなレポートを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0860489" class="outline-5">
+<h5 id="org0860489">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org0860489">
+<p>
+メモやあらすじについての先生のメモです。参考になるかも:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org">morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org">morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org">morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org48261b5" class="outline-4">
+<h4 id="org48261b5">自主的に取り組む項目</h4>
+<div class="outline-text-4" id="text-org48261b5">
+<p>
+時間があれば，一緒に教科書を読み，先生が説明し，皆さんに内容のまと
+めを作ってほしいと思っています。でもこれまでの課題が出来ていない人
+が多いため，復習に時間がかかっています。
+</p>
+
+<p>
+これまでの課題が終った人は，教科書の下記内容を読み，XMind でまとめ
+(what, why, how) を作成してください。
+</p>
+
+<ul class="org-ul">
+<li>3章 ネットの利用 <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 教科書3.1 Web</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.7 アカウントの連携</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.8 スマホ時代のネット利用</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.9 クラウドサービス</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.10 オンライン会議</li>
+</ul></li>
+
+<li>9章 情報の調べ方</li>
+
+<li>10章 コンピュータとネットワーク</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9bb7f8e" class="outline-2">
+<h2 id="org9bb7f8e">2021.07.06 13回目</h2>
+<div class="outline-text-2" id="text-org9bb7f8e">
+</div>
+<div id="outline-container-org1508791" class="outline-3">
+<h3 id="org1508791">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org1508791">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27f9d3e" class="outline-3">
+<h3 id="org27f9d3e">今日の課題</h3>
+<div class="outline-text-3" id="text-org27f9d3e">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org238a18a" class="outline-4">
+<h4 id="org238a18a">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org238a18a">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+詳しい操作などは，<a href="typing.html">タイピング</a> を読んで下さい。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録し
+ましょう。</li>
+</ul>
+</div>
+
+<div id="outline-container-orgec0ae5d" class="outline-5">
+<h5 id="orgec0ae5d">正しいキー数とミスタイプ数の間の関係を調べる</h5>
+<div class="outline-text-5" id="text-orgec0ae5d">
+<p>
+<a href="typing.html">タイピング</a> を読み，正しいキー数とミスタイプ数の間の相関係数を計算
+しましょう。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org92e04dc" class="outline-5">
+<h5 id="org92e04dc">タイピング練習レポート作成の準備</h5>
+<div class="outline-text-5" id="text-org92e04dc">
+<p>
+先生のレポートを参考に，自分の練習を見直してみてください。
+</p>
+
+<p>
+<a href="https://drive.google.com/drive/u/0/folders/179cNVylaX8X1Uq4YjN4o_256AteNZENt">タイピング - Google ドライブ</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5282520" class="outline-4">
+<h4 id="org5282520">前回のアンケート</h4>
+<div class="outline-text-4" id="text-org5282520">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1gHFJF176ICYj6WNA-HyCDb0SL_eWDWz9Z4t44DZnVqc/edit?resourcekey#gid=694796963">11,12ー6月21日アンケート （回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366">10ー6月14日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073">09ー6月7日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28d3b57" class="outline-4">
+<h4 id="org28d3b57">Doing XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org28d3b57">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章にマインドマップの使い方  説明します。
+</p>
+</div>
+
+<div id="outline-container-orge65ae19" class="outline-5">
+<h5 id="orge65ae19">配布済みの map</h5>
+<div class="outline-text-5" id="text-orge65ae19">
+<ul class="org-ul">
+<li>タイピング記録のためのExcelの使い方のマップ</li>
+<li>教科書5章の文書作成のためのマップ</li>
+<li>XMind のアウトライン (概要) 機能についても説明します。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3ec52e1" class="outline-4">
+<h4 id="org3ec52e1">Doing microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-org3ec52e1">
+<p>
+下記の事を確認してください。
+</p>
+</div>
+
+<div id="outline-container-orgad860ee" class="outline-5">
+<h5 id="orgad860ee">Done レポート提出フォルダの作成</h5>
+<div class="outline-text-5" id="text-orgad860ee">
+<p>
+OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org97b3fb0" class="outline-5">
+<h5 id="org97b3fb0">Doing フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org97b3fb0">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3871a49" class="outline-4">
+<h4 id="org3871a49">Done 教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org3871a49">
+<p>
+教科書6章を読み，下記の3つの文書を完成させてください。
+わからない所を質問してください。
+</p>
+
+<p>
+既にできている人は，次のレポート文書の作成にとりかかってください。
+</p>
+
+<ul class="org-ul">
+<li>教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+<ul class="org-ul">
+<li>先週までとファイル名が変りましたので，注意してください。</li>
+
+<li><p>
+表を Excel から Word にコピーする際，下記サイトを参考にしてくだ
+さい。
+</p>
+
+<p>
+<a href="https://www.pc-koubou.jp/magazine/27223">エクセルの表をワードに貼り付ける方法 | パソコン工房 NEXMAG</a>
+</p></li>
+</ul></li>
+
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68c4441" class="outline-4">
+<h4 id="org68c4441">Doing レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org68c4441">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf6fcbbf" class="outline-5">
+<h5 id="orgf6fcbbf">課題のやり方</h5>
+<div class="outline-text-5" id="text-orgf6fcbbf">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li><p>
+構成要素と構造が決った後，プレビューして構造を確認する。
+</p>
+
+<ul class="org-ul">
+<li>markdown 記法については，<a href="https://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>
+を参考にしてください。</li>
+
+<li>markdown 文書をプレビューするには，文書を <a href="https://daringfireball.net/projects/markdown/dingus">Markdown Web Dingus サイト</a>
+に貼り付け，preview のみを指定し，Convert してください。</li>
+</ul>
+
+<p>
+文書の構造と見た目が思い通りになればできあがりです。
+</p></li>
+
+<li><p>
+Wordで新規文書を作成，レポートのためのテンプレートを選ぶ。
+</p>
+
+<p>
+「大学生レポート」がいいかもしれませんなるべく，自動的にできて
+いるようなテンプレートを利用することが大切です。
+</p></li>
+
+<li>プレビュー画面をコピーし，Word にコピペ
+<ul class="org-ul">
+<li>見出し構造ができていることを確認</li>
+<li>段落構造ができていることを確認</li>
+<li>箇条書きができていることを確認</li>
+</ul></li>
+
+<li><b>引用の書式がない場合</b> は，
+
+<ul class="org-ul">
+<li>引用が定義されているテンプレートで新規文書を開き，</li>
+<li>引用の書式を指定して，短かい文章を入力し，</li>
+<li>その文書を選んで，書式をコピー (コントロール+シフト+C) し，</li>
+
+<li>書式を定義したい文書に戻り，</li>
+<li>書式を指定したい箇所で，書式を貼り付け (コントロール+シフト
++v) します</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>教科書に従って整形。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org0adeafe" class="outline-4">
+<h4 id="org0adeafe">Todo レポートの書き方</h4>
+<div class="outline-text-4" id="text-org0adeafe">
+<p>
+レポート文書の作成が終った人は，この課題に取りかかってください。
+</p>
+</div>
+
+<div id="outline-container-org1eb1e4b" class="outline-5">
+<h5 id="org1eb1e4b"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-org1eb1e4b">
+<p>
+<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
+自分がレポートを書くとき，読み返して思い出すための，
+自分のためのメモを作成しましょう。
+(メモは，メモ帳でもWordでもMindmapでもかまいません)
+</p>
+
+<p>
+記憶しやすく，思い出しやすいメモを作成するには，
+どんな方法があるでしょう？
+</p>
+
+<p>
+自分の理解を書き残こすために
+</p>
+
+<ul class="org-ul">
+<li>筆者の主張を，自分なりに what, why, how を考えましょう</li>
+
+<li>筆者の主張を分類していきましょう:
+
+<ul class="org-ul">
+<li>そのまま受け入れられ,知識となること，</li>
+
+<li>疑問がのこったり，わからないこと</li>
+
+<li>自分ならこう考える</li>
+</ul></li>
+
+<li>主張間の構造を意識し，構造を表しましょう
+(markdown, word, xmind のアウトライン機能 などで)</li>
+</ul>
+</div>
+
+<div id="outline-container-orgb716adc" class="outline-6">
+<h6 id="orgb716adc">資料</h6>
+<div class="outline-text-6" id="text-orgb716adc">
+<p>
+<a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ?usp=sharing">資料フォルダ</a> の中のファイルを参考にしてください：
+</p>
+
+<ul class="org-ul">
+<li>writing.txt (pdf からテキストを取り出したファイル)
+コピペして使ってください。</li>
+
+<li>XMind のアウトライン機能で，まとめたもの。XMind のアウトライン
+モードで見てください。</li>
+
+<li><a href="https://drive.google.com/file/d/1feYvI6NWJ_N-Wx9pTHlZy-A0DlkQhet9/view?usp=sharing">先生がまとめた Xmind</a>。アウトラインモードとマインドマップモード
+の両モードで見てください。</li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/writing-concept.org">morioka_u_ict/writing-concept.org</a> writin.pdf を読んで，大切だ
+と思った項目とその説明</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7ff9d14" class="outline-5">
+<h5 id="org7ff9d14"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-org7ff9d14">
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+にしたがって，
+</p>
+
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org">morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+のようなレポートを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5105312" class="outline-5">
+<h5 id="org5105312">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org5105312">
+<p>
+メモやあらすじについての先生のメモです。参考になるかも:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org">morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org">morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org">morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2aa26d3" class="outline-4">
+<h4 id="org2aa26d3">自主的に取り組む項目</h4>
+<div class="outline-text-4" id="text-org2aa26d3">
+<p>
+時間があれば，一緒に教科書を読み，先生が説明し，皆さんに内容のまと
+めを作ってほしいと思っています。でもこれまでの課題が出来ていない人
+が多いため，復習に時間がかかっています。
+</p>
+
+<p>
+これまでの課題が終った人は，教科書の下記内容を読み，XMind でまとめ
+(what, why, how) を作成してください。
+</p>
+
+<ul class="org-ul">
+<li>3章 ネットの利用 <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 教科書3.1 Web</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.7 アカウントの連携</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.8 スマホ時代のネット利用</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.9 クラウドサービス</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.10 オンライン会議</li>
+</ul></li>
+
+<li>9章 情報の調べ方</li>
+
+<li>10章 コンピュータとネットワーク</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org551fd9f" class="outline-2">
+<h2 id="org551fd9f">2021.06.21 12回目</h2>
+<div class="outline-text-2" id="text-org551fd9f">
+</div>
+<div id="outline-container-orgbe6bfca" class="outline-3">
+<h3 id="orgbe6bfca">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-orgbe6bfca">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81e83ca" class="outline-3">
+<h3 id="org81e83ca">今日の課題</h3>
+<div class="outline-text-3" id="text-org81e83ca">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org12fa1e8" class="outline-4">
+<h4 id="org12fa1e8">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org12fa1e8">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+詳しい操作などは，<a href="typing.html">タイピング</a> を読んで下さい。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録し
+ましょう。</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd3d54d2" class="outline-5">
+<h5 id="orgd3d54d2">正しいキー数とミスタイプ数の間の関係を調べる</h5>
+<div class="outline-text-5" id="text-orgd3d54d2">
+<p>
+<a href="typing.html">タイピング</a> を読み，正しいキー数とミスタイプ数の間の相関係数を計算
+しましょう。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6965aca" class="outline-5">
+<h5 id="org6965aca">タイピング練習レポート作成の準備</h5>
+<div class="outline-text-5" id="text-org6965aca">
+<p>
+先生のレポートを参考に，自分の練習を見直してみてください。
+</p>
+
+<p>
+<a href="https://drive.google.com/drive/u/0/folders/179cNVylaX8X1Uq4YjN4o_256AteNZENt">タイピング - Google ドライブ</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7766f69" class="outline-4">
+<h4 id="org7766f69">前回のアンケート</h4>
+<div class="outline-text-4" id="text-org7766f69">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1gHFJF176ICYj6WNA-HyCDb0SL_eWDWz9Z4t44DZnVqc/edit?resourcekey#gid=694796963">11ー6月21日アンケート （回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366">10ー6月14日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073">09ー6月7日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf64761f" class="outline-4">
+<h4 id="orgf64761f">Doing XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-orgf64761f">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章にマインドマップの使い方  説明します。
+</p>
+</div>
+
+<div id="outline-container-org51a224c" class="outline-5">
+<h5 id="org51a224c">配布済みの map</h5>
+<div class="outline-text-5" id="text-org51a224c">
+<ul class="org-ul">
+<li>タイピング記録のためのExcelの使い方のマップ</li>
+<li>教科書5章の文書作成のためのマップ</li>
+<li>XMind のアウトライン (概要) 機能についても説明します。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7506188" class="outline-4">
+<h4 id="org7506188">Doing microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-org7506188">
+<p>
+下記の事を確認してください。
+</p>
+</div>
+
+<div id="outline-container-org1203f45" class="outline-5">
+<h5 id="org1203f45">Done レポート提出フォルダの作成</h5>
+<div class="outline-text-5" id="text-org1203f45">
+<p>
+OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28571c0" class="outline-5">
+<h5 id="org28571c0">Doing フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org28571c0">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org731c3cd" class="outline-4">
+<h4 id="org731c3cd">Done 教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org731c3cd">
+<p>
+教科書6章を読み，下記の3つの文書を完成させてください。
+わからない所を質問してください。
+</p>
+
+<p>
+既にできている人は，次のレポート文書の作成にとりかかってください。
+</p>
+
+<ul class="org-ul">
+<li>教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+<ul class="org-ul">
+<li>先週までとファイル名が変りましたので，注意してください。</li>
+
+<li><p>
+表を Excel から Word にコピーする際，下記サイトを参考にしてくだ
+さい。
+</p>
+
+<p>
+<a href="https://www.pc-koubou.jp/magazine/27223">エクセルの表をワードに貼り付ける方法 | パソコン工房 NEXMAG</a>
+</p></li>
+</ul></li>
+
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36b0d2a" class="outline-4">
+<h4 id="org36b0d2a">Doing レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org36b0d2a">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-org211e682" class="outline-5">
+<h5 id="org211e682">課題のやり方</h5>
+<div class="outline-text-5" id="text-org211e682">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li><p>
+構成要素と構造が決った後，プレビューして構造を確認する。
+</p>
+
+<ul class="org-ul">
+<li>markdown 記法については，<a href="https://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>
+を参考にしてください。</li>
+
+<li>markdown 文書をプレビューするには，文書を <a href="https://daringfireball.net/projects/markdown/dingus">Markdown Web Dingus サイト</a>
+に貼り付け，preview のみを指定し，Convert してください。</li>
+</ul>
+
+<p>
+文書の構造と見た目が思い通りになればできあがりです。
+</p></li>
+
+<li><p>
+Wordで新規文書を作成，レポートのためのテンプレートを選ぶ。
+</p>
+
+<p>
+「大学生レポート」がいいかもしれませんなるべく，自動的にできて
+いるようなテンプレートを利用することが大切です。
+</p></li>
+
+<li>プレビュー画面をコピーし，Word にコピペ
+<ul class="org-ul">
+<li>見出し構造ができていることを確認</li>
+<li>段落構造ができていることを確認</li>
+<li>引用，箇条書きができていることを確認</li>
+</ul></li>
+
+<li>教科書に従って整形。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1fc62cc" class="outline-4">
+<h4 id="org1fc62cc">Todo レポートの書き方</h4>
+<div class="outline-text-4" id="text-org1fc62cc">
+<p>
+レポート文書の作成が終った人は，この課題に取りかかってください。
+</p>
+</div>
+
+<div id="outline-container-orge979ca2" class="outline-5">
+<h5 id="orge979ca2"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-orge979ca2">
+<p>
+<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
+自分がレポートを書くとき，読み返して思い出すための，
+自分のためのメモを作成しましょう。
+(メモは，メモ帳でもWordでもMindmapでもかまいません)
+</p>
+
+
+<p>
+記憶しやすく，思い出しやすいメモを作成するには，
+どんな方法があるでしょう？
+</p>
+
+<p>
+自分の理解を書き残こすために
+</p>
+
+<ul class="org-ul">
+<li>筆者の主張を，自分なりに what, why, how を考えましょう</li>
+
+<li>筆者の主張を分類していきましょう:
+
+<ul class="org-ul">
+<li>そのまま受け入れられ,知識となること，</li>
+
+<li>疑問がのこったり，わからないこと</li>
+
+<li>自分ならこう考える</li>
+</ul></li>
+
+<li>主張間の構造を意識し，構造を表しましょう
+(markdown, word, xmind のアウトライン機能 などで)</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org3c3c1b4" class="outline-6">
+<h6 id="org3c3c1b4">資料</h6>
+<div class="outline-text-6" id="text-org3c3c1b4">
+<p>
+<a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ?usp=sharing">資料フォルダ</a> の中のファイルを参考にしてください：
+</p>
+
+<ul class="org-ul">
+<li>writing.txt (pdf からテキストを取り出したファイル)
+コピペして使ってください。</li>
+
+<li>XMind のアウトライン機能で，まとめたもの。XMind のアウトライン
+モードで見てください。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org20443f7" class="outline-5">
+<h5 id="org20443f7"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-org20443f7">
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+にしたがって，
+</p>
+
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org">morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+のようなレポートを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org48da57d" class="outline-5">
+<h5 id="org48da57d">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org48da57d">
+<p>
+メモやあらすじについての先生のメモです。参考になるかも:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org">morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org">morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org">morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb72e000" class="outline-4">
+<h4 id="orgb72e000">自主的に取り組む項目</h4>
+<div class="outline-text-4" id="text-orgb72e000">
+<p>
+時間があれば，一緒に教科書を読み，先生が説明し，皆さんに内容のまと
+めを作ってほしいと思っています。でもこれまでの課題が出来ていない人
+が多いため，復習に時間がかかっています。
+</p>
+
+<p>
+これまでの課題が終った人は，教科書の下記内容を読み，XMind でまとめ
+(what, why, how) を作成してください。
+</p>
+
+<ul class="org-ul">
+<li>3章 ネットの利用 <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 教科書3.1 Web</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.7 アカウントの連携</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.8 スマホ時代のネット利用</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.9 クラウドサービス</li>
+<li class="off"><code>[&#xa0;]</code> 教科書3.10 オンライン会議</li>
+</ul></li>
+
+<li>9章 情報の調べ方</li>
+
+<li>10章 コンピュータとネットワーク</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5552375" class="outline-2">
+<h2 id="org5552375">2021.06.21 11回目</h2>
+<div class="outline-text-2" id="text-org5552375">
+</div>
+<div id="outline-container-org3e60a06" class="outline-3">
+<h3 id="org3e60a06">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org3e60a06">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+
+<p>
+OneDriveにサインインしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbffafbe" class="outline-3">
+<h3 id="orgbffafbe">今日の課題</h3>
+<div class="outline-text-3" id="text-orgbffafbe">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org4f52919" class="outline-4">
+<h4 id="org4f52919">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org4f52919">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+詳しい操作などは，<a href="typing.html">タイピング</a> を読んで下さい。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録し
+ましょう。</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd1e3c5d" class="outline-5">
+<h5 id="orgd1e3c5d">正しいキー数とミスタイプ数の間の関係を調べる</h5>
+<div class="outline-text-5" id="text-orgd1e3c5d">
+<p>
+<a href="typing.html">タイピング</a> を読み，正しいキー数とミスタイプ数の間の相関係数を計算
+しましょう。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4a03c78" class="outline-4">
+<h4 id="org4a03c78">前回のアンケート</h4>
+<div class="outline-text-4" id="text-org4a03c78">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GwgjxA37Gi5xw4CDli7BG9N8p9LULYFalbzeCzMe4cs/edit#gid=1448456366">10ー6月14日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073">09ー6月7日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ece62f" class="outline-4">
+<h4 id="org5ece62f">Doing XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org5ece62f">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章にマインドマップの使い方  説明します。
+</p>
+</div>
+
+<div id="outline-container-orga8342ca" class="outline-5">
+<h5 id="orga8342ca">配布済みの map</h5>
+<div class="outline-text-5" id="text-orga8342ca">
+<ul class="org-ul">
+<li>タイピング記録のためのExcelの使い方のマップ</li>
+<li>教科書5章の文書作成のためのマップ</li>
+<li>XMind のアウトライン (概要) 機能についても説明します。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb133675" class="outline-4">
+<h4 id="orgb133675">Doing microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-orgb133675">
+<p>
+下記の事を確認してください。
+</p>
+</div>
+
+<div id="outline-container-org0707605" class="outline-5">
+<h5 id="org0707605">Done レポート提出フォルダの作成</h5>
+<div class="outline-text-5" id="text-org0707605">
+<p>
+OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43d2fd4" class="outline-5">
+<h5 id="org43d2fd4">Doing フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org43d2fd4">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org394bf73" class="outline-4">
+<h4 id="org394bf73">Done 教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org394bf73">
+<p>
+教科書6章を読み，下記の3つの文書を完成させてください。
+わからない所を質問してください。
+</p>
+
+<p>
+既にできている人は，次のレポート文書の作成にとりかかってください。
+</p>
+
+<ul class="org-ul">
+<li>教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+<ul class="org-ul">
+<li>先週までとファイル名が変りましたので，注意してください。</li>
+</ul></li>
+
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35fda0b" class="outline-4">
+<h4 id="org35fda0b">Doing レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org35fda0b">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-org7655ead" class="outline-5">
+<h5 id="org7655ead">課題のやり方</h5>
+<div class="outline-text-5" id="text-org7655ead">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfe13e98" class="outline-4">
+<h4 id="orgfe13e98">Todo レポートの書き方</h4>
+<div class="outline-text-4" id="text-orgfe13e98">
+<p>
+レポート文書の作成が終った人は，この課題に取りかかってください。
+</p>
+</div>
+
+
+<div id="outline-container-org6531337" class="outline-5">
+<h5 id="org6531337"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-org6531337">
+<p>
+<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
+自分がレポートを書くとき，読み返して思い出すための，
+自分のためのメモを作成しましょう。
+(メモは，メモ帳でもWordでもMindmapでもかまいません)
+</p>
+
+<p>
+記憶しやすく，思い出しやすいメモを作成するには，
+どんな方法があるでしょう？
+</p>
+
+<p>
+自分の理解を書き残こすために
+</p>
+
+<ul class="org-ul">
+<li>筆者の主張を，自分なりに what, why, how を考えましょう</li>
+
+<li>筆者の主張を分類していきましょう:
+
+<ul class="org-ul">
+<li>そのまま受け入れられ,知識となること，</li>
+
+<li>疑問がのこったり，わからないこと</li>
+
+<li>自分ならこう考える</li>
+</ul></li>
+
+<li>主張間の構造を意識し，構造を表しましょう
+(markdown, word, xmind のアウトライン機能 などで)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f3d8bd" class="outline-5">
+<h5 id="org6f3d8bd"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-org6f3d8bd">
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+にしたがって，
+</p>
+
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org">morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+のようなレポートを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a6bcba" class="outline-5">
+<h5 id="org9a6bcba">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org9a6bcba">
+<p>
+メモやあらすじについての先生のメモです。参考になるかも:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org">morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org">morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org">morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaee78ef" class="outline-2">
+<h2 id="orgaee78ef">2021.06.14 10回目</h2>
+<div class="outline-text-2" id="text-orgaee78ef">
+</div>
+<div id="outline-container-org791ec61" class="outline-3">
+<h3 id="org791ec61">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org791ec61">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+
+<p>
+OneDriveにサインインしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e42ca4" class="outline-3">
+<h3 id="org4e42ca4">今日の課題</h3>
+<div class="outline-text-3" id="text-org4e42ca4">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org7bc474f" class="outline-4">
+<h4 id="org7bc474f">タイピング &#x2013; 練習記録表の作成 再開</h4>
+<div class="outline-text-4" id="text-org7bc474f">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org506646c" class="outline-4">
+<h4 id="org506646c">前回のアンケート</h4>
+<div class="outline-text-4" id="text-org506646c">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1pl8Kjh6gJEIAshmCyG5hrKdN6D67kePGuIkFZYGZm3s/edit#gid=1005746073">09ー6月7日アンケート（回答） - Google スプレッドシート</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80db539" class="outline-4">
+<h4 id="org80db539">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org80db539">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<p>
+今日は，
+</p>
+<ul class="org-ul">
+<li>タイピング記録のためのExcelの使い方のマップ</li>
+<li>教科書5章の文書作成のためのマップ</li>
+</ul>
+
+<p>
+を配布してみます。自分の理解と記憶のために使ってみてください。
+</p>
+
+<p>
+XMind のアウトライン (概要) 機能についても説明します。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf81bc3b" class="outline-4">
+<h4 id="orgf81bc3b">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-orgf81bc3b">
+<p>
+下記の事を確認してください。
+</p>
+</div>
+
+<div id="outline-container-org3855149" class="outline-5">
+<h5 id="org3855149">レポート提出フォルダの作成</h5>
+<div class="outline-text-5" id="text-org3855149">
+<p>
+OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e885ab" class="outline-5">
+<h5 id="org6e885ab">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org6e885ab">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9b3a445" class="outline-4">
+<h4 id="org9b3a445">Done 教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org9b3a445">
+<p>
+教科書6章を読み，下記の3つの文書を完成させてください。
+わからない所を質問してください。
+</p>
+
+<p>
+既にできている人は，次のレポート文書の作成にとりかかってください。
+</p>
+
+<ul class="org-ul">
+<li>教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+<ul class="org-ul">
+<li>先週までとファイル名が変りましたので，注意してください。</li>
+</ul></li>
+
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5e05a53" class="outline-4">
+<h4 id="org5e05a53">レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-org5e05a53">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-org8e1b670" class="outline-5">
+<h5 id="org8e1b670">課題のやり方</h5>
+<div class="outline-text-5" id="text-org8e1b670">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc79d70a" class="outline-4">
+<h4 id="orgc79d70a">レポートの書き方</h4>
+<div class="outline-text-4" id="text-orgc79d70a">
+<p>
+レポート文書の作成が終った人は，この課題に取りかかってください。
+</p>
+</div>
+
+
+<div id="outline-container-orga10db88" class="outline-5">
+<h5 id="orga10db88"><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">レポートの書き方：writing.pdf</a> を理解する</h5>
+<div class="outline-text-5" id="text-orga10db88">
+<p>
+<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/250143/1/writing.pdf">writing.pdf</a> を読んで，レポートの書き方のポイントを学び，     
+自分がレポートを書くとき，読み返して思い出すための，
+自分のためのメモを作成しましょう。
+(メモは，メモ帳でもWordでもMindmapでもかまいません)
+</p>
+
+<p>
+記憶しやすく，思い出しやすいメモを作成するには，
+どんな方法があるでしょう？
+</p>
+
+<p>
+自分の理解を書き残こすために
+</p>
+
+<ul class="org-ul">
+<li>筆者の主張を，自分なりに what, why, how を考えましょう</li>
+
+<li>筆者の主張を分類していきましょう:
+
+<ul class="org-ul">
+<li>そのまま受け入れられ,知識となること，</li>
+
+<li>疑問がのこったり，わからないこと</li>
+
+<li>自分ならこう考える</li>
+</ul></li>
+
+<li>主張間の構造を意識し，構造を表しましょう
+(markdown, word, xmind のアウトライン機能 などで)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgda883e7" class="outline-5">
+<h5 id="orgda883e7"><a href="https://www.report.gusoku.net/kihon/">大学レポートの書き方：基本編</a> を理解する</h5>
+<div class="outline-text-5" id="text-orgda883e7">
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org">morioka_u_ict/レポートの書き方.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+にしたがって，
+</p>
+
+<p>
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81.org">morioka_u_ict/レポートの書き方のまとめ.org at master · masayuki054/morioka_u_ict</a>
+</p>
+
+<p>
+のようなレポートを作成してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org79539b7" class="outline-5">
+<h5 id="org79539b7">メモやあらすじについて</h5>
+<div class="outline-text-5" id="text-org79539b7">
+<p>
+メモやあらすじについての先生のメモです。参考になるかも:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%82%E3%82%89%E3%81%99%E3%81%98.org">morioka_u_ict/あらすじ.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.org">morioka_u_ict/まとめの作り方.org at master · masayuki054/morioka_u_ict</a></li>
+
+<li><a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%A1%E3%83%A2%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9.org">morioka_u_ict/ページのメモの取り方.org at master · masayuki054/morioka_u_ict</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2efe7a1" class="outline-2">
+<h2 id="org2efe7a1">2021.06.07 9回目</h2>
+<div class="outline-text-2" id="text-org2efe7a1">
+</div>
+<div id="outline-container-orgac4ac01" class="outline-3">
+<h3 id="orgac4ac01">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-orgac4ac01">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8fe2b63" class="outline-3">
+<h3 id="org8fe2b63">今日の課題</h3>
+<div class="outline-text-3" id="text-org8fe2b63">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-orgcf9b940" class="outline-4">
+<h4 id="orgcf9b940">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-orgcf9b940">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeddfce8" class="outline-4">
+<h4 id="orgeddfce8">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orgeddfce8">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1GVxB0timrKoEnupnwSp_LO28HFJ9Cd7BeC-L4h_TijY/edit?resourcekey#gid=1519153475">08ー5月31日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd4783e7" class="outline-4">
+<h4 id="orgd4783e7">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-orgd4783e7">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<p>
+今日は，
+</p>
+<ul class="org-ul">
+<li>タイピング記録のためのExcelの使い方のマップ</li>
+<li>教科書5章の文書作成のためのマップ</li>
+</ul>
+
+<p>
+を配布してみます。自分の理解と記憶のために使ってみてください。
+</p>
+
+<p>
+XMind のアウトライン (概要) 機能についても説明します。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd8d9e0" class="outline-4">
+<h4 id="orgfd8d9e0">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-orgfd8d9e0">
+</div>
+<div id="outline-container-orgcce3573" class="outline-5">
+<h5 id="orgcce3573">レポート提出フォルダの作成</h5>
+<div class="outline-text-5" id="text-orgcce3573">
+<p>
+OneDrive の情報処理演習フォルダの中に，レポート提出フォルダを作成
+してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8655a75" class="outline-5">
+<h5 id="org8655a75">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org8655a75">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org75f9877" class="outline-4">
+<h4 id="org75f9877">教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org75f9877">
+<p>
+教科書6章を読み，下記の3つの文書を完成させてください。
+わからない所を質問してください。
+</p>
+
+<p>
+既にできている人は，次のレポート文書の作成にとりかかってください。
+</p>
+
+<ul class="org-ul">
+<li>教科書図6.15 (表は学部学年別学生数.xlsx, 文書は大学の概要.docx)
+
+<ul class="org-ul">
+<li>先週までとファイル名が変りましたので，注意してください。</li>
+</ul></li>
+
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダの中のレポート提出フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6745bc" class="outline-4">
+<h4 id="orga6745bc">レポート文書の作成 (教科書5章)</h4>
+<div class="outline-text-4" id="text-orga6745bc">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<ul class="org-ul">
+<li>今日は，自分で教科書を読み，自分でやってみてください。</li>
+<li>配布した「文書作成レポート.xmind」を文書作成を理解するために使っ
+てください。</li>
+</ul>
+</div>
+
+<div id="outline-container-orgbfae879" class="outline-5">
+<h5 id="orgbfae879">課題のやり方</h5>
+<div class="outline-text-5" id="text-orgbfae879">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org01123bb" class="outline-2">
+<h2 id="org01123bb">2021.05.31 8回目</h2>
+<div class="outline-text-2" id="text-org01123bb">
+</div>
+<div id="outline-container-org41f0e6d" class="outline-3">
+<h3 id="org41f0e6d">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org41f0e6d">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd68983" class="outline-3">
+<h3 id="orgcd68983">今日の課題</h3>
+<div class="outline-text-3" id="text-orgcd68983">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-orgc398b10" class="outline-4">
+<h4 id="orgc398b10">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-orgc398b10">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org98f88ad" class="outline-4">
+<h4 id="org98f88ad">前回のアンケート</h4>
+<div class="outline-text-4" id="text-org98f88ad">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1kA8ZOwrNXW2H--Ku9_tKkQlyIocs0kNWKT6iDmLBkJs/edit#gid=1640546232">07ー5月24日アンケート（回答） - Google スプレッドシート</a>
+</p>
+<ul class="org-ul">
+<li>Excel の保存</li>
+<li>OneDrive</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdf64e6d" class="outline-4">
+<h4 id="orgdf64e6d">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-orgdf64e6d">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<p>
+まだ使い方がわからない人は，以前に見た，下記の動画を見てください：
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=RPKuF0g6UTY">(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=dxQs3yWXdNo">(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube</a></li>
+</ul>
+
+<p>
+4/29に配布したマップに今日の講義の内容をメモしてみましょう:
+</p>
+<ul class="org-ul">
+<li>(まだ保存していない人は) 自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+
+<p>
+今日は，試しに，タイピング記録のためのExcelの使い方のマップを配布してみま
+す。自分の理解と記憶のために使ってみてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86d86df" class="outline-4">
+<h4 id="org86d86df">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-org86d86df">
+<p>
+教材サーバー の suzuki の中の shares.html で確認してください。
+</p>
+
+<p>
+ほとんどの人が共有できていますが，数名できていません。できていない
+人は，先生に相談してください。
+</p>
+</div>
+
+<div id="outline-container-orgd6369fb" class="outline-5">
+<h5 id="orgd6369fb">OneDrive のフォルダを先生と共有する</h5>
+<div class="outline-text-5" id="text-orgd6369fb">
+<p>
+5/16日までに届いた共有メールから作成した，共有フォルダへのリンク
+表を教材サーバにを置きますので，前回共有に問題のあった人は，
+正しく共有できているか確認してください。
+</p>
+
+<p>
+共有できていない人は，先生を呼んで，下記の操作を行なってください。
+</p>
+
+<ul class="org-ul">
+<li><b>ブラウザ</b> で，自分の OneDrive を開き，</li>
+<li>情報処理演習フォルダがあることを確認，
+なければ作成，</li>
+<li>情報処理関係の文書(ファイル)を情報処理演習フォルダに移動</li>
+<li>先生 (3000261@morioka-u.ac.jp) と共有できているか確認。できてな
+ければ共有する。
+<ul class="org-ul">
+<li>フォルダを右クリックし，</li>
+<li>共有を選び，</li>
+<li>先生 (3000261@morioka-u.ac.jp)を共有相手に指定，</li>
+<li>共有情報を見るだけなら，送信せずに閉じる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6af17d2" class="outline-5">
+<h5 id="org6af17d2">フォルダの中身は以下:</h5>
+<div class="outline-text-5" id="text-org6af17d2">
+<ul class="org-ul">
+<li>タイピング練習表.xlsx</li>
+<li>配布されたマインドマップ (0429.xmind)</li>
+<li>講義のページへのWebショートカット</li>
+<li>メモ帳で作成した文書 (メモ.txt)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga0f7043" class="outline-5">
+<h5 id="orga0f7043">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-orga0f7043">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org75eecb7" class="outline-4">
+<h4 id="org75eecb7">教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org75eecb7">
+<p>
+Excel がわからないという人が多かったので，今週来週は，教科書6章を
+やります。
+</p>
+
+<p>
+下記の二つの文書を作成してください:
+</p>
+<ul class="org-ul">
+<li>教科書図6.15 (表は大学の概要.xlsx, 文書は大学の概要.word)</li>
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org94a767e" class="outline-4">
+<h4 id="org94a767e">Wordを始める (予習したい人はやってみてください)</h4>
+<div class="outline-text-4" id="text-org94a767e">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+<a href="text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7298a72" class="outline-2">
+<h2 id="org7298a72">2021.05.24 7回目</h2>
+<div class="outline-text-2" id="text-org7298a72">
+</div>
+<div id="outline-container-orgd84e02d" class="outline-3">
+<h3 id="orgd84e02d">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-orgd84e02d">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72a941e" class="outline-3">
+<h3 id="org72a941e">今日の課題</h3>
+<div class="outline-text-3" id="text-org72a941e">
+<p>
+以下，今日やることです。何回も説明しますので，徐々に覚えてください。忘
+れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org142cfbb" class="outline-4">
+<h4 id="org142cfbb">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-org142cfbb">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge099e95" class="outline-4">
+<h4 id="orge099e95">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orge099e95">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1eW3y5SlffncaTf-1sjyzDkGviRthRFxpRlnaDJ4gq_U/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1eW3y5SlffncaTf-1sjyzDkGviRthRFxpRlnaDJ4gq_U/edit?usp=sharing</a>    
+</p>
+
+<ul class="org-ul">
+<li>早い</li>
+<li>Excelの使い方がわからない</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org21ddf13" class="outline-4">
+<h4 id="org21ddf13">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org21ddf13">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<p>
+まだ使い方がわからない人は，以前に見た，下記の動画を見てください：
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=RPKuF0g6UTY">(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=dxQs3yWXdNo">(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube</a></li>
+</ul>
+
+<p>
+4/29に配布したマップに今日の講義の内容をメモしてみましょう:
+</p>
+<ul class="org-ul">
+<li>(まだ保存していない人は) 自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+
+<p>
+今日は，試しに，タイピング記録のためのExcelの使い方のマップを配布してみま
+す。自分の理解と記憶のために使ってみてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org346f4ae" class="outline-4">
+<h4 id="org346f4ae">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-org346f4ae">
+<p>
+教材サーバー
+</p>
+</div>
+
+
+<div id="outline-container-org0c6342b" class="outline-5">
+<h5 id="org0c6342b">OneDrive のフォルダを先生と共有する</h5>
+<div class="outline-text-5" id="text-org0c6342b">
+<p>
+5/16日までに届いた共有メールから作成した，共有フォルダへのリンク
+表を教材サーバにを置きますので，前回共有に問題のあった人は，
+正しく共有できているか確認してください。
+</p>
+
+<p>
+共有できていない人は，先生を呼んで，下記の操作を行なってください。
+</p>
+
+<ul class="org-ul">
+<li><b>ブラウザ</b> で，自分の OneDrive を開き，</li>
+<li>情報処理演習フォルダがあることを確認，
+なければ作成，</li>
+<li>情報処理関係の文書(ファイル)を情報処理演習フォルダに移動</li>
+<li>先生 (3000261@morioka-u.ac.jp) と共有できているか確認。できてな
+ければ共有する。
+<ul class="org-ul">
+<li>フォルダを右クリックし，</li>
+<li>共有を選び，</li>
+<li>先生 (3000261@morioka-u.ac.jp)を共有相手に指定，</li>
+<li>共有情報を見るだけなら，送信せずに閉じる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgca8e3f2" class="outline-5">
+<h5 id="orgca8e3f2">フォルダの中身は以下:</h5>
+<div class="outline-text-5" id="text-orgca8e3f2">
+<ul class="org-ul">
+<li>タイピング練習表.xlsx</li>
+<li>配布されたマインドマップ (0429.xmind)</li>
+<li>講義のページへのWebショートカット</li>
+<li>メモ帳で作成した文書 (メモ.txt)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga35ba4c" class="outline-5">
+<h5 id="orga35ba4c">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-orga35ba4c">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6392863" class="outline-4">
+<h4 id="org6392863">教科書 (<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>)</h4>
+<div class="outline-text-4" id="text-org6392863">
+<p>
+Excel がわからないという人が多かったので，今週来週は，教科書6章を
+やります。
+</p>
+
+<p>
+下記の二つの文書を作成してください:
+</p>
+<ul class="org-ul">
+<li>教科書図6.15 (表は大学の概要.xlsx, 文書は大学の概要.word)</li>
+<li>教科書図6.33 (表は平均と標準偏差.xlsx)</li>
+</ul>
+
+<p>
+自分の情報処理演習フォルダに保存してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9358a8" class="outline-4">
+<h4 id="orga9358a8">Wordを始める (予習したい人はやってみてください)</h4>
+<div class="outline-text-4" id="text-orga9358a8">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+<a href="text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1f9ddfb" class="outline-2">
+<h2 id="org1f9ddfb">2021.05.17 6回目</h2>
+<div class="outline-text-2" id="text-org1f9ddfb">
+</div>
+<div id="outline-container-org34da2d1" class="outline-3">
+<h3 id="org34da2d1">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org34da2d1">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6ed97f5" class="outline-3">
+<h3 id="org6ed97f5">今日の課題</h3>
+<div class="outline-text-3" id="text-org6ed97f5">
+<p>
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org64cb9cb" class="outline-4">
+<h4 id="org64cb9cb">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-org64cb9cb">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+<li>( <b>変更</b> ) 表の末尾に正しいキー数とミスタイプ数の最高，平均，最低を計算しましょう</li>
+<li>新しい記録は，最高，平均，最低などの前に，行を挿入することで，記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge81425a" class="outline-4">
+<h4 id="orge81425a">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orge81425a">
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1Lp2LRG_gm5Nwsaq84M3fGxfT1z1V8xBBWpOT7060Lyg/edit#gid=644555255">05ー5月10日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8a97553" class="outline-4">
+<h4 id="org8a97553">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org8a97553">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<p>
+まだ使い方がわからない人は，以前に見た，下記の動画を見てください：
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=RPKuF0g6UTY">(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=dxQs3yWXdNo">(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube</a></li>
+</ul>
+
+<p>
+4/29に配布したマップに今日の講義の内容をメモしてみましょう:
+</p>
+<ul class="org-ul">
+<li>(まだ保存していない人は) 自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+
+<p>
+今日は，試しに，タイピング記録のためのExcelの使い方のマップを配布してみま
+す。自分の理解と記憶のために使ってみてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda715cc" class="outline-4">
+<h4 id="orgda715cc">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-orgda715cc">
+</div>
+<div id="outline-container-orgc09972d" class="outline-5">
+<h5 id="orgc09972d">OneDrive のフォルダを先生と共有する</h5>
+<div class="outline-text-5" id="text-orgc09972d">
+<p>
+5/16日までに届いた共有メールから作成した，共有フォルダへのリンク
+表を教材サーバにを置きますので，前回共有に問題のあった人は，
+正しく共有できているか確認してください。
+</p>
+
+<p>
+共有できていない人は，先生を呼んで，下記の操作を行なってください。
+</p>
+
+<ul class="org-ul">
+<li><b>ブラウザ</b> で，自分の OneDrive を開き，</li>
+<li>情報処理演習フォルダがあることを確認，
+なければ作成，</li>
+<li>情報処理関係の文書(ファイル)を情報処理演習フォルダに移動</li>
+<li>先生 (3000261@morioka-u.ac.jp) と共有できているか確認。できてな
+ければ共有する。
+<ul class="org-ul">
+<li>フォルダを右クリックし，</li>
+<li>共有を選び，</li>
+<li>先生 (3000261@morioka-u.ac.jp)を共有相手に指定，</li>
+<li>共有情報を見るだけなら，送信せずに閉じる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e3bd0a" class="outline-5">
+<h5 id="org5e3bd0a">フォルダの中身は以下:</h5>
+<div class="outline-text-5" id="text-org5e3bd0a">
+<ul class="org-ul">
+<li>タイピング練習表.xlsx</li>
+<li>配布されたマインドマップ (0429.xmind)</li>
+<li>講義のページへのWebショートカット</li>
+<li>メモ帳で作成した文書 (メモ.txt)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e39626" class="outline-5">
+<h5 id="org6e39626">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org6e39626">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd118e5f" class="outline-4">
+<h4 id="orgd118e5f">教科書</h4>
+<div class="outline-text-4" id="text-orgd118e5f">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>      
+ に先生のまとめがあります。
+</p>
+</div>
+
+<div id="outline-container-org3e56fd6" class="outline-5">
+<h5 id="org3e56fd6">文字入力 (教科書2章) A組</h5>
+<div class="outline-text-5" id="text-org3e56fd6">
+<p>
+教科書の2章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+
+<p>
+メモ帳が作成する文書は何でできていますか？
+</p>
+<ul class="org-ul">
+<li>文字
+<ul class="org-ul">
+<li>フォント</li>
+<li>大きさ</li>
+</ul></li>
+<li>単語と文節 (入力時)</li>
+<li>文
+<ul class="org-ul">
+<li>句読点，</li>
+</ul></li>
+<li>行
+<ul class="org-ul">
+<li>改行コードによる行</li>
+</ul></li>
+<li>文書
+<ul class="org-ul">
+<li>文の集まり</li>
+<li>日本語コード</li>
+<li>Windows の フォルダとファイル名と拡張子</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org12376ee" class="outline-5">
+<h5 id="org12376ee">お絵かきとファイル操作 (教科書4章) B組</h5>
+<div class="outline-text-5" id="text-org12376ee">
+<ul class="org-ul">
+<li>先生の配布する図を開いて，自分のメモを描いてみましょう</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbfdcf7c" class="outline-5">
+<h5 id="orgbfdcf7c">ファイル, フォルダ，USBメモリ，OneDrive</h5>
+<div class="outline-text-5" id="text-orgbfdcf7c">
+<p>
+教科書の4章を読んで，ファイルやフォルダ，USBメモリの使い方を
+確認していきましょう。
+</p>
+
+
+<ul class="org-ul">
+<li>エクスプローラのこと</li>
+<li>フォルダとファイルのこと</li>
+<li>USBメモリのこと</li>
+<li>クラウドのこと</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8256c3c" class="outline-4">
+<h4 id="org8256c3c">Wordを始める (予習したい人はやってみてください)</h4>
+<div class="outline-text-4" id="text-org8256c3c">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめと課題</a>
+<a href="text.html">教科書のまとめと課題</a>
+17章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から</li>
+<li>著作権法とファイル交換ソフト.txt をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org140baa5" class="outline-2">
+<h2 id="org140baa5">2021.05.10 5回目</h2>
+<div class="outline-text-2" id="text-org140baa5">
+</div>
+<div id="outline-container-org284c5be" class="outline-3">
+<h3 id="org284c5be">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org284c5be">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+教材サーバ (エクスプローラの PC の中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org08f946d" class="outline-3">
+<h3 id="org08f946d">今日の課題</h3>
+<div class="outline-text-3" id="text-org08f946d">
+<p>
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org46d0e18" class="outline-4">
+<h4 id="org46d0e18">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-org46d0e18">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<ul class="org-ul">
+<li>自分の情報処理フォルダに練習記録を残してください。</li>
+<li>表の先頭部に正しいキー数の最高，平均，最低を計算しましょう</li>
+<li>表の先頭部を固定しましょう (ウィンドウ枠の固定)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgecec611" class="outline-4">
+<h4 id="orgecec611">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orgecec611">
+<p>
+<a href="https://docs.google.com/forms/d/112cH_H5C6wtlftF2sF3cRszNUimM1txEfArJeE_5Ng4/edit#responses">04ー4月29日アンケート - Google フォーム</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1PYPWDBPYPJ-El4Ief9EL9VPzSOzyb3W53p-p5d-_elw/edit#gid=1741114499">04ー4月29日アンケート（回答） - Google スプレッドシート</a>    
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9affe04" class="outline-4">
+<h4 id="org9affe04">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org9affe04">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=RPKuF0g6UTY">(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube</a></li>
+</ul>
+
+<p>
+4/29に配布したマップに今日の講義の内容をメモしてみましょう:
+</p>
+<ul class="org-ul">
+<li>(まだ保存していない人は) 自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgef0cd88" class="outline-4">
+<h4 id="orgef0cd88">microsoft365 クラウドサービス (共有の確認)</h4>
+<div class="outline-text-4" id="text-orgef0cd88">
+</div>
+<div id="outline-container-org69016fa" class="outline-5">
+<h5 id="org69016fa">OneDrive のフォルダを先生と共有する</h5>
+<div class="outline-text-5" id="text-org69016fa">
+<p>
+教材サーバに共有フォルダへのリンク表を置きますので，
+先生と共有できたか確認してください。
+</p>
+
+<p>
+共有できていない人は，下記の操作を
+</p>
+
+<ul class="org-ul">
+<li><b>ブラウザ</b> で，自分の OneDrive を開き，</li>
+<li>情報処理演習フォルダがあることを確認，
+なければ作成，</li>
+<li>情報処理関係の文書(ファイル)を情報処理演習フォルダに移動</li>
+<li>先生 (3000261@morioka-u.ac.jp) と共有できているか確認。できてな
+ければ共有する。
+<ul class="org-ul">
+<li>フォルダを右クリックし，</li>
+<li>共有を選び，</li>
+<li>先生 (3000261@morioka-u.ac.jp)を共有相手に指定，</li>
+<li>共有情報を見るだけなら，送信せずに閉じる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd0af02" class="outline-5">
+<h5 id="orgbd0af02">フォルダの中身は以下:</h5>
+<div class="outline-text-5" id="text-orgbd0af02">
+<ul class="org-ul">
+<li>タイピング練習表.xlsx</li>
+<li>配布されたマインドマップ (0429.xmind)</li>
+<li>講義のページへのWebショートカット</li>
+<li>メモ帳で作成した文書 (メモ.txt)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org281524b" class="outline-5">
+<h5 id="org281524b">フォルダのバックアップ:</h5>
+<div class="outline-text-5" id="text-org281524b">
+<ul class="org-ul">
+<li>USBメモリの使い方を学んだら，USBメモリにフォルダのコピー (バッ
+クアップ) を作りましょう。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org42838f4" class="outline-4">
+<h4 id="org42838f4">教科書</h4>
+<div class="outline-text-4" id="text-org42838f4">
+</div>
+<div id="outline-container-org1c98738" class="outline-5">
+<h5 id="org1c98738">文字入力 (教科書2章)</h5>
+<div class="outline-text-5" id="text-org1c98738">
+<p>
+教科書の2章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+
+<p>
+メモ帳が作成する文書は何でできていますか？
+</p>
+<ul class="org-ul">
+<li>文字
+<ul class="org-ul">
+<li>フォント</li>
+<li>大きさ</li>
+</ul></li>
+<li>単語と文節 (入力時)</li>
+<li>文
+<ul class="org-ul">
+<li>句読点，</li>
+</ul></li>
+<li>行
+<ul class="org-ul">
+<li>改行コードによる行</li>
+</ul></li>
+<li>文書
+<ul class="org-ul">
+<li>文の集まり</li>
+<li>日本語コード</li>
+<li>Windows の フォルダとファイル名と拡張子</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8b3212e" class="outline-5">
+<h5 id="org8b3212e">お絵かきとファイル操作 (教科書4章)</h5>
+<div class="outline-text-5" id="text-org8b3212e">
+<p>
+教科書の4章を読んで，ファイルやフォルダ，USBメモリの使い方を
+確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+
+<ul class="org-ul">
+<li>エクスプローラのこと</li>
+<li>フォルダとファイルのこと</li>
+<li>USBメモリのこと</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org82c8c1b" class="outline-4">
+<h4 id="org82c8c1b">講義アンケートの提出</h4>
+<div class="outline-text-4" id="text-org82c8c1b">
+<p>
+下記サイトでアンケートに答えてください:
+</p>
+
+<p>
+<a href="https://forms.gle/Sgccix7PyEiDAkHN8">https://forms.gle/Sgccix7PyEiDAkHN8</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/1Or1RNHeIDwhH7dygV4k3cwzbWJu26R5PDiFomz4Tsk4/edit">05ー5月10日アンケート - Google フォーム</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc663c33" class="outline-4">
+<h4 id="orgc663c33">Wordを始める (予習したい人はやってみてください)</h4>
+<div class="outline-text-4" id="text-orgc663c33">
+<p>
+教科書5章を読み，Word を使い始めましょう。   
+何回かかけて，Word でレポートを書くための機能を学び，
+教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+</p>
+
+<p>
+<a href="lects/text.html">講義資料/教科書のまとめ</a> 18章にやり方の説明があります。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://drive.google.com/open?id=1MZPZnazCkYqz_sFEiYkezJel3FdPwOig">著作権法とファイル交換ソフト</a>をダウンロードし，</li>
+
+<li>文章(レポート)の構成要素と構造について考える
+
+<ul class="org-ul">
+<li>文章を読み，意図をつかむ</li>
+<li>各文の役割を考え，どんな文の要素で表わすかを決める</li>
+</ul></li>
+
+<li>構成要素と構造が決った後，Word にコピペ</li>
+
+<li>教科書に従って整形</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8e7f017" class="outline-2">
+<h2 id="org8e7f017">2021.04.29 4回目</h2>
+<div class="outline-text-2" id="text-org8e7f017">
+</div>
+<div id="outline-container-org98c4691" class="outline-3">
+<h3 id="org98c4691">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-org98c4691">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+先生のGoogleDriveから，04-4/29 のマップをダウンロードしてください。
+</p>
+
+<p>
+教材サーバ (エクスローラのPCの中) に講義のトップページへのリンクが
+あります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgade52d0" class="outline-3">
+<h3 id="orgade52d0">今日の課題</h3>
+<div class="outline-text-3" id="text-orgade52d0">
+<p>
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-orgde4b736" class="outline-4">
+<h4 id="orgde4b736">タイピング &#x2013; 練習記録表の作成</h4>
+<div class="outline-text-4" id="text-orgde4b736">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+自分の情報処理フォルダに練習記録を残してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgedf7661" class="outline-4">
+<h4 id="orgedf7661">前回のアンケート</h4>
+<div class="outline-text-4" id="text-orgedf7661">
+<p>
+<a href="https://docs.google.com/forms/d/1YZfizEGisMZK0HnMQWihskovtdEK2xedWl02g9EFYY0/edit#responses">03ー4月26日アンケート - Google フォーム</a> 集計結果
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1J90yj4Z8os1IuuF64y_KyJ85ighCFu-qrb5E34QmwOg/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1J90yj4Z8os1IuuF64y_KyJ85ighCFu-qrb5E34QmwOg/edit?usp=sharing</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org291112d" class="outline-4">
+<h4 id="org291112d">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org291112d">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=dxQs3yWXdNo">(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube</a></li>
+</ul>
+
+<p>
+講義内容の説明のマインドマップを配布します。
+</p>
+<ul class="org-ul">
+<li>自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+
+<p>
+配布のマインドマップ使って，講義中にメモを取りましょう。
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org8b0288d" class="outline-4">
+<h4 id="org8b0288d">microsoft365 クラウドサービス (先週の復習)</h4>
+<div class="outline-text-4" id="text-org8b0288d">
+<ul class="org-ul">
+<li>インターネットの概念図</li>
+<li>サーバとクライアント</li>
+<li>大学のPC, 自宅のPC, スマホの接続</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0f51d42" class="outline-4">
+<h4 id="org0f51d42">文字入力 (教科書2章)</h4>
+<div class="outline-text-4" id="text-org0f51d42">
+<p>
+教科書の2章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9f79d47" class="outline-4">
+<h4 id="org9f79d47">OneDrive のフォルダを先生と共有する</h4>
+<div class="outline-text-4" id="text-org9f79d47">
+<ul class="org-ul">
+<li><b>ブラウザ</b> で，自分の OneDrive を開き，</li>
+<li>情報処理演習フォルダがあることを確認，
+なければ作成，</li>
+<li>情報処理関係の文書(ファイル)を情報処理演習フォルダに移動</li>
+<li>先生 (3000261@morioka-u.ac.jp) と共有できているか確認。できてな
+ければ共有する。
+<ul class="org-ul">
+<li>フォルダを右クリックし，</li>
+<li>共有を選び，</li>
+<li>先生 (3000261@morioka-u.ac.jp)を共有相手に指定，</li>
+<li>共有情報を見るだけなら，送信せずに閉じる</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd5530ff" class="outline-4">
+<h4 id="orgd5530ff">大学のメールを使う</h4>
+<div class="outline-text-4" id="text-orgd5530ff">
+<ul class="org-ul">
+<li>自分の大学のメールアドレスは「学生番号@st.morioka-u.ac.jp」です。</li>
+
+<li>morioka-u.ac.jp が，インターネットの中での，盛岡大学のドメイン名
+です。</li>
+
+<li>morioka-u.ac.jp ドメインに対して，<a href="https://outlook.office.com">https://outlook.office.com</a> が
+メールサーバです。</li>
+</ul>
+
+<p>
+先生からのメールが読めたら、3000261@morioka-u.ac.jp に返事を
+下さい。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org70f8b8f" class="outline-4">
+<h4 id="org70f8b8f">講義アンケートの提出</h4>
+<div class="outline-text-4" id="text-org70f8b8f">
+<p>
+下記サイトでアンケートに答えてください:
+</p>
+
+<p>
+<a href="https://forms.gle/mUESDSyL8nVuH24G8">https://forms.gle/mUESDSyL8nVuH24G8</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/112cH_H5C6wtlftF2sF3cRszNUimM1txEfArJeE_5Ng4/edit">04ー4月29日アンケート - Google フォーム</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org22fc729" class="outline-2">
+<h2 id="org22fc729">2021.04.26 3回目</h2>
+<div class="outline-text-2" id="text-org22fc729">
+</div>
+<div id="outline-container-orga5e881d" class="outline-3">
+<h3 id="orga5e881d">Done 受講の準備</h3>
+<div class="outline-text-3" id="text-orga5e881d">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+
+<p>
+先生のGoogleDriveから，4/26 のマップをダウンロードしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf54763c" class="outline-3">
+<h3 id="orgf54763c">ガイダンスの続き</h3>
+<div class="outline-text-3" id="text-orgf54763c">
+<ul class="org-ul">
+<li><a href="https://172.16.10.48">情報処理センター資料</a> の説明をします。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb35657c" class="outline-3">
+<h3 id="orgb35657c">今日の課題</h3>
+<div class="outline-text-3" id="text-orgb35657c">
+<p>
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org7899ce5" class="outline-4">
+<h4 id="org7899ce5">タイピング &#x2013; 練習のはじまり</h4>
+<div class="outline-text-4" id="text-org7899ce5">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+自分の情報処理フォルダに練習記録を残してください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd791350" class="outline-4">
+<h4 id="orgd791350">microsoft365 クラウドサービス (先週の復習)</h4>
+<div class="outline-text-4" id="text-orgd791350">
+<ul class="org-ul">
+<li>インターネットの概念図</li>
+<li>サーバとクライアント</li>
+<li>大学のPC, 自宅のPC, スマホの接続</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7513589" class="outline-4">
+<h4 id="org7513589">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org7513589">
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=dxQs3yWXdNo">(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube</a></li>
+</ul>
+
+<p>
+講義内容の説明のマインドマップを配布します。
+</p>
+<ul class="org-ul">
+<li>自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org33e85bf" class="outline-4">
+<h4 id="org33e85bf">Windows の基本操作などを学ぶ</h4>
+<div class="outline-text-4" id="text-org33e85bf">
+<p>
+教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+
+<p>
+自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0bd7cb" class="outline-4">
+<h4 id="orgc0bd7cb">大学のメールを使う</h4>
+<div class="outline-text-4" id="text-orgc0bd7cb">
+<ul class="org-ul">
+<li>自分の大学のメールアドレスは「学生番号@st.morioka-u.ac.jp」です。</li>
+
+<li>morioka-u.ac.jp が，インターネットの中での，盛岡大学のドメイン名
+です。</li>
+
+<li>morioka-u.ac.jp ドメインに対して，<a href="https://outlook.office.com">https://outlook.office.com</a> が
+メールサーバです。</li>
+</ul>
+
+<p>
+先生からのメールが読めたら、3000261@morioka-u.ac.jp に返事を
+下さい。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9bf091a" class="outline-4">
+<h4 id="org9bf091a">講義アンケートの提出</h4>
+<div class="outline-text-4" id="text-org9bf091a">
+<p>
+下記サイトでアンケートに答えてください:
+</p>
+
+<p>
+<a href="https://forms.gle/QjgyJaQckbqCaPJG6">https://forms.gle/QjgyJaQckbqCaPJG6</a>    
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org07defee" class="outline-2">
+<h2 id="org07defee">2021.04.19 2回目</h2>
+<div class="outline-text-2" id="text-org07defee">
+</div>
+<div id="outline-container-orgad45d19" class="outline-3">
+<h3 id="orgad45d19">受講の準備</h3>
+<div class="outline-text-3" id="text-orgad45d19">
+<p>
+<a href="prepare.html">受講の準備</a> をしてください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c93162" class="outline-3">
+<h3 id="org2c93162">ガイダンスの続き</h3>
+<div class="outline-text-3" id="text-org2c93162">
+<ul class="org-ul">
+<li><a href="guidance.html">ガイダンス</a>で説明できなかった事を説明します。</li>
+
+<li><a href="https://172.16.10.48">情報処理センター資料</a> の説明をします。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdb32f53" class="outline-3">
+<h3 id="orgdb32f53">今日の課題</h3>
+<div class="outline-text-3" id="text-orgdb32f53">
+<p>
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
+</p>
+</div>
+
+<div id="outline-container-org63fb517" class="outline-4">
+<h4 id="org63fb517">タイピング &#x2013; 練習のはじまり</h4>
+<div class="outline-text-4" id="text-org63fb517">
+<p>
+<a href="typing.html">タイピング</a> を読んで，タイピング練習を始め，記録をつけましょう。
+</p>
+
+<p>
+来週も追記できるように，自分の情報処理フォルダに練習記録を残しておいて
+ください。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ed3329" class="outline-4">
+<h4 id="org7ed3329">XMindによる講義内容の説明</h4>
+<div class="outline-text-4" id="text-org7ed3329">
+<p>
+講義内容の説明のマインドマップを配布します。
+</p>
+<ul class="org-ul">
+<li>自分の情報処理演習フォルダにコピーし保存してください。</li>
+<li>先生の説明を聞いて，自分でメモを書き込んでみてください。</li>
+</ul>
+
+<p>
+<a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a> の中の3章からマインドマップの使い方を
+説明します。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga17c173" class="outline-4">
+<h4 id="orga17c173">Windows の基本操作などを学ぶ</h4>
+<div class="outline-text-4" id="text-orga17c173">
+<p>
+教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+</p>
+
+<p>
+<a href="text.html">教科書のまとめと課題</a>に先生のまとめがあります。
+</p>
+
+<p>
+自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7066d6d" class="outline-4">
+<h4 id="org7066d6d">講義アンケートの提出</h4>
+<div class="outline-text-4" id="text-org7066d6d">
+<p>
+下記サイトでアンケートに答えてください:
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/1Qlvl-MF0X1xYKxboqmBQocLxjCUGH3HqyUpHxVPv4cs/edit?usp=sharing">https://docs.google.com/forms/d/1Qlvl-MF0X1xYKxboqmBQocLxjCUGH3HqyUpHxVPv4cs/edit?usp=sharing</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org93bd8a4" class="outline-2">
+<h2 id="org93bd8a4">1回目 情報処理演習 2021.04.12</h2>
+<div class="outline-text-2" id="text-org93bd8a4">
+</div>
+<div id="outline-container-org02888ac" class="outline-3">
+<h3 id="org02888ac">出席</h3>
+<div class="outline-text-3" id="text-org02888ac">
+<p>
+<a href="https://morioka-u.ap-cloud.com/prtl">ポータル</a> で 出席登録してください。
+</p>
+
+<p>
+パスコードはA組は9564，B組は6839です。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge7fd21c" class="outline-3">
+<h3 id="orge7fd21c">おしらせ</h3>
+<div class="outline-text-3" id="text-orge7fd21c">
+</div>
+<div id="outline-container-org02df9cd" class="outline-4">
+<h4 id="org02df9cd">レポート課題の指示は，<a href="https://mellyclass.com/morioka-u/classrooms">melly</a> でおこないます。</h4>
+<div class="outline-text-4" id="text-org02df9cd">
+</div>
+</div>
+
+<div id="outline-container-orga564622" class="outline-4">
+<h4 id="orga564622">次回は，USBメモリを持ってきてください。</h4>
+<div class="outline-text-4" id="text-orga564622">
+<ul class="org-ul">
+<li>他の講義でも指示があると思います。兼用してください。</li>
+<li>できれば，USB3.0 (挿し口が青)</li>
+<li>新しく買うなら，16G以上の容量が割り安。
+アプリも入れて持ち運べます。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e09c24" class="outline-4">
+<h4 id="org5e09c24">講義時間外の質問</h4>
+<div class="outline-text-4" id="text-org5e09c24">
+<p>
+僕は非常勤講師なので，大学での質問は下記時間場所でお願いします:
+</p>
+
+<ul class="org-ul">
+<li>月曜日 12:00&#x2013;12:50  の講義時間
+<ul class="org-ul">
+<li>A306室</li>
+<li>非常勤講師控え室</li>
+<li>大学生協食堂にいます。</li>
+</ul></li>
+</ul>
+
+<p>
+時間外で質問等ある場合は，
+</p>
+
+<ul class="org-ul">
+<li>msyk054@gmail.com にメールするか，</li>
+<li>水曜日の14:00~17:00に，岩大図書館の学修支援コーナーに来る</li>
+
+<li>レポート課題の指示は，<a href="https://mellyclass.com/morioka-u/classrooms">melly</a> でおこないます。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e7bb96" class="outline-3">
+<h3 id="org3e7bb96">アンケートの提出</h3>
+<div class="outline-text-3" id="text-org3e7bb96">
+<p>
+講義終了時に，下記のサイトからアンケートを出してください。
+</p>
+
+<p>
+<a href="https://forms.gle/DY8fejSBnYQc5Bd79">https://forms.gle/DY8fejSBnYQc5Bd79</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge2a5886" class="outline-3">
+<h3 id="orge2a5886">今日の講義内容 (ガイダンス)</h3>
+<div class="outline-text-3" id="text-orge2a5886">
+</div>
+<div id="outline-container-org65de28b" class="outline-4">
+<h4 id="org65de28b">スタートアップセミナーの確認</h4>
+<div class="outline-text-4" id="text-org65de28b">
+<p>
+<a href="https://172.16.10.48">盛岡大学情報システムセンター</a> <a href="https://172.16.10.48">https://172.16.10.48</a> に資料があると思
+います。
+</p>
+
+<ul class="org-ul">
+<li>アカウントとパスワード変更</li>
+<li>パソコン教室の使い方</li>
+<li>ネットワークのこと</li>
+<li>ポータルとmelly</li>
+<li>office365</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org729845d" class="outline-4">
+<h4 id="org729845d">講義の説明</h4>
+<div class="outline-text-4" id="text-org729845d">
+<ul class="org-ul">
+<li>シラバス</li>
+<li>mindmap を配布して説明します。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org21d2daf" class="outline-4">
+<h4 id="org21d2daf">講義資料</h4>
+<div class="outline-text-4" id="text-org21d2daf">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/references.html">https://masayuki054.github.io/morioka_u_ict/references.html</a>
+</p>
+
+<ul class="org-ul">
+<li>講義で参照する資料です。まだ旧システムでの説明もあります。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2bc35f1" class="outline-4">
+<h4 id="org2bc35f1">来週からタイピングを始めましょう。</h4>
+<div class="outline-text-4" id="text-org2bc35f1">
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/typing.html">https://masayuki054.github.io/morioka_u_ict/typing.html</a>
+</p>
+
+<ul class="org-ul">
+<li>毎回，講義が始まる前に練習し，記録をメモしておきましょう。</li>
+<li>記録は，メモ帖でもExcelでもいいですよ。</li>
+<li>タイピング数とミスタイプ数を記録しましょう。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org44937b0" class="outline-4">
+<h4 id="org44937b0">講義内容の Mindmap</h4>
+<div class="outline-text-4" id="text-org44937b0">
+<p>
+<a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">Googleドライブ</a>からダウンロードして, XMind で閲覧，メモを書き込んでください。
+</p>
+
+<p>
+書き込んだマップは，自分の情報処理演習フォルダに提出してください。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org625a4dc" class="outline-3">
+<h3 id="org625a4dc">関連ページ</h3>
+<div class="outline-text-3" id="text-org625a4dc">
+<ul class="org-ul">
+<li><a href="https://morioka-u.ap-cloud.com/prtl">ポータル</a></li>
+<li><a href="https://mellyclass.com/morioka-u/classrooms">melly</a></li>
+</ul>
+
+<p>
+先生の講義のための OneDrive フォルダ
+</p>
+<ul class="org-ul">
+<li><a href="https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&amp;id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021">3000261@morioka-u.ac.jpの情報処理演習2021 - OneDrive</a></li>
+</ul>
+
+<p>
+先生の講義のための GoogleDrive フォルダ
+</p>
+<ul class="org-ul">
+<li><a href="https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing">情報処理演習2021-共有Googleドライブ</a></li>
+<li><a href="https://drive.google.com/drive/folders/1Hvrp439Zi7iQ-xLkAlFbYV4UNuYDkqYl">アンケート - Google ドライブ</a></li>
+</ul>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/text.html">教科書のまとめ</a>
+</p>
+
+<p>
+<a href="https://masayuki054.github.io/morioka_u_ict/references.html">講義資料</a> 講義で参照する資料です。まだ旧システムでの説明もあります。
+</p>
+
+<p>
+microsoft 365
+</p>
+<ul class="org-ul">
+<li><a href="https://www.office.com/">Microsoft Office ホーム</a>
+<ul class="org-ul">
+<li><a href="https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e">Office クイック スタート - Office サポート</a>
+動画は英語のものあり，日本語 pdf をダウンロードできる。</li>
+<li><a href="https://support.office.com/ja-jp/office-training-center">Microsoft 365 トレーニング</a>
+<ul class="org-ul">
+<li>outlook，oneDrive， word</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+先生の放送大学の講義   
+</p>
+<ul class="org-ul">
+<li><a href="https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/">メモと思考のためのICTの活用</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">&#33879;&#32773;: masayuki</p>
+<p class="date">Created: 2022-04-10 日 14:58</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

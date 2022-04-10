@@ -1,0 +1,79 @@
+はてな 盛岡大学 情報処理 2022 で検索してこのページを見つけてください。
+
+講義情報へのリンクを集めたページです。
+
+[[https://masayuki054.hatenablog.com/entry/2022/02/16/102612][情報処理演習 2022 - masayuki054's diary]]
+
+
+* 毎回の講義内容
+
+  [[https://masayuki054.github.io/morioka_u_ict][今日の講義]]
+
+* 出席とアンケート
+  
+ - [[https://morioka-u.ap-cloud.com/prtl][ポータル]] にログインして出席登録してください. パスコードは，
+   [[https://masayuki054.github.io/morioka_u_ict][今日の講義]] に書いてあります。
+
+- 講義終了時，下記のアンケートに答えてください。毎回のアンケートのリン
+  クは， [[https://masayuki054.github.io/morioka_u_ict][今日の講義]] に書いてあります。
+
+   
+* 講義関連資料とサイト
+
+- [[https://masayuki054.github.io/morioka_u_ict/][今日の講義]]
+
+  毎回の講義の内容です。
+  
+- [[https://masayuki054.github.io/morioka_u_ict/announce.html][お知らせ]]
+
+  毎回のお知らせをまとめたページです。
+  
+- [[https://masayuki054.github.io/morioka_u_ict/lect.html][今迄の講義内容]]
+
+  今日の講義を，回毎に，まとめたページです。
+
+- [[https://masayuki054.github.io/morioka_u_ict/reference.html][講義資料]]
+
+  講義で使ういろいろな資料へのリンク集です。
+
+  
+- [[https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing][先生のGoogleドライブ]]
+  
+  アンケートなどを共有しています
+  
+- [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021][先生のOneDrive]]
+  
+  講義資料，レポート提出の見本，などを共有しています。
+
+- [[https://www.office.com/][Office365ホーム]] ログイン・りんく
+
+- 先生の放送大学の講義 [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]]
+
+  情報リテラシについて解説しています
+   
+* 関連ページ
+
+   [[https://mellyclass.com/morioka-u/classrooms][melly]]
+
+   microsoft 365
+   - [[https://www.office.com/][Microsoft Office ホーム]]
+     - [[https://support.office.com/ja-jp/article/office-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF-%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88-25f909da-3e76-443d-94f4-6cdf7dedc51e][Office クイック スタート - Office サポート]]
+       動画は英語のものあり，日本語 pdf をダウンロードできる。
+     - [[https://support.office.com/ja-jp/office-training-center][Microsoft 365 トレーニング]]
+       - outlook，
+       - oneDrive
+
+* 2021年度の情報
+
+- [[http://masayuki054.hatenablog.com/entry/2021/04/11/150833?_ga=2.65235245.2009474851.1618057154-1469270814.1611790568][盛岡大学 栄養科学科 情報処理演習 2021 - masayuki054's diary]]
+	 
+* 2020年度の情報
+
+  - [[http://masayuki054.hatenablog.com/entry/2020/05/17/215714][オンライン授業 情報処理演習 2020 - masayuki054's diary]]
+
+  - [[http://masayuki054.hatenablog.com/entry/2020/03/10/210112][盛岡大学 栄養科学科 情報処理演習 2020 - masayuki054's diary]]
+  
+* 2019年度の情報
+  
+  [[http://masayuki054.hatenablog.com/entry/2019/03/18/194043][- 盛岡大学 栄養科学科 情報処理演習 2019 - masayuki054's diary]]
+
