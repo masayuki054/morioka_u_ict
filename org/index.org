@@ -1,7 +1,7 @@
 #+setupfile: info/index-bigblow-header.setup
 #+include: info/common-header.org
 #+title: 今日の講義
-#+include: lects/01-2021.org :minlevel 1
+#+include: lects/01.org :minlevel 1
 
 
 
