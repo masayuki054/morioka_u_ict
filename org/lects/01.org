@@ -1,17 +1,17 @@
-* 1回目 情報処理演習 2021.04.12
+* 1回目 情報処理演習 2022.04.11
 
 ** 出席
    [[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-   パスコードはA組は9564，B組は6839です。
+   パスコードはA組は4296，B組は0319です。
 
-** おしらせ       
+** おしらせ-01
 
-*** レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。
-    SCHEDULED: <2021-04-12 月>
+*** レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。SCHEDULED: <2022-04-10 日>
 
-*** 次回は，USBメモリを持ってきてください。
-    SCHEDULED: <2021-04-12 月>
+
+*** 次回は，USBメモリを持ってきてください。SCHEDULED: <2022-04-10 日>
+
     - 他の講義でも指示があると思います。兼用してください。
     - できれば，USB3.0 (挿し口が青)
     - 新しく買うなら，16G以上の容量が割り安。
@@ -38,7 +38,7 @@
 
   講義終了時に，下記のサイトからアンケートを出してください。
 
-  https://forms.gle/DY8fejSBnYQc5Bd79
+  https://forms.gle/yP5Yky9R9d183f5N6
 
 ** 今日の講義内容 (ガイダンス)
 
@@ -79,15 +79,19 @@
 
 ** 関連ページ
 
-   - [[https://morioka-u.ap-cloud.com/prtl][ポータル]]
-   - [[https://mellyclass.com/morioka-u/classrooms][melly]]
+   - [[https://morioka-u.ap-cloud.com/prtl][ポータル]] (大学の学務情報)
+   - [[https://mellyclass.com/morioka-u/classrooms][melly]] (講義の情報)
 
    先生の講義のための OneDrive フォルダ
-   - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021][3000261@morioka-u.ac.jpの情報処理演習2021 - OneDrive]]
-
+   - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du][morioka-u - OneDrive]]
+     - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022][情報処理演習2022 - OneDrive]]
+       - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022%2FXmind%20%E3%83%9E%E3%83%83%E3%83%97][Xmind マップ - OneDrive]]
+     - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922021][情報処理演習2021 - OneDrive]]
+     
    先生の講義のための GoogleDrive フォルダ
-   - [[https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing][情報処理演習2021-共有Googleドライブ]]
+   - [[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][情報処理演習2022 - Google ドライブ]]
    - [[https://drive.google.com/drive/folders/1Hvrp439Zi7iQ-xLkAlFbYV4UNuYDkqYl][アンケート - Google ドライブ]]
+   - [[https://drive.google.com/drive/folders/164TCa1qgyWuqawCVlun6tChBW_w77r1Y?usp=sharing][情報処理演習2021-共有Googleドライブ]]
 
    [[https://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめ]]
 

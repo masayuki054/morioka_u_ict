@@ -57,8 +57,8 @@ def deploy(file, dir)
   sh "mkdir -p #{dir}"
   File.open("#{dir}/#{file}", "w") do |target| 
     all = File.read(file).gsub("http:\/\/", "https:\/\/")
-#    all.gsub!("\/\/www.pirilampo.org", "\/\/wiki.cis.iwate-u.ac.jp\/~suzuki\/org-html-theme")
     all.gsub!("\/\/www.pirilampo.org", "\/\/masayuki054.github.io\/morioka_u_ict")
+    all.gsub!("\/\/wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme", "\/\/masayuki054.github.io\/morioka_u_ict")
     all.gsub!("https:\/\/vdeep.net", "http:\/\/vdeep.net")
     all.gsub!("https:\/\/typing.sakura.ne.jp", "http:\/\/typing.sakura.ne.jp")
     all.gsub!("\/\/orgmode.org\/mathjax\/MathJax.js", "\/\/cdn.mathjax.org\/mathjax\/latest\/MathJax.js?config=TeX-MML-AM_CHTML")
