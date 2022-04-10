@@ -3,7 +3,7 @@
 #+title: 講義のまとめ
 #+OPTIONS:   H:8 toc:t num:nil date:t
 
-#+include: lects/01.org :minlevel 2
+#+include: lects/01.org :minlevel 1
 
 
 
