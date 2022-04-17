@@ -27,6 +27,7 @@
 
     https://docs.google.com/spreadsheets/d/1J90yj4Z8os1IuuF64y_KyJ85ighCFu-qrb5E34QmwOg/edit?usp=sharing
 
+
 *** XMindによる講義内容の説明
 
     [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章からマインドマップの使い方を
@@ -39,8 +40,6 @@
     - 先生の説明を聞いて，自分でメモを書き込んでみてください。
 
     配布のマインドマップ使って，講義中にメモを取りましょう。
-
-
 
 *** microsoft365 クラウドサービス (先週の復習)
     - インターネットの概念図

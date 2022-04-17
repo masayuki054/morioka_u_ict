@@ -13,10 +13,14 @@
 ** [[http://masayuki054.github.io/morioka_u_ict/windows.html][Windowsについて]]
 ** [[http://masayuki054.github.io/morioka_u_ict/office.html][officeの使い方]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/html/articles/][文書の作成などについて]]
-** [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]]
 ** [[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.org][レポートの書き方に関するレポート作成]]
 ** [[https://github.com/masayuki054/morioka_u_ict/tree/master/org/articles/][鈴木の資料]] (課題や説明)
-   
+
+* 鈴木の放送大学講義
+
+** [[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] (マインドマップ，アウトライナ)
+** [[HTTPS://MASAYUKI054.GITHUB.IO/CLOUD_AND_INFORMATION_LITERACY/TALK.HTML][クラウドと情報リテラシー]] (知的思考と情報リテラシ)
+
 
 * 情報処理センター資料
 ** [[https://172.16.10.48][情報処理センター資料]]

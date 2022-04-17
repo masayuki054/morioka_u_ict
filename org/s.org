@@ -1,5 +1,5 @@
-#+setupfile: ~/ict.git/org/info/index-bigblow-header.setup
-#+include: ~/ict.git/org/info/common-header.org
+#+setupfile: info/index-bigblow-header.setup
+#+include: info/common-header.org
 
 #+include: s/contents.org :minlevel 1
 
