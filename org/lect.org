@@ -4,6 +4,7 @@
 #+OPTIONS:   H:8 toc:t num:nil date:t
 
 #+include: lects/01.org :minlevel 1
+#+include: lects/02.org :minlevel 1
 
 
 

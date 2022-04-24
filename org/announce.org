@@ -3,7 +3,5 @@
 #+title: おしらせ
 
 
-* おしらせ
-
-#+include: announces/01.org
+#+include: lects/announce.org
 

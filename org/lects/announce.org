@@ -1,3 +1,28 @@
+* お知らせ 03 (4/25)
+
+** zoom リモート講義を受けるために
+
+*** 先生の配信情報
+- zoom id: suzuki@iwate-u.ac.jp
+
+- meeing info:
+
+  URL: https://zoom.us/j/5280602571?pwd=WFNlRmYxcHVaRXV3eW10dkswVVFWdz09
+  ID: 528 060 2571
+  password: 0yzsb1
+
+  上記のURLをクリックし，必要なら上のパスワードを入力して参加してくだ
+  さい。
+
+
+* お知らせ 02 (4/18)
+
+** 4/18 は自宅待機の人がいるので，Zoom で講義を配信してみます。
+
+** 教科書の配信に電子ブックリーダーの Kindle を使ってみます。
+
+* お知らせ 01 (4/11)
+
 ** レポート課題の指示は，[[https://mellyclass.com/morioka-u/classrooms][melly]] でおこないます。[2022-04-10 日]
    
 ** 次回は，USBメモリを持ってきてください。[2022-04-10 日]
