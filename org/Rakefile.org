@@ -17,6 +17,12 @@ def org_sub_dir
   (Dir.glob("*/*.org").map do |f| File.dirname(f) end).uniq
 end
 
+def org_touch_all
+  ORGS.each do |org|
+    `touch #{org}`
+  end
+end
+
 if File.exist?("Rakefile.setup.rb")
   puts "loading Rakefile.setup.rb."
   load "./Rakefile.setup.rb"
@@ -74,6 +80,10 @@ def deploy(file, dir)
 
 end
 
+task :touch_all do
+  org_touch_all
+end
+
 rule ".html" => ".org" do |t|
   sh "org2html #{t.prerequisites.join(' ')}"
   deploy(t.name, "#{SITE}/#{DIR}")
@@ -85,6 +95,7 @@ task :org2html => HTMLS do
   puts "git push"
   sh "git push"
 end
+
 
 task :subdirs do
   org_sub_dir.each do |subdir|

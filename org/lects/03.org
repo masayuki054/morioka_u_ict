@@ -1,23 +1,31 @@
-#+title:  2回目 2022.04.18
-* お知らせ 02
+#+title:  3回目 2022.04.25
+* お知らせ 03
+** zoom リモート講義を受けるために
 
-- 4/18 は自宅待機の人がいるので，Zoom で講義を配信してみます。
+*** 先生の配信情報
+- zoom id: suzuki@iwate-u.ac.jp
 
-- 教科書の配信に電子ブックリーダーの Kindle を使ってみます。
+- meeing info:
+
+  URL: https://zoom.us/j/5280602571?pwd=WFNlRmYxcHVaRXV3eW10dkswVVFWdz09
+  ID: 528 060 2571
+  password: 0yzsb1
+
+  上記のURLをクリックし，必要なら上のパスワードを入力して参加してくだ
+  さい。
+
+* 前回のアンケート結果
+
+
+[[https://docs.google.com/forms/d/1rIJfxHLKw3Cw1fF8jaK_JpwtJM5CXeYDbOAVUYqilQk/edit#responses][02ー0418 - Google フォーム]]
+
 
 
 * 出席
-   [[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-   パスコードはA組は8934，B組は6387です。
+[[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-* アンケートの提出
-
-講義終了時に，下記のサイトからアンケートを出してください。
-
-[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
-
-https://forms.gle/JCRpWcQ4vns9fjxC9
+パスコードはA組は7604，B組は8105です。
 
 
 * 受講の準備
@@ -95,9 +103,15 @@ https://forms.gle/JCRpWcQ4vns9fjxC9
 
 
     
-** 講義アンケートの提出
+* アンケートの提出
 
-下記サイトでアンケートに答えてください:
+講義終了時に，下記のサイトからアンケートを出してください。
+
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
+
+https://forms.gle/f7dR4MzK9pARLWeu7 
+
+
 
 
     
