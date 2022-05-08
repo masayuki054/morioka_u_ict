@@ -1,222 +1,113 @@
-* 2019.05.18 5回目
+#+title: 5回目 2022.05.09
+* 前回のアンケート結果
 
-** 今日までの宿題 (5/18まで)
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
 
-*** 自己紹介文書を作成し，メールに添付して送付してください。
-
-    - 自己紹介文書をWordで作成してください。内容は:
-
-      - 出身高校・科，
-      - 得手・不得手科目とその理由
-      - 情報の好き嫌いと得手・不得手とその理由
-      - 講義への感想・意見・要望
-      - 自己紹介なんでも
-
-    - ワードの使い方は，教科書5章の文書の作成を参考にしてください。
-      
-    - 文書は，以下の場所に保存してください:
-      - PC の 自分の情報処理演習フォルダ
-
-    - 大学のWebメールを使って，suzumasa@morioka-u.ac.jp 宛に添付ファイ
-      ルで送ってください。Cc: でsuzumasa054@gmail.com 宛にも送ってくだ
-      さい。
-
-    - メールの本文の書き方は，教科書のメールの書き方に従ってください:
-      - 教科書 3.3 メールの例
-      - 教科書 3.4 メールのマナー
-
-    - 自己紹介は，学生用サーバに置いて，皆さんが閲覧できるようにします
-      ので，そのつもりで書いてください。
-
-** 今日の課題
-
-以下，今日やることです。
-
-*** Todo タイピング -- 練習のはじまり
-
-[[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
-
-来週も追記できるように，自分の情報処理フォルダに練習記録を残しておいて
-ください。
-
-*** Todo 大学のWebメールを使う (再度)
-
-    [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，
-    確認してください。
-
-    - 教科書 3.2節「メール」
-    - 教科書 3.3節「メールの例」
-
-*** フリーなアプリの Firefox を使ってみましょう
-
-    - ブラウザに関する一般的なことは，教科書3.1 を読んでみてください。
-    - Firefox はフリーなウェブブラウザです。
-    - Firefox Portable は USBにインストールして，持ち運べます。
-
-**** firefox を使ってみる
-
-    - ブックマークを憶えましょう。
-
-    - 履歴を使いましょう。
-
-    - 好みのテーマに替えてみましょう。
-
-**** Todo 検索とブックマーク
-
-     - 「大学生 レポートの書き方」で検索し，
-     - 見つかったサイトをいくつか眺めてみましょう。
-     - 良いと思ったサイトをブックマークし，
-     - 次回の講義で，もう一度読んでみましょう。
-
-*** Todo XMind ZEN を使ってみましょう。
-
-    - USBメモリにXMind ZEN フォルダはありますか？
-
-      - 自分の情報処理フォルダにXMind ZEN フォルダはありますか？
-
-      - USBメモリにXMind ZEN フォルダをコピーしてください。
-      
-    - USBメモリにXMind ZEN ショートカットはありますか？
-
-      - USB の XMind ZEN フォルダの中の XMind ZEN アプリを見つけてくだ
-        さい。
-
-      - XMind ZEN アプリのショートカットを作成し，USBメモリの一番上に
-        移動(送信)してください。
- 
-    - XMind ZEN ショートカットをダブルクリクして，起動してください。
-
-**** 今日の講義内容のメモ
-
-     - 今日の講義内容を配布します
-     - 試しに，自分のメモを書き込んでみてください。
-     - 自分の情報処理フォルダに保存してください。
-
-*** Doing Google サービスの利用
-
-    関連する教科書の内容は:
-    - 3.8節 クラウドサービスの概要
-
-**** Google アカウントはできていますか？
-     - http://google.com にログインし，
-
-**** GMail を使ってみる
-     - Gmail を使う (http://mail.google.com)
-
-**** GoogleDrive を使ってみる
-     - http://drive.google.com
-     - フォルダ「m1918xxx」を作成し，
-     - suzumasa054@gmail.com と共有する
-
-**** Todo 共有フォルダの確認
-
-     [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用 Google ドライブ]]
-
-     - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP][A組の共有フォルダ]]
-     - [[https://drive.google.com/open?id=1huvnfH0iF3wL00owOZD7XzpuBtubQCEh][B組の共有フォルダ]]
-
-**** Todo スマホでのGoogleドライブの利用
-
-    - 自分のスマホに，Googleドライブアプリをインストールしてください
-    - スマホで，自分の Googleドライブを開いてみてください
-
-
-*** Todo メモアプリへの登録
-
-     便利なメモアプリを紹介します。
-
-     - https://dynalist.io にいって，Dynalist に登録します。Googleアカ
-       ウントを使って，サインアップするといいでしょう。
-
-     - 使い方は，「Dynalist 使い方」で検索して，探しましょう。
-
-*** Doing Windows の基本操作などを学ぶ 
-
-    教科書の，コンピュータやWindowsの使い方，タイピングに関することを確認
-    していきましょう。
-
-    [[./text.org][教科書のまとめと課題]]に先生のまとめがあります。
-
-    - OS (Windows) の働き
-    - Windows の便利な使い方
-
-    [[./windows.org][Windowsについて]] も参考にしてください。
-
-*** Todo Webとインターネットとは (20分程度)
-
-    何回かかけて，教科書の関連する部分を読み，Webとインターネットにつ
-    いて理解し，まとめを作ります。
-
-    全体の流れは，[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webとインターネットについてのまとめを作成する]] を読ん
-    でください。
-
-    今日は，教科書3.1節「Web」を読んで，
-    できれば下記の事を XMindZEN か Dynalist でまとめてください。
-
-    - 重要な言葉を洗い出し，意味をまとめましょう。
+- [[https://docs.google.com/forms/d/1duvVJab7nJQ4F5XPnUKAzHVbwylA64p6hX2kTFmredo/edit#responses][04ー0502 - Google フォーム]]
+- [[https://docs.google.com/document/d/1Uo_0D58PDImB8FAlfB9Yyk8l82Z-HuIktMHzCXXl2cA/edit][03-0425の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1Q5efR02hnl-zQG7IvWAdRe-YYrolPNCfU9fmOM1XuGo/edit][02-0418の回答 - Google ドキュメント]]
   
-      - 教科書を読んでも説明がない言葉は，検索して，調べ，自分のまとめをつ
-	くりましょう。
+* 出席
 
-	検索した言葉とサイトのURLを，ペアで，メモしましょう
+[[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-    - 重要な言葉を使って，粗筋をまとめましょう。
+パスコードはA組は1694，B組は4752です。
 
-    - 次回以降もまとめが継続できるように，まとめた内容と調べたサイトなどを
-      保存しましょう:
+* 受講の準備
 
-      - DynaListは，Webに保存されています。
-      - XMind ZEN の人は，GoogleDrive のレポート提出フォルダに保存しましょう。
+[[../prepare.org][受講の準備]] をしてください。
 
-*** Todo Wordを始める (20分程度)
+次の項目に慣れてください: 
+- OneDriveの使い方
+- ブラウザの使い方
 
-    教科書5章を読み，Word を使い始めましょう。    何回かかけて，Word でレポートを書くための機能を学び，
-    教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
 
-    [[./text.org][講義資料/教科書のまとめ]] 18章にやり方の説明があります。
+* 今日の課題
+   
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
 
-    - 「著作権法とファイル交換ソフト」をダウンロードし，
-    - 文章(レポート)の構成要素と構造について考える
 
-      - 文章を読み，意図をつかむ
-      - 各文の役割を考え，どんな文の要素で表わすかを決める
-      - マークダウン形式で表す
-      - マークダウン形式をプレビューして確かめる
+** タイピング -- 練習のはじまり
 
-    - 構成要素と構造が決った後，Word にコピペ
+[[../typing.org][タイピング]] のメモと記録表の管理を読んで，
+メモからExcelの表を作成しましょう。
 
-      - プレビュー画面をコピペするか，
-	マークダウン形式をコピペするか，
-	どちらかやりやすい方で
+- Excel を起動し，新規書類を開き，表の形式(見出しなど)を作成してくださ
+  い
 
-    - 教科書に従って整形
+- 今日の記録は，Excelの表に記載してください。  
+  
+- 適切な名前と保存場所を決め，保存しましょう。
 
-** これからやること
+- 新規書類を開き，メモ帳のデータをコピペしてみましょう。
 
-   課題が早く終わった人は，下記の内容に取りかかりましょう。
+- 二つの書類の表の形式が同じになっているか確認しましょう。
+  
+** ガイダンスの続き
 
-*** 「Webとは」を理解する
+   - [[../guidance.html][ガイダンス]]で説明できなかった事を説明します。
 
-   教科書3章1節「Webとは」を読み，Webについて理解し，まとめを作ります。
+   - [[https://172.16.10.48][情報処理センター資料]] の説明をします。，盛岡大学のホームページの在学生向けサービ
+     スの中から見つけてください。
 
-   自分で読み，まとめを作りはじめましょう。
+     次の四つには目を通しましょう：
 
-   先生のまとめ「[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Web   について.org][Webについて]]」を参考にしてください。
+     - [X] wifiの使い方
 
-    関連する教科書の内容は:
+     - [ ] パスワードの変更方法
 
-    - Webの仕組みについては，教科書3.1節「Web」, 8.1節「Webの歴史」, 9.1
-      節「サーチエンジン活用法」を読んでみてください。
+     - [ ] office365の使い方
 
-    - インターネットについては，教科書10.4節「ネットワークの仕組み」を読
-      んでみてください。
+     - [ ] メールの使い方
 
-*** Wordを始める
+** Done 自分の情報処理演習フォルダの作成 CLOSED: [2022-04-18 月 15:13]
 
-    教科書5章を読み，Word を使い始めましょう。
+下記のことできていますか？
 
-    何回かかけて，Word でレポートを書くための機能を学び，教科書中にあ
-    る「著作権法とファイル交換ソフト」文書を作成しましょう。
+- USBメモリに「情報処理演習」という名前のフォルダを作成します。
+
+- OneDriveにそのコピー(バックアップ)を作ります。
+
+** XMindによる講義内容の説明
+
+講義内容の説明のマインドマップを配布します。
+
+- [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022][先生のOneDrive]] から「情報処理2022.xmind」をダウンロードし，
+  - もしOneDriveからできなければ，下記のリンクを試してみてください:
+    - [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022][先生のnewOneDrive]]
+    - [[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][先生のGoogleドライブ]]
+
+- 自分の情報処理演習フォルダにコピーし保存してください。
+- 先生の説明を聞いて，自分でメモを書き込んでみてください。
+
+** XMind の使い方
+
+[[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章からマインドマップの使い方を説明
+します。
+
+** Windows の基本操作などを学ぶ 
+
+教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+
+[[../text.org][教科書のまとめと課題]]に先生のまとめがあります。
+
+自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
+
+    
+* アンケートの提出
+
+講義終了時に，下記のサイトからアンケートを出してください。
+
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
+- [[https://docs.google.com/forms/d/1D5viuXs1EnyI5pddkPK9gg2FdS4qmTnrcWi-cdnfUUM/edit][05ー0509 - Google フォーム]]
+
+
+
+
+
 
     
 

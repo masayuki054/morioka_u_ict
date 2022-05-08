@@ -5,6 +5,8 @@
 
 #+include: lects/01.org :minlevel 1
 #+include: lects/02.org :minlevel 1
+#+include: lects/03.org :minlevel 1
+#+include: lects/04.org :minlevel 1
 
 
 
