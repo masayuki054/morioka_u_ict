@@ -1,149 +1,131 @@
-* 2019.05.20 6回目
-
-** 今日の課題
-
-*** Doing タイピング -- 練習記録表の作成
-
-    [[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつけましょう。
-
-    今日から，表に記録します。[[./typing.org][タイピング]] の タイピングメモと記録表の管
-    理の 2.3~2.4 を読んで，Excelで記録表を作成しましょう。
-
-    来週も追記できるように，自分の情報処理フォルダに練習記録を残しておいて
-    ください。
-
-*** Done 大学のWebメールを使う (再度)
-    CLOSED: [2019-05-19 日 16:39]
-
-    [[./pc.org][パソコンの使い方]] の Webメールを読んで，大学のWebメールが使えるか，
-    確認してください。
-
-    - 教科書 3.2節「メール」
-    - 教科書 3.3節「メールの例」
-
-*** Doing フリーなアプリの Firefox を使ってみましょう
-
-    - ブラウザに関する一般的なことは，教科書3.1 を読んでみてください。
-    - Firefox はフリーなウェブブラウザです。
-    - Firefox Portable は USBにインストールして，持ち運べます。
-
-**** firefox を使ってみる
-
-    - ブックマークを憶えましょう。
-    - 履歴を使いましょう。
-    - 好みのテーマに替えてみましょう。
-    - 検索とブックマーク
-
-*** Todo メモアプリへの登録
-
-     便利なメモアプリを紹介します。
-
-     - https://dynalist.io にいって，Dynalist に登録します。Googleアカ
-       ウントを使って，サインアップするといいでしょう。
-
-     - 使い方は，「Dynalist 使い方」で検索して，探しましょう。
-
-     - 読み易いサイトをブウクマークしておきましょう。
+#+title: 6回目 2022.05.16
+* お知らせ 06 (5/16)
+[[https://moriokauniv-my.sharepoint.com/:f:/g/personal/3000261_morioka-u_ac_jp/Ek8by31oxyJOmqeEuAxRd3YBc490YpGFsBewTvZKgg6A0w][先生のOneDrive]](new) を新しくしてみました。
+今度は，共有できているでしょうか？
 
 
-*** Todo 「大学生らしいレポートの書き方」を調べる
-    - 見つかったサイトをいくつか眺めてみましょう。
-    - 良いと思ったサイトをブックマークし，
-    - 次回の講義で，もう一度読んでみましょう。
 
-*** Doing XMind ZEN で講義のメモを取ろう
+* 前回のアンケート結果
 
-    XMind Zen については，[[https://iiv.ne.jp/xmind-zen-howto/][XMind ZEN の使い方]] を参考にしてください。
-
-**** 今日の講義内容のメモ
-
-     - 今日の講義内容を配布します
-     - 試しに，自分のメモを書き込んでみてください。
-     - 自分の情報処理フォルダに保存してください。
-     - 講義中や講義の終りに，メモを取りましょう
-
-*** Doing Google サービスの利用
-
-    関連する教科書の内容は:
-    - 3.8節 クラウドサービスの概要
-
-**** Doing GoogleDrive を使ってみる
-     - http://drive.google.com
-     - フォルダ「m1918xxx」を作成し，
-     - suzumasa054@gmail.com と共有する
-     - msyk054@gmail.com と共有する
-
-**** Doing 共有フォルダの確認
-
-     [[https://drive.google.com/open?id=1wyBj1eX9r-Df4gdpQl2ifKhTVtQbATm3][情報処理演習2019用 Google ドライブ]]
-
-     - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP][A組の共有フォルダ]]
-
-     - [[https://drive.google.com/open?id=1jvMbt-vHS-tD4eKB2iWyOcfJ5fLTTHnP]]
-
-     - [[https://drive.google.com/open?id=1huvnfH0iF3wL00owOZD7XzpuBtubQCEh][B組の共有フォルダ]]
-
-**** Todo スマホでのGoogleドライブの利用
-
-    - 自分のスマホに，Googleドライブアプリをインストールしてください
-    - スマホで，自分の Googleドライブを開いてみてください
-
-
-*** Todo Webとインターネットとは
-
-    何回かかけて，教科書の関連する部分を読み，Webとインターネットにつ
-    いて理解し，まとめを作ります。
-
-    全体の流れは，[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webとインターネットについてのまとめを作成する]] を読ん
-    でください。
-
-    今日は，教科書3.1節「Web」を読んで，
-    できれば下記の事を XMindZEN か Dynalist でまとめてください。
-
-    - 重要な言葉を洗い出し，意味をまとめましょう。
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
+- [[https://docs.google.com/document/d/1AspLrkRcLClzF09fzLIJR9R406zQ9fJ3gxZ6iWmGV8k/edit][0509の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1Uo_0D58PDImB8FAlfB9Yyk8l82Z-HuIktMHzCXXl2cA/edit][03-0425の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1Q5efR02hnl-zQG7IvWAdRe-YYrolPNCfU9fmOM1XuGo/edit][02-0418の回答 - Google ドキュメント]]
   
-      - 教科書を読んでも説明がない言葉は，検索して，調べ，自分のまとめをつ
-	くりましょう。
+* 出席
 
-	検索した言葉とサイトのURLを，ペアで，メモしましょう
+[[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
-    - 重要な言葉を使って，粗筋をまとめましょう。
+パスコードはA組は3074，B組は4832です。
 
-    - 次回以降もまとめが継続できるように，まとめた内容と調べたサイトなどを
-      保存しましょう:
+* 受講の準備
 
-      - DynaListは，Webに保存されています。
-      - XMind ZEN の人は，GoogleDrive のレポート提出フォルダに保存しましょう。
+[[../prepare.org][受講の準備]] をしてください。
 
-*** Todo Wordを始める 
+次の項目に慣れてください: 
+- OneDriveの使い方
+- ブラウザの使い方
 
-    教科書5章を読み，Word を使い始めましょう。   
-    何回かかけて，Word でレポートを書くための機能を学び，
-    教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+* 今日の課題
+   
+以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
 
-    [[./text.org][講義資料/教科書のまとめ]] 18章にやり方の説明があります。
 
-    - [[https://drive.google.com/open?id=1MZPZnazCkYqz_sFEiYkezJel3FdPwOig][著作権法とファイル交換ソフト]]をダウンロードし，
+** タイピング -- Excel表の作成
 
-    - 文章(レポート)の構成要素と構造について考える
+[[../typing.org][タイピング]] のメモと記録表の管理を読んで，
+メモからExcelの表を作成しましょう。
 
-      - 文章を読み，意図をつかむ
-      - 各文の役割を考え，どんな文の要素で表わすかを決める
+- (Done) Excel を起動し，新規書類を開き，表の形式(見出しなど)を作成し
+  てください
+- (Done) 適切な名前と保存場所を決め，保存しましょう。  
+- (Done) 新規書類を開き，メモ帳のデータをコピペしてみましょう。
+- (Done) 二つの書類の表の形式が同じになっているか確認しましょう。
+- 今日の記録は，Excelの表に記載してください。  
+  
+** 自分の情報処理演習フォルダ
+*** Done 自分の情報処理演習フォルダの作成 CLOSED: [2022-04-18 月 15:13]
+- USBメモリに「情報処理演習」という名前のフォルダを作成します。
+- OneDriveにそのコピー(バックアップ)を作ります。
+*** 先生とのフォルダの共有
+SCHEDULED: <2022-05-15 日>
+- Web の Office365 にサインインし，
+- OneDrive (Web)アプリを開き，
+- 自分の情報処理演習フォルダの中に，共有という名前のフォルダを作成し，
+- 先生 (3000261@morioka-u.ac.jp) と共有してください:
+  - 共有フォルダを右クリックし，
+  - 共有を選び，
+  - 先生 (3000261@morioka-u.ac.jp)を共有相手に指定，
+  - メッセージを送信
 
-    - 構成要素と構造が決った後，Word にコピペ
+** XMindによる講義内容の説明
 
-    - 教科書に従って整形
+*** 義内容のマインドマップの配布:
+- [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022][先生のOneDrive]](new) から「情報処理2022.xmind」をダウンロードし，
+  もしOneDriveからできなければ，[[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][先生のGoogleドライブ]]を試してみてくださ
+  い:
+- Windowsのクイックアクセスの「ダウンロード」フォルダにダウンロードさ
+  れます
+- 自分の情報処理演習フォルダにコピーし保存してください。
+  
+*** 講義内容のメモ
 
-*** Someday Windows の基本操作などを学ぶ 
-    CLOSED: [2019-05-19 日 19:30]
+- 先生の説明を聞いて，自分でメモを書き込んでみてください。
 
-    教科書の，コンピュータやWindowsの使い方，タイピングに関することを確認
-    していきましょう。
+** XMind の使い方
+[[https://masayuki054.github.io/ict_literacy_for_thinking_and_memo/][メモと思考のためのICTの活用]] の中の3章からマインドマップの使い方を説明
+します。
 
-    [[./text.org][教科書のまとめと課題]]に先生のまとめがあります。
+    - [[https://www.youtube.com/watch?v=RPKuF0g6UTY][(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube]]
+    - [[https://www.youtube.com/watch?v=dxQs3yWXdNo][(106) おすすめのマインドマップアプリ（Xmind2020）の使い方 - YouTube]]
 
-    - OS (Windows) の働き
-    - Windows の便利な使い方
+** Done Windows の基本操作などを学ぶ 
+CLOSED: [2022-05-15 日 19:54]
 
-    [[./windows.org][Windowsについて]] も参考にしてください。
+教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
+
+[[../text.org][教科書のまとめと課題]]に先生のまとめがあります。
+
+自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
+
+** 文字入力 (教科書2章) 
+
+     教科書の2章を読んで，コンピュータやWindowsの使い方に関すること
+     を確認していきましょう。
+
+     [[../text.org][教科書のまとめと課題]]に先生のまとめがあります。
+
+     メモ帳が作成する文書は何でできていますか？
+     - 文字
+       - フォント
+       - 大きさ
+     - 単語と文節 (入力時)
+     - 文
+       - 句読点，
+     - 行
+       - 改行コードによる行
+     - 文書
+       - 文の集まり
+       - 日本語コード
+       - Windows の フォルダとファイル名と拡張子
+	 
+
+
+    
+* アンケートの提出
+
+講義終了時に，下記のサイトからアンケートを出してください。
+
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
+- [[https://docs.google.com/forms/d/1xSlk6XMfVQZMYrM768d5J07y8isu8hdaG2xji323Q20/edit][05ー0516 - Google フォーム]]
+
+
+
+    
+
+
+
 
