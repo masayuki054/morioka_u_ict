@@ -1,123 +1,134 @@
-# 2018.05.21 7回目
+#+title: 7回目 2022.05.23
 
-* 今日の講義
+* 前回のアンケート結果
 
-** 前回の講義
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
 
-   - [[https://docs.google.com/spreadsheets/d/1lwOA5OokALzVFf32fopEkyvyrJCPcs0WlT721LXRt7A/edit?usp=sharing][A組]]
-   - [[https://docs.google.com/spreadsheets/d/1q-4j3NmN9EYdL17ApihW2Epzhq3mjlgXEpGzBA8eeUU/edit?usp=sharing][B組]]
+- [[https://docs.google.com/document/d/1Qz19_LypzS_gRHiTbRkb-zfJo0Tj7YtvdZ0iI8_fU8A/edit][06-0516の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1AspLrkRcLClzF09fzLIJR9R406zQ9fJ3gxZ6iWmGV8k/edit][05-0509の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1Uo_0D58PDImB8FAlfB9Yyk8l82Z-HuIktMHzCXXl2cA/edit][03-0425の回答 - Google ドキュメント]]
+- [[https://docs.google.com/document/d/1Q5efR02hnl-zQG7IvWAdRe-YYrolPNCfU9fmOM1XuGo/edit][02-0418の回答 - Google ドキュメント]]
+  
+* 出席
 
-** 今日の課題-2018/5/21
+[[https://morioka-u.ap-cloud.com/prtl][ポータル]] で 出席登録してください。
 
+パスコードはA組は3074，B組は4832です。
+
+* 今日の課題
+   
 以下，今日やることです。
+何回も説明しますので，徐々に覚えてください。
+忘れたら，何回でも質問してください。
 
-*** タイピング (20分程度)
+** タイピング -- Excel表の作成
 
-- [[./typing.org][タイピング]] を読んで，タイピング練習を始め，記録をつ
-  けましょう。
-- 平均，最高，最低値を求めましょう。
-- 最後の行を使い，式の変更から自由になりましょう。
+[[../typing.org][タイピング]] のメモと記録表の管理を読んで，
+メモからExcelの表を作成しましょう。
+
+- 通し番号と全キー数と正確率を計算し，それぞれの列を追加しましょう。
   
-*** 確認
+** 自分の情報処理演習フォルダ
+*** Done 自分の情報処理演習フォルダの作成 CLOSED: [2022-04-18 月 15:13]
+- USBメモリに「情報処理演習」という名前のフォルダを作成します。
+- OneDriveにそのコピー(バックアップ)を作ります。
+*** 先生とのフォルダの共有
+SCHEDULED: <2022-05-15 日>
+- Web の Office365 にサインインし，
+- OneDrive (Web)アプリを開き，
+- 自分の情報処理演習フォルダの中に，共有という名前のフォルダを作成し，
+- 先生 (3000261@morioka-u.ac.jp) と共有してください:
+  - 共有フォルダを右クリックし，
+  - 共有を選び，
+  - 先生 (3000261@morioka-u.ac.jp)を共有相手に指定，
+  - メッセージを送信
 
-    以下の内容を終えていない人は，3回目の講義記録を参考にして，
-    自分でやってください。
+** XMindによる講義内容の説明
 
-**** Done 大学のWebメールを使う
-
-     できていない人は，時間を見つけて
-     
-     - できている友達に聞いて自分でやるか，
-     - 個別に先生に聞いてください。
-
-**** Done PCの利用環境 (再確認)
-***** Done 自分の情報処理応用フォルダの作成 
-***** Done 生徒用ファイルサーバを使う
-
-
-*** Done Firefox ポータブルのインストール
-    CLOSED: [2018-05-20 日 19:30]
-
-    Firefox ポータブルのインストールについては，[[./web.org]] を見てくださ
-    い。
-
-    Firefox の使い方を学びましょう。
-
-    - [ ] 履歴
-    - [ ] Bookmark
-    - [ ] テーマの変更
-
-*** Googleドライブの利用 [3/6]
-
-    下記は，確認事項です。
-
-    - [X] Google アカウントができていない人は，作成してください
-    - [ ] Googleのメール・アプリを使ってみてください
-    - [X] msyk054@gmail.com と共有できていない人は，共有してください
-    - [X] 自分の情報処理フォルダをGoogleドライブにコピーしてください
-    - [ ] 自分のスマホに，Googleドライブアプリをインストールしてください
-    - [ ] スマホで，自分の Googleドライブを開いてみてください
-
-*** [[./web.org][Webアプリを利用しよう]] 
-
-    便利なメモアプリを紹介します。 講義資料の [[./web.org][Webアプリを利用しよう]] を読んで，
-    mindmup を使えるようにします。
-
-*** Todo Webとインターネットとは (20分程度)
-
-何回もかけて，教科書の関連する部分を読み，Webとインターネットについて理解し，まとめを
-作ります。
-
-全体の流れは，
-[[https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles/Webについて.org][Webとインターネットについてのまとめを作成する]] を読んでください。
-
-今日は，教科書3.1節「We」と 8.1節「Webの歴史」を読んで，
-できれば下記の事をメモ帳 (またはWorkflowy, mindmup) でまとめてください。
-
-- 重要な言葉を洗い出し，意味をまとめましょう。(5/12)
+*** 義内容のマインドマップの配布:
+- [[https://moriokauniv-my.sharepoint.com/personal/3000261_morioka-u_ac_jp/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9tb3Jpb2thdW5pdi1teS5zaGFyZXBvaW50LmNvbS86ZjovZy9wZXJzb25hbC8zMDAwMjYxX21vcmlva2EtdV9hY19qcC9Fc1lQRnFuMUdvUkNwcGFKQXVnUEtFSUJETnB4T0YtdkdHcmp0WWdKNWptdG9RP3J0aW1lPTMyaUo3YlA4MkVn&id=%2Fpersonal%2F3000261%5Fmorioka%2Du%5Fac%5Fjp%2FDocuments%2Fmorioka%2Du%2F%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%BC%94%E7%BF%922022][先生のOneDrive]](new) から「情報処理2022.xmind」をダウンロードし，
+  もしOneDriveからできなければ，[[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][先生のGoogleドライブ]]を試してみてくださ
+  い:
+- Windowsのクイックアクセスの「ダウンロード」フォルダにダウンロードさ
+  れます
+- 自分の情報処理演習フォルダにコピーし保存してください。
   
-  - 教科書を読んでも説明がない言葉は，検索して，調べ，自分のまとめをつ
-    くりましょう。
+*** 講義内容のメモ
 
-    検索した言葉とサイトのURLを，ペアで，メモしましょう
+- 先生の説明を聞いて，自分でメモを書き込んでみてください。
 
-- 重要な言葉を使って，粗筋をまとめましょう。(~5/14)
+** XMind の使い方
 
-- 次回以降もまとめが継続できるように，まとめた内容と調べたサイトなどを
-  保存しましょう:
+下記のビデオを視聴して，手書きのマインドマップで視聴メモを作成してみて
+ください:
 
-  - メモ帳の人は，自分の情報処理フォルダに「ウェブとは.txt」で保存しま
-    しょう。
+ [[https://www.youtube.com/watch?v=RPKuF0g6UTY][(105) 【仕事術】凡人でも「一流の仕事」が出来る魔法のツール - YouTube]]
+ 
+** Done Windows の基本操作などを学ぶ 
+CLOSED: [2022-05-15 日 19:54]
 
-  - mindmup の人は，GoogleDrive のレポート提出フォルダに保存しましょう。
+教科書の1章を読んで，コンピュータやWindowsの使い方に関すること
+を確認していきましょう。
 
-- 先生の mindmup 図は，
-  https://drive.mindmup.com/map/1V5NI4DpY_THPj1s0bNejIO0gzUte02M5 
+[[../text.org][教科書のまとめと課題]]に先生のまとめがあります。
 
-*** Wordを始める (30分程度)
+自分で新しいマインドマップを作成し，講義中にメモを取りましょう。
 
-教科書5章を読み，Word を使い始めましょう。
+** 文字入力 (教科書2章) 
 
-何回かかけて，Word でレポートを書くための機能を学び，
-教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
+     教科書の2章を読んで，コンピュータやWindowsの使い方に関すること
+     を確認していきましょう。
 
-[[./text.org][講義資料/教科書のまとめ]] 17章にやり方の説明があります。
+     [[../text.org][教科書のまとめと課題]]に先生のまとめがあります。
 
-- 「著作権法とファイル交換ソフト」をダウンロードし，
-- 文章(レポート)の構成要素と構造について考える
+     メモ帳が作成する文書は何でできていますか？
+     - 文字
+       - フォント
+       - 大きさ
+     - 単語と文節 (入力時)
+     - 文
+       - 句読点，
+     - 行
+       - 改行コードによる行
+     - 文書
+       - 文の集まり
+       - 日本語コード
+       - Windows の フォルダとファイル名と拡張子
 
-  - 文章を読み，意図をつかむ
-  - 各文の役割を考え，どんな文の要素で表わすかを決める
-  - マークダウン形式で表す
-  - マークダウン形式をプレビューして確かめる
+* 文書作成
+    教科書5章を読み，Word を使い始めましょう。   
+    何回かかけて，Word でレポートを書くための機能を学び，
+    教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
 
-- 構成要素と構造が決った後，Word にコピペ
 
-  - プレビュー画面をコピペするか，
-    マークダウン形式をコピペするか，
-    どちらかやりやすい方で
+    [[http://masayuki054.github.io/morioka_u_ict/text.html][教科書のまとめと課題]]
+    [[../text.org][教科書のまとめと課題]]
+    17章にやり方の説明があります。
 
-- 教科書に従って整形
+    - [[https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ][資料 - Google ドライブ]]から
+    - 著作権法とファイル交換ソフト.txt をダウンロードし，
 
-*** 出席票の提出
+    - 文章(レポート)の構成要素と構造について考える
+
+      - 文章を読み，意図をつかむ
+      - 各文の役割を考え，どんな文の要素で表わすかを決める
+
+    - 構成要素と構造が決った後，Word にコピペ
+
+    - 教科書に従って整形
+
+    
+* アンケートの提出
+
+講義終了時に，下記のサイトからアンケートを出してください。
+
+[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
+- [[https://docs.google.com/forms/d/1xSlk6XMfVQZMYrM768d5J07y8isu8hdaG2xji323Q20/edit][05ー0516 - Google フォーム]]
+
+
+
+    
+
+
+
 

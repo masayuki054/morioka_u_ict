@@ -1,14 +1,13 @@
 #+title: 情報処理演習2022
 
-[[https://masayuki054.hatenablog.com/entry/2022/02/16/102612][情報処理2022・トップ]]  
-/[[https://masayuki054.github.io/morioka_u_ict/][今日の講義]]
-/[[https://masayuki054.github.io/morioka_u_ict/announce.html][お知らせ]]
-/[[https://masayuki054.github.io/morioka_u_ict/lect.html][今迄の講義内容]]
-/[[https://masayuki054.github.io/morioka_u_ict/reference.html][講義資料]]
-/[[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][先生のGoogleドライブ]]
-/[[https://moriokauniv-my.sharepoint.com/:f:/g/personal/3000261_morioka-u_ac_jp/Ek8by31oxyJOmqeEuAxRd3YBc490YpGFsBewTvZKgg6A0w][先生のOneDrive]](new)
-/[[https://www.office.com/][Office365ホーム]]
-
+[[https://masayuki054.hatenablog.com/entry/2022/02/16/102612][情報処理2022-トップ]]
+・[[https://masayuki054.github.io/morioka_u_ict/][今日の講義]]
+・[[https://masayuki054.github.io/morioka_u_ict/announce.html][お知らせ]]
+・[[https://masayuki054.github.io/morioka_u_ict/lect.html][今迄の講義内容]]
+・[[https://masayuki054.github.io/morioka_u_ict/reference.html][講義資料]]
+・[[https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs][先生のGoogleドライブ]]
+・[[https://moriokauniv-my.sharepoint.com/:f:/g/personal/3000261_morioka-u_ac_jp/Ek8by31oxyJOmqeEuAxRd3YBc490YpGFsBewTvZKgg6A0w][先生のOneDrive]] (new)
+・[[https://www.office.com/][Office365ホーム]]
 
  #+macro: lll [[file:./$1.org][$2]]の中の[[file:./$1.html#$4][$3]]の章
  #+macro: ll [[file:./$1.org][$2]] 
