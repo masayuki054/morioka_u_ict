@@ -100,6 +100,8 @@ CLOSED: [2022-05-15 日 19:54]
 何回かかけて，Word でレポートを書くための機能を学び，
 教科書5章中にある「著作権法とファイル交換ソフト」文書を作成しましょう。
 
+[[./report.org]] に説明があります。
+
 ** 文書の構成を決める
 
 - 入力すべき文章は，[[https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ][資料 - Google ドライブ]] 著作権法とファイル交換ソフ
@@ -115,12 +117,7 @@ CLOSED: [2022-05-15 日 19:54]
     
 * アンケートの提出
 
-講義終了時に，下記のサイトからアンケートを出してください。
-
-[[https://drive.google.com/drive/folders/1Bb_mz6bjWvQbMTWmuPKxU4r1o73N_r2V][アンケート - Google ドライブ]] の中の
-- [[https://docs.google.com/forms/d/1xSlk6XMfVQZMYrM768d5J07y8isu8hdaG2xji323Q20/edit][05ー0516 - Google フォーム]]
-
-
+今日は，アンケートの提出はありません。
 
     
 
