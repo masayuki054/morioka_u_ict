@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-05-23 月 06:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>情報処理演習2022 課題</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/css/sos.css">
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/hideshow.js"></script>
+<script type="text/javascript" src="https://wiki.cis.iwate-u.ac.jp/~suzuki/org-html-theme/styles/sos/js/sos.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">情報処理演習2022 課題</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga3511cc">1. 課題: Webとインターネットについてのまとめを作成する</a>
+<ul>
+<li><a href="#orgffa5275">1.1. まとめの作り方</a></li>
+<li><a href="#org7e8c852">1.2. Webとインターネットについてのまとめを作る</a></li>
+<li><a href="#org69ec1bd">1.3. 先生のまとめ</a></li>
+</ul>
+</li>
+<li><a href="#org48bbe2b">2. 文書作成レポート</a>
+<ul>
+<li><a href="#orge7bc438">2.1. 文書の構造を意識する</a></li>
+<li><a href="#org7b74bba">2.2. Markdown記法とプレビュー</a></li>
+<li><a href="#org57d9329">2.3. Word で整形</a>
+<ul>
+<li><a href="#org241a0f3">*文書の保存と形式*を理解し，保存する</a></li>
+<li><a href="#orgc50c9ed">文書のデザインを選ぶ</a></li>
+<li><a href="#orgeffa235">文章の整形をおこなう</a></li>
+</ul>
+</li>
+<li><a href="#orga95e814">2.4. 課題の提出</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://masayuki054.hatenablog.com/entry/2022/02/16/102612">情報処理2022-トップ</a>
+・<a href="https://masayuki054.github.io/morioka_u_ict/">今日の講義</a>
+・<a href="https://masayuki054.github.io/morioka_u_ict/announce.html">お知らせ</a>
+・<a href="https://masayuki054.github.io/morioka_u_ict/lect.html">今迄の講義内容</a>
+・<a href="https://masayuki054.github.io/morioka_u_ict/reference.html">講義資料</a>
+・<a href="https://drive.google.com/drive/folders/1WDaSRUc1qrxzm1lPXHoLT6OedgNa3KNs">先生のGoogleドライブ</a>
+・<a href="https://moriokauniv-my.sharepoint.com/:f:/g/personal/3000261_morioka-u_ac_jp/Ek8by31oxyJOmqeEuAxRd3YBc490YpGFsBewTvZKgg6A0w">先生のOneDrive</a> (new)
+・<a href="https://www.office.com/">Office365ホーム</a>
+</p>
+
+<div id="outline-container-orga3511cc" class="outline-2">
+<h2 id="orga3511cc"><span class="section-number-2">1.</span> 課題: Webとインターネットについてのまとめを作成する</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+少しづつ，Webとインターネットについて理解し，まとめを作りましょう。
+</p>
+
+<p>
+教科書を読み，先生の説明やまとめを参考にして，
+理解し，自分の理解をまとめましょう。
+</p>
+
+<p>
+どんな形式のレポートに仕上げてもらうか，まだ，検討しています。
+</p>
+</div>
+
+
+<div id="outline-container-orgffa5275" class="outline-3">
+<h3 id="orgffa5275"><span class="section-number-3">1.1.</span> まとめの作り方</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+後で自分で読んで分かりやすい文章や文書の組み立てで書いてください。
+</p>
+
+<p>
+分かりやすい文章や，わかりやすい文書の組み立てについて，考えながら書い
+てください。
+</p>
+
+<p>
+技術的な文章に対するまとめ方が，
+<a href="https://github.com/masayuki054/morioka_u_ict/blob/master/org/articles">まとめの作り方</a> 
+に書いてあります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e8c852" class="outline-3">
+<h3 id="org7e8c852"><span class="section-number-3">1.2.</span> Webとインターネットについてのまとめを作る</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Webとは何かを知りましょう:
+</p>
+<ul class="org-ul">
+<li>教科書 3.1 節「Web」についてまとめてください</li>
+</ul>
+
+<p>
+インターネット・サービスについて知りましょう：
+</p>
+
+<ul class="org-ul">
+<li>教科書 3.8 節「スマホ時代のネット利用」について，先生の説明をまとめてください</li>
+<li>教科書 3.9 節「クラウドサービス」について，先生の説明をまとめてくだ
+さい</li>
+<li>教科書 4.5 節「クラウドストレージ」について，先生の説明をまとめてください</li>
+</ul>
+
+<p>
+Webが生れた理由と本質を知りましょう：
+</p>
+<ul class="org-ul">
+<li>教科書 8.1 節についてまとめてください。</li>
+</ul>
+
+<p>
+Webでの検索について知りましょう:
+</p>
+<ul class="org-ul">
+<li>教科書 9.2 節「サーチエンジン」についてまとめてください。</li>
+<li>教科書 9.3 節「ネット上の情報」についてまとめてください。</li>
+</ul>
+
+<p>
+インターネットについて知りましょう:
+</p>
+<ul class="org-ul">
+<li>教科書 10.4 節「ネットワークの仕組み」についてまとめてください。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org69ec1bd" class="outline-3">
+<h3 id="org69ec1bd"><span class="section-number-3">1.3.</span> 先生のまとめ</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+先生のまとめは，<a href="reports/text.html">教科書のまとめと課題</a> にありますので，
+参考にしてください。
+</p>
+
+<p>
+先生の説明や説明図が講義用 GoogleDrive のいろいろな絵のフォルダにあり
+ます。参考にしてください。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org48bbe2b" class="outline-2">
+<h2 id="org48bbe2b"><span class="section-number-2">2.</span> 文書作成レポート</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+教科書5章を読み，図5.4のレポートを，作成しましょう。
+作成すべきレポートの内容は，図5.4より，増えていますので，注意してくだ
+だい。挑戦課題の内容も含まれていています。
+</p>
+
+<p>
+以下の文書をレポート提出フォルダにアップしてください:
+</p>
+
+<ul class="org-ul">
+<li>markdown記法の「著作権とファイル交換ソフトテキスト.txt」</li>
+<li>Word文書「著作権とファイル交換ソフトテキスト.docx」</li>
+<li>pdf文書「著作権とファイル交換ソフトテキスト.pdf」</li>
+</ul>
+</div>
+
+<div id="outline-container-orge7bc438" class="outline-3">
+<h3 id="orge7bc438"><span class="section-number-3">2.1.</span> 文書の構造を意識する</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<a href="https://drive.google.com/drive/folders/1IXQTG4eie-XSbxP-TD_FBJdZTVRg6eeJ">資料 - Google ドライブ</a>から
+</p>
+
+<ul class="org-ul">
+<li>「著作権とファイル交換ソフトテキスト.txt」をダウンロードし，</li>
+
+<li><p>
+メモ帳で開き，各行が文書の中での役割りを決めていきます。
+</p>
+
+<p>
+下記の文書の役割(要素)を意識し，要素の先頭に役割を指定していきます：
+</p>
+
+<ul class="org-ul">
+<li>タイトル は次の行を <code>=</code> のみの行にする</li>
+<li>日付・著者名は，@</li>
+<li>見出しは #, ##, ###  など</li>
+<li>段落の始まりは空行</li>
+<li>段落中の文章は，行の先頭から書く。</li>
+<li>次の段落になるまで，文を続けて書く。</li>
+<li>段落の中の箇条書きは，* や 1., 2., &#x2026; で始める</li>
+<li>段落の中の引用文は， &gt; で始める
+<ul class="org-ul">
+<li>引用とは，他の人の言葉をそのまま紹介することです。</li>
+<li>引用であること，引用文献，を示すこと。</li>
+</ul></li>
+<li>参考文献 は見出しと同じ。各文献は，番号付の箇条書きで，書く</li>
+</ul></li>
+</ul>
+
+<p>
+文書の構造を確認しながら，整形してください。
+</p>
+
+<p>
+この記法を Markdown 記法といいます。
+</p>
+
+<p>
+先生が整形したものが，同じフォルダにある「著作権とファイル交換ソフトテ
+キスト.md」です
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b74bba" class="outline-3">
+<h3 id="org7b74bba"><span class="section-number-3">2.2.</span> Markdown記法とプレビュー</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+markdown 記法については，
+<a href="http://www.markdown.jp/what-is-markdown/">markdownとは&#x2013;日本語Markdownユーザー会</a>を
+を参考にしてください。
+</p>
+
+<p>
+markdown 文書をプレビューするには，文書を <a href="https://daringfireball.net/projects/markdown/dingus">Markdown Web Dingus サイト</a>
+に貼り付け，preview のみを指定し，Convert してください。
+</p>
+
+<p>
+文書の構造と見た目が思い通りになればできあがりです。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57d9329" class="outline-3">
+<h3 id="org57d9329"><span class="section-number-3">2.3.</span> Word で整形</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Word で，新規文書の作成から，大学生のレポートのテンプレートを選
+択し，起動してください。
+</p>
+
+<p>
+markdown文書のプレビュー画面をコピーし，=メモ帳の文書を=，Wordに貼り付けてください。
+</p>
+</div>
+
+<div id="outline-container-org241a0f3" class="outline-4">
+<h4 id="org241a0f3">*文書の保存と形式*を理解し，保存する</h4>
+<div class="outline-text-4" id="text-org241a0f3">
+<ul class="org-ul">
+<li>まず最初に，開いた文書を自分のフォルダにWord文書として保存してくださ
+い。名前は「著作権法とファイル交換ソフト」，ファイルの種類はword2013 (ファイル拡張子 .docx)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc50c9ed" class="outline-4">
+<h4 id="orgc50c9ed">文書のデザインを選ぶ</h4>
+<div class="outline-text-4" id="text-orgc50c9ed">
+<ul class="org-ul">
+<li>「デザイン」タブで，テーマ，色，フォント，段落や改行の幅を決める</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeffa235" class="outline-4">
+<h4 id="orgeffa235">文章の整形をおこなう</h4>
+<div class="outline-text-4" id="text-orgeffa235">
+<ul class="org-ul">
+<li>教科書の5.3節にしたがって，タイトル，章，節，段落，箇条書きなどの構
+造をもった文書を作成してください。</li>
+
+<li>文書の要素を表す文字は，Word の「スタイル」を決定した後，削除してく
+ださい。</li>
+
+<li>教科書の5.3節にしたがって，文章のスタイル（見た目）の美しさ，読みやすさにも気を
+つけてください。</li>
+
+<li>レポートの体裁を習得してください。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga95e814" class="outline-3">
+<h3 id="orga95e814"><span class="section-number-3">2.4.</span> 課題の提出</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>自分のレポート提出フォルダの中に，</li>
+<li>「文書作成」フォルダを作成し，</li>
+<li>アップロードしてください。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2022-05-23 月 06:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -15,6 +15,7 @@ ORGS = [
   "reference.org",
   "office.org",
   "pc.org",
+  "reports.org",
   "s.org",
   "text.org",
   "typing.org",

@@ -1,3 +1,4 @@
+
 教科書は，「基礎からわかる情報リテラシ」([[http://gihyo.jp/book/2014/978-4-7741-6213-3][出版社のページ]]) です。
 
 この文書は，教科書のまとめ（まだ作成中)です。
@@ -16,6 +17,3 @@
 #+include: 12_情報と社会.org :minlevel 1
 #+include: 13_プログラミング.org :minlevel 1
 #+include: 付録_ウィルス.org :minlevel 1
-#+include: 課題_ファイルとフォルダの使い方.org :minlevel 1
-#+include: 課題_Webとは.org                   :minlevel 1
-#+include: 課題_文書作成.org :minlevel 1

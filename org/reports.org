@@ -1,0 +1,8 @@
+#+setupfile: info/index-sos-header.setup
+#+include: ./info/common-header.org
+
+#+title: 課題
+
+#+include: reports/Webとは.org
+#+include: reports/文書作成.org
+
